@@ -17,7 +17,31 @@ export default ({ to, children, ...props }) => {
         </a>
       );
     } else if (typeof localStorage !== 'undefined' && stoplightNext.test(href)) {
-      href += localStorage.getItem('utm') || '';
+      const query = [];
+
+      let utm = localStorage.getItem('utm') || '';
+
+      const referrer = localStorage.getItem('referrer') || '';
+      if (referrer) {
+        query.push(`utm_source=${referrer}`);
+
+        // Override UTM source with referrer
+        if (utm) {
+          utm.split('&').forEach(param => {
+            if (/utm_source/.test(param)) {
+              utm = utm.replace(param, '');
+            }
+          });
+        }
+      }
+
+      if (utm) {
+        query.push(utm.replace(/^\?/, ''));
+      }
+
+      if (query.length) {
+        href += `?${query.join('&')}`;
+      }
     }
   }
 

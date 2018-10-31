@@ -16,7 +16,11 @@ class Analytics extends React.Component {
 
     // Preserve UTM params
     if (window.location.search && /utm/.test(window.location.search)) {
-      localStorage.setItem('utm', window.location.search);
+      localStorage.setItem('utm', window.location.search.substr(1));
+    }
+
+    if (document.referrer) {
+      localStorage.setItem('referrer', document.referrer);
     }
 
     if (window.Intercom) {
