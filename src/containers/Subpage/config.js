@@ -3,12 +3,12 @@ import metaTags from '@components/MetaTags/config';
 import actionBar from '@components/ActionBar/config';
 
 export default {
-  label: 'Case Studies',
-  label_singular: 'Case Study',
-  name: 'case-study',
-  folder: 'netlify/case-studies',
+  label: 'Subpages',
+  label_singular: 'Subpage',
+  name: 'subpage',
+  folder: 'netlify/subpages',
   create: true,
-  delete: false,
+  delete: true,
   slug: '{{slug}}',
   extension: 'md',
   format: 'yaml-frontmatter',
@@ -20,39 +20,45 @@ export default {
     },
     hero,
     {
-      label: 'Company Info',
+      label: 'Extra Info',
       name: 'info',
       widget: 'object',
       fields: [
         {
-          name: 'name',
-          label: 'Company Name',
+          name: 'title',
+          label: 'Title',
           widget: 'string',
+          required: false,
         },
         {
-          name: 'logo',
-          label: 'Company Logo',
+          name: 'image',
+          label: 'Image',
           widget: 'image',
+          required: false,
         },
         {
-          name: 'about',
-          label: 'Company Description',
+          name: 'description',
+          label: 'Description',
           widget: 'text',
+          required: false,
         },
         {
-          name: 'industry',
-          label: 'Company Industry',
-          widget: 'string',
-        },
-        {
-          name: 'location',
-          label: 'Company Location',
-          widget: 'string',
-        },
-        {
-          name: 'employees',
-          label: 'Number of Employees',
-          widget: 'string',
+          label: 'Links',
+          name: 'links',
+          widget: 'list',
+          fields: [
+            {
+              name: 'href',
+              label: 'URL',
+              widget: 'string',
+            },
+            {
+              name: 'title',
+              label: 'Title',
+              widget: 'string',
+              required: false,
+            },
+          ],
         },
       ],
     },
@@ -60,6 +66,7 @@ export default {
       label: 'Quotes',
       name: 'quotes',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'quote',
@@ -70,11 +77,13 @@ export default {
           name: 'author',
           label: 'Author',
           widget: 'string',
+          required: false,
         },
         {
           name: 'role',
           label: 'Role',
           widget: 'string',
+          required: false,
         },
       ],
     },

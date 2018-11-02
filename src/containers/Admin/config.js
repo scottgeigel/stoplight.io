@@ -1,6 +1,6 @@
 import AboutConfig from '@containers/About/config';
 import HomeConfig from '@containers/Home/config';
-import MarkdownConfig from '@containers/Markdown/config';
+import SubpageConfig from '@containers/Subpage/config';
 import PricingConfig from '@containers/Pricing/config';
 import ProductConfig from '@containers/Product/config';
 import SettingsConfig from '@components/Settings/config';
@@ -11,7 +11,7 @@ import Home from '@containers/Home';
 import About from '@containers/About';
 import CaseStudy from '@containers/CaseStudy';
 import CaseStudies from '@containers/CaseStudies';
-import Markdown from '@containers/Markdown';
+import Subpage from '@containers/Subpage';
 import Pricing from '@containers/Pricing';
 import Product from '@containers/Product';
 import Settings from '@components/Settings';
@@ -19,7 +19,7 @@ import Settings from '@components/Settings';
 export const templates = {
   home: Home,
   about: About,
-  markdown: Markdown,
+  subpage: Subpage,
   pricing: Pricing,
   products: Product,
   settings: Settings,
@@ -56,6 +56,6 @@ export const config = {
     },
     ProductConfig,
     CaseStudyConfig,
-    MarkdownConfig,
+    SubpageConfig,
   ],
 };

@@ -133,7 +133,7 @@ export default {
       products = [],
       hubspotForms = [],
       caseStudies = [],
-      markdown = [],
+      subpages = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
       getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
@@ -143,7 +143,7 @@ export default {
       getFiles(`${NETLIFY_PATH}/products`),
       getFiles(`${NETLIFY_PATH}/hubspot`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/markdown`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
     const routes = [
@@ -205,35 +205,41 @@ export default {
       },
     ];
 
-    hubspotForms.forEach(form => {
-      if (!form.path) return;
+    if (hubspotForms.length) {
+      hubspotForms.forEach(form => {
+        if (!form.path) return;
 
-      routes.push({
-        path: form.path,
-        component: 'src/containers/HubSpotForm',
-        getData: () => form,
+        routes.push({
+          path: form.path,
+          component: 'src/containers/HubSpotForm',
+          getData: () => form,
+        });
       });
-    });
+    }
 
-    products.forEach(product => {
-      if (!product.path) return;
+    if (products.length) {
+      products.forEach(product => {
+        if (!product.path) return;
 
-      routes.push({
-        path: product.path,
-        component: 'src/containers/Product',
-        getData: () => product,
+        routes.push({
+          path: product.path,
+          component: 'src/containers/Product',
+          getData: () => product,
+        });
       });
-    });
+    }
 
-    markdown.forEach(md => {
-      if (!md.path) return;
+    if (subpages.length) {
+      subpages.forEach(md => {
+        if (!md.path) return;
 
-      routes.push({
-        path: md.path,
-        component: 'src/containers/Markdown',
-        getData: () => md,
+        routes.push({
+          path: md.path,
+          component: 'src/containers/Subpage',
+          getData: () => md,
+        });
       });
-    });
+    }
 
     // Don't include admin route in production
     if (process.env.RELEASE_STAGE !== 'production') {

@@ -5,7 +5,6 @@ import { withRouteData } from 'react-static';
 import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 
-import '@styles/individual-case-study.scss';
 import '@styles/markdown.scss';
 import '@styles/highlight.scss';
 
@@ -53,7 +52,7 @@ const Quote = ({ quote, author, role }) => {
 };
 
 const Quotes = ({ quotes }) => {
-  if (!quotes.length) return null;
+  if (!quotes || !quotes.length) return null;
 
   return (
     <div className="mt-8 p-8 shadow rounded bg-grey-lighter relative">
