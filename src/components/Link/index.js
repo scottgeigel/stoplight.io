@@ -3,6 +3,32 @@ import { Link } from 'react-static';
 
 const stoplightNext = /next\.stoplight\.io/;
 
+const getUTMParams = () => {
+  const query = [];
+
+  let utm = localStorage.getItem('utm') || '';
+
+  const referrer = localStorage.getItem('referrer') || '';
+  if (referrer) {
+    query.push(`utm_source=${referrer}`);
+
+    // Override UTM source with referrer
+    if (utm) {
+      utm.split('&').forEach(param => {
+        if (/utm_source/.test(param)) {
+          utm = utm.replace(param, '');
+        }
+      });
+    }
+  }
+
+  if (utm) {
+    query.push(utm.replace(/^\?/, ''));
+  }
+
+  return query;
+};
+
 // Make sure there aren't any trailing white spaces
 export default ({ to, children, ...props }) => {
   let href = to;
@@ -17,31 +43,23 @@ export default ({ to, children, ...props }) => {
         </a>
       );
     } else if (typeof localStorage !== 'undefined' && stoplightNext.test(href)) {
-      const query = [];
+      return (
+        <a
+          {...props}
+          href={href}
+          onClick={e => {
+            const utm = getUTMParams();
 
-      let utm = localStorage.getItem('utm') || '';
-
-      const referrer = localStorage.getItem('referrer') || '';
-      if (referrer) {
-        query.push(`utm_source=${referrer}`);
-
-        // Override UTM source with referrer
-        if (utm) {
-          utm.split('&').forEach(param => {
-            if (/utm_source/.test(param)) {
-              utm = utm.replace(param, '');
+            if (utm.length) {
+              e.preventDefault();
+              href += `?${utm.join('&')}`;
+              window.location.href = href;
             }
-          });
-        }
-      }
-
-      if (utm) {
-        query.push(utm.replace(/^\?/, ''));
-      }
-
-      if (query.length) {
-        href += `?${query.join('&')}`;
-      }
+          }}
+        >
+          {children}
+        </a>
+      );
     }
   }
 

@@ -19,6 +19,11 @@ export default {
       widget: 'text',
     },
     {
+      label: 'Button URL',
+      name: 'buttonUrl',
+      widget: 'text',
+    },
+    {
       label: 'Features',
       name: 'features',
       widget: 'list',
