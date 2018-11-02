@@ -2,6 +2,19 @@ import React from 'react';
 import { withRouter } from 'react-static';
 
 class Analytics extends React.Component {
+  componentWillMount() {
+    if (typeof window === 'undefined') return;
+
+    // Preserve UTM params
+    if (window.location.search && /utm/.test(window.location.search)) {
+      localStorage.setItem('utm', window.location.search.substr(1));
+    }
+
+    if (document.referrer) {
+      localStorage.setItem('referrer', document.referrer);
+    }
+  }
+
   componentDidMount() {
     if (typeof window === 'undefined') return;
 
@@ -12,15 +25,6 @@ class Analytics extends React.Component {
      */
     if (/\/index\.html/.test(window.location.pathname)) {
       this.props.history.replace(window.location.pathname.replace('/index.html', ''));
-    }
-
-    // Preserve UTM params
-    if (window.location.search && /utm/.test(window.location.search)) {
-      localStorage.setItem('utm', window.location.search.substr(1));
-    }
-
-    if (document.referrer) {
-      localStorage.setItem('referrer', document.referrer);
     }
 
     if (window.Intercom) {
