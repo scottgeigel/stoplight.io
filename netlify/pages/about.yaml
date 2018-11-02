@@ -23,7 +23,8 @@ team:
     twitter: '@d3dvincent'
   - image: /images/faust_headshot.png
     name: Scott Faust
-    role: Head of Growth
+    role: Growth & Ops
+    twitter: '@smf434'
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer
