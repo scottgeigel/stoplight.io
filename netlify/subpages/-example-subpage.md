@@ -1,5 +1,5 @@
 ---
-path: /example/subpage
+path: /subpage
 hero:
   aligned: left
   skew: '-7deg'
