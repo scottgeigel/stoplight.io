@@ -1,5 +1,5 @@
 ---
-path: /testing/enterprise/
+path: /testing/enterprise
 hero:
   subtitle: >-
     Build reliable web APIs with fully customizable tests and robust test
