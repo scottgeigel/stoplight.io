@@ -21,6 +21,7 @@ info:
       title: Intercom Integration
   title: Related Links
 actionBar:
+  enabled: true
   text: ''
 meta:
   description: >-
