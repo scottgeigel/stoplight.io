@@ -1,6 +1,7 @@
 ---
 path: /documentation/generator
 hero:
+  bgColor: green
   subtitle: Generate API Documentation Instantly
   title: API Documentation Generator
 info:
