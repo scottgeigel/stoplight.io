@@ -5,7 +5,16 @@ hero:
   title: Beautiful API Documentation
 info:
   description: ''
-  title: ''
+  links:
+    - href: 'https://docs.stoplight.io/documentation/introduction'
+      title: API Documentation Guide
+    - href: 'https://docs.stoplight.io/documentation/best-practices/hubs'
+      title: API Documentation Best Practices
+    - href: 'https://blog.stoplight.io/api-documentation/home'
+      title: The Evolution of API Documentation at Stoplight
+    - href: 'https://community.stoplight.io/c/api-best-practices/documentation'
+      title: Documentation | Stoplight Community
+  title: Related Links
 actionBar:
   text: ''
 meta:
@@ -42,10 +51,3 @@ Want to add some style and flair to your documentation? Add your own custom CSS 
 ## Custom Javascript
 
 Add custom Javascript to your documentation to further customize your documentations’ functionality and aesthetic. Utilize Javascript elements like iFrames, animations, and visual effects to make unique, in-depth, documentation.
-
----
-## Related Links
-- [API Documentation Guide](https://docs.stoplight.io/documentation/introduction)
-- [API Documentation Best Practices](https://docs.stoplight.io/documentation/best-practices/hubs)
-- [The Evolution of API Documentation at Stoplight](https://blog.stoplight.io/api-documentation/home)
-- [Documentation | Stoplight Community](https://community.stoplight.io/c/api-best-practices/documentation)
