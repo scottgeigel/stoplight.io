@@ -1,6 +1,7 @@
 ---
 path: /documentation/hosted
 hero:
+  bgColor: green
   subtitle: Flexible Hosted Documentation Solutions that fit any use case
   title: Hosted API Documentation
 info:
