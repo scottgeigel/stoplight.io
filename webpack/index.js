@@ -26,5 +26,11 @@ export default (config, { stage, defaultLoaders }) => {
     '@utils': nodePath.resolve(__dirname, '..', 'src/utils'),
   };
 
+  if (stage !== 'node') {
+    config.plugins[config.plugins.length - 1].mangle = {
+      safari10: true,
+    };
+  }
+
   return config;
 };
