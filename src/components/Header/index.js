@@ -82,7 +82,7 @@ const HeaderButton = ({ title, href, icon, dark }) => {
     <Link
       key="2"
       to={href}
-      className="text-lg font-semibold py-2 px-4 ml-6 flex items-center border rounded text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50"
+      className="text-lg font-semibold py-2 px-4 ml-6 flex items-center border rounded text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap"
     >
       {title} {icon && <FontAwesomeIcon icon={icon} className="ml-3" />}
     </Link>

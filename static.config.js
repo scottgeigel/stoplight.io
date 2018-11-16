@@ -18,11 +18,11 @@ chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes());
 const slugify = title => {
   return title
     .toLowerCase()
-    .trim()
-    .replace(/ /g, '-')
-    .replace(/[^\w-]+/g, '')
-    .replace(/^\//g, '')
-    .replace(/\/$/g, '');
+    .trim() // Remove spaces
+    .replace(/ /g, '-') // Connect words
+    .replace(/(\/\/)+/g, '/') // Remove double slash
+    .replace(/^\//, '') // Remove starting slash
+    .replace(/\/$/, ''); // Remove trailing slash
 };
 
 const dataLoaders = {
@@ -230,13 +230,13 @@ export default {
     }
 
     if (subpages.length) {
-      subpages.forEach(md => {
-        if (!md.path) return;
+      subpages.forEach(subpage => {
+        if (!subpage.path) return;
 
         routes.push({
-          path: md.path,
+          path: subpage.path,
           component: 'src/containers/Subpage',
-          getData: () => md,
+          getData: () => subpage,
         });
       });
     }
@@ -310,61 +310,57 @@ export default {
             />
           )}
 
-          {isProduction &&
-            googleTagManager && (
-              <script
-                type="text/javascript"
-                dangerouslySetInnerHTML={{
-                  __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          {isProduction && googleTagManager && (
+            <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','${googleTagManager}');`,
-                }}
-              />
-            )}
+              }}
+            />
+          )}
 
           {isProduction && <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />}
 
-          {isProduction &&
-            intercom && (
-              <script
-                type="text/javascript"
-                dangerouslySetInnerHTML={{
-                  __html: `
+          {isProduction && intercom && (
+            <script
+              type="text/javascript"
+              dangerouslySetInnerHTML={{
+                __html: `
                   window.intercomSettings = {
                     app_id: "${intercom}"
                   };
                   (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/${intercom}';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()`,
-                }}
-              />
-            )}
+              }}
+            />
+          )}
         </Head>
         <Body>
-          {isProduction &&
-            googleTagManager && (
-              <noscript>
-                <iframe
-                  src={`https://www.googletagmanager.com/ns.html?id=${googleTagManager}`}
-                  height="0"
-                  width="0"
-                  style={{ display: 'none', visibility: 'hidden' }}
-                />
-              </noscript>
-            )}
+          {isProduction && googleTagManager && (
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${googleTagManager}`}
+                height="0"
+                width="0"
+                style={{ display: 'none', visibility: 'hidden' }}
+              />
+            </noscript>
+          )}
 
           {children}
 
-          {isProduction &&
-            hubspot && (
-              <script
-                type="text/javascript"
-                id="hs-script-loader"
-                async
-                defer
-                src={`//js.hs-scripts.com/${hubspot}.js`}
-              />
-            )}
+          {isProduction && hubspot && (
+            <script
+              type="text/javascript"
+              id="hs-script-loader"
+              async
+              defer
+              src={`//js.hs-scripts.com/${hubspot}.js`}
+            />
+          )}
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: companyInfo }} />
         </Body>

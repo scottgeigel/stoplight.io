@@ -156,10 +156,7 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
   }
 
   public componentDidUpdate(prevProps: IPopup) {
-    if (
-      (this.isVisible || this._controlled) &&
-      (!this.state.style || this.propsChanged(prevProps))
-    ) {
+    if ((this.isVisible || this._controlled) && (!this.state.style || this.propsChanged(prevProps))) {
       this.repaint();
 
       if (this.propsChanged(prevProps)) {
@@ -290,8 +287,7 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
     } else {
       // right
       // coming in from the right of the screen
-      style.right =
-        window.innerWidth - triggerDimensions.left - triggerDimensions.width - this._padding;
+      style.right = window.innerWidth - triggerDimensions.left - triggerDimensions.width - this._padding;
 
       // room for tip
       if (posY === 'center') {
@@ -315,8 +311,7 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
       // when positioning below, position the top of the popup just below the target (it will stretch downwards)
       style.top = triggerDimensions.top + triggerDimensions.height + (this._offset.top || 0);
     } else {
-      style.top = style.top =
-        triggerDimensions.top + triggerDimensions.height / 2 - contentDimensions.height / 2;
+      style.top = style.top = triggerDimensions.top + triggerDimensions.height / 2 - contentDimensions.height / 2;
 
       style.top += this._offset.top || 0;
       style.top -= this._offset.bottom || 0;

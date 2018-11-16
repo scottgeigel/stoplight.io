@@ -23,6 +23,7 @@ export default {
       label: 'Extra Info',
       name: 'info',
       widget: 'object',
+      required: false,
       fields: [
         {
           name: 'title',

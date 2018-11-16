@@ -102,14 +102,11 @@ const Hero = ({
         )}
       >
         <div
-          className={cn(
-            {
-              'mx-auto': !aligned || aligned === 'center',
-              'ml-auto w-2/3 md:w-full': aligned === 'right',
-              'mr-auto w-2/3 md:w-full': aligned === 'left',
-            },
-            !cta && !features.length && !cards.length ? 'pb-48 md:pb-40' : 'pb-24 md:pb-20'
-          )}
+          className={cn(!cta && !features.length && !cards.length ? 'mb-48 md:mb-24' : 'mb-24', {
+            'mx-auto': !aligned || aligned === 'center',
+            'ml-auto w-2/3 md:w-full': aligned === 'right',
+            'mr-auto w-2/3 md:w-full': aligned === 'left',
+          })}
         >
           {pageName && (
             <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>
@@ -118,7 +115,13 @@ const Hero = ({
           <h1>{title}</h1>
 
           {subtitle && (
-            <div className={cn('font-default opacity-75 mt-4 md:mt-6 text-xl mx-auto max-w-lg')}>
+            <div
+              className={cn('font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6', {
+                'mx-auto': !aligned || aligned === 'center',
+                'ml-auto': aligned === 'right',
+                'mr-auto': aligned === 'left',
+              })}
+            >
               {subtitle}
             </div>
           )}

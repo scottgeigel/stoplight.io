@@ -4,6 +4,7 @@ export default {
   name: 'actionBar',
   label: 'Action Bar',
   widget: 'object',
+  required: false,
   fields: [
     {
       name: 'enabled',

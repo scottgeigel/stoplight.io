@@ -40,7 +40,7 @@ const Info = ({ logo, name, about, industry, location, employees }) => {
 
 const Quote = ({ quote, author, role }) => {
   return (
-    <div key="index">
+    <div className="mt-8 p-8 shadow rounded bg-grey-lighter relative">
       <p className="leading-loose pb-6 italic text-lg">{`"${quote}"`}</p>
 
       <div className="font-bold">
@@ -54,13 +54,9 @@ const Quote = ({ quote, author, role }) => {
 const Quotes = ({ quotes }) => {
   if (!quotes || !quotes.length) return null;
 
-  return (
-    <div className="mt-8 p-8 shadow rounded bg-grey-lighter relative">
-      {quotes.map((quote, index) => {
-        return <Quote key={index} {...quote} />;
-      })}
-    </div>
-  );
+  return quotes.map((quote, index) => {
+    return <Quote key={index} {...quote} />;
+  });
 };
 
 class CaseStudy extends React.Component {
@@ -74,23 +70,20 @@ class CaseStudy extends React.Component {
     }
 
     elems.push(
-      <div key="content" className="container mx-auto pb-24 pt-24">
-        <div className="relative flex md:flex-col-reverse">
-          <div
-            className="markdown-body flex-1 pr-32 md:pr-0"
-            dangerouslySetInnerHTML={{ __html: body }}
-          />
-
-          <div className="-mt-40 w-1/3 md:mt-0 md:w-full md:pb-24">
+      <div key="content" className="container mx-auto my-24">
+        <div className="relative">
+          <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
             <Info {...info} />
             <Quotes quotes={quotes} />
           </div>
+
+          <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
         </div>
       </div>
     );
 
     if (actionBar) {
-      elems.push(<ActionBar key="actionBar" className="mt-20 mb-24" {...actionBar} />);
+      elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
     }
 
     return elems;
