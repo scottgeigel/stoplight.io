@@ -2,36 +2,33 @@ import React from 'react';
 import cn from 'classnames';
 import { withRouteData } from 'react-static';
 
-import '@styles/about.scss';
-
 import CallToAction from '@components/CallToAction';
 import ActionBar from '@components/ActionBar';
 import Hero from '@components/Hero';
 import Section from '@components/Section';
-import Link from '@components/Link';
+
+import '@styles/about.scss';
 
 const Quote = ({ image, company, quote, author, role }) => {
   return (
-    <div className="py-8 px-4 shadow bg-white rounded-lg flex flex-col">
-      <div className="px-2 py-2 pb-8 flex justify-center items-start">
+    <div className="py-8 px-4 shadow bg-white rounded-lg flex flex-col justify-between">
+      <div className="px-2 py-2 pb-8 flex justify-center items-start m-auto">
         <img style={{ maxHeight: 50 }} src={image} alt={company} />
       </div>
 
-      <div className="px-4">
-        <p className="leading-loose pb-6">{`"${quote}"`}</p>
-        <div className="font-bold pb-1 uppercase text-blue">{author}</div>
-        <div>
-          {company}, {role}
-        </div>
+      <p className="leading-loose pb-6">{`"${quote}"`}</p>
+      <div className="font-bold pb-1 uppercase text-blue">{author}</div>
+      <div>
+        {company}, {role}
       </div>
     </div>
   );
 };
 
-const Member = ({ image, name, role, twitter, isLast }) => {
+const Member = ({ image, name, role, link, isLast }) => {
   return (
     <div className={cn('mb-48 -mt-24 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
-      <div className="text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 w-64 sm:w-full rounded-lg">
+      <a href={link ? link.href : undefined} className={cn("block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 h-64 w-64 sm:w-full rounded-lg", { 'cursor-pointer': link })} target="_blank">
         <div
           className="-mt-20 mx-auto rounded-full bg-cover shadow-sm border-grey border h-32 w-32 mb-10"
           style={{
@@ -41,20 +38,22 @@ const Member = ({ image, name, role, twitter, isLast }) => {
         />
 
         <div className="font-bold uppercase text-green">{name}</div>
-        {role && <div className="pt-2">{role}</div>}
-        {twitter && (
+
+        {role && <div className="pt-2 text-black">{role}</div>}
+
+        {link && (
           <div className="pt-2">
-            <a href={`https://twitter.com/${twitter}`}>{twitter}</a>
+            {link.title}
           </div>
         )}
-      </div>
+      </a>
     </div>
   );
 };
 
 const Press = ({ image, date, description, publication, href }) => {
   return (
-    <a
+    <div
       href={href}
       target="_blank"
       className="pb-6 px-6 shadow bg-white rounded-lg text-grey-darker cursor-pointer hover:bg-grey-lightest"
@@ -65,7 +64,7 @@ const Press = ({ image, date, description, publication, href }) => {
 
       <div className="uppercase font-bold mb-3">{date}</div>
       <div dangerouslySetInnerHTML={{ __html: description }} />
-    </a>
+    </div>
   );
 };
 

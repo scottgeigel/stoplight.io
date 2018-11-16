@@ -13,30 +13,42 @@ team:
   - image: /images/barnett_headshot.png
     name: Taylor Barnett
     role: Community Engineer
-    twitter: '@taylor_atx'
+    link:
+      title: '@taylor_atx'
+      href: 'https://twitter.com/@taylor_atx'
   - image: /images/cassera_headshot.png
     name: Nicholas Cassera
     role: Software Engineer
   - image: /images/chianese_headshot.png
     name: Vincenzo Chianese
     role: Software Engineer
-    twitter: '@d3dvincent'
+    link:
+      title: '@d3dvincent'
+      href: 'https://twitter.com/@d3dvincent'
   - image: /images/faust_headshot.png
     name: Scott Faust
     role: Growth & Ops
-    twitter: '@smf434'
+    link:
+      title: '@smf434'
+      href: 'https://twitter.com/@smf434'
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer
-    twitter: '@wmhilton'
+    link:
+      title: '@wmhilton'
+      href: 'https://twitter.com/@wmhilton'
   - image: /images/lott_headshot.png
     name: Chris Lott
     role: Software Engineer
-    twitter: '@ChrisNLott'
+    link:
+      title: '@ChrisNLott'
+      href: 'https://twitter.com/@ChrisNLott'
   - image: /images/macleod_headshot.png
     name: Marc MacLeod
     role: Founder & CEO
-    twitter: '@marbemac'
+    link:
+      title: '@marbemac'
+      href: 'https://twitter.com/@marbemac'
   - image: /images/mcdonald_headshot.png
     name: Ross Mcdonald
     role: Sales Engineer
@@ -46,11 +58,15 @@ team:
   - image: /images/pytleski_headshot.png
     name: Thomas Pytleski
     role: Software Engineer
-    twitter: '@pytlesk4'
+    link:
+      title: '@pytlesk4'
+      href: 'https://twitter.com/@pytlesk4'
   - image: /images/rock_headshot.png
     name: Brian Rock
     role: Director of Engineering
-    twitter: '@brianmrock'
+    link:
+      title: '@brianmrock'
+      href: 'https://twitter.com/@brianmrock'
   - image: /images/tharp_headshot.png
     name: Duane Tharp
     role: Sales & Partnerships
