@@ -16,6 +16,7 @@ info:
       title: Documentation | Stoplight Community
   title: Related Links
 actionBar:
+  enabled: true
   text: ''
 meta:
   description: >-
