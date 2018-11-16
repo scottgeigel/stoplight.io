@@ -1,6 +1,7 @@
 ---
 path: /design/enterprise
 hero:
+  bgColor: blue
   subtitle: >-
     Build enterprise ready APIs with a collaborative, powerful, visual editor
     that allows you to prototype and share your API within minutes
