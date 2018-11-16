@@ -1,6 +1,7 @@
 ---
 path: /documentation/automation
 hero:
+  bgColor: green
   subtitle: Automate your API Documentation Workflow
   title: Automatic API Documentation
 info:
