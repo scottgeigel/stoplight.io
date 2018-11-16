@@ -1,6 +1,7 @@
 ---
 path: /design/free
 hero:
+  bgColor: blue
   subtitle: >-
     Build web APIs with a powerful, free visual OpenAPI Specification editor
     that allows you to create API designs and share within minutes
