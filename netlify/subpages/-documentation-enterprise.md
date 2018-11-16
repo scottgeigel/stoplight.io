@@ -1,6 +1,7 @@
 ---
 path: /documentation/enterprise
 hero:
+  bgColor: green
   subtitle: Enterprise Documentation Solutions to fit any organization
   title: Documentation for Enterprises
 info:
