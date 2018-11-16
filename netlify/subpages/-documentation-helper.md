@@ -1,6 +1,7 @@
 ---
 path: /documentation/helper
 hero:
+  bgColor: green
   subtitle: >-
     Use Stoplight to provide comprehensive web API documentation to improve
     developer experience
