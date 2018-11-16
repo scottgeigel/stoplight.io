@@ -1,6 +1,7 @@
 ---
 path: /testing/free
 hero:
+  bgColor: orange
   subtitle: The Complete Set of Free API Testing Tools
   title: Free API Testing Tool
 info:
