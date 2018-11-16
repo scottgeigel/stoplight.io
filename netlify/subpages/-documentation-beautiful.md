@@ -1,6 +1,7 @@
 ---
 path: /documentation/beautiful
 hero:
+  bgColor: green
   subtitle: 'API Documentation that makes an Impact '
   title: Beautiful API Documentation
 info:
