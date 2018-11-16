@@ -316,6 +316,7 @@
 .markdown-body h5,
 .markdown-body h6 {
   &:first-child {
+    display: inline-block;
     margin-top: 0;
   }
 }
