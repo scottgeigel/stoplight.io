@@ -1,6 +1,7 @@
 ---
 path: /testing/enterprise
 hero:
+  bgColor: orange
   subtitle: >-
     Build reliable web APIs with fully customizable tests and robust test
     coverage based on your API contracts. Test your endpoints, status codes, and
