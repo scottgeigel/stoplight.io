@@ -4,9 +4,16 @@ hero:
   subtitle: Battle harden your APIs with our free API testing tool
   title: Free API Testing Tool
 info:
-  title: ei
+  links:
+    - href: 'https://docs.stoplight.io/testing/introduction'
+      title: API Testing Guide
+    - href: 'https://docs.stoplight.io/testing/leveraging-openapi/contract-testing'
+      title: Contract Testing Guide
+    - href: 'https://docs.stoplight.io/testing/continuous-integration/overview'
+      title: Continuous Integration Guide
+  title: Related Links
 actionBar:
-  text: merp
+  text: ''
 meta:
   description: >-
     Use our free API testing tool in order to create a highly flexible,
@@ -61,14 +68,3 @@ Microservice architecture has made it easier than ever to iterate quickly. The d
 
 
 > Stoplight makes it easier to create a full suite of tests by providing [Environment](https://docs.stoplight.io/testing/using-variables/environment) and [Context variables](https://docs.stoplight.io/testing/using-variables/context), and the ability to reference other scenarios to accelerate test generation and reduce duplication
-
-
-***
-
-
-
-## Related Links
-
-* [API Testing Guide](https://docs.stoplight.io/testing/introduction)
-* [Contract Testing Guide](https://docs.stoplight.io/testing/leveraging-openapi/contract-testing)
-* [Continuous Integration Guide](https://docs.stoplight.io/testing/continuous-integration/overview)
