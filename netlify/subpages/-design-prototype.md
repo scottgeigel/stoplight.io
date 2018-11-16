@@ -1,6 +1,7 @@
 ---
 path: /design/prototype
 hero:
+  bgColor: blue
   subtitle: >-
     Quickly build web APIs in a collaborative, powerful, visual editor that
     allows you to prototype and share your API within minutes
