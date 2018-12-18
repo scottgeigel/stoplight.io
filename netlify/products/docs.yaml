@@ -8,7 +8,11 @@ hero:
   title: Hosted API Documentation
 color: green
 title: OpenAPI Documentation
-Description: \-
+description: >-
+  Create API documentation in minutes. Combine your OpenAPI documents (formerly
+  known as Swagger) with markdown to create robust, internal and external API
+  documentation for your organization. Take advantage of one-click cloud
+  deployment with Stoplight, or download the static HTML to host anywhere.
 cta:
   name: Create Docs Now
 features:
@@ -20,9 +24,8 @@ features:
       paste right into their own code.
     image: /images/docs_feature_1.png
     shortName: API Playground
-    title: >-
-      [Interactive API
-      Documentation](https://stoplight.io/documentation/beautiful/)
+    title: Interactive API Documentation
+    titleURL: /documentation/beautiful/
   - description: >-
       Customize your documentation with Themes, Custom CSS, Pages, Domains, and
       Versioning. With fully customizable layouts, page design and our
@@ -31,7 +34,8 @@ features:
       view of your platform.
     image: /images/product/docs-theme.png
     shortName: Theming
-    title: '[Fully Customizable](https://stoplight.io/documentation/helper/)'
+    title: Fully Customizable
+    titleURL: /documentation/helper/
   - description: >-
       Never have out-of-date documentation. Reference your OpenAPI Specification
       document to [automatically generate API reference
@@ -40,9 +44,8 @@ features:
       into your existing CI/CD workflow.
     image: /images/docs_feature_3.png
     shortName: CI/CD Integration
-    title: >-
-      [Automated API
-      Documentation](https://stoplight.io/documentation/automation/)
+    title: Automated API Documentation
+    titleURL: /documentation/automation/
   - description: >-
       With flexible and secure deployment options, you can find a hosting
       solution that works for you. Allow Stoplight to host your documentation
@@ -54,7 +57,8 @@ features:
       firewall to host your documentation from anywhere.
     image: /images/flexible_deployment.png
     shortName: Integrations
-    title: '[Simple, Flexible Deployment](https://stoplight.io/documentation/hosted/)'
+    title: Simple, Flexible Deployment
+    titleURL: /documentation/hosted/
 actionBar:
   buttons:
     - color: accent

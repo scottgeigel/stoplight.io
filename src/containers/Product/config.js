@@ -46,6 +46,12 @@ export default {
           widget: 'string',
         },
         {
+          name: 'titleURL',
+          label: 'Title URL',
+          widget: 'string',
+          required: false,
+        },
+        {
           name: 'shortName',
           label: 'Short Name',
           widget: 'string',

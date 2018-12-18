@@ -6,10 +6,11 @@ import CallToAction from '@components/CallToAction';
 import Hero from '@components/Hero';
 import Section from '@components/Section';
 import ActionBar from '@components/ActionBar';
+import Link from '@components/Link';
 
 import { slugify } from '@utils/text';
 
-const ProductFeature = ({ title, description, image, isReversed, titleColor, isLast }) => {
+const ProductFeature = ({ title, titleURL, description, image, isReversed, titleColor, isLast }) => {
   return [
     <a key="anchor" name={slugify(title)} />,
     <div
@@ -26,7 +27,7 @@ const ProductFeature = ({ title, description, image, isReversed, titleColor, isL
         })}
       >
         <h2 className={cn('max-w-sm mb-10 text-3xl', `text-${titleColor || 'grey-darkest'}`)}>
-          {title}
+            {titleURL ? <Link to={titleURL} className={`text-${titleColor || 'grey-darkest'}`}>{title}</Link> : title}
         </h2>
         <div
           className={cn('mb-12 pb-12 md:pb-0 max-w-md leading-loose text-lg', {

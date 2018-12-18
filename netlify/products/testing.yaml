@@ -8,7 +8,7 @@ hero:
   title: OpenAPI Testing
 color: orange
 title: OpenAPI Testing
-Description: >-
+description: >-
   Increase the test coverage of your web APIs so they break less for your
   consumers online. Create a full collection of tests with Stoplight Testing.
   Use Environment and Context Variables to reference other complex test
@@ -31,6 +31,7 @@ features:
     image: /images/testing_automation.png
     shortName: CI/CD Integration
     title: Simple Automated API Testing
+    titleURL: /testing/integration
   - description: >-
       Create test collections that ensure the API implementation meets the
       standards and definitions described in your OpenAPI Specification or JSON

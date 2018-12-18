@@ -7,10 +7,10 @@ hero:
   title: Visual OpenAPI Designer
 color: blue
 title: OpenAPI Designer
-Description: >-
+description: >-
   Start designing your API in minutes. Use the OpenAPI Specification (formerly
-  known as Swagger) with Stoplight’s visual editor to design consistent and
-  standardized REST APIs for your organization. Without writing any code, model
+  known as Swagger) with Stoplight’s visual editor to [design consistent and
+  standardized REST APIs](/design/web) for your organization. Without writing any code, model
   complex APIs faster than ever while simultaneously getting feedback on your
   prototypes with our [hosted mock servers](https://stoplight.io/mocking).
 cta:
@@ -34,7 +34,7 @@ features:
     shortName: Visual Editor
     title: 'Powerful, Visual Editor'
   - description: >-
-      Instantly prototype and collaborate on your API design with our
+      Instantly [prototype and collaborate on your API design](/design/prototype) with our
       integrated, hosted Mock Servers, powered by Prism. Mock a single API,
       multiple APIs, or even just a few endpoints. Increase efficiency by
       allowing your frontend teams to start implementation while the backend

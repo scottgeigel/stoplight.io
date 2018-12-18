@@ -16,6 +16,7 @@ features:
   - image: /images/mocking_instant.png
     shortName: Instant Mocking
     title: Instant Mock Server
+    titleURL: /mocking/server
     description: >-
       Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
       have created or imported your OpenAPI Specification, you have access to an
