@@ -25,8 +25,14 @@ team:
   - image: /images/hilton_headshot.png
     name: William Hilton
     role: Software Engineer
+  - image: /images/chelsea-hohmann-headshot.jpg
+    name: Chelsea Hohmann
+    role: Software Engineer
   - image: /images/lott_headshot.png
     name: Chris Lott
+    role: Software Engineer
+  - image: /images/carol-maciaszek-headshot.png
+    name: Karol Maciaszek
     role: Software Engineer
   - image: /images/macleod_headshot.png
     name: Marc MacLeod
@@ -34,6 +40,9 @@ team:
   - image: /images/mcdonald_headshot.png
     name: Ross Mcdonald
     role: Sales Engineer
+  - image: /images/chris-miaskowski-headshot.jpg
+    name: Chris Miaskowski
+    role: Humble Problem Solver
   - image: /images/team/vazha-omanashvili.png
     name: Vazha Omanashvili
     role: Software Engineer
@@ -43,24 +52,15 @@ team:
   - image: /images/rock_headshot.png
     name: Brian Rock
     role: Director of Engineering
+  - image: /images/jakub-rozek-headshot.jpg
+    name: Jakub Rozek
+    role: Software Engineer
   - image: /images/tharp_headshot.png
     name: Duane Tharp
     role: Sales & Partnerships
   - image: /images/wallach_headshot.png
     name: Robert Wallach
     role: Content & Support
-  - image: /images/chelsea-hohmann-headshot.jpg
-    name: Chelsea Hohmann
-    role: Software Engineer
-  - image: /images/jakub-rozek-headshot.jpg
-    name: Jakub Rozek
-    role: Software Engineer
-  - image: /images/carol-maciaszek-headshot.png
-    name: Karol Maciaszek
-    role: Software Engineer
-  - image: /images/chris-miaskowski-headshot.jpg
-    name: Chris Miaskowski
-    role: Humble Problem Solver
 quotes:
   - author: Evin Callahan
     company: Hudya
