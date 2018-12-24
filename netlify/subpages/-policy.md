@@ -9,8 +9,8 @@ hero:
     color: purple
     href: 'https://next.stoplight.io'
   pageName: Version 2.6
-  subtitle: October 2018
-  title: Stoplight Support Policy
+  subtitle: 'Last updated: October 1, 2018'
+  title: Support Policy
 info:
   links:
     - {}
