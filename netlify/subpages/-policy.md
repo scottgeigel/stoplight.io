@@ -3,10 +3,10 @@ path: /policy
 hero:
   aligned: center
   bgColor: black
+  particles: true
   cta:
     color: purple
     href: 'https://next.stoplight.io'
-  pageName: Version 2.6
   subtitle: 'Last updated: October 1, 2018'
   title: Support Policy
 actionBar:

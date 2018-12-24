@@ -3,6 +3,7 @@ path: /privacy
 hero:
   aligned: center
   bgColor: black
+  particles: true
   cta:
     color: purple
     href: 'https://next.stoplight.io'
