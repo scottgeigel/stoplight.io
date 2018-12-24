@@ -47,6 +47,7 @@ export default {
           label: 'Links',
           name: 'links',
           widget: 'list',
+          required: false,
           fields: [
             {
               name: 'href',

@@ -1,5 +1,4 @@
 import React from 'react';
-import cn from 'classnames';
 import { withRouteData } from 'react-static';
 
 import Hero from '@components/Hero';
@@ -10,7 +9,7 @@ import '@styles/markdown.scss';
 import '@styles/highlight.scss';
 
 const Info = ({ image, title, description, links }) => {
-  if (!image && !title && !name && !description && (!links || !links.length)) {
+  if (!image && !title && !description && (!links || !links.length)) {
     return null;
   }
 

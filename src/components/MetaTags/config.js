@@ -34,6 +34,7 @@ export default {
       label: 'Twitter',
       name: 'twitter',
       widget: 'object',
+      required: false,
       fields: [
         {
           label: 'Title',

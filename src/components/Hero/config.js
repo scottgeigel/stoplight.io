@@ -61,6 +61,7 @@ export default {
       name: 'cards',
       label: 'Cards',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'title',
@@ -86,6 +87,7 @@ export default {
           name: 'icon',
           label: 'Icon',
           widget: 'object',
+          required: false,
           fields: [
             {
               name: 'style',

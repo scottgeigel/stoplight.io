@@ -3,30 +3,20 @@ path: /policy
 hero:
   aligned: center
   bgColor: black
-  cards:
-    - icon: {}
   cta:
     color: purple
     href: 'https://next.stoplight.io'
   pageName: Version 2.6
   subtitle: 'Last updated: October 1, 2018'
   title: Support Policy
-info:
-  links:
-    - {}
-quotes:
-  - {}
 actionBar:
   buttons:
     - color: purple
   enabled: false
-meta:
-  twitter: {}
 ---
-## **1. Overview**
+## 1. Overview
 
 Stoplight shall provide Application Support Services in accordance with the terms of this policy. Application Support covers issues that arise during the use of the Stoplight Application.
-
 
 <table>
   <tr>
@@ -62,7 +52,7 @@ Stoplight shall provide Application Support Services in accordance with the term
    </td>
   </tr>
   <tr>
-   <td>Time to First Response <strong>P2</strong> 
+   <td>Time to First Response <strong>P2</strong>
    </td>
    <td>8 hr<sup>2</sup>
    </td>
@@ -70,7 +60,7 @@ Stoplight shall provide Application Support Services in accordance with the term
    </td>
   </tr>
   <tr>
-   <td>Time to First Response <strong>P3</strong> 
+   <td>Time to First Response <strong>P3</strong>
    </td>
    <td>24 hr<sup>2</sup>
    </td>
@@ -78,7 +68,7 @@ Stoplight shall provide Application Support Services in accordance with the term
    </td>
   </tr>
   <tr>
-   <td>Time to First Response <strong>P4</strong> 
+   <td>Time to First Response <strong>P4</strong>
    </td>
    <td>48 hr<sup>2</sup>
    </td>
@@ -107,12 +97,12 @@ Community forums and FAQ's
 3 - P1-P4 Response time guarantee via ticket entered via Support Portal Only
 
 
-## **2. Support Methods**
+## 2. Support Methods
 
 All Support communication will be in English.
 
 
-## **3. Case Level Priorities**
+## 3. Case Level Priorities
 
 Case priorities are assigned based on the technical importance of the problem. See the table below for detailed descriptions of each priority.
 
@@ -180,45 +170,34 @@ Case priorities are assigned based on the technical importance of the problem. S
   </tr>
 </table>
 
-
-
-## **4. Premium Support Initial Response Times**
+## 4. Premium Support Initial Response Times
 
 All support notifications and requests must be delivered via the Stoplight Online Support Desk. The time to first response for each priority level is as follows:
 
+**P1:** 1 hour after notification, 24x5
 
-    **P1: **1 hour after notification, 24x5
+**P2:** 2 hours after notification, 9x5
 
+**P3:** 8 hours after notification, 9x5
 
-    **P2:** 2 hours after notification, 9x5
-
-
-    **P3:** 8 hours after notification, 9x5
-
-
-    **P4:** 24 hours after notification, 9x5
+**P4:** 24 hours after notification, 9x5
 
 A priority will only be assigned when submitted through the <span style="text-decoration:underline;">Stoplight Support Desk</span>. All other communication (email, chat, etc) will not be given a priority level, and will not be held to the above initial response requirements.
 
-
-## **5. Standard Application Support**
+## 5. Standard Application Support
 
 Standard Support Customers are entitled to Application Support weekdays from 9AM-6PM Central Standard Time USA. Application Support includes:
 
+* Identifying and troubleshooting problems in the system
+* Assistance with issues during installation and upgrades
+* Creating necessary bug reports
+* Guidance around implementation and configuration
 
-
-*   Identifying and troubleshooting problems in the system
-*   Assistance with issues during installation and upgrades
-*   Creating necessary bug reports
-*   Guidance around implementation and configuration
-
-
-## **6. Premium Application Support **
+## 6. Premium Application Support
 
 Premium Support Customers are entitled to all Application Support features encompassed within the Standard Application Support in addition to 24x5 availability for P1 issues. The 24x5 availability window includes 24 hour coverage during normal weekdays.
 
-
-## **7. Premium Support Requirements**
+## 7. Premium Support Requirements
 
 Premium Support for on premises customers are required to maintain a QA/pre-production environment for testing Stoplight Updates prior to promoting them to the production environment.
 
@@ -226,37 +205,28 @@ Premium Support requests must be filed by <span style="text-decoration:underline
 
 Stoplight also requires that all tickets, questions, and enhancement requests submitted by customers be in English.
 
-
-## **8. Software Updates, End of Life, Releases, and Patches**
+## 8. Software Updates, End of Life, Releases, and Patches
 
 For customers running on premises, the Customer can choose when to update – with the restrictions below:
 
+* Stoplight follows the [Semantic Versioning](https://semver.org/) scheme for released software.
+* Stoplight typically provides minor version releases for on premises packages on a monthly schedule, with patch releases made available in the interim as needed. Major releases do not yet have a predictable regular release schedule.
+* Application Support is provided for on premises customers that are on a previous release for **3 months** following a major or minor release.
+* Stoplight encourages customers to stay up to date with the latest stable version when possible.
+* On premises customers typically have another  QA/pre-production environment to install updates into prior to updating the production environment.
 
-
-*   Stoplight follows the [Semantic Versioning](https://semver.org/) scheme for versioning released software.
-*   Stoplight typically provides minor version releases for on premises packages on a monthly schedule, with patch releases made available in the interim as needed. Major releases do not yet have a predictable regular release schedule.
-*   Application Support is provided for on premises customers that are on a previous release for **3 months** following a major or minor release.
-    *   Stoplight encourages customers to stay up to date with the latest stable version when possible.
-    *   On premises customers typically have another  QA/pre-production environment to install updates into prior to updating the production environment. 
-
-
-## **9. Support Exclusions**
+## 9. Support Exclusions
 
 The following is not included in the support policy:
 
+* Training
+* Customers without a valid support agreement
+* End of Life, Beta, Release Candidate, or Development releases
 
-
-*   Training
-*   Customers without a valid support agreement
-*   End of Life, Beta, Release Candidate, or Development releases
-
-
-## **10. Premium Support Account On-boarding**
+## 10. Premium Support Account On-boarding
 
 Stoplight support will schedule a training call to go over procedures and collect critical information, including:
 
-
-
-*   **Named Contacts: **Identify your three premium support contacts.
-*   **Reporting Procedures: **We will walk you through how the service desk, reporting, and escalation procedures work.
-*   **Initial Health Check: **We will work with one or more of your named contacts to verify installation completeness and initial health of the installation.
+* **Named Contacts:** Identify your three premium support contacts.
+* **Reporting Procedures:** We will walk you through how the service desk, reporting, and escalation procedures work.
+* **Initial Health Check:** We will work with one or more of your named contacts to verify installation completeness and initial health of the installation.
