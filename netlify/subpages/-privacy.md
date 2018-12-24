@@ -8,8 +8,8 @@ hero:
   cta:
     color: purple
     href: 'https://next.stoplight.io'
-  subtitle: 'August 1, 2017'
-  title: Stoplight Privacy Policy
+  subtitle: 'Last updated: August 1, 2017'
+  title: Privacy Policy
 info:
   links:
     - {}
