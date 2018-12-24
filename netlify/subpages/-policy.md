@@ -4,15 +4,8 @@ hero:
   aligned: center
   bgColor: black
   particles: true
-  cta:
-    color: purple
-    href: 'https://next.stoplight.io'
   subtitle: 'Last updated: October 1, 2018'
   title: Support Policy
-actionBar:
-  buttons:
-    - color: purple
-  enabled: false
 ---
 ## 1. Overview
 

@@ -1,6 +1,7 @@
 ---
 path: /terms
 hero:
+  aligned: center
   bgColor: black
   particles: true
   subtitle: 'Last Updated: August 1, 2017'

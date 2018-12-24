@@ -4,15 +4,8 @@ hero:
   aligned: center
   bgColor: black
   particles: true
-  cta:
-    color: purple
-    href: 'https://next.stoplight.io'
   subtitle: 'Last updated: August 1, 2017'
   title: Privacy Policy
-actionBar:
-  buttons:
-    - color: purple
-  enabled: false
 ---
 Stoplight, Inc. and its affiliates (collectively, the "**Company**") is committed to protecting your privacy.  We have prepared this Privacy Policy to describe to you our practices regarding the personal information we collect from users of our websites, including stoplight.io (each, a "**Site**" and collectively, the "**Sites**") and our online services (the "**Services**").
 
