@@ -1,8 +1,6 @@
-import cta from '@components/CallToAction/config';
-
 export default {
-  name: 'product',
-  label: 'Product',
+  name: 'feature',
+  label: 'Product Feature',
   widget: 'object',
   required: false,
   fields: [
@@ -12,15 +10,30 @@ export default {
       widget: 'string',
     },
     {
+      name: 'titleURL',
+      label: 'Title URL',
+      widget: 'string',
+      required: false,
+    },
+    {
+      name: 'shortName',
+      label: 'Short Name',
+      widget: 'string',
+    },
+    {
       name: 'image',
       label: 'Image',
       widget: 'image',
     },
-    cta,
     {
       name: 'description',
       label: 'Description',
       widget: 'markdown',
+    },
+    {
+      name: 'href',
+      label: 'Link',
+      widget: 'string',
     },
   ],
 };

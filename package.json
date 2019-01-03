@@ -9,12 +9,12 @@
     "url": "https://github.com/stoplightio/stoplight.io.git"
   },
   "engines": {
-    "node": "8.x.x"
+    "node": ">= 8"
   },
   "scripts": {
     "start": "react-static start",
-    "build": "RELEASE_STAGE=production react-static build",
-    "build.staging": "RELEASE_STAGE=staging react-static build",
+    "build.production": "RELEASE_STAGE=production react-static build",
+    "build": "react-static build",
     "serve": "serve dist -p 3000",
     "format": "prettier --single-quote --trailing-comma es5 --print-width 100 --write \"src/**/*.js\""
   },
@@ -34,6 +34,8 @@
     "tailwindcss": "0.7.x"
   },
   "devDependencies": {
+    "@stoplight/scripts": "^4.0.0",
+    "@types/classnames": "^2.2.6",
     "@types/node": "^10.12.8",
     "@types/react": "^16.7.6",
     "@types/react-dom": "^16.0.9",
@@ -59,5 +61,10 @@
     "style-loader": "0.23.x",
     "ts-loader": "5.3.x",
     "typescript": "3.1.x"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "es5",
+    "singleQuote": true
   }
 }

@@ -22,15 +22,13 @@ const CaseStudy = ({ title, description, logo, href }) => {
 
         <p className="mb-10 leading-loose" dangerouslySetInnerHTML={{ __html: description }} />
 
-        <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">
-          Read
-        </div>
+        <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
       </div>
     </Link>
   );
 };
 
-class CaseStudies extends React.Component {
+export class CaseStudies extends React.Component {
   render() {
     const { color, hero = {}, actionBar = {}, caseStudies = [] } = this.props;
 

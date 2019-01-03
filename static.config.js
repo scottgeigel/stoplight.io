@@ -12,6 +12,7 @@ import { Renderer as MarkdownRenderer } from './src/utils/markdown';
 import webpack from './webpack';
 
 const NETLIFY_PATH = nodePath.resolve(__dirname, 'netlify');
+const IS_PRODUCTION = process.env.RELEASE_STAGE === 'production';
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes());
 
@@ -112,10 +113,8 @@ const resolveMeta = (defaultMeta = {}, meta = {}) => {
 };
 
 let siteRoot = '';
-if (process.env.RELEASE_STAGE === 'production') {
+if (IS_PRODUCTION) {
   siteRoot = 'https://stoplight.io';
-} else if (process.env.RELEASE_STAGE === 'staging') {
-  siteRoot = 'https://develop--stoplightio.netlify.com';
 }
 
 export default {
@@ -130,9 +129,10 @@ export default {
       about,
       caseStudyConfig,
 
-      products = [],
-      hubspotForms = [],
+      forms = [],
       caseStudies = [],
+
+      landings = [],
       subpages = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
@@ -140,9 +140,10 @@ export default {
       getFile(`${NETLIFY_PATH}/pages/about.yaml`),
       getFile(`${NETLIFY_PATH}/pages/case-studies.yaml`),
 
-      getFiles(`${NETLIFY_PATH}/products`),
       getFiles(`${NETLIFY_PATH}/hubspot`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+
+      getFiles(`${NETLIFY_PATH}/landings`),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
@@ -173,7 +174,9 @@ export default {
           ...caseStudyConfig,
           caseStudies: caseStudies
             .map(caseStudy => {
-              if (!caseStudy.path) return;
+              if (!caseStudy.path) {
+                return;
+              }
 
               const { hero = {}, info = {} } = caseStudy;
 
@@ -188,7 +191,9 @@ export default {
         }),
         children: caseStudies
           .map((caseStudy, index) => {
-            if (!caseStudy.path) return;
+            if (!caseStudy.path) {
+              return;
+            }
 
             return {
               path: caseStudy.path,
@@ -196,8 +201,7 @@ export default {
               getData: () => ({
                 ...caseStudy,
                 next: caseStudies[index + 1 >= caseStudies.length ? 0 : index + 1],
-                prev:
-                  caseStudies[index - 1 <= caseStudies.length ? caseStudies.length - 1 : index - 1],
+                prev: caseStudies[index - 1 <= caseStudies.length ? caseStudies.length - 1 : index - 1],
               }),
             };
           })
@@ -205,33 +209,39 @@ export default {
       },
     ];
 
-    if (hubspotForms.length) {
-      hubspotForms.forEach(form => {
-        if (!form.path) return;
+    if (forms.length) {
+      forms.forEach(form => {
+        if (!form.path) {
+          return;
+        }
 
         routes.push({
           path: form.path,
-          component: 'src/containers/HubSpotForm',
+          component: 'src/containers/Form',
           getData: () => form,
         });
       });
     }
 
-    if (products.length) {
-      products.forEach(product => {
-        if (!product.path) return;
+    if (landings.length) {
+      landings.forEach(landing => {
+        if (!landing.path) {
+          return;
+        }
 
         routes.push({
-          path: product.path,
-          component: 'src/containers/Product',
-          getData: () => product,
+          path: landing.path,
+          component: 'src/containers/Landing',
+          getData: () => landing,
         });
       });
     }
 
     if (subpages.length) {
       subpages.forEach(subpage => {
-        if (!subpage.path) return;
+        if (!subpage.path) {
+          return;
+        }
 
         routes.push({
           path: subpage.path,
@@ -242,7 +252,7 @@ export default {
     }
 
     // Don't include admin route in production
-    if (process.env.RELEASE_STAGE !== 'production') {
+    if (!IS_PRODUCTION) {
       routes.push({
         path: '/admin',
         component: 'src/containers/Admin',
@@ -264,8 +274,6 @@ export default {
 
     const meta = resolveMeta(siteData.meta, routeInfo && routeInfo.allProps.meta);
 
-    const isProduction = process.env.RELEASE_STAGE === 'production';
-
     const companyInfo = JSON.stringify({
       '@context': 'http://schema.org/',
       '@type': 'Corporation',
@@ -276,12 +284,17 @@ export default {
       email: info.email,
     });
 
+    let robots = 'noindex, nofollow';
+    if (IS_PRODUCTION) {
+      robots = meta.robots || 'index, follow';
+    }
+
     return (
       <Html lang="en-US">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="robots" content={isProduction ? 'index, follow' : 'noindex, nofollow'} />
+          <meta name="robots" content={robots} />
 
           <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
@@ -301,7 +314,7 @@ export default {
 
           <link rel="shortcut icon" href={meta.favicon} type="image/x-icon" />
 
-          {!isProduction && (
+          {!IS_PRODUCTION && (
             <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
@@ -310,7 +323,7 @@ export default {
             />
           )}
 
-          {isProduction && googleTagManager && (
+          {IS_PRODUCTION && googleTagManager && (
             <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
@@ -323,9 +336,9 @@ export default {
             />
           )}
 
-          {isProduction && <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />}
+          {IS_PRODUCTION && <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />}
 
-          {isProduction && intercom && (
+          {IS_PRODUCTION && intercom && (
             <script
               type="text/javascript"
               dangerouslySetInnerHTML={{
@@ -339,7 +352,7 @@ export default {
           )}
         </Head>
         <Body>
-          {isProduction && googleTagManager && (
+          {IS_PRODUCTION && googleTagManager && (
             <noscript>
               <iframe
                 src={`https://www.googletagmanager.com/ns.html?id=${googleTagManager}`}
@@ -352,7 +365,7 @@ export default {
 
           {children}
 
-          {isProduction && hubspot && (
+          {IS_PRODUCTION && hubspot && (
             <script
               type="text/javascript"
               id="hs-script-loader"

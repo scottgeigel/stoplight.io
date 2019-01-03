@@ -12,8 +12,10 @@ const onClickFunctions = {
   },
 };
 
-const Footer = ({ footer, actionBar = {} }) => {
-  if (!footer) return null;
+export function Footer({ footer }) {
+  if (!footer) {
+    return null;
+  }
 
   const { columns, social } = footer || {};
 
@@ -34,10 +36,10 @@ const Footer = ({ footer, actionBar = {} }) => {
                   <div className="font-bold text-grey-light py-2">{column.title}</div>
 
                   {column.links &&
-                    column.links.map((link, index) => {
+                    column.links.map((link, columnIndex) => {
                       return (
                         <Link
-                          key={index}
+                          key={columnIndex}
                           to={link.href}
                           className="cursor-pointer text-grey hover:text-grey-lighter block py-2"
                           onClick={e => {
@@ -66,11 +68,7 @@ const Footer = ({ footer, actionBar = {} }) => {
           {social &&
             social.map((account, index) => {
               return (
-                <Link
-                  key={index}
-                  to={account.href}
-                  className="mx-4 text-grey hover:text-grey-lighter"
-                >
+                <Link key={index} to={account.href} className="mx-4 text-grey hover:text-grey-lighter">
                   <FontAwesomeIcon icon={account.icon} size="lg" />
                 </Link>
               );
@@ -79,6 +77,6 @@ const Footer = ({ footer, actionBar = {} }) => {
       </nav>
     </footer>,
   ];
-};
+}
 
 export default withSiteData(withRouteData(Footer));

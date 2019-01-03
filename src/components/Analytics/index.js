@@ -3,7 +3,9 @@ import { withRouter } from 'react-static';
 
 class Analytics extends React.Component {
   componentWillMount() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     // Preserve UTM params
     if (window.location.search && /utm/.test(window.location.search)) {
@@ -16,7 +18,9 @@ class Analytics extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     /**
      * If you navigate to index.html with JS disabled, you will see the correct page is loaded.
@@ -36,7 +40,9 @@ class Analytics extends React.Component {
   }
 
   componentWillUnmount() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     if (window.Intercom) {
       window.Intercom('shutdown');
@@ -44,7 +50,9 @@ class Analytics extends React.Component {
   }
 
   sendPageView = location => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined') {
+      return;
+    }
 
     if (window._hsq) {
       const _hsq = (window._hsq = window._hsq || []);

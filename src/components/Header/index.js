@@ -44,9 +44,7 @@ const DropdownItem = (item, index) => {
       </div>
 
       <div className="flex-1">
-        <div className={cn('text-lg font-bold', item.titleColor && `text-${item.titleColor}`)}>
-          {item.title}
-        </div>
+        <div className={cn('text-lg font-bold', item.titleColor && `text-${item.titleColor}`)}>{item.title}</div>
 
         {item.subtitle && <div className="text-base opacity-75">{item.subtitle}</div>}
       </div>
@@ -63,16 +61,11 @@ const HeaderDropdown = ({ width, title, links }) => {
       posX="center"
       posY="bottom"
       renderTrigger={attributes => (
-        <div
-          className="flex select-none cursor-default text-white py-2 px-4 mx-2 font-semibold"
-          {...attributes}
-        >
+        <div className="flex select-none cursor-default text-white py-2 px-4 mx-2 font-semibold" {...attributes}>
           <div className="flex-1 mr-2">{title}</div>
         </div>
       )}
-      renderContent={() => (
-        <div className="bg-white rounded-lg shadow-lg p-6">{links.map(DropdownItem)}</div>
-      )}
+      renderContent={() => <div className="bg-white rounded-lg shadow-lg p-6">{links.map(DropdownItem)}</div>}
     />
   );
 };
@@ -163,10 +156,7 @@ class Mobile extends React.Component {
         {showMenu && (
           <Portal>
             <div className="absolute pin z-10 flex flex-col">
-              <div
-                className="relative m-4 pt-6 bg-white rounded"
-                onClick={() => this.setState({ showMenu: false })}
-              >
+              <div className="relative m-4 pt-6 bg-white rounded" onClick={() => this.setState({ showMenu: false })}>
                 <div className="px-6">
                   <div className="absolute pin-t pin-r p-4 flex items-center">
                     <FontAwesomeIcon
@@ -198,21 +188,14 @@ class Mobile extends React.Component {
                               >
                                 {product.icon && (
                                   <FontAwesomeIcon
-                                    className={cn(
-                                      product.titleColor && `text-${product.titleColor}`
-                                    )}
+                                    className={cn(product.titleColor && `text-${product.titleColor}`)}
                                     icon={product.icon}
                                     // size="sm"
                                   />
                                 )}
 
                                 <div className="flex-1 ml-3">
-                                  <div
-                                    className={cn(
-                                      'font-bold',
-                                      product.titleColor && `text-${product.titleColor}`
-                                    )}
-                                  >
+                                  <div className={cn('font-bold', product.titleColor && `text-${product.titleColor}`)}>
                                     {product.title}
                                   </div>
                                 </div>
@@ -227,9 +210,7 @@ class Mobile extends React.Component {
                     {extras &&
                       extras.map((item, index) => {
                         if (item.links) {
-                          return item.links.map((item, index) => (
-                            <MobileLink key={index} {...item} />
-                          ));
+                          return item.links.map((item, index) => <MobileLink key={index} {...item} />);
                         }
 
                         return <MobileLink key={index} {...item} />;
@@ -246,8 +227,10 @@ class Mobile extends React.Component {
   }
 }
 
-const Header = ({ header, meta }) => {
-  if (!header) return null;
+export function Header({ header, meta }) {
+  if (!header) {
+    return null;
+  }
 
   const elems = [
     <header key="header" className="absolute z-10 pin-t pin-l pin-r">
@@ -274,6 +257,6 @@ const Header = ({ header, meta }) => {
   }
 
   return elems;
-};
+}
 
 export default withSiteData(withRouteData(Header));

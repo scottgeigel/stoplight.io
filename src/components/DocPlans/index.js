@@ -39,15 +39,11 @@ const DocPlans = ({ title, description, features, plans, buttonUrl, buttonText }
                   <tr key={index}>
                     <td>{feature.title}</td>
 
-                    {plans.map((plan, index) => {
+                    {plans.map((plan, planIndex) => {
                       return (
-                        <td key={index}>
+                        <td key={planIndex}>
                           {feature.plans.includes(plan.title) && (
-                            <FontAwesomeIcon
-                              className="text-green"
-                              icon={['fas', 'check-circle']}
-                              size="lg"
-                            />
+                            <FontAwesomeIcon className="text-green" icon={['fas', 'check-circle']} size="lg" />
                           )}
                         </td>
                       );

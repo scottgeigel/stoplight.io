@@ -3,12 +3,12 @@ import { withRouteData } from 'react-static';
 
 import Hero from '@components/Hero';
 import ImageSection from '@components/ImageSection';
-import Section from '@components/Section';
+import { Section } from '@components/Section';
 import CallToAction from '@components/CallToAction';
 import ActionBar from '@components/ActionBar';
 import Testimonial from '@components/Testimonial';
 
-class HomePage extends React.Component {
+export class Home extends React.Component {
   render() {
     const { color, hero, product, customers = [], testimonials = [], actionBar = {} } = this.props;
 
@@ -72,4 +72,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default withRouteData(HomePage);
+export default withRouteData(Home);

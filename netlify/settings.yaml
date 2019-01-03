@@ -166,6 +166,7 @@ meta:
     title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
+  robots: 'index, follow'
 integrations:
   googleTagManager: GTM-58LWL5P
   hubspot: 4892910

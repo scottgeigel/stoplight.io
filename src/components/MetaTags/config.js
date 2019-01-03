@@ -31,6 +31,12 @@ export default {
       widget: 'image',
     },
     {
+      label: 'Robots',
+      name: 'robots',
+      widget: 'string',
+      default: 'index, follow',
+    },
+    {
       label: 'Twitter',
       name: 'twitter',
       widget: 'object',
