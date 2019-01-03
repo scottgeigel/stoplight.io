@@ -27,6 +27,17 @@ export default {
       widget: 'string',
     },
     {
+      name: 'customers',
+      label: 'Customers',
+      widget: 'list',
+      required: false,
+      field: {
+        name: 'image',
+        label: 'Image',
+        widget: 'image',
+      },
+    },
+    {
       label: 'Title',
       name: 'title',
       widget: 'string',
