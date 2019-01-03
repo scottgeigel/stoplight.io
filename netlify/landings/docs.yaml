@@ -8,6 +8,7 @@ hero:
   title: Hosted API Documentation
 color: green
 title: OpenAPI Documentation
+heading: OpenAPI Documentation
 description: >-
   Create API documentation in minutes. Combine your OpenAPI documents (formerly
   known as Swagger) with markdown to create robust, internal and external API

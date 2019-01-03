@@ -4,6 +4,7 @@ hero:
   title: OpenAPI Powered Mock Servers
 color: grey-darkest
 title: OpenAPI Mocking
+heading: OpenAPI Mocking
 description: >-
   Mocking your API with Stoplight is your API design’s perfect companion.
   Powered by Prism, the instant mock server routes incoming requests to example

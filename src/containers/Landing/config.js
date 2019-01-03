@@ -20,6 +20,12 @@ export default {
       name: 'path',
       widget: 'string',
     },
+    {
+      label: 'Title',
+      name: 'title',
+      widget: 'string',
+      hint: 'Only used for Admin reference',
+    },
     hero,
     {
       label: 'Color',
@@ -38,16 +44,18 @@ export default {
       },
     },
     {
-      label: 'Title',
-      name: 'title',
+      label: 'Heading',
+      name: 'heading',
       widget: 'string',
       required: false,
+      hint: 'The title above the main content',
     },
     {
-      label: 'description',
-      name: 'Description',
+      label: 'Description',
+      name: 'description',
       widget: 'markdown',
       required: false,
+      hint: 'The main content of the page',
     },
     cta,
     {
@@ -56,6 +64,7 @@ export default {
       widget: 'list',
       required: false,
       fields: productFeature.fields,
+      hint: 'A list of features with text on one side and image on the other',
     },
     actionBar,
     hubspot,

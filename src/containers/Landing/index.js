@@ -13,7 +13,7 @@ import { slugify } from '@utils/text';
 export function Landing({
   color,
   hero,
-  title,
+  heading,
   description,
   cta,
   customers = [],
@@ -63,12 +63,12 @@ export function Landing({
     );
   }
 
-  if (title || (features && features.length) || actionBar) {
+  if (heading || (features && features.length) || actionBar) {
     elems.push(
       <Section key="product" id="product" bgClassName={elems.length % 2 ? 'bg-grey-lightest' : undefined}>
-        {title && (
+        {heading && (
           <div className="container border-b pb-32">
-            <h2 className="text-center mb-12 text-3xl">{title}</h2>
+            <h2 className="text-center mb-12 text-3xl">{heading}</h2>
 
             {description && (
               <div
