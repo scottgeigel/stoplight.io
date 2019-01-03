@@ -25,7 +25,7 @@
     "@fortawesome/free-solid-svg-icons": "5.5.x",
     "@fortawesome/react-fontawesome": "0.1.x",
     "classnames": "2.2.x",
-    "netlify-cms": "2.2.0",
+    "netlify-cms": "2.3.x",
     "netlify-cms-widget-fontawesome": "3.1.0",
     "netlify-identity-widget": "1.4.14",
     "react": "16.5.x",
