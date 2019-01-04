@@ -40,6 +40,8 @@ features:
     shortName: Coverage Reporting
     title: Coverage Reporting
 hubspot:
+  title: Request a demo
+  description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
 customers:
