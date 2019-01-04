@@ -383,5 +383,17 @@ export default {
 
   webpack,
 
+  onBuild: () => {
+    // Don't allow crawlling of any pages
+    let robots = 'User-agent: *\nDisallow: /';
+
+    if (IS_PRODUCTION) {
+      // Don't allow crawlling of /lp pages
+      robots = 'User-agent: *\nDisallow: /lp';
+    }
+
+    fs.writeFileSync(`${process.cwd()}/dist/robots.txt`, robots);
+  },
+
   // bundleAnalyzer: true,
 };
