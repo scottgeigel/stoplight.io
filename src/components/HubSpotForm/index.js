@@ -66,7 +66,7 @@ export class HubSpotForm extends React.Component {
     const { isLoaded } = this.state;
 
     return (
-      <div className="md:overflow-hidden">
+      <div className="w-full">
         <h2 className="text-3xl text-center">{title}</h2>
         <div className="flex justify-center flex-wrap items-center pb-12 md:pb-12">
           <div
@@ -77,7 +77,7 @@ export class HubSpotForm extends React.Component {
 
         <div
           id="hubspot-form"
-          className={cn('bg-white shadow rounded p-16 md:p-4 mx-auto', className)}
+          className={cn('bg-white shadow rounded p-16 md:p-4 mx-auto md:overflow-hidden', className)}
           style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600 }}
         />
       </div>
