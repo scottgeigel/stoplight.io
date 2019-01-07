@@ -1,5 +1,5 @@
 import React from 'react';
-import { withSiteData, withRouteData } from 'react-static';
+import { withSiteData } from 'react-static';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Link from '@components/Link';
@@ -17,7 +17,7 @@ export function Footer({ footer }) {
     return null;
   }
 
-  const { columns, social } = footer || {};
+  const { columns, social, legal } = footer || {};
 
   return [
     <footer key="footer" className="bg-black py-12 border-t-4 border-lighten-300">
@@ -29,7 +29,7 @@ export function Footer({ footer }) {
         </div>
 
         {columns && (
-          <div className="flex flex-wrap justify-between py-8 w-1/2 sm:w-full">
+          <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
             {columns.map((column, index) => {
               return (
                 <div key={index}>
@@ -60,23 +60,54 @@ export function Footer({ footer }) {
           </div>
         )}
 
-        <div className="flex pt-8">
+        <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
           <Link className="block text-grey pr-4" to="/">
             &copy; {new Date().getFullYear()} Stoplight
           </Link>
 
-          {social &&
-            social.map((account, index) => {
-              return (
-                <Link key={index} to={account.href} className="mx-4 text-grey hover:text-grey-lighter">
-                  <FontAwesomeIcon icon={account.icon} size="lg" />
-                </Link>
-              );
-            })}
+          {legal && (
+            <div className="flex-1 text-center">
+              {legal.map((link, index) => {
+                const elems = [
+                  <Link key={index} to={link.href} className="text-grey hover:text-grey-lighter">
+                    {link.title}
+                  </Link>,
+                ];
+
+                if (index > 0) {
+                  elems.unshift(
+                    <span key={`${index}-sep`} className="mx-2">
+                      |
+                    </span>
+                  );
+                }
+
+                return elems;
+              })}
+            </div>
+          )}
+
+          {social && (
+            <div>
+              {social.map((link, index) => {
+                const elems = [
+                  <Link key={index} to={link.href} className="text-grey hover:text-grey-lighter">
+                    <FontAwesomeIcon icon={link.icon} size="lg" />
+                  </Link>,
+                ];
+
+                if (index > 0) {
+                  elems.unshift(<span key={`${index}-sep`} className="mx-3" />);
+                }
+
+                return elems;
+              })}
+            </div>
+          )}
         </div>
       </nav>
     </footer>,
   ];
 }
 
-export default withSiteData(withRouteData(Footer));
+export default withSiteData(Footer);
