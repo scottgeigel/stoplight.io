@@ -1,17 +1,26 @@
 ---
 path: /bodev
 hero:
+  bgColor: blue
+  pageName: Customer Story
+  aligned: left
   skew: 3deg
   subtitle: >-
     Bo Development Offices provides enterprise solutions for the automotive,
     telecom, media industries in the private and public sector.
   title: Bo Development
 info:
-  employees: Startup
-  industry: IT Consulting
-  location: Turkey
-  logo: /images/bodev_logo.png
   name: Bo Development
+  logo: /images/bodev_logo.png
+  items:
+    - name: Industry
+      value: IT Consulting
+
+    - name: Location
+      value: Turkey
+
+    - name: Employees
+      value: Startup
 quotes:
   - author: Can Berkol
     quote: >-

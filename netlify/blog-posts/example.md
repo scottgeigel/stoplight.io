@@ -1,8 +1,8 @@
 ---
-path: /pepipost
+path: /pepipost1
 hero:
   bgColor: blue
-  pageName: Customer Story
+  pageName: Blog Post
   aligned: left
   skew: 3deg
   subtitle: >-
@@ -10,7 +10,7 @@ hero:
     APIs for developers.
   title: Pepipost
 info:
-  name: Pepipost
+  name: Pepipost1
   logo: /images/pepipost_logo.png
   items:
     - name: Industry
@@ -21,7 +21,6 @@ info:
 
     - name: Employees
       value: 11-50
-
 quotes:
   - author: Dibya Sahoo
     quote: >-

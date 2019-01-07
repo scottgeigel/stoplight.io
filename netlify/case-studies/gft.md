@@ -3,17 +3,24 @@ path: /gft
 hero:
   bgColor: blue
   pageName: Customer Story
+  aligned: left
   skew: 3deg
   subtitle: >-
     GFT Technology is a leading IT solutions supplier with a focus on the
     financial sector.
   title: GFT Technology
 info:
-  employees: 5000-10000
-  industry: 'Big Data, IT, & Financial Services'
-  location: Germany
-  logo: /images/gft_group_logo.jpg
   name: GFT Technology
+  logo: /images/gft_group_logo.jpg
+  items:
+    - name: Industry
+      value: Big Data, IT, & Financial Services
+
+    - name: Location
+      value: Germany
+
+    - name: Employees
+      value: 5000-10000
 quotes:
   - author: Carlos Lozano
     quote: >-

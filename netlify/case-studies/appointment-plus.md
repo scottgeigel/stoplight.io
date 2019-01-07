@@ -3,17 +3,24 @@ path: /appointmentplus
 hero:
   bgColor: blue
   pageName: Customer Story
+  aligned: left
   skew: 3deg
   subtitle: >-
     AppointmentPlus provides a scheduling platform that streamlines and
     automates the scheduling process.
   title: AppointmentPlus
 info:
-  employees: 50-100
-  industry: Scheduling Software
-  location: Arizona
-  logo: /images/logo_appointmentplus_transparent.png
   name: AppointmentPlus
+  logo: /images/logo_appointmentplus_transparent.png
+  items:
+    - name: Industry
+      value: Scheduling Software
+
+    - name: Location
+      value: Arizona
+
+    - name: Employees
+      value: 50-100
 quotes:
   - author: Josh Flyer
     quote: >-

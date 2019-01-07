@@ -3,17 +3,25 @@ path: /hudya
 hero:
   bgColor: blue
   pageName: Customer Story
+  aligned: left
   skew: 3deg
   subtitle: >-
     Hudya is a digital platform that is redefining and simplifying how
     traditional utilities and services can be purchased and managed.
   title: Hudya
 info:
-  employees: Startup
-  industry: FinTech & InsurTech
-  location: Norway
-  logo: /images/logo_hudya.png
   name: Hudya
+  logo: /images/logo_hudya.png
+  items:
+    - name: Industry
+      value: FinTech & InsurTech
+
+    - name: Location
+      value: Norway
+
+    - name: Employees
+      value: Startup
+
 quotes:
   - author: Evin Callahan
     quote: >-

@@ -175,7 +175,7 @@ export default {
         component: 'src/containers/CaseStudies',
         getData: () => ({
           ...caseStudyConfig,
-          caseStudies: caseStudies
+          listItems: caseStudies
             .map(caseStudy => {
               if (!caseStudy.path) return;
 
@@ -245,7 +245,7 @@ export default {
             currentPage: 1,
             totalPages: Math.ceil(postData.length / pageSize),
           },
-          blogPosts: postData.slice(0, pageSize),
+          listItems: postData.slice(0, pageSize),
         }),
         // the actual blog posts
         children: postRoutes,
@@ -266,7 +266,7 @@ export default {
               getData: () => ({
                 ...blogConfig,
                 // blogPosts for this page
-                blogPosts: postData.slice(
+                listItems: postData.slice(
                   (currentPage - 1) * pageSize,
                   (currentPage - 1) * pageSize + pageSize
                 ),
