@@ -389,7 +389,7 @@ export default {
 
     if (IS_PRODUCTION) {
       // Don't allow crawlling of /lp pages
-      robots = 'User-agent: *\nDisallow: /lp';
+      robots = `User-agent: *\nDisallow: /lp\nSitemap: ${siteRoot}/sitemap.xml`;
     }
 
     fs.writeFileSync(`${process.cwd()}/dist/robots.txt`, robots);
