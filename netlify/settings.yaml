@@ -151,6 +151,13 @@ footer:
       icon:
         - fab
         - github
+  legal:
+    - href: '/privacy'
+      title: Privacy
+    - href: '/terms'
+      title: Terms of Use
+    - href: '/policy'
+      title: Policy
 meta:
   description: >-
     Stoplight, providing engineering teams with the best way to document, test,
