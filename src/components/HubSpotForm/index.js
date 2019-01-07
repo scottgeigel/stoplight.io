@@ -1,6 +1,16 @@
 import React from 'react';
 import cn from 'classnames';
 
+function handleHubspotFormCallback(e) {
+  if (e.data.type === 'hsFormCallback' && e.data.eventName === 'onFormSubmit') {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'Hubspot Demo Form',
+      formId: e.data.id,
+    });
+  }
+}
+
 export class HubSpotForm extends React.Component {
   constructor(props) {
     super(props);
@@ -16,6 +26,12 @@ export class HubSpotForm extends React.Component {
     } else {
       this.loadScript();
     }
+
+    window.addEventListener('message', handleHubspotFormCallback);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('message', handleHubspotFormCallback);
   }
 
   createForm = () => {
