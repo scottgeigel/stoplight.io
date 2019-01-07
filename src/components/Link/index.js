@@ -30,10 +30,12 @@ const getUTMParams = () => {
 };
 
 // Make sure there aren't any trailing white spaces
-export default ({ to, children, ...props }) => {
+export default ({ to, children, disabled, ...props }) => {
   let href = to;
 
-  if (typeof href === 'string') {
+  if (disabled) {
+    return <a {...props}>{children}</a>;
+  } else if (typeof href === 'string') {
     href = href.trim();
 
     if (href.startsWith('#')) {

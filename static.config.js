@@ -5,7 +5,7 @@ import klaw from 'klaw';
 import yaml from 'js-yaml';
 import chokidar from 'chokidar';
 import frontmatter from 'front-matter';
-import { reloadRoutes } from 'react-static/node';
+import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
 import { Renderer as MarkdownRenderer } from './src/utils/markdown';
 
@@ -129,20 +129,24 @@ export default {
       pricing,
       about,
       caseStudyConfig,
+      blogConfig,
 
       products = [],
       hubspotForms = [],
       caseStudies = [],
+      blogPosts = [],
       subpages = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
       getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
       getFile(`${NETLIFY_PATH}/pages/about.yaml`),
       getFile(`${NETLIFY_PATH}/pages/case-studies.yaml`),
+      getFile(`${NETLIFY_PATH}/pages/blog.yaml`),
 
       getFiles(`${NETLIFY_PATH}/products`),
       getFiles(`${NETLIFY_PATH}/hubspot`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
@@ -204,6 +208,79 @@ export default {
           .filter(Boolean),
       },
     ];
+
+    if (blogConfig.path) {
+      let postData = [];
+      let postRoutes = [];
+
+      blogPosts.forEach(post => {
+        if (!post.path) return;
+
+        const { hero = {}, info = {} } = post;
+
+        postData.push({
+          title: info.name,
+          description: hero.subtitle,
+          logo: info.logo,
+          href: blogConfig.path + post.path,
+        });
+
+        postRoutes.push({
+          path: post.path,
+          component: 'src/containers/BlogPost',
+          getData: () => post,
+        });
+      });
+
+      const pageSize = blogConfig.pagination ? blogConfig.pagination.perPage : 10;
+
+      // path: /blog should be equivalent to page 1
+      routes.push({
+        path: blogConfig.path,
+        component: 'src/containers/Blog',
+        getData: () => ({
+          ...blogConfig,
+          pagination: {
+            ...blogConfig.pagination,
+            currentPage: 1,
+            totalPages: Math.ceil(postData.length / pageSize),
+          },
+          blogPosts: postData.slice(0, pageSize),
+        }),
+        // the actual blog posts
+        children: postRoutes,
+      });
+
+      // add pagination pages
+      if (postData.length) {
+        routes.push(
+          ...makePageRoutes({
+            items: postData,
+            pageSize,
+            pageToken: 'page', // use page for the prefix, eg. blog/page/3
+            route: {
+              path: '/blog',
+              component: 'src/containers/Blog',
+            },
+            decorate: (posts, currentPage, totalPages) => ({
+              getData: () => ({
+                ...blogConfig,
+                // blogPosts for this page
+                blogPosts: postData.slice(
+                  (currentPage - 1) * pageSize,
+                  (currentPage - 1) * pageSize + pageSize
+                ),
+                pagination: {
+                  ...blogConfig.pagination,
+                  currentPage,
+                  totalPages,
+                },
+              }),
+            }),
+          })
+        );
+      }
+    }
 
     if (hubspotForms.length) {
       hubspotForms.forEach(form => {
