@@ -1,4 +1,5 @@
 path: /design
+title: OpenAPI Designer
 hero:
   image: /images/design_header.png
   subtitle: >-
@@ -6,7 +7,7 @@ hero:
     allows you to prototype and share your API within minutes
   title: Visual OpenAPI Designer
 color: blue
-title: OpenAPI Designer
+heading: OpenAPI Designer
 description: >-
   Start designing your API in minutes. Use the OpenAPI Specification (formerly
   known as Swagger) with Stoplight’s visual editor to [design consistent and

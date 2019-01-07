@@ -3,13 +3,10 @@ import cn from 'classnames';
 
 import Link from '@components/Link';
 
-const CallToAction = ({
-  name,
-  color = 'purple',
-  className,
-  href = 'https://next.stoplight.io',
-}) => {
-  if (!name) return null;
+const CallToAction = ({ name, color = 'purple', className, href = 'https://next.stoplight.io' }) => {
+  if (!name) {
+    return null;
+  }
 
   const cta = (
     <div

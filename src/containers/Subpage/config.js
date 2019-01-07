@@ -74,6 +74,7 @@ export default {
           name: 'quote',
           label: 'Quote',
           widget: 'string',
+          required: false,
         },
         {
           name: 'author',

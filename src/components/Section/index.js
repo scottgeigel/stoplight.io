@@ -1,9 +1,10 @@
 import React from 'react';
 import cn from 'classnames';
 
-const Section = ({ children, rootClassName, paddingClassName, bgClassName }) => {
+export function Section({ id, children, rootClassName, paddingClassName, bgClassName }) {
   return (
     <section
+      id={id}
       className={cn(rootClassName, 'relative md:px-0', {
         'py-40 md:py-24': !paddingClassName,
         [paddingClassName]: paddingClassName,
@@ -16,6 +17,4 @@ const Section = ({ children, rootClassName, paddingClassName, bgClassName }) => 
       {children}
     </section>
   );
-};
-
-export default Section;
+}

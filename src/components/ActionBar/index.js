@@ -4,8 +4,10 @@ import { SiteData } from 'react-static';
 
 import Button from '@components/Button';
 
-const ActionBar = ({ enabled, text, buttons, className }) => {
-  if (!enabled) return null;
+export function ActionBar({ enabled, text, buttons, className }) {
+  if (!enabled) {
+    return null;
+  }
 
   return (
     <div className="container">
@@ -27,7 +29,7 @@ const ActionBar = ({ enabled, text, buttons, className }) => {
       </div>
     </div>
   );
-};
+}
 
 export default props => {
   return (

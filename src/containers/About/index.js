@@ -5,7 +5,7 @@ import { withRouteData } from 'react-static';
 import CallToAction from '@components/CallToAction';
 import ActionBar from '@components/ActionBar';
 import Hero from '@components/Hero';
-import Section from '@components/Section';
+import { Section } from '@components/Section';
 
 import '@styles/about.scss';
 
@@ -28,7 +28,13 @@ const Quote = ({ image, company, quote, author, role }) => {
 const Member = ({ image, name, role, link, isLast }) => {
   return (
     <div className={cn('mb-48 -mt-24 px-10 sm:px-0 sm:w-48', { 'sm:mb-24': isLast })}>
-      <a href={link ? link.href : undefined} className={cn("block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 h-64 w-64 sm:w-full rounded-lg", { 'cursor-pointer': link })} target="_blank">
+      <a
+        href={link ? link.href : undefined}
+        className={cn('block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 h-64 w-64 sm:w-full rounded-lg', {
+          'cursor-pointer': link,
+        })}
+        target="_blank"
+      >
         <div
           className="-mt-20 mx-auto rounded-full bg-cover shadow-sm border-grey border h-32 w-32 mb-10"
           style={{
@@ -41,11 +47,7 @@ const Member = ({ image, name, role, link, isLast }) => {
 
         {role && <div className="pt-2 text-black">{role}</div>}
 
-        {link && (
-          <div className="pt-2">
-            {link.title}
-          </div>
-        )}
+        {link && <div className="pt-2">{link.title}</div>}
       </a>
     </div>
   );
@@ -68,17 +70,9 @@ const Press = ({ image, date, description, publication, href }) => {
   );
 };
 
-class About extends React.Component {
+export class About extends React.Component {
   render() {
-    const {
-      color,
-      hero,
-      quotes = [],
-      team = [],
-      actionBar = {},
-      press = [],
-      investors = [],
-    } = this.props;
+    const { color, hero, quotes = [], team = [], actionBar = {}, press = [], investors = [] } = this.props;
 
     return (
       <div>
@@ -131,9 +125,7 @@ class About extends React.Component {
         {quotes.length ? (
           <Section key="businesses" bgClassName="bg-grey-lightest">
             <div className="container">
-              <h2 className="text-center mb-20 text-3xl md:mb-14">
-                Businesses Are Loving Stoplight
-              </h2>
+              <h2 className="text-center mb-20 text-3xl md:mb-14">Businesses Are Loving Stoplight</h2>
 
               <div className="flex justify-center flex-wrap -mb-12">
                 {quotes.map((quote, key) => {

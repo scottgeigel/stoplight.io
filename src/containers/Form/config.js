@@ -1,6 +1,7 @@
 import hero from '@components/Hero/config';
 import actionBar from '@components/ActionBar/config';
 import metaTags from '@components/MetaTags/config';
+import hubspot from '@components/HubSpotForm/config';
 
 export default {
   label: 'HubSpot Forms',
@@ -17,23 +18,7 @@ export default {
       widget: 'string',
     },
     hero,
-    {
-      name: 'hubspot',
-      label: 'HubSpot',
-      widget: 'object',
-      fields: [
-        {
-          name: 'formId',
-          label: 'Form ID',
-          widget: 'string',
-        },
-        {
-          name: 'portalId',
-          label: 'HubSpot ID',
-          widget: 'string',
-        },
-      ],
-    },
+    hubspot,
     {
       name: 'customers',
       label: 'Customers',

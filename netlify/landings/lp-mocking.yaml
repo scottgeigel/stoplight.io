@@ -1,22 +1,17 @@
-path: /mocking
+path: /lp/mocking/
+title: OpenAPI Powered Mock Servers Landing Page
 hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
   title: OpenAPI Powered Mock Servers
+  short: true
+  cta:
+    href: '#demo'
+    name: Get a free demo
 color: grey-darkest
-title: OpenAPI Mocking
-description: >-
-  Mocking your API with Stoplight is your API design’s perfect companion.
-  Powered by Prism, the instant mock server routes incoming requests to example
-  responses or dynamically generates examples on the fly based on your OpenAPI
-  Specification (formerly known as Swagger).
-cta:
-  href: ''
-  name: ''
 features:
   - image: /images/mocking_instant.png
     shortName: Instant Mocking
     title: Instant Mock Server
-    titleURL: /mocking/server
     description: >-
       Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
       have created or imported your OpenAPI Specification, you have access to an
@@ -49,13 +44,22 @@ features:
       problem. Mocking can extend your OpenAPI Specification with scripts before
       or after traffic reaches your mock server. Write scripts for more complex
       mocking behavior, custom validations, and much more.
-actionBar:
-  buttons:
-    - href: 'https://next.stoplight.io/'
-      title: Get Started
-  enabled: true
-  text: 'Want to mock your API? '
+hubspot:
+  title: Request a demo
+  description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
+  formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
+  portalId: '4892910'
+customers:
+  - /images/ea.png
+  - /images/chargify-new-logo.png
+  - /images/deutsche_bank.png
+  - /images/logo-sendgrid.png
+  - /images/shopgate.png
+  - /images/spotify.png
+  - /images/tivo.png
+  - /images/logo_zendesk.png
 meta:
+  robots: 'noindex, follow'
   favicon: /images/mark_light_bg.png
   title: REST API mocking service and server by Prism | Stoplight
   description: >-

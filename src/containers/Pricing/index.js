@@ -5,17 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import DocPlans from '@components/DocPlans';
 import Hero from '@components/Hero';
-import Section from '@components/Section';
+import { Section } from '@components/Section';
 import Button from '@components/Button';
 
 const PlanFeature = ({ color, name }) => {
   return (
     <div className="flex items-center py-2">
-      <FontAwesomeIcon
-        key="1"
-        icon={['fas', 'check-circle']}
-        className={`mr-3 text-lg text-${color}`}
-      />{' '}
+      <FontAwesomeIcon key="1" icon={['fas', 'check-circle']} className={`mr-3 text-lg text-${color}`} />{' '}
       <div>{name}</div>
     </div>
   );
@@ -28,9 +24,7 @@ const Plan = props => {
     <div className="flex-1 mx-6 md:my-6 md:flex-auto md:w-full">
       <div className="bg-white p-10 shadow-lg rounded">
         <div className="mb-10 bg-grey-lightest px-8 py-8 -mt-10 -mx-10">
-          <div className={`font-bold pb-3 uppercase text-${titleColor || 'grey-darkest'}`}>
-            {title}
-          </div>
+          <div className={`font-bold pb-3 uppercase text-${titleColor || 'grey-darkest'}`}>{title}</div>
           <div className="leading-loose" dangerouslySetInnerHTML={{ __html: description }} />
         </div>
 
@@ -55,13 +49,11 @@ const Plan = props => {
   );
 };
 
-const PricingPage = ({ color, hero, plans = [], docPlans }) => {
+export const Pricing = ({ color, hero, plans = [], docPlans }) => {
   const elems = [];
 
   if (hero) {
-    elems.push(
-      <Hero key="hero" bgColor={color} {...hero} skew="7deg" containerClassName="pb-64" />
-    );
+    elems.push(<Hero key="hero" bgColor={color} {...hero} skew="7deg" containerClassName="pb-64" />);
   }
 
   if (plans.length) {
@@ -87,4 +79,4 @@ const PricingPage = ({ color, hero, plans = [], docPlans }) => {
   return elems;
 };
 
-export default withRouteData(PricingPage);
+export default withRouteData(Pricing);

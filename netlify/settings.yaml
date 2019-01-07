@@ -151,6 +151,13 @@ footer:
       icon:
         - fab
         - github
+  legal:
+    - href: '/privacy'
+      title: Privacy
+    - href: '/terms'
+      title: Terms of Use
+    - href: '/policy'
+      title: Policy
 meta:
   description: >-
     Stoplight, providing engineering teams with the best way to document, test,
@@ -166,6 +173,7 @@ meta:
     title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
+  robots: 'index, follow'
 integrations:
   googleTagManager: GTM-58LWL5P
   hubspot: 4892910

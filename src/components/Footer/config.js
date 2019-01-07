@@ -7,6 +7,7 @@ export default {
       name: 'columns',
       label: 'Columns',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'title',
@@ -42,9 +43,28 @@ export default {
       ],
     },
     {
+      name: 'legal',
+      label: 'Legal links',
+      widget: 'list',
+      required: false,
+      fields: [
+        {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+        },
+        {
+          name: 'href',
+          label: 'Link',
+          widget: 'string',
+        },
+      ],
+    },
+    {
       name: 'social',
       label: 'Social Media',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'title',

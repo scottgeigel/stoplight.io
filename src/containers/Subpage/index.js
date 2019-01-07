@@ -52,14 +52,16 @@ const Quote = ({ quote, author, role }) => {
 };
 
 const Quotes = ({ quotes }) => {
-  if (!quotes || !quotes.length) return null;
+  if (!quotes || !quotes.length) {
+    return null;
+  }
 
   return quotes.map((quote, index) => {
     return <Quote key={index} {...quote} />;
   });
 };
 
-class Subpage extends React.Component {
+export class Subpage extends React.Component {
   render() {
     const { hero, body, info, quotes, actionBar } = this.props;
 

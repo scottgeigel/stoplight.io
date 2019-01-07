@@ -8,6 +8,7 @@ hero:
   title: OpenAPI Testing
 color: orange
 title: OpenAPI Testing
+heading: OpenAPI Testing
 description: >-
   Increase the test coverage of your web APIs so they break less for your
   consumers online. Create a full collection of tests with Stoplight Testing.
