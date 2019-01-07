@@ -14,4 +14,7 @@ https://stoplightio.netlify.com/* https://stoplight.io/:splat 301!
 /platform/design /design
 /platform/docs /documentation
 /platform/scenarios /testing
+/api-designer /design
+
+# Redirect images
 /assets/img/* /images/:splat
