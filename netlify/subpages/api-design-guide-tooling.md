@@ -19,7 +19,7 @@ hero:
 info:
   links:
     - href: >-
-        https://develop--stoplightio.netlify.com/api-design-guide/basics#generate-api-documentation
+        https://develop--stoplightio.netlify.com/api-design-guide/tooling#generate-api-documentation
       title: 'Generate API Documentation '
     - title: Create Mock Servers
     - title: Automatically Test your APIs
