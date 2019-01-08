@@ -12,7 +12,6 @@ hero:
       title: API Design Tooling
     - href: 'https://stoplight.io/api-design-guide/oas-spec/'
       title: Understanding the OpenAPI Spec
-    - title: Glossary
   cta:
     color: purple
     href: 'https://next.stoplight.io'
@@ -27,8 +26,7 @@ info:
         https://stoplight.io/api-design-guide/oas-spec#should-definitions-use-json-or-yaml?
       title: JSON vs YAML
   title: 'Sections '
-quotes:
-  - {}
+quotes: []
 actionBar:
   buttons:
     - color: purple
