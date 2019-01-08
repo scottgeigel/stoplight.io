@@ -2,7 +2,7 @@
 path: /api-design-guide/basics
 hero:
   aligned: center
-  bgColor: black
+  bgColor: blue
   cards:
     - icon: {}
       title: API Design Basics
