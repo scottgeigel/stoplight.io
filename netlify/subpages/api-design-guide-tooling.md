@@ -4,11 +4,13 @@ hero:
   aligned: center
   bgColor: green
   cards:
-    - icon: {}
+    - href: 'https://stoplight.io/api-design-guide/basics/'
+      icon: {}
       title: API Design Basics
-    - title: API Design Tooling
-    - title: Understanding the Open API Spec
-    - title: Glossary
+    - href: 'https://stoplight.io/api-design-guide/tooling/'
+      title: API Design Tooling
+    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+      title: Understanding the Open API Spec
   cta:
     color: purple
     href: 'https://next.stoplight.io'
@@ -16,7 +18,9 @@ hero:
   title: API Design Guide
 info:
   links:
-    - title: 'Generate API Documentation '
+    - href: >-
+        https://develop--stoplightio.netlify.com/api-design-guide/basics#generate-api-documentation
+      title: 'Generate API Documentation '
     - title: Create Mock Servers
     - title: Automatically Test your APIs
     - title: Use Linting to Spot Errors
