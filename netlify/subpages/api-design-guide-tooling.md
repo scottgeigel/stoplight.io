@@ -25,8 +25,7 @@ info:
     - title: Automatically Test your APIs
     - title: Use Linting to Spot Errors
   title: Sections
-quotes:
-  - {}
+quotes: []
 actionBar:
   buttons:
     - color: purple
