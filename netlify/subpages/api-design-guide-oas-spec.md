@@ -4,10 +4,14 @@ hero:
   aligned: center
   bgColor: orange
   cards:
-    - icon: {}
+    - bgColor: ''
+      href: 'https://stoplight.io/api-design-guide/basics/'
+      icon: {}
       title: API Design Basics
-    - title: API Design Tooling
-    - title: Understanding the OpenAPI Spec
+    - href: 'https://stoplight.io/api-design-guide/tooling/'
+      title: API Design Tooling
+    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+      title: Understanding the OpenAPI Spec
     - title: Glossary
   cta:
     color: purple
@@ -16,8 +20,12 @@ hero:
   title: API Design Guide
 info:
   links:
-    - href: OAS 2 vs OAS 3
-    - title: JSON vs YAML
+    - href: >-
+        https://stoplight.io/api-design-guide/oas-spec#openapi-versions:-oas-2-vs-oas-3
+      title: OAS 2 vs OAS 3
+    - href: >-
+        https://stoplight.io/api-design-guide/oas-spec#should-definitions-use-json-or-yaml?
+      title: JSON vs YAML
   title: 'Sections '
 quotes:
   - {}
