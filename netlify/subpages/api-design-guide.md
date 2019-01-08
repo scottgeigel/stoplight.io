@@ -4,11 +4,13 @@ hero:
   aligned: center
   bgColor: blue
   cards:
-    - icon: {}
+    - href: 'https://stoplight.io/api-design-guide/basics/'
+      icon: {}
       title: API Design Basics
-    - title: API Design Tooling
-    - title: Understanding the OpenAPI Spec
-    - title: Glossary
+    - href: 'https://stoplight.io/api-design-guide/tooling/'
+      title: API Design Tooling
+    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+      title: Understanding the OpenAPI Spec
   cta:
     color: purple
     href: 'https://next.stoplight.io'
@@ -22,8 +24,7 @@ info:
     - title: Why API Design-First Matters
     - title: 'API Design Best Practices '
   title: Sections
-quotes:
-  - {}
+quotes: []
 actionBar:
   buttons: []
   enabled: false
