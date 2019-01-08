@@ -30,10 +30,11 @@ actionBar:
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Design Guide
+  title: API Design Guide | Basics
   twitter:
     image: /images/mark_light_bg.png
-    title: API Design Guide
+    title: API Design Guide | Basics
+    username: '@stoplightio'
 ---
 ## What is API Design?
 API design is the collection of planning and architectural decisions you make when building an API. Your API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably.
