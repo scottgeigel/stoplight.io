@@ -52,7 +52,7 @@ features:
       collaborate on your API designs privately or publicly with Discussions.
       With one click export and programmatic access, you can use and share your
       specification document where ever you want.
-    titleURL: /design/enterprise
+    titleURL: ''
 actionBar:
   buttons:
     - href: 'https://next.stoplight.io/'
