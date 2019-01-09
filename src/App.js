@@ -8,7 +8,6 @@ import Footer from '@components/Footer';
 
 import '@styles/app.css';
 import '@styles/app.scss';
-import '@styles/static-page.scss';
 
 const AppContent = () => {
   return [<Header key="1" />, <Routes key="2" />, <Footer key="3" />];

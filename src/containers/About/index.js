@@ -7,8 +7,6 @@ import ActionBar from '@components/ActionBar';
 import Hero from '@components/Hero';
 import { Section } from '@components/Section';
 
-import '@styles/about.scss';
-
 const Quote = ({ image, company, quote, author, role }) => {
   return (
     <div className="py-8 px-4 shadow bg-white rounded-lg flex flex-col justify-between">

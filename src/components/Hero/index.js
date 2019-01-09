@@ -45,13 +45,10 @@ const HeroCard = ({ index, title, subtitle, href, bgColor, icon }) => {
 };
 
 const HeroFeature = ({ name, icon, href, color }) => {
-  const className = cn(
-    'flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md',
-    {
-      'hover:opacity-93 cursor-pointer': href,
-      'cursor-default': !href,
-    }
-  );
+  const className = cn('flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md', {
+    'hover:opacity-93 cursor-pointer': href,
+    'cursor-default': !href,
+  });
 
   const elems = [
     <FontAwesomeIcon
@@ -108,9 +105,7 @@ const Hero = ({
             'mr-auto w-2/3 md:w-full': aligned === 'left',
           })}
         >
-          {pageName && (
-            <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>
-          )}
+          {pageName && <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>}
 
           <h1>{title}</h1>
 
@@ -157,10 +152,7 @@ const Hero = ({
       </div>
 
       {particles && (
-        <div
-          className="absolute z-1 sm:hidden"
-          style={{ left: -100, top: -100, right: -100, bottom: -100 }}
-        >
+        <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>
           {Particles && (
             <Particles
               style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
