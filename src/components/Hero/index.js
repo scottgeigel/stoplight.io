@@ -44,24 +44,21 @@ const HeroCard = ({ index, title, subtitle, href, bgColor, icon }) => {
   );
 };
 
-const HeroFeature = ({ name, icon, href, color }) => {
-  const className = cn(
-    'flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md',
-    {
-      'hover:opacity-93 cursor-pointer': href,
-      'cursor-default': !href,
-    }
-  );
+const Button = ({ title, icon, href, color }) => {
+  const className = cn('flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md', {
+    'hover:opacity-93 cursor-pointer': href,
+    'cursor-default': !href,
+  });
 
   const elems = [
     <FontAwesomeIcon
       key="1"
-      icon={['fas', icon ? icon.name : 'check-circle']}
+      icon={['fas', icon ? icon : 'check-circle']}
       className={cn('mr-2 text-lg', `text-${color || 'green'}`)}
     />,
-    <h4 key="2" className="font-semibold">
-      {name}
-    </h4>,
+    <div key="2" className="font-semibold">
+      {title}
+    </div>,
   ];
 
   let elem;
@@ -86,7 +83,7 @@ const Hero = ({
   cta,
   bgColor = 'black',
   cards = [],
-  features = [],
+  buttons = [],
   particles,
   image,
   skew,
@@ -102,15 +99,13 @@ const Hero = ({
         )}
       >
         <div
-          className={cn(!cta && !features.length && !cards.length ? 'mb-48 md:mb-24' : 'mb-24', {
+          className={cn(!cta && !buttons.length && !cards.length ? 'mb-48 md:mb-24' : 'mb-24', {
             'mx-auto': !aligned || aligned === 'center',
             'ml-auto w-2/3 md:w-full': aligned === 'right',
             'mr-auto w-2/3 md:w-full': aligned === 'left',
           })}
         >
-          {pageName && (
-            <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>
-          )}
+          {pageName && <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>}
 
           <h1>{title}</h1>
 
@@ -139,10 +134,10 @@ const Hero = ({
           />
         )}
 
-        {features.length ? (
+        {!cards.length && buttons.length ? (
           <div className="flex flex-wrap mx-auto pb-24 md:pt-16">
-            {features.map((feature, i) => (
-              <HeroFeature key={i} color={bgColor} {...feature} />
+            {buttons.map((button, i) => (
+              <Button key={i} color={bgColor} {...button} />
             ))}
           </div>
         ) : null}
@@ -157,10 +152,7 @@ const Hero = ({
       </div>
 
       {particles && (
-        <div
-          className="absolute z-1 sm:hidden"
-          style={{ left: -100, top: -100, right: -100, bottom: -100 }}
-        >
+        <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>
           {Particles && (
             <Particles
               style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}

@@ -7,13 +7,7 @@ import sassLoader from './sassLoader';
 export default (config, { stage, defaultLoaders }) => {
   config.module.rules = [
     {
-      oneOf: [
-        tsLoader(stage),
-        defaultLoaders.jsLoader,
-        sassLoader(stage),
-        cssLoader(stage),
-        defaultLoaders.fileLoader,
-      ],
+      oneOf: [tsLoader(stage), defaultLoaders.jsLoader, sassLoader(stage), cssLoader(stage), defaultLoaders.fileLoader],
     },
   ];
 

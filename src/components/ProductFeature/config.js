@@ -16,11 +16,6 @@ export default {
       required: false,
     },
     {
-      name: 'shortName',
-      label: 'Short Name',
-      widget: 'string',
-    },
-    {
       name: 'image',
       label: 'Image',
       widget: 'image',

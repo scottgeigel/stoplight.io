@@ -33,7 +33,7 @@ const DocPlans = ({ title, description, features, plans, buttonUrl, buttonText }
 
           <tbody>
             {features &&
-              features.length &&
+              features.length > 0 &&
               features.map((feature, index) => {
                 return (
                   <tr key={index}>
