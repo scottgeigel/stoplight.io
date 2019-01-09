@@ -26,34 +26,30 @@ const CaseStudy = ({ title, description, logo, href }) => {
   );
 };
 
-export class CaseStudies extends React.Component {
-  render() {
-    const { color, hero = {}, actionBar = {}, caseStudies = [] } = this.props;
+export function CaseStudies({ color, hero = {}, actionBar = {}, caseStudies = [] }) {
+  return (
+    <div>
+      <Hero bgColor={color} {...hero} containerClassName="pb-24" />
 
-    return (
-      <div>
-        <Hero bgColor={color} {...hero} containerClassName="pb-24" />
-
-        {caseStudies.length ? (
-          <section className="relative z-5" style={{ marginTop: -125 }}>
-            <div className="container">
-              {caseStudies.map((caseStudy, index) => (
-                <div key={index} className="mb-12">
-                  <CaseStudy {...caseStudy} />
-                </div>
-              ))}
-            </div>
-
-            {actionBar && actionBar.enabled ? (
-              <div className="md:pb-24 pb-40 mt-32">
-                <ActionBar className="bg-white" {...actionBar} />
+      {caseStudies.length ? (
+        <section className="relative z-5" style={{ marginTop: -125 }}>
+          <div className="container">
+            {caseStudies.map((caseStudy, index) => (
+              <div key={index} className="mb-12">
+                <CaseStudy {...caseStudy} />
               </div>
-            ) : null}
-          </section>
-        ) : null}
-      </div>
-    );
-  }
+            ))}
+          </div>
+
+          {actionBar && actionBar.enabled ? (
+            <div className="md:pb-24 pb-40 mt-32">
+              <ActionBar className="bg-white" {...actionBar} />
+            </div>
+          ) : null}
+        </section>
+      ) : null}
+    </div>
+  );
 }
 
 export default withRouteData(CaseStudies);

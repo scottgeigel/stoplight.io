@@ -24,20 +24,17 @@ export function Landing({
   const elems = [];
 
   if (hero) {
-    elems.push(
-      <Hero
-        key="hero"
-        bgColor={color}
-        {...hero}
-        features={
-          features &&
-          features.map(feature => ({
-            name: feature.shortName,
-            href: `#${slugify(feature.title)}`,
-          }))
-        }
-      />
-    );
+    let buttons;
+    if (hero.buttons && hero.buttons.length) {
+      buttons = hero.buttons;
+    } else if (features && features.length) {
+      buttons = features.map(feature => ({
+        title: feature.shortName,
+        href: `#${slugify(feature.title)}`,
+      }));
+    }
+
+    elems.push(<Hero key="hero" bgColor={color} buttons={buttons} {...hero} />);
   }
 
   if (customers && customers.length) {

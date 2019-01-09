@@ -3,13 +3,12 @@ path: /api-design-guide/basics
 hero:
   aligned: center
   bgColor: blue
-  cards:
-    - href: 'https://stoplight.io/api-design-guide/basics/'
-      icon: {}
-      title: API Design Basics
-    - href: 'https://stoplight.io/api-design-guide/tooling/'
+  buttons:
+    - href: '/api-design-guide/basics/'
+      title: API Design Basics,
+    - href: '/api-design-guide/tooling/'
       title: API Design Tooling
-    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+    - href: '/api-design-guide/oas-spec/'
       title: Understanding the OpenAPI Spec
   cta:
     color: purple
@@ -18,8 +17,7 @@ hero:
   title: API Design Guide
 info:
   links:
-    - href: ''
-      title: What is API Design?
+    - title: What is API Design?
     - title: Choose your API Specification
     - title: Why API Design-First Matters
     - title: 'API Design Best Practices '
@@ -68,7 +66,7 @@ Yet, software teams frequently make similar choices. They may output an API spec
 
 Do you know who will use your API? Even for an internal project, you’re likely to have multiple consumers. An API spec allows you to share details about how the API will work. You can send the spec document itself, or use tools to prototype your API or documentation. You could generate mock servers based on your spec, as described in another section, and have your consumers make live calls.
 
-Your collaboration can go beyond technical teams, as well. You could get great insights from product, marketing, partnerships, and many other areas of your organization. 
+Your collaboration can go beyond technical teams, as well. You could get great insights from product, marketing, partnerships, and many other areas of your organization.
 ### The Importance of Knowing Use Cases
 When you understand how your software will be used you can design it better. The biggest mistake in API design is to make decisions based on how your system works, rather than what your consumers need to support. In order to design around use cases, you’ll need to talk to the consumers, or at least include those who know them better.
 
@@ -115,7 +113,7 @@ Here’s a quick list of the most common status codes and how they should be use
 - 404: The resource cannot be found, client-side error
 - 500: There was an error on the server-side
 
-There are plenty of other status codes you might find useful. At a minimum, use these most common ones in the expected way. 
+There are plenty of other status codes you might find useful. At a minimum, use these most common ones in the expected way.
 
 ### API Design Patterns
 In addition to following REST principles, you'll run into some of the same concepts others have already solved. You may have reasons to implement some of these patterns differently. In all other cases, look to these best practices for approaching your API design.

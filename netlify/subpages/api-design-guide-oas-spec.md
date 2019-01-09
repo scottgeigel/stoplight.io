@@ -3,14 +3,12 @@ path: /api-design-guide/oas-spec
 hero:
   aligned: center
   bgColor: orange
-  cards:
-    - bgColor: ''
-      href: 'https://stoplight.io/api-design-guide/basics/'
-      icon: {}
+  buttons:
+    - href: '/api-design-guide/basics/'
       title: API Design Basics
-    - href: 'https://stoplight.io/api-design-guide/tooling/'
+    - href: '/api-design-guide/tooling/'
       title: API Design Tooling
-    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+    - href: '/api-design-guide/oas-spec/'
       title: Understanding the OpenAPI Spec
   cta:
     color: purple

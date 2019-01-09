@@ -58,35 +58,31 @@ const Quotes = ({ quotes }) => {
   });
 };
 
-export class CaseStudy extends React.Component {
-  render() {
-    const { hero, body, info, quotes, actionBar } = this.props;
+export function CaseStudy({ hero, body, info, quotes, actionBar }) {
+  const elems = [];
 
-    const elems = [];
-
-    if (hero) {
-      elems.push(<Hero key="hero" {...hero} pageName="customer story" aligned="left" />);
-    }
-
-    elems.push(
-      <div key="content" className="container mx-auto my-24">
-        <div className="relative">
-          <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
-            <Info {...info} />
-            <Quotes quotes={quotes} />
-          </div>
-
-          <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
-        </div>
-      </div>
-    );
-
-    if (actionBar) {
-      elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
-    }
-
-    return elems;
+  if (hero) {
+    elems.push(<Hero key="hero" {...hero} pageName="customer story" aligned="left" />);
   }
+
+  elems.push(
+    <div key="content" className="container mx-auto my-24">
+      <div className="relative">
+        <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
+          <Info {...info} />
+          <Quotes quotes={quotes} />
+        </div>
+
+        <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
+      </div>
+    </div>
+  );
+
+  if (actionBar) {
+    elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
+  }
+
+  return elems;
 }
 
 export default withRouteData(CaseStudy);
