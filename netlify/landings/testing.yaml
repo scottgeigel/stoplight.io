@@ -50,7 +50,7 @@ features:
       responses for different status codes match the contract of a connected
       OpenAPI Specification; enabling collaboration over API test coverage
       within your organization.
-    titleURL: /testing/enterprise
+    titleURL: ''
 actionBar:
   buttons:
     - href: 'https://next.stoplight.io/'
