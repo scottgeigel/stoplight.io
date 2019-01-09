@@ -5,57 +5,14 @@ import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 import Link from '@components/Link';
 
-import '@styles/markdown.scss';
-import '@styles/highlight.scss';
-
-/**
- * SUBPAGE
- */
-
-class Subpage extends React.Component {
-  render() {
-    const { hero, body, info = {}, quotes, actionBar } = this.props;
-    const { name, logo, description, items: infoItems = [] } = info;
-
-    const hasSidebar = logo || name || description || infoItems.length || quotes.length;
-
-    const elems = [];
-
-    if (hero) {
-      elems.push(<Hero key="hero" {...hero} />);
-    }
-
-    elems.push(
-      <div key="content" className="container mx-auto my-24">
-        <div className="relative">
-          {hasSidebar && (
-            <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
-              <Info {...info} />
-              <Quotes quotes={quotes} />
-            </div>
-          )}
-
-          <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
-        </div>
-      </div>
-    );
-
-    if (actionBar) {
-      elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
-    }
-
-    return elems;
-  }
-}
-
-export default withRouteData(Subpage);
-
 /**
  * QUOTES
  */
 
 const Quotes = ({ quotes = [] }) => {
-  if (!quotes.length) return null;
+  if (!quotes.length) {
+    return null;
+  }
 
   return quotes.map((quote, index) => {
     return <Quote key={index} {...quote} />;
@@ -106,7 +63,9 @@ const Info = ({ name, logo, description, items = [] }) => {
 };
 
 const InfoItem = ({ name, value, href }) => {
-  if (!value && !href) return null;
+  if (!value && !href) {
+    return null;
+  }
 
   return (
     <div className="flex pb-2">
@@ -116,3 +75,42 @@ const InfoItem = ({ name, value, href }) => {
     </div>
   );
 };
+
+/**
+ * SUBPAGE
+ */
+
+function Subpage({ hero, body, info = {}, quotes, actionBar }) {
+  const { name, logo, description, items: infoItems = [] } = info;
+
+  const hasSidebar = logo || name || description || infoItems.length || quotes.length;
+
+  const elems = [];
+
+  if (hero) {
+    elems.push(<Hero key="hero" {...hero} />);
+  }
+
+  elems.push(
+    <div key="content" className="container mx-auto my-24">
+      <div className="relative">
+        {hasSidebar && (
+          <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
+            <Info {...info} />
+            <Quotes quotes={quotes} />
+          </div>
+        )}
+
+        <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
+      </div>
+    </div>
+  );
+
+  if (actionBar) {
+    elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
+  }
+
+  return elems;
+}
+
+export default withRouteData(Subpage);
