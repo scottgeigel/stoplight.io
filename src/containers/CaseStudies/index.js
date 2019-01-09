@@ -5,8 +5,6 @@ import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 import Link from '@components/Link';
 
-import '@styles/case-study.scss';
-
 const CaseStudy = ({ title, description, logo, href }) => {
   return (
     <Link

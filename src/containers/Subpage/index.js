@@ -5,9 +5,6 @@ import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 import Link from '@components/Link';
 
-import '@styles/markdown.scss';
-import '@styles/highlight.scss';
-
 const Info = ({ image, title, description, links }) => {
   if (!image && !title && !description && (!links || !links.length)) {
     return null;

@@ -5,9 +5,6 @@ import { withRouteData } from 'react-static';
 import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 
-import '@styles/markdown.scss';
-import '@styles/highlight.scss';
-
 const InfoItem = ({ className, name, value }) => {
   if (!value) return null;
 
