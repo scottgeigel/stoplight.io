@@ -9,11 +9,13 @@ export default {
       name: 'title',
       label: 'Title',
       widget: 'string',
+      default: 'title',
     },
     {
       name: 'subtitle',
       label: 'Subtitle',
       widget: 'string',
+      default: 'subtitle',
     },
     {
       name: 'pageName',
@@ -58,6 +60,32 @@ export default {
       widget: 'boolean',
     },
     {
+      name: 'buttons',
+      label: 'Buttons',
+      widget: 'list',
+      required: false,
+      fields: [
+        {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'title',
+        },
+        {
+          name: 'href',
+          label: 'Link',
+          widget: 'string',
+        },
+        {
+          name: 'icon',
+          label: 'Icon',
+          widget: 'string',
+          required: false,
+          default: 'check-circle',
+        },
+      ],
+    },
+    {
       name: 'cards',
       label: 'Cards',
       widget: 'list',
@@ -67,11 +95,13 @@ export default {
           name: 'title',
           label: 'Title',
           widget: 'string',
+          default: 'Title',
         },
         {
           name: 'subtitle',
           label: 'Subtitle',
           widget: 'string',
+          default: 'subtitle',
         },
         {
           name: 'href',

@@ -3,13 +3,12 @@ path: /api-design-guide/tooling
 hero:
   aligned: center
   bgColor: green
-  cards:
-    - href: 'https://stoplight.io/api-design-guide/basics/'
-      icon: {}
+  buttons:
+    - href: '/api-design-guide/basics/'
       title: API Design Basics
-    - href: 'https://stoplight.io/api-design-guide/tooling/'
+    - href: '/api-design-guide/tooling/'
       title: API Design Tooling
-    - href: 'https://stoplight.io/api-design-guide/oas-spec/'
+    - href: '/api-design-guide/oas-spec/'
       title: Understanding the Open API Spec
   cta:
     color: purple
@@ -48,13 +47,13 @@ Perhaps the tool most associated with API descriptions is Swagger UI and other t
 
 There are different types of documentation, but OpenAPI-generated docs thrive for API references and interactive documentation. As you add and update your API endpoints, you can automatically keep your documentation updated. You may even be able to connect these tools to your CI/CD workflow, so that as your new API hits production, so does your new API documentation.
 
-Reading documentation is one way to determine how an API works. Live calls add another dimension to that understanding. Interactive documentation means that consumers can test requests against your API, supply their own inputs and see the response inline. 
+Reading documentation is one way to determine how an API works. Live calls add another dimension to that understanding. Interactive documentation means that consumers can test requests against your API, supply their own inputs and see the response inline.
 
 You’ll want to add other types of documentation, too, such as tutorials. Look for a tool that allows you to have customized documentation alongside your generated docs. You’ll also may want to match your site’s style and navigation.
 
 For an example of fully customizable, generated docs, see [Stoplight’s hosted API documentation](https://stoplight.io/documentation/)
 ### Create Mock Servers
-Just as interactive documentation adds another dimension beyond simple reference, you can benefit from making calls against your API while you design. Your OpenAPI spec can be used to create mock servers that use responses you’ve included in your design. You can collaborate with others around real data and seek early feedback from API consumers. 
+Just as interactive documentation adds another dimension beyond simple reference, you can benefit from making calls against your API while you design. Your OpenAPI spec can be used to create mock servers that use responses you’ve included in your design. You can collaborate with others around real data and seek early feedback from API consumers.
 
 Much as documentation is built and rebuilt as you update your API description, mock servers can also automatically have your latest changes. Integrate with your own API as you build it by including mock server endpoints in your code, or coordinate with API consumers and collaborators to write tests or sample code. Code you write against a mock server isn’t wasted, because only the server root will change when you move to production.
 

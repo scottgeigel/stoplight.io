@@ -5,7 +5,7 @@ import Hero from '@components/Hero';
 import ActionBar from '@components/ActionBar';
 import Link from '@components/Link';
 
-const Info = ({ image, title, description, links }) => {
+function Info({ image, title, description, links }) {
   if (!image && !title && !description && (!links || !links.length)) {
     return null;
   }
@@ -20,7 +20,7 @@ const Info = ({ image, title, description, links }) => {
 
       {description && <div className="pt-4">{description}</div>}
 
-      {links && links.length && (
+      {links && links.length > 0 && (
         <ul className="pt-4">
           {links.map((link, index) => (
             <li className="py-2" key={index}>
@@ -31,9 +31,9 @@ const Info = ({ image, title, description, links }) => {
       )}
     </div>
   );
-};
+}
 
-const Quote = ({ quote, author, role }) => {
+function Quote({ quote, author, role }) {
   return (
     <div className="mt-8 p-8 shadow rounded bg-grey-lighter relative">
       <p className="leading-loose pb-6 italic text-lg">{`"${quote}"`}</p>
@@ -46,9 +46,9 @@ const Quote = ({ quote, author, role }) => {
       )}
     </div>
   );
-};
+}
 
-const Quotes = ({ quotes }) => {
+function Quotes({ quotes }) {
   if (!quotes || !quotes.length) {
     return null;
   }
@@ -56,46 +56,42 @@ const Quotes = ({ quotes }) => {
   return quotes.map((quote, index) => {
     return <Quote key={index} {...quote} />;
   });
-};
+}
 
-export class Subpage extends React.Component {
-  render() {
-    const { hero, body, info, quotes, actionBar } = this.props;
+export function Subpage({ hero, body, info, quotes, actionBar }) {
+  let hasSidebar = quotes && quotes.length;
 
-    let hasSidebar = quotes && quotes.length;
-
-    if (!hasSidebar && info) {
-      const { image, title, description, links } = info;
-      hasSidebar = image || title || description || (links && links.length);
-    }
-
-    const elems = [];
-
-    if (hero) {
-      elems.push(<Hero key="hero" {...hero} />);
-    }
-
-    elems.push(
-      <div key="content" className="container mx-auto my-24">
-        <div className="relative">
-          {hasSidebar && (
-            <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
-              <Info {...info} />
-              <Quotes quotes={quotes} />
-            </div>
-          )}
-
-          <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
-        </div>
-      </div>
-    );
-
-    if (actionBar) {
-      elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
-    }
-
-    return elems;
+  if (!hasSidebar && info) {
+    const { image, title, description, links } = info;
+    hasSidebar = image || title || description || (links && links.length);
   }
+
+  const elems = [];
+
+  if (hero) {
+    elems.push(<Hero key="hero" {...hero} />);
+  }
+
+  elems.push(
+    <div key="content" className="container mx-auto my-24">
+      <div className="relative">
+        {hasSidebar && (
+          <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
+            <Info {...info} />
+            <Quotes quotes={quotes} />
+          </div>
+        )}
+
+        <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
+      </div>
+    </div>
+  );
+
+  if (actionBar) {
+    elems.push(<ActionBar key="actionBar" className="my-24" {...actionBar} />);
+  }
+
+  return elems;
 }
 
 export default withRouteData(Subpage);

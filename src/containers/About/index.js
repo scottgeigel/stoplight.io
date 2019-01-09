@@ -68,96 +68,92 @@ const Press = ({ image, date, description, publication, href }) => {
   );
 };
 
-export class About extends React.Component {
-  render() {
-    const { color, hero, quotes = [], team = [], actionBar = {}, press = [], investors = [] } = this.props;
+export function About({ color, hero, quotes = [], team = [], actionBar = {}, press = [], investors = [] }) {
+  return (
+    <div>
+      <Hero key="hero" bgColor={color} {...hero} containerClassName="pb-24" />
 
-    return (
-      <div>
-        <Hero key="hero" bgColor={color} {...hero} containerClassName="pb-24" />
+      {team.length ? (
+        <section className="bg-grey-lightest relative z-5" style={{ marginTop: -50 }}>
+          <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
+            {team.map((member, index) => (
+              <Member key={index} isLast={index === team.length - 1} {...member} />
+            ))}
+          </div>
 
-        {team.length ? (
-          <section className="bg-grey-lightest relative z-5" style={{ marginTop: -50 }}>
-            <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
-              {team.map((member, index) => (
-                <Member key={index} isLast={index === team.length - 1} {...member} />
-              ))}
+          {actionBar && actionBar.enabled ? (
+            <div className="md:pb-24 pb-40 -mt-10">
+              <ActionBar className="bg-white" {...actionBar} />
+            </div>
+          ) : null}
+        </section>
+      ) : null}
+
+      {press.length ? (
+        <Section key="press">
+          <div className="container">
+            <h2 className="text-center mb-20 text-3xl md:mb-14">In The Press</h2>
+
+            <div className="flex justify-center flex-wrap -mb-12">
+              {press.map((quote, key) => {
+                return (
+                  <div key={key} className="flex md:w-full w-1/4 px-6 mb-12">
+                    <Press {...quote} />
+                  </div>
+                );
+              })}
             </div>
 
-            {actionBar && actionBar.enabled ? (
-              <div className="md:pb-24 pb-40 -mt-10">
-                <ActionBar className="bg-white" {...actionBar} />
-              </div>
-            ) : null}
-          </section>
-        ) : null}
-
-        {press.length ? (
-          <Section key="press">
-            <div className="container">
-              <h2 className="text-center mb-20 text-3xl md:mb-14">In The Press</h2>
-
-              <div className="flex justify-center flex-wrap -mb-12">
-                {press.map((quote, key) => {
-                  return (
-                    <div key={key} className="flex md:w-full w-1/4 px-6 mb-12">
-                      <Press {...quote} />
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mt-24 md:mt-14 text-center">
-                <CallToAction
-                  className="inline"
-                  size="md"
-                  color="grey-darkest"
-                  name="More Press & Assets"
-                  href="https://press.stoplight.io"
-                />
-              </div>
+            <div className="mt-24 md:mt-14 text-center">
+              <CallToAction
+                className="inline"
+                size="md"
+                color="grey-darkest"
+                name="More Press & Assets"
+                href="https://press.stoplight.io"
+              />
             </div>
-          </Section>
-        ) : null}
+          </div>
+        </Section>
+      ) : null}
 
-        {quotes.length ? (
-          <Section key="businesses" bgClassName="bg-grey-lightest">
-            <div className="container">
-              <h2 className="text-center mb-20 text-3xl md:mb-14">Businesses Are Loving Stoplight</h2>
+      {quotes.length ? (
+        <Section key="businesses" bgClassName="bg-grey-lightest">
+          <div className="container">
+            <h2 className="text-center mb-20 text-3xl md:mb-14">Businesses Are Loving Stoplight</h2>
 
-              <div className="flex justify-center flex-wrap -mb-12">
-                {quotes.map((quote, key) => {
-                  return (
-                    <div key={key} className="flex md:w-full w-1/3 px-6 mb-12">
-                      <Quote {...quote} />
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="flex justify-center flex-wrap -mb-12">
+              {quotes.map((quote, key) => {
+                return (
+                  <div key={key} className="flex md:w-full w-1/3 px-6 mb-12">
+                    <Quote {...quote} />
+                  </div>
+                );
+              })}
             </div>
-          </Section>
-        ) : null}
+          </div>
+        </Section>
+      ) : null}
 
-        {investors.length ? (
-          <Section key="investors">
-            <div className="container">
-              <h2 className="text-center mb-20 text-3xl md:mb-14">Our Investors</h2>
+      {investors.length ? (
+        <Section key="investors">
+          <div className="container">
+            <h2 className="text-center mb-20 text-3xl md:mb-14">Our Investors</h2>
 
-              <div className="flex justify-center flex-wrap items-center">
-                {investors.map((investor, key) => {
-                  return (
-                    <div key={key} className="p-10 text-center">
-                      <img className="h-24" src={investor.image} alt={investor.name} />
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="flex justify-center flex-wrap items-center">
+              {investors.map((investor, key) => {
+                return (
+                  <div key={key} className="p-10 text-center">
+                    <img className="h-24" src={investor.image} alt={investor.name} />
+                  </div>
+                );
+              })}
             </div>
-          </Section>
-        ) : null}
-      </div>
-    );
-  }
+          </div>
+        </Section>
+      ) : null}
+    </div>
+  );
 }
 
 export default withRouteData(About);
