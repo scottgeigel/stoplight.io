@@ -88,11 +88,9 @@ For example, let’s say you want to design a contact API. Naturally, you would 
 
 When you involve others in API design, you build something better. The API spec becomes an artifact upon which they can comment. You still need ways to coordinate the cross-department conversation, but design-first makes it possible in the first place.
 
-
-
-![API Design-First Flow](/images/api-design-first-flow-wide.png "API Design-First Flow")
-
 # API Design Best Practices
+
+![API Design-First Flow](/images/api-design-first-flow.png "API Design-First Flow")
 
 Armed with an understanding of your use cases, you’re ready to begin your API design. Each project is different, so  best practices may not always fit your situation. However, these are guidelines to keep in mind as you design your API.
 
