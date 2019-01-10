@@ -5,11 +5,11 @@ hero:
   bgColor: blue
   buttons:
     - href: /api-design-guide/basics/
-      title: 'API Design Basics,'
+      title: API Design Basics
     - href: /api-design-guide/tooling/
       title: API Design Tooling
     - href: /api-design-guide/oas-spec/
-      title: Understanding the OpenAPI Spec
+      title: Understanding the OpenAPI Specification
   cta:
     color: purple
     href: 'https://next.stoplight.io'
