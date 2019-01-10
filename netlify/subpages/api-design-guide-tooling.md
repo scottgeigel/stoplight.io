@@ -9,7 +9,7 @@ hero:
     - href: /api-design-guide/tooling/
       title: API Design Tooling
     - href: /api-design-guide/oas-spec/
-      title: Understanding the Open API Spec
+      title: Understanding the OpenAPI Specification
   cta:
     color: purple
     href: 'https://next.stoplight.io'
