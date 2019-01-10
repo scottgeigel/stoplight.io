@@ -47,7 +47,7 @@ There is not a single approach to design APIs “the right way.” Instead, we n
 
 # Choose your API Specification
 
-Before you can communicate your API design, you need an artifact that someone else can use to understand your design. Historically, this might have been called documentation. While it’s still important to have human-facing documentation that is easy to use, more is required of modern APIs. In recent years the industry has rallied around the OpenAPI Specification (OAS).
+Before you can communicate your API design, you need an artifact that someone else can use to understand your design. Historically, this might have been called documentation. While it’s still important to have human-facing documentation that is easy to use, more is required of modern APIs. In recent years the industry has rallied around the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) (OAS).
 
 OAS allows you to define how your REST API works, in a way that can be easily consumed by both humans and machines. It serves as a contract that specifies how a consumer can use the API and what responses you can expect.
 
@@ -60,13 +60,13 @@ OAS 3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium of m
 
 While OAS 3.0 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OAS 2.0, until the tools catch up.
 
-Your API design requires a way to define how the API will be used. The future-thinking approach is to select OAS 3.0 to describe your API.
+Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OAS 3.0](https://stoplight.io/api-design-guide/oas-spec/) to describe your API.
 
 # Why API Design-First Matters
 
 Now that you’ve chosen OAS 3.0, you may be tempted to set that aside until after you build your API. While it’s useful to describe existing APIs, you should also use your OpenAPI description while designing a new API.
 
-When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The design-first approach offers a single source of truth, readable by collaborators and machines alike.
+When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The [design-first approach](https://blog.stoplight.io/openapi-and-design-first-principles-96e7c4b2aec1) offers a single source of truth, readable by collaborators and machines alike.
 
 ## The Design-Second Oxymoron
 
@@ -88,9 +88,9 @@ For example, let’s say you want to design a contact API. Naturally, you would 
 
 When you involve others in API design, you build something better. The API spec becomes an artifact upon which they can comment. You still need ways to coordinate the cross-department conversation, but design-first makes it possible in the first place.
 
-# API Design Best Practices
+![API Design-First Flow](/images/api-design-first-flow-wide.png "API Design-First Flow")
 
-![API Design-First Flow](/images/api-design-first-flow.png "API Design-First Flow")
+# API Design Best Practices
 
 Armed with an understanding of your use cases, you’re ready to begin your API design. Each project is different, so  best practices may not always fit your situation. However, these are guidelines to keep in mind as you design your API.
 
@@ -100,7 +100,7 @@ While we’ll go into specifics below, these are the high level tenets of good A
 * Maintain internal consistency
 * When possible, use an established convention
 
-You’ll want to keep your entire team updated as you make design decisions together. Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) can help keep everyone on the same page.
+You’ll want to keep your entire team updated as you make [design decisions together](https://stoplight.io/design/#collaborative-design). Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) can help keep everyone on the same page.
 
 ## How to Design a REST API
 
