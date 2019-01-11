@@ -50,16 +50,25 @@ const Button = ({ title, icon, href, color }) => {
     'cursor-default': !href,
   });
 
-  const elems = [
-    <FontAwesomeIcon
-      key="1"
-      icon={['fas', icon ? icon : 'check-circle']}
-      className={cn('mr-2 text-lg', `text-${color || 'green'}`)}
-    />,
-    <div key="2" className="font-semibold">
-      {title}
-    </div>,
-  ];
+  const elems = [];
+
+  if (icon) {
+    elems.push(
+      <FontAwesomeIcon
+        key="1"
+        icon={['fas', icon ? icon : 'check-circle']}
+        className={cn('mr-2 text-lg', `text-${color || 'green'}`)}
+      />
+    );
+  }
+
+  if (title) {
+    elems.push(
+      <div key="2" className="font-semibold">
+        {title}
+      </div>
+    );
+  }
 
   let elem;
   if (href) {

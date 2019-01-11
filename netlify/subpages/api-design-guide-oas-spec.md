@@ -9,7 +9,6 @@ hero:
     - href: /api-design-guide/tooling/
       title: API Design Tooling
     - href: /api-design-guide/oas-spec/
-      icon: III.
       title: Understanding the OpenAPI Specification
   cta:
     color: purple
