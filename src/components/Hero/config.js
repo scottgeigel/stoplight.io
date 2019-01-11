@@ -81,7 +81,7 @@ export default {
           label: 'Icon',
           widget: 'string',
           required: false,
-          default: 'check-circle',
+          hint: 'Must be a fontawesome icon like check-circle',
         },
       ],
     },
