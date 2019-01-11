@@ -53,7 +53,9 @@ const DropdownItem = (item, index) => {
 };
 
 const HeaderDropdown = ({ width, title, links }) => {
-  if (!links || !links.length) return null;
+  if (!links || !links.length) {
+    return null;
+  }
 
   return (
     <Popup
@@ -70,7 +72,7 @@ const HeaderDropdown = ({ width, title, links }) => {
   );
 };
 
-const HeaderButton = ({ title, href, icon, dark }) => {
+const HeaderButton = ({ title, href, icon }) => {
   return (
     <Link
       key="2"

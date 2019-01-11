@@ -94,8 +94,13 @@ header:
       title: Pricing
     - href: /demo
       title: Request Demo
+      isButton: true
     - href: 'https://next.stoplight.io'
       title: Sign In
+      isButton: true
+      icon:
+        - fas
+        - arrow-right
 actionBar:
   buttons:
     - color: purple

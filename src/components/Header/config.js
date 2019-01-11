@@ -26,6 +26,19 @@ export default {
           required: false,
         },
         {
+          name: 'isButton',
+          label: 'Is it a button?',
+          widget: 'boolean',
+          required: false,
+        },
+        {
+          name: 'icon',
+          label: 'Icon (button only)',
+          widget: 'fontawesome-solid',
+          type: 'array',
+          required: false,
+        },
+        {
           name: 'onClick',
           label: 'Action',
           widget: 'select',
