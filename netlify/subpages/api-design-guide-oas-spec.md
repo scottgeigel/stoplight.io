@@ -18,9 +18,9 @@ hero:
   title: API Design Guide
 info:
   links:
-    - href: '/api-design-guide/oas-spec#openapi-versions-oas-2-vs-oas-3'
+    - href: '/api-design-guide/oas-spec#openapi-versions%3A-oas-2-vs-oas-3'
       title: OAS 2 vs OAS 3
-    - href: '/api-design-guide/oas-spec#should-definitions-use-json-or-yaml?'
+    - href: '/api-design-guide/oas-spec#should-definitions-use-json-or-yaml%3F'
       title: JSON vs YAML
   title: 'Sections '
 quotes: []
