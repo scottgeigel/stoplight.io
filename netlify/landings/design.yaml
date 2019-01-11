@@ -20,6 +20,7 @@ cta:
 features:
   - image: /images/design_quick_start.png
     title: Quick to Start
+    shortName: Design First
     description: >-
       Get started quickly with API design-first principles. Import an existing
       API or start from scratch with a new API, zero coding required. The Visual
@@ -28,6 +29,7 @@ features:
     titleURL: /design/free
   - image: /images/design_visual.png
     title: 'Powerful, Visual Editor'
+    shortName: Visual Editor
     description: >-
       Design an API with speed and efficiency from scratch. Stoplight’s Visual
       Editor decreases the learning curve so you don’t need to be an OpenAPI
@@ -37,6 +39,7 @@ features:
     titleURL: /design/web
   - image: /images/mocking_request_validation.png
     title: 'Integrated, Hosted Mock Servers'
+    shortName: Mock Servers
     description: >-
       Instantly [prototype and collaborate on your API
       design](/design/prototype) with our integrated, hosted Mock Servers,
@@ -46,6 +49,7 @@ features:
     titleURL: /design/prototype
   - image: /images/design_collaborate.png
     title: Collaborative Design
+    shortName: Collaborative
     description: >-
       Instantly share API prototypes, automated documentation, and hosted Mock
       Servers. Invite teammates, partners, and API consumers to view and

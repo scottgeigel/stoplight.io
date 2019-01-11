@@ -10,6 +10,11 @@ export default {
       widget: 'string',
     },
     {
+      name: 'shortName',
+      label: 'Short name',
+      widget: 'string',
+    },
+    {
       name: 'titleURL',
       label: 'Title URL',
       widget: 'string',
