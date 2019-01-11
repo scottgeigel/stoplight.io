@@ -68,7 +68,7 @@ header:
           subtitle: Stay up to date on Stoplight
           title: Blog
           titleColor: orange
-        - href: 'https://stoplight.io/api-design-guide/basics/'
+        - href: /api-design-guide/basics/
           icon:
             - fas
             - book-open
