@@ -2,6 +2,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faPaintBrush } from '@fortawesome/free-solid-svg-icons/faPaintBrush';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons/faBookOpen';
 import { faFlask } from '@fortawesome/free-solid-svg-icons/faFlask';
 import { faServer } from '@fortawesome/free-solid-svg-icons/faServer';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
@@ -22,6 +23,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 export const init = () => {
   library.add(faPaintBrush);
   library.add(faBook);
+  library.add(faBookOpen);
   library.add(faFlask);
   library.add(faServer);
   library.add(faCheck);
