@@ -68,6 +68,13 @@ header:
           subtitle: Stay up to date on Stoplight
           title: Blog
           titleColor: orange
+        - href: 'https://stoplight.io/api-design-guide/basics/'
+          icon:
+            - fas
+            - book-open
+          subtitle: Learn API Design Best Practices
+          title: API Design Guide
+          titleColor: yellow
       title: Resources
       width: 350
     - links:
@@ -87,18 +94,12 @@ header:
       title: Pricing
     - href: /demo
       title: Request Demo
-      isButton: true
-    - href: https://next.stoplight.io
+    - href: 'https://next.stoplight.io'
       title: Sign In
-      color: white
-      isButton: true
-      icon:
-        - fas
-        - arrow-right
 actionBar:
   buttons:
     - color: purple
-      href: '/demo'
+      href: /demo
       outlined: true
       title: Request a Demo
     - color: purple
@@ -133,11 +134,18 @@ footer:
           title: About Us
         - href: /case-studies
           title: Case Studies
-        - href: '/contact-us'
+        - href: /contact-us
           title: Contact Us
         - href: 'https://app.stoplight.io/login'
           title: Classic Login
       title: Company
+  legal:
+    - href: /privacy
+      title: Privacy
+    - href: /terms
+      title: Terms of Use
+    - href: /policy
+      title: Policy
   social:
     - href: 'https://twitter.com/stoplightio'
       icon:
@@ -151,19 +159,13 @@ footer:
       icon:
         - fab
         - github
-  legal:
-    - href: '/privacy'
-      title: Privacy
-    - href: '/terms'
-      title: Terms of Use
-    - href: '/policy'
-      title: Policy
 meta:
   description: >-
     Stoplight, providing engineering teams with the best way to document, test,
     and build web APIs.
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
+  robots: 'index, follow'
   title: Stoplight
   twitter:
     description: >-
@@ -173,7 +175,6 @@ meta:
     title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
-  robots: 'index, follow'
 integrations:
   googleTagManager: GTM-58LWL5P
   hubspot: 4892910
