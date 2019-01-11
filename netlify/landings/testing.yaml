@@ -26,6 +26,7 @@ cta:
 features:
   - image: /images/testing_automation.png
     title: Simple Automated API Testing
+    shortName: CI/CD Integration
     description: >-
       With our Visual Test Editor, create multi-step test scenarios to automate
       testing your REST web APIs. Build scenarios by capturing and passing data
@@ -34,6 +35,7 @@ features:
     titleURL: /testing/free
   - image: /images/testing_validation.png
     title: Contract Testing
+    shortName: Contract Testing
     description: >-
       Create test collections that ensure the API implementation meets the
       standards and definitions described in your OpenAPI Specification or JSON
@@ -44,6 +46,7 @@ features:
     titleURL: /testing/integration
   - image: /images/testing_reporting.png
     title: Coverage Reporting
+    shortName: Coverage Reporting
     description: >-
       With integrated Contract Testing reporting capabilities, you can track
       your progress towards 100% coverage. Stoplight verifies that the API
