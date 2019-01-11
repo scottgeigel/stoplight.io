@@ -11,47 +11,52 @@ heading: OpenAPI Designer
 description: >-
   Start designing your API in minutes. Use the OpenAPI Specification (formerly
   known as Swagger) with Stoplight’s visual editor to [design consistent and
-  standardized REST APIs](/design/web) for your organization. Without writing any code, model
-  complex APIs faster than ever while simultaneously getting feedback on your
-  prototypes with our [hosted mock servers](https://stoplight.io/mocking).
+  standardized REST APIs](/design/web) for your organization. Without writing
+  any code, model complex APIs faster than ever while simultaneously getting
+  feedback on your prototypes with our [hosted mock
+  servers](https://stoplight.io/mocking).
 cta:
   name: ''
 features:
-  - description: >-
+  - image: /images/design_quick_start.png
+    title: Quick to Start
+    shortName: Design First
+    description: >-
       Get started quickly with API design-first principles. Import an existing
       API or start from scratch with a new API, zero coding required. The Visual
       Editor reduces time to get started on your API design by providing an
       intuitive UI.
-    image: /images/design_quick_start.png
-    shortName: Design First
-    title: Quick to Start
-  - description: >-
+    titleURL: /design/free
+  - image: /images/design_visual.png
+    title: 'Powerful, Visual Editor'
+    shortName: Visual Editor
+    description: >-
       Design an API with speed and efficiency from scratch. Stoplight’s Visual
       Editor decreases the learning curve so you don’t need to be an OpenAPI
       expert to create first-class API designs. Describe endpoints, headers,
       bodies, multiple responses, query string parameters, shared models, and
       much more.
-    image: /images/design_visual.png
-    shortName: Visual Editor
-    title: 'Powerful, Visual Editor'
-  - description: >-
-      Instantly [prototype and collaborate on your API design](/design/prototype) with our
-      integrated, hosted Mock Servers, powered by Prism. Mock a single API,
-      multiple APIs, or even just a few endpoints. Increase efficiency by
-      allowing your frontend teams to start implementation while the backend
-      team develops the API.
-    image: /images/mocking_request_validation.png
-    shortName: Mock Servers
+    titleURL: /design/web
+  - image: /images/mocking_request_validation.png
     title: 'Integrated, Hosted Mock Servers'
-  - description: >-
+    shortName: Mock Servers
+    description: >-
+      Instantly [prototype and collaborate on your API
+      design](/design/prototype) with our integrated, hosted Mock Servers,
+      powered by Prism. Mock a single API, multiple APIs, or even just a few
+      endpoints. Increase efficiency by allowing your frontend teams to start
+      implementation while the backend team develops the API.
+    titleURL: /design/prototype
+  - image: /images/design_collaborate.png
+    title: Collaborative Design
+    shortName: Collaborative
+    description: >-
       Instantly share API prototypes, automated documentation, and hosted Mock
       Servers. Invite teammates, partners, and API consumers to view and
       collaborate on your API designs privately or publicly with Discussions.
       With one click export and programmatic access, you can use and share your
       specification document where ever you want.
-    image: /images/design_collaborate.png
-    shortName: Collaborative
-    title: Collaborative Design
+    titleURL: ''
 actionBar:
   buttons:
     - href: 'https://next.stoplight.io/'
@@ -59,16 +64,16 @@ actionBar:
   enabled: true
   text: Ready to Model and Design?
 meta:
+  favicon: /images/mark_light_bg.png
+  title: REST API design and planning tool | Stoplight
   description: >-
     Build first-class APIs with a collaborative, powerful, visual editor that
     allows you to prototype and share your API within minutes
-  favicon: /images/mark_light_bg.png
   image: /images/design_feature_3.png
-  title: REST API design and planning tool | Stoplight
   twitter:
+    title: Design | Stoplight
     description: >-
       Build first-class APIs with a collaborative, powerful, visual editor that
       allows you to prototype and share your API within minutes
     image: /images/design_feature_3.png
-    title: Design | Stoplight
     username: '@stoplightio'

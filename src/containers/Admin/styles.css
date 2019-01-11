@@ -22066,19 +22066,19 @@ ul {
 
 .markdown-body h3 {
   font-size: 16px;
-  margin-top: 24px, 16px;
-  margin-bottom: 16px, 16px; }
+  margin-top: 16px;
+  margin-bottom: 16px; }
 
 .markdown-body h4 {
   font-size: 13px;
-  margin-top: 24px, 13px;
-  margin-bottom: 16px, 13px; }
+  margin-top: 13px;
+  margin-bottom: 13px; }
 
 .markdown-body h5,
 .markdown-body h6 {
   font-size: 11px;
-  margin-top: 24px, 11px;
-  margin-bottom: 16px, 11px; }
+  margin-top: 11px;
+  margin-bottom: 11px; }
 
 .markdown-body h1:first-child,
 .markdown-body h2:first-child,
