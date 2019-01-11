@@ -18,11 +18,9 @@ hero:
   title: API Design Guide
 info:
   links:
-    - href: >-
-        https://develop--stoplightio.netlify.com/api-design-guide/oas-spec#openapi-versions:-oas-2-vs-oas-3
+    - href: '/api-design-guide/oas-spec#openapi-versions:-oas-2-vs-oas-3'
       title: OAS 2 vs OAS 3
-    - href: >-
-        https://stoplight.io/api-design-guide/oas-spec#should-definitions-use-json-or-yaml?
+    - href: '/api-design-guide/oas-spec#should-definitions-use-json-or-yaml?'
       title: JSON vs YAML
   title: 'Sections '
 quotes: []
