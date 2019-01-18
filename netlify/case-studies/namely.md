@@ -1,5 +1,6 @@
 ---
-path: /namely
+path: /case-studies/namely
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Stories

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Portal from '../Portal';
+import { Portal } from '../Portal';
 
 export type PopupTriggerRenderer = (
   attributes: {
@@ -382,5 +382,3 @@ export class Popup extends React.PureComponent<IPopup, IPopupState> {
     );
   }
 }
-
-export default Popup;

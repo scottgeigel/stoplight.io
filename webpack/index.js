@@ -14,11 +14,7 @@ export default (config, { stage, defaultLoaders }) => {
   config.resolve.extensions.push('.ts', '.tsx');
 
   config.resolve.alias = {
-    '@containers': nodePath.resolve(__dirname, '..', 'src/containers'),
-    '@templates': nodePath.resolve(__dirname, '..', 'src/templates'),
-    '@components': nodePath.resolve(__dirname, '..', 'src/components'),
-    '@styles': nodePath.resolve(__dirname, '..', 'src/styles'),
-    '@utils': nodePath.resolve(__dirname, '..', 'src/utils'),
+    src: nodePath.resolve(__dirname, '..', 'src'),
   };
 
   if (stage !== 'node') {

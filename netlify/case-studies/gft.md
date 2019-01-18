@@ -1,5 +1,6 @@
 ---
-path: /gft
+path: /case-studies/gft
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Story

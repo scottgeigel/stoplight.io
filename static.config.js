@@ -13,6 +13,7 @@ import webpack from './webpack';
 
 const NETLIFY_PATH = nodePath.resolve(__dirname, 'netlify');
 const IS_PRODUCTION = process.env.RELEASE_STAGE === 'production';
+const DEFAULT_PAGINATION_PAGE_SIZE = 10;
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes());
 
@@ -127,27 +128,25 @@ export default {
       home,
       pricing,
       about,
-      caseStudyConfig,
-      blogConfig,
-
       forms = [],
-      caseStudies = [],
-      blogPosts = [],
+
+      lists = [],
 
       landings = [],
-      subpages = [],
+      caseStudies = [],
+      blogPosts = [],
+      other = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
       getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
       getFile(`${NETLIFY_PATH}/pages/about.yaml`),
-      getFile(`${NETLIFY_PATH}/pages/case-studies.yaml`),
-      getFile(`${NETLIFY_PATH}/pages/blog.yaml`),
+      getFiles(`${NETLIFY_PATH}/forms`),
 
-      getFiles(`${NETLIFY_PATH}/hubspot`),
-      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/lists`),
 
       getFiles(`${NETLIFY_PATH}/landings`),
+      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
@@ -171,108 +170,67 @@ export default {
         component: 'src/containers/About',
         getData: () => about,
       },
-      {
-        path: caseStudyConfig.path,
-        component: 'src/containers/CaseStudies',
-        getData: () => ({
-          ...caseStudyConfig,
-          listItems: caseStudies
-            .map(caseStudy => {
-              if (!caseStudy.path) {
-                return;
-              }
-
-              const { hero = {}, info = {} } = caseStudy;
-
-              return {
-                title: info.name,
-                description: hero.subtitle,
-                logo: info.logo,
-                href: caseStudyConfig.path + caseStudy.path,
-              };
-            })
-            .filter(Boolean),
-        }),
-        children: caseStudies
-          .map((caseStudy, index) => {
-            if (!caseStudy.path) {
-              return;
-            }
-
-            return {
-              path: caseStudy.path,
-              component: 'src/containers/CaseStudy',
-              getData: () => ({
-                ...caseStudy,
-                next: caseStudies[index + 1 >= caseStudies.length ? 0 : index + 1],
-                prev: caseStudies[index - 1 <= caseStudies.length ? caseStudies.length - 1 : index - 1],
-              }),
-            };
-          })
-          .filter(Boolean),
-      },
     ];
 
-    if (blogConfig.path) {
-      let postData = [];
-      let postRoutes = [];
+    const subpages = [...caseStudies, ...blogPosts, ...other];
+    const pages = [...landings, ...subpages].filter(page => page.path);
 
-      blogPosts.forEach(post => {
-        if (!post.path) return;
+    for (const list of lists) {
+      const items = []; // pages that match this list's tag
 
-        const { hero = {}, info = {} } = post;
+      for (const page of pages) {
+        if (!page.tags || !page.tags.length || !page.tags.includes(list.tag)) {
+          continue;
+        }
 
-        postData.push({
-          title: info.name,
-          description: hero.subtitle,
-          logo: info.logo,
-          href: blogConfig.path + post.path,
+        items.push({
+          title: page.hero.title,
+          description: page.hero.subtitle,
+          logo: page.info.logo,
+          href: page.path,
+          tags: page.tags, // used to show which tag matches the search
         });
+      }
 
-        postRoutes.push({
-          path: post.path,
-          component: 'src/containers/BlogPost',
-          getData: () => post,
-        });
-      });
+      // Only add list pages that contain items to show
+      if (!items.length) {
+        continue;
+      }
 
-      const pageSize = blogConfig.pagination ? blogConfig.pagination.perPage : 10;
+      const pageSize = list.pagination ? list.pagination.perPage : DEFAULT_PAGINATION_PAGE_SIZE;
 
-      // path: /blog should be equivalent to page 1
+      // Add route for List page
       routes.push({
-        path: blogConfig.path,
-        component: 'src/containers/Blog',
+        path: list.path,
+        component: 'src/containers/Lists',
         getData: () => ({
-          ...blogConfig,
+          ...list,
+          items,
           pagination: {
-            ...blogConfig.pagination,
+            ...list.pagination,
             currentPage: 1,
-            totalPages: Math.ceil(postData.length / pageSize),
+            totalPages: Math.ceil(items.length / pageSize),
           },
-          listItems: postData.slice(0, pageSize),
         }),
-        // the actual blog posts
-        children: postRoutes,
       });
 
-      // add pagination pages
-      if (postData.length) {
+      // Add routes for List pagination pages
+      if (items.length > pageSize) {
         routes.push(
           ...makePageRoutes({
-            items: postData,
+            items,
             pageSize,
-            pageToken: 'page', // use page for the prefix, eg. blog/page/3
+            pageToken: 'page',
             route: {
-              path: '/blog',
-              component: 'src/containers/Blog',
+              path: list.path,
+              component: 'src/containers/Lists',
             },
-            decorate: (posts, currentPage, totalPages) => ({
+            decorate: (item, currentPage, totalPages) => ({
               getData: () => ({
-                ...blogConfig,
-                // blogPosts for this page
-                listItems: postData.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+                ...list,
+                items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
                 pagination: {
-                  ...blogConfig.pagination,
+                  ...list.pagination,
                   currentPage,
                   totalPages,
                 },
@@ -317,10 +275,28 @@ export default {
           return;
         }
 
+        let relatedLinks = [];
+
+        if (subpage.relatedTags && subpage.relatedTags.length) {
+          // Grab 5 related pages
+          relatedLinks = subpage.relatedTags
+            .map(tag => {
+              return pages
+                .filter(page => page.tags.includes(tag))
+                .map(page => ({ title: page.hero.title, path: page.path, tags: page.tags }));
+            })
+            .splice(0, 4);
+        }
+
         routes.push({
           path: subpage.path,
           component: 'src/containers/Subpage',
-          getData: () => subpage,
+          getData: () => {
+            return {
+              ...subpage,
+              relatedLinks,
+            };
+          },
         });
       });
     }

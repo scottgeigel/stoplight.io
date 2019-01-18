@@ -1,0 +1,22 @@
+path: /case-studies
+tag: 'case-study'
+hero:
+  subtitle: Discover & Educate
+  title: Case Studies
+actionBar:
+  buttons:
+    - color: purple
+      href: /demo
+      outlined: true
+      title: Request a Demo
+    - color: purple
+      href: 'https://next.stoplight.io'
+      title: Create a Free Account
+  enabled: true
+  text: Getting started is easy. Be up and running in minutes.
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Read Our Case Studies | Stoplight
+  twitter:
+    title: Read Our Case Studies | Stoplight
+    username: '@stoplightio'

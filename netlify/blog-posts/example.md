@@ -1,5 +1,6 @@
 ---
-path: /pepipost1
+path: /blog/pepipost
+tag: ['blog']
 hero:
   bgColor: blue
   pageName: Blog Post

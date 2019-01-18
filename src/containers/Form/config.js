@@ -1,61 +1,30 @@
-import hero from '@components/Hero/config';
-import actionBar from '@components/ActionBar/config';
-import metaTags from '@components/MetaTags/config';
-import hubspot from '@components/HubSpotForm/config';
+import metaTags from 'src/components/MetaTags/config';
+
+import hero from 'src/components/Hero/config';
+import actionBar from 'src/components/ActionBar/config';
+import hubspot from 'src/components/HubSpotForm/config';
+
+import collage from 'src/sections/Collage/config';
+import testimonials from 'src/sections/Testimonials/config';
 
 export default {
-  label: 'HubSpot Forms',
-  label_singular: 'HubSpot Form',
-  name: 'hubspot',
-  folder: 'netlify/hubspot',
+  label: 'Forms',
+  label_singular: 'Form',
+  name: 'form',
+  folder: 'netlify/forms',
   create: true,
   delete: true,
   slug: '{{slug}}',
   fields: [
     {
       name: 'path',
-      label: 'Path',
+      label: 'URL Path',
       widget: 'string',
     },
     hero,
     hubspot,
-    {
-      name: 'customers',
-      label: 'Customers',
-      widget: 'list',
-      field: {
-        name: 'image',
-        label: 'Image',
-        widget: 'image',
-      },
-    },
-    {
-      name: 'testimonials',
-      label: 'Testimonials',
-      widget: 'list',
-      fields: [
-        {
-          name: 'image',
-          label: 'Image',
-          widget: 'image',
-        },
-        {
-          name: 'quote',
-          label: 'Quote',
-          widget: 'string',
-        },
-        {
-          name: 'author',
-          label: 'Author',
-          widget: 'string',
-        },
-        {
-          name: 'role',
-          label: 'Role',
-          widget: 'string',
-        },
-      ],
-    },
+    collage,
+    testimonials,
     actionBar,
     metaTags,
   ],

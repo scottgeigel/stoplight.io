@@ -1,5 +1,6 @@
 ---
-path: /hudya
+path: /case-studies/hudya
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Story

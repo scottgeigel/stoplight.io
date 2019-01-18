@@ -1,0 +1,13 @@
+path: /blog
+tag: 'blog'
+hero:
+  subtitle: Discover & Educate
+  title: Blog
+actionBar:
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Read Our Blog | Stoplight
+  twitter:
+    title: Read Our Blog | Stoplight
+    username: '@stoplightio'

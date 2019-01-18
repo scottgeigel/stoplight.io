@@ -1,16 +1,12 @@
-import * as React from 'react';
 import cn from 'classnames';
+import * as React from 'react';
 
-import Link from '@components/Link';
+import { Container } from 'src/components/Container';
+import { Link } from 'src/components/Link';
 
-export interface IPaginationProps {
+export interface IPagination {
   currentPage: number;
   totalPages: number;
-  basePath: string;
-
-  color: string;
-  backgroundColor: string;
-  borderColor: string;
 
   className?: string;
 }
@@ -21,76 +17,10 @@ export interface IPageItemProps {
   active?: boolean;
   disabled?: boolean;
 
-  color: string;
-  backgroundColor: string;
-  borderColor: string;
-
   className?: string;
 }
 
-const Pagination = ({
-  basePath = '',
-  currentPage = 1,
-  totalPages = 1,
-
-  className,
-  ...colorProps
-}: IPaginationProps) => {
-  console.log({ totalPages, currentPage });
-  if (totalPages === 1) return null;
-
-  const pageItems: any[] = [
-    <PageItem
-      key="previous"
-      to={`${basePath}/page/${currentPage - 1}`}
-      content="<"
-      className="rounded-l-lg"
-      disabled={currentPage === 1}
-      {...colorProps}
-    />,
-  ];
-
-  let pageStart = currentPage - 2;
-  const pageEnd = currentPage + 2;
-  while (pageStart < pageEnd) {
-    if (pageStart > 0 && pageStart <= totalPages) {
-      pageItems.push(
-        <PageItem
-          to={`${basePath}/page/${pageStart}`}
-          content={pageStart}
-          active={pageStart === currentPage}
-          {...colorProps}
-        />
-      );
-    }
-
-    pageStart += 1;
-  }
-
-  pageItems.push(
-    <PageItem
-      key="next"
-      to={`${basePath}/page/${currentPage + 1}`}
-      content=">"
-      className="rounded-r-lg"
-      disabled={currentPage === totalPages}
-      {...colorProps}
-    />
-  );
-
-  return <ul className={`inline-flex list-reset font-semibold block`}>{pageItems}</ul>;
-};
-
-export const PageItem = ({
-  to,
-  content,
-  active,
-  disabled,
-  className,
-  color = 'blue-light',
-  backgroundColor = 'white',
-  borderColor = 'grey-light',
-}: IPageItemProps) => {
+export const PageItem = ({ to, content, active, disabled, className }: IPageItemProps) => {
   return (
     <Link
       to={to}
@@ -99,10 +29,10 @@ export const PageItem = ({
         className,
         'px-3 py-2 -ml-px border',
         disabled
-          ? `cursor-not-allowed text-grey-dark bg-${backgroundColor} border-${borderColor}`
+          ? `cursor-not-allowed text-grey-dark bg-white border-grey-light`
           : active
-          ? `cursor-default text-${backgroundColor} bg-${color} border-${color}`
-          : `cursor-pointer text-${color} bg-${backgroundColor} border-${borderColor}`
+            ? `cursor-default text-white bg-blue-light border-blue-light`
+            : `cursor-pointer text-blue-light bg-white border-grey-light`
       )}
     >
       {content}
@@ -110,4 +40,16 @@ export const PageItem = ({
   );
 };
 
-export default Pagination;
+export const Pagination: React.FunctionComponent<IPagination> = ({
+  // basePath,
+  currentPage = 1,
+  totalPages = 1,
+
+  className,
+}) => {
+  if (totalPages <= 1) {
+    return null;
+  }
+
+  return <Container className="inline-flex list-reset font-semibold block">Pagination</Container>;
+};

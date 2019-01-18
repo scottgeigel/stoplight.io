@@ -1,5 +1,6 @@
 ---
-path: /bodev
+path: /case-studies/bodev
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Story

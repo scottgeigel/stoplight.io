@@ -1,5 +1,6 @@
 ---
-path: /appointmentplus
+path: /case-studies/appointmentplus
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Story

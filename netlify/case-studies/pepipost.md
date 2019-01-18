@@ -1,5 +1,6 @@
 ---
-path: /pepipost
+path: /case-studies/pepipost
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Story
