@@ -39,12 +39,12 @@ const dataLoaders = {
   '.yaml': yaml.safeLoad,
 };
 
-const convertDescriptionsToHTML = data => {
+const convertPropertiesToHTML = data => {
   for (const key in data) {
     if (data.hasOwnProperty(key)) {
       if (typeof data[key] === 'object') {
-        data[key] = convertDescriptionsToHTML(data[key]);
-      } else if (key === 'description') {
+        data[key] = convertPropertiesToHTML(data[key]);
+      } else if (['description', 'markdown'].includes(key)) {
         data[key] = MarkdownRenderer(data[key]);
       }
     }
@@ -65,9 +65,9 @@ const getFile = (srcPath, extension = '.yaml') => {
 
   const path = slugify(data.path || data.title || nodePath.basename(srcPath, 'yaml'));
 
-  // Don't convert markdown or settings files
-  if (extension !== '.md' && !/settings\.yaml/.test(srcPath)) {
-    data = convertDescriptionsToHTML(data);
+  // Don't convert settings files
+  if (!/settings\.yaml/.test(srcPath)) {
+    data = convertPropertiesToHTML(data);
   }
 
   return {

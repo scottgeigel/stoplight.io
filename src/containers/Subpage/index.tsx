@@ -16,9 +16,9 @@ export interface IPage {
 }
 
 export const Subpage: React.FunctionComponent<IPage> = ({ hero, body, info, quotes, actionBar }) => {
-  const { title, image, description, items } = info;
+  const { title, image, description } = info;
 
-  const hasSidebar = image || title || description || items.length || quotes.length;
+  const hasSidebar = image || title || description || quotes.length;
 
   return (
     <React.Fragment>
@@ -42,7 +42,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({ hero, body, info, quot
         </div>
       </Container>
 
-      <ActionBar key="actionBar" className="my-24" {...actionBar} />
+      <ActionBar className="my-24" {...actionBar} />
     </React.Fragment>
   );
 };
