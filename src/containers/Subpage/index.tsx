@@ -10,15 +10,13 @@ import { IQuote, Quote } from 'src/components/Quote';
 export interface IPage {
   hero: IHero;
   body: string;
-  info: IInfo;
-  quotes: IQuote[];
-  actionBar: IActionBar;
+  info?: IInfo;
+  quotes?: IQuote[];
+  actionBar?: IActionBar;
 }
 
 export const Subpage: React.FunctionComponent<IPage> = ({ hero, body, info, quotes, actionBar }) => {
-  const { title, image, description } = info;
-
-  const hasSidebar = image || title || description || quotes.length;
+  const hasSidebar = (info && (info.image || info.title || info.description)) || (quotes && quotes.length);
 
   return (
     <React.Fragment>
@@ -28,7 +26,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({ hero, body, info, quot
         <div className="relative">
           {hasSidebar && (
             <div className="-mt-40 ml-12 mb-12 w-1/3 md:mt-0 md:ml-0 md:mb-24 md:w-full float-right md:float-none">
-              <Info {...info} />
+              {info && <Info {...info} />}
 
               {quotes &&
                 quotes.length > 0 &&
@@ -42,7 +40,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({ hero, body, info, quot
         </div>
       </Container>
 
-      <ActionBar className="my-24" {...actionBar} />
+      {actionBar && <ActionBar className="my-24" {...actionBar} />}
     </React.Fragment>
   );
 };
