@@ -22,7 +22,7 @@ export interface IPricingPlan {
 
 export interface IPricingPlans {
   color: string;
-  pricingPlans: IPricingPlan[];
+  plans: IPricingPlan[];
 }
 
 export const PlanFeature: React.FunctionComponent<IPlanFeature> = ({ color, name }) => {
@@ -72,15 +72,15 @@ export const PricingPlan: React.FunctionComponent<IPricingPlan> = ({
   );
 };
 
-export const PricingPlans: React.FunctionComponent<IPricingPlans> = ({ color, pricingPlans }) => {
-  if (!pricingPlans || !pricingPlans.length) {
+export const PricingPlans: React.FunctionComponent<IPricingPlans> = ({ color, plans }) => {
+  if (!plans || !plans.length) {
     return null;
   }
 
   return (
     <Container className="-mt-80 z-5 relative">
       <div className="flex flex-wrap md:mx-0 -mx-6">
-        {pricingPlans.map((pricingPlan, key) => (
+        {plans.map((pricingPlan, key) => (
           <PricingPlan key={key} titleColor={color} {...pricingPlan} />
         ))}
       </div>
