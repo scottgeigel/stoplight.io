@@ -186,7 +186,7 @@ export default {
         items.push({
           title: page.hero.title,
           description: page.hero.subtitle,
-          image: page.info.image,
+          image: page.info ? page.info.image : null,
           href: page.path,
           tags: page.tags, // used to show which tag matches the search
         });
