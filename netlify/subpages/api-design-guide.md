@@ -38,13 +38,13 @@ meta:
     title: API Design Guide | Basics
     username: '@stoplightio'
 ---
-# What is API Design?
+## What is API Design?
 
 API design is the collection of planning and architectural decisions you make when building an API. Your API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably.
 
 There is not a single approach to design APIs “the right way.” Instead, we need to lean on industry best practices where relevant and take cues from those who will use our APIs.
 
-# Choose your API Specification
+## Choose your API Specification
 
 Before you can communicate your API design, you need an artifact that someone else can use to understand your design. Historically, this might have been called documentation. While it’s still important to have human-facing documentation that is easy to use, more is required of modern APIs. In recent years the industry has rallied around the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) (OAS).
 
@@ -61,13 +61,13 @@ While OAS 3.0 is the way forward, each of these alternative formats has tooling 
 
 Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OAS 3.0](https://stoplight.io/api-design-guide/oas-spec/) to describe your API.
 
-# Why API Design-First Matters
+## Why API Design-First Matters
 
 Now that you’ve chosen OAS 3.0, you may be tempted to set that aside until after you build your API. While it’s useful to describe existing APIs, you should also use your OpenAPI description while designing a new API.
 
 When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The [design-first approach](https://blog.stoplight.io/openapi-and-design-first-principles-96e7c4b2aec1) offers a single source of truth, readable by collaborators and machines alike.
 
-## The Design-Second Oxymoron
+### The Design-Second Oxymoron
 
 Design-first becomes clearer when you consider the alternative. If you go straight into building your API, there’s no returning to design. That’s like constructing a house and _then_ going to an architect to draw up plans. It just makes no sense.
 
@@ -77,7 +77,7 @@ Do you know who will use your API? Even for an internal project, you’re likely
 
 Your collaboration can go beyond technical teams, as well. You could get great insights from product, marketing, partnerships, and many other areas of your organization.
 
-## The Importance of Knowing Use Cases
+### The Importance of Knowing Use Cases
 
 When you understand how your software will be used you can design it better. The biggest mistake in API design is to make decisions based on how your system works, rather than what your consumers need to support. In order to design around use cases, you’ll need to talk to the consumers, or at least include those who know them better.
 
@@ -89,7 +89,7 @@ When you involve others in API design, you build something better. The API spec 
 
 ![API Design-First Flow](/images/api-design-first-flow-wide.png "API Design-First Flow")
 
-# API Design Best Practices
+## API Design Best Practices
 
 Armed with an understanding of your use cases, you’re ready to begin your API design. Each project is different, so  best practices may not always fit your situation. However, these are guidelines to keep in mind as you design your API.
 
@@ -101,7 +101,7 @@ While we’ll go into specifics below, these are the high level tenets of good A
 
 You’ll want to keep your entire team updated as you make [design decisions together](https://stoplight.io/design/#collaborative-design). Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) can help keep everyone on the same page.
 
-## How to Design a REST API
+### How to Design a REST API
 
 The OpenAPI spec is focused on describing REST APIs. However, it’s still possible to describe an API that violates the RESTful principles. This section is not meant to be exhaustive, but will instead help you avoid the most common infringements in REST API design.
 
@@ -132,7 +132,7 @@ Here’s a quick list of the most common status codes and how they should be use
 
 There are plenty of other status codes you might find useful. At a minimum, use these most common ones in the expected way.
 
-## API Design Patterns
+### API Design Patterns
 
 In addition to following REST principles, you'll run into some of the same concepts others have already solved. You may have reasons to implement some of these patterns differently. In all other cases, look to these best practices for approaching your API design.
 

@@ -34,7 +34,6 @@ meta:
     title: API Design Guide | OAS Spec
     username: '@stoplightio'
 ---
-
 # Understanding the OpenAPI Specification
 
 The industry has selected OpenAPI as the way forward, so let’s understand it. From a technical standpoint, it is a YAML or JSON file that follows a specific [document structure](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#documentStructure). You should be able to describe any REST API using a document that adheres to the OAS 3 schema.
@@ -51,7 +50,7 @@ The primary sections of an OAS 3 document are:
 
 While not all of these sections are required in an OpenAPI definition, they can be used together to flexibly describe an API with minimal repetition. Promoting re-use means you can avoid the tedium and potential human error of find-and-replace updates.
 
-## OpenAPI Versions: OAS 2 vs OAS 3
+### OpenAPI Versions: OAS 2 vs OAS 3
 
 While OAS 3 is the most recent version of OpenAPI, it replaced OAS 2, previously known as Swagger. The newer version provides a simpler way to describe APIs, while also offering more flexibility. Because there were a lot of legacy Swagger documents, it’s important to have a compatible community-owned version. But API practitioners wanted to move the Spec forward with OAS 3.
 
