@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import * as React from 'react';
 
+import { Button, IButton } from 'src/components/Button';
 import { Container } from 'src/components/Container';
 import { Link } from 'src/components/Link';
 import { Section } from 'src/components/Section';
@@ -25,6 +26,7 @@ export interface IFeatureSection {
   color: string;
   features: IFeature[];
   actionBar: IActionBar;
+  buttons: IButton[];
 }
 
 export const Feature: React.FunctionComponent<IFeature> = props => {
@@ -78,6 +80,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   color,
   features,
   actionBar,
+  buttons = [],
 }) => {
   if (!features || !features.length) {
     return null;
@@ -86,7 +89,7 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   return (
     <Section id="product" bgClassName="bg-grey-lightest">
       {(title || description) && (
-        <Container title={title} className="border-b pb-32">
+        <Container title={title} className={cn(!buttons.length ? 'pb-32 border-b' : null)}>
           {description && (
             <div
               className="flex leading-loose text-lg text-center max-w-lg mx-auto"
@@ -95,6 +98,16 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
           )}
         </Container>
       )}
+
+      {buttons.length ? (
+        <Container className="mt-20 pb-32 border-b">
+          <div className="flex-1 flex lg:justify-center lg:items-between lg:flex-wrap">
+            {buttons.map((button, index) => (
+              <Button key={index} className={index > 0 ? 'ml-4 sm:ml-0' : ''} {...button} />
+            ))}
+          </div>
+        </Container>
+      ) : null}
 
       <Container className="mx-auto py-16">
         {features.map((feature, index) => (

@@ -9,11 +9,13 @@ export interface IButton {
   className?: string;
   color?: string;
   outlined?: boolean;
+  shadow?: string;
 }
 
 export const Button: React.FunctionComponent<IButton> = ({
   className,
   color = 'purple',
+  shadow,
   outlined,
   href,
   title,
@@ -31,6 +33,7 @@ export const Button: React.FunctionComponent<IButton> = ({
         {
           [`bg-${color} hover:bg-${color}-dark text-white`]: !outlined,
           [`text-${color}-dark hover:text-${color}-darker`]: outlined,
+          [`shadow-${shadow}`]: shadow,
         }
       )}
       to={href}
