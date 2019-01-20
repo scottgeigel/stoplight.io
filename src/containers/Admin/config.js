@@ -14,7 +14,7 @@ export const AuthorConfig = {
   label: 'Authors',
   label_singular: 'Author',
   name: 'author',
-  folder: 'netlify/author',
+  folder: 'netlify/authors',
 };
 
 export const CaseStudyConfig = {
@@ -22,7 +22,7 @@ export const CaseStudyConfig = {
   label: 'Case Studies',
   label_singular: 'Case Study',
   name: 'caseStudy',
-  folder: 'netlify/case-study',
+  folder: 'netlify/case-studies',
 };
 
 export const BlogPostConfig = {
@@ -30,7 +30,7 @@ export const BlogPostConfig = {
   label: 'Blog Posts',
   label_singular: 'Blog Post',
   name: 'blogPost',
-  folder: 'netlify/blog-post',
+  folder: 'netlify/blog-posts',
 };
 
 export const config = {
