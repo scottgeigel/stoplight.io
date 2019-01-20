@@ -13,20 +13,17 @@ hero:
   cta:
     color: purple
     href: 'https://next.stoplight.io'
-  pageName: ''
   subtitle: Learn all there is about API Design through our comprehensive guide
   title: API Design Guide
 info:
-  links:
-    - href: '/api-design-guide/oas-spec#openapi-versions%3A-oas-2-vs-oas-3'
-      title: OAS 2 vs OAS 3
-    - href: '/api-design-guide/oas-spec#should-definitions-use-json-or-yaml%3F'
-      title: JSON vs YAML
-  title: 'Sections '
+  description: >-
+    [OAS 2 vs OAS 3](/api-design-guide/oas-spec#openapi-versions%3A-oas-2-vs-oas-3)<br/>
+
+    [JSON vs YAML](/api-design-guide/oas-spec#should-definitions-use-json-or-yaml%3F)<br/>
+  title: Sections
 quotes: []
 actionBar:
-  buttons:
-    - color: purple
+  buttons: []
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
@@ -37,7 +34,9 @@ meta:
     title: API Design Guide | OAS Spec
     username: '@stoplightio'
 ---
+
 # Understanding the OpenAPI Specification
+
 The industry has selected OpenAPI as the way forward, so let’s understand it. From a technical standpoint, it is a YAML or JSON file that follows a specific [document structure](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#documentStructure). You should be able to describe any REST API using a document that adheres to the OAS 3 schema.
 
 The primary sections of an OAS 3 document are:
@@ -61,6 +60,7 @@ One of the biggest differences between OAS 2 and OAS 3 is the components object.
 There are a handful of other components, some of which didn’t directly exist in OAS2. Two notable new components are callbacks and headers. Callbacks can be used with Webhooks and other asynchronous technologies. Headers, while describable in OAS 2, are now able to be reused more easily.
 
 ## Should Definitions Use JSON or YAML?
+
 Through the OpenAPI Initiative, the industry has agreed upon this new approach. However, the format to use for definitions is still up for much debate. Both JSON and YAML are supported by OAS 3. They each have advantages for both human and machine consumers.
 
 In terms of readability, YAML is clean and easy for most to decipher. It uses whitespace, colons, and newlines—a common writing syntax. By contrast, JSON has a lot of curly braces, quotes, and commas. Yet, when pretty printed, it can be similarly readable. JSON is also very easily consumed by machines. The syntax is still relatively lightweight and helps modern languages quickly parse data.
@@ -70,4 +70,5 @@ The whitespacing of YAML describes the nesting of data. When accurately written,
 There are good and bad things about both YAML and JSON. In addition to reading and writing issues, you’ll find some tools support only one or the other. It’s best to be familiar with both and plan to convert between them when needed.
 
 ## Get Familiar With API Design
+
 Whether wrestling with data formats or spinning up mock servers, there are tools to improve your API design experience. Start from scratch or import an existing description, then start building and sharing with your team. Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) provides a design-first suite of tools to help you build great APIs.
