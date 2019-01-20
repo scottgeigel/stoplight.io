@@ -12,16 +12,11 @@ hero:
   title: Hudya
 info:
   name: Hudya
-  logo: /images/logo_hudya.png
-  items:
-    - name: Industry
-      value: FinTech & InsurTech
-
-    - name: Location
-      value: Norway
-
-    - name: Employees
-      value: Startup
+  image: /images/logo_hudya.png
+  description: >-
+    **Industry**: FinTech & InsurTech <br/>
+    **Location**: Norway <br/>
+    **Employees**: Startup
 
 quotes:
   - author: Evin Callahan

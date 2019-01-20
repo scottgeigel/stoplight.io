@@ -12,16 +12,11 @@ hero:
   title: GFT Technology
 info:
   name: GFT Technology
-  logo: /images/gft_group_logo.jpg
-  items:
-    - name: Industry
-      value: Big Data, IT, & Financial Services
-
-    - name: Location
-      value: Germany
-
-    - name: Employees
-      value: 5000-10000
+  image: /images/gft_group_logo.jpg
+  description: >-
+    **Industry**: Big Data, IT, & Financial Services<br/>
+    **Location**: Germany<br/>
+    **Employees**: 5000-10000
 quotes:
   - author: Carlos Lozano
     quote: >-

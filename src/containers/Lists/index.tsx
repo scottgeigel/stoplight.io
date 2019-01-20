@@ -9,7 +9,7 @@ import { IPagination, Pagination } from 'src/components/Pagination';
 export interface IListItem {
   title: string;
   description: string;
-  logo: string;
+  image: string;
   href: string;
 }
 
@@ -21,14 +21,14 @@ export interface IList {
   pagination?: IPagination;
 }
 
-export const ListItem: React.FunctionComponent<IListItem> = ({ title, description, logo, href }) => {
+export const ListItem: React.FunctionComponent<IListItem> = ({ title, description, image, href }) => {
   return (
     <Link
       to={href}
       className="block flex sm:flex-col items-center shadow bg-grey-lightest p-12 sm:p-4 rounded-lg text-grey-darkest hover:bg-grey-lighter"
     >
       <div className="pr-20 sm:pr-0 sm:pb-4 max-w-full">
-        <img src={logo} alt={title} className="max-w-xs" />
+        <img src={image} alt={title} className="max-w-xs" />
       </div>
 
       <div className="flex-1">

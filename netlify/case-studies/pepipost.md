@@ -12,17 +12,11 @@ hero:
   title: Pepipost
 info:
   name: Pepipost
-  logo: /images/pepipost_logo.png
-  items:
-    - name: Industry
-      value: Information Services & Technology
-
-    - name: Location
-      value: Dublin, Ireland
-
-    - name: Employees
-      value: 11-50
-
+  image: /images/pepipost_logo.png
+  description: >-
+    **Industry**: Information Services & Technology <br/>
+    **Location**: Dublin, Ireland <br/>
+    **Employees**: 11-50
 quotes:
   - author: Dibya Sahoo
     quote: >-

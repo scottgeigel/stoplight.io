@@ -11,17 +11,11 @@ hero:
     telecom, media industries in the private and public sector.
   title: Bo Development
 info:
-  name: Bo Development
-  logo: /images/bodev_logo.png
-  items:
-    - name: Industry
-      value: IT Consulting
-
-    - name: Location
-      value: Turkey
-
-    - name: Employees
-      value: Startup
+  image: /images/bodev_logo.png
+  description: >-
+    **Industry**: IT Consulting<br/>
+    **Location**: Turkey<br/>
+    **Employees**: Startup
 quotes:
   - author: Can Berkol
     quote: >-

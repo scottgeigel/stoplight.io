@@ -11,17 +11,11 @@ hero:
     automates the scheduling process.
   title: AppointmentPlus
 info:
-  name: AppointmentPlus
-  logo: /images/logo_appointmentplus_transparent.png
-  items:
-    - name: Industry
-      value: Scheduling Software
-
-    - name: Location
-      value: Arizona
-
-    - name: Employees
-      value: 50-100
+  image: /images/logo_appointmentplus_transparent.png
+  description: >-
+    **Industry**: Scheduling Software<br/>
+    **Location**: Arizona<br/>
+    **Employees**: 50-100
 quotes:
   - author: Josh Flyer
     quote: >-

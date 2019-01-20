@@ -12,16 +12,11 @@ hero:
   title: Namely
 info:
   name: Namely
-  logo: /images/logo_namely_transparent.png
-  items:
-    - name: Industry
-      value: HR Software
-
-    - name: Location
-      value: New York
-
-    - name: Employees
-      value: 250-500
+  image: /images/logo_namely_transparent.png
+  description: >-
+    **Industry**: HR Software <br />
+    **Location**: New York <br />
+    **Employees**: 250-500
 quotes:
   - author: Katie Corcos
     quote: >-
