@@ -57,7 +57,7 @@ export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, p
             ))}
           </div>
 
-          <Pagination {...pagination} />
+          {pagination && <Pagination {...pagination} />}
         </section>
       )}
 
