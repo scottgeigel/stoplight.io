@@ -5,21 +5,20 @@ hero:
   subtitle: Flexible Hosted Documentation Solutions that fit any use case
   title: Hosted API Documentation
 info:
-  links:
-    - href: 'https://docs.stoplight.io/documentation/introduction'
-      title: API Documentation Guide
-    - href: 'https://community.stoplight.io/c/api-best-practices/documentation'
-      title: Documentation | Community
-    - href: 'https://docs.stoplight.io/documentation/embed-your-hub'
-      title: 'How to Embed Documentation '
-    - href: 'https://docs.stoplight.io/documentation/download-static-html'
-      title: Download Static HTML & CSS
-    - href: 'https://docs.stoplight.io/documentation/integrations/segment'
-      title: Segment Integration
-    - href: 'https://docs.stoplight.io/documentation/integrations/google-analytics'
-      title: Google Analytics Integration
-    - href: 'https://docs.stoplight.io/documentation/integrations/intercom'
-      title: Intercom Integration
+  description: >-
+    [API Documentation Guide](https://docs.stoplight.io/documentation/introduction)<br />
+
+    [Documentation | Community](https://community.stoplight.io/c/api-best-practices/documentation)<br />
+
+    ['How to Embed Documentation '](https://docs.stoplight.io/documentation/embed-your-hub)<br />
+
+    [Download Static HTML & CSS](https://docs.stoplight.io/documentation/download-static-html)<br />
+
+    [Segment Integration](https://docs.stoplight.io/documentation/integrations/segment)<br />
+
+    [Google Analytics Integration](https://docs.stoplight.io/documentation/integrations/google-analytics)<br />
+
+    [Intercom Integration](https://docs.stoplight.io/documentation/integrations/intercom)
   title: Related Links
 actionBar:
   enabled: true
@@ -27,22 +26,25 @@ actionBar:
 meta:
   description: >-
     Our cloud based documentation generator allows you to host your
-    documentation anywhere. Try it online for free 
+    documentation anywhere. Try it online for free
   favicon: /images/mark_light_bg.png
   title: Cloud Based API Documentation Hosting | Stoplight
   twitter:
     description: >-
       Our cloud based documentation generator allows you to host your
-      documentation anywhere. Try it online for free 
+      documentation anywhere. Try it online for free
     image: /images/mark_light_bg.png
     title: Cloud Based API Documentation Hosting | Stoplight
     username: '@stoplightio'
 ---
-# Hosted API Documentation 
-Stoplight provides a number of different options for hosting documentation and a flexible set of integrations and authorizations to fulfill all major use cases. 
+
+# Hosted API Documentation
+
+Stoplight provides a number of different options for hosting documentation and a flexible set of integrations and authorizations to fulfill all major use cases.
 
 ## Hosting with Stoplight
-Hosting your documentation with Stoplight is the simplest method for deploying your documentation and managing it. You can host on ```.docs.stoplight.io``` for free or use custom domains with a Standard or Pro docs plan. Changes are automatically made to documentation to ensure that they are up to date and Stoplight manages all the technical details for you. 
+
+Hosting your documentation with Stoplight is the simplest method for deploying your documentation and managing it. You can host on `.docs.stoplight.io` for free or use custom domains with a Standard or Pro docs plan. Changes are automatically made to documentation to ensure that they are up to date and Stoplight manages all the technical details for you.
 
 ## Embed your Documentation into an Existing Website
 
@@ -50,11 +52,11 @@ There are two methods that will allow you to embed your documentation into an ex
 
 ## Generate and host your API documentation
 
-If you would rather host your API documentation outside of Stoplight’s hosted servers, you can download a built version of your Hub with a Pro docs plan. Downloading a build will produce a .zip containing all of the minified assets necessary to load your Hub. These assets will include HTML, JavaScript, CSS, and JSON files.  
+If you would rather host your API documentation outside of Stoplight’s hosted servers, you can download a built version of your Hub with a Pro docs plan. Downloading a build will produce a .zip containing all of the minified assets necessary to load your Hub. These assets will include HTML, JavaScript, CSS, and JSON files.
 
-## Flexible Stoplight Solutions 
+## Flexible Stoplight Solutions
 
-### Integrations 
+### Integrations
 
 #### Segment
 
@@ -66,11 +68,11 @@ Stoplight’s integration with Intercom brings your documentation into your supp
 
 #### Google Analytics
 
-Monitor your documentation’s traffic through Google Analytics integration. 
+Monitor your documentation’s traffic through Google Analytics integration.
 
-### Authorizations 
+### Authorizations
 
-Stoplight provides multiple ways to protect your documentation behind a form of authorization. These include basic authorization, SAML, and Auth0. 
+Stoplight provides multiple ways to protect your documentation behind a form of authorization. These include basic authorization, SAML, and Auth0.
 
 #### Basic Authorization
 
@@ -78,5 +80,4 @@ Stoplight provides basic authorization (username and password) to enable a layer
 
 #### Auth0
 
-Stoplight includes a useful Auth0 integration for the popular, secure, authorization provider. 
-
+Stoplight includes a useful Auth0 integration for the popular, secure, authorization provider.
