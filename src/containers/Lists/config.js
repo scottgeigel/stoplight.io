@@ -1,7 +1,7 @@
 import metaTags from 'src/components/MetaTags/config';
 import hero from 'src/components/Hero/config';
 import actionBar from 'src/components/ActionBar/config';
-// import pagination from 'src/components/Pagination/config';
+import pagination from 'src/components/Pagination/config';
 
 export default {
   label: 'Lists',
@@ -21,6 +21,6 @@ export default {
     hero,
     actionBar,
     metaTags,
-    // pagination,
+    pagination,
   ],
 };

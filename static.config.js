@@ -205,9 +205,10 @@ export default {
         component: 'src/containers/Lists',
         getData: () => ({
           ...list,
-          items,
+          items: items.slice(0, pageSize),
           pagination: {
             ...list.pagination,
+            path: list.path,
             currentPage: 1,
             totalPages: Math.ceil(items.length / pageSize),
           },
@@ -215,7 +216,7 @@ export default {
       });
 
       // Add routes for List pagination pages
-      if (items.length > pageSize) {
+      if (list.pagination && list.pagination.enabled && items.length > pageSize) {
         routes.push(
           ...makePageRoutes({
             items,
@@ -231,6 +232,7 @@ export default {
                 items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
                 pagination: {
                   ...list.pagination,
+                  path: list.path,
                   currentPage,
                   totalPages,
                 },

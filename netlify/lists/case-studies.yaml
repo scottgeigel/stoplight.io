@@ -20,3 +20,5 @@ meta:
   twitter:
     title: Read Our Case Studies | Stoplight
     username: '@stoplightio'
+pagination:
+  enabled: true

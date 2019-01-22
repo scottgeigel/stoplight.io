@@ -11,3 +11,5 @@ meta:
   twitter:
     title: Read Our Blog | Stoplight
     username: '@stoplightio'
+pagination:
+  enabled: true
