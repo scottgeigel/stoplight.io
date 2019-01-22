@@ -1,0 +1,15 @@
+path: /blog/author
+tag: 'author'
+hero:
+  subtitle: Meet the Writers
+  title: Authors
+actionBar:
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Authors | Stoplight
+  twitter:
+    title: Authors | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

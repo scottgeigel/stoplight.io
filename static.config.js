@@ -135,6 +135,7 @@ export default {
       landings = [],
       caseStudies = [],
       blogPosts = [],
+      authors = [],
       other = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
@@ -147,6 +148,7 @@ export default {
       getFiles(`${NETLIFY_PATH}/landings`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
       getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/authors`, ['.md']),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
@@ -172,8 +174,21 @@ export default {
       },
     ];
 
-    const subpages = [...caseStudies, ...blogPosts, ...other];
-    const pages = [...landings, ...subpages].filter(page => page.path);
+    const subpages = [...caseStudies, ...blogPosts, ...authors, ...other];
+    const pages = [...landings, ...subpages].filter(page => {
+      // add author to pages and subpages
+      if (page.path) {
+        const author = authors.find(author => author.hero.title === page.author);
+
+        page.author = {
+          name: author && author.name ? author.name : null,
+          path: author && author.path ? author.path : null,
+          image: author && author.image ? author.image : null,
+        };
+
+        return page.path;
+      }
+    });
 
     for (const list of lists) {
       const items = []; // pages that match this list's tag
@@ -183,17 +198,29 @@ export default {
           continue;
         }
 
+        // use hero image if existing, else use info immage
+        const itemImage = page.hero && page.hero.image ? page.hero.image.src : null;
+        if (!itemImage) {
+          itemImage = page.info ? page.info.image : null;
+        }
+
         items.push({
           title: page.hero.title,
           description: page.hero.subtitle,
-          image: page.info ? page.info.image : null,
+          image: itemImage,
           href: page.path,
           tags: page.tags, // used to show which tag matches the search
+          author: page.author,
         });
       }
 
       const listItems = items.length ? items : [];
-      const pageSize = list.pagination ? list.pagination.perPage : DEFAULT_PAGINATION_PAGE_SIZE;
+
+      // if pagination is enabled add page size
+      let pageSize = listItems.length;
+      if (list.pagination && list.pagination.enabled) {
+        pageSize = list.pagination.perPage || DEFAULT_PAGINATION_PAGE_SIZE;
+      }
 
       // Add route for List page
       routes.push({
@@ -201,21 +228,21 @@ export default {
         component: 'src/containers/Lists',
         getData: () => ({
           ...list,
-          items: items.slice(0, pageSize),
+          items: listItems.slice(0, pageSize),
           pagination: {
             ...list.pagination,
             path: list.path,
             currentPage: 1,
-            totalPages: Math.ceil(items.length / pageSize),
+            totalPages: Math.ceil(listItems.length / pageSize),
           },
         }),
       });
 
       // Add routes for List pagination pages
-      if (list.pagination && list.pagination.enabled && items.length > pageSize) {
+      if (list.pagination && list.pagination.enabled && listItems.length > pageSize) {
         routes.push(
           ...makePageRoutes({
-            items,
+            items: listItems,
             pageSize,
             pageToken: 'page',
             route: {
@@ -225,7 +252,7 @@ export default {
             decorate: (item, currentPage, totalPages) => ({
               getData: () => ({
                 ...list,
-                items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+                items: listItems.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
                 pagination: {
                   ...list.pagination,
                   path: list.path,

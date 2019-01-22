@@ -1,14 +1,16 @@
 ---
-path: /blog/pepipost1
+path: /blog/http-testing
 tags: ['blog', 'blog-testing']
+author: Ross McDonald
 hero:
   bgColor: purple-darker
   pageName: Blog Post
   aligned: left
   skew: 3deg
   title: The Fundamentals of HTTP API Unit Testing
+  subtitle: Some subtitle ....
 info:
-  image: /images/logo_appointmentplus_transparent.png
+  image: /images/aaa_blog_example.png
 actionBar:
   enabled: true
 meta:

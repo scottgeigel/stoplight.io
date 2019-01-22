@@ -33,11 +33,19 @@ export interface IHeroButton {
   color?: string;
 }
 
+export interface IHeroAuthor {
+  className?: string;
+  name: string;
+  path: string;
+  image: string;
+}
+
 export interface IHero {
   pageName: string;
   aligned: 'center' | 'right' | 'left';
   title: string;
   subtitle: string;
+  author?: IHeroAuthor;
   cta: ICallToAction;
   bgColor: string;
   cards: IHeroCard[];
@@ -48,17 +56,29 @@ export interface IHero {
   containerClassName: string;
 }
 
-const HeroCard = ({ index, title, subtitle, href, bgColor, icon }) => {
+export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, name, path, image }) => {
+  if (!image || !name) return null;
+
+  return (
+    <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
+      <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />
+      {name}
+    </Link>
+  );
+};
+
+const HeroCard = ({ index, title, subtitle, href, bgColor, icon, image }) => {
   return (
     <Link
       to={href}
       className={cn(
         'HeroBlock',
         'md:mb-6',
-        'shadow cursor-pointer relative flex flex-col flex-1 h-48 md:h-40 overflow-hidden rounded-md p-6 mx-3 text-left z-10 text-white',
+        'shadow relative flex flex-col flex-1 h-48 md:h-40 overflow-hidden rounded-md p-6 mx-3 text-left z-10 text-white',
         `block-${indexMap[index]}`,
         {
           [`bg-${bgColor}`]: bgColor,
+          'cursor-pointer': href,
         }
       )}
     >
@@ -66,6 +86,15 @@ const HeroCard = ({ index, title, subtitle, href, bgColor, icon }) => {
         {icon && <FontAwesomeIcon icon={['fas', icon.name]} className="mr-3" />} <h3>{title}</h3>
       </div>
       {subtitle && <div className="mt-4 leading-loose">{subtitle}</div>}
+
+      {image && (
+        <div
+          className="rounded-full bg-cover h-48 w-32"
+          style={{
+            backgroundImage: `url(${image})`,
+          }}
+        />
+      )}
       <div className={cn(`triangle-${indexMap[index]}`, 'platform-block-triangle')} />
     </Link>
   );
@@ -112,6 +141,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
   aligned = 'center',
   title,
   subtitle,
+  author,
   cta,
   bgColor = 'black',
   cards = [],
@@ -151,6 +181,12 @@ export const Hero: React.FunctionComponent<IHero> = ({
                 })}
               >
                 {subtitle}
+              </div>
+            )}
+
+            {author && (
+              <div>
+                <HeroAuthor className="mt-6 text-white opacity-75" {...author} />
               </div>
             )}
           </div>

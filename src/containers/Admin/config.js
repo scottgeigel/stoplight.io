@@ -15,6 +15,19 @@ export const AuthorConfig = {
   label_singular: 'Author',
   name: 'author',
   folder: 'netlify/authors',
+  fields: [
+    {
+      label: 'Name',
+      name: 'name',
+      widget: 'string',
+    },
+    {
+      label: 'Image',
+      name: 'image',
+      widget: 'file',
+    },
+    ...SubpageConfig.fields,
+  ],
 };
 
 export const CaseStudyConfig = {
@@ -31,6 +44,23 @@ export const BlogPostConfig = {
   label_singular: 'Blog Post',
   name: 'blogPost',
   folder: 'netlify/blog-posts',
+  fields: [
+    {
+      label: 'Author',
+      name: 'author',
+      widget: 'relation',
+      collection: 'authors',
+      searchFields: ['name'],
+      valueField: 'name',
+    },
+    {
+      label: 'Created At',
+      name: 'createdAt',
+      widget: 'date',
+      dateFormat: 'MMM DD, YYYY',
+    },
+    ...SubpageConfig.fields,
+  ],
 };
 
 export const config = {

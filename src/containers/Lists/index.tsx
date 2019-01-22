@@ -2,7 +2,7 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Hero, IHero } from 'src/components/Hero';
+import { Hero, HeroAuthor, IHero, IHeroAuthor } from 'src/components/Hero';
 import { Link } from 'src/components/Link';
 import { IPagination, Pagination } from 'src/components/Pagination';
 
@@ -11,6 +11,7 @@ export interface IListItem {
   description: string;
   image: string;
   href: string;
+  author: IHeroAuthor;
 }
 
 export interface IList {
@@ -21,7 +22,7 @@ export interface IList {
   pagination?: IPagination;
 }
 
-export const ListItem: React.FunctionComponent<IListItem> = ({ title, description, image, href }) => {
+export const ListItem: React.FunctionComponent<IListItem> = ({ title, description, image, href, author }) => {
   return (
     <Link
       to={href}
@@ -34,9 +35,15 @@ export const ListItem: React.FunctionComponent<IListItem> = ({ title, descriptio
       <div className="flex-1">
         <h1 className="mb-4">{title}</h1>
 
-        <p className="mb-10 leading-loose" dangerouslySetInnerHTML={{ __html: description }} />
+        {description ? <p className="mb-10 leading-loose" dangerouslySetInnerHTML={{ __html: description }} /> : null}
 
-        <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
+        <div className="flex items-center">
+          <div className="flex-1">
+            <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
+          </div>
+
+          {author && <HeroAuthor className="text-grey-darkest" {...author} />}
+        </div>
       </div>
     </Link>
   );
