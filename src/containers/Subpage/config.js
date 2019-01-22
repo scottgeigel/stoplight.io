@@ -1,6 +1,8 @@
-import hero from '@components/Hero/config';
-import metaTags from '@components/MetaTags/config';
-import actionBar from '@components/ActionBar/config';
+import hero from 'src/components/Hero/config';
+import info from 'src/components/Info/config';
+import metaTags from 'src/components/MetaTags/config';
+import actionBar from 'src/components/ActionBar/config';
+import quote from 'src/components/Quote/config';
 
 export default {
   label: 'Subpages',
@@ -19,79 +21,13 @@ export default {
       widget: 'string',
     },
     hero,
-    {
-      label: 'Extra Info',
-      name: 'info',
-      widget: 'object',
-      required: false,
-      fields: [
-        {
-          name: 'title',
-          label: 'Title',
-          widget: 'string',
-          default: 'Extra info title',
-        },
-        {
-          name: 'image',
-          label: 'Image',
-          widget: 'image',
-          required: false,
-        },
-        {
-          name: 'description',
-          label: 'Description',
-          widget: 'text',
-          required: false,
-        },
-        {
-          label: 'Links',
-          name: 'links',
-          widget: 'list',
-          fields: [
-            {
-              name: 'href',
-              label: 'URL',
-              widget: 'string',
-              required: false,
-            },
-            {
-              name: 'title',
-              label: 'Title',
-              widget: 'string',
-              required: false,
-              default: 'Item with optional link',
-            },
-          ],
-        },
-      ],
-    },
+    info,
     {
       label: 'Quotes',
       name: 'quotes',
       widget: 'list',
       required: false,
-      fields: [
-        {
-          name: 'quote',
-          label: 'Quote',
-          widget: 'string',
-          default: 'Insert a quote here',
-        },
-        {
-          name: 'author',
-          label: 'Author',
-          widget: 'string',
-          required: false,
-          default: 'Chris Lott',
-        },
-        {
-          name: 'role',
-          label: 'Role',
-          widget: 'string',
-          required: false,
-          default: 'Author',
-        },
-      ],
+      fields: quote.fields,
     },
     actionBar,
     metaTags,

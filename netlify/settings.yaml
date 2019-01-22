@@ -61,7 +61,7 @@ header:
           subtitle: Join the Stoplight community
           title: Community
           titleColor: green
-        - href: 'http://blog.stoplight.io/'
+        - href: '/blog'
           icon:
             - fas
             - rss
@@ -129,7 +129,7 @@ footer:
           title: Help Center
         - href: 'https://community.stoplight.io'
           title: 'Community '
-        - href: 'https://blog.stoplight.io'
+        - href: '/blog'
           title: Blog
         - href: 'https://press.stoplight.io'
           title: Press

@@ -1,19 +1,22 @@
 ---
-path: /namely
+path: /case-studies/namely
+tags: ['case-study']
 hero:
   bgColor: blue
   pageName: Customer Stories
+  aligned: left
   skew: 3deg
   subtitle: >-
     Namely is an All-In-One HR Platform that strives to provide HR professionals
     with the technology, data, and support they need to help employees thrive.
   title: Namely
 info:
-  employees: 250-500
-  industry: HR Software
-  location: New York
-  logo: /images/logo_namely_transparent.png
   name: Namely
+  image: /images/logo_namely_transparent.png
+  description: >-
+    **Industry**: HR Software <br />
+    **Location**: New York <br />
+    **Employees**: 250-500
 quotes:
   - author: Katie Corcos
     quote: >-

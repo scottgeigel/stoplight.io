@@ -1,4 +1,4 @@
-import cta from '@components/CallToAction/config';
+import cta from 'src/components/CallToAction/config';
 
 export default {
   name: 'hero',

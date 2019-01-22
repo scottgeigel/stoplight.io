@@ -5,7 +5,7 @@ import klaw from 'klaw';
 import yaml from 'js-yaml';
 import chokidar from 'chokidar';
 import frontmatter from 'front-matter';
-import { reloadRoutes } from 'react-static/node';
+import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
 import { Renderer as MarkdownRenderer } from './src/utils/markdown';
 
@@ -13,6 +13,7 @@ import webpack from './webpack';
 
 const NETLIFY_PATH = nodePath.resolve(__dirname, 'netlify');
 const IS_PRODUCTION = process.env.RELEASE_STAGE === 'production';
+const DEFAULT_PAGINATION_PAGE_SIZE = 10;
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes());
 
@@ -38,12 +39,12 @@ const dataLoaders = {
   '.yaml': yaml.safeLoad,
 };
 
-const convertDescriptionsToHTML = data => {
+const convertPropertiesToHTML = data => {
   for (const key in data) {
     if (data.hasOwnProperty(key)) {
       if (typeof data[key] === 'object') {
-        data[key] = convertDescriptionsToHTML(data[key]);
-      } else if (key === 'description') {
+        data[key] = convertPropertiesToHTML(data[key]);
+      } else if (['description', 'markdown'].includes(key)) {
         data[key] = MarkdownRenderer(data[key]);
       }
     }
@@ -64,9 +65,9 @@ const getFile = (srcPath, extension = '.yaml') => {
 
   const path = slugify(data.path || data.title || nodePath.basename(srcPath, 'yaml'));
 
-  // Don't convert markdown or settings files
-  if (extension !== '.md' && !/settings\.yaml/.test(srcPath)) {
-    data = convertDescriptionsToHTML(data);
+  // Don't convert settings files
+  if (!/settings\.yaml/.test(srcPath)) {
+    data = convertPropertiesToHTML(data);
   }
 
   return {
@@ -127,23 +128,25 @@ export default {
       home,
       pricing,
       about,
-      caseStudyConfig,
-
       forms = [],
-      caseStudies = [],
+
+      lists = [],
 
       landings = [],
-      subpages = [],
+      caseStudies = [],
+      blogPosts = [],
+      other = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
       getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
       getFile(`${NETLIFY_PATH}/pages/about.yaml`),
-      getFile(`${NETLIFY_PATH}/pages/case-studies.yaml`),
+      getFiles(`${NETLIFY_PATH}/forms`),
 
-      getFiles(`${NETLIFY_PATH}/hubspot`),
-      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/lists`),
 
       getFiles(`${NETLIFY_PATH}/landings`),
+      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 
@@ -167,47 +170,78 @@ export default {
         component: 'src/containers/About',
         getData: () => about,
       },
-      {
-        path: caseStudyConfig.path,
-        component: 'src/containers/CaseStudies',
-        getData: () => ({
-          ...caseStudyConfig,
-          caseStudies: caseStudies
-            .map(caseStudy => {
-              if (!caseStudy.path) {
-                return;
-              }
-
-              const { hero = {}, info = {} } = caseStudy;
-
-              return {
-                title: info.name,
-                description: hero.subtitle,
-                logo: info.logo,
-                href: caseStudyConfig.path + caseStudy.path,
-              };
-            })
-            .filter(Boolean),
-        }),
-        children: caseStudies
-          .map((caseStudy, index) => {
-            if (!caseStudy.path) {
-              return;
-            }
-
-            return {
-              path: caseStudy.path,
-              component: 'src/containers/CaseStudy',
-              getData: () => ({
-                ...caseStudy,
-                next: caseStudies[index + 1 >= caseStudies.length ? 0 : index + 1],
-                prev: caseStudies[index - 1 <= caseStudies.length ? caseStudies.length - 1 : index - 1],
-              }),
-            };
-          })
-          .filter(Boolean),
-      },
     ];
+
+    const subpages = [...caseStudies, ...blogPosts, ...other];
+    const pages = [...landings, ...subpages].filter(page => page.path);
+
+    for (const list of lists) {
+      const items = []; // pages that match this list's tag
+
+      for (const page of pages) {
+        if (!page.tags || !page.tags.length || !page.tags.includes(list.tag)) {
+          continue;
+        }
+
+        items.push({
+          title: page.hero.title,
+          description: page.hero.subtitle,
+          image: page.info ? page.info.image : null,
+          href: page.path,
+          tags: page.tags, // used to show which tag matches the search
+        });
+      }
+
+      // Only add list pages that contain items to show
+      if (!items.length) {
+        continue;
+      }
+
+      const pageSize = list.pagination ? list.pagination.perPage : DEFAULT_PAGINATION_PAGE_SIZE;
+
+      // Add route for List page
+      routes.push({
+        path: list.path,
+        component: 'src/containers/Lists',
+        getData: () => ({
+          ...list,
+          items: items.slice(0, pageSize),
+          pagination: {
+            ...list.pagination,
+            path: list.path,
+            currentPage: 1,
+            totalPages: Math.ceil(items.length / pageSize),
+          },
+        }),
+      });
+
+      // Add routes for List pagination pages
+      if (list.pagination && list.pagination.enabled && items.length > pageSize) {
+        routes.push(
+          ...makePageRoutes({
+            items,
+            pageSize,
+            pageToken: 'page',
+            route: {
+              path: list.path,
+              component: 'src/containers/Lists',
+            },
+            decorate: (item, currentPage, totalPages) => ({
+              getData: () => ({
+                ...list,
+                items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+                pagination: {
+                  ...list.pagination,
+                  path: list.path,
+                  currentPage,
+                  totalPages,
+                },
+              }),
+            }),
+          })
+        );
+      }
+    }
 
     if (forms.length) {
       forms.forEach(form => {
@@ -243,10 +277,28 @@ export default {
           return;
         }
 
+        let relatedLinks = [];
+
+        if (subpage.relatedTags && subpage.relatedTags.length) {
+          // Grab 5 related pages
+          relatedLinks = subpage.relatedTags
+            .map(tag => {
+              return pages
+                .filter(page => page.tags.includes(tag))
+                .map(page => ({ title: page.hero.title, path: page.path, tags: page.tags }));
+            })
+            .splice(0, 4);
+        }
+
         routes.push({
           path: subpage.path,
           component: 'src/containers/Subpage',
-          getData: () => subpage,
+          getData: () => {
+            return {
+              ...subpage,
+              relatedLinks,
+            };
+          },
         });
       });
     }

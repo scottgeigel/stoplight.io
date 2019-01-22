@@ -16,15 +16,14 @@ hero:
   subtitle: Learn all there is about API Design through our comprehensive guide
   title: API Design Guide
 info:
-  links:
-    - href: '/api-design-guide/basics#what-is-api-design'
-      title: What is API Design?
-    - href: '/api-design-guide/basics#choose-your-api-specification'
-      title: Choose your API Specification
-    - href: '/api-design-guide/basics#why-api-design-first-matters'
-      title: Why API Design-First Matters
-    - href: '/api-design-guide/basics#api-design-best-practices'
-      title: 'API Design Best Practices '
+  description: >-
+    [What is API Design?](/api-design-guide/basics#what-is-api-design)<br />
+
+    [Choose your API Specification](/api-design-guide/basics#choose-your-api-specification)<br />
+
+    [Why API Design-First Matters](/api-design-guide/basics#why-api-design-first-matters)<br />
+
+    [API Design Best Practices](/api-design-guide/basics#api-design-best-practices)<br />
   title: Sections
 quotes: []
 actionBar:

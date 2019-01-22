@@ -1,61 +1,62 @@
 path: /mocking
+title: OpenAPI Mocking
 hero:
   subtitle: Build APIs and accelerate API development with instant mock servers
   title: OpenAPI Powered Mock Servers
 color: grey-darkest
-title: OpenAPI Mocking
-heading: OpenAPI Mocking
-description: >-
-  Mocking your API with Stoplight is your API design’s perfect companion.
-  Powered by Prism, the instant mock server routes incoming requests to example
-  responses or dynamically generates examples on the fly based on your OpenAPI
-  Specification (formerly known as Swagger).
-cta:
-  href: ''
-  name: ''
-features:
-  - image: /images/mocking_instant.png
-    shortName: Instant Mocking
-    title: Instant Mock Server
-    titleURL: /mocking/server
-    description: >-
-      Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
-      have created or imported your OpenAPI Specification, you have access to an
-      instant mock server, which automatically reloads when your specification
-      changes. A mock API simulates the behavior of a real API allowing
-      collaboration and feedback on your API design.
-  - image: /images/mocking_virtualization.png
-    shortName: Virtualization
-    title: Virtualization
-    description: >-
-      With Mocking, you can accelerate the development of new APIs. Teams can
-      work in tandem before the API is available through virtualization.
-      Stoplight’s mock servers can virtualize internal and external APIs within
-      your platform with dynamic responses generated from your JSON Schema,
-      which can be run locally or hosted with Stoplight.
-  - image: /images/mocking_request_validation.png
-    shortName: Request Validation
-    title: Automatic Request Validation
-    description: >-
-      Validates requests and responses against your OpenAPI Specification.
-      Simulates real server behavior by automatically validating incoming
-      request headers, query strings, and request bodies against your OpenAPI
-      Specification.
-    href: ''
-  - image: /images/mocking_customization.png
-    shortName: Customizable
-    title: Customizable
-    description: >-
-      Need a mocked response property to always be a random future date? No
-      problem. Mocking can extend your OpenAPI Specification with scripts before
-      or after traffic reaches your mock server. Write scripts for more complex
-      mocking behavior, custom validations, and much more.
-actionBar:
+featureSection:
+  title: OpenAPI Mocking
+  description: >-
+    Mocking your API with Stoplight is your API design’s perfect companion.
+    Powered by Prism, the instant mock server routes incoming requests to example
+    responses or dynamically generates examples on the fly based on your OpenAPI
+    Specification (formerly known as Swagger).
   buttons:
-    - href: 'https://next.stoplight.io/'
-      title: Get Started
-  enabled: true
-  text: 'Want to mock your API? '
+    - title: Start Mocking Now
+      href: 'https://next.stoplight.io/'
+      shadow: md
+  features:
+    - image: /images/mocking_instant.png
+      title: Instant Mock Server
+      shortName: Instant Mocking
+      description: >-
+        Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
+        have created or imported your OpenAPI Specification, you have access to an
+        instant mock server, which automatically reloads when your specification
+        changes. A mock API simulates the behavior of a real API allowing
+        collaboration and feedback on your API design.
+      titleURL: /mocking/server
+    - image: /images/mocking_virtualization.png
+      title: Virtualization
+      shortName: Virtualization
+      description: >-
+        With Mocking, you can accelerate the development of new APIs. Teams can
+        work in tandem before the API is available through virtualization.
+        Stoplight’s mock servers can virtualize internal and external APIs within
+        your platform with dynamic responses generated from your JSON Schema,
+        which can be run locally or hosted with Stoplight.
+    - image: /images/mocking_request_validation.png
+      title: Automatic Request Validation
+      shortName: Request Validation
+      description: >-
+        Validates requests and responses against your OpenAPI Specification.
+        Simulates real server behavior by automatically validating incoming
+        request headers, query strings, and request bodies against your OpenAPI
+        Specification.
+    - image: /images/mocking_customization.png
+      title: Customizable
+      shortName: Customizable
+      description: >-
+        Need a mocked response property to always be a random future date? No
+        problem. Mocking can extend your OpenAPI Specification with scripts before
+        or after traffic reaches your mock server. Write scripts for more complex
+        mocking behavior, custom validations, and much more.
+  actionBar:
+    buttons:
+      - href: 'https://next.stoplight.io/'
+        title: Get Started
+    enabled: true
+    text: 'Want to mock your API? '
 meta:
   favicon: /images/mark_light_bg.png
   title: REST API mocking service and server by Prism | Stoplight
@@ -71,4 +72,5 @@ meta:
       Powered by Prism, the instant mock server routes incoming requests to
       example responses or dynamically generates examples on the fly based on
       your OpenAPI Specification (formerly known as Swagger).
+    image: /images/mocking_instant.png
     username: '@stoplightio'

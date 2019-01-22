@@ -1,7 +1,7 @@
-import header from '@components/Header/config';
-import actionBar from '@components/ActionBar/config';
-import footer from '@components/Footer/config';
-import metaTags from '@components/MetaTags/config';
+import header from 'src/components/Header/config';
+import actionBar from 'src/components/ActionBar/config';
+import footer from 'src/components/Footer/config';
+import metaTags from 'src/components/MetaTags/config';
 
 export default {
   label: 'Site Settings',
