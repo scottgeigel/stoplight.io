@@ -8,6 +8,7 @@ hero:
       title: API Design Basics
     - href: /api-design-guide/tooling/
       title: API Design Tooling
+      icon: check-circle
     - href: /api-design-guide/oas-spec/
       title: Understanding the OpenAPI Specification
   cta:
@@ -38,6 +39,7 @@ meta:
     title: API Design Guide | Tooling
     username: '@stoplightio'
 ---
+
 # API Design Brings Powerful Tooling
 
 When you use an OpenAPI spec to design your API, it becomes part of your workflow. That means as soon as you have even a single potential endpoint of your API described, you can begin to gather feedback and piece together how your API will be used. Rather than toiling away in an API silo, your spec allows for collaboration with colleagues and across departments. You can work the API description into your approval processes, so everyone is on the same page with its progress.
@@ -45,6 +47,7 @@ When you use an OpenAPI spec to design your API, it becomes part of your workflo
 Tooling built around the OpenAPI spec can help in the very early stages of design through a live API and even as you consider versioning and deprecation. We’ll cover some of the common tools you might use with your API descriptions.
 
 ## Generate API Documentation
+
 Perhaps the tool most associated with API descriptions is Swagger UI and other tools for generating documentation. Before developers and architects used a definition to help them design APIs, documentation was the biggest use case. While OpenAPI allows for much more than generated documentation, that remains a huge advantage to having your API described in OpenAPI.
 
 There are different types of documentation, but OpenAPI-generated docs thrive for API references and interactive documentation. As you add and update your API endpoints, you can automatically keep your documentation updated. You may even be able to connect these tools to your CI/CD workflow, so that as your new API hits production, so does your new API documentation.

@@ -20,6 +20,12 @@ export default {
       name: 'path',
       widget: 'string',
     },
+    {
+      label: 'Tags',
+      name: 'tags',
+      widget: 'list',
+      required: false,
+    },
     hero,
     info,
     {

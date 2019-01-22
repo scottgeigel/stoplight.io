@@ -1,15 +1,14 @@
 ---
 path: /blog/pepipost1
-tags: ['blog']
+tags: ['blog', 'blog-testing']
 hero:
   bgColor: purple-darker
   pageName: Blog Post
   aligned: left
   skew: 3deg
-  subtitle: >-
-    AppointmentPlus provides a scheduling platform that streamlines and
-    automates the scheduling process.
   title: The Fundamentals of HTTP API Unit Testing
+info:
+  image: /images/logo_appointmentplus_transparent.png
 actionBar:
   enabled: true
 meta:

@@ -28,8 +28,8 @@ interface IHeroCard {
 
 export interface IHeroButton {
   title: string;
-  icon: string;
   href: string;
+  icon?: string;
   color?: string;
 }
 

@@ -1,5 +1,5 @@
-path: /blog
-tag: 'blog'
+path: /blog/api-documentation
+tag: 'blog-documentation'
 hero:
   subtitle: Discover & Educate
   title: Blog
@@ -8,20 +8,20 @@ hero:
       href: /blog/api-design
     - title: API Documentation
       href: /blog/api-documentation
+      icon: check-circle
     - title: API Testing
       href: /blog/api-testing
     - title: Changelog
       href: /blog/changelog
     - title: Archive
       href: /blog
-      icon: check-circle
 actionBar:
   enabled: true
 meta:
   favicon: /images/mark_light_bg.png
-  title: Read Our Blog | Stoplight
+  title: API Documentation | Stoplight
   twitter:
-    title: Read Our Blog | Stoplight
+    title: API Documentation | Stoplight
     username: '@stoplightio'
 pagination:
   enabled: true

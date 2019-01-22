@@ -18,6 +18,11 @@ export default {
       name: 'path',
       widget: 'string',
     },
+    {
+      label: 'Tag',
+      name: 'tag',
+      widget: 'string',
+    },
     hero,
     actionBar,
     metaTags,

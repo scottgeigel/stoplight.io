@@ -6,6 +6,7 @@ hero:
   buttons:
     - href: /api-design-guide/basics/
       title: API Design Basics
+      icon: check-circle
     - href: /api-design-guide/tooling/
       title: API Design Tooling
     - href: /api-design-guide/oas-spec/
@@ -38,6 +39,7 @@ meta:
     title: API Design Guide | Basics
     username: '@stoplightio'
 ---
+
 ## What is API Design?
 
 API design is the collection of planning and architectural decisions you make when building an API. Your API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably.
@@ -52,10 +54,10 @@ OAS allows you to define how your REST API works, in a way that can be easily co
 
 OAS 3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium of member companies who want to standardize how REST APIs are described. There are various other approaches to API description:
 
-* **OAS 2.0**, based on the Swagger definition. Still widely used, but being replaced by OAS 3.0
-* **Swagger**, the best known of the approaches being replaced or augmented by OAS 3.0
-* **API Blueprint** was created to foster collaboration between API design stakeholders
-* **RAML**, the RESTful API Modeling Language, focuses on the planning stage of API design
+- **OAS 2.0**, based on the Swagger definition. Still widely used, but being replaced by OAS 3.0
+- **Swagger**, the best known of the approaches being replaced or augmented by OAS 3.0
+- **API Blueprint** was created to foster collaboration between API design stakeholders
+- **RAML**, the RESTful API Modeling Language, focuses on the planning stage of API design
 
 While OAS 3.0 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OAS 2.0, until the tools catch up.
 
@@ -87,17 +89,17 @@ For example, let’s say you want to design a contact API. Naturally, you would 
 
 When you involve others in API design, you build something better. The API spec becomes an artifact upon which they can comment. You still need ways to coordinate the cross-department conversation, but design-first makes it possible in the first place.
 
-![API Design-First Flow](/images/api-design-first-flow-wide.png "API Design-First Flow")
+![API Design-First Flow](/images/api-design-first-flow-wide.png 'API Design-First Flow')
 
 ## API Design Best Practices
 
-Armed with an understanding of your use cases, you’re ready to begin your API design. Each project is different, so  best practices may not always fit your situation. However, these are guidelines to keep in mind as you design your API.
+Armed with an understanding of your use cases, you’re ready to begin your API design. Each project is different, so best practices may not always fit your situation. However, these are guidelines to keep in mind as you design your API.
 
 While we’ll go into specifics below, these are the high level tenets of good API design:
 
-* Approach design collaboratively
-* Maintain internal consistency
-* When possible, use an established convention
+- Approach design collaboratively
+- Maintain internal consistency
+- When possible, use an established convention
 
 You’ll want to keep your entire team updated as you make [design decisions together](https://stoplight.io/design/#collaborative-design). Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) can help keep everyone on the same page.
 
@@ -107,11 +109,11 @@ The OpenAPI spec is focused on describing REST APIs. However, it’s still possi
 
 **Use HTTP verbs** to communicate action. While REST guidelines can be used outside of HTTP, they are so frequently used together that it’s safe to assume your API will operate over HTTP. This protocol, upon which the web is built, offers useful operations that should form the foundation of our APIs.
 
-* GET: read existing data
-* POST: create new data
-* PUT: update existing data
-* PATCH: update a subset of existing data
-* DELETE: remove existing data
+- GET: read existing data
+- POST: create new data
+- PUT: update existing data
+- PATCH: update a subset of existing data
+- DELETE: remove existing data
 
 By relying upon these verbs, you can build your API to perform these actions on your fields or resources.
 
@@ -123,12 +125,12 @@ You may find yourself in a debate about naming your resources. Should they be si
 
 Here’s a quick list of the most common status codes and how they should be used:
 
-* 200: Successfully read the data you requested
-* 201: Successfully wrote the data you sent
-* 401: Authentication is missing or incorrect
-* 403: Authentication succeeded, but the user does not have access to the resource
-* 404: The resource cannot be found, client-side error
-* 500: There was an error on the server-side
+- 200: Successfully read the data you requested
+- 201: Successfully wrote the data you sent
+- 401: Authentication is missing or incorrect
+- 403: Authentication succeeded, but the user does not have access to the resource
+- 404: The resource cannot be found, client-side error
+- 500: There was an error on the server-side
 
 There are plenty of other status codes you might find useful. At a minimum, use these most common ones in the expected way.
 

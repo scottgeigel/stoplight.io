@@ -47,9 +47,9 @@ export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, p
     <div>
       <Hero bgColor={color} {...hero} containerClassName="pb-24" />
 
-      {items &&
-        items.length > 0 && (
-          <section className="relative z-5" style={{ marginTop: -125 }}>
+      <section className="relative z-5" style={{ marginTop: -125 }}>
+        {items && items.length > 0 ? (
+          <React.Fragment>
             <div className="container">
               {items.map((item, index) => (
                 <div key={index} className="mb-12">
@@ -59,8 +59,15 @@ export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, p
             </div>
 
             {pagination && <Pagination {...pagination} />}
-          </section>
+          </React.Fragment>
+        ) : (
+          <div className="container">
+            <div className="text-center p-12 sm:p-4 text-grey-darkest">
+              <h2 className="">Coming soon...</h2>
+            </div>
+          </div>
         )}
+      </section>
 
       {actionBar && (
         <div className="md:pb-24 pb-40 mt-32">

@@ -192,11 +192,7 @@ export default {
         });
       }
 
-      // Only add list pages that contain items to show
-      if (!items.length) {
-        continue;
-      }
-
+      const listItems = items.length ? items : [];
       const pageSize = list.pagination ? list.pagination.perPage : DEFAULT_PAGINATION_PAGE_SIZE;
 
       // Add route for List page
