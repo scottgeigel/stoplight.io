@@ -73,25 +73,27 @@ const HeaderButton = ({ title, href, icon }) => {
 const Desktop = ({ items }) => {
   return (
     <div className="sm:hidden flex flex-1 justify-end items-center text-lg">
-      {items.map((item, index) => {
-        if (item.links && item.links.length) {
-          return <HeaderDropdown key={index} {...item} />;
-        }
+      {items &&
+        items.length > 0 &&
+        items.map((item, index) => {
+          if (item.links && item.links.length) {
+            return <HeaderDropdown key={index} {...item} />;
+          }
 
-        if (item.isButton) {
-          return <HeaderButton key={index} {...item} />;
-        }
+          if (item.isButton) {
+            return <HeaderButton key={index} {...item} />;
+          }
 
-        return (
-          <Link
-            key={index}
-            to={item.href}
-            className="text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold"
-          >
-            {item.title}
-          </Link>
-        );
-      })}
+          return (
+            <Link
+              key={index}
+              to={item.href}
+              className="text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold"
+            >
+              {item.title}
+            </Link>
+          );
+        })}
     </div>
   );
 };

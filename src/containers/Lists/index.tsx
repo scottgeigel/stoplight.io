@@ -47,19 +47,20 @@ export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, p
     <div>
       <Hero bgColor={color} {...hero} containerClassName="pb-24" />
 
-      {items.length && (
-        <section className="relative z-5" style={{ marginTop: -125 }}>
-          <div className="container">
-            {items.map((item, index) => (
-              <div key={index} className="mb-12">
-                <ListItem {...item} />
-              </div>
-            ))}
-          </div>
+      {items &&
+        items.length > 0 && (
+          <section className="relative z-5" style={{ marginTop: -125 }}>
+            <div className="container">
+              {items.map((item, index) => (
+                <div key={index} className="mb-12">
+                  <ListItem {...item} />
+                </div>
+              ))}
+            </div>
 
-          {pagination && <Pagination {...pagination} />}
-        </section>
-      )}
+            {pagination && <Pagination {...pagination} />}
+          </section>
+        )}
 
       {actionBar && (
         <div className="md:pb-24 pb-40 mt-32">
