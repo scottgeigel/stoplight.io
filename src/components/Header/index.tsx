@@ -121,10 +121,10 @@ class Mobile extends React.Component<IMobileHeader, { showMenu: boolean }> {
   };
 
   public render() {
-    const { items = [] } = this.props;
+    const { items } = this.props;
     const { showMenu } = this.state;
 
-    const [main, ...extras] = items;
+    const [main, ...extras] = items || [];
 
     return (
       <div className="hidden sm:flex flex-1 justify-end">
@@ -218,7 +218,7 @@ export const Header: React.FunctionComponent<IHeader> = ({ header, meta }) => {
   return (
     <React.Fragment>
       <Head key="meta">
-        <title>{meta.title}</title>
+        <title>{meta && meta.title}</title>
       </Head>
       <header key="header" className="absolute z-10 pin-t pin-l pin-r">
         <div className="container">
@@ -227,9 +227,9 @@ export const Header: React.FunctionComponent<IHeader> = ({ header, meta }) => {
               Stoplight
             </Link>
 
-            <Desktop items={header.items} />
+            <Desktop items={header && header.items} />
 
-            <Mobile items={header.items} />
+            <Mobile items={header && header.items} />
           </nav>
         </div>
       </header>
