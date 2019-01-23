@@ -174,7 +174,7 @@ export default {
       },
     ];
 
-    const subpages = [...caseStudies, ...blogPosts, ...authors, ...other];
+    const subpages = [...caseStudies, ...blogPosts, ...other];
     const pages = [...landings, ...subpages].filter(page => {
       // add author to pages and subpages
       if (page.path) {
@@ -190,11 +190,17 @@ export default {
       }
     });
 
-    for (const list of lists) {
+    const listPages = [...lists, ...authors];
+    for (const list of listPages) {
       const items = []; // pages that match this list's tag
 
       for (const page of pages) {
-        if (!page.tags || !page.tags.length || !page.tags.includes(list.tag)) {
+        if (
+          !page.tags ||
+          !page.tags.length ||
+          // don't include a sub page that is not tagged by the list, unless it has an author
+          (!page.tags.includes(list.tag) && (page.author && page.author.name !== list.name))
+        ) {
           continue;
         }
 

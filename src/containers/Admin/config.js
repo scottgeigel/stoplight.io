@@ -10,7 +10,7 @@ import ListsConfig from 'src/containers/Lists/config';
 import SubpageConfig from 'src/containers/Subpage/config';
 
 export const AuthorConfig = {
-  ...SubpageConfig,
+  ...ListsConfig,
   label: 'Authors',
   label_singular: 'Author',
   name: 'author',
@@ -26,7 +26,7 @@ export const AuthorConfig = {
       name: 'image',
       widget: 'file',
     },
-    ...SubpageConfig.fields,
+    ...ListsConfig.fields,
   ],
 };
 

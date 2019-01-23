@@ -7,11 +7,10 @@ image: /images/mcdonald_headshot.png
 
 hero:
   bgColor: purple-darker
+  pageName: Software Engineer
   title: Ross McDonald
-  subtitle: Software Engineer
-  cards:
-    - bgColor: white
-      image: /images/mcdonald_headshot.png
+  subtitle: Blurb about Ross....
+  aligned: left
 actionBar:
   enabled: true
 meta:
@@ -23,5 +22,3 @@ meta:
     title: Ross McDonald | Stoplight
     username: '@stoplightio'
 ---
-
-### Blurb about Ross....
