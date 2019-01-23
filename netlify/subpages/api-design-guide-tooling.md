@@ -7,8 +7,8 @@ hero:
     - href: /api-design-guide/basics/
       title: API Design Basics
     - href: /api-design-guide/tooling/
-      title: API Design Tooling
       icon: check-circle
+      title: API Design Tooling
     - href: /api-design-guide/oas-spec/
       title: Understanding the OpenAPI Specification
   cta:
@@ -18,13 +18,16 @@ hero:
   title: API Design Guide
 info:
   description: >-
-    [Generate API Documentation](/api-design-guide/tooling#generate-api-documentation)<br/>
+    [Generate API
+    Documentation](/api-design-guide/tooling#generate-api-documentation)<br/>
 
     [Create Mock Servers](/api-design-guide/tooling#create-mock-servers)<br/>
 
-    [Automatically Test your APIs](/api-design-guide/tooling#automatically-test-your-apis)<br/>
+    [Automatically Test your
+    APIs](/api-design-guide/tooling#automatically-test-your-apis)<br/>
 
-    [Use Linting to Spot Errors](/api-design-guide/tooling#use-linting-to-spot-errors)<br/>
+    [Use Linting to Spot
+    Errors](/api-design-guide/tooling#use-linting-to-spot-errors)<br/>
   title: Sections
 quotes: []
 actionBar:
@@ -39,12 +42,13 @@ meta:
     title: API Design Guide | Tooling
     username: '@stoplightio'
 ---
-
 # API Design Brings Powerful Tooling
 
 When you use an OpenAPI spec to design your API, it becomes part of your workflow. That means as soon as you have even a single potential endpoint of your API described, you can begin to gather feedback and piece together how your API will be used. Rather than toiling away in an API silo, your spec allows for collaboration with colleagues and across departments. You can work the API description into your approval processes, so everyone is on the same page with its progress.
 
 Tooling built around the OpenAPI spec can help in the very early stages of design through a live API and even as you consider versioning and deprecation. We’ll cover some of the common tools you might use with your API descriptions.
+
+![API Documentation ](/images/documentation-design-guide.png "API Documentation")
 
 ## Generate API Documentation
 
@@ -73,6 +77,8 @@ Mocking API calls before they’re in production is a good idea. Once your API i
 Your OpenAPI definition describes exactly how your API can be used and what response to expect. During testing, you create scenarios for how your API is used, then run them to make sure you get the correct HTTP status code for the method used. If your OpenAPI document is a contact, testing makes sure you’ve built it true to the terms.
 
 Testing can be built into your CI/CD pipeline, so you always know that your tests are passing. Like other software testing, you can track coverage, ensuring that errors are unlikely to slip through. You can build fully customizable tests with built-in coverage reporting with [Stoplight OpenAPI testing](https://stoplight.io/testing/).
+
+![OAS Linting](/images/linting-design-guide.png "Linting")
 
 ## Use Linting to Spot Errors
 
