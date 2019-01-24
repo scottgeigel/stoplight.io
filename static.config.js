@@ -128,7 +128,8 @@ const filterPages = (allPages, filter) => {
 
     pages.push({
       title: page.title,
-      description: page.subtitle,
+      color: page.color,
+      subtitle: page.subtitle,
       image: page.image,
       href: page.path,
       tags: page.tags, // used to show which tag matches the search

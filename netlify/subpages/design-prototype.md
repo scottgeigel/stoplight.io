@@ -2,7 +2,7 @@
 path: /design/prototype
 tags: ['']
 relatedTags: ['']
-publishedDate: '1-23-2019'
+publishedDate: 'Jan 23, 2019'
 subtitle: >-
   Quickly build web APIs in a collaborative, powerful, visual editor that
   allows you to prototype and share your API within minutes

@@ -2,8 +2,8 @@
 path: /api-design-guide/oas-spec
 tags: ['guides', 'api-design']
 relatedTags: ['api-design']
-publishedDate: '1-23-2019'
-title:  API Design Guide
+publishedDate: 'Jan 23, 2019'
+title:  Understanding the OpenAPI Specification
 subtitle: Learn all there is about API Design through our comprehensive guide
 image:
 color: orange
@@ -20,7 +20,6 @@ meta:
     title: API Design Guide | OAS Spec
     username: '@stoplightio'
 ---
-
 # Understanding the OpenAPI Specification
 
 The industry has selected OpenAPI as the way forward, so let’s understand it. From a technical standpoint, it is a YAML or JSON file that follows a specific [document structure](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#documentStructure). You should be able to describe any REST API using a document that adheres to the OAS 3 schema.

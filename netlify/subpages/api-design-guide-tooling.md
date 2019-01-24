@@ -2,8 +2,8 @@
 path: /api-design-guide/tooling
 tags: ['guides', 'api-design']
 relatedTags: ['api-design']
-publishedDate: '1-23-2019'
-title: API Design Guide
+publishedDate: 'Jan 23, 2019'
+title: API Design Brings Powerful Tooling
 subtitle: Learn all there is about API Design through our comprehensive guide
 image:
 color: green

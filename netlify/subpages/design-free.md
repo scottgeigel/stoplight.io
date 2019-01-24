@@ -2,7 +2,7 @@
 path: /design/free
 tags: ['']
 relatedTags: ['']
-publishedDate: '1-23-2019'
+publishedDate: 'Jan 23, 2019'
 title: Free API Design Tool
 subtitle: >-
   Build web APIs with a powerful, free visual OpenAPI Specification editor

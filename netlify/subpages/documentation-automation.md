@@ -2,7 +2,7 @@
 path: /documentation/automation
 tags: ['']
 relatedTags: ['']
-publishedDate: '1-23-2019'
+publishedDate: 'Jan 23, 2019'
 subtitle: Automate your API Documentation Workflow
 title: Automatic API Documentation
 image:

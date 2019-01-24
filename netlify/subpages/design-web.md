@@ -2,7 +2,7 @@
 path: /design/web
 tags: ['']
 relatedTags: ['']
-publishedDate: '1-23-2019'
+publishedDate: 'Jan 23, 2019'
 subtitle: >-
   Build web APIs with a collaborative, powerful, visual editor that allows you
   to prototype and share your API within minutes

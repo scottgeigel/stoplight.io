@@ -33,7 +33,7 @@ export interface IList {
 
 export const ListItem: React.FunctionComponent<IListItem> = ({
   title,
-  description,
+  subtitle,
   image,
   href,
   author,
@@ -62,7 +62,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
         <div className="flex-1">
           <div className="text-3xl font-bold mb-4">{title}</div>
 
-          {description ? <p className="leading-loose" dangerouslySetInnerHTML={{ __html: description }} /> : null}
+          {subtitle && <p className="leading-loose">{subtitle}</p>}
         </div>
 
         <div className="flex items-end">

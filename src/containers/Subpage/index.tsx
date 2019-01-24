@@ -58,10 +58,18 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     title,
     subtitle,
     pageName,
-    author: { ...author, meta: publishedDate },
     cta,
     bgColor: color,
   };
+
+  if (author && author.name) {
+    heroProps.author = { ...author, meta: publishedDate };
+  }
+
+  let url = path;
+  if (typeof window !== 'undefined') {
+    url = window.location.origin + path;
+  }
 
   return (
     <React.Fragment>
@@ -91,18 +99,19 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
       {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
 
-      {disqus && disqus.enabled && (
-        <div className="container my-10">
-          <DiscussionEmbed
-            shortname={'stoplight-io'}
-            config={{
-              url: `${window.location.origin}${path}`,
-              identifier: `${window.location.origin}${path}`,
-              title: path,
-            }}
-          />
-        </div>
-      )}
+      {disqus &&
+        disqus.enabled && (
+          <div className="container my-10">
+            <DiscussionEmbed
+              shortname="stoplight-io"
+              config={{
+                url,
+                identifier: url,
+                title,
+              }}
+            />
+          </div>
+        )}
     </React.Fragment>
   );
 };
