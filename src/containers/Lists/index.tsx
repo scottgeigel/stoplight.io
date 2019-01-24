@@ -2,9 +2,12 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Hero, HeroAuthor, IHero, IHeroAuthor } from 'src/components/Hero';
+import { IButton } from 'src/components/Button';
+import { Hero, IHero, IHeroAuthor } from 'src/components/Hero';
+import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { IPagination, Pagination } from 'src/components/Pagination';
+import { Section } from 'src/components/Section';
 
 export interface IListItem {
   title: string;
@@ -12,56 +15,106 @@ export interface IListItem {
   image: string;
   href: string;
   author: IHeroAuthor;
+  publishedDate: string;
+  backgroundSize?: 'cover' | 'contain';
 }
 
 export interface IList {
   color: string;
-  hero: IHero;
+  title: string;
+  subtitle: string;
+  pageName?: string;
+  buttons: IButton[];
   items: IListItem[];
+  hero: Partial<IHero>;
   actionBar?: IActionBar;
   pagination?: IPagination;
 }
 
-export const ListItem: React.FunctionComponent<IListItem> = ({ title, description, image, href, author }) => {
+export const ListItem: React.FunctionComponent<IListItem> = ({
+  title,
+  description,
+  image,
+  href,
+  author,
+  publishedDate,
+  backgroundSize = 'cover',
+}) => {
   return (
     <Link
       to={href}
-      className="block flex sm:flex-col items-center shadow bg-grey-lightest p-12 sm:p-4 rounded-lg text-grey-darkest hover:bg-grey-lighter"
+      className="block flex items-center shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden"
+      style={{
+        height: 280,
+      }}
     >
-      <div className="pr-20 sm:pr-0 sm:pb-4 max-w-full">
-        <img src={image} alt={title} className="max-w-xs" />
-      </div>
+      <div
+        className="h-full w-2/5"
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize,
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
 
-      <div className="flex-1">
-        <h1 className="mb-4">{title}</h1>
+      <div className="flex-1 flex flex-col h-full p-10 md:p-6">
+        <div className="flex-1">
+          <div className="text-3xl font-bold mb-4">{title}</div>
 
-        {description ? <p className="mb-10 leading-loose" dangerouslySetInnerHTML={{ __html: description }} /> : null}
+          {description ? <p className="leading-loose" dangerouslySetInnerHTML={{ __html: description }} /> : null}
+        </div>
 
-        <div className="flex items-center">
+        <div className="flex items-end">
           <div className="flex-1">
             <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
           </div>
 
-          {author && <HeroAuthor className="text-grey-darkest" {...author} />}
+          {author && (
+            <div className="flex items-center md:hidden">
+              {author.image && <Image className="mr-2 rounded-full h-16 w-16" src={author.image} alt={author.name} />}
+
+              <div className="text-sm">
+                {author.name && <div>{author.name}</div>}
+                {publishedDate && <div>{publishedDate}</div>}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Link>
   );
 };
 
-export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, pagination, items }) => {
+export const List: React.FunctionComponent<IList> = ({
+  color,
+  title,
+  subtitle,
+  pageName,
+  buttons,
+  items,
+  hero,
+  actionBar,
+  pagination,
+}) => {
   return (
-    <div>
-      <Hero bgColor={color} {...hero} containerClassName="pb-24" />
+    <React.Fragment>
+      <Hero
+        {...hero}
+        bgColor={color}
+        title={title}
+        subtitle={subtitle}
+        pageName={pageName}
+        buttons={buttons}
+        containerClassName="pb-24"
+      />
 
-      <section className="relative z-5" style={{ marginTop: -125 }}>
+      <Section className="z-5" noPadding style={{ marginTop: -125 }}>
         {items && items.length > 0 ? (
           <React.Fragment>
             <div className="container">
               {items.map((item, index) => (
-                <div key={index} className="mb-12">
-                  <ListItem {...item} />
-                </div>
+                <ListItem key={index} {...item} />
               ))}
             </div>
 
@@ -74,14 +127,14 @@ export const List: React.FunctionComponent<IList> = ({ color, hero, actionBar, p
             </div>
           </div>
         )}
-      </section>
+      </Section>
 
       {actionBar && (
         <div className="md:pb-24 pb-40 mt-32">
           <ActionBar className="bg-white" {...actionBar} />
         </div>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 

@@ -1,3 +1,5 @@
+import { colors } from 'src/utils';
+
 export default {
   name: 'button',
   label: 'Button',
@@ -19,9 +21,10 @@ export default {
       widget: 'string',
     },
     {
-      name: 'color',
       label: 'Color',
-      widget: 'string',
+      name: 'color',
+      widget: 'select',
+      options: colors,
       default: 'purple',
       hint: 'Default: purple',
     },

@@ -1,19 +1,17 @@
 ---
 path: /documentation/enterprise
-hero:
-  bgColor: green
-  subtitle: Enterprise Documentation Solutions to fit any organization
-  title: Documentation for Enterprises
-info:
-  description: >-
-    [API Documentation](https://stoplight.io/documentation)<br />
-
-    [Beautiful API Documentation](https://stoplight.io/documentation/beautiful)<br />
-
-    [Automated API Documentation](https://stoplight.io/documentation/automation)<br />
-
-    [Generated API Documentation](https://stoplight.io/documentation/generator)
-  title: Related Links
+color: green
+subtitle: Enterprise Documentation Solutions to fit any organization
+title: Documentation for Enterprises
+relatedLinks:
+  - title: API Documentation
+    href: https://stoplight.io/documentation
+  - title: Beautiful API Documentation
+    href: https://stoplight.io/documentation/beautiful
+  - title: Automated API Documentation
+    href: https://stoplight.io/documentation/automation
+  - title: Generated API Documentation
+    href: https://stoplight.io/documentation/generator
 actionBar:
   enabled: true
 ---

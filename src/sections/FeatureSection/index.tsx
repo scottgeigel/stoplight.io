@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Button, IButton } from 'src/components/Button';
 import { Container } from 'src/components/Container';
 import { Link } from 'src/components/Link';
-import { Section } from 'src/components/Section';
+import { ISection, Section } from 'src/components/Section';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { slugify } from 'src/utils/text';
@@ -20,7 +20,7 @@ export interface IFeature {
   isLast: boolean;
 }
 
-export interface IFeatureSection {
+export interface IFeatureSection extends ISection {
   title: string;
   description: string;
   color: string;
@@ -81,13 +81,14 @@ export const FeatureSection: React.FunctionComponent<IFeatureSection> = ({
   features,
   actionBar,
   buttons = [],
+  ...sectionProps
 }) => {
   if (!features || !features.length) {
     return null;
   }
 
   return (
-    <Section id="product" bgClassName="bg-grey-lightest">
+    <Section id="product" {...sectionProps}>
       {(title || description) && (
         <Container title={title} className={cn(!buttons.length ? 'pb-32 border-b' : null)}>
           {description && (

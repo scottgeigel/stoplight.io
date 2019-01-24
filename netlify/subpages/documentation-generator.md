@@ -1,21 +1,19 @@
 ---
 path: /documentation/generator
-hero:
-  bgColor: green
-  subtitle: Generate API Documentation Instantly
-  title: API Documentation Generator
-info:
-  description: >-
-    [API Documentation](https://stoplight.io/documentation)<br />
-
-    [Beautiful Documentation](https://stoplight.io/documentation/beautiful)<br />
-
-    [API Documentation Automation](https://stoplight.io/documentation/automation)<br />
-
-    [Enteprise API Documentation](https://stoplight.io/documentation/enterprise)<br />
-
-    [Stoplight Blog](https://blog.stoplight.io/)
-  title: Related Links
+color: green
+subtitle: Generate API Documentation Instantly
+title: API Documentation Generator
+relatedLinks:
+  - title: API Documentation
+    href: https://stoplight.io/documentation
+  - title: Beautiful API Documentation
+    href: https://stoplight.io/documentation/beautiful
+  - title: API Documentation Automation
+    href: https://stoplight.io/documentation/automation
+  - title: Enteprise API Documentation
+    href: https://stoplight.io/documentation/enterprise
+  - title: Stoplight Blog
+    href: /blog
 actionBar:
   enabled: true
 meta:
@@ -23,14 +21,12 @@ meta:
     Our unique documentation tool allows you to easily generate API
     documentation directly from your API specification for immediate online
     publication
-  favicon: /images/mark_light_bg.png
   title: Instant API Documentation Generator | Stoplight
   twitter:
     description: >-
       Our unique documentation tool allows you to easily generate API
       documentation directly from your API specification for immediate online
       publication
-    image: /images/mark_light_bg.png
     title: Instant API Documentation Generator | Stoplight
     username: '@stoplightio'
 ---

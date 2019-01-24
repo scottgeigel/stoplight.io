@@ -37,7 +37,7 @@ export const Businesses: React.FunctionComponent<IBusinesses> = ({ id, title, qu
   if (!quotes || !quotes.length) return null;
 
   return (
-    <Section id={id} bgClassName="bg-grey-lightest">
+    <Section id={id}>
       <Container title={title} cta={cta}>
         <div className="flex justify-center flex-wrap -mb-12">
           {quotes.map((item, key) => {

@@ -7,6 +7,8 @@ import collage from 'src/sections/Collage/config';
 import imageCallout from 'src/sections/ImageCallout/config';
 import featureSection from 'src/sections/FeatureSection/config';
 
+import { colors } from 'src/utils';
+
 export default {
   label: 'Landing Pages',
   label_singular: 'Landing Page',
@@ -31,7 +33,9 @@ export default {
     {
       label: 'Color',
       name: 'color',
-      widget: 'string',
+      widget: 'select',
+      options: colors,
+      default: 'black',
     },
     hero,
     collage,

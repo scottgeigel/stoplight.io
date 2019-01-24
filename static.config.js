@@ -118,13 +118,141 @@ if (IS_PRODUCTION) {
   siteRoot = 'https://stoplight.io';
 }
 
+const filterPages = (allPages, filter) => {
+  const pages = []; // pages that pass the filter
+
+  for (const page of allPages) {
+    if (!filter(page)) {
+      continue;
+    }
+
+    pages.push({
+      title: page.title,
+      description: page.subtitle,
+      image: page.image,
+      href: page.path,
+      tags: page.tags, // used to show which tag matches the search
+      author: page.author,
+      publishedDate: page.publishedDate,
+      backgroundSize: page.backgroundSize,
+    });
+  }
+
+  pages.sort((a, b) => {
+    return new Date(a.publishedDate).getTime() < new Date(b.publishedDate).getTime() ? 1 : -1;
+  });
+
+  return pages;
+};
+
+const RELATED_PAGES_LIMIT = 3;
+const addSubpages = (routes, allPages, subpages, propFactory) => {
+  if (subpages.length) {
+    subpages.forEach(subpage => {
+      if (!subpage.path) {
+        return;
+      }
+
+      let relatedPages = [];
+
+      if (subpage.relatedTags && subpage.relatedTags.length) {
+        // Grab pages with the same tag
+        relatedPages = filterPages(allPages, page => {
+          if (!page.tags || page.path === subpage.path) {
+            return false;
+          }
+
+          for (const tag of subpage.relatedTags) {
+            if (page.tags && page.tags.includes(tag)) {
+              return true;
+            }
+          }
+
+          return false;
+        }).slice(0, RELATED_PAGES_LIMIT);
+      }
+
+      routes.push({
+        path: subpage.path,
+        component: 'src/containers/Subpage',
+        getData: () => {
+          return {
+            ...subpage,
+            ...(propFactory ? propFactory(subpage) : {}),
+            relatedPages,
+          };
+        },
+      });
+    });
+  }
+};
+
+const addListPages = (routes, allPages, listPages, propFactory) => {
+  for (const list of listPages) {
+    const items = filterPages(allPages, page => {
+      return (page.tags && page.tags.includes(list.tag)) || (page.author && page.author.name === list.title);
+    });
+
+    // if pagination is enabled add page size
+    let pageSize = items.length;
+    if (list.pagination && list.pagination.enabled) {
+      pageSize = list.pagination.perPage || DEFAULT_PAGINATION_PAGE_SIZE;
+    }
+
+    // Add route for List page
+    routes.push({
+      path: list.path,
+      component: 'src/containers/Lists',
+      getData: () => ({
+        ...list,
+        ...(propFactory ? propFactory(list) : {}),
+        items: items.slice(0, pageSize),
+        pagination: {
+          ...list.pagination,
+          path: list.path,
+          currentPage: 1,
+          totalPages: Math.ceil(items.length / pageSize),
+        },
+      }),
+    });
+
+    // Add routes for List pagination pages
+    if (list.pagination && list.pagination.enabled && items.length > pageSize) {
+      routes.push(
+        ...makePageRoutes({
+          items,
+          pageSize,
+          pageToken: 'page',
+          route: {
+            path: list.path,
+            component: 'src/containers/Lists',
+          },
+          decorate: (item, currentPage, totalPages) => ({
+            getData: () => ({
+              ...list,
+              ...(propFactory ? propFactory(list) : {}),
+              items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+              pagination: {
+                ...list.pagination,
+                path: list.path,
+                currentPage,
+                totalPages,
+              },
+            }),
+          }),
+        })
+      );
+    }
+  }
+};
+
 export default {
   siteRoot,
 
   getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
 
   getRoutes: async () => {
-    const [
+    let [
       home,
       pricing,
       about,
@@ -174,103 +302,56 @@ export default {
       },
     ];
 
-    const subpages = [...caseStudies, ...blogPosts, ...other];
-    const pages = [...landings, ...subpages].filter(page => {
-      // add author to pages and subpages
-      if (page.path) {
-        const author = authors.find(author => author.hero.title === page.author);
+    // Override the image positioning for list views
+    caseStudies = caseStudies.map(caseStudy => ({ ...caseStudy, backgroundSize: 'contain' }));
 
-        page.author = {
-          name: author && author.name ? author.name : null,
-          path: author && author.path ? author.path : null,
-          image: author && author.image ? author.image : null,
-        };
+    // add author to pages and remove pages without a path
+    const pages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
+      if (page.path) {
+        const authorPage = authors.find(author => author.title === page.author);
+
+        if (authorPage) {
+          page.author = {
+            name: authorPage.title,
+            path: authorPage.path,
+            image: authorPage.image,
+          };
+        }
 
         return page.path;
       }
     });
 
-    const listPages = [...lists, ...authors];
-    for (const list of listPages) {
-      const items = []; // pages that match this list's tag
+    addListPages(routes, pages, lists);
+    addListPages(routes, pages, authors, props => ({
+      hero: {
+        aligned: 'left',
+      },
+    }));
 
-      for (const page of pages) {
-        if (
-          !page.tags ||
-          !page.tags.length ||
-          // don't include a sub page that is not tagged by the list, unless it has an author
-          (!page.tags.includes(list.tag) && (page.author && page.author.name !== list.name))
-        ) {
-          continue;
-        }
+    addSubpages(routes, pages, blogPosts, props => ({
+      pageName: 'Blog Post',
+      hero: {
+        aligned: 'left',
+      },
+    }));
 
-        // use hero image if existing, else use info immage
-        const itemImage = page.hero && page.hero.image ? page.hero.image.src : null;
-        if (!itemImage) {
-          itemImage = page.info ? page.info.image : null;
-        }
+    addSubpages(routes, pages, caseStudies, props => {
+      const sidebar = props.sidebar || {};
+      sidebar.info = sidebar.info || {};
+      sidebar.info.image = props.image;
 
-        items.push({
-          title: page.hero.title,
-          description: page.hero.subtitle,
-          image: itemImage,
-          href: page.path,
-          tags: page.tags, // used to show which tag matches the search
-          author: page.author,
-        });
-      }
+      return {
+        pageName: 'Case Study',
+        sidebar,
+        hero: {
+          skew: '3deg',
+          aligned: 'left',
+        },
+      };
+    });
 
-      const listItems = items.length ? items : [];
-
-      // if pagination is enabled add page size
-      let pageSize = listItems.length;
-      if (list.pagination && list.pagination.enabled) {
-        pageSize = list.pagination.perPage || DEFAULT_PAGINATION_PAGE_SIZE;
-      }
-
-      // Add route for List page
-      routes.push({
-        path: list.path,
-        component: 'src/containers/Lists',
-        getData: () => ({
-          ...list,
-          items: listItems.slice(0, pageSize),
-          pagination: {
-            ...list.pagination,
-            path: list.path,
-            currentPage: 1,
-            totalPages: Math.ceil(listItems.length / pageSize),
-          },
-        }),
-      });
-
-      // Add routes for List pagination pages
-      if (list.pagination && list.pagination.enabled && listItems.length > pageSize) {
-        routes.push(
-          ...makePageRoutes({
-            items: listItems,
-            pageSize,
-            pageToken: 'page',
-            route: {
-              path: list.path,
-              component: 'src/containers/Lists',
-            },
-            decorate: (item, currentPage, totalPages) => ({
-              getData: () => ({
-                ...list,
-                items: listItems.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
-                pagination: {
-                  ...list.pagination,
-                  path: list.path,
-                  currentPage,
-                  totalPages,
-                },
-              }),
-            }),
-          })
-        );
-      }
-    }
+    addSubpages(routes, pages, other);
 
     if (forms.length) {
       forms.forEach(form => {
@@ -296,38 +377,6 @@ export default {
           path: landing.path,
           component: 'src/containers/Landing',
           getData: () => landing,
-        });
-      });
-    }
-
-    if (subpages.length) {
-      subpages.forEach(subpage => {
-        if (!subpage.path) {
-          return;
-        }
-
-        let relatedLinks = [];
-
-        if (subpage.relatedTags && subpage.relatedTags.length) {
-          // Grab 5 related pages
-          relatedLinks = subpage.relatedTags
-            .map(tag => {
-              return pages
-                .filter(page => page.tags.includes(tag))
-                .map(page => ({ title: page.hero.title, path: page.path, tags: page.tags }));
-            })
-            .splice(0, 4);
-        }
-
-        routes.push({
-          path: subpage.path,
-          component: 'src/containers/Subpage',
-          getData: () => {
-            return {
-              ...subpage,
-              relatedLinks,
-            };
-          },
         });
       });
     }

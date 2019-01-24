@@ -8,56 +8,66 @@ hero:
     href: '#demo'
     name: Get a free demo
 color: grey-darkest
-features:
-  - image: /images/mocking_instant.png
-    shortName: Instant Mocking
-    title: Instant Mock Server
-    description: >-
-      Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
-      have created or imported your OpenAPI Specification, you have access to an
-      instant mock server, which automatically reloads when your specification
-      changes. A mock API simulates the behavior of a real API allowing
-      collaboration and feedback on your API design.
-  - image: /images/mocking_virtualization.png
-    shortName: Virtualization
-    title: Virtualization
-    description: >-
-      With Mocking, you can accelerate the development of new APIs. Teams can
-      work in tandem before the API is available through virtualization.
-      Stoplight’s mock servers can virtualize internal and external APIs within
-      your platform with dynamic responses generated from your JSON Schema,
-      which can be run locally or hosted with Stoplight.
-  - image: /images/mocking_request_validation.png
-    shortName: Request Validation
-    title: Automatic Request Validation
-    description: >-
-      Validates requests and responses against your OpenAPI Specification.
-      Simulates real server behavior by automatically validating incoming
-      request headers, query strings, and request bodies against your OpenAPI
-      Specification.
-    href: ''
-  - image: /images/mocking_customization.png
-    shortName: Customizable
-    title: Customizable
-    description: >-
-      Need a mocked response property to always be a random future date? No
-      problem. Mocking can extend your OpenAPI Specification with scripts before
-      or after traffic reaches your mock server. Write scripts for more complex
-      mocking behavior, custom validations, and much more.
+featureSection:
+  features:
+    - image: /images/mocking_instant.png
+      shortName: Instant Mocking
+      title: Instant Mock Server
+      description: >-
+        Supercharge any OpenAPI Specification with Stoplight Mocking. Once you
+        have created or imported your OpenAPI Specification, you have access to an
+        instant mock server, which automatically reloads when your specification
+        changes. A mock API simulates the behavior of a real API allowing
+        collaboration and feedback on your API design.
+    - image: /images/mocking_virtualization.png
+      shortName: Virtualization
+      title: Virtualization
+      description: >-
+        With Mocking, you can accelerate the development of new APIs. Teams can
+        work in tandem before the API is available through virtualization.
+        Stoplight’s mock servers can virtualize internal and external APIs within
+        your platform with dynamic responses generated from your JSON Schema,
+        which can be run locally or hosted with Stoplight.
+    - image: /images/mocking_request_validation.png
+      shortName: Request Validation
+      title: Automatic Request Validation
+      description: >-
+        Validates requests and responses against your OpenAPI Specification.
+        Simulates real server behavior by automatically validating incoming
+        request headers, query strings, and request bodies against your OpenAPI
+        Specification.
+      href: ''
+    - image: /images/mocking_customization.png
+      shortName: Customizable
+      title: Customizable
+      description: >-
+        Need a mocked response property to always be a random future date? No
+        problem. Mocking can extend your OpenAPI Specification with scripts before
+        or after traffic reaches your mock server. Write scripts for more complex
+        mocking behavior, custom validations, and much more.
 hubspot:
   title: Request a demo
   description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
-customers:
-  - /images/ea.png
-  - /images/chargify-new-logo.png
-  - /images/deutsche_bank.png
-  - /images/logo-sendgrid.png
-  - /images/shopgate.png
-  - /images/spotify.png
-  - /images/tivo.png
-  - /images/logo_zendesk.png
+collage:
+  images:
+    - src: /images/ea.png
+      alt: EA
+    - src: /images/chargify-new-logo.png
+      alt: Chargify
+    - src: /images/deutsche_bank.png
+      alt: Deutsche Bank
+    - src: /images/logo-sendgrid.png
+      alt: Sendgrid
+    - src: /images/shopgate.png
+      alt: Shopgate
+    - src: /images/spotify.png
+      alt: Spotify
+    - src: /images/tivo.png
+      alt: TiVo
+    - src: /images/logo_zendesk.png
+      alt: Zendesk
 meta:
   robots: 'noindex, follow'
   favicon: /images/mark_light_bg.png

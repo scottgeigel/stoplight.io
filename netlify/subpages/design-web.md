@@ -1,28 +1,29 @@
 ---
 path: /design/web
-hero:
-  bgColor: blue
-  subtitle: >-
-    Build web APIs with a collaborative, powerful, visual editor that allows you
-    to prototype and share your API within minutes
-  title: Web API Design Tool
-info:
-  description: >-
-    [API Modeling Guide](https://docs.stoplight.io/modeling/introduction)<br />
-
-    [OpenAPI Initiative](https://www.openapis.org/)<br />
-
-    [API Mocking](https://stoplight.io/mocking)<br />
-
-    [API Testing](https://stoplight.io/testing/)
-  title: Related Links
+tags: ['']
+relatedTags: ['']
+publishedDate: '1-23-2019'
+subtitle: >-
+  Build web APIs with a collaborative, powerful, visual editor that allows you
+  to prototype and share your API within minutes
+title: Web API Design Tool
+image:
+color: blue
+relatedLinks:
+  - title: API Modeling Guide
+    href: https://docs.stoplight.io/modeling/introduction
+  - title: OpenAPI Initiative
+    href: https://www.openapis.org/
+  - title: API Mocking
+    href: /mocking
+  - title: API Testing
+    href: /testing
 actionBar:
   enabled: true
 meta:
   description: >-
     Our cloud-based API design tooling allows anyone with little experience to
     create consistent and standardized REST APIs for their organization
-  favicon: /images/mark_light_bg.png
   title: Design Web and REST APIs Using Our Tool | Stoplight
   twitter:
     description: >-

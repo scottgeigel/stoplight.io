@@ -1,23 +1,21 @@
 ---
 path: /documentation/helper
-hero:
-  bgColor: green
-  subtitle: >-
-    Use Stoplight to provide comprehensive web API documentation to improve
-    developer experience
-  title: Helper API Documentation
-info:
-  description: >-
-    [API Documentation Guide](https://docs.stoplight.io/documentation/introduction)<br />
-
-    [API Documentation Best Practices](https://docs.stoplight.io/documentation/best-practices/hubs)<br />
-
-    [Theming](https://docs.stoplight.io/documentation/design/theming)<br />
-
-    [Custom CSS](https://docs.stoplight.io/documentation/design/custom-css)<br />
-
-    [Custom Javascript](https://docs.stoplight.io/documentation/design/custom-js)
-  title: 'Related Links '
+color: green
+subtitle: >-
+  Use Stoplight to provide comprehensive web API documentation to improve
+  developer experience
+title: Helper API Documentation
+relatedLinks:
+  - title: API Documentation Guide
+    href: https://docs.stoplight.io/documentation/introduction
+  - title: API Documentation Best Practices
+    href: https://docs.stoplight.io/documentation/best-practices/hubs
+  - title: Theming
+    href: https://docs.stoplight.io/documentation/design/theming
+  - title: Custom CSS
+    href: https://docs.stoplight.io/documentation/design/custom-css
+  - title: Custom Javascript
+    href: https://docs.stoplight.io/documentation/design/custom-js
 actionBar:
   enabled: true
 ---

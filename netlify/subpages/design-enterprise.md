@@ -1,28 +1,27 @@
 ---
 path: /design/enterprise
-hero:
-  bgColor: blue
-  subtitle: >-
-    Build enterprise ready APIs with a collaborative, powerful, visual editor
-    that allows you to prototype and share your API within minutes
-  title: API Design Tooling for Enterprises
-info:
-  description: >-
-    [API Design](https://stoplight.io/design)<br />
-
-    [Free API Design](https://stoplight.io/design/free)<br />
-
-    [Web API Design Tool](https://stoplight.io/design/web)<br />
-
-    [API Prototype Tool](https://stoplight.io/design/prototype)
-  title: Related Links
+tags: ['']
+relatedTags: ['']
+color: blue
+subtitle: >-
+  Build enterprise ready APIs with a collaborative, powerful, visual editor
+  that allows you to prototype and share your API within minutes
+title: API Design Tooling for Enterprises
 actionBar:
   enabled: true
+relatedLinks:
+  - title: API Design
+    href: /design
+  - title: Free API Design
+    href: /design/free
+  - title: Web API Design Tool
+    href: /design/web
+  - title: API Prototype Tool
+    href: /design/prototype
 meta:
   description: >-
     Build enterprise-ready APIs for your organization within minutes using our
     collaborative, powerful, visual editor
-  favicon: /images/mark_light_bg.png
   title: Enterprise-ready software for API design
   twitter:
     description: >-

@@ -1,21 +1,19 @@
 ---
 path: /blog/http-testing
 tags: ['blog', 'blog-testing']
+relatedTags: ['blog']
+publishedDate: 'Jan 23, 2019'
+title: The Fundamentals of HTTP API Unit Testing
+subtitle: Some subtitle ....
+image: /images/aaa_blog_example.png
+color: purple-darker
 author: Ross McDonald
-hero:
-  bgColor: purple-darker
-  pageName: Blog Post
-  aligned: left
-  skew: 3deg
-  title: The Fundamentals of HTTP API Unit Testing
-  subtitle: Some subtitle ....
-info:
-  image: /images/aaa_blog_example.png
+disqus:
+  enabled: true
 actionBar:
   enabled: true
 meta:
   description: The Fundamentals of HTTP API Unit Testing
-  favicon: /images/mark_light_bg.png
   title: Blog | Stoplight
   twitter:
     description: The Fundamentals of HTTP API Unit Testing

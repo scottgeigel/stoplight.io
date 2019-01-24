@@ -1,16 +1,14 @@
 ---
 path: /mocking/server
-hero:
-  subtitle: Build APIs and accelerate API development with instant mock servers
-  title: Instant Mock Servers
-info:
-  description: >-
-    [API Mocking](https://stoplight.io/mocking)<br />
-
-    [API Mocking Guide](https://docs.stoplight.io/mocking/introduction)<br />
-
-    [Javascript Runtime](https://docs.stoplight.io/mocking/javascript-runtime)
-  title: Related Links
+subtitle: Build APIs and accelerate API development with instant mock servers
+title: Instant Mock Servers
+relatedLinks:
+  - title: API Mocking
+    href: https://stoplight.io/mocking
+  - title: API Mocking Guide
+    href: https://docs.stoplight.io/mocking/introduction
+  - title: Javascript Runtime
+    href: https://docs.stoplight.io/mocking/javascript-runtime
 actionBar:
   enabled: true
 meta:

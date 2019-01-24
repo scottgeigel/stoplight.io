@@ -1,20 +1,19 @@
 path: /blog/api-documentation
 tag: 'blog-documentation'
-hero:
-  subtitle: Discover & Educate
-  title: Blog
-  buttons:
-    - title: API Design
-      href: /blog/api-design
-    - title: API Documentation
-      href: /blog/api-documentation
-      icon: check-circle
-    - title: API Testing
-      href: /blog/api-testing
-    - title: Changelog
-      href: /blog/changelog
-    - title: Archive
-      href: /blog
+subtitle: Discover & Educate
+title: Blog
+buttons:
+  - title: API Design
+    href: /blog/api-design
+  - title: API Documentation
+    href: /blog/api-documentation
+    icon: check-circle
+  - title: API Testing
+    href: /blog/api-testing
+  - title: Changelog
+    href: /blog/changelog
+  - title: Archive
+    href: /blog
 actionBar:
   enabled: true
 meta:

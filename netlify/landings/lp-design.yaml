@@ -10,56 +10,66 @@ hero:
     href: '#demo'
     name: Get a free demo
 color: blue
-features:
-  - description: >-
-      Get started quickly with API design-first principles. Import an existing
-      API or start from scratch with a new API, zero coding required. The Visual
-      Editor reduces time to get started on your API design by providing an
-      intuitive UI.
-    image: /images/design_quick_start.png
-    shortName: Design First
-    title: Quick to Start
-  - description: >-
-      Design an API with speed and efficiency from scratch. Stoplight’s Visual
-      Editor decreases the learning curve so you don’t need to be an OpenAPI
-      expert to create first-class API designs. Describe endpoints, headers,
-      bodies, multiple responses, query string parameters, shared models, and
-      much more.
-    image: /images/design_visual.png
-    shortName: Visual Editor
-    title: 'Powerful, Visual Editor'
-  - description: >-
-      Instantly prototype and collaborate on your API design with our
-      integrated, hosted Mock Servers, powered by Prism. Mock a single API,
-      multiple APIs, or even just a few endpoints. Increase efficiency by
-      allowing your frontend teams to start implementation while the backend
-      team develops the API.
-    image: /images/mocking_request_validation.png
-    shortName: Mock Servers
-    title: 'Integrated, Hosted Mock Servers'
-  - description: >-
-      Instantly share API prototypes, automated documentation, and hosted Mock
-      Servers. Invite teammates, partners, and API consumers to view and
-      collaborate on your API designs privately or publicly with Discussions.
-      With one click export and programmatic access, you can use and share your
-      specification document where ever you want.
-    image: /images/design_collaborate.png
-    shortName: Collaborative
-    title: Collaborative Design
+featureSection:
+  features:
+    - description: >-
+        Get started quickly with API design-first principles. Import an existing
+        API or start from scratch with a new API, zero coding required. The Visual
+        Editor reduces time to get started on your API design by providing an
+        intuitive UI.
+      image: /images/design_quick_start.png
+      shortName: Design First
+      title: Quick to Start
+    - description: >-
+        Design an API with speed and efficiency from scratch. Stoplight’s Visual
+        Editor decreases the learning curve so you don’t need to be an OpenAPI
+        expert to create first-class API designs. Describe endpoints, headers,
+        bodies, multiple responses, query string parameters, shared models, and
+        much more.
+      image: /images/design_visual.png
+      shortName: Visual Editor
+      title: 'Powerful, Visual Editor'
+    - description: >-
+        Instantly prototype and collaborate on your API design with our
+        integrated, hosted Mock Servers, powered by Prism. Mock a single API,
+        multiple APIs, or even just a few endpoints. Increase efficiency by
+        allowing your frontend teams to start implementation while the backend
+        team develops the API.
+      image: /images/mocking_request_validation.png
+      shortName: Mock Servers
+      title: 'Integrated, Hosted Mock Servers'
+    - description: >-
+        Instantly share API prototypes, automated documentation, and hosted Mock
+        Servers. Invite teammates, partners, and API consumers to view and
+        collaborate on your API designs privately or publicly with Discussions.
+        With one click export and programmatic access, you can use and share your
+        specification document where ever you want.
+      image: /images/design_collaborate.png
+      shortName: Collaborative
+      title: Collaborative Design
 hubspot:
   title: Request a demo
   description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
-customers:
-  - /images/ea.png
-  - /images/chargify-new-logo.png
-  - /images/deutsche_bank.png
-  - /images/logo-sendgrid.png
-  - /images/shopgate.png
-  - /images/spotify.png
-  - /images/tivo.png
-  - /images/logo_zendesk.png
+collage:
+  images:
+    - src: /images/ea.png
+      alt: EA
+    - src: /images/chargify-new-logo.png
+      alt: Chargify
+    - src: /images/deutsche_bank.png
+      alt: Deutsche Bank
+    - src: /images/logo-sendgrid.png
+      alt: Sendgrid
+    - src: /images/shopgate.png
+      alt: Shopgate
+    - src: /images/spotify.png
+      alt: Spotify
+    - src: /images/tivo.png
+      alt: TiVo
+    - src: /images/logo_zendesk.png
+      alt: Zendesk
 meta:
   robots: 'noindex, follow'
   description: >-

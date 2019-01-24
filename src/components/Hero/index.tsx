@@ -4,6 +4,7 @@ import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { CallToAction, ICallToAction } from 'src/components/CallToAction';
+import { Container } from 'src/components/Container';
 import { headerHeightClass } from 'src/components/Header';
 import { IImage, Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
@@ -35,39 +36,43 @@ export interface IHeroButton {
 
 export interface IHeroAuthor {
   className?: string;
-  name: string;
-  path: string;
-  image: string;
+  name?: string;
+  path?: string;
+  image?: string;
+  meta?: string;
 }
 
 export interface IHero {
-  pageName: string;
-  aligned: 'center' | 'right' | 'left';
   title: string;
   subtitle: string;
+  pageName?: string;
   author?: IHeroAuthor;
-  cta: ICallToAction;
-  bgColor: string;
-  cards: IHeroCard[];
-  buttons: IHeroButton[];
-  particles: boolean;
-  image: IImage;
-  skew: 'rounded' | string;
-  containerClassName: string;
+  image?: IImage;
+  bgColor?: string;
+  aligned?: 'center' | 'right' | 'left';
+  cta?: ICallToAction;
+  cards?: IHeroCard[];
+  buttons?: IHeroButton[];
+  particles?: boolean;
+  skew?: 'rounded' | string;
+  containerClassName?: string;
 }
 
-export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, name, path, image }) => {
-  if (!image || !name) return null;
+export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, name, path = '', image, meta }) => {
+  if (!image && !name && !meta) return null;
 
   return (
     <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
-      <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />
-      {name}
+      {image && <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />}
+      <div>
+        {name && <div>{name}</div>}
+        {meta && <div>{meta}</div>}
+      </div>
     </Link>
   );
 };
 
-const HeroCard = ({ index, title, subtitle, href, bgColor, icon, image }) => {
+const HeroCard = ({ index, title, subtitle, href, bgColor = 'black', icon, image }) => {
   return (
     <Link
       to={href}
@@ -259,7 +264,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         )}
 
         <div
-          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden sm:hidden', {
+          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
             [`bg-${bgColor}`]: bgColor,
             'background-repeat': !particles,
           })}
@@ -276,18 +281,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
         />
 
         <div
-          className={cn('absolute pin overflow-hidden sm:block hidden', {
-            [`bg-${bgColor}`]: bgColor,
-            'background-repeat': true,
-          })}
-          style={{
-            width: '100vw',
-            height: '100vh',
-            backgroundImage: `url(/images/patterns/diagonal-stripes.png)`,
-          }}
-        />
-
-        <div
           className={cn('absolute pin z-0')}
           style={{
             background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
@@ -297,9 +290,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
       </div>
 
       {image && (
-        <div key="image" className="sm:hidden container mx-auto relative" style={{ height: 500 }}>
-          <Image className="absolute pin" {...image} />
-        </div>
+        <section>
+          <Container className="sm:hidden relative" style={{ height: 500 }}>
+            <Image className="absolute pin" {...image} />
+          </Container>
+        </section>
       )}
     </React.Fragment>
   );

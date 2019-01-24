@@ -1,19 +1,17 @@
 ---
 path: /testing/free
-hero:
-  bgColor: orange
-  subtitle: The Complete Set of Free API Testing Tools
-  title: Free API Testing Tool
-info:
-  description: >-
-    [API Testing](https://stoplight.io/testing)<br />
-
-    [API Integration Testing](https://stoplight.io/testing/integration)<br />
-
-    [Contract Testing](https://docs.stoplight.io/testing/leveraging-openapi/contract-testing)<br />
-
-    [Enterprise API Testing](https://stoplight.io/testing/enterprise)
-  title: Related Links
+color: orange
+subtitle: The Complete Set of Free API Testing Tools
+title: Free API Testing Tool
+relatedLinks:
+  - title: API Testing
+    href: https://stoplight.io/testing
+  - title: API Integration Testing
+    href: https://stoplight.io/testing/integration
+  - title: Contract Testing
+    href: https://docs.stoplight.io/testing/leveraging-openapi/contract-testing
+  - title: Enterprise API Testing
+    href: https://stoplight.io/testing/enterprise
 actionBar:
   enabled: true
 meta:
@@ -21,15 +19,12 @@ meta:
     Use our free API testing tool in order to create a highly flexible,
     performant and powerful testing roadmap to catch bugs within your APIs
     rapidly. Try for free
-  favicon: /images/mark_light_bg.png
-  image: ''
   title: Test your APIs using our free tool | Stoplight
   twitter:
     description: >-
       Use our free API testing tool in order to create a highly flexible,
       performant and powerful testing roadmap to catch bugs within your APIs
       rapidly. Try for free
-    image: /images/mark_light_bg.png
     title: Test your APIs using our free tool | Stoplight
     username: '@stoplightio'
 ---

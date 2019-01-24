@@ -8,7 +8,7 @@ export interface ILink {
   className?: string;
   title?: string;
   disabled?: boolean;
-  props?: any;
+  style?: object;
 }
 
 const getUTMParams = () => {

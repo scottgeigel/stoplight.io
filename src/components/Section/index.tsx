@@ -5,27 +5,19 @@ import { slugify } from 'src/utils/text';
 
 export interface ISection {
   id?: string;
-  rootClassName?: string;
-  paddingClassName?: string;
-  bgClassName?: string;
+  className?: string;
+  noPadding?: boolean;
+  style?: object;
 }
 
-export const Section: React.FunctionComponent<ISection> = ({
-  id,
-  children,
-  rootClassName,
-  paddingClassName,
-  bgClassName,
-}) => {
+export const Section: React.FunctionComponent<ISection> = ({ id, children, className, noPadding, style }) => {
   return (
     <section
       id={slugify(id)}
-      className={cn(rootClassName, paddingClassName, bgClassName, 'relative md:px-0', {
-        'py-40 md:py-24': !paddingClassName,
-        'z-1': !bgClassName,
-        'z-5': bgClassName,
+      className={cn(className, 'relative md:px-0 z-5', {
+        'py-40 md:py-24': !noPadding,
       })}
-      style={bgClassName ? { boxShadow: '0 0 5px rgba(0, 0, 0, 0.25)' } : undefined}
+      style={style}
     >
       {children}
     </section>

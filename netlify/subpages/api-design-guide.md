@@ -1,34 +1,14 @@
 ---
 path: /api-design-guide/basics
-hero:
-  aligned: center
-  bgColor: blue
-  buttons:
-    - href: /api-design-guide/basics/
-      title: API Design Basics
-      icon: check-circle
-    - href: /api-design-guide/tooling/
-      title: API Design Tooling
-    - href: /api-design-guide/oas-spec/
-      title: Understanding the OpenAPI Specification
-  cta:
-    color: purple
-    href: 'https://next.stoplight.io'
-  subtitle: Learn all there is about API Design through our comprehensive guide
-  title: API Design Guide
-info:
-  description: >-
-    [What is API Design?](/api-design-guide/basics#what-is-api-design)<br />
-
-    [Choose your API Specification](/api-design-guide/basics#choose-your-api-specification)<br />
-
-    [Why API Design-First Matters](/api-design-guide/basics#why-api-design-first-matters)<br />
-
-    [API Design Best Practices](/api-design-guide/basics#api-design-best-practices)<br />
-  title: Sections
-quotes: []
+tags: ['guides', 'api-design']
+relatedTags: ['api-design']
+subtitle: Learn all there is about API Design through our comprehensive guide
+title: API Design Guide
+cta:
+  color: purple
+  href: 'https://next.stoplight.io'
+color: blue
 actionBar:
-  buttons: []
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

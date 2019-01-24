@@ -1,34 +1,34 @@
 ---
 path: /documentation/automation
-hero:
-  bgColor: green
-  subtitle: Automate your API Documentation Workflow
-  title: Automatic API Documentation
-info:
-  description: >-
-    [API Documentation](https://stoplight.io/documentation)<br />
-
-    [Beautiful API Documentation](https://stoplight.io/documentation/beautiful)<br />
-
-    [API Testing](https://stoplight.io/testing)<br />
-
-    [Enterprise API Testing](https://stoplight.io/testing/enterprise)<br />
-
-    [Stoplight Blog](https://blog.stoplight.io/)
-  title: Related Links
+tags: ['']
+relatedTags: ['']
+publishedDate: '1-23-2019'
+subtitle: Automate your API Documentation Workflow
+title: Automatic API Documentation
+image:
+color: green
+relatedLinks:
+  - title: API Documentation
+    href: https://stoplight.io/documentation
+  - title: Beautiful API Documentation
+    href: https://stoplight.io/documentation/beautiful
+  - title: API Testing
+    href: https://stoplight.io/testing
+  - title: Enterprise API Testing
+    href: https://stoplight.io/testing/enterprise
+  - title: Stoplight Blog
+    href: https://blog.stoplight.io/
 actionBar:
   enabled: true
 meta:
   description: >-
     Autogenerate your API documentation easily and within a matter of minutes
     using our Stoplight Docs software and instantly publish to the web
-  image: /images/mark_light_bg.png
   title: Automate Your API Documentation | Stoplight
   twitter:
     description: >-
       Autogenerate your API documentation easily and within a matter of minutes
       using our Stoplight Docs software and instantly publish to the web
-    image: /images/mark_light_bg.png
     title: Automate Your API Documentation | Stoplight
     username: '@stoplightio'
 ---

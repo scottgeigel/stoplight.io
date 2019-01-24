@@ -1,37 +1,16 @@
 ---
 path: /api-design-guide/tooling
-hero:
-  aligned: center
-  bgColor: green
-  buttons:
-    - href: /api-design-guide/basics/
-      title: API Design Basics
-    - href: /api-design-guide/tooling/
-      icon: check-circle
-      title: API Design Tooling
-    - href: /api-design-guide/oas-spec/
-      title: Understanding the OpenAPI Specification
-  cta:
-    color: purple
-    href: 'https://next.stoplight.io'
-  subtitle: Learn all there is about API Design through our comprehensive guide
-  title: API Design Guide
-info:
-  description: >-
-    [Generate API
-    Documentation](/api-design-guide/tooling#generate-api-documentation)<br/>
-
-    [Create Mock Servers](/api-design-guide/tooling#create-mock-servers)<br/>
-
-    [Automatically Test your
-    APIs](/api-design-guide/tooling#automatically-test-your-apis)<br/>
-
-    [Use Linting to Spot
-    Errors](/api-design-guide/tooling#use-linting-to-spot-errors)<br/>
-  title: Sections
-quotes: []
+tags: ['guides', 'api-design']
+relatedTags: ['api-design']
+publishedDate: '1-23-2019'
+title: API Design Guide
+subtitle: Learn all there is about API Design through our comprehensive guide
+image:
+color: green
+cta:
+  color: purple
+  href: 'https://next.stoplight.io'
 actionBar:
-  buttons: []
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

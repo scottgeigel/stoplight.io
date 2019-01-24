@@ -1,7 +1,7 @@
 export default {
-  label: 'Quote',
-  name: 'quote',
-  widget: 'object',
+  label: 'Quotes',
+  name: 'quotes',
+  widget: 'list',
   fields: [
     {
       name: 'quote',

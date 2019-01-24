@@ -6,62 +6,8 @@ import PricingConfig from 'src/containers/Pricing/config';
 
 import FormConfig from 'src/containers/Form/config';
 import LandingConfig from 'src/containers/Landing/config';
-import ListsConfig from 'src/containers/Lists/config';
-import SubpageConfig from 'src/containers/Subpage/config';
-
-export const AuthorConfig = {
-  ...ListsConfig,
-  label: 'Authors',
-  label_singular: 'Author',
-  name: 'author',
-  folder: 'netlify/authors',
-  fields: [
-    {
-      label: 'Name',
-      name: 'name',
-      widget: 'string',
-    },
-    {
-      label: 'Image',
-      name: 'image',
-      widget: 'file',
-    },
-    ...ListsConfig.fields,
-  ],
-};
-
-export const CaseStudyConfig = {
-  ...SubpageConfig,
-  label: 'Case Studies',
-  label_singular: 'Case Study',
-  name: 'caseStudy',
-  folder: 'netlify/case-studies',
-};
-
-export const BlogPostConfig = {
-  ...SubpageConfig,
-  label: 'Blog Posts',
-  label_singular: 'Blog Post',
-  name: 'blogPost',
-  folder: 'netlify/blog-posts',
-  fields: [
-    {
-      label: 'Author',
-      name: 'author',
-      widget: 'relation',
-      collection: 'authors',
-      searchFields: ['name'],
-      valueField: 'name',
-    },
-    {
-      label: 'Created At',
-      name: 'createdAt',
-      widget: 'date',
-      dateFormat: 'MMM DD, YYYY',
-    },
-    ...SubpageConfig.fields,
-  ],
-};
+import { ListsConfig, AuthorConfig } from 'src/containers/Lists/config';
+import { SubpageConfig, BlogPostConfig, CaseStudyConfig } from 'src/containers/Subpage/config';
 
 export const config = {
   backend: {

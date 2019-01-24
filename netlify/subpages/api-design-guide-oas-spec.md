@@ -1,33 +1,18 @@
 ---
 path: /api-design-guide/oas-spec
-hero:
-  aligned: center
-  bgColor: orange
-  buttons:
-    - href: /api-design-guide/basics/
-      title: API Design Basics
-    - href: /api-design-guide/tooling/
-      title: API Design Tooling
-    - href: /api-design-guide/oas-spec/
-      title: Understanding the OpenAPI Specification
-      icon: check-circle
-  cta:
-    color: purple
-    href: 'https://next.stoplight.io'
-  subtitle: Learn all there is about API Design through our comprehensive guide
-  title: API Design Guide
-info:
-  description: >-
-    [OAS 2 vs OAS 3](/api-design-guide/oas-spec#openapi-versions%3A-oas-2-vs-oas-3)<br/>
-
-    [JSON vs YAML](/api-design-guide/oas-spec#should-definitions-use-json-or-yaml%3F)<br/>
-  title: Sections
-quotes: []
+tags: ['guides', 'api-design']
+relatedTags: ['api-design']
+publishedDate: '1-23-2019'
+title:  API Design Guide
+subtitle: Learn all there is about API Design through our comprehensive guide
+image:
+color: orange
+cta:
+  color: purple
+  href: 'https://next.stoplight.io'
 actionBar:
-  buttons: []
   enabled: false
 meta:
-  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design Guide | OAS Spec
   twitter:

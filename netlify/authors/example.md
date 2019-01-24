@@ -1,16 +1,11 @@
 ---
 path: /blog/author/ross-mcdonald
-tags: ['author']
-
-name: Ross McDonald
+tag: 'author'
+title: Ross McDonald
+subtitle: Blurb about Ross....
+pageName: Software Engineer
 image: /images/mcdonald_headshot.png
-
-hero:
-  bgColor: purple-darker
-  pageName: Software Engineer
-  title: Ross McDonald
-  subtitle: Blurb about Ross....
-  aligned: left
+color: purple-darker
 actionBar:
   enabled: true
 meta:

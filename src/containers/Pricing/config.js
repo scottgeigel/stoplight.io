@@ -4,6 +4,8 @@ import pricingPlans from 'src/components/PricingPlans/config';
 
 import docPlans from 'src/sections/DocPlans/config';
 
+import { colors } from 'src/utils';
+
 export default {
   label: 'Pricing',
   name: 'pricing',
@@ -15,9 +17,12 @@ export default {
       widget: 'string',
     },
     {
-      name: 'color',
       label: 'Color',
-      widget: 'string',
+      name: 'color',
+      widget: 'select',
+      options: colors,
+      default: 'black',
+      required: false,
     },
     hero,
     pricingPlans,

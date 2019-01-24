@@ -1,35 +1,33 @@
 ---
 path: /case-studies/bodev
 tags: ['case-study']
-hero:
-  bgColor: blue
-  pageName: Customer Story
-  aligned: left
-  skew: 3deg
-  subtitle: >-
-    Bo Development Offices provides enterprise solutions for the automotive,
-    telecom, media industries in the private and public sector.
-  title: Bo Development
-info:
-  image: /images/bodev_logo.png
-  description: >-
-    **Industry**: IT Consulting<br/>
-    **Location**: Turkey<br/>
-    **Employees**: Startup
-quotes:
-  - author: Can Berkol
-    quote: >-
-      Stoplight is the best of both worlds. Yes, we can create a beautiful API
-      documentation, and yes, we can create a beautiful generic technical
-      documentation that requires actual sentences, screenshots, files and more.
-      We can prepare and publish both documentation in one place and easily
-      deliver documentation to the clients and third party developers.
-    role: Executive Manager
+relatedTags: ['case-study']
+publishedDate: 'Dec 23, 2018'
+title: Bo Development
+subtitle: >-
+  Bo Development Offices provides enterprise solutions for the automotive,
+  telecom, media industries in the private and public sector.
+image: /images/bodev_logo.png
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: IT Consulting<br/>
+      **Location**: Turkey<br/>
+      **Employees**: Startup
+  quotes:
+    - author: Can Berkol
+      quote: >-
+        Stoplight is the best of both worlds. Yes, we can create a beautiful API
+        documentation, and yes, we can create a beautiful generic technical
+        documentation that requires actual sentences, screenshots, files and more.
+        We can prepare and publish both documentation in one place and easily
+        deliver documentation to the clients and third party developers.
+      role: Executive Manager
 actionBar:
   enabled: true
 meta:
   description: How Bodev integrated their Design and Documentation processed with Stoplight
-  favicon: /images/mark_light_bg.png
   title: Bodev | Stoplight
   twitter:
     description: >-

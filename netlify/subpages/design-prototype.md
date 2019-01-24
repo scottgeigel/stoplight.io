@@ -1,23 +1,25 @@
 ---
 path: /design/prototype
-hero:
-  bgColor: blue
-  subtitle: >-
-    Quickly build web APIs in a collaborative, powerful, visual editor that
-    allows you to prototype and share your API within minutes
-  title: API Prototype Tool
-info:
-  description: >-
-    [API Design](https://stoplight.io/design)<br />
-
-    [Automated API Documentation](https://stoplight.io/documentation/automated)<br />
-
-    [API Mocking](https://stoplight.io/mocking)<br />
-
-    [Stoplight Blog](https://blog.stoplight.io/)
-  title: Related Links
+tags: ['']
+relatedTags: ['']
+publishedDate: '1-23-2019'
+subtitle: >-
+  Quickly build web APIs in a collaborative, powerful, visual editor that
+  allows you to prototype and share your API within minutes
+title: API Prototype Tool
+image:
+color: blue
 actionBar:
   enabled: true
+relatedLinks:
+  - title: API Design
+    href: https://stoplight.io/design
+  - title: Automated API Documentation
+    href: https://stoplight.io/documentation/automated
+  - title: API Mocking
+    href: https://stoplight.io/mocking
+  - title: Stoplight Blog
+    href: https://blog.stoplight.io/
 meta:
   description: >-
     Build web APIs using our collaborative, powerful, and quick visual editor

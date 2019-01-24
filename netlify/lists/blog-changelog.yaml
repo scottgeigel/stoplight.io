@@ -1,24 +1,22 @@
 path: /blog/changelog
 tag: 'blog-changelog'
-hero:
-  subtitle: Discover & Educate
-  title: Blog
-  buttons:
-    - title: API Design
-      href: /blog/api-design
-    - title: API Documentation
-      href: /blog/api-documentation
-    - title: API Testing
-      href: /blog/api-testing
-    - title: Changelog
-      href: /blog/changelog
-      icon: 'check-circle'
-    - title: Archive
-      href: /blog
+title: Blog
+subtitle: Discover & Educate
+buttons:
+  - title: API Design
+    href: /blog/api-design
+  - title: API Documentation
+    href: /blog/api-documentation
+  - title: API Testing
+    href: /blog/api-testing
+  - title: Changelog
+    href: /blog/changelog
+    icon: 'check-circle'
+  - title: Archive
+    href: /blog
 actionBar:
   enabled: true
 meta:
-  favicon: /images/mark_light_bg.png
   title: Changelog | Stoplight
   twitter:
     title: Changelog | Stoplight

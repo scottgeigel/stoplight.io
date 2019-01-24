@@ -1,39 +1,34 @@
 ---
 path: /documentation/hosted
-hero:
-  bgColor: green
-  subtitle: Flexible Hosted Documentation Solutions that fit any use case
-  title: Hosted API Documentation
-info:
-  description: >-
-    [API Documentation Guide](https://docs.stoplight.io/documentation/introduction)<br />
-
-    [Documentation | Community](https://community.stoplight.io/c/api-best-practices/documentation)<br />
-
-    ['How to Embed Documentation '](https://docs.stoplight.io/documentation/embed-your-hub)<br />
-
-    [Download Static HTML & CSS](https://docs.stoplight.io/documentation/download-static-html)<br />
-
-    [Segment Integration](https://docs.stoplight.io/documentation/integrations/segment)<br />
-
-    [Google Analytics Integration](https://docs.stoplight.io/documentation/integrations/google-analytics)<br />
-
-    [Intercom Integration](https://docs.stoplight.io/documentation/integrations/intercom)
-  title: Related Links
+color: green
+subtitle: Flexible Hosted Documentation Solutions that fit any use case
+title: Hosted API Documentation
+relatedLinks:
+  - title: API Documentation Guide
+    href: https://docs.stoplight.io/documentation/introduction
+  - title: Documentation | Community
+    href: https://community.stoplight.io/c/api-best-practices/documentation
+  - title: 'How to Embed Documentation '
+    href: https://docs.stoplight.io/documentation/embed-your-hub
+  - title: Download Static HTML & CSS
+    href: https://docs.stoplight.io/documentation/download-static-html
+  - title: Segment Integration
+    href: https://docs.stoplight.io/documentation/integrations/segment
+  - title: Google Analytics Integration
+    href: https://docs.stoplight.io/documentation/integrations/google-analytics
+  - title: Intercom Integration
+    href: https://docs.stoplight.io/documentation/integrations/intercom
 actionBar:
   enabled: true
-  text: ''
 meta:
   description: >-
     Our cloud based documentation generator allows you to host your
     documentation anywhere. Try it online for free
-  favicon: /images/mark_light_bg.png
   title: Cloud Based API Documentation Hosting | Stoplight
   twitter:
     description: >-
       Our cloud based documentation generator allows you to host your
       documentation anywhere. Try it online for free
-    image: /images/mark_light_bg.png
     title: Cloud Based API Documentation Hosting | Stoplight
     username: '@stoplightio'
 ---

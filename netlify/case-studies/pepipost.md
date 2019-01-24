@@ -1,28 +1,26 @@
 ---
 path: /case-studies/pepipost
 tags: ['case-study']
-hero:
-  bgColor: blue
-  pageName: Customer Story
-  aligned: left
-  skew: 3deg
-  subtitle: >-
-    Pepipost is a transactional messaging platform that provides powerful email
-    APIs for developers.
-  title: Pepipost
-info:
-  name: Pepipost
-  image: /images/pepipost_logo.png
-  description: >-
-    **Industry**: Information Services & Technology <br/>
-    **Location**: Dublin, Ireland <br/>
-    **Employees**: 11-50
-quotes:
-  - author: Dibya Sahoo
-    quote: >-
-      For us, Stoplight is not just a tool for API management, in fact, it’s a
-      tool which has helped us learn the art of designing world class APIs.
-    role: Co-Founder
+relatedTags: ['case-study']
+publishedDate: 'Dec 19, 2018'
+title: Pepipost
+subtitle: >-
+  Pepipost is a transactional messaging platform that provides powerful email
+  APIs for developers.
+image: /images/pepipost_logo.png
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: Information Services & Technology <br/>
+      **Location**: Dublin, Ireland <br/>
+      **Employees**: 11-50
+  quotes:
+    - author: Dibya Sahoo
+      quote: >-
+        For us, Stoplight is not just a tool for API management, in fact, it’s a
+        tool which has helped us learn the art of designing world class APIs.
+      role: Co-Founder
 actionBar:
   enabled: true
 meta:

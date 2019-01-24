@@ -1,29 +1,26 @@
 ---
 path: /testing/enterprise
-hero:
-  bgColor: orange
-  subtitle: >-
-    Build reliable web APIs with fully customizable tests and robust test
-    coverage based on your API contracts. Test your endpoints, status codes, and
-    more
-  title: Enterprise API Testing Tool
-info:
-  description: >-
-    [API Testing](https://stoplight.io/testing)<br />
-
-    [API Integration Testing](https://stoplight.io/testing/integration)<br />
-
-    [Free API Testing](https://stoplight.io/testing/free)<br />
-
-    [Contract Testing](https://docs.stoplight.io/testing/leveraging-openapi/contract-testing)
-  title: Related Links
+color: orange
+subtitle: >-
+  Build reliable web APIs with fully customizable tests and robust test
+  coverage based on your API contracts. Test your endpoints, status codes, and
+  more
+title: Enterprise API Testing Tool
+relatedLinks:
+  - title: API Testing
+    href: https://stoplight.io/testing
+  - title: API Integration Testing
+    href: https://stoplight.io/testing/integration
+  - title: Free API Testing
+    href: https://stoplight.io/testing/free
+  - title: Contract Testing
+    href: https://docs.stoplight.io/testing/leveraging-openapi/contract-testing
 actionBar:
   enabled: true
 meta:
   description: >-
     Build reliable web/REST APIs through our customizable testing tools. We
     integrate with many CI/CD platforms and provide full test coverage report
-  favicon: /images/mark_light_bg.png
   title: Test your APIs on our Enterprise ready tool | Stoplight
   twitter:
     description: >-

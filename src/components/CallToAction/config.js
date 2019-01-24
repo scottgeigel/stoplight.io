@@ -1,3 +1,5 @@
+import { colors } from 'src/utils';
+
 export default {
   name: 'cta',
   label: 'Call to action',
@@ -11,11 +13,11 @@ export default {
       hint: 'Leave blank to hide',
     },
     {
-      name: 'color',
       label: 'Color',
-      widget: 'string',
-      default: 'purple',
-      hint: 'Default: purple',
+      name: 'color',
+      widget: 'select',
+      options: colors,
+      default: 'black',
     },
     {
       name: 'href',

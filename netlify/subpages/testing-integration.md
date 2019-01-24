@@ -1,24 +1,22 @@
 ---
 path: /testing/integration
-hero:
-  bgColor: orange
-  subtitle: >-
-    Build reliable web APIs with fully customizable tests and robust test
-    coverage based on your API contracts. Test your endpoints, status codes, and
-    more
-  title: API Integration Testing
-info:
-  description: >-
-    [Stoplight Testinhttps://stoplight.io/testingg]()<br />
-
-    [Stoplight Mockinhttps://stoplight.io/mockingg]()<br />
-
-    [Enterprise API Thttps://stoplight.io/testing/enterpriseesting]()<br />
-
-    [API Design](https://stoplight.io/design)<br />
-
-    [Stoplight Blog](https://blog.stoplight.io/)
-  title: Related Links
+color: orange
+subtitle: >-
+  Build reliable web APIs with fully customizable tests and robust test
+  coverage based on your API contracts. Test your endpoints, status codes, and
+  more
+title: API Integration Testing
+relatedLinks:
+  - title: Stoplight Testing
+    href: /testing
+  - title: Stoplight Mocking
+    href: /mocking
+  - title: Enterprise API Testing
+    href: /testing/enterprisetesting
+  - title: API Design
+    href: /design
+  - title: Stoplight Blog
+    href: /blog
 actionBar:
   enabled: true
 meta:
@@ -26,14 +24,12 @@ meta:
     When building web APIs, use Spotlight’s fully customizable integration
     testing tools to analyze and test coverage, endpoints, status codes, and
     more
-  image: /images/mark_light_bg.png
   title: Cloud API Integration Testing Tool | Stoplight
   twitter:
     description: >-
       When building web APIs, use Spotlight’s fully customizable integration
       testing tools to analyze and test coverage, endpoints, status codes, and
       more
-    image: /images/mark_light_bg.png
     title: Cloud API Integration Testing Tool | Stoplight
     username: '@stoplightio'
 ---

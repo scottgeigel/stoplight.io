@@ -6,7 +6,7 @@ import { Home } from 'src/containers/Home';
 import { Landing } from 'src/containers/Landing';
 import { Pricing } from 'src/containers/Pricing';
 import { Subpage } from 'src/containers/Subpage';
-import { Lists } from 'src/containers/Lists';
+import { List } from 'src/containers/Lists';
 
 import Settings from 'src/components/Settings';
 
@@ -36,13 +36,13 @@ const templates = {
   home: Home,
   pricing: Pricing,
 
-  lists: Lists,
+  lists: List,
+  author: List,
   landings: Landing,
 
   subpage: Subpage,
   caseStudy: Subpage,
   blogPost: Subpage,
-  author: Subpage,
 };
 
 import appStyles from '!css-loader!./styles.css';

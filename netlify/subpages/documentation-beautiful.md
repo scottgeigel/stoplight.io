@@ -1,33 +1,28 @@
 ---
 path: /documentation/beautiful
-hero:
-  bgColor: green
-  subtitle: 'API Documentation that makes an Impact '
-  title: Beautiful API Documentation
-info:
-  description: >-
-    [API Documentation Guide](https://docs.stoplight.io/documentation/introduction)<br />
-
-    [API Documentation Best Practices](https://docs.stoplight.io/documentation/best-practices/hubs)<br />
-
-    [The Evolution of API Documentation at Stoplight](https://blog.stoplight.io/api-documentation/home)<br />
-
-    [Documentation | Stoplight Community](https://community.stoplight.io/c/api-best-practices/documentation)
-  title: Related Links
+color: green
+subtitle: 'API Documentation that makes an Impact'
+title: Beautiful API Documentation
+relatedLinks:
+  - title: API Documentation Guide
+    href: https://docs.stoplight.io/documentation/introduction
+  - title: API Documentation Best Practices
+    href: https://docs.stoplight.io/documentation/best-practices/hubs
+  - title: The Evolution of API Documentation at Stoplight
+    href: https://blog.stoplight.io/api-documentation/home
+  - title: Documentation | Stoplight Community
+    href: https://community.stoplight.io/c/api-best-practices/documentation
 actionBar:
   enabled: true
-  text: ''
 meta:
   description: >-
     Our tool is built to product aesthetically pleasing and user oriented
     documentation. Does your documentation generator do that?
-  favicon: /images/mark_light_bg.png
   title: Beautiful Documentation for APIs | Stoplight
   twitter:
     description: >-
       Our tool is built to product aesthetically pleasing and user oriented
       documentation. Does your documentation generator do that?
-    image: /images/mark_light_bg.png
     title: Beautiful Documentation for APIs | Stoplight
     username: '@stoplightio'
 ---

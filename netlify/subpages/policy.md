@@ -1,11 +1,8 @@
 ---
 path: /policy
-hero:
-  aligned: center
-  bgColor: black
-  particles: true
-  subtitle: 'Last updated: October 1, 2018'
-  title: Support Policy
+color: black
+subtitle: 'Last updated: October 1, 2018'
+title: Support Policy
 ---
 ## 1. Overview
 
