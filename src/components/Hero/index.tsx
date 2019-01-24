@@ -167,7 +167,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
           )}
         >
           <div
-            className={cn(!cta && !buttons.length && !cards.length ? 'mb-48 md:mb-24' : 'mb-24', {
+            className={cn('mb-24', {
               'mx-auto': !aligned || aligned === 'center',
               'ml-auto w-2/3 md:w-full': aligned === 'right',
               'mr-auto w-2/3 md:w-full': aligned === 'left',
