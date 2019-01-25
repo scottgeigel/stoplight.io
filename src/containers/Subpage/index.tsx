@@ -67,8 +67,10 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   }
 
   let url = path;
+  let showDisqus = disqus && disqus.enabled;
   if (typeof window !== 'undefined') {
     url = window.location.origin + path;
+    showDisqus = showDisqus && !window.CMS;
   }
 
   return (
@@ -99,19 +101,18 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
       {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
 
-      {disqus &&
-        disqus.enabled && (
-          <div className="container my-10">
-            <DiscussionEmbed
-              shortname="stoplight-io"
-              config={{
-                url,
-                identifier: url,
-                title,
-              }}
-            />
-          </div>
-        )}
+      {showDisqus && (
+        <div className="container my-10">
+          <DiscussionEmbed
+            shortname="stoplight-io"
+            config={{
+              url,
+              identifier: url,
+              title,
+            }}
+          />
+        </div>
+      )}
     </React.Fragment>
   );
 };

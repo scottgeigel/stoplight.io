@@ -110,11 +110,17 @@ export const BlogPostConfig = {
   folder: 'netlify/blog-posts',
   fields: addFields(SubpageConfig.fields, 9, [
     {
-      label: 'Disqus',
       name: 'disqus',
       widget: 'object',
       required: false,
-      fields: [{ label: 'Enabled?', name: 'enabled', widget: 'boolean', required: false }],
+      fields: [
+        {
+          label: 'Enabled?',
+          name: 'enabled',
+          widget: 'boolean',
+          required: false,
+        },
+      ],
     },
   ]),
 };

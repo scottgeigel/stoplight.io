@@ -260,11 +260,11 @@ export default {
       forms = [],
 
       lists = [],
+      authors = [],
 
       landings = [],
       caseStudies = [],
       blogPosts = [],
-      authors = [],
       other = [],
     ] = await Promise.all([
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
