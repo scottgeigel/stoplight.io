@@ -1,7 +1,8 @@
 path: /blog/api-testing
 tag: 'blog-testing'
-subtitle: Discover & Educate
-title: Blog
+title: API Testing
+subtitle:
+color: 'purple'
 buttons:
   - title: API Design
     href: /blog/api-design

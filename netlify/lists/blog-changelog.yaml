@@ -1,7 +1,7 @@
 path: /blog/changelog
 tag: 'blog-changelog'
-title: Blog
-subtitle: Discover & Educate
+title: Changelog
+color: 'purple'
 buttons:
   - title: API Design
     href: /blog/api-design

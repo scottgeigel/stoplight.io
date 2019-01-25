@@ -1,7 +1,8 @@
 path: /blog/api-design
 tag: 'blog-design'
-subtitle: Discover & Educate
-title: Blog
+subtitle:
+color: 'purple'
+title: API Design
 buttons:
   - title: API Design
     href: /blog/api-design
