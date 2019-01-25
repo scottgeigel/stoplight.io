@@ -4,7 +4,7 @@ import container from 'src/components/Container/config';
 export default {
   name: 'featureSection',
   label: 'Feature Section',
-  widget: 'list',
+  widget: 'object',
   required: false,
   hint: 'A list of features with text on one side and image on the other',
   fields: [

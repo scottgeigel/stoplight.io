@@ -15,6 +15,7 @@ export default {
   create: true,
   delete: true,
   slug: '{{slug}}',
+  extension: 'yaml',
   fields: [
     {
       name: 'path',

@@ -31,8 +31,8 @@ const convertMarkdownToHTML = data => {
 const templates = {
   settings: Settings,
 
+  form: Form,
   about: About,
-  hubspot: Form,
   home: Home,
   pricing: Pricing,
 

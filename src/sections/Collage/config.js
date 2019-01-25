@@ -17,10 +17,12 @@ export default {
       widget: 'list',
       fields: [
         {
+          label: 'Image',
           name: 'src',
           widget: 'image',
         },
         {
+          label: 'alt',
           name: 'alt',
           widget: 'string',
         },

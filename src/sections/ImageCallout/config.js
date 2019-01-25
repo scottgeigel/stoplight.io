@@ -10,17 +10,20 @@ export default {
       name: 'title',
       label: 'Title',
       widget: 'string',
+      required: false,
     },
     {
       name: 'image',
       label: 'Image',
       widget: 'image',
+      required: false,
     },
     cta,
     {
       name: 'description',
       label: 'Description',
       widget: 'markdown',
+      required: false,
     },
   ],
 };

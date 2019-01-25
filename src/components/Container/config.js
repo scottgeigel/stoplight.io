@@ -9,7 +9,8 @@ export default {
     },
     {
       name: 'description',
-      widget: 'markdown',
+      label: 'Description',
+      widget: 'string',
       required: false,
     },
     cta,

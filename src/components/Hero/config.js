@@ -136,7 +136,17 @@ export default {
     {
       name: 'image',
       label: 'Image',
-      widget: 'image',
+      widget: 'object',
+      fields: [
+        {
+          name: 'src',
+          widget: 'image',
+        },
+        {
+          name: 'alt',
+          widget: 'string',
+        },
+      ],
     },
   ],
 };

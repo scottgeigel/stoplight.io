@@ -29,7 +29,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
   hubspot,
 }) => {
   let buttons: IHeroButton[] = [];
-  if (featureSection && featureSection.features.length) {
+  if (featureSection && featureSection.features && featureSection.features.length) {
     buttons = featureSection.features.map(feature => ({
       title: feature.shortName,
       icon: 'check-circle',

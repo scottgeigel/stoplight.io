@@ -24,7 +24,15 @@ const indexMap = {
 };
 
 interface IHeroCard {
-  // TODO
+  index: number;
+  title: string;
+  subtitle: string;
+  href: string;
+  bgColor: string;
+  icon: {
+    name: string;
+  };
+  image: IImage;
 }
 
 export interface IHeroButton {
@@ -72,7 +80,15 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
   );
 };
 
-const HeroCard = ({ index, title, subtitle, href, bgColor = 'black', icon, image }) => {
+const HeroCard: React.FunctionComponent<IHeroCard> = ({
+  index,
+  title,
+  subtitle,
+  href,
+  bgColor = 'black',
+  icon,
+  image,
+}) => {
   return (
     <Link
       to={href}
