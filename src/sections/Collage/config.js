@@ -3,7 +3,7 @@ import cta from 'src/components/CallToAction/config';
 export default {
   name: 'collage',
   label: 'Collage',
-  widget: 'list',
+  widget: 'object',
   required: false,
   fields: [
     {

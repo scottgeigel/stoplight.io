@@ -3,7 +3,7 @@ import container from 'src/components/Container/config';
 export default {
   label: 'Businesses',
   name: 'businesses',
-  widget: 'list',
+  widget: 'object',
   fields: [
     ...container.fields,
     {

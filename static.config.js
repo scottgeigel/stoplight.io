@@ -273,11 +273,11 @@ export default {
       getFiles(`${NETLIFY_PATH}/forms`),
 
       getFiles(`${NETLIFY_PATH}/lists`),
+      getFiles(`${NETLIFY_PATH}/authors`),
 
       getFiles(`${NETLIFY_PATH}/landings`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
       getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/authors`, ['.md']),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
     ]);
 

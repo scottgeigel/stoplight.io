@@ -2,8 +2,7 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { IButton } from 'src/components/Button';
-import { Hero, IHero, IHeroAuthor } from 'src/components/Hero';
+import { Hero, IHero, IHeroAuthor, IHeroButton } from 'src/components/Hero';
 import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { IPagination, Pagination } from 'src/components/Pagination';
@@ -11,7 +10,7 @@ import { Section } from 'src/components/Section';
 
 export interface IListItem {
   title: string;
-  description: string;
+  subtitle: string;
   image: string;
   href: string;
   author: IHeroAuthor;
@@ -24,7 +23,7 @@ export interface IList {
   title: string;
   subtitle: string;
   pageName?: string;
-  buttons: IButton[];
+  buttons: IHeroButton[];
   items: IListItem[];
   hero: Partial<IHero>;
   actionBar?: IActionBar;

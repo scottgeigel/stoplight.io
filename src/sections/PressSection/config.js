@@ -3,6 +3,7 @@ import container from 'src/components/Container/config';
 export default {
   label: 'Press Section',
   name: 'pressSection',
+  widget: 'object',
   fields: [
     ...container.fields,
     {
