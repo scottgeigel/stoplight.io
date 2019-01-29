@@ -28,7 +28,7 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
 }) => {
   return (
     <Link to={href}>
-      <div className="flex flex-col shadow bg-white rounded-lg w-full h-full text-grey-darkest overflow-hidden">
+      <article className="flex flex-col shadow bg-white rounded-lg w-full h-full text-grey-darkest overflow-hidden">
         <div
           className={cn('h-40 w-100 relative', { [`bg-${color}`]: !image })}
           style={{
@@ -49,7 +49,7 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
             <div className="flex-1 text-right text-muted font-bold">{tag}</div>
           </div>
         </div>
-      </div>
+      </article>
     </Link>
   );
 };

@@ -42,45 +42,47 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
   return (
     <Link
       to={href}
-      className="block flex items-center shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden"
+      className="block shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden"
       style={{
         height: 280,
       }}
     >
-      <div
-        className="h-full w-2/5"
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize,
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
+      <article className="flex box h-full w-full items-center">
+        <div
+          className="h-full w-2/5"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
 
-      <div className="flex-1 flex flex-col h-full p-10 md:p-6">
-        <div className="flex-1">
-          <div className="text-3xl font-bold mb-4">{title}</div>
-
-          {subtitle && <p className="leading-loose">{subtitle}</p>}
-        </div>
-
-        <div className="flex items-end">
+        <div className="flex-1 flex flex-col h-full p-10 md:p-6">
           <div className="flex-1">
-            <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
+            <div className="text-3xl font-bold mb-4">{title}</div>
+
+            {subtitle && <p className="leading-loose">{subtitle}</p>}
           </div>
 
-          {author && (
-            <div className="flex items-center md:hidden">
-              {author.image && <Image className="mr-2 rounded-full h-16 w-16" src={author.image} alt={author.name} />}
-
-              <div className="text-sm">
-                {author.name && <div>{author.name}</div>}
-                {publishedDate && <div>{publishedDate}</div>}
-              </div>
+          <div className="flex items-end">
+            <div className="flex-1">
+              <div className="bg-green inline-block text-white font-bold py-2 px-8 rounded hover:opacity-93">Read</div>
             </div>
-          )}
+
+            {author && (
+              <div className="flex items-center md:hidden">
+                {author.image && <Image className="mr-2 rounded-full h-16 w-16" src={author.image} alt={author.name} />}
+
+                <div className="text-sm">
+                  {author.name && <div>{author.name}</div>}
+                  {publishedDate && <div>{publishedDate}</div>}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      </article>
     </Link>
   );
 };

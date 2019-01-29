@@ -110,6 +110,7 @@ const resolveMeta = (defaultMeta = {}, meta = {}) => {
     ...defaultMeta,
     ...meta,
     twitter: Object.assign({}, defaultMeta.twitter, meta.twitter),
+    jld: Object.assign({}, defaultMeta.jld, meta.jld),
   };
 };
 
@@ -330,12 +331,58 @@ export default {
       },
     }));
 
-    addSubpages(routes, pages, blogPosts, props => ({
-      pageName: 'Blog Post',
-      hero: {
-        aligned: 'left',
-      },
-    }));
+    addSubpages(routes, pages, blogPosts, props => {
+      return {
+        breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
+        hero: {
+          aligned: 'left',
+        },
+        meta: {
+          ...props.meta,
+          jld: {
+            breadCrumbs: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, item: { '@id': 'https://stoplight.io/', name: 'Home' } },
+                { '@type': 'ListItem', position: 2, item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' } },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  item: {
+                    '@id': `https://stoplight.io/${props.path}`,
+                    name: props.title,
+                  },
+                },
+              ],
+            }),
+            article: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'NewsArticle',
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': `https://stoplight.io/blog/${props.path}`,
+              },
+              headline: props.title,
+              image: [props.image],
+              datePublished: props.publishDate,
+              dateModified: props.modifiedDate,
+              author: { '@type': 'Person', name: props.author ? props.author.name : null },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Stoplight',
+                logo: {
+                  '@type': 'ImageObject',
+                  url:
+                    'https://d33wubrfki0l68.cloudfront.net/c2cb23ce44d9046f897d797e33ca21c52be6ebd1/63887/images/robot-dude.svg',
+                },
+              },
+              description: props.subtitle,
+            }),
+          },
+        },
+      };
+    });
 
     addSubpages(routes, pages, caseStudies, props => {
       const sidebar = props.sidebar || {};
@@ -403,7 +450,11 @@ export default {
     const { integrations, info } = siteData;
     const { intercom, hubspot, googleTagManager } = integrations;
 
-    const meta = resolveMeta(siteData.meta, routeInfo && routeInfo.allProps.meta);
+    const routeData = (routeInfo && routeInfo.allProps) || {};
+    const { pagination = {}, meta: routeMeta, path } = routeData;
+
+    const meta = resolveMeta(siteData.meta, routeMeta);
+    const { jld } = meta;
 
     const companyInfo = JSON.stringify({
       '@context': 'http://schema.org/',
@@ -481,6 +532,14 @@ export default {
               }}
             />
           )}
+
+          {pagination.currentPage && pagination.currentPage !== 1 && (
+            <link rel="prev" href={`${siteRoot}${path}/page/${pagination.currentPage - 1}/`} />
+          )}
+
+          {pagination.currentPage && pagination.currentPage !== pagination.totalPages && (
+            <link rel="next" href={`${siteRoot}${path}/page/${pagination.currentPage + 1}/`} />
+          )}
         </Head>
         <Body>
           {IS_PRODUCTION && googleTagManager && (
@@ -493,7 +552,6 @@ export default {
               />
             </noscript>
           )}
-
           {children}
 
           {IS_PRODUCTION && hubspot && (
@@ -507,6 +565,12 @@ export default {
           )}
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: companyInfo }} />
+
+          {jld.breadCrumbs && (
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: meta.jld.breadCrumbs }} />
+          )}
+
+          {jld.article && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: meta.jld.article }} />}
         </Body>
       </Html>
     );

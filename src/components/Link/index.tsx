@@ -4,7 +4,7 @@ import { Link as StaticLink } from 'react-static';
 const stoplightNext = /next\.stoplight\.io/;
 
 export interface ILink {
-  to: string;
+  to?: string;
   className?: string;
   title?: string;
   disabled?: boolean;
@@ -40,7 +40,9 @@ const getUTMParams = () => {
 export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, ...props }) => {
   let href = to;
 
-  if (disabled) {
+  if (!to) {
+    return <div {...props}>{children}</div>;
+  } else if (disabled) {
     return <a {...props}>{children}</a>;
   } else if (typeof href === 'string') {
     href = href.trim(); // Make sure there aren't any trailing white spaces

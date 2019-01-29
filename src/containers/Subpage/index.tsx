@@ -4,7 +4,7 @@ import { withRouteData } from 'react-static';
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
-import { Hero, IHero, IHeroAuthor } from 'src/components/Hero';
+import { Hero, IHero, IHeroAuthor, IHeroBreadCrumb } from 'src/components/Hero';
 import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
@@ -17,6 +17,7 @@ export interface IPage {
   title: string;
   subtitle: string;
   pageName?: string;
+  breadCrumbs?: IHeroBreadCrumb[];
   body: string;
   author?: IHeroAuthor;
   publishedDate?: string;
@@ -42,8 +43,9 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   title,
   subtitle,
   pageName,
+  breadCrumbs,
   body,
-  author = {},
+  author,
   publishedDate,
   color,
   hero,
@@ -60,6 +62,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     pageName,
     cta,
     bgColor: color,
+    breadCrumbs,
   };
 
   if (author && author.name) {
@@ -70,6 +73,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   let showDisqus = disqus && disqus.enabled;
   if (typeof window !== 'undefined') {
     url = window.location.origin + path;
+    // @ts-ignore
     showDisqus = showDisqus && !window.CMS;
   }
 

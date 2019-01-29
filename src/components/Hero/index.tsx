@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import * as React from 'react';
 
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { CallToAction, ICallToAction } from 'src/components/CallToAction';
@@ -30,7 +31,7 @@ interface IHeroCard {
   href: string;
   bgColor: string;
   icon: {
-    name: string;
+    name: IconName;
   };
   image: IImage;
 }
@@ -38,7 +39,7 @@ interface IHeroCard {
 export interface IHeroButton {
   title: string;
   href: string;
-  icon?: string;
+  icon?: IconName;
   color?: string;
 }
 
@@ -50,10 +51,16 @@ export interface IHeroAuthor {
   meta?: string;
 }
 
+export interface IHeroBreadCrumb {
+  title: string;
+  path?: string;
+}
+
 export interface IHero {
   title: string;
   subtitle: string;
   pageName?: string;
+  breadCrumbs?: IHeroBreadCrumb[];
   author?: IHeroAuthor;
   image?: IImage;
   bgColor?: string;
@@ -74,7 +81,7 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
       {image && <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />}
       <div>
         {name && <div>{name}</div>}
-        {meta && <div>{meta}</div>}
+        {meta && <div className="opacity-75 text-sm">{meta}</div>}
       </div>
     </Link>
   );
@@ -127,7 +134,7 @@ const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, c
     'cursor-default': !href,
   });
 
-  const elems = [];
+  const elems: JSX.Element[] = [];
 
   if (icon) {
     elems.push(
@@ -159,6 +166,7 @@ const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, c
 
 export const Hero: React.FunctionComponent<IHero> = ({
   pageName,
+  breadCrumbs,
   aligned = 'center',
   title,
   subtitle,
@@ -189,6 +197,19 @@ export const Hero: React.FunctionComponent<IHero> = ({
               'mr-auto w-2/3 md:w-full': aligned === 'left',
             })}
           >
+            {breadCrumbs && breadCrumbs.length ? (
+              <div className="text-white opacity-75 font-semibold mb-4 flex items-center">
+                {breadCrumbs.map((breadCrumb, index) => (
+                  <React.Fragment key={index}>
+                    <Link className="text-white" to={breadCrumb.path}>
+                      {breadCrumb.title}
+                    </Link>
+                    {index < breadCrumbs.length - 1 ? <span className="mx-2">></span> : null}
+                  </React.Fragment>
+                ))}
+              </div>
+            ) : null}
+
             {pageName && <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>}
 
             <h1>{title}</h1>
@@ -234,7 +255,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
           {cards.length ? (
             <div className="flex mx-auto md:flex-col md:pt-16">
               {cards.map((card, i) => (
-                <HeroCard key={i} index={parseInt(i) + 1} {...card} />
+                <HeroCard key={i} index={i + 1} {...card} />
               ))}
             </div>
           ) : null}
