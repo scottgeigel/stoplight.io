@@ -1,0 +1,18 @@
+path: /blog/author/taylor-barnett
+tag: author
+title: Taylor Barnett
+subtitle: Bio here
+pageName: Community Engineer
+image: /images/barnett_headshot.png
+color: purple-darker
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter:
+    username: '@taylor_atx'
+pagination: {}
