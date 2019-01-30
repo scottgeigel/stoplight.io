@@ -1,6 +1,6 @@
 ---
 path: /blog/the-api-cornucopia
-publishDate: 2018-08-15T22:22:27.858Z
+publishDate: 2017-08-15T22:22:27.858Z
 author: Robert Wallach
 title: The API Cornucopia
 color: black
