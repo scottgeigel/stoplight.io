@@ -1,9 +1,13 @@
 ---
 path: /blog/chivalry-is-dead-and-so-is-testing
+tags:
+  - Testing
+relatedTags:
+  - Testing
 publishDate: 2016-10-05T23:14:09.129Z
 author: Tom Pytleski
 title: 'Chivalry is dead, and so is testing'
-color: black
+color: orange
 disqus:
   enabled: true
 actionBar:
