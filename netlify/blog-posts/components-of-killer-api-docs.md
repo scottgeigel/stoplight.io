@@ -1,8 +1,13 @@
 ---
 path: /blog/components-of-killer-api-docs
+tags:
+  - Documentation
+relatedTags:
+  - Documentation
 publishDate: 2017-05-11T22:57:36.686Z
+author: Stoplight
 title: Components of Killer API Docs
-color: black
+color: green
 disqus:
   enabled: true
 actionBar:
