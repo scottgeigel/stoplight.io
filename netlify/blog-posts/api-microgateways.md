@@ -1,11 +1,17 @@
 ---
 path: /blog/api-microgateways
+tags:
+  - Industry
+  - General
+relatedTags:
+  - Industry
+  - General
 publishDate: 2018-07-26T19:03:36.290Z
 author: Robert Wallach
 title: API Microgateways
 subtitle: From Security to Orchestration
 image: /images/api-microgateways.jpeg
-color: black
+color: indigo
 disqus:
   enabled: true
 actionBar:
