@@ -11,7 +11,7 @@ author: Robert Wallach
 title: All Your Semantics Belong to Us
 subtitle: Where hacking words is a time honored tradition
 image: /images/semantics-belong-to-us.jpeg
-color: yellow
+color: indigo
 disqus:
   enabled: true
 actionBar:
