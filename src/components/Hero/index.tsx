@@ -129,6 +129,10 @@ const HeroCard: React.FunctionComponent<IHeroCard> = ({
 };
 
 const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, color }) => {
+  if (!href && !title && !icon) {
+    return null;
+  }
+
   const className = cn('flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md', {
     'hover:opacity-93 cursor-pointer': href,
     'cursor-default': !href,
@@ -180,6 +184,11 @@ export const Hero: React.FunctionComponent<IHero> = ({
   skew,
   containerClassName,
 }) => {
+  // Filter out any empty button objects
+  const heroButtons = buttons.filter(button => {
+    return button.href || button.title || button.icon;
+  });
+
   return (
     <React.Fragment>
       <div key="main" className="relative">
@@ -244,9 +253,9 @@ export const Hero: React.FunctionComponent<IHero> = ({
             />
           )}
 
-          {!cards.length && buttons.length ? (
+          {!cards.length && heroButtons.length ? (
             <div className="flex flex-wrap mx-auto pb-24 md:pt-16">
-              {buttons.map((button, i) => (
+              {heroButtons.map((button, i) => (
                 <HeroButton key={i} color={bgColor} {...button} />
               ))}
             </div>

@@ -70,11 +70,13 @@ export default {
           label: 'Title',
           widget: 'string',
           default: 'title',
+          required: false,
         },
         {
           name: 'href',
           label: 'Link',
           widget: 'string',
+          required: false,
         },
         {
           name: 'icon',
