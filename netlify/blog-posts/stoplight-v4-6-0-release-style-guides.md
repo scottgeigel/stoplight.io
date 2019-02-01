@@ -4,22 +4,23 @@ tags:
   - Changelog
 relatedTags:
   - Changelog
-publishDate: 2019-02-01T21:05:55.150Z
+publishDate: 2019-02-01T21:06:32.215Z
 author: Chris Lott
 title: Stoplight v4.6.0 Release — Style Guides
 subtitle: OpenAPI Specification Style Guides
 image: 'https://cdn-images-1.medium.com/max/4120/1*4LTwOQyn0nQDf8kxms6aBA.png'
-color: purple-darker
+color: purple
 disqus:
   enabled: true
 actionBar:
   enabled: true
 meta:
-  description: Stop Calling Your APIs Microservices
-  title: Blog | Stoplight
+  description: ''
+  favicon: /images/mark_light_bg.png
+  title: Stoplight v4.6.0 Release | Stoplight
   twitter:
-    description: Stop Calling Your APIs Microservices
-    title: Blog | Stoplight
+    description: ''
+    title: Stoplight v4.6.0 Release | Stoplight
     username: '@stoplightio'
 ---
 
