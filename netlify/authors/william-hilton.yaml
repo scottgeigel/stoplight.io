@@ -1,0 +1,21 @@
+path: /blog/author/william-hilton
+tag: Author
+title: William Hilton
+subtitle: bio
+pageName: Software Engineer
+image: /images/hilton_headshot.png
+color: indigo
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: William Hilton | Stoplight
+  twitter:
+    title: William Hilton | Stoplight
+    username: '@stoplightio'
+pagination: {}
