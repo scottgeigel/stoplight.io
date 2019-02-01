@@ -1,0 +1,21 @@
+path: '/blog/author/nicholas-cassera '
+tag: Author
+title: Nicholas Cassera
+subtitle: bio
+pageName: Software Engineer
+image: /images/cassera_headshot.png
+color: green
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Nicholas Cassera | Stoplight
+  twitter:
+    title: Nicholas Cassera | Stoplight
+    username: '@stoplightio'
+pagination: {}
