@@ -1,0 +1,21 @@
+path: /blog/author/robert-wallach
+tag: Author
+title: 'Robert Wallach '
+subtitle: 'details '
+pageName: Content & Support
+image: /images/wallach_headshot.png
+color: blue
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Robert Wallach | Stoplight
+  twitter:
+    title: Robert Wallach | Stoplight
+    username: '@stoplightio'
+pagination: {}
