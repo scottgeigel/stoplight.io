@@ -1,0 +1,21 @@
+path: /blog/author/marc-macleod
+tag: Author
+title: Marc MacLeod
+subtitle: Bio
+pageName: Founder & CEO
+image: /images/macleod_headshot.png
+color: purple
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Marc MacLeod | Stoplight
+  twitter:
+    title: Marc MacLeod | Stoplight
+    username: '@stoplightio'
+pagination: {}
