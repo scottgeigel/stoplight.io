@@ -1,13 +1,15 @@
 ---
 path: /blog/stoplight-v4-6-0-release-style-guides
-tags: ['blog', 'blog-changelog']
-relatedTags: ['blog']
-publishedDate: 'Dec 4, 2018'
+tags:
+  - Changelog
+relatedTags:
+  - Changelog
+publishDate: 2019-02-01T21:05:55.150Z
+author: Chris Lott
 title: Stoplight v4.6.0 Release — Style Guides
 subtitle: OpenAPI Specification Style Guides
-image: https://cdn-images-1.medium.com/max/4120/1*4LTwOQyn0nQDf8kxms6aBA.png
+image: 'https://cdn-images-1.medium.com/max/4120/1*4LTwOQyn0nQDf8kxms6aBA.png'
 color: purple-darker
-author: Chris Lott
 disqus:
   enabled: true
 actionBar:
@@ -21,7 +23,7 @@ meta:
     username: '@stoplightio'
 ---
 
-New 🚀
+## New 🚀
 
 ### **[OAS] OpenAPI Specification Style Guides**
 
