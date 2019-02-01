@@ -1,0 +1,21 @@
+path: /blog/author/thomas-pytleski
+tag: Author
+title: Thomas Pytleski
+subtitle: Bio
+pageName: Software Engineer
+image: /images/pytleski_headshot.png
+color: yellow
+buttons:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Thomas Pytleski | Stoplight
+  twitter:
+    title: Thomas Pytleski | Stoplight
+    username: '@stoplightio'
+pagination: {}
