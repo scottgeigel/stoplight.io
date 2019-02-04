@@ -3,6 +3,7 @@ path: /blog/all-your-semantics-belong-to-us
 tags:
   - Industry
   - General
+  - blog
 relatedTags:
   - Industry
   - General
@@ -17,7 +18,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   title: All Your Semantics Belong to Us | Stoplight
