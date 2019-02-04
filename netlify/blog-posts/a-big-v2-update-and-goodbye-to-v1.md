@@ -1,10 +1,10 @@
 ---
 path: /blog/a-big-v2-update-and-goodbye-to-v1
 tags:
-  - Changelog
+  - blog-changelog
   - blog
 relatedTags:
-  - Changelog
+  - blog-changelog
 publishDate: 2016-08-16T23:23:49.359Z
 author: Stoplight
 title: 'A big v2 update, and goodbye to v1'

@@ -1,11 +1,10 @@
 ---
 path: /blog/api-security-in-openapi
 tags:
-  - Modeling
-  - Design
+  - blog-design
+  - blog
 relatedTags:
-  - Modeling
-  - Design
+  - blog-design
 publishDate: 2018-08-16T18:27:33.860Z
 author: Lukas Rosenstock
 title: API Security in OpenAPI

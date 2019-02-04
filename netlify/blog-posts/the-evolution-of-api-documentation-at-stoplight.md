@@ -1,7 +1,10 @@
 ---
 path: /blog/the-evolution-of-api-documentation-at-stoplight
-tags: ['blog', 'blog-documentation']
-relatedTags: ['blog']
+tags:
+  - blog-documentation
+  - blog
+relatedTags:
+  - blog-documentation
 publishedDate: 'Dec 4, 2018'
 title: The Evolution of API Documentation at Stoplight
 subtitle: How we are evolving documentation at Stoplight to be performant, accessible, portable, and integrated

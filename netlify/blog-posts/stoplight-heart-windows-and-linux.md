@@ -1,5 +1,10 @@
 ---
 path: /blog/stoplight-windows-and-linux
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2016-07-25T23:28:04.811Z
 title: Stoplight ❤ Windows and Linux
 color: black

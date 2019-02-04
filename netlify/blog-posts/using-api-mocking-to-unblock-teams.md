@@ -1,5 +1,10 @@
 ---
 path: /blog/using-service-virtualization-api-mocking-to-unblock-teams
+tags:
+  - blog-mocking
+  - blog
+relatedTags:
+  - blog-mocking
 publishDate: 2017-06-20T22:37:44.512Z
 title: Using API Mocking to Unblock Teams
 image: /images/service-virtualization.jpeg

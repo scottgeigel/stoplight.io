@@ -1,5 +1,10 @@
 ---
 path: /blog/scenarios-v3-3-update
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2017-06-12T22:48:20.849Z
 title: Scenarios v3.3 Update
 color: black

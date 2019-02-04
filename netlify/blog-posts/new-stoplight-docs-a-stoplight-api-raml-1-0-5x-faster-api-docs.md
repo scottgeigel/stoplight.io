@@ -1,5 +1,10 @@
 ---
 path: /blog/new-stoplight-docs-a-stoplight-api-raml-1-0-5x-faster-api-docs
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2016-09-29T23:17:41.850Z
 author: Marc MacLeod
 title: 'New Stoplight Docs, a Stoplight API, RAML 1.0, 5x Faster API Docs'

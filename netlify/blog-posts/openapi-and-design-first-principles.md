@@ -1,5 +1,10 @@
 ---
 path: /blog/openapi-and-design-first-principles
+tags:
+  - blog-design
+  - blog
+relatedTags:
+  - blog-design
 publishDate: 2018-06-21T19:34:32.353Z
 author: Lukas Rosenstock
 title: OpenAPI and Design-First Principles

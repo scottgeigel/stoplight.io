@@ -1,11 +1,13 @@
 ---
 path: /blog/proxy-vs-gateway
 tags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
+  - blog
 relatedTags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
+  - blog
 publishDate: 2018-11-27T06:00:00.000Z
 author: Robert Wallach
 title: API Proxy vs API Gateway

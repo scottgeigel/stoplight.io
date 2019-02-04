@@ -1,9 +1,10 @@
 ---
 path: /bog/take-your-api-beyond-static-documentation
 tags:
-  - Documentation
+  - blog-documentation
+  - blog
 relatedTags:
-  - Documentation
+  - blog-documentation
 publishDate: 2019-02-01T19:00:39.621Z
 author: Adam DuVander
 title: 'Take Your API Beyond Static Documentation '

@@ -1,9 +1,12 @@
 ---
 path: /blog/stop-calling-your-apis-microservices
 tags:
+  - blog-design
+  - blog-industry
   - blog
 relatedTags:
-  - blog
+  - blog-design
+  - blog-industry
 publishDate: 2019-02-04T20:27:05.450Z
 author: Lukas Rosenstock
 title: Stop Calling Your APIs Microservices

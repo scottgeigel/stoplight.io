@@ -1,5 +1,10 @@
 ---
 path: /blog/release-v4-7-0
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2019-01-08T19:04:55.501Z
 author: Taylor Barnett
 title: Stoplight v4.7.0 Release — OpenAPI Specification 3

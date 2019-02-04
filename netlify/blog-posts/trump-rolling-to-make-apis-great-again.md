@@ -1,5 +1,10 @@
 ---
 path: /blog/trump-rolling-to-make-apis-great-again
+tags:
+  - blog-general
+  - blog
+relatedTags:
+  - blog-general
 publishDate: 2016-11-03T23:08:57.090Z
 author: Tom Pytleski
 title: Trump Rolling to Make APIs Great Again

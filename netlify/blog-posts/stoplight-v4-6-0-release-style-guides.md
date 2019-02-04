@@ -1,9 +1,10 @@
 ---
 path: /blog/stoplight-v4-6-0-release-style-guides
 tags:
-  - Changelog
+  - blog-changelog
+  - blog
 relatedTags:
-  - Changelog
+  - blog-changelog
 publishDate: 2019-02-01T21:06:32.215Z
 author: Chris Lott
 title: Stoplight v4.6.0 Release — Style Guides

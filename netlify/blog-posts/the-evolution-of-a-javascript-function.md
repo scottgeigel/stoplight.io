@@ -1,5 +1,10 @@
 ---
 path: /blog/the-evolution-of-a-javascript-function
+tags:
+  - blog-general
+  - blog
+relatedTags:
+  - blog-general
 publishDate: 2018-06-27T19:30:02.611Z
 author: Will Hilton
 title: The Evolution of a JavaScript Function

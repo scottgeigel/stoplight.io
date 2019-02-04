@@ -1,5 +1,10 @@
 ---
 path: /blog/stoplight-v4-0-0
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2018-03-27T21:56:14.802Z
 author: 'Robert Wallach '
 title: Stoplight v4.0.0

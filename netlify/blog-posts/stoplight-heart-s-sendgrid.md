@@ -1,5 +1,10 @@
 ---
 path: /blog/stoplight-hearts-sendgrid
+tags:
+  - blog-general
+  - blog
+relatedTags:
+  - blog-general
 publishDate: 2017-02-15T00:00:33.453Z
 author: Tom Pytleski
 title: "Stoplight \U0001F496 SendGrid"

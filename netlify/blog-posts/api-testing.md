@@ -2,9 +2,10 @@
 path: >-
   /blog/api-testing-achieving-quick-and-easy-service-virtualization-with-stoplight
 tags:
-  - Testing
+  - blog-testing
+  - blog
 relatedTags:
-  - Testing
+  - blog-testing
 publishDate: 2017-05-31T22:52:07.204Z
 author: Stoplight
 title: API Testing

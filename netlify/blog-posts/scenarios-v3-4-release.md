@@ -1,5 +1,10 @@
 ---
 path: /blog/scenarios-v3-4-release
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2017-07-31T22:30:02.700Z
 author: Marc MacLeod
 title: Scenarios v3.4 Release

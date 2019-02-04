@@ -1,9 +1,10 @@
 ---
 path: /blog/components-of-killer-api-docs
 tags:
-  - Documentation
+  - blog-documentation
+  - blog
 relatedTags:
-  - Documentation
+  - blog-documentation
 publishDate: 2017-05-11T22:57:36.686Z
 author: Stoplight
 title: Components of Killer API Docs

@@ -1,12 +1,13 @@
 ---
 path: /blog/all-your-semantics-belong-to-us
 tags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
   - blog
 relatedTags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
+  - blog
 publishDate: 2018-06-19T19:39:33.508Z
 author: Robert Wallach
 title: All Your Semantics Belong to Us

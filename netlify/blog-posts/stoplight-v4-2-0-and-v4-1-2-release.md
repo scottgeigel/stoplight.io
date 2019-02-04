@@ -1,5 +1,10 @@
 ---
 path: /blog/stoplight-v4-2-0-and-v4-1-2-release
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2018-06-04T21:29:35.465Z
 author: Robert Wallach
 title: Stoplight v4.2.0 and v4.1.2 Release

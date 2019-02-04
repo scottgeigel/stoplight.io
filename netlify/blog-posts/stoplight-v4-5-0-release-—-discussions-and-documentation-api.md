@@ -1,5 +1,10 @@
 ---
 path: /blog/release-v4-5-0
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2018-09-11T18:09:47.152Z
 author: Robert Wallach
 title: Stoplight v4.5.0 Release — Discussions and Documentation API

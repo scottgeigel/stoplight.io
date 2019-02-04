@@ -1,5 +1,10 @@
 ---
 path: /blog/stoplight-v4-3-0-release-versions-and-releases
+tags:
+  - blog-changelog
+  - blog
+relatedTags:
+  - blog-changelog
 publishDate: 2018-07-06T19:25:47.388Z
 author: Taylor Barnett
 title: Stoplight v4.3.0 Release — Versions and Releases

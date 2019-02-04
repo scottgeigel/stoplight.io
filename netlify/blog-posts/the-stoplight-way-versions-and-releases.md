@@ -1,5 +1,10 @@
 ---
 path: /blog/the-stoplight-way-versions-and-releases
+tags:
+  - blog-general
+  - blog
+relatedTags:
+  - blog-general
 publishDate: 2018-07-09T19:21:12.282Z
 author: Nicholas Cassera
 title: 'The Stoplight Way: Versions and Releases'

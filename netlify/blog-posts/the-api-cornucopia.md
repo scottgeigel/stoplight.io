@@ -1,5 +1,13 @@
 ---
 path: /blog/the-api-cornucopia
+tags:
+  - blog-industry
+  - blog-general
+  - blog
+relatedTags:
+  - blog-industry
+  - blog-general
+  - blog
 publishDate: 2017-08-15T22:22:27.858Z
 author: Robert Wallach
 title: The API Cornucopia

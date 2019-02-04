@@ -1,7 +1,9 @@
 ---
 path: /blog/writing-documentation-when-you-arent-a-technical-writer-part-two
 tags:
+  - blog-documentation
   - blog
+relatedTags:
   - blog-documentation
 publishDate: 2018-08-23T18:15:22.669Z
 author: Taylor Barnett
