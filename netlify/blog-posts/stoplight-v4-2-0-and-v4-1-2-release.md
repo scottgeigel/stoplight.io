@@ -8,6 +8,8 @@ relatedTags:
 publishDate: 2018-06-04T21:29:35.465Z
 author: Robert Wallach
 title: Stoplight v4.2.0 and v4.1.2 Release
+subtitle: Hubs Proxy Support and Import Files
+image: /images/import-files.png
 color: grey
 disqus:
   enabled: true
@@ -32,7 +34,8 @@ meta:
 
 * Support for [importing files](https://docs.stoplight.io/platform/editor-basics/import-files) into a project
 
-![No longer need to copy and paste your specification files to import!](https://cdn-images-1.medium.com/max/3368/1*xH5QIs4X8LarTsDiJaYpSg.png)*No longer need to copy and paste your specification files to import!*
+![No longer need to copy and paste your specification files to import!](https://cdn-images-1.medium.com/max/3368/1*xH5QIs4X8LarTsDiJaYpSg.png)
+*No longer need to copy and paste your specification files to import!*
 
 ## Enhancements 💪
 
