@@ -50,7 +50,7 @@ API Directories, also known as API Repositories, API Catalogs, and API Marketpla
 
 ![](https://cdn-images-1.medium.com/max/3462/1*x5jhTd-WVDzrkt2D2G8k3A.png)
 
-### [**ProgrammableWeb](https://www.programmableweb.com)**
+### **[ProgrammableWeb](https://www.programmableweb.com)**
 
 The granddaddy of all API Directories. ProgrammableWeb has consistently been one of the most visible and accessible of API Directories. With a behemoth library curated by a team of API evangelists, ProgrammableWeb continues to cultivate and collect API relics in an effort to support the ever changing API landscape.
 
@@ -100,7 +100,7 @@ The granddaddy of all API Directories. ProgrammableWeb has consistently been one
 
 ![](https://cdn-images-1.medium.com/max/4768/1*cBlO5tgw9NVG3Tdqdq932w.png)
 
-### [**GitHub](https://github.com/)**
+### **[GitHub](https://github.com/)**
 
 GitHub will always be a good option for finding anything in tech and that includes APIs and curated user generated API Directories. The downside to GitHub is that there is no central guideline or goal which results in a lack of standardization.
 
@@ -126,7 +126,7 @@ GitHub will always be a good option for finding anything in tech and that includ
 
 ![](https://cdn-images-1.medium.com/max/5084/1*asthqsGt3G-0qQdx1JhWWg.png)
 
-### [**RapidAPI](https://rapidapi.com/)**
+### **[RapidAPI](https://rapidapi.com/)**
 > “You can’t build everything from scratch, and using APIs makes work a lot more efficient. But each API has a different format and authentication strategy. You have to speak a lot of different languages to use them all.” — Iddo Gino
 
 As of March 13, 2018, RapidAPI claims that [they process 400B API calls each month](https://techcrunch.com/2018/03/13/rapidapi-an-api-marketplace-that-processes-half-a-billion-api-calls-each-month-raises-9m-led-by-a16z/) which makes them one of the most used API directories available. RapidAPI differs from the other directories by providing a single standardized gateway that allows access to all the APIs they support.
@@ -165,7 +165,7 @@ As of March 13, 2018, RapidAPI claims that [they process 400B API calls each mon
 
 ## **Honorable Mentions**
 
-### [**APIs.guru](https://github.com/APIs-guru/openapi-directory)**
+### **[APIs.guru](https://github.com/APIs-guru/openapi-directory)**
 
 APIs.guru could be considered the bedrock of API Discovery. An open-source, machine readable API Directory, APIs.guru is a leading source of data for many API Directories and embodies the open-source mentality that has come to symbolize the dev community at large. They also specialize in APIs that use the OpenAPI Specification
 
@@ -175,7 +175,7 @@ APIs.guru could be considered the bedrock of API Discovery. An open-source, mach
 
 * Around 250 APIs
 
-### [**{API} Search](http://apis.io/)**
+### **[{API} Search](http://apis.io/)**
 
 ### Size of Directory
 
@@ -203,7 +203,7 @@ API Integration Platforms are an emerging field within the API ecosystem. These 
 
 ![](https://cdn-images-1.medium.com/max/5100/1*jprQhpYV5-iwetiqfoPlxw.png)
 
-### [**Segment](https://segment.com)**
+### **[Segment](https://segment.com)**
 
 Segment is not just an API Integration Platform but is still one of the most widely used. They specialize in analytics integrations with a focus on data warehousing.
 
@@ -239,7 +239,7 @@ Segment is not just an API Integration Platform but is still one of the most wid
 
 ![](https://cdn-images-1.medium.com/max/5084/1*4YXLLWOjQ01PnzRpChFMFQ.png)
 
-### [**Cloud Elements](https://cloud-elements.com/)**
+### **[Cloud Elements](https://cloud-elements.com/)**
 
 The purest distillation of an API Integration Platform. They provide you with the connections and the maintenance necessary to hookup any of the APIs they support.
 
@@ -275,7 +275,7 @@ The purest distillation of an API Integration Platform. They provide you with th
 
 ![](https://cdn-images-1.medium.com/max/5072/1*tyDAYX3c5WqEOuEyGZxWYg.png)
 
-### [**Zapier](https://zapier.com/)**
+### **[Zapier](https://zapier.com/)**
 
 Zapier differs from the other integration platforms by focusing on non-technical users. The language and the approach will be substantially different. They specialize in connecting apps (Zaps) in creative ways to allow for automation and additional functionality.
 
