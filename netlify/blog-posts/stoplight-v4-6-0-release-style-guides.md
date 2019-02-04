@@ -14,7 +14,7 @@ color: purple
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: ''
   favicon: /images/mark_light_bg.png
