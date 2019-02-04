@@ -13,9 +13,8 @@ color: red
 buttons:
   - {}
 actionBar:
-  buttons:
-    - color: purple
-  enabled: true
+  buttons: []
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
