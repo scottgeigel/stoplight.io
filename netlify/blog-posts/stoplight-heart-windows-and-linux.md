@@ -1,7 +1,7 @@
 ---
 path: /blog/stoplight-windows-and-linux
 publishDate: 2016-07-25T23:28:04.811Z
-title: 'Stoplight :heart: Windows and Linux'
+title: Stoplight ❤ Windows and Linux
 color: black
 disqus:
   enabled: true
