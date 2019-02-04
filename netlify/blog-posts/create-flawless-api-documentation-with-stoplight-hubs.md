@@ -14,7 +14,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -24,7 +24,7 @@ meta:
     username: '@stoplightio'
 ---
 
-At [*Stoplight](https://stoplight.io)*, our goal is to build, maintain, and grow a holistic platform that encompasses your entire API strategy. We strive to make *Stoplight* your home base for all things API.
+At *[Stoplight](https://stoplight.io)*, our goal is to build, maintain, and grow a holistic platform that encompasses your entire API strategy. We strive to make *Stoplight* your home base for all things API.
 
 With that in mind, we’re excited to announce the launch of *Hubs*. *Hubs* is the newest module in the *Stoplight* arsenal, and it addresses a key area of focus for API users: **documentation**.
 
