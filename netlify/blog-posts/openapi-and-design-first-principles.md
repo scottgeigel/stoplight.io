@@ -11,7 +11,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -67,6 +67,6 @@ There’s a real danger that the automatically generated specifications are cons
 
 So, is auto-generating machine-readable API definitions always wrong, by definition (pun intended)? No, because they can act as your first step into the OpenAPI ecosystem. These definitions can also assist in refactoring a legacy API. While it’s often useful to start a new, refactored API version from a clean slate, having the ability to compare both versions can help identify the differences and potential problems. You could, for example, generate an OpenAPI definition from the existing implementation and then load it into [Stoplight](https://stoplight.io/) to keep as a reference during an API-first redesign.
 
-*Editor’s note: We are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
+*Editor’s note: We are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/2436/1*tXurrlLg5pgXl8KpgKc4oQ.png)
