@@ -3,6 +3,7 @@ path: /blog/api-microgateways
 tags:
   - Industry
   - General
+  - blog
 relatedTags:
   - Industry
   - General
@@ -17,7 +18,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -72,7 +73,7 @@ API Gateways can perform many different functions and are highly customizable. T
 
 ### **Popular Custom Functions**
 
-* [**Security](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes)**: Handles authentication and authorization for your API. Can also generate tokens and keys and forward requests to Authorization servers.
+* **[Security](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes)**: Handles authentication and authorization for your API. Can also generate tokens and keys and forward requests to Authorization servers.
 
 * **Custom API**: You can tailor how your API is consumed depending on circumstance or how it was accessed.
 
