@@ -1,13 +1,15 @@
 ---
 path: /blog/stop-calling-your-apis-microservices
-tags: ['blog']
-relatedTags: ['blog']
-publishedDate: 'Dec 4, 2018'
-title: Stop Calling Your APIs Microservices
-subtitle: The Relationship between APIs, Microservices, and Containers
-image: https://cdn-images-1.medium.com/max/9802/1*vhPNg3Vh58W-mTcDsrbKAg.jpeg
-color: purple-darker
+tags:
+  - blog
+relatedTags:
+  - blog
+publishDate: 2019-02-04T20:27:05.450Z
 author: Lukas Rosenstock
+title: Stop Calling Your APIs Microservices
+subtitle: 'The Relationship between APIs, Microservices, and Containers'
+image: 'https://cdn-images-1.medium.com/max/9802/1*vhPNg3Vh58W-mTcDsrbKAg.jpeg'
+color: purple-darker
 disqus:
   enabled: true
 actionBar:
@@ -20,9 +22,6 @@ meta:
     title: Blog | Stoplight
     username: '@stoplightio'
 ---
-
-![](https://cdn-images-1.medium.com/max/9802/1*vhPNg3Vh58W-mTcDsrbKAg.jpeg)
-
 Have you ever heard the adage that “there are only two hard problems in computer science, cache invalidation, naming things, and off-by-one errors?” Allegedly, [Phil Karlton said this](https://quotesondesign.com/phil-karlton/) [sometime around 1996/97](https://twitter.com/timbray/status/817025379109990402). While [many comedic spin-offs for this famous phrase](https://www.martinfowler.com/bliki/TwoHardThings.html) mention additional problems, a recent observation in the world of APIs seems to prove the bit about naming things right: There’s some confusion about the terms “API” and “microservice,” and some people seem to use them interchangeably.
 
 The whole world of computing is continuously in flux. Developers use various concepts and technologies and connect them in different ways. Therefore, it is not uncommon that we use inconsistent terminology, having multiple words for what is roughly the same concept or, vice versa, saying the same word but meaning different things.
@@ -71,6 +70,6 @@ Of course, there are different aspects to emphasize when designing microservice 
 
 Microservices and APIs are not the same and, while we’re at it, neither are microservices and containers. However, the two concepts work together in two different ways: First, microservices can be a means to deploy the backend for an internal, partner, or public API. Second, microservices typically rely on APIs as a language-independent means to communicate with each other in an internal network. Development teams can use similar design approaches and tools for creating both outward-facing and microservice APIs. We will cover distinct best practices for different types of APIs in an upcoming post.
 
-*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
+*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/NaN/1*t-0nFtOwlgG0xGyouTJapQ.png)
