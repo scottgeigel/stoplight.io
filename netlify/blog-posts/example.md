@@ -8,7 +8,7 @@ relatedTags:
 publishDate: 2019-02-04T18:21:16.261Z
 author: Ross McDonald
 title: The Fundamentals of HTTP API Unit Testing
-subtitle: Some subtitle ....
+subtitle: A closer look at unit testing within the context of HTTP APIs
 image: /images/aaa_blog_example.png
 color: purple-darker
 disqus:
