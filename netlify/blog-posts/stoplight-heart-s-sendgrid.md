@@ -2,20 +2,20 @@
 path: /blog/stoplight-hearts-sendgrid
 publishDate: 2017-02-15T00:00:33.453Z
 author: Tom Pytleski
-title: 'Stoplight :heart:s SendGrid'
+title: "Stoplight \U0001F496 SendGrid"
 color: black
 disqus:
   enabled: true
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Stoplight :heart:s SendGrid | Stoplight'
+  title: "Stoplight \U0001F496 SendGrid | Stoplight"
   twitter:
-    title: 'Stoplight :heart:s SendGrid | Stoplight'
+    title: "Stoplight \U0001F496 SendGrid | Stoplight"
     username: '@stoplightio'
 ---
 Hours of planning can save you weeks of programming.
