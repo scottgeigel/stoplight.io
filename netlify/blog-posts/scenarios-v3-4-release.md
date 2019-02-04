@@ -44,7 +44,7 @@ Use tags to organize your lifecycle stages (design, needs review, published, etc
 
 Every organization starts off with some basic tags, but they are fully customizable on the settings page.
 
-***Coming Soon: **A kickass search system.*
+***Coming Soon:** A kickass search system.*
 
 ## Discussions
 
@@ -56,7 +56,7 @@ Discussions make it easy for stakeholders to coordinate. Use discussions to ask 
 
 To create a new discussion, simply navigate to the entity in question, and then click on the “Discussion” button in the top right. Anybody with read access to the entity can create and participate in discussions. Discussions can be resolved, and you can toggle between open and closed discussions with the tabs at the bottom of the discussion list.
 
-***Coming Soon: **@mentions, activity feeds, and notifications!*
+***Coming Soon:** @mentions, activity feeds, and notifications!*
 
 ## Shared Environments
 
@@ -72,7 +72,7 @@ Don’t worry — private user variables are still supported! Private environmen
 
 Entities can now be made public! This makes it easier to share API Specs and other development artifacts with people outside of your organization.
 
-***Coming Soon: **Pretty, read-only/documentation views for all of our editors. These will be perfect to share with the public and/or less technical stakeholders in your organization.*
+***Coming Soon:** Pretty, read-only/documentation views for all of our editors. These will be perfect to share with the public and/or less technical stakeholders in your organization.*
 
 ## Editor UI Update
 
@@ -80,7 +80,7 @@ Entities can now be made public! This makes it easier to share API Specs and oth
 
 We’ve updated the editor UI in a few small ways. The primary goal here was to increase the amount of space available to the editor itself by minimizing the navigational chrome around it. To do that, we’ve moved the tabs that used to be at the top of the editor to a new left gutter. This significantly increases the amount of vertical space available to the editor. This also allowed us to increase the height of the top nav strip, which is important because…
 
-***Coming Soon: **Multiple tabs support. No clicking through lots of links to switch back and forth between two things in the app.*
+***Coming Soon:** Multiple tabs support. No clicking through lots of links to switch back and forth between two things in the app.*
 
 We hope you enjoy this release! Please let us know if you run into any bugs, or have questions.
 
