@@ -8,13 +8,14 @@ relatedTags:
 publishDate: 2017-07-31T22:30:02.700Z
 author: Marc MacLeod
 title: Scenarios v3.4 Release
+image: /images/scenarios-tagging.png
 color: black
 disqus:
   enabled: true
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -41,7 +42,8 @@ Today, we are happy to announce the release of Scenarios v3.4! This release incl
 
 ## Tagging & Filtering
 
-![Manage tags on your organization settings page.](https://cdn-images-1.medium.com/max/4688/1*uGL3lxZulxt8hIKDI6jFuQ.png)*Manage tags on your organization settings page.*
+![Manage tags on your organization settings page.](https://cdn-images-1.medium.com/max/4688/1*uGL3lxZulxt8hIKDI6jFuQ.png)
+*Manage tags on your organization settings page.*
 
 Tags help you organize the many artifacts that are part of your development process. You can define tags in your organization, and then add them to entities (API specs, scenario collections, and prism instances) inside of the organization.
 
@@ -53,7 +55,8 @@ Every organization starts off with some basic tags, but they are fully customiza
 
 ## Discussions
 
-![Discussions make it easy for stakeholders to coordinate.](https://cdn-images-1.medium.com/max/2376/1*T5Jzo_KtjS6x-yAgYdWt6w.png)*Discussions make it easy for stakeholders to coordinate.*
+![Discussions make it easy for stakeholders to coordinate.](https://cdn-images-1.medium.com/max/2376/1*T5Jzo_KtjS6x-yAgYdWt6w.png)
+*Discussions make it easy for stakeholders to coordinate.*
 
 Every editor now has a discussions pane, accessible via a button in the top right.
 
@@ -81,7 +84,8 @@ Entities can now be made public! This makes it easier to share API Specs and oth
 
 ## Editor UI Update
 
-![](https://cdn-images-1.medium.com/max/5960/1*7aGeACeAj1xr_i8wwZV9CA.png)
+![Editor UI Update](https://cdn-images-1.medium.com/max/5960/1*7aGeACeAj1xr_i8wwZV9CA.png)
+*Editor UI Update*
 
 We’ve updated the editor UI in a few small ways. The primary goal here was to increase the amount of space available to the editor itself by minimizing the navigational chrome around it. To do that, we’ve moved the tabs that used to be at the top of the editor to a new left gutter. This significantly increases the amount of vertical space available to the editor. This also allowed us to increase the height of the top nav strip, which is important because…
 
