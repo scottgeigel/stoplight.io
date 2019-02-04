@@ -15,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -95,7 +95,9 @@ The context in the code sample is important for developer success. Developers ar
 
 A developer quickly copies and pastes this code. And…
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/13J4mAfd4iHC5G" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/puppy-fine-falling-13J4mAfd4iHC5G">via GIPHY</a></p>First, how do they even run this file? Probably node file_name.js but it wasn’t in the code. This could have been put in a comment at the top.
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/13J4mAfd4iHC5G" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/puppy-fine-falling-13J4mAfd4iHC5G">via GIPHY</a></p>
+
+First, how do they even run this file? Probably node file_name.js but it wasn’t in the code. This could have been put in a comment at the top.
 
 Okay, so they run it and… ReferenceError: Keen is not defined. ☹️ A Keen client was never instantiated, there’s no import or require statement at the top, and it only works if they npm installed the library.
 
@@ -135,8 +137,8 @@ Kelsey Hightower struggled to copy this code sample off of StackOverflow in a Go
 
 Did he do this intentionally? The world will never know. However, it represents the struggle of coders to copy large blocks of text on some documentation sites. Make sure the UI of your site makes it easy to copy large blocks of text. You can even break up those blocks to explain them in chunks making them more accessible to copy and understand.
 
-_I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Update: Check out [Part Two](https://blog.stoplight.io/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a) of the series!_
+*I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Update: Check out [Part Two](https://blog.stoplight.io/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a) of the series!*
 
-_Also, we are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below _👇
+*Also, we are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/11000/1*t-0nFtOwlgG0xGyouTJapQ.png)
