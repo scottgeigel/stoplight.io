@@ -15,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -132,7 +132,7 @@ Stripe also does something similar with extensive descriptions of the different 
 
 You might even find your error messages in StackOverflow questions. Respond to these in a humble, human, and helpful way too. Because of SEO, it is common for users to end up on StackOverflow with your error messages and not your actual documentation.
 
-> # Protip: If someone didn’t respond in a humble, human, and helpful way, it is possible to edit StackOverflow answers with enough “reputation”.
+> Protip: If someone didn’t respond in a humble, human, and helpful way, it is possible to edit StackOverflow answers with enough “reputation”.
 
 ## Word Choice
 
@@ -148,9 +148,9 @@ The famous saying, “there are only two hard things in Computer Science: cache 
 
 Often, as with oversimplification, we don’t realize that the name is bad. This is what Ruthie calls “**empathy failure**.” It’s like saying, the problems caused by the words don’t affect me, therefore they don’t exist.
 
-> # Protip: Avoid accidental racism by using “denylist” and “allowlist,” instead of “blacklist” and “whitelist.”
+> Protip: Avoid accidental racism by using “denylist” and “allowlist,” instead of “blacklist” and “whitelist.”
 >
-> # (Sources: [André Staltz](https://twitter.com/andrestaltz/status/1030200563802230786) and [rails/issues/33677](https://github.com/rails/rails/issues/33677))
+> (Sources: [André Staltz](https://twitter.com/andrestaltz/status/1030200563802230786) and [rails/issues/33677](https://github.com/rails/rails/issues/33677))
 
 To me, this is also similar to what Ruthie calls “**beginners’ mind failure**.” This is like saying, “it is perfectly clear to me. I don’t understand how someone can not understand this.”
 
@@ -162,7 +162,7 @@ According to the [GitHub Open Source Survey from 2017](http://opensourcesurvey.o
 
 Are you considering this when you use Americanisms and idioms in your docs? Many of these could be lost on your users.
 
-> # Protip: I firmly believe that one of the greatest “tricks” to solve these failures is having a diverse and inclusive team working on documentation.
+> Protip: I firmly believe that one of the greatest “tricks” to solve these failures is having a diverse and inclusive team working on documentation.
 
 Then there are the cases where we recognize it is bad, but can’t, or won’t justify fixing it because we…
 
@@ -201,6 +201,6 @@ The reality is word choice is hard. There are no magical formulas for it. All of
 
 _I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Keep your eye out for part three coming out in September, and check out [part one from July](https://medium.com/api-corner/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1)._
 
-_We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below _👇
+*We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/11000/1*t-0nFtOwlgG0xGyouTJapQ.png)
