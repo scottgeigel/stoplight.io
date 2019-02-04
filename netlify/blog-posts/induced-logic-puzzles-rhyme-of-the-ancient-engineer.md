@@ -1,5 +1,12 @@
 ---
 path: /blog/induced-logic-puzzles-rhyme-of-the-ancient-engineer
+tags:
+  - blog-industry
+  - blog-general
+  - blog
+relatedTags:
+  - blog-industry
+  - blog-general
 publishDate: 2018-06-04T22:14:08.640Z
 author: Robert Wallach
 title: 'Induced Logic Puzzles: Rhyme of the Ancient Engineer'
