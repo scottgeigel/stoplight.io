@@ -8,6 +8,7 @@ relatedTags:
 publishDate: 2019-01-08T19:04:55.501Z
 author: Taylor Barnett
 title: Stoplight v4.7.0 Release — OpenAPI Specification 3
+image: /images/oas3-code-editor.png
 color: green
 disqus:
   enabled: true
@@ -36,9 +37,11 @@ meta:
 
 * Visual editing coming soon!
 
-![OpenAPI 3 Editor — Code View with Validation and Linting](https://cdn-images-1.medium.com/max/4508/1*8gUxm53NiXCs80Cn8NMIjg.png)*OpenAPI 3 Editor — Code View with Validation and Linting*
+![OpenAPI 3 Editor — Code View with Validation and Linting](https://cdn-images-1.medium.com/max/4508/1*8gUxm53NiXCs80Cn8NMIjg.png)
+*OpenAPI 3 Editor — Code View with Validation and Linting*
 
-![Auto-generated OpenAPI 3 Documentation](https://cdn-images-1.medium.com/max/4504/1*4ICJOxCPSKYO6uRhN6LEzg.png)*Auto-generated OpenAPI 3 Documentation*
+![Auto-generated OpenAPI 3 Documentation](https://cdn-images-1.medium.com/max/4504/1*4ICJOxCPSKYO6uRhN6LEzg.png)
+*Auto-generated OpenAPI 3 Documentation*
 
 ## Fixes 🔧
 
