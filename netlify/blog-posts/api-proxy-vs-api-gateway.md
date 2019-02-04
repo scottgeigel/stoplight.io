@@ -16,7 +16,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -29,7 +29,7 @@ meta:
 
 # API Proxy vs API Gateway
 
-On this edition of *I’ll REST when I’m Alive*, I will be exploring the differences and similarities between API Proxies and API Gateways. Expanding on my previous post, [*API Microgateways](https://blog.stoplight.io/api-microgateways-55d656950d6c)*, I will also be discussing the advantages and disadvantages of both and the individual use cases.
+On this edition of *I’ll REST when I’m Alive*, I will be exploring the differences and similarities between API Proxies and API Gateways. Expanding on my previous post, *[API Microgateways](https://blog.stoplight.io/api-microgateways-55d656950d6c)*, I will also be discussing the advantages and disadvantages of both and the individual use cases.
 
 ## API Proxies
 
@@ -99,6 +99,6 @@ The advantage of an API Proxy is that it is essentially a lightweight, simple AP
 
 The use case for an API Proxy versus an API Gateway depends on what kinds of capabilities you require and where you are in the API Lifecycle. If you already have an existing API that doesn’t require the advanced capabilities that an API Gateway can offer than an API Proxy would be a recommended route. You can save valuable engineering bandwidth because proxies are much easier to maintain and you won’t suffer any negligible performance loss. If you need specific capabilities that a proxy doesn’t offer you could also develop an in-house layer to accommodate your use case. If you are earlier in the API lifecycle or need the extra features that an API Gateway can provide, then investing in one would pay dividends.
 
-*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
+*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/NaN/1*t-0nFtOwlgG0xGyouTJapQ.png)
