@@ -14,7 +14,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -30,11 +30,10 @@ With interactive documentation and copy-paste code samples, you’ll help develo
 Your documentation, even in a static format, has a couple simple goals:
 
 1. Help developers understand what’s possible with your API
+
 2. Show developers how to move from documentation to code
 
 Interactive documentation provides a clear path to achieve both of these objectives. As the name implies, developers don’t merely _read_ your documentation. They provide input to it and inspect a response. Right from your API reference, they can declare parameters and make live calls to your API.
-
-IMG: interactive docs
 
 With interactive documentation, you’re removing a major barrier to taking the next step with an API. With static documentation, a developer needs to bring API calls into a request utility or directly into code before they can fully understand what’s possible. Instead, they can see exactly what is possible without leaving their browser.
 
