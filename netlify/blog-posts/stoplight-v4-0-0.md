@@ -7,8 +7,9 @@ relatedTags:
   - blog-changelog
 publishDate: 2018-03-27T21:56:14.802Z
 author: Robert Wallach
-title: Stoplight v4.0.0
+title: Stoplight v4.0.0 Release
 subtitle: 'Realtime, Editor Toolbar, OpenAPI Read Mode'
+image: /images/v4-newui.png
 color: black
 disqus:
   enabled: true
@@ -30,7 +31,9 @@ We’re thrilled to announce the immediate release of Stoplight v4.0.0! This upd
 ## Breaking
 
 - **Desktop**: We have removed Local File Mode from the Desktop application while we work towards a more robust implementation. If this is a breaking change in your workflow, you can continue to use the 3.x.x version of the Desktop App when needed, and the web app otherwise (can mix/match the two).
+
 - **Hubs:** Hub->Hub references are no longer directly supported in the UI. They will still work and render correctly, but the URL to the hub JSON has to be manually entered/edited. We do not recommend using Hub->Hub references moving forward, as it makes route maintenance difficult amongst other things. Instead, we recommend one hub with pages that reference Markdown or OpenAPI files.
+
 - **Hubs**: Hub title and logo are now added by default to the header (you might see “Untitled Hub” if you have not set these properties). To set them, change to design mode and then click “Hub Settings” in the top toolbar.
 
 Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io) if you have questions about the above changes.
@@ -39,7 +42,7 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 - **Editor**: You can now see in real-time when someone else is editing files in your project. You no longer have to worry about mistakenly saving over their work or vice versa.
 
-![](https://cdn-images-1.medium.com/max/2000/1*3bkTHpvx2GF6sXD-XOuH5w.png)
+![Editing Notifications](https://cdn-images-1.medium.com/max/2000/1*3bkTHpvx2GF6sXD-XOuH5w.png)
 
 - **OpenAPI**: Your OpenAPI files now have a read-only mode that displays the contents of the OAS file in a nice readable format for guests and those without write access.
 
@@ -61,11 +64,11 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 ## Old UI:
 
-![](https://cdn-images-1.medium.com/max/2240/1*MDDCURcSEZ7ofFOnSXD3tA.png)
+![Old UI](https://cdn-images-1.medium.com/max/2240/1*MDDCURcSEZ7ofFOnSXD3tA.png)
 
 ## New UI:
 
-![](https://cdn-images-1.medium.com/max/2240/1*a7RXiuvqMlCo5VstMsmwog.png)
+![New UI](https://cdn-images-1.medium.com/max/2240/1*a7RXiuvqMlCo5VstMsmwog.png)
 
 - **Editor**: When you save, you can now create a custom save message. This can be helpful for more detailed messages for your history of changes and the GitHub integration that we are working towards.
 
