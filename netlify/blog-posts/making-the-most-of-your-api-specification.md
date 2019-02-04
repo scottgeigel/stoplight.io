@@ -1,27 +1,31 @@
 ---
 path: /blog/making-the-most-of-your-api-specification
-tags: ['blog', 'blog-design']
-relatedTags: ['blog']
-publishedDate: 'Dec 4, 2018'
+tags:
+  - blog
+  - blog-design
+relatedTags:
+  - blog-design
+publishDate: 2019-02-04T20:09:08.911Z
+author: Chris Wood
 title: Making the Most of Your API Specification
 subtitle: Design Web APIs for Humans & Machines
-image: https://cdn-images-1.medium.com/max/9792/0*EqisMREXV24UgZ8y
+image: 'https://cdn-images-1.medium.com/max/9792/0*EqisMREXV24UgZ8y'
 color: purple-darker
-author: Chris Wood
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: Stop Calling Your APIs Microservices
-  title: Blog | Stoplight
+  favicon: /images/mark_light_bg.png
+  title: Stop Calling Your APIs Microservices | Stoplight
   twitter:
     description: Stop Calling Your APIs Microservices
-    title: Blog | Stoplight
+    title: Stop Calling Your APIs Microservices | Stoplight
     username: '@stoplightio'
 ---
 
-![A bridge between humans and machines, photo by [Marc-Antoine Dépelteau](https://unsplash.com/@autumnsgrief?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/9792/0*EqisMREXV24UgZ8y)*A bridge between humans and machines, photo by [Marc-Antoine Dépelteau](https://unsplash.com/@autumnsgrief?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+*A bridge between humans and machines, photo by Marc-Antoine Dépelteau*
 
 It wasn’t so long ago that an API specification was just a thing that got generated. Write some code, add some annotations, and let your build tool create an API specification document you shared with your colleagues, community, friends, and family. Job done.
 
