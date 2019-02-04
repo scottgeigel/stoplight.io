@@ -3,6 +3,7 @@ path: /blog/10-000-apis-under-the-sea
 tags:
   - Industry
   - General
+  - Blog
 relatedTags:
   - Industry
   - General
@@ -16,7 +17,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
