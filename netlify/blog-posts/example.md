@@ -1,17 +1,20 @@
 ---
 path: /blog/http-testing
-tags: ['blog', 'blog-testing']
-relatedTags: ['blog']
-publishedDate: 'Jan 23, 2019'
+tags:
+  - blog
+  - blog-testing
+relatedTags:
+  - blog
+publishDate: 2019-02-04T18:21:16.261Z
+author: Ross McDonald
 title: The Fundamentals of HTTP API Unit Testing
 subtitle: Some subtitle ....
 image: /images/aaa_blog_example.png
 color: purple-darker
-author: Ross McDonald
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: The Fundamentals of HTTP API Unit Testing
   title: Blog | Stoplight
