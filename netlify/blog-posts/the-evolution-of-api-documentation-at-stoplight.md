@@ -5,18 +5,21 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishedDate: 'Dec 4, 2018'
-title: The Evolution of API Documentation at Stoplight
-subtitle: How we are evolving documentation at Stoplight to be performant, accessible, portable, and integrated
-image: https://cdn-images-1.medium.com/max/6144/0*YSM53M3Yk8plwe5M
-color: purple-darker
+publishDate: 2019-02-04T22:35:55.334Z
 author: Chris Lott
+title: The Evolution of API Documentation at Stoplight
+subtitle: >-
+  How we are evolving documentation at Stoplight to be performant, accessible,
+  portable, and integrated
+image: 'https://cdn-images-1.medium.com/max/6144/0*YSM53M3Yk8plwe5M'
+color: purple-darker
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: Stop Calling Your APIs Microservices
+  favicon: /images/mark_light_bg.png
   title: Blog | Stoplight
   twitter:
     description: Stop Calling Your APIs Microservices
@@ -24,7 +27,7 @@ meta:
     username: '@stoplightio'
 ---
 
-![Photo by [Badder Manaouch](https://unsplash.com/@baddermanaouch?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/6144/0*YSM53M3Yk8plwe5M)*Photo by [Badder Manaouch](https://unsplash.com/@baddermanaouch?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+*Photo by [Badder Manaouch](https://unsplash.com/@baddermanaouch?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 API documentation is one of the most undervalued assets of a technology company. Most tech companies sell access to APIs that allow customers to retrieve information or use services. Revenue is then generated each time a customer uses the API. In order for customers to use the APIs, they need to understand what is available, how to ask for it, and how it will be returned. All of this information should be provided in the API’s documentation, usually as a website. Therefore, it is very important that your API documentation is performant, accessible, portable, and integrated.
 
