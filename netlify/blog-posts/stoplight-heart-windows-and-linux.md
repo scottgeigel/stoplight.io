@@ -7,6 +7,8 @@ relatedTags:
   - blog-changelog
 publishDate: 2016-07-25T23:28:04.811Z
 title: Stoplight ❤ Windows and Linux
+subtitle: Announcing Stoplight's Windows and Linux Desktop Apps
+image: /images/classic-windows-linux.png
 color: black
 disqus:
   enabled: true
@@ -28,7 +30,8 @@ Our desktop app makes working behind firewalls or with local servers easy, and s
 
 You can download the Stoplight desktop app appropriate for your current operating system by visiting [https://download.stoplight.io](https://download.stoplight.io/).
 
-![](https://cdn-images-1.medium.com/max/4000/0*fJcxNL4FMJ7DKqzZ.png)
+![Desktop App](https://cdn-images-1.medium.com/max/4000/0*fJcxNL4FMJ7DKqzZ.png)
+*Desktop App*
 
 The Stoplight desktop app:
 
