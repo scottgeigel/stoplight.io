@@ -2,6 +2,7 @@
 path: /blog/a-big-v2-update-and-goodbye-to-v1
 tags:
   - Changelog
+  - blog
 relatedTags:
   - Changelog
 publishDate: 2016-08-16T23:23:49.359Z
