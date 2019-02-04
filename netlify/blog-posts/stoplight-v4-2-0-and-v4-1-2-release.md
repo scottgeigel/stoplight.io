@@ -10,7 +10,7 @@ author: Robert Wallach
 title: Stoplight v4.2.0 and v4.1.2 Release
 subtitle: Hubs Proxy Support and Import Files
 image: /images/import-files.png
-color: grey
+color: black
 disqus:
   enabled: true
 actionBar:
