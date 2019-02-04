@@ -1,5 +1,10 @@
 ---
 path: /blog/getting-started-with-api-design-using-stoplight-and-openapi
+tags:
+  - blog-design
+  - blog
+relatedTags:
+  - blog-design
 publishDate: 2018-08-02T18:47:13.396Z
 author: Lukas Rosenstock
 title: Getting Started with API Design using Stoplight and OpenAPI
@@ -10,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -108,7 +113,7 @@ Let’s get started with basic settings:
 
 1. Under *Global Settings,* you should choose *application/json* under both request and response mime types to indicate that your API uses JSON models.
 
-1. [*Security](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes)*, again, is of utmost importance for a real-world API but irrelevant for our example, so you don’t have to set anything here.
+1. *[Security](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes)*, again, is of utmost importance for a real-world API but irrelevant for our example, so you don’t have to set anything here.
 
 ![](https://cdn-images-1.medium.com/max/3200/0*PBoJilHdaLgz3m1I)
 
@@ -116,7 +121,7 @@ Let’s get started with basic settings:
 
 We’ll start work on the *Design* tab and create a model first:
 
-1. Click the plus sign that appears next to [*Models](https://docs.stoplight.io/modeling/modeling-with-openapi/api-models)* as you hover over it.
+1. Click the plus sign that appears next to *[Models](https://docs.stoplight.io/modeling/modeling-with-openapi/api-models)* as you hover over it.
 
 1. Enter the string “appointment” as the key and, optionally, add a suitable title and description to it. As we want to build a calendar API, an appointment is an appropriate model.
 
@@ -135,7 +140,7 @@ We’ll start work on the *Design* tab and create a model first:
 Congratulations, your first model is ready!
 
 ![](https://cdn-images-1.medium.com/max/3200/0*UaxafTMqkB_fuNha)
-> # By the way, did you know OpenAPI borrows from another open standard, [JSON Schema](http://json-schema.org/), for the definition of models?! (There are minor details between JSON Schema and OpenAPI models when it comes to advanced features.) Check out some JSON best practices in Stoplight [here](https://docs.stoplight.io/modeling/json-best-practices/introduction).
+> By the way, did you know OpenAPI borrows from another open standard, [JSON Schema](http://json-schema.org/), for the definition of models?! (There are minor details between JSON Schema and OpenAPI models when it comes to advanced features.) Check out some JSON best practices in Stoplight [here](https://docs.stoplight.io/modeling/json-best-practices/introduction).
 
 ## Create Paths
 
