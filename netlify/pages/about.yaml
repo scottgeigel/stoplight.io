@@ -10,6 +10,9 @@ hero:
     status quo is our culture
   title: About Us
 team:
+  - image: /images/bachi-collin-1-.jpg
+    name: Collin Bachi
+    role: Devops Engineer
   - image: /images/barnett_headshot.png
     name: Taylor Barnett
     role: Community Engineer
@@ -61,12 +64,40 @@ team:
   - image: /images/wallach_headshot.png
     name: Robert Wallach
     role: Content & Support
+businesses:
+  quotes:
+    - author: Evin Callahan
+      company: Hudya
+      image:
+        alt: Hudya
+        src: /images/hudya_logo.png
+      quote: >-
+        Having all the tools to model, test, and document our API in one place,
+        and integrating it nicely along the entire CI/CD workflow process has
+        been extremely helpful for us.
+      role: Cloud Architect
+    - author: Josh Flyer
+      company: AppointmentPlus
+      image:
+        alt: AppointmentPlus
+        src: /images/appointment_plus_logo.png
+      quote: >-
+        We really enjoy the modeling feature, helping us define our API before
+        even writing code. Also, the way the modeling feature inherits models
+        from other Projects. Hubs integrates with OAS files, both partials or
+        the entire schema, which is rad.
+      role: Lead Developer
+    - author: Carlos Lozano
+      company: GFT Group
+      image:
+        alt: GFT Group
+        src: /images/gft_group_logo.jpg
+      quote: >-
+        Stoplight is getting better all the time. Big leap from [Stoplight]
+        Classic.
+      role: Senior Enterprise Architect
+  title: Businesses Are Loving Stoplight
 pressSection:
-  title: In The Press
-  cta:
-    name: More Press & Assets
-    href: https://press.stoplight.io/company
-    color: grey-darkest
   articles:
     - date: 'October, 2018'
       description: 'To Help Developers Get A Grip On APIs, Stoplight Raises $3.25M'
@@ -84,8 +115,8 @@ pressSection:
       publication: Austin Business Journal
     - date: 'October, 2018'
       description: >-
-        Stoplight Lands $3.25M of Seed Funding to Lead Evolution of Enterprise API
-        Lifecycle Management
+        Stoplight Lands $3.25M of Seed Funding to Lead Evolution of Enterprise
+        API Lifecycle Management
       href: >-
         https://venturebeat.com/2018/10/03/stoplight-lands-3-25m-of-seed-funding-to-lead-evolution-of-enterprise-api-lifecycle-management
       image: /images/logo_venturebeat.png
@@ -95,55 +126,26 @@ pressSection:
       href: >-
         https://www.statesman.com/news/20181003/austin-startup-stoplight-raises-more-than-3-million
       image: /images/logo_statesman.png
-      publication: 'Austin-American Statesman'
-businesses:
-  title: 'Businesses Are Loving Stoplight'
-  quotes:
-    - author: Evin Callahan
-      company: Hudya
-      image:
-        src: /images/hudya_logo.png
-        alt: Hudya
-      quote: >-
-        Having all the tools to model, test, and document our API in one place,
-        and integrating it nicely along the entire CI/CD workflow process has been
-        extremely helpful for us.
-      role: Cloud Architect
-    - author: Josh Flyer
-      company: AppointmentPlus
-      image:
-        src: /images/appointment_plus_logo.png
-        alt: AppointmentPlus
-      quote: >-
-        We really enjoy the modeling feature, helping us define our API before
-        even writing code. Also, the way the modeling feature inherits models from
-        other Projects. Hubs integrates with OAS files, both partials or the
-        entire schema, which is rad.
-      role: Lead Developer
-    - author: Carlos Lozano
-      company: GFT Group
-      image:
-        src: /images/gft_group_logo.jpg
-        alt: GFT Group
-      quote: >-
-        Stoplight is getting better all the time. Big leap from [Stoplight]
-        Classic.
-      role: Senior Enterprise Architect
+      publication: Austin-American Statesman
+  cta:
+    color: grey-darkest
+    href: 'https://press.stoplight.io/company'
+    name: More Press & Assets
+  title: In The Press
 collage:
-  title: 'Our Investors'
   images:
-    - src: /images/bill-wood-logo_trans.png
-      alt: Bill Wood Ventures
-    - src: /images/logo_next_gen_ventures.png
-      alt: NextGen Venture Partners
-    - src: /images/logo_nextcoast.png
-      alt: Next Coast Ventures
-    - src: /images/logo_techstars.png
-      alt: Techstars
-    - src: /images/logo_capitalfactory.png
-      alt: Capital Factory
-    - src: /images/logo_socialstarts.png
-      alt: Social Starts
+    - alt: Bill Wood Ventures
+      src: /images/bill-wood-logo_trans.png
+    - alt: NextGen Venture Partners
+      src: /images/logo_next_gen_ventures.png
+    - alt: Next Coast Ventures
+      src: /images/logo_nextcoast.png
+    - alt: Techstars
+      src: /images/logo_techstars.png
+    - alt: Capital Factory
+      src: /images/logo_capitalfactory.png
+    - alt: Social Starts
+      src: /images/logo_socialstarts.png
 actionBar:
   buttons:
     - color: accent
