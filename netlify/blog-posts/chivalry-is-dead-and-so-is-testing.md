@@ -13,7 +13,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -36,7 +36,7 @@ There are a lot of ways to test your API. The most popular method is hoping for 
 
 Honestly, customers are the best way to test your API, because they are using your API in ways you haven’t expected. But if your customers are the only ones testing your API, then you probably don’t have many customers, or you are up all night trying to keep your API online.
 
-**Customers are equivalent to variables in Stoplight. **Variables, if used properly, can breathe life into your tests in ways you didn’t expected. They say a picture is worth a lot of words, so let’s look at some dead tests.
+**Customers are equivalent to variables in Stoplight.** Variables, if used properly, can breathe life into your tests in ways you didn’t expected. They say a picture is worth a lot of words, so let’s look at some dead tests.
 
 ![](https://cdn-images-1.medium.com/max/3200/0*D7OMQYjOHt3rn-6u.)
 
