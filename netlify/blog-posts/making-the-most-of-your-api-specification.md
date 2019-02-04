@@ -5,7 +5,7 @@ tags:
   - blog-design
 relatedTags:
   - blog-design
-publishDate: 2019-02-04T20:09:08.911Z
+publishDate: 2019-02-04T20:10:00.489Z
 author: Chris Wood
 title: Making the Most of Your API Specification
 subtitle: Design Web APIs for Humans & Machines
@@ -24,8 +24,7 @@ meta:
     title: Stop Calling Your APIs Microservices | Stoplight
     username: '@stoplightio'
 ---
-
-*A bridge between humans and machines, photo by Marc-Antoine Dépelteau*
+A bridge between humans and machines, photo by Marc-Antoine Dépelteau
 
 It wasn’t so long ago that an API specification was just a thing that got generated. Write some code, add some annotations, and let your build tool create an API specification document you shared with your colleagues, community, friends, and family. Job done.
 
@@ -102,6 +101,6 @@ Your API specification is a crucial document for communicating with your communi
 
 It can provide a self-contained encapsulation of everything you need to convey your consumers, for humans and machines alike. By leveraging the features available — especially when using the OpenAPI Specification — you have more chance of increasing the breadth and depth of understanding in your developer community.
 
-*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
+*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
 
 ![](https://cdn-images-1.medium.com/max/NaN/1*t-0nFtOwlgG0xGyouTJapQ.png)
