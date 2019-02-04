@@ -50,7 +50,7 @@ This was good enough for Imaginary Company’s website in the early 2000s. But n
         return greeting + " " + firstname + " " + lastname;
     }
 
-Here is the first big change: the Google Translate function returns a Promise. Our boss already told us to stop using callbacks, so that means our greet function must *also *return a Promise. Luckily, working with Promises is not as difficult these days thanks to [async functions](https://developers.google.com/web/fundamentals/primers/async-functions) which were added to JavaScript officially in ES2017.
+Here is the first big change: the Google Translate function returns a Promise. Our boss already told us to stop using callbacks, so that means our greet function must *also* return a Promise. Luckily, working with Promises is not as difficult these days thanks to [async functions](https://developers.google.com/web/fundamentals/primers/async-functions) which were added to JavaScript officially in ES2017.
 
 Asynchronous calls are contagious — once you introduce an asynchronous function into your code, everything that uses that function becomes asynchronous! So I suggest you embrace that early on in your design. Even if your function is actually synchronous, you can tack async in front of it and now you’ve future-proofed it. If you ever need to change the implementation and it becomes asynchronous, no big deal because all your existing code already is calling it with await.
 
