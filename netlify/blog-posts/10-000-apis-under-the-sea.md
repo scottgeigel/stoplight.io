@@ -1,5 +1,5 @@
 ---
-path: /blog/10-000-apis-under-the-sea
+path: /blog/10-000-apis-under-the-sea-test
 tags:
   - blog-industry
   - blog-general
