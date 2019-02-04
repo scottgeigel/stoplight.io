@@ -7,8 +7,10 @@ relatedTags:
   - blog-changelog
 publishDate: 2018-09-11T18:09:47.152Z
 author: Robert Wallach
-title: Stoplight v4.5.0 Release — Discussions and Documentation API
-color: green
+title: Stoplight v4.5.0 Release
+subtitle: Discussions and Documentation API
+image: /images/discussions.png
+color: black
 disqus:
   enabled: true
 actionBar:
@@ -24,7 +26,7 @@ meta:
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
-Update: v4.5.1 and v4.5.2 have also been released to squash from bugs🐛 from v4.5.0.
+> Update: v4.5.1 and v4.5.2 have also been released to squash from bugs🐛 from v4.5.0.
 
 ## New 🚀
 
@@ -32,7 +34,8 @@ Update: v4.5.1 and v4.5.2 have also been released to squash from bugs🐛 from v
 
 Discussions allow organizations to track and share conversations at the project and/or file level. They are particularly useful for tracking enhancements, bugs, issues, and tasks. Discussions are displayed in a Projects Home and within the Discussions toolbar. They are sorted by most recent activity.
 
-![Discussions Example](https://cdn-images-1.medium.com/max/2896/1*9SpIHXPJInfzCju_O55VxQ.png)_Discussions Example_
+![Discussions Example](https://cdn-images-1.medium.com/max/2896/1*9SpIHXPJInfzCju_O55VxQ.png)
+*Discussions Example*
 
 ### [Hubs](https://docs.stoplight.io/api-reference/documentation)
 
@@ -41,8 +44,5 @@ Stoplight exposes an API that enables you to programmatically publish and unpubl
 ## Fixes 🔧
 
 * [Modeling] Requesting OAuth2.0 Access Token: Scope is missing in Form Data [\#276](https://github.com/stoplightio/desktop/issues/276)
+
 * \[Modeling] Impossible to have an assertion testing the numeric value of 0 [\#279](https://github.com/stoplightio/desktop/issues/279)
-
-*We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
-
-![](https://cdn-images-1.medium.com/max/11000/1*t-0nFtOwlgG0xGyouTJapQ.png)
