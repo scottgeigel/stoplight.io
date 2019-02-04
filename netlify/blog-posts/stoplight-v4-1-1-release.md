@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - blog-changelog
 publishDate: 2018-05-04T21:16:51.628Z
-author: 'Robert Wallach '
+author: Robert Wallach
 title: Stoplight v4.1.1 Release
 image: /images/mark_light_bg.png
 color: black
@@ -15,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
