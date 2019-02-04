@@ -1,12 +1,12 @@
 ---
 path: /blog/api-microgateways
 tags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
   - blog
 relatedTags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
 publishDate: 2018-07-26T19:03:36.290Z
 author: Robert Wallach
 title: API Microgateways
