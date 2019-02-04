@@ -1,12 +1,12 @@
 ---
 path: /blog/10-000-apis-under-the-sea
 tags:
-  - Industry
-  - General
-  - Blog
+  - blog-industry
+  - blog-general
+  - blog
 relatedTags:
-  - Industry
-  - General
+  - blog-industry
+  - blog-general
 publishDate: 2018-07-11T19:15:59.311Z
 author: Robert Wallach
 title: '10,000 APIs Under the Sea'
