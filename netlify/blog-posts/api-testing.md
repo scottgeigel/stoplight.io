@@ -15,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -49,7 +49,7 @@ For the purposes of this article, we’ll assume we have a simple *Express* and 
 
 The next step is to set up an account for testing. If you don’t already have a Stoplight account, head over to their website and get their new desktop app, [Scenarios](http://stoplight.io/platform/scenarios/). Sign up and create a new organization.
 
-Next, create an API specification. Make sure the **API Spec **tab is selected and fill out the form. All we need for this example is a name.
+Next, create an API specification. Make sure the **API Spec** tab is selected and fill out the form. All we need for this example is a name.
 
 ![](https://cdn-images-1.medium.com/max/2000/0*cvftwMv_Scx1ag73.)
 
@@ -71,15 +71,15 @@ At this point, we now have our API specification. Hooray!
 
 The next thing we need is to be sure that our API works and that it reflects what we described in our API spec. We can do this quite easily by heading over to the Scenarios section of the Stoplight app.
 
-Click your organization’s name in the breadcrumbs navigation in the top left. Then create a new **Scenarios Collection. **Give your collection a name.
+Click your organization’s name in the breadcrumbs navigation in the top left. Then create a new **Scenarios Collection.** Give your collection a name.
 
 ![](https://cdn-images-1.medium.com/max/2000/0*FwgCF--OLbapskU_.)
 
-Once in, the first thing you need to do is connect your spec, the one we defined before, so go to the **Connections **tab and click **Select Specs. **Look for the spec you defined previously from the dropdown menu labelled **SRN.**
+Once in, the first thing you need to do is connect your spec, the one we defined before, so go to the **Connections** tab and click **Select Specs.** Look for the spec you defined previously from the dropdown menu labelled **SRN.**
 
 Go back to **Scenario Collection.**
 
-Under the **Collection Settings, **set your API’s host. I’m running locally on port 3000.
+Under the **Collection Settings,** set your API’s host. I’m running locally on port 3000.
 
 ![](https://cdn-images-1.medium.com/max/2000/0*53BODTHr7yrpaZnW.)
 
@@ -103,7 +103,7 @@ From the sidebar, select **CREATE item**. Then from the **Captures** tab, choose
 
 ![](https://cdn-images-1.medium.com/max/2152/0*BeqGBYd1smQ8uRMD.)
 
-Perfect! We are all set to run our tests. Click **Run Scenario **and watch your tests pass.
+Perfect! We are all set to run our tests. Click **Run Scenario** and watch your tests pass.
 
 ![](https://cdn-images-1.medium.com/max/2400/0*t8dBL7bgJ8aoabLW.)
 
