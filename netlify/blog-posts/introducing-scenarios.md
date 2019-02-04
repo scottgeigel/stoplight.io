@@ -1,5 +1,10 @@
 ---
 path: /blog/introducing-scenarios
+tags:
+  - blog-testing
+  - blog
+relatedTags:
+  - blog-testing
 publishDate: 2017-02-09T00:05:29.244Z
 title: Introducing Scenarios
 subtitle: 'The lean, mean, API testing machine'
@@ -10,7 +15,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
@@ -50,23 +55,23 @@ Just drag a Swagger or Scenario file onto the app, or click the “read/write to
 
 ## FAQs
 
-* **Does Scenarios costs money? **Nope! The base scenarios product is free. We will be charging for teams support in the near future. If you are a current paying Stoplight customer, your teams plan will carry over.
+* **Does Scenarios costs money?** Nope! The base scenarios product is free. We will be charging for teams support in the near future. If you are a current paying Stoplight customer, your teams plan will carry over.
 
-* **I have a Stoplight account, can I use it? **Yup, just login to Scenarios with your existing credentials. If you use Github to login to Stoplight, you’ll need to go through the forgot password process to generate a password.
+* **I have a Stoplight account, can I use it?** Yup, just login to Scenarios with your existing credentials. If you use Github to login to Stoplight, you’ll need to go through the forgot password process to generate a password.
 
-* **Can I run tests as part of my CI process? **Yes! See above.
+* **Can I run tests as part of my CI process?** Yes! See above.
 
-* **Can I collaborate with my team? **Soon! As in this month soon.
+* **Can I collaborate with my team?** Soon! As in this month soon.
 
 * **Can I store my specs/tests with my code?** Yes! Use the desktop app, and toggle the read/write to file mode to on in the scenarios editor.
 
-* **Why is this a standalone app? **Scenarios is built on our upcoming v3 architecture. This architecture is generally faster, and allows for really cool things like read/writing to local files on disk. More info in the looking forward section below.
+* **Why is this a standalone app?** Scenarios is built on our upcoming v3 architecture. This architecture is generally faster, and allows for really cool things like read/writing to local files on disk. More info in the looking forward section below.
 
-* **I’m modeling my API in the v2 Stoplight app, can I use it in Scenarios? **Yes! Open the scenarios app and navigate to the “New API Spec” form. On that form, paste in the URL to your v2 Stoplight Swagger JSON export. After importing, there is a button on the editor to “Reload from source”, which allows quick refreshing of the spec from an external source (in this case, v2 Stoplight app).
+* **I’m modeling my API in the v2 Stoplight app, can I use it in Scenarios?** Yes! Open the scenarios app and navigate to the “New API Spec” form. On that form, paste in the URL to your v2 Stoplight Swagger JSON export. After importing, there is a button on the editor to “Reload from source”, which allows quick refreshing of the spec from an external source (in this case, v2 Stoplight app).
 
-* **How does this compare to Postman? **Postman is a better fit for simple HTTP requests (Scenarios is overkill for this). Stoplight Scenarios is generally more robust than Postman when it comes to creating actual tests. Things that Scenarios supports that Postman does not include referencing tests from other tests, JSON schema testing, Swagger contract testing, simpler request chaining, local file writing, coverage reports, direct spec editing, multi scenario running, and more.
+* **How does this compare to Postman?** Postman is a better fit for simple HTTP requests (Scenarios is overkill for this). Stoplight Scenarios is generally more robust than Postman when it comes to creating actual tests. Things that Scenarios supports that Postman does not include referencing tests from other tests, JSON schema testing, Swagger contract testing, simpler request chaining, local file writing, coverage reports, direct spec editing, multi scenario running, and more.
 
-* **I have more questions? **And we hopefully have answers! Shoot us an email at support@stoplight.io.
+* **I have more questions?** And we hopefully have answers! Shoot us an email at support@stoplight.io.
 
 ## Testing v1
 
