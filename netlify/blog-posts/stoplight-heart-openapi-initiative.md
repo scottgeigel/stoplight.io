@@ -2,7 +2,7 @@
 path: /blog/stoplight-️-the-openapi-initiative
 publishDate: 2018-05-14T22:20:35.562Z
 author: Robert Wallach
-title: 'Stoplight :heart: OpenAPI Initiative'
+title: "Stoplight \U0001F496 OpenAPI Initiative"
 image: /images/openapi.jpeg
 color: yellow
 disqus:
@@ -14,9 +14,9 @@ actionBar:
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Stoplight :heart: the OpenAPI Initiative | Stoplight'
+  title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight"
   twitter:
-    title: 'Stoplight :heart: the OpenAPI Initiative | Stoplight'
+    title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight"
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
