@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - blog-changelog
 publishDate: 2019-02-01T21:06:32.215Z
-author: Chris Lott
+author: Taylor Barnett
 title: Stoplight v4.6.0 Release — Style Guides
 subtitle: OpenAPI Specification Style Guides
 image: 'https://cdn-images-1.medium.com/max/4120/1*4LTwOQyn0nQDf8kxms6aBA.png'
