@@ -13,13 +13,13 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Stoplight :heart: Windows and Linux | Stoplight'
+  title: Stoplight ❤ Windows and Linux | Stoplight
   twitter:
-    title: 'Stoplight :heart: Windows and Linux | Stoplight'
+    title: Stoplight ❤ Windows and Linux | Stoplight
     username: '@stoplightio'
 ---
 One of our most requested features has been Windows and Linux support for the Stoplight desktop app. Today, we are excited to finally release builds for Windows (64 bit) and Linux (32 and 64 bit)!
