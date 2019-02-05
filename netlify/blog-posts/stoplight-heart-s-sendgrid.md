@@ -1,5 +1,5 @@
 ---
-path: /blog/stoplight-hearts-sendgrid
+path: /blog/stoplight-s-sendgrid-c7f87e47aa0c
 tags:
   - blog-general
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2017-02-15T00:00:33.453Z
 author: Tom Pytleski
 title: "Stoplight \U0001F496 SendGrid"
+subtitle: 'A valentine''s day letter for SendGrid '
 color: black
 disqus:
   enabled: true
