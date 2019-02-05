@@ -17,6 +17,7 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  canonical: 'https://blog.stoplight.io/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: When You Aren't A Technical Writer | Stoplight

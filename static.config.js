@@ -498,6 +498,8 @@ export default {
 
           <link rel="shortcut icon" href={meta.favicon} type="image/x-icon" />
 
+          {meta.canonical && <link rel="canonical" href={meta.canonical} />}
+
           {!IS_PRODUCTION && (
             <script
               type="text/javascript"
