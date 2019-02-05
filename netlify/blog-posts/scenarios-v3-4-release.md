@@ -1,5 +1,5 @@
 ---
-path: /blog/scenarios-v3-4-release
+path: /blog/scenarios-v3-4-release-2eff3345918
 tags:
   - blog-changelog
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2017-07-31T22:30:02.700Z
 author: Marc MacLeod
 title: Scenarios v3.4 Release
+subtitle: 'Changelog, updates, fixes, & roadmap'
 image: /images/scenarios-tagging.png
 color: black
 disqus:
