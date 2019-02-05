@@ -1,6 +1,6 @@
 ---
 path: >-
-  /blog/api-testing-achieving-quick-and-easy-service-virtualization-with-stoplight
+  /blog/api-testing-achieving-quick-and-easy-service-virtualization-with-stoplight-a590f20a414f
 tags:
   - blog-testing
   - blog
