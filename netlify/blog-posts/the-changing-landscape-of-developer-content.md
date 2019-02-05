@@ -1,5 +1,5 @@
 ---
-path: /blog/the-changing-landscape-of-developer-content
+path: /blog/the-changing-landscape-of-developer-content-a33bf9202989
 tags:
   - blog-documentation
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-08-13T18:31:50.356Z
 author: Emmelyn Wang
 title: The Changing Landscape of Developer Content
+subtitle: ' Creating continuously valuable ways to keep developers successful through content'
 image: /images/changing-developer-landscape.jpeg
 color: orange
 disqus:
