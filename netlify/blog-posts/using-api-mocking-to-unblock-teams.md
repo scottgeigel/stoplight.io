@@ -1,12 +1,14 @@
 ---
-path: /blog/using-service-virtualization-api-mocking-to-unblock-teams
+path: /blog/using-service-virtualization-api-mocking-to-unblock-teams-2914843cf56e
 tags:
   - blog-mocking
   - blog
 relatedTags:
   - blog-mocking
 publishedDate: 2017-06-20T22:37:44.512Z
+author: Stoplight
 title: Using API Mocking to Unblock Teams
+subtitle: ' A Primer on How Service Virtualization Can Help You'
 image: /images/service-virtualization.jpeg
 color: black
 disqus:
@@ -23,9 +25,6 @@ meta:
     title: Using API Mocking to Unblock Teams | Stoplight
     username: '@stoplightio'
 ---
-
-Photo by Nathan Gonthier on Unsplash
-
 There’s no denying that a well-written test suite breeds a better product. Not only does it provide a high level of confidence in your code, but it also covers your butt whenever you make any changes.
 
 And an essential part of a well-written test suite is mocking. Mocking helps keep individual tests focused and lightweight, which ensures a fast, clean test suite, and provides a mechanism for testing functionality that requires objects that aren’t quite finished yet.
