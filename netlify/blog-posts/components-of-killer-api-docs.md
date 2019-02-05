@@ -1,5 +1,5 @@
 ---
-path: /blog/components-of-killer-api-docs
+path: /blog/components-of-killer-api-docs-ebbf41c13450
 tags:
   - blog-documentation
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2017-05-11T22:57:36.686Z
 author: Stoplight
 title: Components of Killer API Docs
+subtitle: 'Let''s face it — documentation is critical to API success '
 color: green
 disqus:
   enabled: true
