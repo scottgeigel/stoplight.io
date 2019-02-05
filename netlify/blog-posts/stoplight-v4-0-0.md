@@ -1,5 +1,5 @@
 ---
-path: /blog/stoplight-v4-0-0
+path: /blog/stoplight-v4-0-0-realtime-editor-toolbar-openapi-read-mode-3dded8763fbb
 tags:
   - blog-changelog
   - blog
