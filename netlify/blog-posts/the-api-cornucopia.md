@@ -1,5 +1,5 @@
 ---
-path: /blog/the-api-cornucopia
+path: /blog/the-api-cornucopia-7ba7efb22185
 tags:
   - blog-industry
   - blog-general
@@ -11,7 +11,9 @@ relatedTags:
 publishedDate: 2017-08-15T22:22:27.858Z
 author: Robert Wallach
 title: The API Cornucopia
-color: black
+subtitle: Defining and describing APIs and their ecosystem
+image: /images/yummee-chinese.jpeg
+color: blue
 disqus:
   enabled: true
 actionBar:
