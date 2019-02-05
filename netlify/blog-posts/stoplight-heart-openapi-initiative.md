@@ -1,5 +1,5 @@
 ---
-path: /blog/stoplight-️-the-openapi-initiative
+path: /blog/stoplight-️-the-openapi-initiative-def9db056eaf
 tags:
   - blog-general
   - blog
@@ -7,9 +7,10 @@ relatedTags:
   - blog-general
 publishedDate: 2018-05-14T22:20:35.562Z
 author: Robert Wallach
-title: "Stoplight \U0001F496 OpenAPI Initiative"
+title: "Stoplight \U0001F496 the OpenAPI Initiative"
+subtitle: 'Announcing our partnership with the OpenAPI Initiative '
 image: /images/openapi.jpeg
-color: grey
+color: green
 disqus:
   enabled: true
 actionBar:
