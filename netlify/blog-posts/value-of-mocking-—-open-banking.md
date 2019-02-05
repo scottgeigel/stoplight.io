@@ -1,5 +1,5 @@
 ---
-path: /blog/value-of-mocking-open-banking
+path: /blog/value-of-mocking-open-banking-72b3e4a7d212
 tags:
   - blog-mocking
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-06-07T19:45:07.047Z
 author: Chris Wood
 title: Value of Mocking — Open Banking
+subtitle: ' The role of developer experience in Open Banking'
 image: /images/mocking-open-banking.jpeg
 color: indigo
 disqus:
