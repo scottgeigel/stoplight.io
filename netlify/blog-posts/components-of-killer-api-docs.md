@@ -9,6 +9,7 @@ publishedDate: 2017-05-11T22:57:36.686Z
 author: Stoplight
 title: Components of Killer API Docs
 subtitle: 'Let''s face it — documentation is critical to API success '
+image: /images/pexels-photo-272980.jpeg
 color: green
 disqus:
   enabled: true
