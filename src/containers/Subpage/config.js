@@ -26,12 +26,14 @@ export const SubpageConfig = {
       name: 'tags',
       widget: 'list',
       required: false,
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
     },
     {
       label: 'Related Tags',
       name: 'relatedTags',
       widget: 'list',
       required: false,
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
     },
     {
       label: 'Publish Date',
