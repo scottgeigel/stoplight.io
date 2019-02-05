@@ -1,20 +1,21 @@
 path: /blog
-tag: 'blog'
+tag: blog
 title: Stoplight API Corner
-subtitle: Musings on API design, testing, documentation, trends, and related technology.
-color: 'purple'
+subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
+color: purple
 buttons:
-  - title: API Design
-    href: /blog/api-design
-  - title: API Documentation
-    href: /blog/api-documentation
-  - title: API Testing
-    href: /blog/api-testing
-  - title: Changelog
-    href: /blog/changelog
-  - title: Archive
-    href: /blog
-    icon: check-circle
+  - href: /blog/blog-general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
 actionBar:
   enabled: true
 meta:
