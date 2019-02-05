@@ -1,5 +1,5 @@
 ---
-path: /blog/getting-started-with-api-design-using-stoplight-and-openapi
+path: /blog/getting-started-with-api-design-using-stoplight-and-openapi-90fc8f37ac2e
 tags:
   - blog-design
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-08-02T18:47:13.396Z
 author: Lukas Rosenstock
 title: Getting Started with API Design using Stoplight and OpenAPI
+subtitle: So you've got a new project!
 image: /images/api-design-stoplight-openapi.jpeg
 color: blue
 disqus:
