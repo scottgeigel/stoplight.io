@@ -1,5 +1,6 @@
 ---
-path: /blog/stoplight-v4-1-0
+path: >-
+  /blog/stoplight-v4-1-0-fair-use-billing-magic-links-custom-css-landing-pages-token-generation-2f38aabdb78b
 tags:
   - blog-changelog
   - blog
