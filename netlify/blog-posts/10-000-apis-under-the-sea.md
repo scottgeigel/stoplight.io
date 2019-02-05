@@ -1,5 +1,5 @@
 ---
-path: /blog/10-000-apis-under-the-sea
+path: /blog/10-000-apis-under-the-sea-28a3db17666f
 tags:
   - blog-industry
   - blog-general
@@ -10,6 +10,7 @@ relatedTags:
 publishDate: 2018-07-11T19:15:59.311Z
 author: Robert Wallach
 title: '10,000 APIs Under the Sea'
+subtitle: 'An exploration of API Directories '
 image: /images/apis-under-sea.jpeg
 color: indigo
 disqus:
