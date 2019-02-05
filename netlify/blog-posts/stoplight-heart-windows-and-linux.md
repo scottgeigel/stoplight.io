@@ -1,15 +1,16 @@
 ---
-path: /blog/stoplight-windows-and-linux
+path: /blog/stoplight-windows-and-linux-97fe9bdbb5e7
 tags:
   - blog-changelog
   - blog
 relatedTags:
   - blog-changelog
 publishedDate: 2016-07-25T23:28:04.811Z
+author: Stoplight
 title: Stoplight ❤ Windows and Linux
 subtitle: Announcing Stoplight's Windows and Linux Desktop Apps
 image: /images/classic-windows-linux.png
-color: black
+color: grey-darker
 disqus:
   enabled: true
 actionBar:
