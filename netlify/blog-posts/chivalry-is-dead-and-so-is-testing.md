@@ -1,5 +1,5 @@
 ---
-path: /blog/chivalry-is-dead-and-so-is-testing
+path: /blog/chivalry-is-dead-and-so-is-testing-8e9103251f15
 tags:
   - blog-testing
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2016-10-05T23:14:09.129Z
 author: Tom Pytleski
 title: 'Chivalry is dead, and so is testing'
+subtitle: Best Practices for API Testing with Stoplight
 color: orange
 disqus:
   enabled: true
