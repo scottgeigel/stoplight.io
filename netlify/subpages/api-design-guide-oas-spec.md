@@ -12,6 +12,13 @@ cta:
   href: 'https://next.stoplight.io'
 actionBar:
   enabled: false
+tabs:
+  - title: API Design Basics
+    href: /api-design-guide/basics
+  - title: API Design Tooling
+    href: /api-design-guide/tooling
+  - title: Understanding the OpenAPI Specification
+    href: /api-design-guide/oas-spec
 meta:
   robots: 'index, follow'
   title: API Design Guide | OAS Spec

@@ -1,3 +1,4 @@
+import { DiscussionEmbed } from 'disqus-react';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
@@ -9,8 +10,7 @@ import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
-
-import { DiscussionEmbed } from 'disqus-react';
+import { ITab } from 'src/components/Tabs';
 
 export interface IPage {
   path: string;
@@ -32,6 +32,7 @@ export interface IPage {
   };
   relatedPages?: IRelatedPage[];
   disqus?: { enabled: boolean };
+  tabs?: ITab[];
 }
 
 /**
@@ -54,6 +55,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   actionBar,
   relatedPages,
   disqus,
+  tabs,
 }) => {
   const heroProps: IHero = {
     ...hero,
@@ -79,7 +81,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
   return (
     <React.Fragment>
-      <Hero {...heroProps} />
+      <Hero {...heroProps} tabs={tabs} />
 
       <Section noPadding>
         <Container className="mx-auto my-24">

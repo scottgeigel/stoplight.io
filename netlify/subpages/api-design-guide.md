@@ -10,6 +10,13 @@ cta:
 color: blue
 actionBar:
   enabled: false
+tabs:
+  - title: API Design Basics
+    href: /api-design-guide/basics
+  - title: API Design Tooling
+    href: /api-design-guide/tooling
+  - title: Understanding the OpenAPI Specification
+    href: /api-design-guide/oas-spec
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
