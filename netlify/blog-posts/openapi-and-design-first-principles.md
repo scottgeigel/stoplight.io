@@ -1,5 +1,5 @@
 ---
-path: /blog/openapi-and-design-first-principles
+path: /blog/openapi-and-design-first-principles-96e7c4b2aec1
 tags:
   - blog-design
   - blog
