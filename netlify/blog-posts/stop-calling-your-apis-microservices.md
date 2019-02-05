@@ -7,7 +7,7 @@ tags:
 relatedTags:
   - blog-design
   - blog-industry
-publishedDate: 2019-02-04T20:27:05.450Z
+publishedDate: 2018-12-04T20:27:05.450Z
 author: Lukas Rosenstock
 title: Stop Calling Your APIs Microservices
 subtitle: 'The Relationship between APIs, Microservices, and Containers'
@@ -72,7 +72,3 @@ Of course, there are different aspects to emphasize when designing microservice 
 ![](https://cdn-images-1.medium.com/max/2000/1*eskAtDF7n7VTRp90duFiUg.png)
 
 Microservices and APIs are not the same and, while we’re at it, neither are microservices and containers. However, the two concepts work together in two different ways: First, microservices can be a means to deploy the backend for an internal, partner, or public API. Second, microservices typically rely on APIs as a language-independent means to communicate with each other in an internal network. Development teams can use similar design approaches and tools for creating both outward-facing and microservice APIs. We will cover distinct best practices for different types of APIs in an upcoming post.
-
-*Editor’s note: We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
-
-![](https://cdn-images-1.medium.com/max/NaN/1*t-0nFtOwlgG0xGyouTJapQ.png)
