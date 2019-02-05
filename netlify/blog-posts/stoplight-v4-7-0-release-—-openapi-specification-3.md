@@ -1,5 +1,5 @@
 ---
-path: /blog/release-v4-7-0
+path: /blog/stoplight-v4-7-0-release-openapi-specification-3-1b5a2276b03c
 tags:
   - blog-changelog
   - blog
@@ -7,7 +7,8 @@ relatedTags:
   - blog-changelog
 publishedDate: 2019-01-08T19:04:55.501Z
 author: Taylor Barnett
-title: Stoplight v4.7.0 Release — OpenAPI Specification 3
+title: Stoplight v4.7.0 Release
+subtitle: OpenAPI Specification 3
 image: /images/oas3-code-editor.png
 color: green
 disqus:
