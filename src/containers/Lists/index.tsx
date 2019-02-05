@@ -123,9 +123,7 @@ export const List: React.FunctionComponent<IList> = ({
           </React.Fragment>
         ) : (
           <div className="container">
-            <div className="text-center p-12 sm:p-4 text-white opacity-75">
-              <h2>Coming soon...</h2>
-            </div>
+            <div className="text-center p-12 sm:p-4 text-white opacity-75" />
           </div>
         )}
       </Section>
