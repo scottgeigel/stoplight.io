@@ -1,5 +1,5 @@
 ---
-path: /blog/api-security-in-openapi
+path: /blog/api-security-in-openapi-b105ae725a08
 tags:
   - blog-design
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-08-16T18:27:33.860Z
 author: Lukas Rosenstock
 title: API Security in OpenAPI
+subtitle: 'An Introduction to API Security with the OpenAPI Specification '
 image: /images/api-security.jpeg
 color: blue
 disqus:
