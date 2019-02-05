@@ -1,5 +1,5 @@
 ---
-path: /blog/stop-calling-your-apis-microservices
+path: /blog/stop-calling-your-apis-microservices-e165a80eba9d
 tags:
   - blog-design
   - blog-industry
