@@ -1,5 +1,5 @@
 ---
-path: /blog/all-your-semantics-belong-to-us
+path: /blog/all-your-semantics-belong-to-us-6f0253e58f6
 tags:
   - blog-industry
   - blog-general
@@ -8,7 +8,7 @@ relatedTags:
   - blog-industry
   - blog-general
   - blog
-publishedDate: 2018-06-19T19:39:33.508Z
+publishDate: 2019-02-05T18:29:00.944Z
 author: Robert Wallach
 title: All Your Semantics Belong to Us
 subtitle: Where hacking words is a time honored tradition
