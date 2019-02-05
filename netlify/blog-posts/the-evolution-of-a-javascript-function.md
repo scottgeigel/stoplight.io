@@ -194,7 +194,7 @@ greet({ lang, given, family, reserved })
 
 ## **The function, evolved**
 
-![Another kind of evolution…](https://cdn-images-1.medium.com/max/2000/1*HNlDPG4AlGhv9oMBhJbcpw.gif)__
+![Another kind of evolution…](https://cdn-images-1.medium.com/max/2000/1*HNlDPG4AlGhv9oMBhJbcpw.gif)
 
 _Another kind of evolution…_
 
