@@ -8,7 +8,6 @@ relatedTags:
   - blog-industry
   - blog-general
   - blog
-publishDate: 2019-02-05T18:29:00.944Z
 author: Robert Wallach
 title: All Your Semantics Belong to Us
 subtitle: Where hacking words is a time honored tradition
