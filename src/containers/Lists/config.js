@@ -31,10 +31,12 @@ export const ListsConfig = {
     {
       name: 'subtitle',
       widget: 'string',
+      required: false,
     },
     {
       name: 'color',
       widget: 'string',
+      required: false,
     },
     {
       name: 'buttons',
@@ -43,10 +45,12 @@ export const ListsConfig = {
         {
           name: 'title',
           widget: 'string',
+          required: false,
         },
         {
           name: 'href',
           widget: 'string',
+          required: false,
         },
       ],
     },
