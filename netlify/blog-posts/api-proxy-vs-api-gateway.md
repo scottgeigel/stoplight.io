@@ -11,6 +11,7 @@ relatedTags:
 publishedDate: 2018-11-27T06:00:00.000Z
 author: Robert Wallach
 title: API Proxy vs API Gateway
+subtitle: 'A breakdown of functions, ecosystem, and use-cases'
 image: /images/api-proxy-header.jpeg
 color: indigo
 disqus:
