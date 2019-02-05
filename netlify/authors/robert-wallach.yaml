@@ -1,7 +1,10 @@
 path: /blog/author/robert-wallach
 tag: Author
 title: Robert Wallach
-subtitle: 'details '
+subtitle: >-
+  Editor-in-chief, contributing writer, and jack-of-all-trades at Stoplight.
+  Earned an MFA at Emerson and has worked as a journalist, editor, and graphic
+  designer for numerous publications and as a freelancer.  
 pageName: Content & Support
 image: /images/wallach_headshot.png
 color: blue
@@ -10,7 +13,7 @@ buttons:
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
