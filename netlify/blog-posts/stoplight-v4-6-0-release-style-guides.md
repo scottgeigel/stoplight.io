@@ -5,10 +5,10 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishedDate: 2019-02-01T21:06:32.215Z
+publishedDate: 2018-10-15T20:06:32.215Z
 author: Taylor Barnett
-title: Stoplight v4.6.0 Release — Style Guides
-subtitle: OpenAPI Specification Style Guides
+title: Stoplight v4.6.0 Release 
+subtitle: OpenAPI Specification Linting and Style Guides
 image: /images/oas2-style-guide.png
 color: purple
 disqus:
