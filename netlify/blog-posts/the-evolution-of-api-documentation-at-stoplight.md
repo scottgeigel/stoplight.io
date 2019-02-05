@@ -1,5 +1,5 @@
 ---
-path: /blog/the-evolution-of-api-documentation-at-stoplight
+path: /blog/the-evolution-of-api-documentation-at-stoplight-d567aeba07e
 tags:
   - blog-documentation
   - blog
@@ -26,9 +26,6 @@ meta:
     title: Blog | Stoplight
     username: '@stoplightio'
 ---
-
-*Photo by [Badder Manaouch](https://unsplash.com/@baddermanaouch?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
-
 API documentation is one of the most undervalued assets of a technology company. Most tech companies sell access to APIs that allow customers to retrieve information or use services. Revenue is then generated each time a customer uses the API. In order for customers to use the APIs, they need to understand what is available, how to ask for it, and how it will be returned. All of this information should be provided in the API’s documentation, usually as a website. Therefore, it is very important that your API documentation is performant, accessible, portable, and integrated.
 
 At [Stoplight](https://stoplight.io), we want to help companies create beautiful and easy to use API documentation. We see the value that it can bring to companies and their customers alike. That’s why we decided to build a tool to facilitate that process. In [Stoplight Classic](http://stoplight.io), the first generation of our API platform, we built a tool that automatically generates documentation for your API and publishes it as a single page web application. This means instead of fetching a new HTML file each time the user navigates, the pages are generated dynamically, in the browser, using JavaScript. This allows us to serve up tens of thousands of websites without having to store any HTML files. In theory, this sounds great, but over time, we came to realize that this method had some downsides.
