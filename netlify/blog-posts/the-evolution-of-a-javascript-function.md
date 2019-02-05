@@ -1,5 +1,5 @@
 ---
-path: /blog/the-evolution-of-a-javascript-function
+path: /blog/the-evolution-of-a-javascript-function-994ebd95d941
 tags:
   - blog-general
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-06-27T19:30:02.611Z
 author: Will Hilton
 title: The Evolution of a JavaScript Function
+subtitle: ' A hypothetical (but realistic) example of how an ordinary JavaScript function can evolve over time'
 image: /images/evolution-javascript.jpeg
 color: purple
 disqus:
