@@ -1,5 +1,5 @@
 ---
-path: /blog/making-the-most-of-your-api-specification
+path: /blog/making-the-most-of-your-api-specification-a45d21bcb0e8
 tags:
   - blog
   - blog-design
