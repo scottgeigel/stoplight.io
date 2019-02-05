@@ -1,20 +1,21 @@
 path: /blog/api-testing
-tag: 'blog-testing'
+tag: blog-testing
 title: API Testing
-subtitle:
-color: 'purple'
+subtitle: ' '
+color: purple
 buttons:
-  - title: API Design
-    href: /blog/api-design
-  - title: API Documentation
-    href: /blog/api-documentation
-  - title: API Testing
-    href: /blog/api-testing
-    icon: check-circle
-  - title: Changelog
-    href: /blog/changelog
-  - title: Archive
-    href: /blog
+  - href: /blog/blog-general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
 actionBar:
   enabled: true
 meta:
