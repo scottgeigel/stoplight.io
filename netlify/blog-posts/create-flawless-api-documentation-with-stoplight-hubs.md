@@ -1,5 +1,5 @@
 ---
-path: /blog/create-flawless-api-documentation-with-stoplights-hubs
+path: /blog/create-flawless-api-documentation-with-stoplights-hubs-f2e23ffeb58a
 tags:
   - blog-documentation
   - blog
@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2018-03-22T22:14:49.537Z
 author: 'Robert Wallach '
 title: Create Flawless API Documentation with Stoplight Hubs
+subtitle: How to create beautiful documentation with Hubs
 image: /images/flawless-hubs.png
 color: green
 disqus:
