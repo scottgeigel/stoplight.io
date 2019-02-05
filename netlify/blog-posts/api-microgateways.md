@@ -1,5 +1,5 @@
 ---
-path: /blog/api-microgateways
+path: /blog/api-microgateways-55d656950d6c
 tags:
   - blog-industry
   - blog-general
