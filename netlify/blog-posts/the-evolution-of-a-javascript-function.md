@@ -6,11 +6,13 @@ tags:
 relatedTags:
   - blog-general
 publishedDate: 2018-06-27T19:30:02.611Z
-author: Will Hilton
+author: William Hilton
 title: The Evolution of a JavaScript Function
 subtitle: ' A hypothetical (but realistic) example of how an ordinary JavaScript function can evolve over time'
 image: /images/evolution-javascript.jpeg
 color: purple
+tabs:
+  - {}
 disqus:
   enabled: true
 actionBar:
