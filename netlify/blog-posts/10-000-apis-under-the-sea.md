@@ -17,7 +17,7 @@ disqus:
 actionBar:
   buttons:
     - color: purple
-  enabled: false
+  enabled: true
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
