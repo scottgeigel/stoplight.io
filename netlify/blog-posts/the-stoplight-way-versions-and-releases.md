@@ -1,5 +1,5 @@
 ---
-path: /blog/the-stoplight-way-versions-and-releases
+path: /blog/the-stoplight-way-versions-and-releases-ba7009e51bab
 tags:
   - blog-general
   - blog
@@ -8,6 +8,8 @@ relatedTags:
 publishedDate: 2018-07-09T19:21:12.282Z
 author: Nicholas Cassera
 title: 'The Stoplight Way: Versions and Releases'
+subtitle: 'An integral part of any teams workflow, is version control'
+image: /images/versions-releases.jpeg
 color: indigo
 disqus:
   enabled: true
@@ -24,8 +26,6 @@ meta:
     username: '@stoplightio'
 ---
 An integral part of any teams workflow, is version control. In this post, I am going to go over Stoplight’s perspective on versions, releases, and some best practices to help your team deliver the best product in the shortest period of time with Stoplight.
-
-![By [wocintechchat.com](http://wocintechchat.com), Licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)](https://cdn-images-1.medium.com/max/12032/1*ajvR1LjBfzNNQ6YcAnezkg.jpeg)*By [wocintechchat.com](http://wocintechchat.com), Licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)*
 
 ## Stoplight Perspective
 
