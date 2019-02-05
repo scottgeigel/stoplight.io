@@ -1,5 +1,5 @@
 ---
-path: /blog/release-v4-5-0
+path: /blog/stoplight-v4-5-0-release-discussions-and-documentation-api-d430e2c9aab6
 tags:
   - blog-changelog
   - blog
