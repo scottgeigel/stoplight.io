@@ -9,7 +9,7 @@ relatedTags:
   - blog-general
 publishDate: 2018-07-11T19:15:59.311Z
 author: Robert Wallach
-title: '10,000 APIs Under the Sea'
+title: '10,000 APIs Under the Seas'
 image: /images/apis-under-sea.jpeg
 color: indigo
 disqus:
