@@ -1,19 +1,21 @@
 path: /blog/changelog
-tag: 'blog-changelog'
+tag: blog-changelog
 title: Changelog
-color: 'purple'
+subtitle: ' '
+color: purple
 buttons:
-  - title: API Design
-    href: /blog/api-design
-  - title: API Documentation
-    href: /blog/api-documentation
-  - title: API Testing
-    href: /blog/api-testing
-  - title: Changelog
-    href: /blog/changelog
-    icon: 'check-circle'
-  - title: Archive
-    href: /blog
+  - href: /blog/blog-general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
 actionBar:
   enabled: true
 meta:
