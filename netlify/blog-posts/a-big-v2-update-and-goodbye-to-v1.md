@@ -1,5 +1,5 @@
 ---
-path: /blog/a-big-v2-update-and-goodbye-to-v1
+path: /blog/a-big-v2-update-and-goodbye-to-v1-f8b51f7dbd08
 tags:
   - blog-changelog
   - blog
