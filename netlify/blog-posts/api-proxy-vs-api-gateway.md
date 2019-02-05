@@ -1,5 +1,5 @@
 ---
-path: /blog/proxy-vs-gateway
+path: /blog/api-proxy-vs-api-gateway-c008c942a02d
 tags:
   - blog-industry
   - blog-general
