@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2018-07-06T19:25:47.388Z
+publishedDate: 2018-07-06T19:25:47.388Z
 author: Taylor Barnett
 title: Stoplight v4.3.0 Release
 subtitle: Versions and Releases

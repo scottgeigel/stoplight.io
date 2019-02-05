@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-testing
-publishDate: 2017-02-09T00:05:29.244Z
+publishedDate: 2017-02-09T00:05:29.244Z
 title: Introducing Scenarios
 subtitle: 'The lean, mean, API testing machine'
 image: /images/introducing-scenarios.png

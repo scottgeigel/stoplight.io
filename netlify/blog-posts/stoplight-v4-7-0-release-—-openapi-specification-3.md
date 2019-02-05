@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2019-01-08T19:04:55.501Z
+publishedDate: 2019-01-08T19:04:55.501Z
 author: Taylor Barnett
 title: Stoplight v4.7.0 Release — OpenAPI Specification 3
 image: /images/oas3-code-editor.png

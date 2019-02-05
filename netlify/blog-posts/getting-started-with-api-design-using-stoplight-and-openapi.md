@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-design
-publishDate: 2018-08-02T18:47:13.396Z
+publishedDate: 2018-08-02T18:47:13.396Z
 author: Lukas Rosenstock
 title: Getting Started with API Design using Stoplight and OpenAPI
 image: /images/api-design-stoplight-openapi.jpeg

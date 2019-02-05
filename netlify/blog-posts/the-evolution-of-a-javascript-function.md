@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-general
-publishDate: 2018-06-27T19:30:02.611Z
+publishedDate: 2018-06-27T19:30:02.611Z
 author: Will Hilton
 title: The Evolution of a JavaScript Function
 image: /images/evolution-javascript.jpeg

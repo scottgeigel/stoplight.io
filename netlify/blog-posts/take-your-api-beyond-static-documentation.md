@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2019-02-01T19:00:39.621Z
+publishedDate: 2019-02-01T19:00:39.621Z
 author: Adam DuVander
 title: 'Take Your API Beyond Static Documentation '
 color: black

@@ -8,12 +8,18 @@ import frontmatter from 'front-matter';
 import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
 import { Renderer as MarkdownRenderer } from './src/utils/markdown';
+import { formatDate } from './src/utils/dates/index.ts';
 
 import webpack from './webpack';
 
 const NETLIFY_PATH = nodePath.resolve(__dirname, 'netlify');
 const IS_PRODUCTION = process.env.RELEASE_STAGE === 'production';
 const DEFAULT_PAGINATION_PAGE_SIZE = 10;
+
+let SITE_ROOT = '';
+if (IS_PRODUCTION) {
+  SITE_ROOT = 'https://stoplight.io';
+}
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes());
 
@@ -114,11 +120,6 @@ const resolveMeta = (defaultMeta = {}, meta = {}) => {
   };
 };
 
-let siteRoot = '';
-if (IS_PRODUCTION) {
-  siteRoot = 'https://stoplight.io';
-}
-
 const filterPages = (allPages, filter) => {
   const pages = []; // pages that pass the filter
 
@@ -135,7 +136,7 @@ const filterPages = (allPages, filter) => {
       href: page.path,
       tags: page.tags, // used to show which tag matches the search
       author: page.author,
-      publishedDate: page.publishedDate,
+      publishedDate: formatDate(page.publishedDate),
       backgroundSize: page.backgroundSize,
     });
   }
@@ -181,6 +182,7 @@ const addSubpages = (routes, allPages, subpages, propFactory) => {
           return {
             ...subpage,
             ...(propFactory ? propFactory(subpage) : {}),
+            publishedDate: formatDate(subpage.publishedDate),
             relatedPages,
           };
         },
@@ -249,7 +251,7 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
 };
 
 export default {
-  siteRoot,
+  siteRoot: SITE_ROOT ? SITE_ROOT : undefined,
 
   getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
 
@@ -365,7 +367,7 @@ export default {
               },
               headline: props.title,
               image: [props.image],
-              datePublished: props.publishDate,
+              datePublished: props.publishedDate,
               dateModified: props.modifiedDate,
               author: { '@type': 'Person', name: props.author ? props.author.name : null },
               publisher: {
@@ -485,14 +487,14 @@ export default {
           <meta property="og:description" content={meta.description} />
           <meta property="og:url" content={meta.url} />
           <meta property="og:site_name" content="stoplight.io" />
-          <meta property="og:image" content={siteRoot + meta.image} />
+          <meta property="og:image" content={SITE_ROOT + meta.image} />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content={meta.twitter.username} />
           <meta name="twitter:creator" content={meta.twitter.username} />
           <meta name="twitter:title" content={meta.twitter.title} />
           <meta name="twitter:description" content={meta.twitter.description} />
-          <meta name="twitter:image" content={siteRoot + meta.twitter.image} />
+          <meta name="twitter:image" content={SITE_ROOT + meta.twitter.image} />
 
           <link rel="shortcut icon" href={meta.favicon} type="image/x-icon" />
 
@@ -534,11 +536,11 @@ export default {
           )}
 
           {pagination.currentPage && pagination.currentPage !== 1 && (
-            <link rel="prev" href={`${siteRoot}${path}/page/${pagination.currentPage - 1}/`} />
+            <link rel="prev" href={`${SITE_ROOT}${path}/page/${pagination.currentPage - 1}/`} />
           )}
 
           {pagination.currentPage && pagination.currentPage !== pagination.totalPages && (
-            <link rel="next" href={`${siteRoot}${path}/page/${pagination.currentPage + 1}/`} />
+            <link rel="next" href={`${SITE_ROOT}${path}/page/${pagination.currentPage + 1}/`} />
           )}
         </Head>
         <Body>
@@ -584,7 +586,7 @@ export default {
 
     if (IS_PRODUCTION) {
       // Don't allow crawlling of /lp pages
-      robots = `User-agent: *\nDisallow: /lp\nSitemap: ${siteRoot}/sitemap.xml`;
+      robots = `User-agent: *\nDisallow: /lp\nSitemap: ${SITE_ROOT}/sitemap.xml`;
     }
 
     fs.writeFileSync(`${process.cwd()}/dist/robots.txt`, robots);

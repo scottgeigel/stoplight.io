@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2018-08-13T18:31:50.356Z
+publishedDate: 2018-08-13T18:31:50.356Z
 author: Emmelyn Wang
 title: The Changing Landscape of Developer Content
 image: /images/changing-developer-landscape.jpeg

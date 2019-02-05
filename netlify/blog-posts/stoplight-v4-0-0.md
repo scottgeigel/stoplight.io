@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2018-03-27T21:56:14.802Z
+publishedDate: 2018-03-27T21:56:14.802Z
 author: Robert Wallach
 title: Stoplight v4.0.0 Release
 subtitle: 'Realtime, Editor Toolbar, OpenAPI Read Mode'

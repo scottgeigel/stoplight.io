@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-design
-publishDate: 2018-06-21T19:34:32.353Z
+publishedDate: 2018-06-21T19:34:32.353Z
 author: Lukas Rosenstock
 title: OpenAPI and Design-First Principles
 subtitle: Why API Design is critical and how the OpenAPI Specification can help

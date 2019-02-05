@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-general
-publishDate: 2018-07-09T19:21:12.282Z
+publishedDate: 2018-07-09T19:21:12.282Z
 author: Nicholas Cassera
 title: 'The Stoplight Way: Versions and Releases'
 color: indigo

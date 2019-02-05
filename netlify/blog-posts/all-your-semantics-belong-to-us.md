@@ -8,7 +8,7 @@ relatedTags:
   - blog-industry
   - blog-general
   - blog
-publishDate: 2018-06-19T19:39:33.508Z
+publishedDate: 2018-06-19T19:39:33.508Z
 author: Robert Wallach
 title: All Your Semantics Belong to Us
 subtitle: Where hacking words is a time honored tradition

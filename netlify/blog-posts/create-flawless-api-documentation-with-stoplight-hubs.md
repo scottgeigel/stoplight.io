@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2018-03-22T22:14:49.537Z
+publishedDate: 2018-03-22T22:14:49.537Z
 author: 'Robert Wallach '
 title: Create Flawless API Documentation with Stoplight Hubs
 image: /images/flawless-hubs.png

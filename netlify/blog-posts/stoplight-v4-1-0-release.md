@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2018-04-30T21:20:50.059Z
+publishedDate: 2018-04-30T21:20:50.059Z
 author: Robert Wallach
 title: Stoplight v4.1.0 Release
 subtitle: 'Fair Use Billing, Magic Links, Custom CSS, Landing Pages, Token Generation'

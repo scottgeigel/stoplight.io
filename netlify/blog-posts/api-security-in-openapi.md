@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-design
-publishDate: 2018-08-16T18:27:33.860Z
+publishedDate: 2018-08-16T18:27:33.860Z
 author: Lukas Rosenstock
 title: API Security in OpenAPI
 image: /images/api-security.jpeg

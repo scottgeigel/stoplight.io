@@ -37,7 +37,7 @@ export const SubpageConfig = {
     },
     {
       label: 'Publish Date',
-      name: 'publishDate',
+      name: 'publishedDate',
       widget: 'date',
       dateFormat: 'MMM DD, YYYY',
       required: false,

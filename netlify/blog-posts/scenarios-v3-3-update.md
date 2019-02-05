@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2017-06-12T22:48:20.849Z
+publishedDate: 2017-06-12T22:48:20.849Z
 title: Scenarios v3.3 Update
 image: /images/mark_light_bg.png
 color: black

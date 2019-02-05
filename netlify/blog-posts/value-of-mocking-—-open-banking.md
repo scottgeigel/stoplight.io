@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-mocking
-publishDate: 2018-06-07T19:45:07.047Z
+publishedDate: 2018-06-07T19:45:07.047Z
 author: Chris Wood
 title: Value of Mocking — Open Banking
 image: /images/mocking-open-banking.jpeg

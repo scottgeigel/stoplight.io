@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2016-09-29T23:17:41.850Z
+publishedDate: 2016-09-29T23:17:41.850Z
 author: Marc MacLeod
 title: 'New Stoplight Docs, a Stoplight API, RAML 1.0, 5x Faster API Docs'
 image: /images/new-stoplight-docs.png

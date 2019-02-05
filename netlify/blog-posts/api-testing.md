@@ -6,7 +6,7 @@ tags:
   - blog
 relatedTags:
   - blog-testing
-publishDate: 2017-05-31T22:52:07.204Z
+publishedDate: 2017-05-31T22:52:07.204Z
 author: Stoplight
 title: API Testing
 subtitle: Achieving Quick and Easy Service Virtualization with Stoplight

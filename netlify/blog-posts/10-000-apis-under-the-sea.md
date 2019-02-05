@@ -7,7 +7,7 @@ tags:
 relatedTags:
   - blog-industry
   - blog-general
-publishDate: 2018-07-11T19:15:59.311Z
+publishedDate: 2018-07-11T19:15:59.311Z
 author: Robert Wallach
 title: '10,000 APIs Under the Sea'
 subtitle: 'An exploration of API Directories '

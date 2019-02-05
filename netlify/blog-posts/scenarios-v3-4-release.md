@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2017-07-31T22:30:02.700Z
+publishedDate: 2017-07-31T22:30:02.700Z
 author: Marc MacLeod
 title: Scenarios v3.4 Release
 image: /images/scenarios-tagging.png

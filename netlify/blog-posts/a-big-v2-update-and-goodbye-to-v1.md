@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2016-08-16T23:23:49.359Z
+publishedDate: 2016-08-16T23:23:49.359Z
 author: Stoplight
 title: 'A big v2 update, and goodbye to v1'
 color: purple
@@ -59,7 +59,7 @@ We will be focusing our efforts on the following 5 areas:
 
 Please send questions or comments to [@stoplightio](https://twitter.com/stoplightio) or support@stoplight.io.
 
-The Stoplight Team 
+The Stoplight Team
 Marc, Chris, Tom, and Vazha
 
 *Originally published at [stoplight.ghost.io](http://stoplight.ghost.io/a-big-v2-update-and-goodbye-to-v1/) on August 17, 2016.*

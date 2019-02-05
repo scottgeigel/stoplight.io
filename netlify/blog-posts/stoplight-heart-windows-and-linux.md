@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2016-07-25T23:28:04.811Z
+publishedDate: 2016-07-25T23:28:04.811Z
 title: Stoplight ❤ Windows and Linux
 subtitle: Announcing Stoplight's Windows and Linux Desktop Apps
 image: /images/classic-windows-linux.png

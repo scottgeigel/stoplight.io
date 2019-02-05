@@ -7,7 +7,7 @@ tags:
 relatedTags:
   - blog-industry
   - blog-general
-publishDate: 2018-07-26T19:03:36.290Z
+publishedDate: 2018-07-26T19:03:36.290Z
 author: Robert Wallach
 title: API Microgateways
 subtitle: From Security to Orchestration

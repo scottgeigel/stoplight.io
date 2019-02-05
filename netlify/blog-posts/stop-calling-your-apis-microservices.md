@@ -7,7 +7,7 @@ tags:
 relatedTags:
   - blog-design
   - blog-industry
-publishDate: 2019-02-04T20:27:05.450Z
+publishedDate: 2019-02-04T20:27:05.450Z
 author: Lukas Rosenstock
 title: Stop Calling Your APIs Microservices
 subtitle: 'The Relationship between APIs, Microservices, and Containers'

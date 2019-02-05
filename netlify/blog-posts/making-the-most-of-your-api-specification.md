@@ -5,7 +5,7 @@ tags:
   - blog-design
 relatedTags:
   - blog-design
-publishDate: 2019-02-04T20:10:00.489Z
+publishedDate: 2019-02-04T20:10:00.489Z
 author: Chris Wood
 title: Making the Most of Your API Specification
 subtitle: Design Web APIs for Humans & Machines

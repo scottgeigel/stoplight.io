@@ -8,7 +8,7 @@ relatedTags:
   - blog-industry
   - blog-general
   - blog
-publishDate: 2017-08-15T22:22:27.858Z
+publishedDate: 2017-08-15T22:22:27.858Z
 author: Robert Wallach
 title: The API Cornucopia
 color: black
@@ -102,7 +102,7 @@ We thoroughly believe in a design first mentality in regards to API Production a
 
 Before your API can be deployed to the masses it must be battle tested and hardened to withstand the ever evolving IoT. To this end, we created *Scenarios*, a testing tool that allows you to test, debug, and orchestrate every aspect of your API from every angle.
 
-* **Land of Analogy**: Maybe the Chef accidentally mixed in some 
+* **Land of Analogy**: Maybe the Chef accidentally mixed in some
 Cayenne Pepper into the Vanilla Ice Cream. Maybe the client is allergic to an ingredient in the new recipe your Chef just created. Before the meal goes out, we provide the Restaurant with the tools to check the food for poisons and other undesirables.
 
 ![Stoplight Prism](https://cdn-images-1.medium.com/max/2876/1*bpPbJ83wfobGTWaSdC7KTA.png)*Stoplight Prism*

@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-testing
-publishDate: 2016-10-05T23:14:09.129Z
+publishedDate: 2016-10-05T23:14:09.129Z
 author: Tom Pytleski
 title: 'Chivalry is dead, and so is testing'
 color: orange

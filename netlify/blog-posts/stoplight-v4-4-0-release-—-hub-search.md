@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2018-08-03T18:41:01.212Z
+publishedDate: 2018-08-03T18:41:01.212Z
 author: Taylor Barnett
 title: Stoplight v4.4.0 Release
 subtitle: Hub Search

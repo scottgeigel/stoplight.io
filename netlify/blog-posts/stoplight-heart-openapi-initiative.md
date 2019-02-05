@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-general
-publishDate: 2018-05-14T22:20:35.562Z
+publishedDate: 2018-05-14T22:20:35.562Z
 author: Robert Wallach
 title: "Stoplight \U0001F496 OpenAPI Initiative"
 image: /images/openapi.jpeg

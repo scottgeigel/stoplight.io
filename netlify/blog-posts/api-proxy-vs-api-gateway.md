@@ -8,7 +8,7 @@ relatedTags:
   - blog-industry
   - blog-general
   - blog
-publishDate: 2018-11-27T06:00:00.000Z
+publishedDate: 2018-11-27T06:00:00.000Z
 author: Robert Wallach
 title: API Proxy vs API Gateway
 image: /images/api-proxy-header.jpeg

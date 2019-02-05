@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-changelog
-publishDate: 2018-09-11T18:09:47.152Z
+publishedDate: 2018-09-11T18:09:47.152Z
 author: Robert Wallach
 title: Stoplight v4.5.0 Release
 subtitle: Discussions and Documentation API

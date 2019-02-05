@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2018-08-23T18:15:22.669Z
+publishedDate: 2018-08-23T18:15:22.669Z
 author: Taylor Barnett
 title: Writing Documentation When You Aren't A Technical Writer — Part Two
 image: /images/writing-docs-part-two.jpeg
@@ -83,7 +83,7 @@ Make sure to use human terms, avoid phrases like “exception has been thrown by
 Example (401 Status Code Error from Twilio):
 
 ```
-{ 
+{
     “code”: 20003,
     “detail”: “Your AccountSid or AuthToken was incorrect.”,
     “message”: “Authenticate”,

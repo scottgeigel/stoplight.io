@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2018-07-24T19:09:18.644Z
+publishedDate: 2018-07-24T19:09:18.644Z
 author: Robert Wallach
 title: Want People to Use Your API Documentation? 5 Expert Tips
 image: /images/want-people-to-use-docs.jpeg

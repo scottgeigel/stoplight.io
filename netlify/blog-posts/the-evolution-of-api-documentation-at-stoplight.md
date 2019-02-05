@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - blog-documentation
-publishDate: 2019-02-04T22:36:37.768Z
+publishedDate: 2019-02-04T22:36:37.768Z
 author: Chris Lott
 title: The Evolution of API Documentation at Stoplight
 subtitle: >-
