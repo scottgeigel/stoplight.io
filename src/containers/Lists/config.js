@@ -2,7 +2,7 @@ import metaTags from 'src/components/MetaTags/config';
 import actionBar from 'src/components/ActionBar/config';
 import pagination from 'src/components/Pagination/config';
 
-import { addFields } from 'src/utils';
+import { addFields, colors } from 'src/utils';
 
 export const ListsConfig = {
   label: 'Lists',
@@ -34,12 +34,15 @@ export const ListsConfig = {
       required: false,
     },
     {
+      label: 'Color',
       name: 'color',
-      widget: 'string',
+      widget: 'select',
+      options: colors,
+      default: 'black',
       required: false,
     },
     {
-      name: 'buttons',
+      name: 'tabs',
       widget: 'list',
       fields: [
         {

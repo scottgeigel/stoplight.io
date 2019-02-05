@@ -1,10 +1,9 @@
 path: /blog/api-design
 tag: blog-design
 title: API Design
-subtitle: ' '
 color: purple
-buttons:
-  - href: /blog/blog-general
+tabs:
+  - href: /blog/general
     title: General
   - href: /blog/api-design
     title: API Design

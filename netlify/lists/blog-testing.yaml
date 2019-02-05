@@ -1,10 +1,9 @@
 path: /blog/api-testing
 tag: blog-testing
 title: API Testing
-subtitle: ' '
 color: purple
-buttons:
-  - href: /blog/blog-general
+tabs:
+  - href: /blog/general
     title: General
   - href: /blog/api-design
     title: API Design

@@ -2,11 +2,12 @@ import * as React from 'react';
 import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
-import { Hero, IHero, IHeroAuthor, IHeroButton } from 'src/components/Hero';
+import { Hero, IHero, IHeroAuthor } from 'src/components/Hero';
 import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { IPagination, Pagination } from 'src/components/Pagination';
 import { Section } from 'src/components/Section';
+import { ITab } from 'src/components/Tabs';
 
 export interface IListItem {
   title: string;
@@ -23,7 +24,7 @@ export interface IList {
   title: string;
   subtitle: string;
   pageName?: string;
-  buttons: IHeroButton[];
+  tabs: ITab[];
   items: IListItem[];
   hero: Partial<IHero>;
   actionBar?: IActionBar;
@@ -49,7 +50,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
     >
       <article className="flex box h-full w-full items-center">
         <div
-          className="h-full w-2/5"
+          className="h-full w-2/5 sm:w-1/5"
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize,
@@ -59,7 +60,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
         />
 
         <div className="flex-1 flex flex-col h-full p-10 md:p-6">
-          <div className="flex-1">
+          <div className="flex-1 mb-2 flex flex-col relative overflow-hidden">
             <div className="text-3xl font-bold mb-4">{title}</div>
 
             {subtitle && <p className="leading-loose">{subtitle}</p>}
@@ -92,7 +93,7 @@ export const List: React.FunctionComponent<IList> = ({
   title,
   subtitle,
   pageName,
-  buttons,
+  tabs,
   items,
   hero,
   actionBar,
@@ -100,17 +101,9 @@ export const List: React.FunctionComponent<IList> = ({
 }) => {
   return (
     <React.Fragment>
-      <Hero
-        {...hero}
-        bgColor={color}
-        title={title}
-        subtitle={subtitle}
-        pageName={pageName}
-        buttons={buttons}
-        containerClassName="pb-24"
-      />
+      <Hero {...hero} bgColor={color} title={title} subtitle={subtitle} pageName={pageName} tabs={tabs} />
 
-      <Section className="z-5" noPadding style={{ marginTop: -125 }}>
+      <Section className="z-5 pt-24 md:pt-0" noPadding>
         {items && items.length > 0 ? (
           <React.Fragment>
             <div className="container">
@@ -119,7 +112,7 @@ export const List: React.FunctionComponent<IList> = ({
               ))}
             </div>
 
-            {pagination && <Pagination {...pagination} />}
+            {pagination && <Pagination {...pagination} color={color} />}
           </React.Fragment>
         ) : (
           <div className="container">

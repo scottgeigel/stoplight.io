@@ -11,6 +11,7 @@ export interface IPagination {
   enabled: boolean;
 
   className?: string;
+  color?: string;
 }
 
 export interface IPageItemProps {
@@ -20,22 +21,19 @@ export interface IPageItemProps {
   disabled?: boolean;
 
   className?: string;
+  color?: string;
 }
 
-export const PageItem = ({ to, content, active, disabled, className }: IPageItemProps) => {
+export const PageItem = ({ to, content, active, disabled, className, color = 'blue' }: IPageItemProps) => {
   return (
     <Link
       to={to}
       disabled={disabled || active}
-      className={cn(
-        className,
-        'px-3 py-2 -ml-px border',
-        disabled
-          ? `cursor-not-allowed text-grey-dark bg-white border-grey-light`
-          : active
-          ? `cursor-default text-white bg-blue-light border-blue-light`
-          : `cursor-pointer text-blue-light bg-white border-grey-light`
-      )}
+      className={cn(className, 'px-3 py-2 -ml-px border', {
+        'cursor-not-allowed text-grey-dark bg-white border-grey-light': disabled,
+        [`cursor-default text-white bg-${color}-light border-${color}-light`]: !disabled && active,
+        [`cursor-pointer text-${color}-light bg-white border-grey-light`]: !disabled && !active,
+      })}
     >
       {content}
     </Link>
@@ -47,8 +45,7 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
   currentPage = 1,
   totalPages = 1,
   enabled,
-
-  className,
+  color,
 }) => {
   if (totalPages <= 1 || !enabled) {
     return null;
@@ -61,6 +58,7 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
       content: '<',
       className: 'rounded-l-lg',
       disabled: currentPage === 1,
+      color,
     },
   ];
 
@@ -74,6 +72,7 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
         to: `${path}/page/${startPage}`,
         content: startPage,
         active: startPage === currentPage,
+        color,
       });
     }
 
@@ -86,6 +85,7 @@ export const Pagination: React.FunctionComponent<IPagination> = ({
     content: '>',
     className: 'rounded-r-lg',
     disabled: currentPage === totalPages,
+    color,
   });
 
   return (

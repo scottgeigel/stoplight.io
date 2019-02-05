@@ -78,6 +78,22 @@ export const SubpageConfig = {
       required: false,
     },
     {
+      name: 'tabs',
+      widget: 'list',
+      fields: [
+        {
+          name: 'title',
+          widget: 'string',
+          required: false,
+        },
+        {
+          name: 'href',
+          widget: 'string',
+          required: false,
+        },
+      ],
+    },
+    {
       label: 'Content',
       name: 'body',
       widget: 'markdown',
@@ -94,7 +110,7 @@ export const CaseStudyConfig = {
   label_singular: 'Case Study',
   name: 'caseStudy',
   folder: 'netlify/case-studies',
-  fields: addFields(SubpageConfig.fields, 9, [
+  fields: addFields(SubpageConfig.fields, SubpageConfig.fields.length - 3, [
     {
       label: 'Sidebar',
       name: 'sidebar',
@@ -110,7 +126,7 @@ export const BlogPostConfig = {
   label_singular: 'Blog Post',
   name: 'blogPost',
   folder: 'netlify/blog-posts',
-  fields: addFields(SubpageConfig.fields, 9, [
+  fields: addFields(SubpageConfig.fields, SubpageConfig.fields.length - 3, [
     {
       name: 'disqus',
       widget: 'object',

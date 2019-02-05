@@ -9,6 +9,8 @@ import { Container } from 'src/components/Container';
 import { headerHeightClass } from 'src/components/Header';
 import { IImage, Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
+import { ITab, Tabs } from 'src/components/Tabs';
+import { Popup } from '../Popup';
 
 let Particles;
 if (typeof window !== 'undefined') {
@@ -71,6 +73,7 @@ export interface IHero {
   particles?: boolean;
   skew?: 'rounded' | string;
   containerClassName?: string;
+  tabs?: ITab[];
 }
 
 export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, name, path = '', image, meta }) => {
@@ -177,16 +180,22 @@ export const Hero: React.FunctionComponent<IHero> = ({
   author,
   cta,
   bgColor = 'black',
-  cards = [],
-  buttons = [],
   particles,
   image,
   skew,
   containerClassName,
+  cards = [],
+  buttons = [],
+  tabs = [],
 }) => {
   // Filter out any empty button objects
   const heroButtons = buttons.filter(button => {
     return button.href || button.title || button.icon;
+  });
+
+  // Filter out any empty button objects
+  const heroTabs = tabs.filter(tab => {
+    return tab.href;
   });
 
   return (
@@ -269,6 +278,8 @@ export const Hero: React.FunctionComponent<IHero> = ({
             </div>
           ) : null}
         </div>
+
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
 
         {particles && (
           <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>

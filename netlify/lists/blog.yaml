@@ -3,8 +3,8 @@ tag: blog
 title: Stoplight API Corner
 subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
 color: purple
-buttons:
-  - href: /blog/blog-general
+tabs:
+  - href: /blog/general
     title: General
   - href: /blog/api-design
     title: API Design
