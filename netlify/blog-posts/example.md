@@ -1,5 +1,5 @@
 ---
-path: /blog/http-testing
+path: /blog/the-fundamentals-of-http-api-unit-testing-2c55cd0c7634
 tags:
   - blog
   - blog-testing
@@ -17,10 +17,10 @@ actionBar:
   enabled: false
 meta:
   description: The Fundamentals of HTTP API Unit Testing
-  title: Blog | Stoplight
+  title: ' HTTP API Unit Testing | Stoplight'
   twitter:
     description: The Fundamentals of HTTP API Unit Testing
-    title: Blog | Stoplight
+    title: ' HTTP API Unit Testing | Stoplight'
     username: '@stoplightio'
 ---
 
