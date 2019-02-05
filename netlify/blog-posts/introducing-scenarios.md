@@ -1,11 +1,12 @@
 ---
-path: /blog/introducing-scenarios
+path: /blog/introducing-scenarios-3b88242cf9cc
 tags:
   - blog-testing
   - blog
 relatedTags:
   - blog-testing
 publishedDate: 2017-02-09T00:05:29.244Z
+author: Stoplight
 title: Introducing Scenarios
 subtitle: 'The lean, mean, API testing machine'
 image: /images/introducing-scenarios.png
