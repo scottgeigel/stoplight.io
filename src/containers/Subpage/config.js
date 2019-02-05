@@ -80,6 +80,7 @@ export const SubpageConfig = {
     {
       name: 'tabs',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'title',

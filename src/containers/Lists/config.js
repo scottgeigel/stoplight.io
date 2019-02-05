@@ -44,6 +44,7 @@ export const ListsConfig = {
     {
       name: 'tabs',
       widget: 'list',
+      required: false,
       fields: [
         {
           name: 'title',
