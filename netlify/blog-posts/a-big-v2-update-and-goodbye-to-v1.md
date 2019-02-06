@@ -61,5 +61,3 @@ Please send questions or comments to [@stoplightio](https://twitter.com/stopligh
 
 The Stoplight Team
 Marc, Chris, Tom, and Vazha
-
-*Originally published at [stoplight.ghost.io](http://stoplight.ghost.io/a-big-v2-update-and-goodbye-to-v1/) on August 17, 2016.*
