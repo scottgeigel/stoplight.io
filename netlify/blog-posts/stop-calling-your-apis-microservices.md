@@ -4,6 +4,7 @@ tags:
   - blog-design
   - blog-industry
   - blog-general
+  - blog
 relatedTags:
   - blog-design
   - blog-industry
