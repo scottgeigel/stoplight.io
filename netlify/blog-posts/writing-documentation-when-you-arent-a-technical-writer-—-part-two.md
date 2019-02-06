@@ -36,7 +36,7 @@ _Welcome back for Part Two of Writing Documentation When You Aren’t A Technica
 
 ## That’s all!
 
-<iframe src="https://medium.com/media/d230c2767d99b0fb95a83b47bc5bbb96" frameborder=0></iframe>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;That&#39;s all!&quot; 😞 <a href="https://t.co/zKtabSPJ1z">pic.twitter.com/zKtabSPJ1z</a></p>&mdash; Tracy Chou 👩🏻‍💻 (@triketora) <a href="https://twitter.com/triketora/status/890179098680668160?ref_src=twsrc%5Etfw">July 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 That’s all! 😰 It seems pretty harmless when you first read it out of context, but think of how certain words like “easy,” “simple,” “trivial,” and “not hard” make you feel like when you are struggling — not great! When you are stuck trying to get an API to work, encountering these terms can sometimes make you question your intelligence and ask yourself, “Am I being dumb?” It can be demoralizing.
 
@@ -200,7 +200,3 @@ I recommend having these qualities considered when someone is reviewing your doc
 The reality is word choice is hard. There are no magical formulas for it. All of our users and use cases are different; what might work for one set of users might not work for another. If it were easy, we’d all have a lot better documentation. As Ruthie says to developers, “writing software is an exercise in naming things. Embrace it.” And if you are writing docs for something someone else created, “let the developer know when their names miss the mark.”
 
 _I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Keep your eye out for part three coming out in September, and check out [part one from July](https://medium.com/api-corner/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1)._
-
-*We started a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
-
-![](https://cdn-images-1.medium.com/max/11000/1*t-0nFtOwlgG0xGyouTJapQ.png)
