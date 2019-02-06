@@ -28,7 +28,7 @@ meta:
 ---
 Photo by Scott Webb on Unsplash
 
-So you’ve got a new API project! You have read [my last post about the importance of API design](https://blog.stoplight.io/openapi-and-design-first-principles-96e7c4b2aec1) and how you shouldn’t generate OpenAPI design from code, have listened to other API experts, or possibly have even been burned from previous experience with bad API design. Therefore, you have decided to go ahead with a design-first approach for this new project. Still, you are not quite sure how to start. This article will be your guide.
+So you’ve got a new API project! You have read [my last post about the importance of API design](/blog/openapi-and-design-first-principles-96e7c4b2aec1) and how you shouldn’t generate OpenAPI design from code, have listened to other API experts, or possibly have even been burned from previous experience with bad API design. Therefore, you have decided to go ahead with a design-first approach for this new project. Still, you are not quite sure how to start. This article will be your guide.
 
 First, we’ll look at the API lifecycle, the importance of API design, and the API design flow. We’ll also talk about the basic building blocks of an API and how the OpenAPI Specification supports them. Then, we’ll build a minimal example API from scratch using Stoplight’s visual editor. We’ll regularly peek under the hood as well to gain an understanding of what the generated OpenAPI file looks like so you’ll find your way around OpenAPI if you should ever need to edit it manually.
 

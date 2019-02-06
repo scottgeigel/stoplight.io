@@ -64,7 +64,7 @@ A *security requirement*, on the other hand, can exist both globally for the ent
 
 ### Specifying OpenAPI Security with Stoplight
 
-If this is your first time using Stoplight or OpenAPI, I recommend you to [walk through my OpenAPI tutorial](https://blog.stoplight.io/getting-started-with-api-design-using-stoplight-and-openapi-90fc8f37ac2e), in which you’ll build a simple calendar API and learn both Stoplight’s visual editor as well as the OpenAPI specification itself.
+If this is your first time using Stoplight or OpenAPI, I recommend you to [walk through my OpenAPI tutorial](/blog/getting-started-with-api-design-using-stoplight-and-openapi-90fc8f37ac2e), in which you’ll build a simple calendar API and learn both Stoplight’s visual editor as well as the OpenAPI specification itself.
 
 If you already have a project in Stoplight that is missing security, now is an excellent chance to open it and add the definitions and requirements.
 

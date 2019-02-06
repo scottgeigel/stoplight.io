@@ -29,7 +29,7 @@ meta:
 ## New 🚀
 
 **[Projects] Versions and Releases!**
-You can now declare versions and releases within Stoplight to manage and track changes made to your project over time. You can identify which version you are viewing in the top right of the editor. We wrote more on Stoplight’s perspective on Versions and Releases [here](https://blog.stoplight.io/the-stoplight-way-versions-and-releases-ba7009e51bab).
+You can now declare versions and releases within Stoplight to manage and track changes made to your project over time. You can identify which version you are viewing in the top right of the editor. We wrote more on Stoplight’s perspective on Versions and Releases [here](/blog/the-stoplight-way-versions-and-releases-ba7009e51bab).
 
 **[Projects] Versions:** Versions are editable snapshots of your current project. When you create a new project, it will automatically start at version 1.0. Read more about Versions [here](https://docs.stoplight.io/platform/versioning/versions).
 

@@ -32,7 +32,7 @@ meta:
 
 # API Proxy vs API Gateway
 
-On this edition of *I’ll REST when I’m Alive*, I will be exploring the differences and similarities between API Proxies and API Gateways. Expanding on my previous post, *[API Microgateways](https://blog.stoplight.io/api-microgateways-55d656950d6c)*, I will also be discussing the advantages and disadvantages of both and the individual use cases.
+On this edition of *I’ll REST when I’m Alive*, I will be exploring the differences and similarities between API Proxies and API Gateways. Expanding on my previous post, *[API Microgateways](/blog/api-microgateways-55d656950d6c)*, I will also be discussing the advantages and disadvantages of both and the individual use cases.
 
 ## API Proxies
 

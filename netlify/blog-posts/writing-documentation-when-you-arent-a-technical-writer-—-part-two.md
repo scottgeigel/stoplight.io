@@ -20,7 +20,7 @@ actionBar:
   enabled: false
 meta:
   canonical: >-
-    https://blog.stoplight.io/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a
+    /blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: When You Aren't A Technical Writer | Stoplight
@@ -29,14 +29,14 @@ meta:
     image: /images/mark_light_bg.png
     username: '@stoplight.io'
 ---
-_Welcome back for Part Two of Writing Documentation When You Aren’t A Technical Writer! In [Part One](https://blog.stoplight.io/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1), we discussed how to write documentation people actually read and how to avoid the common pitfalls caused by code samples in your documentation._
+_Welcome back for Part Two of Writing Documentation When You Aren’t A Technical Writer! In [Part One](/blog/writing-documentation-when-you-arent-a-technical-writer-part-one-ef08a09870d1), we discussed how to write documentation people actually read and how to avoid the common pitfalls caused by code samples in your documentation._
 
 > In the fall of 2016, my teammate and I were tasked with the mission of improving my former company’s documentation and content. We spent a year working on all kinds of documentation — API references, guides, tutorials, and blog posts. I had been writing documentation off and on over the previous 5 years, but I wasn’t formally trained in technical writing. I was by no means inexperienced though, due to working on API documentation for projects and a startup and teaching Python Flask workshops towards the end of my computer science degree. This was the first time I had ever been able to focus on documentation, which allowed me to pursue my passion for helping people of all skill levels through technical documentation.
 > In that year, I learned a lot from the Write the Docs community, other API providers, and my own trials and errors. Last year, I spoke about it in a talk, “Things I Wish People Told Me About Writing Docs,” at the API Strategy and Practice Conference in Portland, OR. This multipart series is a survey of what I learned.
 
 ## That’s all!
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;That&#39;s all!&quot; 😞 <a href="https://t.co/zKtabSPJ1z">pic.twitter.com/zKtabSPJ1z</a></p>&mdash; Tracy Chou 👩🏻‍💻 (@triketora) <a href="https://twitter.com/triketora/status/890179098680668160?ref_src=twsrc%5Etfw">July 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;That&#39;s all!&quot; 😞 <a href="https://t.co/zKtabSPJ1z">pic.twitter.com/zKtabSPJ1z</a></p>&mdash; Tracy Chou 👩🏻‍💻 (@triketora) <a href="https://twitter.com/triketora/status/890179098680668160?ref_src=twsrc%5Etfw">July 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 That’s all! 😰 It seems pretty harmless when you first read it out of context, but think of how certain words like “easy,” “simple,” “trivial,” and “not hard” make you feel like when you are struggling — not great! When you are stuck trying to get an API to work, encountering these terms can sometimes make you question your intelligence and ask yourself, “Am I being dumb?” It can be demoralizing.
 

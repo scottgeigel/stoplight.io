@@ -110,7 +110,7 @@ Perfect! We are all set to run our tests. Click **Run Scenario** and watch your 
 
 ### In Conclusion
 
-There are a number of things about Stoplight’s Scenarios that we didn’t cover here. If you wish to get more insight into what else it can do, a good place to look is [Intro to Scenarios](https://blog.stoplight.io/introducing-scenarios-3b88242cf9cc). This is by no means a complete overview of Stoplight and its tools. My hope is, however, that if you have been on the fence about writing tests, or don’t necessarily like to write them, that this intro will give you the courage to take the leap. The added benefit of using Stoplight is getting familiar with Swagger/OAS. It acts as a gateway to using more sophisticated or commonly used tools.
+There are a number of things about Stoplight’s Scenarios that we didn’t cover here. If you wish to get more insight into what else it can do, a good place to look is [Intro to Scenarios](/blog/introducing-scenarios-3b88242cf9cc). This is by no means a complete overview of Stoplight and its tools. My hope is, however, that if you have been on the fence about writing tests, or don’t necessarily like to write them, that this intro will give you the courage to take the leap. The added benefit of using Stoplight is getting familiar with Swagger/OAS. It acts as a gateway to using more sophisticated or commonly used tools.
 
 *Have an API, need to test it? [Stoplight Scenarios](https://scenarios.stoplight.io) make it easy to thoroughly test your APIs, both during development, and as part of your continuous integration process.*
 > **About the author.** [Uri Maxima](https://medium.com/@urimaxima) is a witty and brilliant software engineer, passionate about automation, intelligent design and social impact.

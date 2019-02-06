@@ -55,7 +55,7 @@ Your API design requires a way to define how the API will be used. The future-th
 
 Now that you’ve chosen OAS 3.0, you may be tempted to set that aside until after you build your API. While it’s useful to describe existing APIs, you should also use your OpenAPI description while designing a new API.
 
-When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The [design-first approach](https://blog.stoplight.io/openapi-and-design-first-principles-96e7c4b2aec1) offers a single source of truth, readable by collaborators and machines alike.
+When you design your API alongside a description, you always have the artifact to communicate what’s possible with your API. The [design-first approach](/blog/openapi-and-design-first-principles-96e7c4b2aec1) offers a single source of truth, readable by collaborators and machines alike.
 
 ### The Design-Second Oxymoron
 
