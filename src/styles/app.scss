@@ -50,7 +50,7 @@ ul {
 }
 
 #root {
-  height: 100%;
+  overflow: hidden;
 
   section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -177,6 +177,12 @@ ul {
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
   font-size: 15px;
+  max-width: 760px;
+  margin: auto;
+}
+
+.case-study {
+  max-width: 100%;
 }
 
 .markdown-body s {
@@ -579,9 +585,17 @@ ul {
   box-sizing: content-box;
   background-color: #fff;
   border-style: none;
-  max-width: 760px;
   box-shadow: 0 0px 3px rgba(black, 0.3);
   border-radius: 2px;
+  display: block;
+  max-width: 100%;
+}
+
+.markdown-body img + strong,
+.markdown-body img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
 }
 
 .markdown-body .highlight {

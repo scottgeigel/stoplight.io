@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { DiscussionEmbed } from 'disqus-react';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
@@ -6,6 +7,7 @@ import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
 import { Hero, IHero, IHeroAuthor, IHeroBreadCrumb } from 'src/components/Hero';
+import { Image } from 'src/components/Image';
 import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
@@ -19,9 +21,9 @@ export interface IPage {
   pageName?: string;
   breadCrumbs?: IHeroBreadCrumb[];
   body: string;
+  bodyImage?: string;
   author?: IHeroAuthor;
   publishedDate?: string;
-  image?: string;
   color?: string;
   hero: Partial<IHero>;
   cta?: ICallToAction;
@@ -40,12 +42,14 @@ export interface IPage {
  */
 
 export const Subpage: React.FunctionComponent<IPage> = ({
+  className,
   path,
   title,
   subtitle,
   pageName,
   breadCrumbs,
   body,
+  bodyImage,
   author,
   publishedDate,
   color,
@@ -98,7 +102,18 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className="markdown-body" dangerouslySetInnerHTML={{ __html: body }} />
+            {bodyImage && (
+              <div
+                className="text-center mb-10"
+                style={{
+                  marginTop: -120,
+                }}
+              >
+                <Image className="rounded-lg shadow bodyImage" src={bodyImage} alt={bodyImage} />
+              </div>
+            )}
+
+            <div className={cn('markdown-body', className)} dangerouslySetInnerHTML={{ __html: body }} />
           </div>
         </Container>
       </Section>

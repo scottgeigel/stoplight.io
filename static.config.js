@@ -339,6 +339,7 @@ export default {
         hero: {
           aligned: 'left',
         },
+        bodyImage: props.image,
         meta: {
           ...props.meta,
           jld: {
@@ -392,6 +393,7 @@ export default {
       sidebar.info.image = props.image;
 
       return {
+        className: 'case-study',
         pageName: 'Case Study',
         sidebar,
         hero: {

@@ -4,8 +4,10 @@ export interface IImage {
   src: string;
   alt?: string;
   className?: string;
+
+  style?: any;
 }
 
-export const Image: React.FunctionComponent<IImage> = ({ className, src, alt }) => {
-  return <img className={className} src={src} alt={alt || src} />;
+export const Image: React.FunctionComponent<IImage> = ({ className, src, alt, style }) => {
+  return <img className={className} src={src} alt={alt || src} style={style} />;
 };

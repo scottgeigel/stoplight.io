@@ -58,13 +58,18 @@ export interface IHeroBreadCrumb {
   path?: string;
 }
 
+interface IHeroImage extends IImage {
+  section?: boolean;
+  className?: string;
+}
+
 export interface IHero {
   title: string;
   subtitle: string;
   pageName?: string;
   breadCrumbs?: IHeroBreadCrumb[];
   author?: IHeroAuthor;
-  image?: IImage;
+  image?: IHeroImage;
   bgColor?: string;
   aligned?: 'center' | 'right' | 'left';
   cta?: ICallToAction;
@@ -169,6 +174,22 @@ const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, c
   }
 
   return <div className="sm:w-1/2">{elem}</div>;
+};
+
+const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, section = true, src, alt }) => {
+  if (!src) {
+    return null;
+  }
+
+  return (
+    <section className="md:hidden">
+      {
+        <Container className="relative text-center" style={{ height: 500 }}>
+          <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} />
+        </Container>
+      }
+    </section>
+  );
 };
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -346,13 +367,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         />
       </div>
 
-      {image && (
-        <section>
-          <Container className="sm:hidden relative" style={{ height: 500 }}>
-            <Image className="absolute pin" {...image} />
-          </Container>
-        </section>
-      )}
+      {image && <HeroImage {...image} />}
     </React.Fragment>
   );
 };
