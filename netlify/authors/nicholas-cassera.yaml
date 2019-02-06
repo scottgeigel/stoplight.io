@@ -1,12 +1,10 @@
 path: '/blog/author/nicholas-cassera '
-tag: Author
+tag: author
 title: Nicholas Cassera
-subtitle: bio
+subtitle: ' '
 pageName: Software Engineer
 image: /images/cassera_headshot.png
 color: green
-buttons:
-  - {}
 actionBar:
   buttons:
     - color: purple
