@@ -1,16 +1,14 @@
 path: /blog/author/marc-macleod
-tag: Author
+tag: author
 title: Marc MacLeod
-subtitle: Bio
+subtitle: ' '
 pageName: Founder & CEO
 image: /images/macleod_headshot.png
 color: purple
-buttons:
-  - {}
 actionBar:
   buttons:
     - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
