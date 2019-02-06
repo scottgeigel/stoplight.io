@@ -6,15 +6,17 @@ subtitle: >-
   coverage based on your API contracts. Test your endpoints, status codes, and
   more
 title: API Integration Testing
-relatedLinks:
-  - title: Stoplight Testing
-    href: /testing
+tabs:
   - title: Stoplight Mocking
     href: /mocking
+  - title: API Testing
+    href: /testing
   - title: Enterprise API Testing
-    href: /testing/enterprisetesting
-  - title: API Design
-    href: /design
+    href: /testing/enterprise
+  - title: Free API Testing
+    href: /testing/free
+  - title: API Integration Testing
+    href: /testing/integration
   - title: Stoplight Blog
     href: /blog
 actionBar:

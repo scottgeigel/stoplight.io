@@ -9,15 +9,17 @@ subtitle: >-
 title: API Design Tooling for Enterprises
 actionBar:
   enabled: true
-relatedLinks:
+tabs:
   - title: API Design
     href: /design
-  - title: Free API Design
+  - title: Enterprise API Design
+    href: /design/enterprise
+  - title: Free API Design Tool
     href: /design/free
-  - title: Web API Design Tool
-    href: /design/web
   - title: API Prototype Tool
     href: /design/prototype
+  - title: Web API Design Tool
+    href: /design/web
 meta:
   description: >-
     Build enterprise-ready APIs for your organization within minutes using our

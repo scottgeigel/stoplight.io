@@ -5,7 +5,7 @@ subtitle: >-
   Use Stoplight to provide comprehensive web API documentation to improve
   developer experience
 title: Helper API Documentation
-relatedLinks:
+tabs:
   - title: API Documentation Guide
     href: https://docs.stoplight.io/documentation/introduction
   - title: API Documentation Best Practices

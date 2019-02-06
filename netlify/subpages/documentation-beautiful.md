@@ -3,13 +3,13 @@ path: /documentation/beautiful
 color: green
 subtitle: 'API Documentation that makes an Impact'
 title: Beautiful API Documentation
-relatedLinks:
+tabs:
   - title: API Documentation Guide
-    href: https://docs.stoplight.io/documentation/introduction
+    href: /documentation/introduction
   - title: API Documentation Best Practices
-    href: https://docs.stoplight.io/documentation/best-practices/hubs
+    href: /documentation/best-practices/hubs
   - title: The Evolution of API Documentation at Stoplight
-    href: https://blog.stoplight.io/api-documentation/home
+    href: /blog/api-documentation
   - title: Documentation | Stoplight Community
     href: https://community.stoplight.io/c/api-best-practices/documentation
 actionBar:

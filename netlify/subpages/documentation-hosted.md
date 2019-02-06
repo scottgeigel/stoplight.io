@@ -3,12 +3,12 @@ path: /documentation/hosted
 color: green
 subtitle: Flexible Hosted Documentation Solutions that fit any use case
 title: Hosted API Documentation
-relatedLinks:
+tabs:
   - title: API Documentation Guide
     href: https://docs.stoplight.io/documentation/introduction
   - title: Documentation | Community
     href: https://community.stoplight.io/c/api-best-practices/documentation
-  - title: 'How to Embed Documentation '
+  - title: How to Embed Documentation
     href: https://docs.stoplight.io/documentation/embed-your-hub
   - title: Download Static HTML & CSS
     href: https://docs.stoplight.io/documentation/download-static-html

@@ -3,15 +3,17 @@ path: /testing/free
 color: orange
 subtitle: The Complete Set of Free API Testing Tools
 title: Free API Testing Tool
-relatedLinks:
+tabs:
   - title: API Testing
-    href: https://stoplight.io/testing
+    href: /testing
+  - title: Enterprise API Testing
+    href: /testing/enterprise
+  - title: Free API Testing
+    href: /testing/free
   - title: API Integration Testing
-    href: https://stoplight.io/testing/integration
+    href: /testing/integration
   - title: Contract Testing
     href: https://docs.stoplight.io/testing/leveraging-openapi/contract-testing
-  - title: Enterprise API Testing
-    href: https://stoplight.io/testing/enterprise
 actionBar:
   enabled: true
 meta:

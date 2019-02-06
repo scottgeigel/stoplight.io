@@ -3,15 +3,15 @@ path: /documentation/generator
 color: green
 subtitle: Generate API Documentation Instantly
 title: API Documentation Generator
-relatedLinks:
+tabs:
   - title: API Documentation
-    href: https://stoplight.io/documentation
+    href: /documentation
   - title: Beautiful API Documentation
-    href: https://stoplight.io/documentation/beautiful
+    href: /documentation/beautiful
   - title: API Documentation Automation
-    href: https://stoplight.io/documentation/automation
+    href: /documentation/automation
   - title: Enteprise API Documentation
-    href: https://stoplight.io/documentation/enterprise
+    href: /documentation/enterprise
   - title: Stoplight Blog
     href: /blog
 actionBar:

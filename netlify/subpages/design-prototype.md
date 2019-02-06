@@ -11,15 +11,17 @@ image:
 color: blue
 actionBar:
   enabled: true
-relatedLinks:
+tabs:
   - title: API Design
-    href: https://stoplight.io/design
-  - title: Automated API Documentation
-    href: https://stoplight.io/documentation/automated
-  - title: API Mocking
-    href: https://stoplight.io/mocking
-  - title: Stoplight Blog
-    href: https://blog.stoplight.io/
+    href: /design
+  - title: Enterprise API Design
+    href: /design/enterprise
+  - title: Free API Design Tool
+    href: /design/free
+  - title: API Prototype Tool
+    href: /design/prototype
+  - title: Web API Design Tool
+    href: /design/web
 meta:
   description: >-
     Build web APIs using our collaborative, powerful, and quick visual editor

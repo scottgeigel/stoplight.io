@@ -7,17 +7,17 @@ subtitle: Automate your API Documentation Workflow
 title: Automatic API Documentation
 image:
 color: green
-relatedLinks:
+tabs:
   - title: API Documentation
-    href: https://stoplight.io/documentation
+    href: /documentation
   - title: Beautiful API Documentation
-    href: https://stoplight.io/documentation/beautiful
+    href: /documentation/beautiful
   - title: API Testing
-    href: https://stoplight.io/testing
+    href: /testing
   - title: Enterprise API Testing
-    href: https://stoplight.io/testing/enterprise
+    href: /testing/enterprise
   - title: Stoplight Blog
-    href: https://blog.stoplight.io/
+    href: /blog
 actionBar:
   enabled: true
 meta:

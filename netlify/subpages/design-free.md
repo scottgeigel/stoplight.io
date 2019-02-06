@@ -11,15 +11,17 @@ image:
 color: blue
 actionBar:
   enabled: true
-relatedLinks:
+tabs:
   - title: API Design
-    href: https://stoplight.io/design
-  - title: Web API Design Tool
-    href: https://stoplight.io/design/web
+    href: /design
   - title: Enterprise API Design
-    href: https://stoplight.io/design/enterprise
+    href: /design/enterprise
+  - title: Free API Design Tool
+    href: /design/free
   - title: API Prototype Tool
-    href: https://stoplight.io/design/prototype
+    href: /design/prototype
+  - title: Web API Design Tool
+    href: /design/web
 meta:
   description: >-
     Build web APIs with a powerful, free visual OpenAPI Specification editor

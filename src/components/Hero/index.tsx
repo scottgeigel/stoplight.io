@@ -279,7 +279,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
           ) : null}
         </div>
 
-        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} color={bgColor} /> : null}
+        {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
 
         {particles && (
           <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>

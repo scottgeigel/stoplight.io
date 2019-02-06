@@ -6,13 +6,15 @@ subtitle: >-
   coverage based on your API contracts. Test your endpoints, status codes, and
   more
 title: Enterprise API Testing Tool
-relatedLinks:
+tabs:
   - title: API Testing
-    href: https://stoplight.io/testing
-  - title: API Integration Testing
-    href: https://stoplight.io/testing/integration
+    href: /testing
+  - title: Enterprise API Testing
+    href: /testing/enterprise
   - title: Free API Testing
-    href: https://stoplight.io/testing/free
+    href: /testing/free
+  - title: API Integration Testing
+    href: /testing/integration
   - title: Contract Testing
     href: https://docs.stoplight.io/testing/leveraging-openapi/contract-testing
 actionBar:

@@ -9,7 +9,9 @@ subtitle: >-
 title: Web API Design Tool
 image:
 color: blue
-relatedLinks:
+tabs:
+  - title: Web API Design Tool
+    href: /design/web
   - title: API Modeling Guide
     href: https://docs.stoplight.io/modeling/introduction
   - title: OpenAPI Initiative
