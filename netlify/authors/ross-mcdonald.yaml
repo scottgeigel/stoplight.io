@@ -1,7 +1,7 @@
 path: /blog/author/ross-mcdonald
-tag: 'author'
+tag: author
 title: Ross McDonald
-subtitle: Blurb about Ross....
+subtitle: ' '
 pageName: Software Engineer
 image: /images/mcdonald_headshot.png
 color: purple-darker
@@ -15,3 +15,5 @@ meta:
     description: Ross McDonald
     title: Ross McDonald | Stoplight
     username: '@stoplightio'
+pagination:
+  enabled: true
