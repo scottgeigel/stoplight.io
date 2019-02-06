@@ -1,11 +1,15 @@
 ---
 path: /policy
-hero:
-  aligned: center
-  bgColor: black
-  particles: true
-  subtitle: 'Last updated: October 1, 2018'
-  title: Support Policy
+color: black
+subtitle: 'Last updated: October 1, 2018'
+title: Support Policy
+tabs:
+  - title: Terms
+    href: /terms
+  - title: Privacy Policy
+    href: /privacy
+  - title: Support Policy
+    href: /policy
 ---
 ## 1. Overview
 

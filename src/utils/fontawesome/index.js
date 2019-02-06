@@ -36,6 +36,7 @@ export const init = () => {
   library.add(faArrowRight);
   library.add(faBars);
   library.add(faTimes);
+
   library.add(faTwitter);
   library.add(faLinkedin);
   library.add(faGithub);

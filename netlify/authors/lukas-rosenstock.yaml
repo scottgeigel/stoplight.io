@@ -1,0 +1,25 @@
+path: /blog/author/lukas-rosenstock
+tag: Author
+title: Lukas Rosenstock
+subtitle: >-
+  Lukas Rosenstock is an independent software developer (PHP/JS), technical
+  writer, API consultant, and entrepreneur who has a decade of experience
+  working in and with startups. Lukas believes in the potential of APIs to
+  empower people and small businesses. Currently, he serves multiple clients
+  with his unique combination of coding expertise, a perspective on business
+  strategy, privacy-by-design mindset, and passion for great documentation. He‘s
+  also building CloudObjects, an API directory, community, and platform for
+  developer tools.
+pageName: Contributing Author
+image: /images/rosenstock_lukas.jpg
+color: green
+actionBar:
+  enabled: false
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: 'Lukas Rosenstock | Stoplight '
+  twitter:
+    title: 'Lukas Rosenstock | Stoplight '
+    username: '@stoplightio'
+pagination: {}

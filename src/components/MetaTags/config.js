@@ -37,6 +37,12 @@ export default {
       default: 'index, follow',
     },
     {
+      label: 'Canonical',
+      name: 'canonical',
+      widget: 'string',
+      required: false,
+    },
+    {
       label: 'Twitter',
       name: 'twitter',
       widget: 'object',

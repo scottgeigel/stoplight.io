@@ -1,0 +1,27 @@
+path: /blog/api-testing
+tag: blog-testing
+title: API Testing
+color: purple
+tabs:
+  - href: /blog/general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
+actionBar:
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: API Testing | Stoplight
+  twitter:
+    title: API Testing | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

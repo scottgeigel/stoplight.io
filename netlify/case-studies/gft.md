@@ -1,35 +1,35 @@
 ---
-path: /gft
-hero:
-  bgColor: blue
-  pageName: Customer Story
-  skew: 3deg
-  subtitle: >-
-    GFT Technology is a leading IT solutions supplier with a focus on the
-    financial sector.
-  title: GFT Technology
-info:
-  employees: 5000-10000
-  industry: 'Big Data, IT, & Financial Services'
-  location: Germany
-  logo: /images/gft_group_logo.jpg
-  name: GFT Technology
-quotes:
-  - author: Carlos Lozano
-    quote: >-
-      Stoplight allows even the most non-technical team members to take a shot
-      at defining an API using Stoplight’s visual editor — it reduces the
-      learning curve to a minimum, people get to grips with the basics of API
-      specification development in a matter of hours — not weeks. Also, it makes
-      documenting an API and providing a testing harness for it a breeze.
-    role: Senior Enterprise Architect
+path: /case-studies/gft
+tags: ['case-study']
+relatedTags: ['case-study']
+publishedDate: 'Dec 22, 2018'
+title: GFT Technology
+subtitle: >-
+  GFT Technology is a leading IT solutions supplier with a focus on the
+  financial sector.
+image: /images/gft_group_logo.jpg
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: Big Data, IT, & Financial Services<br/>
+      **Location**: Germany<br/>
+      **Employees**: 5000-10000
+  quotes:
+    - author: Carlos Lozano
+      quote: >-
+        Stoplight allows even the most non-technical team members to take a shot
+        at defining an API using Stoplight’s visual editor — it reduces the
+        learning curve to a minimum, people get to grips with the basics of API
+        specification development in a matter of hours — not weeks. Also, it makes
+        documenting an API and providing a testing harness for it a breeze.
+      role: Senior Enterprise Architect
 actionBar:
   enabled: true
 meta:
   description: >-
     How GFT Technology found a balanced tool for developers and non-technical
     staff in Stoplight
-  favicon: /images/mark_light_bg.png
   title: GFT | Stoplight
   twitter:
     description: >-

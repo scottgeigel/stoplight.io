@@ -1,0 +1,22 @@
+path: /blog/author/vincenzo-chianese
+tag: Author
+title: Vincenzo Chianese
+subtitle: >-
+  Vincenzo Chianese is an Italian Software Developer focused on WebAPIs and User
+  Interfaces. He's also a prolific speakers and always willing to fly to any
+  conference. In his spare time, he maintains different open source projects,
+  including Express Gateway, an open source API Gateway written in Javascript
+  and running on NodeJS.
+pageName: Software Engineer
+image: /images/chianese_headshot.png
+color: red
+actionBar:
+  enabled: false
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Vincenzo Chianese | Stoplight
+  twitter:
+    title: Vincenzo Chianese | Stoplight
+    username: '@stoplightio'
+pagination: {}

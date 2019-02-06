@@ -11,48 +11,58 @@ hero:
     href: '#demo'
     name: Get a free demo
 color: orange
-features:
-  - description: >-
-      With our Visual Test Editor, create multi-step test scenarios to automate
-      testing your REST web APIs. Build scenarios by capturing and passing data
-      between test API calls. Then integrate your test scenarios into your
-      existing CI/CD pipeline with our command line tool, powered by Prism.
-    image: /images/testing_automation.png
-    shortName: CI/CD Integration
-    title: Simple Automated API Testing
-  - description: >-
-      Create test collections that ensure the API implementation meets the
-      standards and definitions described in your OpenAPI Specification or JSON
-      Schema, also known as Contract Testing. Stoplight uses realistic, dynamic
-      data based on your OpenAPI Specification to simulate real-life API
-      consumers across your local development, staging, and production
-      environments complementing your Unit tests.
-    image: /images/testing_validation.png
-    shortName: Contract Testing
-    title: Contract Testing
-  - description: >-
-      With integrated Contract Testing reporting capabilities, you can track
-      your progress towards 100% coverage. Stoplight verifies that the API
-      responses for different status codes match the contract of a connected
-      OpenAPI Specification; enabling collaboration over API test coverage
-      within your organization.
-    image: /images/testing_reporting.png
-    shortName: Coverage Reporting
-    title: Coverage Reporting
+featureSection:
+  features:
+    - description: >-
+        With our Visual Test Editor, create multi-step test scenarios to automate
+        testing your REST web APIs. Build scenarios by capturing and passing data
+        between test API calls. Then integrate your test scenarios into your
+        existing CI/CD pipeline with our command line tool, powered by Prism.
+      image: /images/testing_automation.png
+      shortName: CI/CD Integration
+      title: Simple Automated API Testing
+    - description: >-
+        Create test collections that ensure the API implementation meets the
+        standards and definitions described in your OpenAPI Specification or JSON
+        Schema, also known as Contract Testing. Stoplight uses realistic, dynamic
+        data based on your OpenAPI Specification to simulate real-life API
+        consumers across your local development, staging, and production
+        environments complementing your Unit tests.
+      image: /images/testing_validation.png
+      shortName: Contract Testing
+      title: Contract Testing
+    - description: >-
+        With integrated Contract Testing reporting capabilities, you can track
+        your progress towards 100% coverage. Stoplight verifies that the API
+        responses for different status codes match the contract of a connected
+        OpenAPI Specification; enabling collaboration over API test coverage
+        within your organization.
+      image: /images/testing_reporting.png
+      shortName: Coverage Reporting
+      title: Coverage Reporting
 hubspot:
   title: Request a demo
   description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
-customers:
-  - /images/ea.png
-  - /images/chargify-new-logo.png
-  - /images/deutsche_bank.png
-  - /images/logo-sendgrid.png
-  - /images/shopgate.png
-  - /images/spotify.png
-  - /images/tivo.png
-  - /images/logo_zendesk.png
+collage:
+  images:
+    - src: /images/ea.png
+      alt: EA
+    - src: /images/chargify-new-logo.png
+      alt: Chargify
+    - src: /images/deutsche_bank.png
+      alt: Deutsche Bank
+    - src: /images/logo-sendgrid.png
+      alt: Sendgrid
+    - src: /images/shopgate.png
+      alt: Shopgate
+    - src: /images/spotify.png
+      alt: Spotify
+    - src: /images/tivo.png
+      alt: TiVo
+    - src: /images/logo_zendesk.png
+      alt: Zendesk
 meta:
   robots: 'noindex, follow'
   description: >-

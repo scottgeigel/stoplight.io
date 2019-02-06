@@ -39,5 +39,3 @@ export class Portal extends React.PureComponent<IPortal> {
     return ReactDOM.createPortal(this.props.children, this.el);
   }
 }
-
-export default Portal;

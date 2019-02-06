@@ -1,53 +1,13 @@
-import hero from '@components/Hero/config';
-import product from '@components/ImageSection/config';
-import actionBar from '@components/ActionBar/config';
-import metaTags from '@components/MetaTags/config';
+import hero from 'src/components/Hero/config';
+import metaTags from 'src/components/MetaTags/config';
+
+import collage from 'src/sections/Collage/config';
+import imageCallout from 'src/sections/ImageCallout/config';
+import testimonials from 'src/sections/Testimonials/config';
 
 export default {
   label: 'Home',
   name: 'home',
   file: 'netlify/pages/home.yaml',
-  fields: [
-    hero,
-    product,
-    {
-      name: 'customers',
-      label: 'Customers',
-      widget: 'list',
-      field: {
-        name: 'image',
-        label: 'Image',
-        widget: 'image',
-      },
-    },
-    {
-      name: 'testimonials',
-      label: 'Testimonials',
-      widget: 'list',
-      fields: [
-        {
-          name: 'image',
-          label: 'Image',
-          widget: 'image',
-        },
-        {
-          name: 'quote',
-          label: 'Quote',
-          widget: 'string',
-        },
-        {
-          name: 'author',
-          label: 'Author',
-          widget: 'string',
-        },
-        {
-          name: 'role',
-          label: 'Role',
-          widget: 'string',
-        },
-      ],
-    },
-    actionBar,
-    metaTags,
-  ],
+  fields: [hero, collage, imageCallout, testimonials, metaTags],
 };

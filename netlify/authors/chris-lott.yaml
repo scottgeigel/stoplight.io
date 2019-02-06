@@ -1,0 +1,17 @@
+path: /blog/author/chris-lott
+tag: Author
+title: Chris Lott
+subtitle: ' '
+pageName: Software Engineer
+image: /images/lott_headshot.png
+color: orange
+actionBar:
+  enabled: false
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Chris Lott | Stoplight
+  twitter:
+    title: Chris Lott | Stoplight
+    username: '@stoplightio'
+pagination: {}

@@ -1,4 +1,4 @@
-import button from '@components/Button/config';
+import button from 'src/components/Button/config';
 
 export default {
   name: 'actionBar',

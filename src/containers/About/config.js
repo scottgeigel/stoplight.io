@@ -1,6 +1,11 @@
-import hero from '@components/Hero/config';
-import actionBar from '@components/ActionBar/config';
-import metaTags from '@components/MetaTags/config';
+import metaTags from 'src/components/MetaTags/config';
+
+import actionBar from 'src/components/ActionBar/config';
+import hero from 'src/components/Hero/config';
+
+import businesses from 'src/sections/Businesses/config';
+import collage from 'src/sections/Collage/config';
+import press from 'src/sections/PressSection/config';
 
 export default {
   label: 'About',
@@ -40,87 +45,9 @@ export default {
         },
       ],
     },
-    {
-      label: 'Quotes',
-      name: 'quotes',
-      widget: 'list',
-      fields: [
-        {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-        },
-        {
-          label: 'Quote',
-          name: 'quote',
-          widget: 'text',
-        },
-        {
-          label: 'Company',
-          name: 'company',
-          widget: 'string',
-        },
-        {
-          label: 'Author',
-          name: 'author',
-          widget: 'string',
-        },
-        {
-          label: 'Role',
-          name: 'role',
-          widget: 'string',
-        },
-      ],
-    },
-    {
-      label: 'Press',
-      name: 'press',
-      widget: 'list',
-      fields: [
-        {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-        },
-        {
-          label: 'Month, Year',
-          name: 'date',
-          widget: 'string',
-        },
-        {
-          label: 'Description',
-          name: 'description',
-          widget: 'markdown',
-        },
-        {
-          label: 'Publication',
-          name: 'publication',
-          widget: 'string',
-        },
-        {
-          label: 'Link',
-          name: 'href',
-          widget: 'string',
-        },
-      ],
-    },
-    {
-      label: 'Investors',
-      name: 'investors',
-      widget: 'list',
-      fields: [
-        {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-        },
-        {
-          label: 'Name',
-          name: 'name',
-          widget: 'string',
-        },
-      ],
-    },
+    businesses,
+    press,
+    collage,
     actionBar,
     metaTags,
   ],

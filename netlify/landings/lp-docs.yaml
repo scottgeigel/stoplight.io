@@ -11,64 +11,74 @@ hero:
     href: '#demo'
     name: Get a free demo
 color: green
-features:
-  - description: >-
-      Stoplight offers multiple ways for your API consumers to try out your API.
-      Test Requests within your documentation allows consumers to understand how
-      your API works. Code Examples generated from dozens of languages such as
-      JavaScript, Python, Ruby, Java, cURL, and more allow consumers to copy and
-      paste right into their own code.
-    image: /images/docs_feature_1.png
-    shortName: API Playground
-    title: Interactive API Documentation
-    titleURL: /documentation/beautiful/
-  - description: >-
-      Customize your documentation with Themes, Custom CSS, Pages, Domains, and
-      Versioning. With fully customizable layouts, page design and our
-      Markdown-based Editor, you can document multiple APIs and add rich content
-      and resources alongside API reference documentation for a more complete
-      view of your platform.
-    image: /images/product/docs-theme.png
-    shortName: Theming
-    title: Fully Customizable
-    titleURL: /documentation/helper/
-  - description: >-
-      Never have out-of-date documentation. Reference your OpenAPI Specification
-      document to [automatically generate API reference
-      documentation](https://stoplight.io/documentation/generator/). Use the
-      Stoplight API to automate your documentation process by integrating it
-      into your existing CI/CD workflow.
-    image: /images/docs_feature_3.png
-    shortName: CI/CD Integration
-    title: Automated API Documentation
-    titleURL: /documentation/automation/
-  - description: >-
-      With flexible and secure deployment options, you can find a hosting
-      solution that works for you. Allow Stoplight to host your documentation
-      for you, so you never have to worry about managing servers for your
-      documentation ever again. Manage access control and measure analytics with
-      integrations. [Our enterprise ready documentation
-      tool](https://stoplight.io/documentation/enterprise/) allows you to
-      download the static assets or use our on-premise solutions behind your
-      firewall to host your documentation from anywhere.
-    image: /images/flexible_deployment.png
-    shortName: Integrations
-    title: Simple, Flexible Deployment
-    titleURL: /documentation/hosted/
+featureSection:
+  features:
+    - description: >-
+        Stoplight offers multiple ways for your API consumers to try out your API.
+        Test Requests within your documentation allows consumers to understand how
+        your API works. Code Examples generated from dozens of languages such as
+        JavaScript, Python, Ruby, Java, cURL, and more allow consumers to copy and
+        paste right into their own code.
+      image: /images/docs_feature_1.png
+      shortName: API Playground
+      title: Interactive API Documentation
+      titleURL: /documentation/beautiful/
+    - description: >-
+        Customize your documentation with Themes, Custom CSS, Pages, Domains, and
+        Versioning. With fully customizable layouts, page design and our
+        Markdown-based Editor, you can document multiple APIs and add rich content
+        and resources alongside API reference documentation for a more complete
+        view of your platform.
+      image: /images/product/docs-theme.png
+      shortName: Theming
+      title: Fully Customizable
+      titleURL: /documentation/helper/
+    - description: >-
+        Never have out-of-date documentation. Reference your OpenAPI Specification
+        document to [automatically generate API reference
+        documentation](/documentation/generator/). Use the
+        Stoplight API to automate your documentation process by integrating it
+        into your existing CI/CD workflow.
+      image: /images/docs_feature_3.png
+      shortName: CI/CD Integration
+      title: Automated API Documentation
+      titleURL: /documentation/automation/
+    - description: >-
+        With flexible and secure deployment options, you can find a hosting
+        solution that works for you. Allow Stoplight to host your documentation
+        for you, so you never have to worry about managing servers for your
+        documentation ever again. Manage access control and measure analytics with
+        integrations. [Our enterprise ready documentation
+        tool](/documentation/enterprise/) allows you to
+        download the static assets or use our on-premise solutions behind your
+        firewall to host your documentation from anywhere.
+      image: /images/flexible_deployment.png
+      shortName: Integrations
+      title: Simple, Flexible Deployment
+      titleURL: /documentation/hosted/
 hubspot:
   title: Request a demo
   description: Stoplight on average shows a 36% gain in engineering time and increases quality 30%.
   formId: '7c71a3d0-fcd0-452f-981e-883c6cc86dd3'
   portalId: '4892910'
-customers:
-  - /images/ea.png
-  - /images/chargify-new-logo.png
-  - /images/deutsche_bank.png
-  - /images/logo-sendgrid.png
-  - /images/shopgate.png
-  - /images/spotify.png
-  - /images/tivo.png
-  - /images/logo_zendesk.png
+collage:
+  images:
+    - src: /images/ea.png
+      alt: EA
+    - src: /images/chargify-new-logo.png
+      alt: Chargify
+    - src: /images/deutsche_bank.png
+      alt: Deutsche Bank
+    - src: /images/logo-sendgrid.png
+      alt: Sendgrid
+    - src: /images/shopgate.png
+      alt: Shopgate
+    - src: /images/spotify.png
+      alt: Spotify
+    - src: /images/tivo.png
+      alt: TiVo
+    - src: /images/logo_zendesk.png
+      alt: Zendesk
 meta:
   robots: 'noindex, follow'
   description: >-

@@ -1,30 +1,30 @@
 ---
-path: /namely
-hero:
-  bgColor: blue
-  pageName: Customer Stories
-  skew: 3deg
-  subtitle: >-
-    Namely is an All-In-One HR Platform that strives to provide HR professionals
-    with the technology, data, and support they need to help employees thrive.
-  title: Namely
-info:
-  employees: 250-500
-  industry: HR Software
-  location: New York
-  logo: /images/logo_namely_transparent.png
-  name: Namely
-quotes:
-  - author: Katie Corcos
-    quote: >-
-      The UI was the best we had seen among all of the contenders thus far when
-      it came to the user experience, design, and customization.
-    role: Technologist
+path: /case-studies/namely
+tags: ['case-study']
+relatedTags: ['case-study']
+publishedDate: 'Dec 20, 2018'
+title: Namely
+subtitle: >-
+  Namely is an All-In-One HR Platform that strives to provide HR professionals
+  with the technology, data, and support they need to help employees thrive.
+image: /images/logo_namely_transparent.png
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: HR Software <br />
+      **Location**: New York <br />
+      **Employees**: 250-500
+  quotes:
+    - author: Katie Corcos
+      quote: >-
+        The UI was the best we had seen among all of the contenders thus far when
+        it came to the user experience, design, and customization.
+      role: Technologist
 actionBar:
   enabled: true
 meta:
   description: How Namely adopted API Design First Principles with Stoplight
-  favicon: /images/mark_light_bg.png
   title: Namely | Stoplight
   twitter:
     description: How Namely adopted API Design First Principles with Stoplight

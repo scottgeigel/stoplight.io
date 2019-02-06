@@ -1,0 +1,14 @@
+path: /case-studies
+tag: 'case-study'
+subtitle: Discover & Educate
+title: Case Studies
+actionBar:
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Read Our Case Studies | Stoplight
+  twitter:
+    title: Read Our Case Studies | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

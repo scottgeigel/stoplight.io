@@ -1,32 +1,32 @@
 ---
-path: /appointmentplus
-hero:
-  bgColor: blue
-  pageName: Customer Story
-  skew: 3deg
-  subtitle: >-
-    AppointmentPlus provides a scheduling platform that streamlines and
-    automates the scheduling process.
-  title: AppointmentPlus
-info:
-  employees: 50-100
-  industry: Scheduling Software
-  location: Arizona
-  logo: /images/logo_appointmentplus_transparent.png
-  name: AppointmentPlus
-quotes:
-  - author: Josh Flyer
-    quote: >-
-      We really enjoy the modeling feature, helping us define our API before
-      even writing code. Also, the way the modeling feature inherits models from
-      other Projects. Documentation integrates with OAS files, both partials or
-      the entire schema, which is rad.
-    role: Lead Developer
+path: /case-studies/appointmentplus
+tags: ['case-study']
+relatedTags: ['case-study']
+publishedDate: 'Jan 23, 2019'
+title: AppointmentPlus
+subtitle: >-
+  AppointmentPlus provides a scheduling platform that streamlines and
+  automates the scheduling process.
+image: /images/logo_appointmentplus_transparent.png
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: Scheduling Software<br/>
+      **Location**: Arizona<br/>
+      **Employees**: 50-100
+  quotes:
+    - author: Josh Flyer
+      quote: >-
+        We really enjoy the modeling feature, helping us define our API before
+        even writing code. Also, the way the modeling feature inherits models from
+        other Projects. Documentation integrates with OAS files, both partials or
+        the entire schema, which is rad.
+      role: Lead Developer
 actionBar:
   enabled: true
 meta:
   description: How AppointmentPlus managed multiple APIs with Stoplight
-  favicon: /images/mark_light_bg.png
   title: AppointmentPlus | Stoplight
   twitter:
     description: How AppointmentPlus managed multiple APIs with Stoplight

@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
-import { About } from '@containers/About';
-import { CaseStudies } from '@containers/CaseStudies';
-import { CaseStudy } from '@containers/CaseStudy';
-import { Form } from '@containers/Form';
-import { Home } from '@containers/Home';
-import { Landing } from '@containers/Landing';
-import { Pricing } from '@containers/Pricing';
-import { Subpage } from '@containers/Subpage';
+import { About } from 'src/containers/About';
+import { Form } from 'src/containers/Form';
+import { Home } from 'src/containers/Home';
+import { Landing } from 'src/containers/Landing';
+import { Pricing } from 'src/containers/Pricing';
+import { Subpage } from 'src/containers/Subpage';
+import { List } from 'src/containers/Lists';
 
-import Settings from '@components/Settings';
+import Settings from 'src/components/Settings';
 
-import { Renderer as MarkdownRenderer } from '@utils/markdown';
+import { Renderer as MarkdownRenderer } from 'src/utils/markdown';
 
 import { config } from './config';
 
@@ -30,16 +29,20 @@ const convertMarkdownToHTML = data => {
 };
 
 const templates = {
-  about: About,
-  'case-studies': CaseStudies,
-  'case-study': CaseStudy,
-  hubspot: Form,
-  home: Home,
-  landings: Landing,
-  pricing: Pricing,
-  subpage: Subpage,
-
   settings: Settings,
+
+  form: Form,
+  about: About,
+  home: Home,
+  pricing: Pricing,
+
+  lists: List,
+  author: List,
+  landings: Landing,
+
+  subpage: Subpage,
+  caseStudy: Subpage,
+  blogPost: Subpage,
 };
 
 import appStyles from '!css-loader!./styles.css';

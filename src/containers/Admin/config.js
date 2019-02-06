@@ -1,11 +1,13 @@
-import AboutConfig from '@containers/About/config';
-import HomeConfig from '@containers/Home/config';
-import SubpageConfig from '@containers/Subpage/config';
-import PricingConfig from '@containers/Pricing/config';
-import LandingConfig from '@containers/Landing/config';
-import SettingsConfig from '@components/Settings/config';
-import CaseStudyConfig from '@containers/CaseStudy/config';
-import CaseStudiesConfig from '@containers/CaseStudies/config';
+import SettingsConfig from 'src/components/Settings/config';
+
+import AboutConfig from 'src/containers/About/config';
+import HomeConfig from 'src/containers/Home/config';
+import PricingConfig from 'src/containers/Pricing/config';
+
+import FormConfig from 'src/containers/Form/config';
+import LandingConfig from 'src/containers/Landing/config';
+import { ListsConfig, AuthorConfig } from 'src/containers/Lists/config';
+import { SubpageConfig, BlogPostConfig, CaseStudyConfig } from 'src/containers/Subpage/config';
 
 export const config = {
   backend: {
@@ -32,10 +34,14 @@ export const config = {
       label_singular: 'Page',
       name: 'pages',
       delete: false,
-      files: [AboutConfig, HomeConfig, PricingConfig, CaseStudiesConfig],
+      files: [AboutConfig, HomeConfig, PricingConfig],
     },
+    FormConfig,
     LandingConfig,
-    CaseStudyConfig,
+    ListsConfig,
     SubpageConfig,
+    AuthorConfig,
+    CaseStudyConfig,
+    BlogPostConfig,
   ],
 };

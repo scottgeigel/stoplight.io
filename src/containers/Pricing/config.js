@@ -1,7 +1,10 @@
-import hero from '@components/Hero/config';
-import button from '@components/Button/config';
-import metaTags from '@components/MetaTags/config';
-import docPlans from '@components/DocPlans/config';
+import hero from 'src/components/Hero/config';
+import metaTags from 'src/components/MetaTags/config';
+import pricingPlans from 'src/components/PricingPlans/config';
+
+import docPlans from 'src/sections/DocPlans/config';
+
+import { colors } from 'src/utils';
 
 export default {
   label: 'Pricing',
@@ -14,52 +17,15 @@ export default {
       widget: 'string',
     },
     {
-      name: 'color',
       label: 'Color',
-      widget: 'string',
+      name: 'color',
+      widget: 'select',
+      options: colors,
+      default: 'black',
+      required: false,
     },
     hero,
-    {
-      label: 'Plans',
-      name: 'plans',
-      widget: 'list',
-      fields: [
-        {
-          name: 'title',
-          label: 'Title',
-          widget: 'string',
-        },
-        {
-          name: 'description',
-          label: 'Description',
-          widget: 'markdown',
-        },
-        {
-          name: 'price',
-          label: 'Price',
-          widget: 'string',
-        },
-        {
-          label: 'Features',
-          name: 'features',
-          widget: 'list',
-          field: [
-            {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-            },
-          ],
-        },
-        button,
-        {
-          label: 'Price Unit',
-          name: 'unit',
-          widget: 'string',
-          required: false,
-        },
-      ],
-    },
+    pricingPlans,
     docPlans,
     metaTags,
   ],

@@ -1,0 +1,26 @@
+path: /blog/changelog
+tag: blog-changelog
+title: Changelog
+color: purple
+tabs:
+  - href: /blog/general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
+actionBar:
+  enabled: true
+meta:
+  title: Changelog | Stoplight
+  twitter:
+    title: Changelog | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

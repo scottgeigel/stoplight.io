@@ -1,0 +1,19 @@
+path: /blog/author/ross-mcdonald
+tag: author
+title: Ross McDonald
+subtitle: ' '
+pageName: Software Engineer
+image: /images/mcdonald_headshot.png
+color: purple-darker
+actionBar:
+  enabled: false
+meta:
+  description: Ross McDonald
+  favicon: /images/mark_light_bg.png
+  title: Ross McDonald | Stoplight
+  twitter:
+    description: Ross McDonald
+    title: Ross McDonald | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

@@ -1,8 +1,11 @@
-import hero from '@components/Hero/config';
-import metaTags from '@components/MetaTags/config';
-import actionBar from '@components/ActionBar/config';
+import info from 'src/components/Info/config';
+import metaTags from 'src/components/MetaTags/config';
+import actionBar from 'src/components/ActionBar/config';
+import quote from 'src/components/Quote/config';
 
-export default {
+import { addFields, colors } from 'src/utils';
+
+export const SubpageConfig = {
   label: 'Subpages',
   label_singular: 'Subpage',
   name: 'subpage',
@@ -18,87 +21,125 @@ export default {
       name: 'path',
       widget: 'string',
     },
-    hero,
     {
-      label: 'Extra Info',
-      name: 'info',
-      widget: 'object',
+      label: 'Tags',
+      name: 'tags',
+      widget: 'list',
       required: false,
-      fields: [
-        {
-          name: 'title',
-          label: 'Title',
-          widget: 'string',
-          default: 'Extra info title',
-        },
-        {
-          name: 'image',
-          label: 'Image',
-          widget: 'image',
-          required: false,
-        },
-        {
-          name: 'description',
-          label: 'Description',
-          widget: 'text',
-          required: false,
-        },
-        {
-          label: 'Links',
-          name: 'links',
-          widget: 'list',
-          fields: [
-            {
-              name: 'href',
-              label: 'URL',
-              widget: 'string',
-              required: false,
-            },
-            {
-              name: 'title',
-              label: 'Title',
-              widget: 'string',
-              required: false,
-              default: 'Item with optional link',
-            },
-          ],
-        },
-      ],
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
     },
     {
-      label: 'Quotes',
-      name: 'quotes',
+      label: 'Related Tags',
+      name: 'relatedTags',
+      widget: 'list',
+      required: false,
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+    },
+    {
+      label: 'Publish Date',
+      name: 'publishedDate',
+      widget: 'date',
+      dateFormat: 'MMM DD, YYYY',
+      required: false,
+    },
+    {
+      label: 'Author',
+      name: 'author',
+      widget: 'relation',
+      collection: 'authors',
+      searchFields: ['name'],
+      valueField: 'name',
+      required: false,
+    },
+    {
+      label: 'Title',
+      name: 'title',
+      widget: 'string',
+      required: false,
+    },
+    {
+      label: 'SubTitle',
+      name: 'subtitle',
+      widget: 'string',
+      required: false,
+    },
+    {
+      label: 'Image',
+      name: 'image',
+      widget: 'file',
+      required: false,
+    },
+    {
+      label: 'Color',
+      name: 'color',
+      widget: 'select',
+      options: colors,
+      default: 'black',
+      required: false,
+    },
+    {
+      name: 'tabs',
       widget: 'list',
       required: false,
       fields: [
         {
-          name: 'quote',
-          label: 'Quote',
-          widget: 'string',
-          default: 'Insert a quote here',
-        },
-        {
-          name: 'author',
-          label: 'Author',
+          name: 'title',
           widget: 'string',
           required: false,
-          default: 'Chris Lott',
         },
         {
-          name: 'role',
-          label: 'Role',
+          name: 'href',
           widget: 'string',
           required: false,
-          default: 'Author',
         },
       ],
     },
-    actionBar,
-    metaTags,
     {
       label: 'Content',
       name: 'body',
       widget: 'markdown',
+      required: false,
     },
+    actionBar,
+    metaTags,
   ],
+};
+
+export const CaseStudyConfig = {
+  ...SubpageConfig,
+  label: 'Case Studies',
+  label_singular: 'Case Study',
+  name: 'caseStudy',
+  folder: 'netlify/case-studies',
+  fields: addFields(SubpageConfig.fields, SubpageConfig.fields.length - 3, [
+    {
+      label: 'Sidebar',
+      name: 'sidebar',
+      widget: 'object',
+      fields: [info, quote],
+    },
+  ]),
+};
+
+export const BlogPostConfig = {
+  ...SubpageConfig,
+  label: 'Blog Posts',
+  label_singular: 'Blog Post',
+  name: 'blogPost',
+  folder: 'netlify/blog-posts',
+  fields: addFields(SubpageConfig.fields, SubpageConfig.fields.length - 3, [
+    {
+      name: 'disqus',
+      widget: 'object',
+      required: false,
+      fields: [
+        {
+          label: 'Enabled?',
+          name: 'enabled',
+          widget: 'boolean',
+          required: false,
+        },
+      ],
+    },
+  ]),
 };

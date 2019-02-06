@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import { init as initIcons } from '@utils/fontawesome';
+import { init as initIcons } from 'src/utils/fontawesome';
 
 // Your top level component
 import App from './App';

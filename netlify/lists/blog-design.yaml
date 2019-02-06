@@ -1,0 +1,27 @@
+path: /blog/api-design
+tag: blog-design
+title: API Design
+color: purple
+tabs:
+  - href: /blog/general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+  - href: /blog
+    title: Archive
+actionBar:
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: API Design | Stoplight
+  twitter:
+    title: API Design | Stoplight
+    username: '@stoplightio'
+pagination:
+  enabled: true

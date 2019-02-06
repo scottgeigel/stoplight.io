@@ -1,9 +1,13 @@
-import hero from '@components/Hero/config';
-import actionBar from '@components/ActionBar/config';
-import metaTags from '@components/MetaTags/config';
-import cta from '@components/CallToAction/config';
-import productFeature from '@components/ProductFeature/config';
-import hubspot from '@components/HubSpotForm/config';
+import metaTags from 'src/components/MetaTags/config';
+
+import hero from 'src/components/Hero/config';
+import hubspot from 'src/components/HubSpotForm/config';
+
+import collage from 'src/sections/Collage/config';
+import imageCallout from 'src/sections/ImageCallout/config';
+import featureSection from 'src/sections/FeatureSection/config';
+
+import { colors } from 'src/utils';
 
 export default {
   label: 'Landing Pages',
@@ -26,47 +30,17 @@ export default {
       widget: 'string',
       hint: 'Only used for Admin reference',
     },
-    hero,
     {
       label: 'Color',
       name: 'color',
-      widget: 'string',
+      widget: 'select',
+      options: colors,
+      default: 'black',
     },
-    {
-      name: 'customers',
-      label: 'Customers',
-      widget: 'list',
-      required: false,
-      field: {
-        name: 'image',
-        label: 'Image',
-        widget: 'image',
-      },
-    },
-    {
-      label: 'Heading',
-      name: 'heading',
-      widget: 'string',
-      required: false,
-      hint: 'The title above the main content',
-    },
-    {
-      label: 'Description',
-      name: 'description',
-      widget: 'markdown',
-      required: false,
-      hint: 'The main content of the page',
-    },
-    cta,
-    {
-      name: 'features',
-      label: 'Features',
-      widget: 'list',
-      required: false,
-      fields: productFeature.fields,
-      hint: 'A list of features with text on one side and image on the other',
-    },
-    actionBar,
+    hero,
+    collage,
+    imageCallout,
+    featureSection,
     hubspot,
     metaTags,
   ],

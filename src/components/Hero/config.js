@@ -1,4 +1,4 @@
-import cta from '@components/CallToAction/config';
+import cta from 'src/components/CallToAction/config';
 
 export default {
   name: 'hero',
@@ -70,11 +70,13 @@ export default {
           label: 'Title',
           widget: 'string',
           default: 'title',
+          required: false,
         },
         {
           name: 'href',
           label: 'Link',
           widget: 'string',
+          required: false,
         },
         {
           name: 'icon',
@@ -136,7 +138,17 @@ export default {
     {
       name: 'image',
       label: 'Image',
-      widget: 'image',
+      widget: 'object',
+      fields: [
+        {
+          name: 'src',
+          widget: 'image',
+        },
+        {
+          name: 'alt',
+          widget: 'string',
+        },
+      ],
     },
   ],
 };

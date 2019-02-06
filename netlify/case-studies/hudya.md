@@ -1,32 +1,32 @@
 ---
-path: /hudya
-hero:
-  bgColor: blue
-  pageName: Customer Story
-  skew: 3deg
-  subtitle: >-
-    Hudya is a digital platform that is redefining and simplifying how
-    traditional utilities and services can be purchased and managed.
-  title: Hudya
-info:
-  employees: Startup
-  industry: FinTech & InsurTech
-  location: Norway
-  logo: /images/logo_hudya.png
-  name: Hudya
-quotes:
-  - author: Evin Callahan
-    quote: >-
-      We were previously using something like Swagger-UI but Stoplight allowed
-      our developers to interact with other services from other teams and
-      developers without too much effort. That was something that really made
-      Stoplight special.
-    role: Cloud Architect
+path: /case-studies/hudya
+tags: ['case-study']
+relatedTags: ['case-study']
+publishedDate: 'Dec 21, 2018'
+title: Hudya
+subtitle: >-
+  Hudya is a digital platform that is redefining and simplifying how
+  traditional utilities and services can be purchased and managed.
+image: /images/logo_hudya.png
+color: blue
+sidebar:
+  info:
+    description: >-
+      **Industry**: FinTech & InsurTech <br/>
+      **Location**: Norway <br/>
+      **Employees**: Startup
+  quotes:
+    - author: Evin Callahan
+      quote: >-
+        We were previously using something like Swagger-UI but Stoplight allowed
+        our developers to interact with other services from other teams and
+        developers without too much effort. That was something that really made
+        Stoplight special.
+      role: Cloud Architect
 actionBar:
   enabled: true
 meta:
   description: How Hudya centralized their API development with Stoplight
-  favicon: /images/mark_light_bg.png
   title: Hudya | Stoplight
   twitter:
     description: How Hudya centralized their API development with Stoplight

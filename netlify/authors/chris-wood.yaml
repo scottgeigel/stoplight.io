@@ -1,0 +1,19 @@
+path: /blog/author/chris-wood
+tag: author
+title: Chris Wood
+subtitle: >-
+  Chris Wood is freelance architect, developer and writer based in the UK. He
+  loves to tell a story and use words that show how clever he is ;0) Chris is
+  currently working on Open Banking standards in the UK.
+pageName: Contributing Writer
+image: /images/wood-chris.jpeg
+color: green
+actionBar:
+  enabled: false
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Chris Wood | Stoplight
+  twitter:
+    title: Chris Wood | Stoplight
+pagination: {}
