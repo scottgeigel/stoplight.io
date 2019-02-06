@@ -6,7 +6,7 @@ pageName: Software Engineer
 image: /images/mcdonald_headshot.png
 color: purple-darker
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: Ross McDonald
   favicon: /images/mark_light_bg.png

@@ -13,11 +13,7 @@ subtitle: >-
 pageName: Contributing Author
 image: /images/rosenstock_lukas.jpg
 color: green
-buttons:
-  - {}
 actionBar:
-  buttons:
-    - color: purple
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

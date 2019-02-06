@@ -10,10 +10,7 @@ subtitle: >-
 pageName: Software Engineer
 image: /images/chianese_headshot.png
 color: red
-buttons:
-  - {}
 actionBar:
-  buttons: []
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

@@ -16,8 +16,6 @@ color: indigo
 disqus:
   enabled: true
 actionBar:
-  buttons:
-    - color: purple
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

@@ -12,11 +12,7 @@ subtitle: >-
 pageName: Community Engineer
 image: /images/barnett_headshot.png
 color: purple-darker
-buttons:
-  - {}
 actionBar:
-  buttons:
-    - color: purple
   enabled: false
 meta:
   robots: 'index, follow'

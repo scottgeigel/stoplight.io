@@ -16,7 +16,7 @@ color: purple-darker
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: Stop Calling Your APIs Microservices
   favicon: /images/mark_light_bg.png

@@ -8,11 +8,7 @@ subtitle: >-
 pageName: Contributing Writer
 image: /images/wood-chris.jpeg
 color: green
-buttons:
-  - {}
 actionBar:
-  buttons:
-    - color: purple
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png

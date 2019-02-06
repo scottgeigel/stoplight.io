@@ -6,9 +6,7 @@ pageName: Software Engineer
 image: /images/cassera_headshot.png
 color: green
 actionBar:
-  buttons:
-    - color: purple
-  enabled: true
+  enabled: false
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
