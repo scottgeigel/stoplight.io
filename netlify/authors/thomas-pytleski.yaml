@@ -1,12 +1,10 @@
 path: /blog/author/thomas-pytleski
-tag: Author
+tag: author
 title: Thomas Pytleski
-subtitle: Bio
+subtitle: ' '
 pageName: Software Engineer
 image: /images/pytleski_headshot.png
 color: yellow
-buttons:
-  - {}
 actionBar:
   buttons:
     - color: purple
