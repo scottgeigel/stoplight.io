@@ -25,19 +25,22 @@ meta:
     Writing Documentation When You Aren't A Technical Writer — Part One |
     Stoplight
   twitter:
+    description: ' How do people actually read documentation and how to write documentation and code samples to maximize developer success'
     title: >-
       Writing Documentation When You Aren't A Technical Writer — Part One |
       Stoplight
     image: /images/not-technical-writer-part-one.jpeg
     username: '@stoplightio'
 ---
+_Photo by [rawpixel](https://unsplash.com/photos/VfZOC3kV6sM) on [Unsplash](https://unsplash.com)_
+
 _In the fall of 2016, my teammate and I were tasked with the mission of improving my former company’s documentation and content. We spent a year working on all kinds of documentation — API references, guides, tutorials, and blog posts. I had been writing documentation off and on over the previous 5 years, but I wasn’t formally trained in technical writing. I was by no means inexperienced though, due to working on API documentation for projects and a startup and teaching Python Flask workshops towards the end of my computer science degree. This was the first time I had ever been able to focus on documentation, which allowed me to pursue my passion for helping people of all skill levels through technical documentation._
 
 _In that year, I learned a lot from the Write the Docs community, other API providers, and my own trials and errors. Last year, I spoke about it in a talk, “Things I Wish People Told Me About Writing Docs,” at the [API Strategy and Practice Conference](https://events.linuxfoundation.org/events/apistrat-2018/) in Portland, OR. This [multipart series](/blog/api-documentation) is a survey of what I learned._
 
 ## How do people actually read documentation?
 
-![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from \[The Onion\](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](https://cdn-images-1.medium.com/max/2472/1*diZgW7OJOLZlmOOhUR7emQ.png)_“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)_
+![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](/images/the-onion.png)
 
 Do you know that feeling when The Onion is eerily right? This is one of those times. People might not be physically shuddering at your docs, but there’s a good chance they are doing it mentally. I struggled with the idea that people aren’t going to read what I write, unless I present it in the most easily digestible way. Heck, this could even happen for this blog post. (Note to self: Remind myself why I even write. 🤔)
 
@@ -47,7 +50,7 @@ In an [eye-tracking study](https://www.nngroup.com/articles/f-shaped-pattern-rea
 2. “Next, users move down the page a bit and then read across in a **second horizontal** movement that typically covers a shorter area than the previous movement. This additional element forms the F’s lower bar.”
 3. “Finally, users scan the content’s left side in a **vertical movement**. Sometimes this is a slow and systematic scan that appears as a solid stripe on an eye-tracking heatmap. Other times users move faster, creating a spottier heatmap. This last element forms the F’s stem.”
 
-![Heatmaps from \[Nielsen Norman Group\](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](https://cdn-images-1.medium.com/max/3840/1*HP9ITfDcSnrvID0RfNoTDg.png)_Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)_
+![Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](/images/heat-maps.png)
 
 The study also found some alternative scanning patterns such as layer-cake pattern, spotted pattern, marking pattern, bypassing pattern, and commitment pattern. I highly recommend reviewing the rest of [the report](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/).
 
@@ -97,7 +100,7 @@ The context in the code sample is important for developer success. Developers ar
 
 A developer quickly copies and pastes this code. And…
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/13J4mAfd4iHC5G" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/puppy-fine-falling-13J4mAfd4iHC5G">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/13J4mAfd4iHC5G" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/puppy-fine-falling-13J4mAfd4iHC5G"></a></p>
 
 First, how do they even run this file? Probably node file_name.js but it wasn’t in the code. This could have been put in a comment at the top.
 
@@ -109,7 +112,7 @@ These are all things that could be made more evident in the code.
 
 Here’s an example from the Twilio docs that gives good context to the end user:
 
-![Photo from the \[Twilio Node Helper Library\](https://www.twilio.com/docs/libraries/node)](https://cdn-images-1.medium.com/max/2212/1*eI23jv3ZzSn-zuzLDbsebA.png)_Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)_
+![Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)](/images/twilio-context-example.png)
 
 It makes it very clear how you should install the library, include it in your code, and then what needs to be replaced in the sample code to run the sample.
 
@@ -139,4 +142,4 @@ Kelsey Hightower struggled to copy this code sample off of StackOverflow in a Go
 
 Did he do this intentionally? The world will never know. However, it represents the struggle of coders to copy large blocks of text on some documentation sites. Make sure the UI of your site makes it easy to copy large blocks of text. You can even break up those blocks to explain them in chunks making them more accessible to copy and understand.
 
-*I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Update: Check out [Part Two](/blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a) of the series!*
+_I hope some of these tips help you the next time you are writing documentation. I’d love to hear what tips you’ve learned over the years that were helpful to you in the comments below. Update: Check out [Part Two](/blog/writing-documentation-when-you-arent-a-technical-writer-part-two-59997587cc2a) of the series!_
