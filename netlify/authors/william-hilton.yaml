@@ -1,12 +1,14 @@
 path: /blog/author/william-hilton
-tag: Author
+tag: author
 title: William Hilton
-subtitle: bio
+subtitle: >-
+  William is an engineer at Stoplight. He writes about JavaScript design
+  patterns and clever git tricks. In a past life he was a robotics and machine
+  learning researcher. William stays awake at night thinking about how to keep
+  the Web from falling apart.
 pageName: Software Engineer
 image: /images/hilton_headshot.png
 color: indigo
-buttons:
-  - {}
 actionBar:
   buttons:
     - color: purple
