@@ -51,8 +51,6 @@ A sampling list of headlines: Intel acquired Mashery. Tibco acquired Mashery. Or
 
 Documentation for developers used to live in its own silo for example Markdown stored in version control internally or only as ReadMe files on GitHub repositories. With the popularization of software coding schools and courses and the rising interest in development, suddenly there was an influx of content about development. Focused, organized content, that is easy to navigate for the various developer audience types are in demand.
 
-<iframe src="https://medium.com/media/9bdc231ec0112be17ab0ae171b5eef3b" frameborder=0></iframe>
-
 Community platforms (Stack Overflow, Reddit, API Community Management Platforms, Developer Portals) foster interaction among developers so that the conversation is searchable. Disparate information needs a “home” so that it is easy to aggregate the various kinds of developer documentation.
 
 My favorite large-scale example of this is the search bar on Google’s Developer Portal. The search bar indicates that you can specifically “Search Products and Documentation” instead of returning anything outside of that set — it’s a confidence indicator that Google will serve up targeted results which is what they are known for doing. In addition, you can see a menu of all products on the Product Index page to get a 30,000 foot view of the organization of the kind of content available.

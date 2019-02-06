@@ -51,8 +51,6 @@ As the number of APIs under management increases, it is often desirable to extra
 
 Scenarios v3.3 takes a first step towards this type of functionality. You can now connect API Specs to other API Specs, and then reference models and responses defined in the connected spec. This is all built around the OAS and JSON Schema standards — there is nothing proprietary about it, and your resulting API specs will work well with any tooling that supports these standards.
 
-<iframe src="https://medium.com/media/70b76704849d4e58da19636acec35be5" frameborder=0></iframe>
-
 ### HTTP Try It Out
 
 Sending requests to debug your API can be very useful. Typically, you would either do this with cURL, or by defining the requests in client like Postman. Now, with Stoplight, you can use your existing API specification to quickly send requests to your APIs — no need to define and maintain another set of data to send requests (Postman), or manually put together cURL requests.
@@ -62,8 +60,6 @@ To use the new feature, simply navigate to your API spec, and then select the �
 Additionally, Stoplight will contract test your existing specification against the request sent. This immediately tells you if your response schemas are accurate to your API (see the “Tests” tab in the gif below).
 
 Finally, you can send requests and then click the magic wand icon at the top of the editor to extend your specification, using the data in the HTTP request. This is a great way to quickly create hundreds of lines of OAS code for pre-existing APIs.
-
-<iframe src="https://medium.com/media/2ebfeb79907c19afbfc711ddf0ec59d8" frameborder=0></iframe>
 
 ## Prism Updates
 
