@@ -24,7 +24,7 @@ meta:
     title: Stop Calling Your APIs Microservices | Stoplight
     username: '@stoplightio'
 ---
-A bridge between humans and machines, photo by Marc-Antoine Dépelteau
+_A bridge between humans and machines, photo by [Marc-Antoine Dépelteau](https://unsplash.com/@autumnsgrief) on [Unsplash](https://unsplash.com)_
 
 It wasn’t so long ago that an API specification was just a thing that got generated. Write some code, add some annotations, and let your build tool create an API specification document you shared with your colleagues, community, friends, and family. Job done.
 
