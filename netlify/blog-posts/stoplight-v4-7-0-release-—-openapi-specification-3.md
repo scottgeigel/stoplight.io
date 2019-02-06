@@ -22,8 +22,9 @@ meta:
   robots: 'index, follow'
   title: Stoplight v4.7.0 Release | Stoplight
   twitter:
+    description: OpenAPI Specification 3
     title: Stoplight v4.7.0 Release | Stoplight
-    image: /images/mark_light_bg.png
+    image: /images/oas3-code-editor.png
     username: '@stoplightio'
 ---
 ## New 🚀
@@ -38,11 +39,9 @@ meta:
 
 * Visual editing coming soon!
 
-![OpenAPI 3 Editor — Code View with Validation and Linting](https://cdn-images-1.medium.com/max/4508/1*8gUxm53NiXCs80Cn8NMIjg.png)
-*OpenAPI 3 Editor — Code View with Validation and Linting*
+![*OpenAPI 3 Editor — Code View with Validation and Linting*](https://cdn-images-1.medium.com/max/4508/1*8gUxm53NiXCs80Cn8NMIjg.png)
 
-![Auto-generated OpenAPI 3 Documentation](https://cdn-images-1.medium.com/max/4504/1*4ICJOxCPSKYO6uRhN6LEzg.png)
-*Auto-generated OpenAPI 3 Documentation*
+![*Auto-generated OpenAPI 3 Documentation*](https://cdn-images-1.medium.com/max/4504/1*4ICJOxCPSKYO6uRhN6LEzg.png)
 
 ## Fixes 🔧
 
