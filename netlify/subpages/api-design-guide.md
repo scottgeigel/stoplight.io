@@ -1,33 +1,34 @@
 ---
 path: /api-design-guide/basics
-tags: ['guides', 'api-design']
-relatedTags: ['api-design']
-subtitle: Learn all there is about API Design through our comprehensive guide
+tags:
+  - guides
+  - api-design
+relatedTags:
+  - api-design
+publishedDate: 2019-02-06T03:07:03.070Z
 title: API Design Guide
-cta:
-  color: purple
-  href: 'https://next.stoplight.io'
+subtitle: Learn all there is about API Design through our comprehensive guide
 color: blue
+tabs:
+  - href: /api-design-guide/basics
+    title: API Design Basics
+  - href: /api-design-guide/tooling
+    title: API Design Tooling
+  - href: /api-design-guide/oas-spec
+    title: Understanding the OpenAPI Specification
 actionBar:
   enabled: false
-tabs:
-  - title: API Design Basics
-    href: /api-design-guide/basics
-  - title: API Design Tooling
-    href: /api-design-guide/tooling
-  - title: Understanding the OpenAPI Specification
-    href: /api-design-guide/oas-spec
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design Guide | Basics
   twitter:
-    image: /images/mark_light_bg.png
     title: API Design Guide | Basics
+    image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
 
-## What is API Design?
+# What is API Design?
 
 API design is the collection of planning and architectural decisions you make when building an API. Your API design influences how well developers are able to consume it and even how they use it. Just like website design or product design, API design informs the user experience. Good API design meets initial expectations and continues to behave consistently and predictably.
 
