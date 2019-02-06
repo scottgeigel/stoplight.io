@@ -40,7 +40,7 @@ _In that year, I learned a lot from the Write the Docs community, other API prov
 
 ## How do people actually read documentation?
 
-![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](/images/the-onion.png)
+![“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)](/images/the-onion.png)*“Nation Shudders At Large Block Of Uninterrupted Text,” photo from [The Onion](https://www.theonion.com/nation-shudders-at-large-block-of-uninterrupted-text-1819571366)*
 
 Do you know that feeling when The Onion is eerily right? This is one of those times. People might not be physically shuddering at your docs, but there’s a good chance they are doing it mentally. I struggled with the idea that people aren’t going to read what I write, unless I present it in the most easily digestible way. Heck, this could even happen for this blog post. (Note to self: Remind myself why I even write. 🤔)
 
@@ -50,7 +50,7 @@ In an [eye-tracking study](https://www.nngroup.com/articles/f-shaped-pattern-rea
 2. “Next, users move down the page a bit and then read across in a **second horizontal** movement that typically covers a shorter area than the previous movement. This additional element forms the F’s lower bar.”
 3. “Finally, users scan the content’s left side in a **vertical movement**. Sometimes this is a slow and systematic scan that appears as a solid stripe on an eye-tracking heatmap. Other times users move faster, creating a spottier heatmap. This last element forms the F’s stem.”
 
-![Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](/images/heat-maps.png)
+![Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)](/images/heat-maps.png)*Heatmaps from [Nielsen Norman Group](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/)*
 
 The study also found some alternative scanning patterns such as layer-cake pattern, spotted pattern, marking pattern, bypassing pattern, and commitment pattern. I highly recommend reviewing the rest of [the report](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content-discovered/).
 
@@ -112,7 +112,7 @@ These are all things that could be made more evident in the code.
 
 Here’s an example from the Twilio docs that gives good context to the end user:
 
-![Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)](/images/twilio-context-example.png)*Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)*
+![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)
 
 It makes it very clear how you should install the library, include it in your code, and then what needs to be replaced in the sample code to run the sample.
 
