@@ -3,10 +3,11 @@ path: /blog/stop-calling-your-apis-microservices-e165a80eba9d
 tags:
   - blog-design
   - blog-industry
-  - blog
+  - blog-general
 relatedTags:
   - blog-design
   - blog-industry
+  - blog-general
 publishedDate: 2018-12-04T20:27:05.450Z
 author: Lukas Rosenstock
 title: Stop Calling Your APIs Microservices
@@ -16,7 +17,7 @@ color: purple-darker
 disqus:
   enabled: true
 actionBar:
-  enabled: true
+  enabled: false
 meta:
   description: Stop Calling Your APIs Microservices
   title: Blog | Stoplight
@@ -25,6 +26,8 @@ meta:
     title: Blog | Stoplight
     username: '@stoplightio'
 ---
+*Photo by [Dil](https://unsplash.com/photos/8OECtq8rrNg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+
 Have you ever heard the adage that “there are only two hard problems in computer science, cache invalidation, naming things, and off-by-one errors?” Allegedly, [Phil Karlton said this](https://quotesondesign.com/phil-karlton/) [sometime around 1996/97](https://twitter.com/timbray/status/817025379109990402). While [many comedic spin-offs for this famous phrase](https://www.martinfowler.com/bliki/TwoHardThings.html) mention additional problems, a recent observation in the world of APIs seems to prove the bit about naming things right: There’s some confusion about the terms “API” and “microservice,” and some people seem to use them interchangeably.
 
 The whole world of computing is continuously in flux. Developers use various concepts and technologies and connect them in different ways. Therefore, it is not uncommon that we use inconsistent terminology, having multiple words for what is roughly the same concept or, vice versa, saying the same word but meaning different things.
