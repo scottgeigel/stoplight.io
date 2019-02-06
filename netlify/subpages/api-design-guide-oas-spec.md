@@ -5,7 +5,6 @@ relatedTags: ['api-design']
 publishedDate: 'Jan 23, 2019'
 title:  Understanding the OpenAPI Specification
 subtitle: Learn all there is about API Design through our comprehensive guide
-image:
 color: orange
 cta:
   color: purple

@@ -17,6 +17,7 @@ export interface IListItem {
   author: IHeroAuthor;
   publishedDate: string;
   backgroundSize?: 'cover' | 'contain';
+  color?: string;
 }
 
 export interface IList {
@@ -39,6 +40,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
   author,
   publishedDate,
   backgroundSize = 'cover',
+  color,
 }) => {
   return (
     <Link
@@ -56,6 +58,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
             backgroundSize,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
+            backgroundColor: color || 'transparent',
           }}
         />
 

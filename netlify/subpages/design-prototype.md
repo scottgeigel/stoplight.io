@@ -7,7 +7,6 @@ subtitle: >-
   Quickly build web APIs in a collaborative, powerful, visual editor that
   allows you to prototype and share your API within minutes
 title: API Prototype Tool
-image:
 color: blue
 actionBar:
   enabled: true

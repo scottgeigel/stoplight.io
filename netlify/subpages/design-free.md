@@ -7,7 +7,6 @@ title: Free API Design Tool
 subtitle: >-
   Build web APIs with a powerful, free visual OpenAPI Specification editor
   that allows you to create API designs and share within minutes
-image:
 color: blue
 actionBar:
   enabled: true

@@ -9,7 +9,6 @@ publishedDate: 2017-06-12T22:48:20.849Z
 author: Stoplight
 title: Scenarios v3.3 Update
 subtitle: 'Changelog, updates, fixes, & roadmap'
-image: /images/mark_light_bg.png
 color: black
 disqus:
   enabled: true

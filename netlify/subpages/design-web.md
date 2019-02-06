@@ -7,7 +7,6 @@ subtitle: >-
   Build web APIs with a collaborative, powerful, visual editor that allows you
   to prototype and share your API within minutes
 title: Web API Design Tool
-image:
 color: blue
 tabs:
   - title: Web API Design Tool

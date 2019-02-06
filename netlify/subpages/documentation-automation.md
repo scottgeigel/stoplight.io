@@ -5,7 +5,6 @@ relatedTags: ['']
 publishedDate: 'Jan 23, 2019'
 subtitle: Automate your API Documentation Workflow
 title: Automatic API Documentation
-image:
 color: green
 tabs:
   - title: API Documentation
