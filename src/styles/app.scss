@@ -4,8 +4,6 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   font-size: 13px;
 }
 
@@ -14,7 +12,6 @@ body {
   font-size: 14px;
   color: #3f4a66;
   line-height: 1.5;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,8 +47,6 @@ ul {
 }
 
 #root {
-  overflow: hidden;
-
   section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 
@@ -178,7 +173,47 @@ ul {
   word-wrap: break-word;
   font-size: 15px;
   max-width: 760px;
-  margin: auto;
+  position: relative;
+
+  .table-of-contents {
+    &:before {
+      content: 'CONTENTS';
+      font-family: 'FontAwesome';
+      padding-left: 1.8em; // Same as "ol" tag
+    }
+
+    position: sticky;
+    top: 20px;
+    right: 0;
+    float: right;
+    margin-right: -250px;
+    width: 200px;
+    font-size: 11px;
+    color: rgba(19, 15, 33, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+    ol {
+      list-style-type: none;
+
+      &:first-child {
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+
+      > li > ol {
+        list-style-type: upper-roman;
+
+        > li > ol {
+          list-style-type: lower-roman;
+        }
+      }
+    }
+
+    li > a {
+      color: rgba(19, 15, 33, 0.4);
+      font-weight: bold;
+    }
+  }
 }
 
 .case-study {
@@ -414,9 +449,6 @@ ul {
   visibility: hidden;
 }
 
-.HtmlViewer h1:hover .anchor,
-.HtmlViewer h2:hover .anchor,
-.HtmlViewer h3:hover .anchor,
 .markdown-body h1:hover .anchor,
 .markdown-body h2:hover .anchor,
 .markdown-body h3:hover .anchor {
@@ -424,13 +456,11 @@ ul {
   color: #666;
 }
 
-.HtmlViewer a.anchor:hover,
 .markdown-body a.anchor:hover {
   text-decoration: none;
   color: #666;
 }
 
-.HtmlViewer h1,
 .markdown-body h1 {
   font-size: 28px;
   margin: 70px 0 24px 0;
@@ -451,6 +481,7 @@ ul {
     background-color: #777;
   }
 
+  &:first-of-type,
   &:first-child {
     margin: 0 0 1.5em 0;
     padding: 0;

@@ -21698,8 +21698,6 @@ table {
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   font-size: 13px; }
 
 body {
@@ -21707,7 +21705,6 @@ body {
   font-size: 14px;
   color: #3f4a66;
   line-height: 1.5;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -21736,8 +21733,13 @@ ul {
   ul:last-child {
     margin-bottom: 0; }
 
-#root {
-  height: 100%; }
+#root section {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
+  #root section:nth-of-type(even) {
+    background: #f5f7f9;
+    z-index: 50; }
+  #root section:first-of-type {
+    box-shadow: none; }
 
 #hs-eu-cookie-confirmation {
   display: none; }
@@ -21827,7 +21829,38 @@ ul {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
-  font-size: 15px; }
+  font-size: 15px;
+  max-width: 760px;
+  position: relative; }
+  .markdown-body .table-of-contents {
+    position: sticky;
+    top: 20px;
+    right: 0;
+    float: right;
+    margin-right: -250px;
+    width: 200px;
+    font-size: 11px;
+    color: rgba(19, 15, 33, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    .markdown-body .table-of-contents:before {
+      content: 'CONTENTS';
+      font-family: 'FontAwesome';
+      padding-left: 1.8em; }
+    .markdown-body .table-of-contents ol {
+      list-style-type: none; }
+      .markdown-body .table-of-contents ol:first-child {
+        margin-bottom: 0;
+        margin-top: 5px; }
+      .markdown-body .table-of-contents ol > li > ol {
+        list-style-type: upper-roman; }
+        .markdown-body .table-of-contents ol > li > ol > li > ol {
+          list-style-type: lower-roman; }
+    .markdown-body .table-of-contents li > a {
+      color: rgba(19, 15, 33, 0.4);
+      font-weight: bold; }
+
+.case-study {
+  max-width: 100%; }
 
 .markdown-body s {
   text-decoration: line-through; }
@@ -21926,7 +21959,7 @@ ul {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.35; }
+  line-height: 2.2; }
 
 .markdown-body ol ol,
 .markdown-body ul ol {
@@ -22018,30 +22051,23 @@ ul {
   vertical-align: middle;
   visibility: hidden; }
 
-.HtmlViewer h1:hover .anchor,
-.HtmlViewer h2:hover .anchor,
-.HtmlViewer h3:hover .anchor,
 .markdown-body h1:hover .anchor,
 .markdown-body h2:hover .anchor,
 .markdown-body h3:hover .anchor {
   text-decoration: none;
   color: #666; }
 
-.HtmlViewer a.anchor:hover,
 .markdown-body a.anchor:hover {
   text-decoration: none;
   color: #666; }
 
-.HtmlViewer h1,
 .markdown-body h1 {
   font-size: 28px;
   margin: 70px 0 24px 0;
   font-weight: bolder;
   position: relative; }
-  .HtmlViewer h1 .anchor,
   .markdown-body h1 .anchor {
     margin-top: -11px; }
-  .HtmlViewer h1::before,
   .markdown-body h1::before {
     content: ' ';
     position: absolute;
@@ -22050,12 +22076,10 @@ ul {
     height: 1px;
     width: 100%;
     background-color: #777; }
-  .HtmlViewer h1:first-child,
-  .markdown-body h1:first-child {
+  .markdown-body h1:first-of-type, .markdown-body h1:first-child {
     margin: 0 0 1.5em 0;
     padding: 0; }
-    .HtmlViewer h1:first-child::before,
-    .markdown-body h1:first-child::before {
+    .markdown-body h1:first-of-type::before, .markdown-body h1:first-child::before {
       display: none; }
 
 .markdown-body h2 {
@@ -22159,9 +22183,17 @@ ul {
   box-sizing: content-box;
   background-color: #fff;
   border-style: none;
-  max-width: 760px;
   box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 2px; }
+  border-radius: 2px;
+  display: block;
+  max-width: 100%;
+  margin: auto; }
+
+.markdown-body img + strong,
+.markdown-body img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.85em; }
 
 .markdown-body .highlight {
   margin-bottom: 16px; }
@@ -22384,7 +22416,6 @@ pre.line-numbers > code {
 
 .line-highlight:before,
 .line-highlight[data-end]:after {
-  content: attr(data-start);
   position: absolute;
   top: 0.4em;
   left: 0.6em;
@@ -22408,4 +22439,5 @@ pre.line-numbers > code {
 .line-numbers .line-highlight:after {
   content: none; }
 
-/*# sourceMappingURL=styles.ebeb929f.css.map*/
+.max-h-50 {
+  max-height: 50px; }

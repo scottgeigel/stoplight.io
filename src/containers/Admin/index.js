@@ -10,23 +10,9 @@ import { List } from 'src/containers/Lists';
 
 import Settings from 'src/components/Settings';
 
-import { Renderer as MarkdownRenderer } from 'src/utils/markdown';
+import { convertMarkdownToHTML } from 'src/utils/markdown';
 
 import { config } from './config';
-
-const convertMarkdownToHTML = data => {
-  for (const key in data) {
-    if (data.hasOwnProperty(key)) {
-      if (typeof data[key] === 'object') {
-        data[key] = convertMarkdownToHTML(data[key]);
-      } else if (key === 'description' || key === 'body') {
-        data[key] = MarkdownRenderer(data[key]);
-      }
-    }
-  }
-
-  return data;
-};
 
 const templates = {
   settings: Settings,
@@ -79,7 +65,11 @@ class Admin extends Component {
       window.CMS.registerPreviewTemplate(collectionName, ({ entry }) => {
         const Template = templates[collectionName];
 
-        return <Template {...convertMarkdownToHTML(entry.getIn(['data']).toJS())} />;
+        return (
+          <Template
+            {...convertMarkdownToHTML(entry.getIn(['data'], { includeToc: collectionName !== 'caseStudy' }).toJS())}
+          />
+        );
       });
     });
 
