@@ -52,7 +52,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
         <div
           className="h-full w-2/5 sm:w-1/5"
           style={{
-            backgroundImage: `url(${image})`,
+            backgroundImage: image ? `url(${image})` : 'none',
             backgroundSize,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

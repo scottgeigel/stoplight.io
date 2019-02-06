@@ -25,7 +25,7 @@ export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quot
           <div
             className="-ml-14 sm:ml-0 rounded-full bg-cover shadow-sm border-grey border h-40 w-40"
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: image ? `url(${image})` : 'none',
             }}
           />
         </div>

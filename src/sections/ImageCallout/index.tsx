@@ -34,7 +34,7 @@ export const ImageCallout: React.FunctionComponent<IImageCallout> = ({ title, ct
         <div className="flex-1 w-1/2 md:hidden relative">
           <div
             className="absolute pin bg-left-top bg-cover bg-no-repeat"
-            style={{ backgroundImage: `url(${image})`, top: -60, bottom: -200 }}
+            style={{ backgroundImage: image ? `url(${image})` : 'none', top: -60, bottom: -200 }}
           />
         </div>
       )}

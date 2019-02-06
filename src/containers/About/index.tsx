@@ -40,7 +40,7 @@ const Member = ({ image, name, role, link, isLast }) => {
         <div
           className="-mt-20 mx-auto rounded-full bg-cover shadow-sm border-grey border h-32 w-32 mb-10"
           style={{
-            backgroundImage: `url(${image})`,
+            backgroundImage: image ? `url(${image})` : 'none',
           }}
         />
 

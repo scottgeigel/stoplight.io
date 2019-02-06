@@ -32,7 +32,7 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
         <div
           className={cn('h-40 w-100 relative', { [`bg-${color}`]: !image })}
           style={{
-            backgroundImage: `url(${image})`,
+            backgroundImage: image ? `url(${image})` : 'none',
             backgroundSize,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
