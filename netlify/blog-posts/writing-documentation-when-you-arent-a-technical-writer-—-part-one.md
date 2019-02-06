@@ -112,7 +112,7 @@ These are all things that could be made more evident in the code.
 
 Here’s an example from the Twilio docs that gives good context to the end user:
 
-![_Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)_](/images/twilio-context-example.png)
+![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)
 
 It makes it very clear how you should install the library, include it in your code, and then what needs to be replaced in the sample code to run the sample.
 
