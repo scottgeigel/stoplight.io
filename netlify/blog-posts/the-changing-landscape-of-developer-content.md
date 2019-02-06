@@ -96,7 +96,3 @@ Consumability matters.
 
 The faster the content helps a developer create working code, the more the developer gets out of the technology.
 > By making your content more searchable, scalable, and accessible, your documentation will be more appealing to the modern developer.
-
-*Editor’s note: We are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
-
-![](https://cdn-images-1.medium.com/max/2436/1*tXurrlLg5pgXl8KpgKc4oQ.png)

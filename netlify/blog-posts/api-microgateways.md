@@ -100,7 +100,3 @@ The drawbacks of instituting an API Gateway include the potential for developmen
 ### Lower the Drawbridge
 
 So why Gateway? Because it allows for a single entry point into your system. Like a Medieval castle, everything comes and goes via the gate. And like a castle gate, you can hire some security to protect your keep, an ambassador and translator to great and direct visitors, and a Magistrate to set rules and regulations for who can come and go. Sound the trumpets!
-
-*Also, we are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below*👇
-
-![](https://cdn-images-1.medium.com/max/2436/1*tXurrlLg5pgXl8KpgKc4oQ.png)

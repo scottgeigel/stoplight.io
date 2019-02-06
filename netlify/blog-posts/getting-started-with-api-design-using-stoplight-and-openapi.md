@@ -220,7 +220,3 @@ Now would be a good time to look at your work in the way that potential develope
 Once you’re happy with what you see, click the **Save** button next to the tabs to store your work. Your Stoplight projects work like code repositories (and not like, let’s say Google Docs), which means you have to state when you want to commit your changes explicitly, and you can even provide a comment for the changelog.
 
 That’s enough for today. To recap, you just created your (first?) OpenAPI definition with one model and two paths. You were able to do everything within Stoplight’s visual editor, but you have also seen how the definition looks under the hood. You can take it from here extending your API further. Happy designing!
-
-*Editor’s note: We are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
-
-![](https://cdn-images-1.medium.com/max/2436/1*tXurrlLg5pgXl8KpgKc4oQ.png)

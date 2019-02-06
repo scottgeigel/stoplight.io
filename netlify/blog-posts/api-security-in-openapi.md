@@ -195,7 +195,3 @@ Even outside the explicit security scheme and security requirement definitions, 
 ## Summary
 
 Every API should be designed with security in mind, and there are multiple aspects to consider for a secure API. OpenAPI allows API designers to specify access control through Basic Authentication, API Keys, and OAuth as part of the API definition. Stoplight makes it easy to create these [security definitions](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes). Furthermore, the benefits of an OpenAPI-driven lifecycle improve security as well, by making it testable and enforceable in production without extensive effort. API consumers and their users expect that downstream API providers take security seriously, but also remain convenient with standardized authentication protocols. Therefore, you should not make compromises in this area, and OpenAPI will be a useful instrument in your toolbox to achieve the goal of a secure and private API.
-
-*Editor’s note: We are starting a newsletter at [Stoplight](https://stoplight.io/) with some of the month’s blog posts, our favorite posts from the API community, and more! Sign up below *👇
-
-![](https://cdn-images-1.medium.com/max/2436/1*tXurrlLg5pgXl8KpgKc4oQ.png)
