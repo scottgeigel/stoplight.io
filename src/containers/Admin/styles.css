@@ -21846,6 +21846,9 @@ ul {
       content: 'CONTENTS';
       font-family: 'FontAwesome';
       padding-left: 1.8em; }
+    @media only screen and (max-width: 1007px) {
+      .markdown-body .table-of-contents {
+        display: none; } }
     .markdown-body .table-of-contents ol {
       list-style-type: none; }
       .markdown-body .table-of-contents ol:first-child {
@@ -22416,6 +22419,7 @@ pre.line-numbers > code {
 
 .line-highlight:before,
 .line-highlight[data-end]:after {
+  content: attr(data-start);
   position: absolute;
   top: 0.4em;
   left: 0.6em;

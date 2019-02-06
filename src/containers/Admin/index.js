@@ -67,7 +67,7 @@ class Admin extends Component {
 
         return (
           <Template
-            {...convertMarkdownToHTML(entry.getIn(['data'], { includeToc: collectionName !== 'caseStudy' }).toJS())}
+            {...convertMarkdownToHTML(entry.getIn(['data']).toJS(), { includeToc: collectionName !== 'caseStudy' })}
           />
         );
       });

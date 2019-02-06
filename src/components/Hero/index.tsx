@@ -10,7 +10,6 @@ import { headerHeightClass } from 'src/components/Header';
 import { IImage, Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { ITab, Tabs } from 'src/components/Tabs';
-import { Popup } from '../Popup';
 
 let Particles;
 if (typeof window !== 'undefined') {
@@ -221,7 +220,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
   return (
     <React.Fragment>
-      <div key="main" className="relative">
+      <div key="main" className="relative overflow-hidden">
         <div className={cn(headerHeightClass, 'w-100')} />
         <div
           className={cn(
