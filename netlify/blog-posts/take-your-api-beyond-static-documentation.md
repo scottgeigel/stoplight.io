@@ -49,13 +49,13 @@ Depending on your situation, it might not be feasible or necessary to automatica
 
 For example, include a form field to include an API key, or provide a token generation tool. Then populate the key or token into your example requests so they can be used quickly. No more `YOUR_KEY_HERE` stuff. Authentication is one of the biggest hurdles to using an API. You can maintain security while still making it easy for your approved developers to send their credentials.
 
-Stoplight’s [automated API documentation](https://stoplight.io/documentation/) provides copy-paste examples for your API in 11 programming languages and three command tools, all generated from your OpenAPI spec.
+Stoplight’s [automated API documentation](/documentation/) provides copy-paste examples for your API in 11 programming languages and three command tools, all generated from your OpenAPI spec.
 ## Ensure Docs Stay Updated With CI/CD Tools
 Outdated or inaccurate documentation has to be high up on the list of developer pet peeves. When attempting to integrate with a poorly-documented API, a developer may first assume they’re doing something wrong. They edit their code, run it again, and still see errors. Finally, they dig into the response and realize the API works differently than the docs claim. It’s maddening.
 
 Documentation rarely becomes outdated on purpose. Most inaccuracies in API documentation are accidents, yet they still send developers scrambling. In the name of developer efficiency and sanity, incorporate your APIs—and the documentation—into your CI/CD pipeline.
 
-In order to keep your docs updated, [generate documentation from your OpenAPI spec](https://stoplight.io/documentation/generator/) whenever there are changes. Automation means you don’t need to worry about a mismatch between the API in production and the documentation developers use to access it. While the docs you output may still be static, the process of keeping them in sync takes you beyond typical documentation.
+In order to keep your docs updated, [generate documentation from your OpenAPI spec](/documentation/generator/) whenever there are changes. Automation means you don’t need to worry about a mismatch between the API in production and the documentation developers use to access it. While the docs you output may still be static, the process of keeping them in sync takes you beyond typical documentation.
 
 
 

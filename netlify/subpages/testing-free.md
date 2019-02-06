@@ -34,11 +34,11 @@ meta:
 It has become increasingly important to develop highly flexible, performant, and powerful testing roadmaps to catch bugs faster and rapidly iterate. Stoplight provides a complete set of free API testing tools that include a free REST API testing tool, free web API testing tools, and much more. A thorough test suite is essential for:
 
 - Assessing the health of an API
-- Providing [valuable documentation](https://stoplight.io/documentation)
-- [Driving design](https://stoplight.io/design) and implementation
+- Providing [valuable documentation](/documentation)
+- [Driving design](/design) and implementation
 - Managing technical debt
 
-> [Stoplight’s Scenarios](https://stoplight.io/testing) is a free API testing tool that supports OpenAPI Specification (formerly known as Swagger).
+> [Stoplight’s Scenarios](/testing) is a free API testing tool that supports OpenAPI Specification (formerly known as Swagger).
 
 ## Assessing the Health of an API
 

@@ -34,7 +34,7 @@ SendGrid is an email infrastructure company — they handle all the technical de
 
 The reality is that you can’t afford to not invest in your customers. API documentation and testing isn’t for you, it’s for everyone else in your community. SendGrid knew this, and their customers appreciate it — the investment is paying off in spades.
 
-At Stoplight we believe it is important to shine a light on companies like SendGrid, and we will continue to share stories of customers doing awesome stuff. If you want to learn more about Stoplight visit us at [stoplight.io](https://stoplight.io/), our door is open and our team is more than happy to talk.
+At Stoplight we believe it is important to shine a light on companies like SendGrid, and we will continue to share stories of customers doing awesome stuff. If you want to learn more about Stoplight visit us at [stoplight.io](/), our door is open and our team is more than happy to talk.
 
 Lastly, we would like to say **thank you** SendGrid. You were our first customer, and for that we will always be grateful.
 

@@ -46,7 +46,7 @@ Reading documentation is one way to determine how an API works. Live calls add a
 
 You’ll want to add other types of documentation, too, such as tutorials. Look for a tool that allows you to have customized documentation alongside your generated docs. You’ll also may want to match your site’s style and navigation.
 
-For an example of fully customizable, generated docs, see [Stoplight’s hosted API documentation](https://stoplight.io/documentation/)
+For an example of fully customizable, generated docs, see [Stoplight’s hosted API documentation](/documentation/)
 
 ## Create Mock Servers
 
@@ -54,7 +54,7 @@ Just as interactive documentation adds another dimension beyond simple reference
 
 Much as documentation is built and rebuilt as you update your API description, mock servers can also automatically have your latest changes. Integrate with your own API as you build it by including mock server endpoints in your code, or coordinate with API consumers and collaborators to write tests or sample code. Code you write against a mock server isn’t wasted, because only the server root will change when you move to production.
 
-Sometimes hard-coded responses aren’t enough for validation. For example, you might need dates in the future, or want to randomize some of the content in your results. Some tools, such as [Stoplight’s Prism-based mock servers](https://stoplight.io/mocking/) allow you to extend your API description with scripts before or after traffic reaches your mock server.
+Sometimes hard-coded responses aren’t enough for validation. For example, you might need dates in the future, or want to randomize some of the content in your results. Some tools, such as [Stoplight’s Prism-based mock servers](/mocking/) allow you to extend your API description with scripts before or after traffic reaches your mock server.
 
 ## Automatically Test Your APIs
 
@@ -62,7 +62,7 @@ Mocking API calls before they’re in production is a good idea. Once your API i
 
 Your OpenAPI definition describes exactly how your API can be used and what response to expect. During testing, you create scenarios for how your API is used, then run them to make sure you get the correct HTTP status code for the method used. If your OpenAPI document is a contact, testing makes sure you’ve built it true to the terms.
 
-Testing can be built into your CI/CD pipeline, so you always know that your tests are passing. Like other software testing, you can track coverage, ensuring that errors are unlikely to slip through. You can build fully customizable tests with built-in coverage reporting with [Stoplight OpenAPI testing](https://stoplight.io/testing/).
+Testing can be built into your CI/CD pipeline, so you always know that your tests are passing. Like other software testing, you can track coverage, ensuring that errors are unlikely to slip through. You can build fully customizable tests with built-in coverage reporting with [Stoplight OpenAPI testing](/testing/).
 
 ![OAS Linting](/images/linting-design-guide.png "Linting")
 

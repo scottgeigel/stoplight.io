@@ -28,7 +28,7 @@ meta:
 
 **Getting Started**
 
-Stoplight Scenarios is a powerful (but accessible!) product that takes the pain out of API testing. Today, we are releasing it as a standalone product, available [on the web](https://scenarios.stoplight.io), and as a [desktop app](https://download-next.stoplight.io).
+Stoplight Scenarios is a powerful (but accessible!) product that takes the pain out of API testing. Today, we are releasing it as a standalone product, available [on the web](/testing), and as a [desktop app](https://download-next.stoplight.io).
 
 We generally recommend the desktop app when possible, because it can work with local servers, behind firewalls, and with local files.
 

@@ -75,4 +75,4 @@ We anticipate that this will be one of the final changes to the collection forma
 
 If you are using the Prism 2 alpha to work with Scenarios, run “prism update” in your terminal to get the latest version, which is 2-alpha.5 at the time of this writing. Run “prism version” to see what version you currently have installed. More details on the changes [here](https://github.com/stoplightio/prism/releases/tag/v2.0.0-alpha.4).
 
-Over the next month we will be introducing easier one-click mock servers, and Hubs! Hubs is the next version of our documentation platform, and we are are excited to share what we have been working on with everybody. If you have not already, you can sign up for scenarios at [https://scenarios.stoplight.io](https://scenarios.stoplight.io).
+Over the next month we will be introducing easier one-click mock servers, and Hubs! Hubs is the next version of our documentation platform, and we are are excited to share what we have been working on with everybody. If you have not already, you can sign up for scenarios at [https://stoplight.io/testing](/testing).

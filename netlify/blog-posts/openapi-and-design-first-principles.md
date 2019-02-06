@@ -50,11 +50,11 @@ It works like this: Dedicated API architects write a specification and all the s
 
 In any case, the specification — since it is just a JSON or YAML file — [lives in a source repository where all the stakeholders can interact with it and provide feedback](http://apievangelist.com/2017/05/25/every-api-should-begin-with-a-github-repository/).
 
-For even better collaboration, you can use SaaS products like [Stoplight](https://stoplight.io/), which retain your specification and provide a web-based visual API designer and OpenAPI editor to all collaborators. Dedicated API design tools like this make the process more accessible and less prone to errors. You can see how much [faster visual API design is in comparison to writing the definition in this video](https://vimeo.com/246858062).
+For even better collaboration, you can use SaaS products like [Stoplight](/), which retain your specification and provide a web-based visual API designer and OpenAPI editor to all collaborators. Dedicated API design tools like this make the process more accessible and less prone to errors. You can see how much [faster visual API design is in comparison to writing the definition in this video](https://vimeo.com/246858062).
 
 When the specification is complete, you can then generate a mock server. Thanks to this, frontend and backend development can happen independently, without teams waiting for each other. Backend engineers write the API server to specification and test it, or even leverage tools capable of generating server-side code stubs from OpenAPI to save time writing code. Simultaneously, the frontend developers can build their application and receive correct API responses from the mock server. To some extent, this approach can be considered the API equivalent of test-driven development (TDD), or contract-first development. There are multiple tools to run tests and build a mock server from OpenAPI.
 
-[Prism, a server and command line utility available from Stoplight](https://stoplight.io/platform/prism/), is capable of doing both.
+[Prism, a server and command line utility available from Stoplight](/platform/prism/), is capable of doing both.
 
 ## The Power of OpenAPI
 
@@ -70,5 +70,5 @@ There’s a real danger that the automatically generated specifications are cons
 
 ## It’s Not All Bad
 
-So, is auto-generating machine-readable API definitions always wrong, by definition (pun intended)? No, because they can act as your first step into the OpenAPI ecosystem. These definitions can also assist in refactoring a legacy API. While it’s often useful to start a new, refactored API version from a clean slate, having the ability to compare both versions can help identify the differences and potential problems. You could, for example, generate an OpenAPI definition from the existing implementation and then load it into [Stoplight](https://stoplight.io/) to keep as a reference during an API-first redesign.
+So, is auto-generating machine-readable API definitions always wrong, by definition (pun intended)? No, because they can act as your first step into the OpenAPI ecosystem. These definitions can also assist in refactoring a legacy API. While it’s often useful to start a new, refactored API version from a clean slate, having the ability to compare both versions can help identify the differences and potential problems. You could, for example, generate an OpenAPI definition from the existing implementation and then load it into [Stoplight](/) to keep as a reference during an API-first redesign.
 

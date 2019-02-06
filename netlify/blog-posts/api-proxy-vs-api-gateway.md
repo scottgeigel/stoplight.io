@@ -92,7 +92,7 @@ If you have different microservices with a set of shared common features, such a
 ## Why use an API Proxy over an API Gateway?
 
 The advantage of an API Proxy is that it is essentially a lightweight, simple API Gateway. If you already have an existing API and just want to add some basic security and monitoring capabilities than an API Proxy would probably be the way to go. Many times, API Gateways are a part of larger API Management platforms since they play a part in the larger API lifecycle. This can introduce more complexity and can make them more difficult to manage and more expensive. Gateways must be maintained like any other bit of code and if you want to take advantage of the all the additional features then the level of complexity will increase. Also, take into consideration the price difference. There are many popular API Proxies that are open source while most API Gateways are proprietary.
-> Some API Gateways support importing and exporting APIs with the [OpenAPI Specification](https://stoplight.io/design/free/).
+> Some API Gateways support importing and exporting APIs with the [OpenAPI Specification](/design/free/).
 
 ![API Proxy versus API Gateway](https://cdn-images-1.medium.com/max/2000/1*Cpy-nYVSWKxCQO0J3QrClg.png)*API Proxy versus API Gateway*
 

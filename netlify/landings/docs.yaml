@@ -49,7 +49,7 @@ featureSection:
       description: >-
         Never have out-of-date documentation. Reference your OpenAPI Specification
         document to [automatically generate API reference
-        documentation](https://stoplight.io/documentation/generator/). Use the
+        documentation](/documentation/generator/). Use the
         Stoplight API to automate your documentation process by integrating it
         into your existing CI/CD workflow.
       titleURL: /documentation/automation/
@@ -62,7 +62,7 @@ featureSection:
         for you, so you never have to worry about managing servers for your
         documentation ever again. Manage access control and measure analytics with
         integrations. [Our enterprise ready documentation
-        tool](https://stoplight.io/documentation/enterprise/) allows you to
+        tool](/documentation/enterprise/) allows you to
         download the static assets or use our on-premise solutions behind your
         firewall to host your documentation from anywhere.
       titleURL: /documentation/hosted/

@@ -17,7 +17,7 @@ featureSection:
     standardized REST APIs](/design/web) for your organization. Without writing
     any code, model complex APIs faster than ever while simultaneously getting
     feedback on your prototypes with our [hosted mock
-    servers](https://stoplight.io/mocking).
+    servers](/mocking).
   buttons:
     - title: Start Designing Now
       href: 'https://next.stoplight.io/'

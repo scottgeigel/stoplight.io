@@ -28,11 +28,11 @@ A bridge between humans and machines, photo by Marc-Antoine Dépelteau
 
 It wasn’t so long ago that an API specification was just a thing that got generated. Write some code, add some annotations, and let your build tool create an API specification document you shared with your colleagues, community, friends, and family. Job done.
 
-All that’s changed with the advent of design-first APIs. It’s become common practice for API designers to actively create the “best” design they can for humans and machines that consume their APIs. This can be done without writing a stitch of code, [using tools like Stoplight](https://stoplight.io/design/) coupled with the massively popular OpenAPI (fka Swagger) Specification.
+All that’s changed with the advent of design-first APIs. It’s become common practice for API designers to actively create the “best” design they can for humans and machines that consume their APIs. This can be done without writing a stitch of code, [using tools like Stoplight](/design/) coupled with the massively popular OpenAPI (fka Swagger) Specification.
 
 ## Advantages of Design-First APIs
 
-* [Design-first APIs](https://stoplight.io/design/#powerful-visual-editor) force designers to actively _think_ about an interface that is the best fit for their consumers and the provider’s goals when offering an API
+* [Design-first APIs](/design/#powerful-visual-editor) force designers to actively _think_ about an interface that is the best fit for their consumers and the provider’s goals when offering an API
 * This process ensures that the interface and the backend it exposes do not contaminate each other. This is especially important when existing or legacy backends are being newly offered as REST APIs
 * The design process offers an outcome in the form of a tangible artifact — a draft API specification document — that can be easily shared with stakeholders to share, communicate, and agree upon the proposed design
 * A secondary benefit is that design-first APIs catapult the production of the API specification forward in the API lifecycle. Your community and stakeholders gain visibility of specific API changes much sooner than if the production of an API specification is coupled with the development of the code
@@ -43,7 +43,7 @@ The increasing importance of design-first APIs and use of API specification docu
 
 Many API providers take advantage of the features in the OpenAPI specification that allow them to both define the API and document their design intentions. Key among these is the Description object, a free text property present in most objects including Info, Path, and Definition.
 
-While this is a string, its value can be richer than simple text. For example, Markdown can happily be stored (CommonMark being supported by the specification). Most tools, like [Stoplight](https://stoplight.io/documentation) and open source resources like [Swagger UI](https://swagger.io/tools/swagger-ui/) and [Redoc](https://github.com/Rebilly/ReDoc), will actively render the Markdown, providing convenient formatting for readers of the document.
+While this is a string, its value can be richer than simple text. For example, Markdown can happily be stored (CommonMark being supported by the specification). Most tools, like [Stoplight](/documentation) and open source resources like [Swagger UI](https://swagger.io/tools/swagger-ui/) and [Redoc](https://github.com/Rebilly/ReDoc), will actively render the Markdown, providing convenient formatting for readers of the document.
 
 For example, the description property in the Infoobject can be populated as follows (using a pipe for line continuation):
 

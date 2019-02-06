@@ -42,7 +42,7 @@ Developers expect more than boring black and white Markdown REST API documentati
 
 ### Theming
 
-Theming allows you to [easily modify color schemes and add textures](https://stoplight.io/documentation/#fully-customizable) to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
+Theming allows you to [easily modify color schemes and add textures](/documentation/#fully-customizable) to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
 
 ### Custom CSS
 

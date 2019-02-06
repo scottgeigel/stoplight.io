@@ -49,7 +49,7 @@ OAS 3.0 was released in July, 2017, by the OpenAPI Initiative, a consortium of m
 
 While OAS 3.0 is the way forward, each of these alternative formats has tooling associated. You may find yourself converting between them, especially OAS 2.0, until the tools catch up.
 
-Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OAS 3.0](https://stoplight.io/api-design-guide/oas-spec/) to describe your API.
+Your API design requires a way to define how the API will be used. The future-thinking approach is to select [OAS 3.0](/api-design-guide/oas-spec/) to describe your API.
 
 ## Why API Design-First Matters
 
@@ -89,7 +89,7 @@ While we’ll go into specifics below, these are the high level tenets of good A
 - Maintain internal consistency
 - When possible, use an established convention
 
-You’ll want to keep your entire team updated as you make [design decisions together](https://stoplight.io/design/#collaborative-design). Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) can help keep everyone on the same page.
+You’ll want to keep your entire team updated as you make [design decisions together](/design/#collaborative-design). Your OpenAPI spec is your single source of truth, so make sure it is available in a place where everyone can see revisions and discuss changes. A GitHub repository or Stoplight’s [Visual OpenAPI Designer](/design) can help keep everyone on the same page.
 
 ### How to Design a REST API
 

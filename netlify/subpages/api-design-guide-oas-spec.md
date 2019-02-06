@@ -63,4 +63,4 @@ There are good and bad things about both YAML and JSON. In addition to reading a
 
 ## Get Familiar With API Design
 
-Whether wrestling with data formats or spinning up mock servers, there are tools to improve your API design experience. Start from scratch or import an existing description, then start building and sharing with your team. Stoplight’s [Visual OpenAPI Designer](https://stoplight.io/design) provides a design-first suite of tools to help you build great APIs.
+Whether wrestling with data formats or spinning up mock servers, there are tools to improve your API design experience. Start from scratch or import an existing description, then start building and sharing with your team. Stoplight’s [Visual OpenAPI Designer](/design) provides a design-first suite of tools to help you build great APIs.

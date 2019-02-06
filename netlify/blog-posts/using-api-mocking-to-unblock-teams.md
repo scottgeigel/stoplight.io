@@ -59,7 +59,7 @@ One way to take a mock API further than simply filling in some blanks is to use 
 
 In the end, service virtualization should make your organization more efficient, not less, so it is important to focus on the things that matter. API design, communication, documentation, consistency, and test integrations are all huge gains that can be the difference between a two-month project and a 10-month project.
 
-*Have an API, want to add mocking into the mix? [Stoplight Scenarios](http://scenarios.stoplight.io) makes it easy to mock both pre-existing APIs, and new APIs.*
+*Have an API, want to add mocking into the mix? [Stoplight Scenarios](/testing) makes it easy to mock both pre-existing APIs, and new APIs.*
 
 ***About the author:** Zachary Flower ([@zachflower](http://twitter.com/zachflower)) is a freelance web developer, writer, and polymath. He has an eye for simplicity and usability, and strives to build products with both the end user and business goals in mind.*
 

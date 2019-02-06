@@ -44,7 +44,7 @@ There is also a practical point for developers. In markets like the UK, the prov
 
 Step in mocking to help out. UK Open Banking provides a [reference implementation](https://github.com/OpenBankingUK/tpp-reference-server) of the available APIs. However, they’ll be esoteric cases that developers want to test that don’t come out of the box with this pre-canned piece of software. In working with different financial institutions, developers may also want to replicate behaviors they find in a live environment for test purposes — something the reference application won’t give them.
 
-Tools like [Prism](https://stoplight.io/platform/prism/) , therefore, help developers bridge the gap between what they need to get the job done and what is available in the fledgling Open Banking Space:
+Tools like [Prism](/platform/prism/) , therefore, help developers bridge the gap between what they need to get the job done and what is available in the fledgling Open Banking Space:
 
 * Developers can grab the core specification from the relevant source — for example the [UK Open Banking Payment Initiation API](https://github.com/OpenBankingUK/payment-initiation-api-spec/blob/master/dist/v1.1/payment-initiation-swagger.yaml) — and get straight to work by starting Prism from the command line.
 

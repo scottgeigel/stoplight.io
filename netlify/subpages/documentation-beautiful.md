@@ -41,11 +41,11 @@ A users experience with documentation can affect the learning process positively
 
 ## Stoplight Documentation
 
-[Stoplight Documentation](https://stoplight.io/documentation/#interactive-api-documentation) provides multiple methods for creating not only [beautiful API documentation](https://stoplight.io/documentation) but also reference material that appeals to your users. You can modify design concepts like API documentation format and API documentation theme to create unique [interactive API documentation](https://stoplight.io/documentation/#interactive-api-documentation). You can adjust your documentation design via [Theming](https://docs.stoplight.io/documentation/design/theming), [Custom CSS](https://docs.stoplight.io/documentation/design/custom-css), and [Custom Javascript](https://docs.stoplight.io/documentation/design/custom-js).
+[Stoplight Documentation](/documentation/#interactive-api-documentation) provides multiple methods for creating not only [beautiful API documentation](/documentation) but also reference material that appeals to your users. You can modify design concepts like API documentation format and API documentation theme to create unique [interactive API documentation](/documentation/#interactive-api-documentation). You can adjust your documentation design via [Theming](https://docs.stoplight.io/documentation/design/theming), [Custom CSS](https://docs.stoplight.io/documentation/design/custom-css), and [Custom Javascript](https://docs.stoplight.io/documentation/design/custom-js).
 
 ## Theming
 
-Theming brings your API documentation to life. It allows you to [easily modify color schemes and add textures](https://stoplight.io/documentation/#fully-customizable) to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
+Theming brings your API documentation to life. It allows you to [easily modify color schemes and add textures](/documentation/#fully-customizable) to your documentation. There are four different theme settings that can be modified: Primary Color, Secondary Color, Background, and Texture.
 
 ## Custom CSS
 
