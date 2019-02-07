@@ -10,7 +10,7 @@ author: Lukas Rosenstock
 title: Designing APIs for Microservices
 subtitle: How to Gain the Benefits of Microservice Architecture in API Design
 image: /images/ash-edmonds-636863-unsplash.jpg
-color: green
+color: blue-darker
 tabs:
   - {}
 disqus:
