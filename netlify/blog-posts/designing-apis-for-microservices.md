@@ -7,7 +7,7 @@ relatedTags:
 publishedDate: 2019-02-07T18:09:11.347Z
 author: Lukas Rosenstock
 title: Designing APIs for Microservices
-subtitle: How to Reap the Benefits of Microservice Architecture in API Design
+subtitle: How to Gain the Benefits of Microservice Architecture in API Design
 image: /images/ash-edmonds-636863-unsplash.jpg
 color: green
 tabs:
@@ -19,18 +19,16 @@ actionBar:
     - color: purple
   enabled: false
 meta:
-  description: How to Reap the Benefits of Microservice Architecture in API Design
+  description: How to Gain the Benefits of Microservice Architecture in API Design
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Designing APIs for Microservices | Stoplight API Corner
   twitter:
-    description: How to Reap the Benefits of Microservice Architecture in API Design
+    description: How to Gain the Benefits of Microservice Architecture in API Design
     title: Designing APIs for Microservices | Stoplight API Corner
     image: /images/ash-edmonds-636863-unsplash.jpg
     username: '@stoplightio'
 ---
-*Photo by [Ash Edmonds](https://unsplash.com/photos/XZ0xN0hmpi4) on [Unsplash](https://unsplash.com)*
-
 So, you're at the start of a new project or in need of a significant refactoring to tackle technical debt, and you have decided to build a microservice architecture? Congratulations, you've just given yourself a massive API design task!
 
 Microservices require APIs to interact with each other, as you might have learned from my previous article "[Stop Calling Your APIs Microservices](https://stoplight.io/blog/stop-calling-your-apis-microservices-e165a80eba9d/)." Therefore, let's have a look at the challenges and unique requirements for microservice API design!
@@ -73,7 +71,7 @@ Using shared domain models for different microservices works exceptionally well 
 
 ## Summary
 
-To recap, designing microservice APIs is as important as designing other APIs, especially if you want to reap the benefits of the microservice architecture. The important considerations are:
+To recap, designing microservice APIs is as important as designing other APIs, especially if you want to gain the benefits of the microservice architecture. The important considerations are:
 
 - Don't underestimate the role of API design
 - Design non-chatty interfaces for improved performance
