@@ -13,21 +13,25 @@ publishedDate: 2018-12-04T20:27:05.450Z
 author: Lukas Rosenstock
 title: Stop Calling Your APIs Microservices
 subtitle: 'The Relationship between APIs, Microservices, and Containers'
-image: 'https://cdn-images-1.medium.com/max/9802/1*vhPNg3Vh58W-mTcDsrbKAg.jpeg'
+image: /images/dil-679756-unsplash.jpg
 color: purple-darker
 disqus:
   enabled: true
 actionBar:
   enabled: false
 meta:
-  description: Stop Calling Your APIs Microservices
-  title: Blog | Stoplight
+  description: 'The Relationship between APIs, Microservices, and Containers'
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Stop Calling Your APIs Microservices | Stoplight API Corner
+  image: /images/dil-679756-unsplash.jpg
   twitter:
-    description: Stop Calling Your APIs Microservices
-    title: Blog | Stoplight
+    description: 'The Relationship between APIs, Microservices, and Containers'
+    title: Stop Calling Your APIs Microservices | Stoplight API Corner
+    image: /images/dil-679756-unsplash.jpg
     username: '@stoplightio'
 ---
-*Photo by [Dil](https://unsplash.com/photos/8OECtq8rrNg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+_Photo by [Dil](https://unsplash.com/photos/8OECtq8rrNg) on [Unsplash](https://unsplash.com/)_
 
 Have you ever heard the adage that “there are only two hard problems in computer science, cache invalidation, naming things, and off-by-one errors?” Allegedly, [Phil Karlton said this](https://quotesondesign.com/phil-karlton/) [sometime around 1996/97](https://twitter.com/timbray/status/817025379109990402). While [many comedic spin-offs for this famous phrase](https://www.martinfowler.com/bliki/TwoHardThings.html) mention additional problems, a recent observation in the world of APIs seems to prove the bit about naming things right: There’s some confusion about the terms “API” and “microservice,” and some people seem to use them interchangeably.
 
@@ -73,6 +77,6 @@ In its most basic form, every microservice exposes an API so that other services
 
 Of course, there are different aspects to emphasize when designing microservice APIs compared to more outward-facing APIs. We’ll look at API design for microservices in an upcoming post, so stay tuned.
 
-![](https://cdn-images-1.medium.com/max/2000/1*eskAtDF7n7VTRp90duFiUg.png)
+![Diagram of microservices with APIs that are both talking internally and externally to other services](/images/1_eskatdf7n7vtrp90dufiug.png)
 
 Microservices and APIs are not the same and, while we’re at it, neither are microservices and containers. However, the two concepts work together in two different ways: First, microservices can be a means to deploy the backend for an internal, partner, or public API. Second, microservices typically rely on APIs as a language-independent means to communicate with each other in an internal network. Development teams can use similar design approaches and tools for creating both outward-facing and microservice APIs. We will cover distinct best practices for different types of APIs in an upcoming post.
