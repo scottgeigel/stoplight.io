@@ -1,9 +1,10 @@
 ---
 path: /blog/designing-apis-for-microservices
 tags:
-  - {}
+  - blog
+  - blog-design
 relatedTags:
-  - {}
+  - blog-design
 publishedDate: 2019-02-07T18:09:11.347Z
 author: Lukas Rosenstock
 title: Designing APIs for Microservices
