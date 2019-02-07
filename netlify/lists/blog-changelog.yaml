@@ -3,6 +3,8 @@ tag: blog-changelog
 title: Changelog
 color: purple
 tabs:
+  - href: /blog
+    title: Latest
   - href: /blog/general
     title: General
   - href: /blog/api-design
@@ -13,14 +15,12 @@ tabs:
     title: API Testing
   - href: /blog/changelog
     title: Changelog
-  - href: /blog
-    title: Archive
 actionBar:
   enabled: true
 meta:
-  title: Changelog | Stoplight
+  title: Changelog | Stoplight API Corner
   twitter:
-    title: Changelog | Stoplight
+    title: Changelog | Stoplight API Corner
     username: '@stoplightio'
 pagination:
   enabled: true

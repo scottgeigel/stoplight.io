@@ -3,6 +3,8 @@ tag: blog-general
 title: General
 color: purple
 tabs:
+  - href: /blog
+    title: Latest
   - href: /blog/general
     title: General
   - href: /blog/api-design
@@ -13,16 +15,14 @@ tabs:
     title: API Testing
   - href: /blog/changelog
     title: Changelog
-  - href: /blog
-    title: Archive
 actionBar:
   enabled: true
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: General | Stoplight
+  title: General | Stoplight API Corner
   twitter:
-    title: General | Stoplight
+    title: General | Stoplight API Corner
     username: '@stoplightio'
 pagination:
   enabled: true

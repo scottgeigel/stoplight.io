@@ -4,6 +4,8 @@ title: Stoplight API Corner
 subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
 color: purple
 tabs:
+  - href: /blog
+    title: Latest
   - href: /blog/general
     title: General
   - href: /blog/api-design
@@ -14,15 +16,13 @@ tabs:
     title: API Testing
   - href: /blog/changelog
     title: Changelog
-  - href: /blog
-    title: Archive
 actionBar:
   enabled: true
 meta:
   favicon: /images/mark_light_bg.png
-  title: Read Our Blog | Stoplight
+  title: Latest Stoplight Blog Posts | Stoplight API Corner
   twitter:
-    title: Read Our Blog | Stoplight
+    title: Latest Stoplight Blog Posts | Stoplight API Corner
     username: '@stoplightio'
 pagination:
   enabled: true
