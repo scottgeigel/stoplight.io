@@ -30,6 +30,8 @@ meta:
     image: /images/ash-edmonds-636863-unsplash.jpg
     username: '@stoplightio'
 ---
+*Photo by [Ash Edmonds](https://unsplash.com/photos/XZ0xN0hmpi4) on [Unsplash](https://unsplash.com)*
+
 So, you're at the start of a new project or in need of a significant refactoring to tackle technical debt, and you have decided to build a microservice architecture? Congratulations, you've just given yourself a massive API design task!
 
 Microservices require APIs to interact with each other, as you might have learned from my previous article "[Stop Calling Your APIs Microservices](https://stoplight.io/blog/stop-calling-your-apis-microservices-e165a80eba9d/)." Therefore, let's have a look at the challenges and unique requirements for microservice API design!
