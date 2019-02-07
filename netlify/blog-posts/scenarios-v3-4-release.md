@@ -25,7 +25,7 @@ meta:
     title: Scenarios v3.4 Release | Stoplight
     username: '@stoplightio'
 ---
-Today, we are happy to announce the release of Scenarios v3.4! This release includes several highly requested features, as well as a slew of bug fixes. You can check all of this out now at [https://stoplight.io/testing](/testing).
+Today, we are happy to announce the release of Scenarios v3.4! This release includes several highly requested features, as well as a slew of bug fixes. You can check all of this out now at [https://scenarios.stoplight.io](https://scenarios.stoplight.io).
 
 ### v3.4 highlights:
 
@@ -94,4 +94,4 @@ We’ve updated the editor UI in a few small ways. The primary goal here was to 
 
 We hope you enjoy this release! Please let us know if you run into any bugs, or have questions.
 
-We’re on Twitter [@stoplightio](http://twitter.com/stoplightio) and available by email at hi [at] stoplight.io.
+We’re on Twitter [@stoplightio](http://twitter.com/stoplightio) and available by email at hi  @stoplight.io.
