@@ -9037,6 +9037,11 @@ markdown-it-anchor@5.0.x:
   resolved "https://registry.npmjs.org/markdown-it-anchor/-/markdown-it-anchor-5.0.2.tgz#cdd917a05b7bf92fb736a6dae3385c6d0d0fa552"
   integrity sha512-AFM/woBI8QDJMS/9+MmsBMT5/AR+ImfOsunQZTZhzcTmna3rIzAzbOh5E0l6mlFM/i9666BpUtkqQ9bS7WApCg==
 
+markdown-it-toc-done-right@2.0.x:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/markdown-it-toc-done-right/-/markdown-it-toc-done-right-2.0.3.tgz#5961ee2de72ced54d370d307ced3742e9277598b"
+  integrity sha512-W3IgcWM8eP0Og52v5W1o9lrCvhIptlMoL/khBexxWge+HNAueYWXXUQI/VFX/dgqqT0rO53Iv92t+RTpZ74ivg==
+
 markdown-it-video@0.6.x:
   version "0.6.3"
   resolved "https://registry.npmjs.org/markdown-it-video/-/markdown-it-video-0.6.3.tgz#ee96a8fce4a262872f8aaf9706c31540d40104c2"

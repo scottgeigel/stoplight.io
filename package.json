@@ -50,6 +50,7 @@
     "markdown-it": "8.4.x",
     "markdown-it-anchor": "5.0.x",
     "markdown-it-video": "0.6.x",
+    "markdown-it-toc-done-right": "2.0.x",
     "node-sass": "4.10.x",
     "postcss": "7.0.x",
     "postcss-flexbugs-fixes": "4.1.x",

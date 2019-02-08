@@ -82,7 +82,7 @@ Make sure to use human terms, avoid phrases like “exception has been thrown by
 
 Example (401 Status Code Error from Twilio):
 
-```
+```json
 {
     “code”: 20003,
     “detail”: “Your AccountSid or AuthToken was incorrect.”,
@@ -120,15 +120,15 @@ Twilio publishes their full Error and Warning Directory with possible causes and
 
 In the case of error 20003 (the 401 status code error from earlier), there are a lot of possible causes which they clearly lay out in their Error and Warning Directory.
 
-![](https://cdn-images-1.medium.com/max/2000/1*UNdj6FinW1f-nqcApL4wyg.png)
+![Source: https://www.twilio.com/docs/api/errors](/images/twilio-error-codes1.png)
 
-![Source: \[https://www.twilio.com/docs/api/errors\](https://www.twilio.com/docs/api/errors)](https://cdn-images-1.medium.com/max/2000/1*orChph8-kUEM93zGwXLhlQ.png)_Source: <https://www.twilio.com/docs/api/errors>_
+![Source: https://www.twilio.com/docs/api/errors](/images/twilio-error-codes2.png)*Source: [https://www.twilio.com/docs/api/errors](https://www.twilio.com/docs/api/errors)*
 
 Stripe also does something similar with extensive descriptions of the different error codes.
 
-![](https://cdn-images-1.medium.com/max/2114/1*OWvMITiUJOns46g6BOpEvw.png)
+![Source: https://stripe.com/docs/error-codes](/images/stripe-error-codes1.png)
 
-![Source: \[https://stripe.com/docs/error-codes\](https://stripe.com/docs/error-codes)](https://cdn-images-1.medium.com/max/2072/1*-HXRaJ42D6CgR2JFaUSPzA.png)_Source: <https://stripe.com/docs/error-codes>_
+![Source: https://stripe.com/docs/error-codes](/images/stripe-error-codes2.png)*Source: <https://stripe.com/docs/error-codes>*
 
 You might even find your error messages in StackOverflow questions. Respond to these in a humble, human, and helpful way too. Because of SEO, it is common for users to end up on StackOverflow with your error messages and not your actual documentation.
 

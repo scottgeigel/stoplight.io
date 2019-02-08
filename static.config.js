@@ -7,7 +7,7 @@ import chokidar from 'chokidar';
 import frontmatter from 'front-matter';
 import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
-import { Renderer as MarkdownRenderer } from './src/utils/markdown';
+import { Renderer as MarkdownRenderer, convertMarkdownToHTML } from './src/utils/markdown';
 import { formatDate } from './src/utils/dates/index.ts';
 
 import webpack from './webpack';
@@ -34,36 +34,22 @@ const slugify = title => {
 };
 
 const dataLoaders = {
-  '.md': file => {
+  '.md': (file, options) => {
     const { attributes, body } = frontmatter(file);
 
     return {
       ...attributes,
-      body: MarkdownRenderer(body),
+      body: MarkdownRenderer(body, options),
     };
   },
   '.yaml': yaml.safeLoad,
 };
 
-const convertPropertiesToHTML = data => {
-  for (const key in data) {
-    if (data.hasOwnProperty(key)) {
-      if (typeof data[key] === 'object') {
-        data[key] = convertPropertiesToHTML(data[key]);
-      } else if (['description', 'markdown'].includes(key)) {
-        data[key] = MarkdownRenderer(data[key]);
-      }
-    }
-  }
-
-  return data;
-};
-
-const getFile = (srcPath, extension = '.yaml') => {
+const getFile = (srcPath, extension = '.yaml', options) => {
   let data;
 
   try {
-    data = dataLoaders[extension](fs.readFileSync(srcPath, 'utf8')) || {};
+    data = dataLoaders[extension](fs.readFileSync(srcPath, 'utf8'), options) || {};
   } catch (e) {
     data = {};
     console.error('Error getFile:', srcPath, e);
@@ -73,7 +59,7 @@ const getFile = (srcPath, extension = '.yaml') => {
 
   // Don't convert settings files
   if (!/settings\.yaml/.test(srcPath)) {
-    data = convertPropertiesToHTML(data);
+    data = convertMarkdownToHTML(data);
   }
 
   return {
@@ -82,7 +68,7 @@ const getFile = (srcPath, extension = '.yaml') => {
   };
 };
 
-const getFiles = async (srcPath, extensions = ['.md', '.yaml']) => {
+const getFiles = async (srcPath, extensions = ['.md', '.yaml'], options) => {
   const files = [];
 
   return new Promise((resolve, reject) => {
@@ -99,7 +85,7 @@ const getFiles = async (srcPath, extensions = ['.md', '.yaml']) => {
           return;
         }
 
-        files.push(getFile(item.path, extension));
+        files.push(getFile(item.path, extension, options));
       })
       .on('error', e => {
         console.error('Error getFiles:', srcPath, e);
@@ -280,8 +266,8 @@ export default {
 
       getFiles(`${NETLIFY_PATH}/landings`),
       getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/subpages`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
+      getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true }),
     ]);
 
     const routes = [

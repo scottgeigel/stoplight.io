@@ -104,7 +104,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
             {bodyImage && (
               <div
-                className="text-center mb-10"
+                className="text-center"
                 style={{
                   marginTop: -120,
                 }}
@@ -113,7 +113,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className={cn('markdown-body', className)} dangerouslySetInnerHTML={{ __html: body }} />
+            <div className={cn('markdown-body pt-10', className)} dangerouslySetInnerHTML={{ __html: body }} />
           </div>
         </Container>
       </Section>
