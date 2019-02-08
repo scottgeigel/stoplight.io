@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
@@ -40,7 +41,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
   author,
   publishedDate,
   backgroundSize = 'cover',
-  color,
+  color = 'transparent',
 }) => {
   return (
     <Link
@@ -52,13 +53,10 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
     >
       <article className="flex box h-full w-full items-center">
         <div
-          className="h-full w-2/5 sm:w-1/5"
+          className={cn('h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat', { [`bg-${color}`]: !image })}
           style={{
             backgroundImage: image ? `url(${image})` : 'none',
             backgroundSize,
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundColor: color || 'transparent',
           }}
         />
 
