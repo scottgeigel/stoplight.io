@@ -9,7 +9,7 @@ relatedTags:
 publishedDate: 2018-07-31T18:53:50.859Z
 author: Taylor Barnett
 title: Writing Documentation When You Aren't A Technical Writer — Part One
-subtitle: ' How do people actually read documentation and how to write documentation and code samples to maximize developer success'
+subtitle: 'How do people actually read documentation and how to write documentation and code samples to maximize developer success'
 image: /images/not-technical-writer-part-one.jpeg
 color: yellow
 disqus:
@@ -20,15 +20,16 @@ actionBar:
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
+  image: /images/not-technical-writer-part-one.jpeg
   robots: 'index, follow'
   title: >-
     Writing Documentation When You Aren't A Technical Writer — Part One |
-    Stoplight
+    Stoplight API Corner
   twitter:
-    description: ' How do people actually read documentation and how to write documentation and code samples to maximize developer success'
+    description: 'How do people actually read documentation and how to write documentation and code samples to maximize developer success'
     title: >-
       Writing Documentation When You Aren't A Technical Writer — Part One |
-      Stoplight
+      Stoplight API Corner
     image: /images/not-technical-writer-part-one.jpeg
     username: '@stoplightio'
 ---
