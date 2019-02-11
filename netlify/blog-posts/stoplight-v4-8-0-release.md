@@ -37,7 +37,7 @@ meta:
 
 ![Checkbox to include OpenAPI document in Hub Page](/images/download-link-checkbox.png)_Checkbox to include OpenAPI document in Hub Page_
 
-![Published Hub with link to the raw OpenAPI Specification document](/images/download-spec-link.png)
+![Published Hub with link to the raw OpenAPI Specification document](/images/download-spec-link.png)_Published Hub with link to the raw OpenAPI Specification document_
 
 Back by popular demand from Stoplight Classic!
 
