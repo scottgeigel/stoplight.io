@@ -9,7 +9,7 @@ publishedDate: 2019-02-08T22:30:00.819Z
 author: Taylor Barnett
 title: Stoplight v4.8.0 Release
 subtitle: New API Documentation Features
-image: /images/download-link-included.png
+image: ''
 color: black
 tabs:
   - {}
@@ -31,8 +31,6 @@ meta:
     image: /images/download-link-included.png
     username: '@stoplightio'
 ---
-*Published Hub with link to the raw OpenAPI Specification document*
-
 ## New 🚀
 
 ### Link to download your OpenAPI Specification document in your published Hub
@@ -57,35 +55,35 @@ Also back by popular demand, you can now mark operations in your specification a
 
 ## Enhancements 💪
 
-* [Modeling] Able to add custom lint rules by editing lint.yml file
-* [Modeling] Added a close icon to JSON Schema validation popup
-* [Modeling] Automatically update local $refs when their pointer is changed
-* [Platform] Can load more than 100 files in a project
-* [Platform] Improved notifications when editing in multiple browser windows, tabs, or desktop apps ([\#283](https://github.com/stoplightio/desktop/issues/283))
-* [Platform] Added warning about unsaved changes when clicking home or organization buttons
-* [Organizations] Sort user lists alphabetically
+* \[Modeling] Able to add custom lint rules by editing lint.yml file
+* \[Modeling] Added a close icon to JSON Schema validation popup
+* \[Modeling] Automatically update local $refs when their pointer is changed
+* \[Platform] Can load more than 100 files in a project
+* \[Platform] Improved notifications when editing in multiple browser windows, tabs, or desktop apps ([\#283](https://github.com/stoplightio/desktop/issues/283))
+* \[Platform] Added warning about unsaved changes when clicking home or organization buttons
+* \[Organizations] Sort user lists alphabetically
 
 ## Fixes 🔧
 
-* [Modeling] allOf/oneOf models with nested JSON references did not display correctly ([\#152](https://github.com/stoplightio/desktop/issues/152))
-* [Modeling] Unable to use an environment variable in place of OpenAPI host with port
-* [Modeling] FormData response bodies, response/request headers were not displaying in Read View ([Forum Link #1](https://community.stoplight.io/t/response-headers-do-not-show-up-in-published-api-docs)) ([Forum Link #2](https://community.stoplight.io/t/example-request-body-not-showing-up-in-read-view))
-* [Hubs] Reordering a page in the Table of Contents removed its tags ([Forum Link](https://community.stoplight.io/t/page-tags-are-lost-when-reordering-pages))
-* [Hubs] Test Request did not support multiple OAS security schemes
-* [Hubs] Test Request paths were encoded
-* [Hubs] Test Request did not support Basic Auth when combined with apiKey
-* [Hubs] Tagged operations were being grouped by their method
-* [Hubs] OAuth callback did not include Hub’s base path
-* [Hubs] Incorrect code generation for Python’s Requests library
-* [Hubs] Could not republish when custom domain limit reached
-* [Hubs] Links with query parameters were being escaped in Markdown ([\#353](https://github.com/stoplightio/desktop/issues/353))
-* [Hubs] Request body examples were not displayed ([\#354](https://github.com/stoplightio/desktop/issues/354))
-* [Organizations] Projects were not sorted alphabetically
-* [Projects] There was no warning or auto-deletion of published Hubs before deleting an organization
-* [Platform] Environment variables input was rendering incorrectly on first load ([\#350](https://github.com/stoplightio/desktop/issues/350))
-* [Platform] HTTP request maker password inputs were not obscured
-* [Platform] HTTP basic auth headers were not set when sending requests from a browser
-* [Platform] Code generation prepended URL with the scheme
-* [Platform] Exporting a file with `deref=all` was not resolving external references in private projects
-* [Platform] Permissions error returned when exporting a file with `format=yaml` option
-* [Scenarios] Utility Scenarios were not being found ([Forum Link](https://community.stoplight.io/t/reference-utility-models-in-test-scenarios-is-not-working))
+* \[Modeling] allOf/oneOf models with nested JSON references did not display correctly ([\#152](https://github.com/stoplightio/desktop/issues/152))
+* \[Modeling] Unable to use an environment variable in place of OpenAPI host with port
+* \[Modeling] FormData response bodies, response/request headers were not displaying in Read View ([Forum Link #1](https://community.stoplight.io/t/response-headers-do-not-show-up-in-published-api-docs)) ([Forum Link #2](https://community.stoplight.io/t/example-request-body-not-showing-up-in-read-view))
+* \[Hubs] Reordering a page in the Table of Contents removed its tags ([Forum Link](https://community.stoplight.io/t/page-tags-are-lost-when-reordering-pages))
+* \[Hubs] Test Request did not support multiple OAS security schemes
+* \[Hubs] Test Request paths were encoded
+* \[Hubs] Test Request did not support Basic Auth when combined with apiKey
+* \[Hubs] Tagged operations were being grouped by their method
+* \[Hubs] OAuth callback did not include Hub’s base path
+* \[Hubs] Incorrect code generation for Python’s Requests library
+* \[Hubs] Could not republish when custom domain limit reached
+* \[Hubs] Links with query parameters were being escaped in Markdown ([\#353](https://github.com/stoplightio/desktop/issues/353))
+* \[Hubs] Request body examples were not displayed ([\#354](https://github.com/stoplightio/desktop/issues/354))
+* \[Organizations] Projects were not sorted alphabetically
+* \[Projects] There was no warning or auto-deletion of published Hubs before deleting an organization
+* \[Platform] Environment variables input was rendering incorrectly on first load ([\#350](https://github.com/stoplightio/desktop/issues/350))
+* \[Platform] HTTP request maker password inputs were not obscured
+* \[Platform] HTTP basic auth headers were not set when sending requests from a browser
+* \[Platform] Code generation prepended URL with the scheme
+* \[Platform] Exporting a file with `deref=all` was not resolving external references in private projects
+* \[Platform] Permissions error returned when exporting a file with `format=yaml` option
+* \[Scenarios] Utility Scenarios were not being found ([Forum Link](https://community.stoplight.io/t/reference-utility-models-in-test-scenarios-is-not-working))
