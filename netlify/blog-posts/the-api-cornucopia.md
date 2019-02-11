@@ -28,6 +28,8 @@ meta:
     title: The API Cornucopia | Stoplight
     username: '@stoplightio'
 ---
+*Yum Mee Chinese Food, Boston, MA*
+
 When I first started working at Stoplight I had a very vague sense of what we created or what we did. Having been born in the late 80’s I have worked with computers for most of my life and even dabbled in writing HTML, CSS, XML, and JS but when people asked me what I did for work my mind would go blank. “I work at Stoplight” I would say, “a software company.” Some people found this vague and brief description acceptable but most would follow up with a flood of inquiries: “What kind of software?” “What does it do?” Is it an app?” “Does it deliver me food?” “Connect me with people?” “Can I use it on my Apple Watch?”
 
 Everyday conversation is fueled by the question “What do you do for a living?” For many, this answer is a simple one off that requires little to no explanation; I am a manager at such and such, maybe an Architect , perhaps even a Press Secretary. Little or no follow up is usually required and the conversation moves into another direction. For me, however, the question would inevitably blindside me. Not because of what my role is, even though it includes a bevy of different hats due to the nature of a startup, but because of what our company does. So I finally decided to create a sketch of what [*Stoplight*](http://stoplight.io/) is and what we do. But before we can plumb the depths of [*Stoplight’s*](http://stoplight.io/) many different services and tools we must discuss one of the lesser known, even lesser understood, but most vital of programming elements, the API.
