@@ -61,7 +61,7 @@ header:
           subtitle: Join the Stoplight community
           title: Forum
           titleColor: green
-        - href: '/blog'
+        - href: /blog
           icon:
             - fas
             - rss
@@ -75,6 +75,13 @@ header:
           subtitle: Learn API Design Best Practices
           title: API Design Guide
           titleColor: yellow
+        - href: /api-documentation-guide/basics/
+          icon:
+            - fas
+            - bookmark
+          subtitle: Learn API Documentation Best Practices
+          title: API Documentation Guide
+          titleColor: green
       title: Resources
       width: 350
     - links:
@@ -93,14 +100,14 @@ header:
     - href: /pricing
       title: Pricing
     - href: /demo
+      isButton: true
       title: Request Demo
-      isButton: true
     - href: 'https://next.stoplight.io'
-      title: Sign In
-      isButton: true
       icon:
         - fas
         - arrow-right
+      isButton: true
+      title: Sign In
 actionBar:
   buttons:
     - color: purple
@@ -129,7 +136,7 @@ footer:
           title: Help Center
         - href: 'https://community.stoplight.io'
           title: 'Forum '
-        - href: '/blog'
+        - href: /blog
           title: Blog
         - href: 'https://press.stoplight.io'
           title: Press
