@@ -41,7 +41,7 @@ meta:
 
 Back by popular demand from Stoplight Classic!
 
-You can now find a checkbox in your Hub’s Page Settings to include a link to your raw OpenAPI Specification document in your Hub. If you are publishing your OAS document directly (not in a Hub), you can add an extension in your specification document `x-stoplight: { docs: { includeDownloadLink: true } }` include the download link in your published specification. 
+You can now find a checkbox in your Hub’s Page Settings to include a link to your raw OpenAPI Specification document in your Hub. If you are publishing your OAS document directly (not in a Hub), you can add an extension in your specification document `x-stoplight: { docs: { includeDownloadLink: true } }` to include the download link in your published API reference documentation. 
 
 ([Forum Link](https://community.stoplight.io/t/allow-users-to-download-swagger-file))
 
