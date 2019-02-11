@@ -9,6 +9,7 @@ publishedDate: 2019-02-08T22:30:00.819Z
 author: Taylor Barnett
 title: Stoplight v4.8.0 Release
 subtitle: New API Documentation Features
+image: /images/private-endpoint.png
 color: black
 tabs:
   - {}
@@ -20,11 +21,14 @@ actionBar:
   enabled: false
 meta:
   description: New API Documentation Features
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Stoplight v4.8.0 Release | Stoplight API Corner
+  image: /images/private-endpoint.png
   twitter:
     description: New API Documentation Features
     title: Stoplight v4.8.0 Release | Stoplight API Corner
+    image: /images/private-endpoint.png
     username: '@stoplightio'
 ---
 ## New 🚀
