@@ -9,7 +9,7 @@ relatedTags:
 publishedDate: 2018-07-31T18:53:50.859Z
 author: Taylor Barnett
 title: Writing Documentation When You Aren't A Technical Writer — Part One
-subtitle: ' How do people actually read documentation and how to write documentation and code samples to maximize developer success'
+subtitle: 'How do people actually read documentation and how to write documentation and code samples to maximize developer success'
 image: /images/not-technical-writer-part-one.jpeg
 color: yellow
 disqus:
@@ -20,19 +20,21 @@ actionBar:
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
+  image: /images/not-technical-writer-part-one.jpeg
   robots: 'index, follow'
   title: >-
     Writing Documentation When You Aren't A Technical Writer — Part One |
-    Stoplight
+    Stoplight API Corner
+  description: 'How do people actually read documentation and how to write documentation and code samples to maximize developer success'
   twitter:
-    description: ' How do people actually read documentation and how to write documentation and code samples to maximize developer success'
+    description: 'How do people actually read documentation and how to write documentation and code samples to maximize developer success'
     title: >-
       Writing Documentation When You Aren't A Technical Writer — Part One |
-      Stoplight
+      Stoplight API Corner
     image: /images/not-technical-writer-part-one.jpeg
     username: '@stoplightio'
 ---
-_Photo by [rawpixel](https://unsplash.com/photos/VfZOC3kV6sM) on [Unsplash](https://unsplash.com)_
+*Photo by [rawpixel](https://unsplash.com/photos/VfZOC3kV6sM) on [Unsplash](https://unsplash.com)*
 
 _In the fall of 2016, my teammate and I were tasked with the mission of improving my former company’s documentation and content. We spent a year working on all kinds of documentation — API references, guides, tutorials, and blog posts. I had been writing documentation off and on over the previous 5 years, but I wasn’t formally trained in technical writing. I was by no means inexperienced though, due to working on API documentation for projects and a startup and teaching Python Flask workshops towards the end of my computer science degree. This was the first time I had ever been able to focus on documentation, which allowed me to pursue my passion for helping people of all skill levels through technical documentation._
 
@@ -112,7 +114,7 @@ These are all things that could be made more evident in the code.
 
 Here’s an example from the Twilio docs that gives good context to the end user:
 
-![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)
+![*Photo from the /[Twilio Node Helper Library/](https://www.twilio.com/docs/libraries/node)*](/images/twilio-context-example.png)*Photo from the [Twilio Node Helper Library](https://www.twilio.com/docs/libraries/node)*
 
 It makes it very clear how you should install the library, include it in your code, and then what needs to be replaced in the sample code to run the sample.
 
