@@ -26,6 +26,7 @@ meta:
     image: /images/api-microgateways.jpeg
     username: '@stoplightio'
 ---
+*Edinburgh Castle, source: CC0 Public Domain*
 
 Welcome back for another edition of *I’ll REST when I’m Alive*. Today we will be discussing the kerfuffle around API Microgateways. Are they tiny gates that guard the microservice kingdom? Is there a drawbridge over crocodile-infested waters? And most importantly, do you need one?
 
