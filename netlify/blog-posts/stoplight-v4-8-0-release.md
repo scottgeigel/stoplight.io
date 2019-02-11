@@ -9,7 +9,7 @@ publishedDate: 2019-02-08T22:30:00.819Z
 author: Taylor Barnett
 title: Stoplight v4.8.0 Release
 subtitle: New API Documentation Features
-image: /images/private-endpoint.png
+image: /images/download-link-included.png
 color: black
 tabs:
   - {}
@@ -24,20 +24,20 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Stoplight v4.8.0 Release | Stoplight API Corner
-  image: /images/private-endpoint.png
+  image: /images/download-link-included.png
   twitter:
     description: New API Documentation Features
     title: Stoplight v4.8.0 Release | Stoplight API Corner
-    image: /images/private-endpoint.png
+    image: /images/download-link-included.png
     username: '@stoplightio'
 ---
+*Published Hub with link to the raw OpenAPI Specification document*
+
 ## New 🚀
 
 ### Link to download your OpenAPI Specification document in your published Hub
 
 ![Checkbox to include OpenAPI document in Hub Page](/images/download-link-checkbox.png)_Checkbox to include OpenAPI document in Hub Page_
-
-![Published Hub with link to the raw OpenAPI Specification document](/images/download-link-included.png)_Published Hub with link to the raw OpenAPI Specification document_
 
 Back by popular demand from Stoplight Classic!
 
