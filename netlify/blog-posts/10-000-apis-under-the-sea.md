@@ -27,7 +27,7 @@ meta:
     username: '@stoplightio'
 ---
 
-Katsushika Hokusai, Thirty-Six Views of Mount Fuji, The Great Wave Off the Coast of Kanagawa
+*Katsushika Hokusai, Thirty-Six Views of Mount Fuji, The Great Wave Off the Coast of Kanagawa*
 
 Following my journey through APIs and the tech industry while working at [Stoplight](https://stoplight.io) it occurred to me that, while I do understand what an API is, I had no idea what the scope of the API ecosystem was. So I’ve compiled a list of some of the most popular API Directories (or Marketplaces) and an exploration of API Integration Platforms.
 
