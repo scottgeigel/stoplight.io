@@ -37,6 +37,8 @@ meta:
 
 ![Checkbox to include OpenAPI document in Hub Page](/images/download-link-checkbox.png)_Checkbox to include OpenAPI document in Hub Page_
 
+![Published Hub with link to the raw OpenAPI Specification document](/images/download-spec-link.png)
+
 Back by popular demand from Stoplight Classic!
 
 You can now find a checkbox in your Hub’s Page Settings to include a link to your raw OpenAPI Specification document in your Hub. If you are publishing your OAS document directly (not in a Hub), you can add an extension in your specification document `x-stoplight: { docs: { includeDownloadLink: true } }` include the download link in your published specification. 
