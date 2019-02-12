@@ -18,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'The lean, mean, API testing machine'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Introducing Scenarios | Stoplight
+  title: Introducing Scenarios | Stoplight API Corner
+  image: /images/introducing-scenarios.png
   twitter:
-    title: Introducing Scenarios | Stoplight
+    description: 'The lean, mean, API testing machine'
+    title: Introducing Scenarios | Stoplight API Corner
+    image: /images/introducing-scenarios.png
     username: '@stoplightio'
 ---
 
