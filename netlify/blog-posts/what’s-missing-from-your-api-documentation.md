@@ -5,7 +5,7 @@ tags:
   - blog
 relatedTags:
   - {}
-publishedDate: 2019-02-18T08:00:00.000Z
+publishedDate: 2019-02-11T08:00:00.000Z
 author: Adam DuVander
 title: What’s Missing From Your API Documentation
 color: black
