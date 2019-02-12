@@ -39,6 +39,7 @@ Starting from scratch isn’t a good option for most companies. Instead, you mig
 Finally, you can use a hosted option like Stoplight, which provides beautiful, customizable documentation. Going this route typically requires the least amount of engineer time, keeping your team focused on your core business. Since many of these services are delivered in the cloud, updates are automatic and maintenance is minimal. 
 
 All of these options require investment at varying levels. Regardless of which you choose for your API documentation, your developer experience is worth it.
+
 ## Generating Useful API References
 When a developer thinks about API documentation, it’s most likely they envision a complete reference. This is only one type of documentation, but it’s an important one. Here you’ll find a list of API endpoints, what request and response fields are available, and how to authenticate with the API. These are all very important parts of integrating with your API.
 
