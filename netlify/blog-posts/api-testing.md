@@ -18,11 +18,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Achieving Quick and Easy Service Virtualization with Stoplight
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Achieving Quick and Easy Service Virtualization with Stoplight | Stoplight
+  title: API Testing | Stoplight API Corner
   twitter:
-    title: Achieving Quick and Easy Service Virtualization with Stoplight | Stoplight
+    description: Achieving Quick and Easy Service Virtualization with Stoplight
+    title: API Testing | Stoplight API Corner
     username: '@stoplightio'
 ---
 
