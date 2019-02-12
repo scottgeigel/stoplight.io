@@ -18,11 +18,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: From Security to Orchestration
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Microgateways | Stoplight
+  title: API Microgateways | Stoplight API Corner
+  image: /images/api-microgateways.jpeg
   twitter:
-    title: API Microgateways | Stoplight
+    description: From Security to Orchestration
+    title: API Microgateways | Stoplight API Corner
     image: /images/api-microgateways.jpeg
     username: '@stoplightio'
 ---
