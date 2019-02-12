@@ -18,11 +18,13 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: 'An Exploration of API Directories '
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: '10,000 APIs Under the Sea | Stoplight'
+  title: '10,000 APIs Under the Sea | Stoplight API Corner'
   twitter:
-    title: '10,000 APIs Under the Sea | Stoplight'
+    description: 'An Exploration of API Directories '
+    title: '10,000 APIs Under the Sea | Stoplight API Corner'
     image: /images/apis-under-sea.jpeg
     username: '@stoplightio'
 ---
