@@ -16,12 +16,12 @@ disqus:
 actionBar:
   enabled: false
 meta:
-  description: Stop Calling Your APIs Microservices
+  description: Design Web APIs for Humans & Machines
   favicon: /images/mark_light_bg.png
-  title: Stop Calling Your APIs Microservices | Stoplight
+  title: Stop Calling Your APIs Microservices | Stoplight API Corner
   twitter:
-    description: Stop Calling Your APIs Microservices
-    title: Stop Calling Your APIs Microservices | Stoplight
+    description: Design Web APIs for Humans & Machines
+    title: Stop Calling Your APIs Microservices | Stoplight API Corner
     username: '@stoplightio'
 ---
 _A bridge between humans and machines, photo by [Marc-Antoine Dépelteau](https://unsplash.com/@autumnsgrief) on [Unsplash](https://unsplash.com)_
