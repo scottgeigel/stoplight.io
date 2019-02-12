@@ -19,12 +19,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: Where hacking words is a time honored tradition
   favicon: /images/mark_light_bg.png
-  title: All Your Semantics Belong to Us | Stoplight
-  image: /images/semantics-belong-to-us.jpeg
   robots: 'index, follow'
+  title: All Your Semantics Belong to Us | Stoplight API Corner
+  image: /images/semantics-belong-to-us.jpeg
   twitter:
-    title: All Your Semantics Belong to Us | Stoplight
+    description: Where hacking words is a time honored tradition
+    title: All Your Semantics Belong to Us | Stoplight API Corner
     image: /images/semantics-belong-to-us.jpeg
     username: '@stoplightio'
 ---
