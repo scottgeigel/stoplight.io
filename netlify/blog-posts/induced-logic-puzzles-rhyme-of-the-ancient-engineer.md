@@ -20,10 +20,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: An Ode to Engineers
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Induced Logic Puzzles | Stoplight
+  title: Induced Logic Puzzles | Stoplight API Corner
+  image: /images/logic-puzzles.jpeg
   twitter:
+    description: An Ode to Engineers
     title: Induced Logic Puzzles | Stoplight
     image: /images/logic-puzzles.jpeg
     username: '@stoplightio'
