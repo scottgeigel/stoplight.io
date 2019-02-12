@@ -83,7 +83,7 @@ header:
           title: API Documentation Guide
           titleColor: green
       title: Resources
-      width: 350
+      width: 400
     - links:
         - href: /about
           icon:
