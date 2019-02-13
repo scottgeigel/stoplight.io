@@ -9,6 +9,7 @@ publishedDate: 2016-11-03T23:08:57.090Z
 author: Tom Pytleski
 title: Trump Rolling to Make APIs Great Again
 subtitle: A fun prank calling app made with the latest Stoplight product — Scenarios
+image: /images/general-stock-1-.jpeg
 color: black
 disqus:
   enabled: true
@@ -21,9 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Trump Rolling to Make APIs Great Again | Stoplight API Corner
+  image: /images/general-stock-1-.jpeg
   twitter:
     description: A fun prank calling app made with the latest Stoplight product — Scenarios
     title: Trump Rolling to Make APIs Great Again | Stoplight API Corner
+    image: /images/general-stock-1-.jpeg
     username: '@stoplightio'
 ---
 
