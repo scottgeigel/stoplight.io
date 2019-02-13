@@ -17,11 +17,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Changelog, updates, fixes, & roadmap'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Scenarios v3.3 Update | Stoplight
+  title: Scenarios v3.3 Update | Stoplight API Corner
   twitter:
-    title: Scenarios v3.3 Update | Stoplight
+    description: 'Changelog, updates, fixes, & roadmap'
+    title: Scenarios v3.3 Update | Stoplight API Corner
     username: '@stoplightio'
 ---
 Last Thursday we released one of the biggest updates to Scenarios yet. It includes numerous bug fixes, a whole lot of polish, and several new features. This release also coincides with Prism v2-alpha.5, which includes a couple of breaking changes - described below.
