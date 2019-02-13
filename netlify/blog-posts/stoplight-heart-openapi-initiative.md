@@ -22,10 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight API Corner"
+  image: /images/openapi.jpeg
   twitter:
     description: 'Announcing our partnership with the OpenAPI Initiative '
     title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight API Corner"
-    image: /images/mark_light_bg.png
+    image: /images/openapi.jpeg
     username: '@stoplightio'
 ---
 We are proud to announce a partnership with the OpenAPI Initiative (OAI). In 2015, we took notice of the gathering community and the potential for the OpenAPI Specification (OAS), formerly known as Swagger, as the industry standard, and started building our platform around it as the single source of truth for describing APIs. We’ve come a long way since then, and OAS continues to impress under the stewardship of OAI. We look forward to the future of OAS as the standard for describing APIs, and the exciting opportunities it fosters.
