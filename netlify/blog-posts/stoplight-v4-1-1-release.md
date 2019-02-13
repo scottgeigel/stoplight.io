@@ -9,6 +9,7 @@ publishedDate: 2018-05-04T21:16:51.628Z
 author: Robert Wallach
 title: Stoplight v4.1.1 Release
 subtitle: 'Changelog, updates, fixes, & roadmap'
+image: /images/changelog-stock.jpg
 color: black
 disqus:
   enabled: true
@@ -21,9 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: v4.1.1 Release | Stoplight API Corner
+  image: /images/changelog-stock.jpg
   twitter:
     description: 'Changelog, updates, fixes, & roadmap'
     title: v4.1.1 Release | Stoplight API Corner
+    image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
 ## Fixes 🛠
