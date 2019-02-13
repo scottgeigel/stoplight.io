@@ -18,12 +18,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: OpenAPI Specification 3
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Stoplight v4.7.0 Release | Stoplight
+  title: Stoplight v4.7.0 Release | Stoplight API Corner
+  image: /images/oas3-code-editor.png
   twitter:
     description: OpenAPI Specification 3
-    title: Stoplight v4.7.0 Release | Stoplight
+    title: Stoplight v4.7.0 Release | Stoplight API Corner
     image: /images/oas3-code-editor.png
     username: '@stoplightio'
 ---
