@@ -1,14 +1,16 @@
 ---
 path: /blog/missing-api-documentation
 tags:
-  - blog-documentation
-  - blog
+  - ''
+  - ''
 relatedTags:
   - {}
-publishedDate: 2019-02-11T08:00:00.000Z
+publishedDate: ''
 author: Adam DuVander
 title: What’s Missing From Your API Documentation
-color: black
+subtitle: 'How to build out high-quality API documentation '
+image: /images/missing-docs.jpeg
+color: indigo
 tabs:
   - {}
 disqus: {}
@@ -17,8 +19,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'How to build out high-quality API documentation '
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  twitter: {}
+  title: What’s Missing From Your API Documentation | Stoplight API Corner
+  image: /images/missing-docs.jpeg
+  twitter:
+    description: 'How to build out high-quality API documentation '
+    title: What’s Missing From Your API Documentation | Stoplight API Corner
+    image: /images/missing-docs.jpeg
 ---
 It's hard to create comprehensive API documentation that speaks to developers in every stage of the integration process. Companies will be rewarded when they put in the additional effort to make sure their developers have a great experience. It's important to give attention to your documentation, even if all your developers are internal.  When you fill the gaps in your docs, you help developers succeed and do so efficiently.
 
