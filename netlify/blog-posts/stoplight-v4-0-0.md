@@ -18,11 +18,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Realtime, Editor Toolbar, OpenAPI Read Mode'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: v4.0.0 Release | Stoplight
+  title: v4.0.0 Release | Stoplight API Corner
   twitter:
-    title: v4.0.0 Release | Stoplight
+    description: 'Realtime, Editor Toolbar, OpenAPI Read Mode'
+    title: v4.0.0 Release | Stoplight API Corner
     username: '@stoplightio'
 ---
 
