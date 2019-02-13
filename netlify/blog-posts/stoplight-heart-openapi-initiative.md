@@ -18,11 +18,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Announcing our partnership with the OpenAPI Initiative '
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight"
+  title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight API Corner"
   twitter:
-    title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight"
+    description: 'Announcing our partnership with the OpenAPI Initiative '
+    title: "Stoplight \U0001F496 the OpenAPI Initiative | Stoplight API Corner"
     image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
