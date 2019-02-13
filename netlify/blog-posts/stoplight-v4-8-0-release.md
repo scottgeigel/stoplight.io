@@ -9,7 +9,7 @@ publishedDate: 2019-02-08T22:30:00.819Z
 author: Taylor Barnett
 title: Stoplight v4.8.0 Release
 subtitle: New API Documentation Features
-image: ''
+image: /images/changelog-stock.jpg
 color: black
 tabs:
   - {}
