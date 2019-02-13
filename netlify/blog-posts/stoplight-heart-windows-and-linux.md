@@ -22,9 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: Stoplight ❤ Windows and Linux | Stoplight API Corner
+  image: /images/classic-windows-linux.png
   twitter:
     description: Announcing Stoplight's Windows and Linux Desktop Apps
     title: Stoplight ❤ Windows and Linux | Stoplight API Corner
+    image: /images/classic-windows-linux.png
     username: '@stoplightio'
 ---
 One of our most requested features has been Windows and Linux support for the Stoplight desktop app. Today, we are excited to finally release builds for Windows (64 bit) and Linux (32 and 64 bit)!
