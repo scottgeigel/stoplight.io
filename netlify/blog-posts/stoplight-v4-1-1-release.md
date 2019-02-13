@@ -17,11 +17,13 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Changelog, updates, fixes, & roadmap'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: v4.1.1 Release | Stoplight
+  title: v4.1.1 Release | Stoplight API Corner
   twitter:
-    title: v4.1.1 Release | Stoplight
+    description: 'Changelog, updates, fixes, & roadmap'
+    title: v4.1.1 Release | Stoplight API Corner
     username: '@stoplightio'
 ---
 ## Fixes 🛠
