@@ -18,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'An integral part of any teams workflow, is version control'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'The Stoplight Way: Versions and Releases | Stoplight'
+  title: 'The Stoplight Way: Versions and Releases | Stoplight API Corner'
+  image: /images/versions-releases.jpeg
   twitter:
-    title: 'The Stoplight Way: Versions and Releases | Stoplight'
+    description: 'An integral part of any teams workflow, is version control'
+    title: 'The Stoplight Way: Versions and Releases | Stoplight API Corner'
+    image: /images/versions-releases.jpeg
     username: '@stoplightio'
 ---
 An integral part of any teams workflow, is version control. In this post, I am going to go over Stoplight’s perspective on versions, releases, and some best practices to help your team deliver the best product in the shortest period of time with Stoplight.
