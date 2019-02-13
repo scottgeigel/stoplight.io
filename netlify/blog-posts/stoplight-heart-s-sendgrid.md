@@ -9,6 +9,7 @@ publishedDate: 2017-02-15T00:00:33.453Z
 author: Tom Pytleski
 title: "Stoplight \U0001F496 SendGrid"
 subtitle: A valentine's day letter for SendGrid
+image: /images/general-stock-1-.jpeg
 color: black
 disqus:
   enabled: true
@@ -21,9 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: "Stoplight \U0001F496 SendGrid | Stoplight API Corner"
+  image: /images/general-stock-1-.jpeg
   twitter:
     description: A valentine's day letter for SendGrid
     title: "Stoplight \U0001F496 SendGrid | Stoplight API Corner"
+    image: /images/general-stock-1-.jpeg
     username: '@stoplightio'
 ---
 Hours of planning can save you weeks of programming.
