@@ -21,11 +21,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Defining and describing APIs and their ecosystem
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: The API Cornucopia | Stoplight
+  title: The API Cornucopia | Stoplight API Corner
+  image: /images/yummee-chinese.jpeg
   twitter:
-    title: The API Cornucopia | Stoplight
+    description: Defining and describing APIs and their ecosystem
+    title: The API Cornucopia | Stoplight API Corner
+    image: /images/yummee-chinese.jpeg
     username: '@stoplightio'
 ---
 *Yum Mee Chinese Food, Boston, MA*
