@@ -22,9 +22,11 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: v4.0.0 Release | Stoplight API Corner
+  image: /images/changelog-stock.jpg
   twitter:
     description: 'Realtime, Editor Toolbar, OpenAPI Read Mode'
     title: v4.0.0 Release | Stoplight API Corner
+    image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
 
