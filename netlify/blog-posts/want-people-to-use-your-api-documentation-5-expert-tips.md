@@ -18,11 +18,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: ' 5 tips and tricks to help make your API documentation more reliable, accessible, and comprehensive'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Want People to Use Your API Documentation? | Stoplight
+  title: Want People to Use Your API Documentation? | Stoplight API Corner
+  image: /images/want-people-to-use-docs.jpeg
   twitter:
-    title: Want People to Use Your API Documentation? | Stoplight
+    description: ' 5 tips and tricks to help make your API documentation more reliable, accessible, and comprehensive'
+    title: Want People to Use Your API Documentation? | Stoplight API Corner
     image: /images/want-people-to-use-docs.jpeg
     username: '@stoplightio'
 ---
