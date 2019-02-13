@@ -18,12 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Discussions and Documentation API
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Release v4.5.0 | Stoplight
+  title: Release v4.5.0 | Stoplight API Corner
+  image: /images/discussions.png
   twitter:
-    title: Release v4.5.0 | Stoplight
-    image: /images/mark_light_bg.png
+    description: Discussions and Documentation API
+    title: Release v4.5.0 | Stoplight API Corner
+    image: /images/discussions.png
     username: '@stoplightio'
 ---
 > Update: v4.5.1 and v4.5.2 have also been released to squash from bugs🐛 from v4.5.0.
