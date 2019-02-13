@@ -18,14 +18,16 @@ disqus:
 actionBar:
   enabled: false
 meta:
-  description: The Evolution of API Documentation at Stoplight
+  description: >-
+    How we are evolving documentation at Stoplight to be performant, accessible,
+    portable, and integrated
   favicon: /images/mark_light_bg.png
-  title: Blog | Stoplight
+  title: The Evolution of API Documentation at Stoplight | Stoplight API Corner
   twitter:
     description: >-
       How we are evolving documentation at Stoplight to be performant,
       accessible, portable, and integrated
-    title: Stop Calling Your APIs Microservices
+    title: The Evolution of API Documentation at Stoplight | Stoplight API Corner
     username: '@stoplightio'
 ---
 API documentation is one of the most undervalued assets of a technology company. Most tech companies sell access to APIs that allow customers to retrieve information or use services. Revenue is then generated each time a customer uses the API. In order for customers to use the APIs, they need to understand what is available, how to ask for it, and how it will be returned. All of this information should be provided in the API’s documentation, usually as a website. Therefore, it is very important that your API documentation is performant, accessible, portable, and integrated.
