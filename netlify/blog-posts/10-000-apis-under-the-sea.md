@@ -22,6 +22,7 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: '10,000 APIs Under the Sea | Stoplight API Corner'
+  image: /images/apis-under-sea.jpeg
   twitter:
     description: 'An Exploration of API Directories '
     title: '10,000 APIs Under the Sea | Stoplight API Corner'
