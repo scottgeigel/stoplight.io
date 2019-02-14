@@ -19,12 +19,15 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: 'A breakdown of functions, ecosystem, and use-cases'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Proxy vs API Gateway | Stoplight
+  title: API Proxy vs API Gateway | Stoplight API Corner
+  image: /images/api-proxy-header.jpeg
   twitter:
-    title: API Proxy vs API Gateway | Stoplight
-    image: /images/mark_light_bg.png
+    description: 'A breakdown of functions, ecosystem, and use-cases'
+    title: API Proxy vs API Gateway | Stoplight API Corner
+    image: /images/api-proxy-header.jpeg
     username: '@stoplightio'
 ---
 *The Gardens of Lanhydrock House by Philip Halling*
