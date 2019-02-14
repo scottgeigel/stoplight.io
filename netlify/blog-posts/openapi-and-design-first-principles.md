@@ -18,11 +18,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Why API Design is critical and how the OpenAPI Specification can help
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: OpenAPI and Design-First Principles | Stoplight
+  title: OpenAPI and Design-First Principles | Stoplight API Corner
+  image: /images/openapi-design-first.jpeg
   twitter:
-    title: OpenAPI and Design-First Principles | Stoplight
+    description: Why API Design is critical and how the OpenAPI Specification can help
+    title: OpenAPI and Design-First Principles | Stoplight API Corner
     image: /images/openapi-design-first.jpeg
     username: '@stoplightio'
 ---

@@ -18,14 +18,18 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: From Security to Orchestration
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: API Microgateways | Stoplight
+  title: API Microgateways | Stoplight API Corner
+  image: /images/api-microgateways.jpeg
   twitter:
-    title: API Microgateways | Stoplight
+    description: From Security to Orchestration
+    title: API Microgateways | Stoplight API Corner
     image: /images/api-microgateways.jpeg
     username: '@stoplightio'
 ---
+*Edinburgh Castle, source: CC0 Public Domain*
 
 Welcome back for another edition of *I’ll REST when I’m Alive*. Today we will be discussing the kerfuffle around API Microgateways. Are they tiny gates that guard the microservice kingdom? Is there a drawbridge over crocodile-infested waters? And most importantly, do you need one?
 

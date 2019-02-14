@@ -17,10 +17,12 @@ actionBar:
   enabled: false
 meta:
   description: The Fundamentals of HTTP API Unit Testing
-  title: ' HTTP API Unit Testing | Stoplight'
+  title: ' HTTP API Unit Testing | Stoplight API Corner'
+  image: /images/aaa_blog_example.png
   twitter:
     description: The Fundamentals of HTTP API Unit Testing
-    title: ' HTTP API Unit Testing | Stoplight'
+    title: ' HTTP API Unit Testing | Stoplight API Corner'
+    image: /images/aaa_blog_example.png
     username: '@stoplightio'
 ---
 

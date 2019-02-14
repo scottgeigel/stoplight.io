@@ -1,0 +1,23 @@
+path: /blog/author/emmelyn-wang
+tag: author
+title: Emmelyn Wang
+subtitle: >-
+  Emmelyn Wang is the API Strategist and Principal Services Architect for Axway
+  based in North America. Her work includes Developer Relations, Technical
+  Communication, and running API programs especially to design, build/consume,
+  engagement, support, and evangelise. She is a global contributor to Write the
+  Docs, API the Docs, API Days, and the open source AsyncAPI specification
+  community. She runs the APIOps community in Dallas, TX and is a regular WWCode
+  DFW volunteer. 
+image: /images/emmelyn-wang.jpg
+color: purple-darker
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

@@ -9,7 +9,7 @@ publishedDate: 2019-02-08T22:30:00.819Z
 author: Taylor Barnett
 title: Stoplight v4.8.0 Release
 subtitle: New API Documentation Features
-image: ''
+image: /images/changelog-stock.jpg
 color: black
 tabs:
   - {}
@@ -41,7 +41,7 @@ meta:
 
 Back by popular demand from Stoplight Classic!
 
-You can now find a checkbox in your Hub’s Page Settings to include a link to your raw OpenAPI Specification document in your Hub. If you are publishing your OAS document directly (not in a Hub), you can add an extension in your specification document `x-stoplight: { docs: { includeDownloadLink: true } }` include the download link in your published specification. 
+You can now find a checkbox in your Hub’s Page Settings to include a link to your raw OpenAPI Specification document in your Hub. If you are publishing your OAS document directly (not in a Hub), you can add an extension in your specification document `x-stoplight: { docs: { includeDownloadLink: true } }` to include the download link in your published API reference documentation. 
 
 ([Forum Link](https://community.stoplight.io/t/allow-users-to-download-swagger-file))
 

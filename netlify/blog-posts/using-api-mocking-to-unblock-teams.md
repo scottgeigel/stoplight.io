@@ -18,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: ' A Primer on How Service Virtualization Can Help You'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Using API Mocking to Unblock Teams | Stoplight
+  title: Using API Mocking to Unblock Teams | Stoplight API Corner
+  image: /images/service-virtualization.jpeg
   twitter:
-    title: Using API Mocking to Unblock Teams | Stoplight
+    description: ' A Primer on How Service Virtualization Can Help You'
+    title: Using API Mocking to Unblock Teams | Stoplight API Corner
+    image: /images/service-virtualization.jpeg
     username: '@stoplightio'
 ---
 There’s no denying that a well-written test suite breeds a better product. Not only does it provide a high level of confidence in your code, but it also covers your butt whenever you make any changes.

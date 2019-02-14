@@ -18,11 +18,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: ' A hypothetical (but realistic) example of how an ordinary JavaScript function can evolve over time'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: The Evolution of a JavaScript Function | Stoplight
+  title: The Evolution of a JavaScript Function | Stoplight API Corner
+  image: /images/evolution-javascript.jpeg
   twitter:
-    title: The Evolution of a JavaScript Function | Stoplight
+    description: ' A hypothetical (but realistic) example of how an ordinary JavaScript function can evolve over time'
+    title: The Evolution of a JavaScript Function | Stoplight API Corner
     image: /images/evolution-javascript.jpeg
     username: '@stoplightio'
 ---

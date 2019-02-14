@@ -20,15 +20,18 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: An Ode to Engineers
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Induced Logic Puzzles | Stoplight
+  title: Induced Logic Puzzles | Stoplight API Corner
+  image: /images/logic-puzzles.jpeg
   twitter:
+    description: An Ode to Engineers
     title: Induced Logic Puzzles | Stoplight
     image: /images/logic-puzzles.jpeg
     username: '@stoplightio'
 ---
-Martin Waldseemüller Map 1507
+*Martin Waldseemüller Map 1507*
 
 This is the second article in a series I have decided to title *I can REST when I’m Alive*. This article came about by my increasing respect and awe for what we do here at Stoplight and what engineers are doing all over the world. An homage to the folks who work in one of the most abstract, complex, and enticing industries I have ever been a part of.
 

@@ -18,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Let''s face it — documentation is critical to API success '
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Components of Killer API Docs | Stoplight
+  title: Components of Killer API Docs | Stoplight API Corner
+  image: /images/pexels-photo-272980.jpeg
   twitter:
-    title: Components of Killer API Docs | Stoplight
+    description: 'Let''s face it — documentation is critical to API success '
+    title: Components of Killer API Docs | Stoplight API Corner
+    image: /images/pexels-photo-272980.jpeg
     username: '@stoplightio'
 ---
 Let’s face it — Writing documentation sucks, but not writing documentation sucks a lot more.

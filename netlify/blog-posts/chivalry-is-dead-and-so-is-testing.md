@@ -9,6 +9,7 @@ publishedDate: 2016-10-05T23:14:09.129Z
 author: Tom Pytleski
 title: 'Chivalry is dead, and so is testing'
 subtitle: Best Practices for API Testing with Stoplight
+image: /images/general-stock-1-.jpeg
 color: orange
 disqus:
   enabled: true
@@ -17,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Best Practices for API Testing with Stoplight
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Chivalry is dead, and so is testing | Stoplight'
+  title: 'Chivalry is dead, and so is testing | Stoplight API Corner'
+  image: /images/general-stock-1-.jpeg
   twitter:
-    title: 'Chivalry is dead, and so is testing | Stoplight'
+    description: Best Practices for API Testing with Stoplight
+    title: 'Chivalry is dead, and so is testing | Stoplight API Corner'
+    image: /images/general-stock-1-.jpeg
     username: '@stoplightio'
 ---
 Chivalry is dead, and so is testing. In this article we are going to learn how to bring your tests to life with variables in Stoplight. As an added bonus, we will learn how testing and chivalry are really the same thing.

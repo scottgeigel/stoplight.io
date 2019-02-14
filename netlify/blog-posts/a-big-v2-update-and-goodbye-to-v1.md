@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2016-08-16T23:23:49.359Z
 author: Stoplight
 title: 'A big v2 update, and goodbye to v1'
+image: /images/changelog-stock.jpg
 color: purple
 disqus:
   enabled: true
@@ -15,10 +16,12 @@ actionBar:
   enabled: false
 meta:
   favicon: /images/mark_light_bg.png
+  title: 'A big v2 update, and goodbye to v1 | Stoplight API Corner'
+  image: /images/changelog-stock.jpg
   robots: 'index, follow'
-  title: 'A big v2 update, and goodbye to v1 | Stoplight'
   twitter:
-    title: 'A big v2 update, and goodbye to v1 | Stoplight'
+    title: 'A big v2 update, and goodbye to v1 | Stoplight API Corner'
+    image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
 Thanks to all who participated in the beta of our version 2 tooling! We received a tremendous amount of feedback, and it was a great success. We’ve turned that feedback into our final big v2 update, which is rolling out today.

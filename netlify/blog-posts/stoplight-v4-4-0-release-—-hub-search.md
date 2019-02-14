@@ -18,12 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Hub Search
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Stoplight v4.4.0 Release | Stoplight
+  title: Stoplight v4.4.0 Release | Stoplight API Corner
+  image: /images/hub-search.png
   twitter:
-    title: Stoplight v4.4.0 Release | Stoplight
-    image: /images/mark_light_bg.png
+    description: Hub Search
+    title: Stoplight v4.4.0 Release | Stoplight API Corner
+    image: /images/hub-search.png
     username: '@stoplightio'
 ---
 ## New 🚀

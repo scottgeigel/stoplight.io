@@ -18,11 +18,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: So you've got a new project!
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Getting Started with API Design | Stoplight
+  title: Getting Started with API Design | Stoplight API Corner
+  image: /images/api-design-stoplight-openapi.jpeg
   twitter:
-    title: Getting Started with API Design | Stoplight
+    description: So you've got a new project!
+    title: Getting Started with API Design | Stoplight API Corner
     image: /images/api-design-stoplight-openapi.jpeg
     username: '@stoplightio'
 ---

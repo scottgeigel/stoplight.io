@@ -10,6 +10,7 @@ publishedDate: 2017-05-31T22:52:07.204Z
 author: Stoplight
 title: API Testing
 subtitle: Achieving Quick and Easy Service Virtualization with Stoplight
+image: /images/api-testing.jpeg
 color: black
 disqus:
   enabled: true
@@ -18,11 +19,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Achieving Quick and Easy Service Virtualization with Stoplight
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Achieving Quick and Easy Service Virtualization with Stoplight | Stoplight
+  title: API Testing | Stoplight API Corner
+  image: /images/api-testing.jpeg
   twitter:
-    title: Achieving Quick and Easy Service Virtualization with Stoplight | Stoplight
+    description: Achieving Quick and Easy Service Virtualization with Stoplight
+    title: API Testing | Stoplight API Corner
+    image: /images/api-testing.jpeg
     username: '@stoplightio'
 ---
 

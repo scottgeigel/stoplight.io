@@ -18,11 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Changelog, updates, fixes, & roadmap'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Scenarios v3.4 Release | Stoplight
+  title: Scenarios v3.4 Release | Stoplight API Corner
+  image: /images/changelog-stock.jpg
   twitter:
-    title: Scenarios v3.4 Release | Stoplight
+    description: 'Changelog, updates, fixes, & roadmap'
+    title: Scenarios v3.4 Release | Stoplight API Corner
+    image: /images/changelog-stock.jpg
     username: '@stoplightio'
 ---
 Today, we are happy to announce the release of Scenarios v3.4! This release includes several highly requested features, as well as a slew of bug fixes. You can check all of this out now at [https://scenarios.stoplight.io](https://scenarios.stoplight.io).

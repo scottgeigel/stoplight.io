@@ -15,6 +15,7 @@ import { faSuitcase } from '@fortawesome/free-solid-svg-icons/faSuitcase';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons/faBookmark';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -36,6 +37,7 @@ export const init = () => {
   library.add(faArrowRight);
   library.add(faBars);
   library.add(faTimes);
+  library.add(faBookmark);
 
   library.add(faTwitter);
   library.add(faLinkedin);

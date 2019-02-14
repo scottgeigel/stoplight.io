@@ -18,11 +18,17 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: How to create beautiful documentation with Hubs
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Create Flawless API Documentation with Stoplight Hubs | Stoplight
+  title: Create Flawless API Documentation with Stoplight Hubs | Stoplight API Corner
+  image: /images/flawless-hubs.png
   twitter:
-    title: Create Flawless API Documentation with Stoplight Hubs | Stoplight
+    description: How to create beautiful documentation with Hubs
+    title: >-
+      Create Flawless API Documentation with Stoplight Hubs | Stoplight API
+      Corner
+    image: /images/flawless-hubs.png
     username: '@stoplightio'
 ---
 

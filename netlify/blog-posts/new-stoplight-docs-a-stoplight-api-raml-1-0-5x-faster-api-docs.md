@@ -17,11 +17,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: 'New features, releases, & roadmaps'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: New Stoplight Docs | Stoplight
+  title: New Stoplight Docs | Stoplight API Corner
   twitter:
-    title: New Stoplight Docs | Stoplight
+    description: 'New features, releases, & roadmaps'
+    title: New Stoplight Docs | Stoplight API Corner
+    image: /images/new-stoplight-docs.png
     username: '@stoplightio'
 ---
 

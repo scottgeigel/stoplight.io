@@ -18,12 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Hubs Proxy Support and Import Files
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Stoplight v4.2.0 and v4.1.2 Release | Stoplight
+  title: Stoplight v4.2.0 and v4.1.2 Release | Stoplight API Corner
+  image: /images/import-files.png
   twitter:
-    title: Stoplight v4.2.0 and v4.1.2 Release | Stoplight
-    image: /images/mark_light_bg.png
+    description: Hubs Proxy Support and Import Files
+    title: Stoplight v4.2.0 and v4.1.2 Release | Stoplight API Corner
+    image: /images/import-files.png
     username: '@stoplightio'
 ---
 ## New 🚀

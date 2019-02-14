@@ -16,11 +16,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
+  description: ' Creating continuously valuable ways to keep developers successful through content'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: The Changing Landscape of Developer Content | Stoplight
+  title: The Changing Landscape of Developer Content | Stoplight API Corner
+  image: /images/changing-developer-landscape.jpeg
   twitter:
-    title: The Changing Landscape of Developer Content | Stoplight
+    description: ' Creating continuously valuable ways to keep developers successful through content'
+    title: The Changing Landscape of Developer Content | Stoplight API Corner
     image: /images/changing-developer-landscape.jpeg
     username: '@stoplightio'
 ---

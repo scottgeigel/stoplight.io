@@ -18,14 +18,19 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: ' 5 tips and tricks to help make your API documentation more reliable, accessible, and comprehensive'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Want People to Use Your API Documentation? | Stoplight
+  title: Want People to Use Your API Documentation? | Stoplight API Corner
+  image: /images/want-people-to-use-docs.jpeg
   twitter:
-    title: Want People to Use Your API Documentation? | Stoplight
+    description: ' 5 tips and tricks to help make your API documentation more reliable, accessible, and comprehensive'
+    title: Want People to Use Your API Documentation? | Stoplight API Corner
     image: /images/want-people-to-use-docs.jpeg
     username: '@stoplightio'
 ---
+*Bookwheel, from Agostino Ramelli's Le diverse et artifiose machine, 1588*
+
 Creating API documentation is a labor of love. It takes a great deal of time to capture all the information needed to consume an API, therefore API documentation has to be clear and easy-to-use, or developers won’t use it. If they don’t use your API documentation, you’re in for a ton of one-off questions, errors, and eventual abandonment of your API.
 
 At [Stoplight](https://stoplight.io), we believe that documentation should be battle tested to ensure you don’t spend time worrying about your docs. To that end, I’ve compiled 5 tips and tricks to help make your documentation more reliable, accessible, and comprehensive.

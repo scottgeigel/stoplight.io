@@ -18,12 +18,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Versions and Releases
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Release v4.3.0 | Stoplight
+  title: Release v4.3.0 | Stoplight API Corner
+  image: /images/versions-releases.png
   twitter:
-    title: Release v4.3.0 | Stoplight
-    image: /images/mark_light_bg.png
+    description: Versions and Releases
+    title: Release v4.3.0 | Stoplight API Corner
+    image: /images/versions-releases.png
     username: '@stoplightio'
 ---
 ## New 🚀

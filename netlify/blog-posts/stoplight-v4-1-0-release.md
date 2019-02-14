@@ -19,11 +19,15 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: 'Fair Use Billing, Magic Links, Custom CSS, Landing Pages, Token Generation'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: v4.1.1 Release | Stoplight
+  title: v4.1.1 Release | Stoplight API Corner
+  image: /images/custom-css.png
   twitter:
-    title: v4.1.1 Release | Stoplight
+    description: 'Fair Use Billing, Magic Links, Custom CSS, Landing Pages, Token Generation'
+    title: v4.1.1 Release | Stoplight API Corner
+    image: /images/custom-css.png
     username: '@stoplightio'
 ---
 ## New 🚀

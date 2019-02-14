@@ -29,7 +29,7 @@ meta:
     title: API Documentation Guide | Advanced
     username: '@stoplightio'
 ---
-### Should I Build My Own API Documentation?
+## Should I Build My Own API Documentation?
 As you get serious about your developer experience, you might consider rolling your own docs internally, using an open source documentation framework, or subscribing to a documentation provider. Each can be a viable choice, as long as you understand the costs and trade-offs of each alternative.
 
 Stripe, Twilio, and Heroku are all companies who market directly to developers. They have entire teams to build and maintain their documentation and other developer resources. When you take your documentation in-house, be ready to take the bulk of at least one engineer’s time for the initial build. Also remember that, like any software, the documentation will require maintenance. You’ll frequently require additional time from engineers to fix or update your docs.
@@ -39,6 +39,7 @@ Starting from scratch isn’t a good option for most companies. Instead, you mig
 Finally, you can use a hosted option like Stoplight, which provides beautiful, customizable documentation. Going this route typically requires the least amount of engineer time, keeping your team focused on your core business. Since many of these services are delivered in the cloud, updates are automatic and maintenance is minimal. 
 
 All of these options require investment at varying levels. Regardless of which you choose for your API documentation, your developer experience is worth it.
+
 ## Generating Useful API References
 When a developer thinks about API documentation, it’s most likely they envision a complete reference. This is only one type of documentation, but it’s an important one. Here you’ll find a list of API endpoints, what request and response fields are available, and how to authenticate with the API. These are all very important parts of integrating with your API.
 

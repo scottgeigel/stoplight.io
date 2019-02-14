@@ -16,12 +16,14 @@ disqus:
 actionBar:
   enabled: false
 meta:
-  description: ''
+  description: OpenAPI Specification Linting and Style Guides
   favicon: /images/mark_light_bg.png
-  title: Stoplight v4.6.0 Release | Stoplight
+  title: Stoplight v4.6.0 Release | Stoplight API Corner
+  image: /images/oas2-style-guide.png
   twitter:
-    description: ''
-    title: Stoplight v4.6.0 Release | Stoplight
+    description: OpenAPI Specification Linting and Style Guides
+    title: Stoplight v4.6.0 Release | Stoplight API Corner
+    image: /images/oas2-style-guide.png
     username: '@stoplightio'
 ---
 
