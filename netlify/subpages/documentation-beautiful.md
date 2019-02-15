@@ -1,17 +1,18 @@
 ---
 path: /documentation/beautiful
-color: green
-subtitle: 'API Documentation that makes an Impact'
+publishedDate: 2019-02-15T16:50:25.630Z
 title: Beautiful API Documentation
+subtitle: API Documentation that makes an Impact
+color: green
 tabs:
-  - title: API Documentation Guide
-    href: /documentation/introduction
-  - title: API Documentation Best Practices
-    href: /documentation/best-practices/hubs
-  - title: The Evolution of API Documentation at Stoplight
-    href: /blog/api-documentation
-  - title: Documentation | Stoplight Community
-    href: https://community.stoplight.io/c/api-best-practices/documentation
+  - href: /api-documentation-guide/basics
+    title: API Documentation Guide
+  - href: /api-documentation-guide/best-practices
+    title: API Documentation Best Practices
+  - href: /blog/api-documentation
+    title: The Evolution of API Documentation at Stoplight
+  - href: 'https://community.stoplight.io/c/api-best-practices/documentation'
+    title: Documentation | Stoplight Community
 actionBar:
   enabled: true
 meta:
