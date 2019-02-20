@@ -1,15 +1,21 @@
 ---
 path: /terms
-color: black
-subtitle: 'Last Updated: August 1, 2017'
+publishedDate: 2019-02-20T18:23:32.422Z
 title: Terms of Service
+subtitle: 'Last Updated: August 1, 2017'
+color: black
 tabs:
-  - title: Terms
-    href: /terms
-  - title: Privacy Policy
-    href: /privacy
-  - title: Support Policy
-    href: /policy
+  - href: /terms
+    title: Terms
+  - href: /privacy
+    title: Privacy Policy
+  - href: /policy
+    title: Support Policy
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Read our terms and conditions | Stoplight
+  twitter:
+    title: Read our terms and conditions | Stoplight
 ---
 PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY.  BY CLICKING ON THE "I ACCEPT" OR SIMILAR BUTTON, COMPLETING THE REGISTRATION PROCESS AND/OR USING STOPLIGHT'S SOFTWARE OR HOSTED SERVICES, YOU REPRESENT THAT (1) YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS, AND (2) YOU HAVE THE AUTHORITY TO ENTER INTO THESE TERMS AND CONDITIONS PERSONALLY, OR ON BEHALF OF THE ENTITY YOU HAVE NAMED AS THE CUSTOMER, AND TO BIND THAT ENTITY TO THESE TERMS AND CONDITIONS.
 
