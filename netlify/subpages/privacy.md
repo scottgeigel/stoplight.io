@@ -1,15 +1,20 @@
 ---
 path: /privacy
-bgColor: black
+publishedDate: 2019-02-20T18:20:14.852Z
 title: Privacy Policy
 subtitle: 'Last updated: August 1, 2017'
 tabs:
-  - title: Terms
-    href: /terms
-  - title: Privacy Policy
-    href: /privacy
-  - title: Support Policy
-    href: /policy
+  - href: /terms
+    title: Terms
+  - href: /privacy
+    title: Privacy Policy
+  - href: /policy
+    title: Support Policy
+meta:
+  favicon: /images/mark_light_bg.png
+  title: We care about your data and privacy | Stoplight
+  twitter:
+    title: We care about your data and privacy | Stoplight
 ---
 Stoplight, Inc. and its affiliates (collectively, the "**Company**") is committed to protecting your privacy.  We have prepared this Privacy Policy to describe to you our practices regarding the personal information we collect from users of our websites, including stoplight.io (each, a "**Site**" and collectively, the "**Sites**") and our online services (the "**Services**").
 
