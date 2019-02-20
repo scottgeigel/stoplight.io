@@ -74,6 +74,9 @@ export const Link: React.FunctionComponent<ILink> = ({ to, children, disabled, .
     }
   }
 
+  // Replace multiple trailing slashes with a single slash
+  href = `${to}/`.replace(/\/{1,}$/, '/');
+
   return (
     <StaticLink {...props} to={href}>
       {children}
