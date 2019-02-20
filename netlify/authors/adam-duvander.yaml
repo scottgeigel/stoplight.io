@@ -1,0 +1,21 @@
+path: /blog/author/adam-duvander
+tag: author
+title: Adam DuVander
+subtitle: >-
+  Adam DuVander is an API veteran, developer communicator, and principal
+  consultant at EveryDeveloper. His work with developer-focused companies helps
+  to better engage their audiences. You can find his technical content on Wired,
+  Zapier, and SendGrid, among many others. 
+pageName: Contributing Editor
+image: /images/duvander-headshot.jpg
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}
