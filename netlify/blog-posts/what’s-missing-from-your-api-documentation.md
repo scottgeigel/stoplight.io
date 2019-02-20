@@ -1,11 +1,11 @@
 ---
 path: /blog/missing-api-documentation
 tags:
-  - ''
-  - ''
+  - blog
+  - blog-documentation
 relatedTags:
   - {}
-publishedDate: ''
+publishedDate: 2019-02-19T08:00:00.000Z
 author: Adam DuVander
 title: What’s Missing From Your API Documentation
 subtitle: 'How to build out high-quality API documentation '

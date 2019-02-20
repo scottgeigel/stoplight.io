@@ -1,36 +1,38 @@
 ---
 path: /design/free
-tags: ['']
-relatedTags: ['']
+tags:
+  - ''
+relatedTags:
+  - ''
 publishedDate: 'Jan 23, 2019'
 title: Free API Design Tool
 subtitle: >-
-  Build web APIs with a powerful, free visual OpenAPI Specification editor
-  that allows you to create API designs and share within minutes
+  Build web APIs with a powerful, free visual OpenAPI Specification editor that
+  allows you to create API designs and share within minutes
 color: blue
+tabs:
+  - href: /design
+    title: API Design
+  - href: /design/enterprise
+    title: Enterprise API Design
+  - href: /design/free
+    title: Free API Design Tool
+  - href: /design/prototype
+    title: API Prototype Tool
+  - href: /design/web
+    title: Web API Design Tool
 actionBar:
   enabled: true
-tabs:
-  - title: API Design
-    href: /design
-  - title: Enterprise API Design
-    href: /design/enterprise
-  - title: Free API Design Tool
-    href: /design/free
-  - title: API Prototype Tool
-    href: /design/prototype
-  - title: Web API Design Tool
-    href: /design/web
 meta:
   description: >-
     Build web APIs with a powerful, free visual OpenAPI Specification editor
     that allows you to create API designs and share within minutes
-  title: Free API Design Tool
+  title: Free API Design Tool on the Cloud | Stoplight
   twitter:
     description: >-
       Build web APIs with a powerful, free visual OpenAPI Specification editor
       that allows you to create API designs and share within minutes
-    title: Free API Design Tool
+    title: Free API Design Tool on the Cloud | Stoplight
     username: '@stoplightio'
 ---
 

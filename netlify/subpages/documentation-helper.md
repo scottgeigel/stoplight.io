@@ -19,6 +19,11 @@ tabs:
     title: Custom Javascript
 actionBar:
   enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Customizable API Documentation Tool | Stoplight
+  twitter:
+    title: Customizable API Documentation Tool | Stoplight
 ---
 
 ## Complete API Documentation

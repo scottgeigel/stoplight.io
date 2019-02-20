@@ -1,15 +1,21 @@
 ---
 path: /policy
-color: black
-subtitle: 'Last updated: October 1, 2018'
+publishedDate: 2019-02-20T18:18:45.358Z
 title: Support Policy
+subtitle: 'Last updated: October 1, 2018'
+color: black
 tabs:
-  - title: Terms
-    href: /terms
-  - title: Privacy Policy
-    href: /privacy
-  - title: Support Policy
-    href: /policy
+  - href: /terms
+    title: Terms
+  - href: /privacy
+    title: Privacy Policy
+  - href: /policy
+    title: Support Policy
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Our Support Policy Detailed | Stoplight
+  twitter:
+    title: Our Support Policy Detailed | Stoplight
 ---
 ## 1. Overview
 

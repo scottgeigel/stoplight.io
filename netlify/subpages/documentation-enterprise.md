@@ -1,19 +1,26 @@
 ---
 path: /documentation/enterprise
-color: green
-subtitle: Enterprise Documentation Solutions to fit any organization
+publishedDate: 2019-02-20T18:13:03.690Z
 title: Documentation for Enterprises
+subtitle: Enterprise Documentation Solutions to fit any organization
+color: green
 tabs:
-  - title: API Documentation
-    href: /documentation
-  - title: Beautiful API Documentation
-    href: /documentation/beautiful
-  - title: Automated API Documentation
-    href: /documentation/automation
-  - title: Generated API Documentation
-    href: /documentation/generator
+  - href: /documentation
+    title: API Documentation
+  - href: /documentation/beautiful
+    title: Beautiful API Documentation
+  - href: /documentation/automation
+    title: Automated API Documentation
+  - href: /documentation/generator
+    title: Generated API Documentation
 actionBar:
   enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  title: Enterprise Ready API Documentation Software | Stoplight
+  twitter:
+    title: Enterprise Ready API Documentation Software | Stoplight
+    image: /images/mark_light_bg.png
 ---
 
 Stoplight offers a number of enterprise solutions for creating internal and external API documentation that is secure, fits your companies branding, and can be hosted from anywhere. Utilize our API documentation professional tool [on-premise](https://enterprise.docs.stoplight.io/) or through our SaaS web and desktop applications.

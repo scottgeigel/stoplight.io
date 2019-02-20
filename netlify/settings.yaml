@@ -14,28 +14,28 @@ info:
 header:
   items:
     - links:
-        - href: /design
+        - href: /design/
           icon:
             - fas
             - paint-brush
           subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster.
           title: Design
           titleColor: blue
-        - href: /documentation
+        - href: /documentation/
           icon:
             - fas
             - book
           subtitle: 'Increase customer adoption with beautiful, functional documentation.'
           title: Documentation
           titleColor: green
-        - href: /testing
+        - href: /testing/
           icon:
             - fas
             - flask
           subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs.'
           title: Testing
           titleColor: orange
-        - href: /mocking
+        - href: /mocking/
           icon:
             - fas
             - server
@@ -61,7 +61,7 @@ header:
           subtitle: Join the Stoplight community
           title: Forum
           titleColor: green
-        - href: /blog
+        - href: /blog/
           icon:
             - fas
             - rss
@@ -85,21 +85,21 @@ header:
       title: Resources
       width: 400
     - links:
-        - href: /about
+        - href: /about/
           icon:
             - fas
             - users
           title: About Us
-        - href: /case-studies
+        - href: /case-studies/
           icon:
             - fas
             - graduation-cap
           title: Case Studies
       title: Company
       width: 250
-    - href: /pricing
+    - href: /pricing/
       title: Pricing
-    - href: /demo
+    - href: /demo/
       isButton: true
       title: Request Demo
     - href: 'https://next.stoplight.io'
@@ -122,13 +122,13 @@ actionBar:
 footer:
   columns:
     - links:
-        - href: /design
+        - href: /design/
           title: Design
-        - href: /documentation
+        - href: /documentation/
           title: Documentation
-        - href: /testing
+        - href: /testing/
           title: Testing
-        - href: /mocking
+        - href: /mocking/
           title: Mocking
       title: Products
     - links:
@@ -136,27 +136,27 @@ footer:
           title: Help Center
         - href: 'https://community.stoplight.io'
           title: 'Forum '
-        - href: /blog
+        - href: /blog/
           title: Blog
         - href: 'https://press.stoplight.io'
           title: Press
       title: Resources
     - links:
-        - href: /about
+        - href: /about/
           title: About Us
-        - href: /case-studies
+        - href: /case-studies/
           title: Case Studies
-        - href: /contact-us
+        - href: /contact-us/
           title: Contact Us
         - href: 'https://app.stoplight.io/login'
           title: Classic Login
       title: Company
   legal:
-    - href: /privacy
+    - href: /privacy/
       title: Privacy
-    - href: /terms
+    - href: /terms/
       title: Terms of Use
-    - href: /policy
+    - href: /policy/
       title: Policy
   social:
     - href: 'https://twitter.com/stoplightio'
