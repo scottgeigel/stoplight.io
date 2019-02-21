@@ -273,7 +273,8 @@ OBReadData1:
       type: string
       format: date-time
   required:
-    - Permissions  additionalProperties: false
+    - Permissions:  
+  additionalProperties: false
 ```
 
 This is transmitted to the bank without consumer authorization so an appropriately secure means to deliver it must be provided. This is accomplished using a mutually authenticated TLS connection and an OAuth 2.0 Client Credentials grant, which is defined in the specification:
