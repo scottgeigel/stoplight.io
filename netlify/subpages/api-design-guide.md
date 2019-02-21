@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - api-design
 publishedDate: 2019-02-06T03:07:38.734Z
-author: Adam DuVander
+author: ''
 title: API Design Guide
 subtitle: Learn all there is about API Design through our comprehensive guide
 color: blue
