@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - api-documentation
 publishedDate: 2019-02-11T17:37:38.030Z
-author: Adam DuVander
+author: ''
 title: API Documentation Guide
 subtitle: Learn all there is about API Documentation through our comprehensive guide
 color: green
