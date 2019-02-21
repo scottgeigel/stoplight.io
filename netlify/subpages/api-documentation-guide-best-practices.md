@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - api-documentation
 publishedDate: 2019-02-11T18:06:16.962Z
-author: Adam DuVander
+author: ''
 title: 'API Documentation Guide | Best Practices '
 subtitle: A comprehensive guide to API documentation best practices
 color: green
