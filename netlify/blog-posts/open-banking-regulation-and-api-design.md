@@ -269,7 +269,7 @@ OBReadData1:
       type: string
       format: date-time
   required:
-    - Permissions
+    -Permissions
   additionalProperties: false
 ```
 
