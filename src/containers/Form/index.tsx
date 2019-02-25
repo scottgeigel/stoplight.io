@@ -13,11 +13,11 @@ export interface IForm {
   color: string;
   hero: IHero;
   hubspot: IHubspotForm;
-  customers: ICollage;
+  collage: ICollage;
   testimonials: ITestimonials;
 }
 
-export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, customers, testimonials }) => {
+export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, collage, testimonials }) => {
   return (
     <React.Fragment>
       <Hero bgColor={color} {...hero} />
@@ -28,7 +28,7 @@ export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, cus
         </Container>
       </Section>
 
-      <Collage id="customers" {...customers} />
+      <Collage id="customers" {...collage} />
 
       <Testimonials {...testimonials} />
     </React.Fragment>
