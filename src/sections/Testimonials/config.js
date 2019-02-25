@@ -2,7 +2,7 @@ import actionBar from 'src/components/ActionBar/config';
 import container from 'src/components/Container/config';
 
 export default {
-  name: 'testimonialSection',
+  name: 'testimonials',
   label: 'Testimonial Section',
   widget: 'object',
   required: false,
