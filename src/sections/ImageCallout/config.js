@@ -1,8 +1,8 @@
 import cta from 'src/components/CallToAction/config';
 
 export default {
-  name: 'product',
-  label: 'Product',
+  name: 'imageCallout',
+  label: 'Image Callout',
   widget: 'object',
   required: false,
   fields: [
