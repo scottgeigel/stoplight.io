@@ -41,8 +41,6 @@ There are many reasons why this is considered a great idea but first-and-foremos
 
 ![Open Banking Development Map](/images/open-banking-development.png "Open Banking Development Map")
 
-
-
 This is where regulation comes into the picture. The market for  third party access to customer accounts exists already and customers can share their data through bilateral agreements or screen scraping internet banking (supported by organizations like [Yodlee](https://www.yodlee.com/)). However, coverage is piecemeal as it is based on both the appetite of banks to strike bilateral agreements and open suitable interfaces or the ease with which screen scraping can be implemented. Moreover, screen scraping is viewed by many in the industry as inherently insecure. This is due to the fact that a customer typically gives up both their internet banking credentials and access to all their data to the third party who performs the scraping. Given the differences in each internet banking implementation it also falls short of providing banking customers with the same access across all their accounts, regardless of who they are held with.
 
 Extending this choice is one of the main goals of the regulations that have been created to increase competition in financial services and are is implicitly encouraging the development of Open Banking.Probably the most significant legislation is in Europe where [Payment Services Directive 2](https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en) (PSD2) has introduced new, third-party roles to financial services (more on these roles later). Coupled with PSD2 are the [Regulatory Technical Standards](https://eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money/regulatory-technical-standards-on-strong-customer-authentication-and-secure-communication-under-psd2) (RTS) that define the requirements for how authentication of participants takes place. Essentially, these two pieces of legislation are helping shape Open Banking and the form the major standards across Europe - [UK Open Banking](https://www.openbanking.org.uk/), the [Berlin Group](https://www.berlin-group.org/), and [STET](https://www.stet.eu/en/psd2/) - are taking..
@@ -371,8 +369,6 @@ consentsExample_DedicatedAccounts:
 The examples show that there are multiple ways of fulfilling the Authorization as a Resource pattern and API designers are going to need to understand both the regulatory context and the needs of the community in implementing the most appropriate model.
 
 However, API designers should also consider what can be achieve using security protocols rather than dedicated endpoints in the API. In essence, there is nothing to say that the designers of the API were right in shunning the idea of using OAuth scopes to drive permissions and there is an opportunity to revisit this. A well-designed set of scopes, coupled with enhanced capabilities available in OpenID Connect and some appropriately detailed [API documentation](https://stoplight.io/documentation/) might work just as well. As the market evolves there is an opportunity for designers to look at this option rather than simply replaying the pattern from the existing standards.
-
-
 
 ![Properties of OpenAPI Patterns](/images/group-3x.jpg "Properties of OpenAPI Patterns")
 
