@@ -12,7 +12,7 @@ relatedTags:
 publishedDate: 2019-02-28T19:34:51.231Z
 author: Chris Wood
 title: 'Open Banking, Regulation, and API Design'
-subtitle: The state of Open Banking in 2019
+subtitle: The State of Open Banking in 2019
 image: /images/pexels-photo-164474-1-.jpeg
 color: green
 tabs:
@@ -23,13 +23,15 @@ actionBar:
   buttons: []
   enabled: false
 meta:
-  description: The state of Open Banking in 2019
+  description: The State of Open Banking in 2019
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Open Banking, Regulation, and API Design'
+  title: 'Open Banking, Regulation, and API Design | Stoplight API Corner'
+  image: /images/pexels-photo-164474-1-.jpeg
   twitter:
-    description: The state of Open Banking in 2019
-    title: 'Open Banking, Regulation, and API Design'
+    description: The State of Open Banking in 2019
+    title: 'Open Banking, Regulation, and API Design | Stoplight API Corner'
+    image: /images/pexels-photo-164474-1-.jpeg
     username: '@stoplightio'
 ---
 If you believe the press, 2019 is the year Open Banking will “revolutionize” the financial services industry and give us access to tools and technologies that’ll help us run our lives like never before... Whether you believe the hype or not, Open Banking is having a major impact on how banks and financial institutions do business. The financial services industry regulations driving it are serving as a catalyst to catapult banks into the API Economy with open APIs.
