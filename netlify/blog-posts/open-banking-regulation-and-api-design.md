@@ -4,11 +4,12 @@ tags:
   - blog
   - blog-general
   - blog-industry
+  - blog-design
 relatedTags:
-  - blog
+  - blog-design
   - blog-industry
   - blog-general
-publishedDate: 2019-02-21T19:34:51.231Z
+publishedDate: 2019-02-28T19:34:51.231Z
 author: Chris Wood
 title: 'Open Banking, Regulation, and API Design'
 subtitle: The state of Open Banking in 2019
