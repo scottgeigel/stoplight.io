@@ -26,11 +26,9 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: 'Open Banking, Regulation, and API Design'
-  image: /images/pexels-photo-164474-1-.jpeg
   twitter:
     description: The state of Open Banking in 2019
     title: 'Open Banking, Regulation, and API Design'
-    image: /images/pexels-photo-164474-1-.jpeg
     username: '@stoplightio'
 ---
 If you believe the press, 2019 is the year Open Banking will “revolutionize” the financial services industry and give us access to tools and technologies that’ll help us run our lives like never before... Whether you believe the hype or not, Open Banking is having a major impact on how banks and financial institutions do business. The financial services industry regulations driving it are serving as a catalyst to catapult banks into the API Economy with open APIs.
@@ -372,7 +370,7 @@ The examples show that there are multiple ways of fulfilling the Authorization a
 
 However, API designers should also consider what can be achieve using security protocols rather than dedicated endpoints in the API. In essence, there is nothing to say that the designers of the API were right in shunning the idea of using OAuth scopes to drive permissions and there is an opportunity to revisit this. A well-designed set of scopes, coupled with enhanced capabilities available in OpenID Connect and some appropriately detailed [API documentation](https://stoplight.io/documentation/) might work just as well. As the market evolves there is an opportunity for designers to look at this option rather than simply replaying the pattern from the existing standards.
 
-![Properties of OpenAPI Patterns](/images/openapi-pattern-properties.png "Properties of OpenAPI Patterns")
+![Properties of OpenAPI Patterns](/images/group-3x.jpg "Properties of OpenAPI Patterns")
 
 ## Final Thoughts
 
