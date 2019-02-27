@@ -10,7 +10,7 @@ subtitle: >-
   Crédit Mutuel Arkéa is a prominent leader in banking and insurance in Europe.
   The Crédit Mutuel Group includes Arkéa Crédit Mutuel Bretagne, Southwest
   Credit Mutuel, Crédit Mutuel Massif Central, and 20 specialized subsidiaries
-image: /images/arkea_logo.png
+image: /images/logo_arkea_transparent.png
 color: orange
 tabs: []
 sidebar:
