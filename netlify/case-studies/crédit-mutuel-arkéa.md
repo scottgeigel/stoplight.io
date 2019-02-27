@@ -27,7 +27,7 @@ sidebar:
       role: API Architect
 actionBar:
   buttons: []
-  enabled: true
+  enabled: false
 meta:
   description: >-
     PSD2, Involving Non-Technical Stakeholders, Security,  Engineering Culture
