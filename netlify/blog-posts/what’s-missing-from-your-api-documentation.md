@@ -4,7 +4,7 @@ tags:
   - blog
   - blog-documentation
 relatedTags:
-  - {}
+  - blog-documenation
 publishedDate: 2019-02-19T08:00:00.000Z
 author: Adam DuVander
 title: What’s Missing From Your API Documentation
@@ -13,7 +13,8 @@ image: /images/missing-docs.jpeg
 color: indigo
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
