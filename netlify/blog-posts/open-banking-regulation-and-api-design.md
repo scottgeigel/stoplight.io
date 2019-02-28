@@ -4,14 +4,15 @@ tags:
   - blog
   - blog-general
   - blog-industry
+  - blog-design
 relatedTags:
-  - blog
+  - blog-design
   - blog-industry
   - blog-general
-publishedDate: 2019-02-21T19:34:51.231Z
+publishedDate: 2019-02-28T19:34:51.231Z
 author: Chris Wood
 title: 'Open Banking, Regulation, and API Design'
-subtitle: The state of Open Banking in 2019
+subtitle: The State of Open Banking in 2019
 image: /images/pexels-photo-164474-1-.jpeg
 color: green
 tabs:
@@ -22,13 +23,15 @@ actionBar:
   buttons: []
   enabled: false
 meta:
-  description: The state of Open Banking in 2019
+  description: The State of Open Banking in 2019
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: 'Open Banking, Regulation, and API Design'
+  title: 'Open Banking, Regulation, and API Design | Stoplight API Corner'
+  image: /images/pexels-photo-164474-1-.jpeg
   twitter:
-    description: The state of Open Banking in 2019
-    title: 'Open Banking, Regulation, and API Design'
+    description: The State of Open Banking in 2019
+    title: 'Open Banking, Regulation, and API Design | Stoplight API Corner'
+    image: /images/pexels-photo-164474-1-.jpeg
     username: '@stoplightio'
 ---
 If you believe the press, 2019 is the year Open Banking will “revolutionize” the financial services industry and give us access to tools and technologies that’ll help us run our lives like never before... Whether you believe the hype or not, Open Banking is having a major impact on how banks and financial institutions do business. The financial services industry regulations driving it are serving as a catalyst to catapult banks into the API Economy with open APIs.
@@ -124,7 +127,7 @@ In terms of practical API design approaches, the Positive Acknowledgement patter
 * For implementing PUT operations reuse the object and enforce mandatory properties as required.
 * For PATCH reuse the object so a client can send only properties that are changing (in the style of and possibly implementing [JSON Merge Patch](https://tools.ietf.org/html/rfc7386)).
 
-In the context of an OpenAPI specification this approach often manifests itself in the use of the allOf keyword. The example JSON Schema object below is taken from the UK Open Banking Event Notification API standard, which uses the `OBCallbackUrlData1` in a PUT operation to update a registered Callback URL. By applying this pattern we’d remove the `required` property from the object:
+In the context of the OpenAPI Specification, this approach often manifests itself in the use of the allOf keyword. The example JSON Schema object below is taken from the UK Open Banking Event Notification API standard, which uses the `OBCallbackUrlData1` in a PUT operation to update a registered Callback URL. By applying this pattern we’d remove the `required` property from the object:
 
 ```
  OBCallbackUrlData1:
@@ -155,7 +158,7 @@ CallbackUrlPatch:
       - Version
 ```
 
-By taking this approach, API designers can make good use of the reuse opportunities that OpenAPI offers, avoiding bloat in their specifications and ensuring they their documents remain as concise as possible.
+By taking this approach, API designers can make good use of the reuse opportunities that the OpenAPI Specification offers, avoiding bloat in their specifications and ensuring they their documents remain as concise as possible.
 
 ### Assertion of Truth
 
@@ -168,10 +171,10 @@ In a practical sense, Assertion of Truth in API design terms is offering cryptog
 
 For the API designer both approaches have implications:
 
-* JWS are inherently hard to represent in OpenAPI documents which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
-* In contrast, HTTP Signatures are easy to represent in an [OpenAPI specification](https://stoplight.io/api-design-guide/oas-spec/) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level they lack the encapsulation benefit that JSON Web Signatures provide.
+* JWS are inherently hard to represent in OpenAPI Specification documents, which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
+* In contrast, HTTP Signatures are easy to represent in an [OpenAPI Specification document](https://stoplight.io/api-design-guide/oas-spec/) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level they lack the encapsulation benefit that JSON Web Signatures provide.
 
-There is therefore little to say on HTTP Signatures. For JWS the UK Open Banking standards show a number of ways to express them in an OpenAPI specification. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
+There is therefore little to say on HTTP Signatures. For JWS the UK Open Banking standards show a number of ways to express them in an OpenAPI Specification document. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
 
 #### Detached Signatures
 
@@ -185,7 +188,7 @@ To follow this method, the API designer needs only to define the `x-jws-signatur
 
 #### Implied Signatures
 
-In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI specification this is accomplished by using the `content` keyword:
+In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI Specification document, this is accomplished by using the `content` keyword:
 
 ```
 200:
