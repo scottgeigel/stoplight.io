@@ -5,19 +5,19 @@ tags:
 relatedTags:
   - case-study
 publishedDate: 2019-02-27T17:20:08.290Z
-title: Crédit Mutuel Arkéa
+title: Arkéa
 subtitle: >-
-  Crédit Mutuel Arkéa is a prominent leader in banking and insurance in Europe.
-  The Crédit Mutuel Group includes Arkéa Crédit Mutuel Bretagne, Southwest
-  Credit Mutuel, Crédit Mutuel Massif Central, and 20 specialized subsidiaries
-image: /images/logo_arkea_transparent.png
+  Arkéa is a prominent leader in banking and insurance in Europe. The Arkéa
+  Group includes Arkéa Crédit Mutuel Bretagne, Southwest Credit Mutuel, Crédit
+  Mutuel Massif Central, and 20 specialized subsidiaries
+image: /images/arkea-logo-transparent-2x.png
 color: orange
 tabs: []
 sidebar:
   info:
     description: >-
       **Industry**: Finance<br/> **Location**: Bretagne, France<br/>
-      **Employees**: 500-1000
+      **Employees**: 8000-10000
   quotes:
     - author: Nicolas Tisserand
       quote: >-
@@ -34,12 +34,12 @@ meta:
     Shift, and Collaboration
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: Crédit Mutuel Arkéa | Stoplight
+  title: Arkéa | Stoplight
   twitter:
     description: >-
       PSD2, Involving Non-Technical Stakeholders, Security,  Engineering Culture
       Shift, and Collaboration
-    title: Crédit Mutuel Arkéa | Stoplight
+    title: Arkéa | Stoplight
     username: '@stoplightio'
 ---
 ## Arkéa’s Assignment 
