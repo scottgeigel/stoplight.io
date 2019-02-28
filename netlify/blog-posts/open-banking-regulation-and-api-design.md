@@ -127,7 +127,7 @@ In terms of practical API design approaches, the Positive Acknowledgement patter
 * For implementing PUT operations reuse the object and enforce mandatory properties as required.
 * For PATCH reuse the object so a client can send only properties that are changing (in the style of and possibly implementing [JSON Merge Patch](https://tools.ietf.org/html/rfc7386)).
 
-In the context of an OpenAPI specification this approach often manifests itself in the use of the allOf keyword. The example JSON Schema object below is taken from the UK Open Banking Event Notification API standard, which uses the `OBCallbackUrlData1` in a PUT operation to update a registered Callback URL. By applying this pattern we’d remove the `required` property from the object:
+In the context of the OpenAPI Specification, this approach often manifests itself in the use of the allOf keyword. The example JSON Schema object below is taken from the UK Open Banking Event Notification API standard, which uses the `OBCallbackUrlData1` in a PUT operation to update a registered Callback URL. By applying this pattern we’d remove the `required` property from the object:
 
 ```
  OBCallbackUrlData1:
@@ -158,7 +158,7 @@ CallbackUrlPatch:
       - Version
 ```
 
-By taking this approach, API designers can make good use of the reuse opportunities that OpenAPI offers, avoiding bloat in their specifications and ensuring they their documents remain as concise as possible.
+By taking this approach, API designers can make good use of the reuse opportunities that the OpenAPI Specification offers, avoiding bloat in their specifications and ensuring they their documents remain as concise as possible.
 
 ### Assertion of Truth
 
@@ -171,10 +171,10 @@ In a practical sense, Assertion of Truth in API design terms is offering cryptog
 
 For the API designer both approaches have implications:
 
-* JWS are inherently hard to represent in OpenAPI documents which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
-* In contrast, HTTP Signatures are easy to represent in an [OpenAPI specification](https://stoplight.io/api-design-guide/oas-spec/) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level they lack the encapsulation benefit that JSON Web Signatures provide.
+* JWS are inherently hard to represent in OpenAPI Specification documents, which is due to the fact that it is difficult to represent three BASE64 encoded strings separated by periods in the underlying JSON schema.
+* In contrast, HTTP Signatures are easy to represent in an [OpenAPI Specification document](https://stoplight.io/api-design-guide/oas-spec/) - they are simply a HTTP Header - and designers can represent their payloads as native JSON Schema. However, at an implementation level they lack the encapsulation benefit that JSON Web Signatures provide.
 
-There is therefore little to say on HTTP Signatures. For JWS the UK Open Banking standards show a number of ways to express them in an OpenAPI specification. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
+There is therefore little to say on HTTP Signatures. For JWS the UK Open Banking standards show a number of ways to express them in an OpenAPI Specification document. Admittedly, these might be viewed as workarounds for the lack of formal JOSE support in OpenAPI, but they do provide useful examples of the approach.
 
 #### Detached Signatures
 
@@ -188,7 +188,7 @@ To follow this method, the API designer needs only to define the `x-jws-signatur
 
 #### Implied Signatures
 
-In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI specification this is accomplished by using the `content` keyword:
+In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI Specification document, this is accomplished by using the `content` keyword:
 
 ```
 200:
