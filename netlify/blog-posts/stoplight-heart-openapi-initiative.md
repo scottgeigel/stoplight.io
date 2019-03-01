@@ -1,5 +1,5 @@
 ---
-path: /blog/stoplight-️-the-openapi-initiative-def9db056eaf
+path: /blog/stoplight--the-openapi-initiative-def9db056eaf
 tags:
   - blog-general
   - blog
