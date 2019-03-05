@@ -73,7 +73,7 @@ While it is important to test the logic behind each query parameter individually
 
 As you can see above, as an API’s functionality expands, the underlying scope of our unit testing grows as well (sometimes drastically). What if we added another query parameter to the `GET /orders` endpoint? What if we wanted to test every response code? What if we added logic based on the presence (or the absence) of a header? What about adding support for different formats (`JSON`, `YAML`, `XML`, etc)? You get the idea.
 
-## 👍
+## Benefits of writing API tests 👍
 
 Now that we have a better understanding of what unit testing is, let’s go over some of the high level benefits of unit testing APIs:
 
@@ -81,7 +81,7 @@ Now that we have a better understanding of what unit testing is, let’s go over
 - Unit tests are quick to write, since they are usually very narrowly-scoped. They are also quick to run, and can be run against a subset of an API for ad-hoc verification of behavior.
 - Unit tests force developers to break up larger sets of logic into composable ‘units’ suitable for testing. This can be helpful in finding ‘hot-spots’ in your API, or where your API design starts to break down.
 
-## 👎
+## Disadvantages of writing API tests👎
 
 That’s all well and good, but what about the downsides to unit testing APIs? Here they are:
 
@@ -97,7 +97,7 @@ Since unit tests are supposed to be scoped with a narrow focus, they are much mo
 
 To that end, it is not unheard of to see unit tests rely on mock services (fake services that look like real ones) when the application being tested relies on external services or functionality. That being said, it is important to remember that a mock service is, as the name implies, only mocking requests. Mocking can give false impressions, which, in reality, are not always true. For example, can your service handle malformed data coming from an upstream service? What if the upstream service is down or your authentication credentials have expired? While mock services have their uses in unit testing, they are typically more valuable in tests that have a wider range of scope (for example, integration tests), but more on that later.
 
-### To unit test or not to unit test?
+### To write unit test or not to unit test?
 
 So, should you do unit testing? That is the question, isn’t it? The answer is unequivocally yes. Unit tests are but one of many testing options available for verifying API’s, and they should be used wherever it is appropriate. But should you obsess over making sure that every unit (however you want to define the term) is covered by a test? Eh, probably not. By writing a large number of unit tests, you are ultimately creating technical debt that will have to be reconciled when refactoring or updating your API behavior. Ultimately it is up to you to find the right balance of where unit testing fits based on your use case and needs.
 
