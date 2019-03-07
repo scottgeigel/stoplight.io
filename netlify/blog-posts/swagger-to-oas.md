@@ -43,7 +43,7 @@ The year is 2010. A year that included a devastating earthquake in Haiti, trappe
 
 ## The Birth of Swagger (2010)
 
-For Tony Tam and his team at Wordnik to produce the world's largest online dictionary, they needed a new way to describe APIs. They needed a specification that was not only easy to use, but more importantly, machine-readable. Thus Swagger was born. In late 2010, Wordnik releases an open source project for Swagger 1.0, the first modern RESTful API specifications.
+For Tony Tam and his team at Wordnik to produce the world's largest online dictionary they needed a new way to describe APIs. They needed a specification that was not only easy to use, but more importantly, machine-readable. Thus Swagger was born. In late 2010, Wordnik releases an open source project for Swagger 1.0, the first modern RESTful API specifications.
 
 ## Adoption and Competition (2013–2014)
 
@@ -53,13 +53,13 @@ Adoption of Swagger starts slowly but really begins to make headlines in 2013. T
 
 > "Swagger has been the clear leader of the API description format discussion for several years - its ecosystem and passionate community is unsurpassed in the fields."
 >
-> - Ole Lensmar, CTO at SmartBear
+> \- Ole Lensmar, CTO at SmartBear
 
 March 25th, 2015, SmartBear acquires Swagger Specification from Reverb technologies making it the owner of the two most widely used API Specifications: SoapUI and Swagger.
 
 > "Since first being released in 2011, Swagger has found broad adoption in start-ups, mid-size and enterprise companies alike - it has grown far beyond what we had envisioned. Now it's time to take Swagger to the next level and we have chosen to partner with SmartBear because they have the API expertise and proven commitment to open source products like SoapUI. With SmartBear, Swagger will reach more developers, products and services, and make an even bigger impact on the API world."
 >
-> * Tony Tam
+> \- Tony Tam
 
 ![Image Courtesy of OAI](/images/open-api-initiative-logo.jpeg "Image Courtesy of OAI")
 
