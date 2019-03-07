@@ -43,7 +43,7 @@ The year is 2010. A year that included a devastating earthquake in Haiti, trappe
 
 ## The Birth of Swagger (2010)
 
-For Tony Tam and his team at Wordnik to produce the world's largest online dictionary they needed a new way to describe APIs. They needed a specification that was not only easy to use, but more importantly, machine-readable. Thus Swagger was born. In late 2010, Wordnik releases an open source project for Swagger 1.0, the first modern RESTful API specifications.
+For Tony Tam and his team at Wordnik to produce the world's largest online dictionary, they needed a new way to describe APIs. They needed a specification that was not only easy to use, but more importantly, machine-readable. Thus Swagger was born. In late 2010, Wordnik releases an open source project for Swagger 1.0, the first modern RESTful API specifications.
 
 ## Adoption and Competition (2013–2014)
 
