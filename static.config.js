@@ -537,7 +537,7 @@ export default {
           )}
 
           {pagination.currentPage && pagination.currentPage !== 1 && (
-            <link rel="prev" href={`${SITE_ROOT}${path}/page/${pagination.currentPage - 1}/`} />
+            <link rel="prev" href={`${SITE_ROOT}${path}/${pagination.currentPage === 2 ? '' : `page/${pagination.currentPage - 1}/`}`} />
           )}
 
           {pagination.currentPage && pagination.currentPage !== pagination.totalPages && (
