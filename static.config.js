@@ -421,6 +421,7 @@ export default {
 
         routes.push({
           path: landing.path,
+          noindex: true,
           component: 'src/containers/Landing',
           getData: () => ({
             ...landing,
