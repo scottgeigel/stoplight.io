@@ -201,6 +201,10 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
         ...list,
         ...(propFactory ? propFactory(list) : {}),
         items: items.slice(0, pageSize),
+        meta: {
+          ...list.meta,
+          canonical: (list.meta && list.meta.canonical) || `${list.path}/`,
+        },
         pagination: {
           ...list.pagination,
           path: list.path,
@@ -223,10 +227,15 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
             component: 'src/containers/Lists',
           },
           decorate: (item, currentPage, totalPages) => ({
+            noindex: currentPage === 1,
             getData: () => ({
               ...list,
               ...(propFactory ? propFactory(list) : {}),
               items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+              meta: {
+                ...list.meta,
+                canonical: (list.meta && list.meta.canonical) || `${list.path}/${currentPage === 1 ? '' : `page/${currentPage}/`}`,
+              },
               pagination: {
                 ...list.pagination,
                 path: list.path,
