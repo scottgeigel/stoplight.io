@@ -14,6 +14,7 @@ tabs:
 meta:
   favicon: /images/mark_light_bg.png
   title: Our Support Policy Detailed | Stoplight
+  description: Take a look through Stoplight’s Application Support Services and policies, including support methods and any support exclusions, here.
   twitter:
     title: Our Support Policy Detailed | Stoplight
 ---
