@@ -502,7 +502,7 @@ export default {
           <meta name="twitter:site" content={meta.twitter.username} />
           <meta name="twitter:creator" content={meta.twitter.username} />
           <meta name="twitter:title" content={meta.twitter.title} />
-          <meta name="twitter:description" content={meta.twitter.description} />
+          <meta name="twitter:description" content={meta.twitter.description || meta.description} />
           <meta name="twitter:image" content={SITE_ROOT + meta.twitter.image} />
 
           <link rel="shortcut icon" href={meta.favicon} type="image/x-icon" />
