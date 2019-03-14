@@ -21,6 +21,7 @@ tabs:
 meta:
   robots: 'index, follow'
   title: API Design Guide | OAS Spec
+  description: Get to know the intricate details of the all-important OpenAPI Specification with Stoplight’s comprehensive and technical guide.
   twitter:
     image: /images/mark_light_bg.png
     title: API Design Guide | OAS Spec

@@ -156,6 +156,7 @@ actionBar:
 meta:
   favicon: /images/mark_light_bg.png
   title: Learn About Us | Stoplight
+  description: Find out all you need to know about Stoplight and it's talented and creative team; united in their passion for creating best in class API tooling.
   twitter:
     title: Learn About Us | Stoplight
     username: '@stoplightio'

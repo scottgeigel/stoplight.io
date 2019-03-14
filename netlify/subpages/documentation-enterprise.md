@@ -18,6 +18,7 @@ actionBar:
 meta:
   favicon: /images/mark_light_bg.png
   title: Enterprise Ready API Documentation Software | Stoplight
+  description: Read up on Stoplight’s great range of custom-built enterprise solutions for creating internal and external API documentation right here.
   twitter:
     title: Enterprise Ready API Documentation Software | Stoplight
     image: /images/mark_light_bg.png
