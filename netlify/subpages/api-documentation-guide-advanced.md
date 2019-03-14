@@ -25,7 +25,6 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Documentation Guide | Advanced
-  description: Want to know about some of the more technical and advanced aspects of API Documentation? Find out some of the more in-depth aspects with Stoplight.
   twitter:
     title: API Documentation Guide | Advanced
     username: '@stoplightio'

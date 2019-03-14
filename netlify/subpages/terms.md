@@ -14,7 +14,6 @@ tabs:
 meta:
   favicon: /images/mark_light_bg.png
   title: Read our terms and conditions | Stoplight
-  description: Check out Stoplight’s all-important terms of service, from downloadable software terms, through to support and maintenance, here.
   twitter:
     title: Read our terms and conditions | Stoplight
 ---

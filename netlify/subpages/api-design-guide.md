@@ -23,7 +23,6 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design Guide | Basics
-  description: Learn all there is to know about our API designs through our comprehensive guides, including the basics, API tooling, and OpenAPI Specification.
   twitter:
     title: API Design Guide | Basics
     image: /images/mark_light_bg.png

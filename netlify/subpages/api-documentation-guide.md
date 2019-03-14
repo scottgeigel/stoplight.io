@@ -24,7 +24,6 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Documentation Guide | Basics
-  description: Want to learn the basics of creating comprehensive API documentation? Check out our basics guide right here to find out everything you need to know.
   twitter:
     title: API Documentation Guide | Basics
     username: '@stoplightio'
