@@ -2,18 +2,19 @@
 path: /blog/beyond-static-documentation
 tags:
   - blog
-  - blog-api-documentation
+  - blog-documentation
 relatedTags:
-  - {}
+  - blog-documentation
 publishedDate: 2019-03-14T17:36:01.794Z
 author: Adam DuVander
 title: Take Your API Beyond Static Documentation
 subtitle: Three ways to make your documentation come alive
 image: /images/quino-al-121406-unsplash.jpg
-color: black
+color: purple-darker
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
