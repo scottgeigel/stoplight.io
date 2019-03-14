@@ -20,8 +20,14 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Three ways to make your documentation come alive
   robots: 'index, follow'
-  twitter: {}
+  title: Take Your API Beyond Static Documentation | Stoplight API Corner
+  image: /images/quino-al-121406-unsplash.jpg
+  twitter:
+    description: Three ways to make your documentation come alive
+    title: Take Your API Beyond Static Documentation | Stoplight API Corner
+    image: /images/quino-al-121406-unsplash.jpg
 ---
 You’ve just published a new API and created documentation to help developers use it. Assuming those docs are complete, you’ve now achieved the minimum that developers expect. This static documentation is helpful, but there is more you can do to make it easier to use. You can help developers take the next step, right within your API documentation.
 
