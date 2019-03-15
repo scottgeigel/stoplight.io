@@ -85,10 +85,10 @@ header:
         - href: /mock-api-guide/basics/
           icon:
             - fas
-            - smog
+            - bolt
           subtitle: Create mock API servers
           title: API Mocking Guide
-          titleColor: black
+          titleColor: grey-darkest
       title: Resources
       width: 400
     - links:
