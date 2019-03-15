@@ -82,6 +82,13 @@ header:
           subtitle: Learn API Documentation Best Practices
           title: API Documentation Guide
           titleColor: green
+        - href: /mock-api-guide/basics/
+          icon:
+            - fas
+            - smog
+          subtitle: Create mock API servers
+          title: API Mocking Guide
+          titleColor: black
       title: Resources
       width: 400
     - links:
