@@ -135,30 +135,34 @@ const filterPages = (allPages, filter) => {
 };
 
 const RELATED_PAGES_LIMIT = 3;
+function getRelatedPages(page, allPages) {
+  let relatedPages = [];
+
+  if (page.relatedTags && page.relatedTags.length) {
+    // Grab pages with the same tag
+    relatedPages = filterPages(allPages, relatedPage => {
+      if (!relatedPage.tags || relatedPage.path === page.path) {
+        return false;
+      }
+
+      for (const tag of page.relatedTags) {
+        if (relatedPage.tags && relatedPage.tags.includes(tag)) {
+          return true;
+        }
+      }
+
+      return false;
+    }).slice(0, RELATED_PAGES_LIMIT);
+  }
+
+  return relatedPages;
+}
+
 const addSubpages = (routes, allPages, subpages, propFactory) => {
   if (subpages.length) {
     subpages.forEach(subpage => {
       if (!subpage.path) {
         return;
-      }
-
-      let relatedPages = [];
-
-      if (subpage.relatedTags && subpage.relatedTags.length) {
-        // Grab pages with the same tag
-        relatedPages = filterPages(allPages, page => {
-          if (!page.tags || page.path === subpage.path) {
-            return false;
-          }
-
-          for (const tag of subpage.relatedTags) {
-            if (page.tags && page.tags.includes(tag)) {
-              return true;
-            }
-          }
-
-          return false;
-        }).slice(0, RELATED_PAGES_LIMIT);
       }
 
       routes.push({
@@ -169,7 +173,7 @@ const addSubpages = (routes, allPages, subpages, propFactory) => {
             ...subpage,
             ...(propFactory ? propFactory(subpage) : {}),
             publishedDate: formatDate(subpage.publishedDate),
-            relatedPages,
+            relatedPages: getRelatedPages(subpage, allPages),
           };
         },
       });
@@ -203,6 +207,7 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
           currentPage: 1,
           totalPages: Math.ceil(items.length / pageSize),
         },
+        relatedPages: getRelatedPages(list, allPages),
       }),
     });
 
@@ -296,7 +301,7 @@ export default {
     caseStudies = caseStudies.map(caseStudy => ({ ...caseStudy, backgroundSize: 'contain' }));
 
     // add author to pages and remove pages without a path
-    const pages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
+    const allPages = [...landings, ...caseStudies, ...blogPosts, ...other].filter(page => {
       if (page.path) {
         const authorPage = authors.find(author => author.title === page.author);
 
@@ -312,14 +317,14 @@ export default {
       }
     });
 
-    addListPages(routes, pages, lists);
-    addListPages(routes, pages, authors, props => ({
+    addListPages(routes, allPages, lists);
+    addListPages(routes, allPages, authors, props => ({
       hero: {
         aligned: 'left',
       },
     }));
 
-    addSubpages(routes, pages, blogPosts, props => {
+    addSubpages(routes, allPages, blogPosts, props => {
       return {
         breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
         hero: {
@@ -373,7 +378,7 @@ export default {
       };
     });
 
-    addSubpages(routes, pages, caseStudies, props => {
+    addSubpages(routes, allPages, caseStudies, props => {
       const sidebar = props.sidebar || {};
       sidebar.info = sidebar.info || {};
       sidebar.info.image = props.image;
@@ -389,7 +394,7 @@ export default {
       };
     });
 
-    addSubpages(routes, pages, other);
+    addSubpages(routes, allPages, other);
 
     if (forms.length) {
       forms.forEach(form => {
@@ -400,7 +405,10 @@ export default {
         routes.push({
           path: form.path,
           component: 'src/containers/Form',
-          getData: () => form,
+          getData: () => ({
+            ...form,
+            relatedPages: getRelatedPages(form, allPages),
+          }),
         });
       });
     }
@@ -414,7 +422,10 @@ export default {
         routes.push({
           path: landing.path,
           component: 'src/containers/Landing',
-          getData: () => landing,
+          getData: () => ({
+            ...landing,
+            relatedPages: getRelatedPages(landing, allPages),
+          }),
         });
       });
     }
