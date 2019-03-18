@@ -1,71 +1,18 @@
 path: /documentation
 title: OpenAPI Documentation
+color: green
+relatedTags:
+  - blog-documentation
 hero:
+  bgColor: green
   image:
-    src: /images/docs_header.png
     alt: Documentation
+    src: /images/docs_header.png
   subtitle: >-
     Create beautiful, customizable, interactive API documentation generated from
     your OpenAPI Specification
   title: Hosted API Documentation
-  bgColor: green
-color: green
 featureSection:
-  title: OpenAPI Documentation
-  description: >-
-    Create API documentation in minutes. Combine OpenAPI Specifications
-    (formerly known as Swagger) with Markdown to create robust, searchable,
-    internal and external API documentation for your organization. One-click
-    cloud deployment with Stoplight or download the static assets to host
-    anywhere.
-  buttons:
-    - title: Create Docs Now
-      href: 'https://next.stoplight.io/'
-      shadow: md
-  features:
-    - image: /images/docs_feature_1.png
-      title: Interactive API Documentation
-      shortName: API Playground
-      description: >-
-        Stoplight offers multiple ways for your API consumers to try out your API.
-        Test Requests within your documentation allows consumers to understand how
-        your API works. Code Examples generated from dozens of languages such as
-        JavaScript, Python, Ruby, Java, cURL, and more allow consumers to copy and
-        paste right into their own code.
-      titleURL: /documentation/beautiful/
-    - image: /images/product/docs-theme.png
-      title: Fully Customizable
-      shortName: Theming
-      description: >-
-        Customize your documentation with Themes, Custom CSS, Pages, Domains, and
-        Versioning. With fully customizable layouts, page design and our
-        Markdown-based Editor, you can document multiple APIs and add rich content
-        and resources alongside API reference documentation for a more complete
-        view of your platform.
-      titleURL: /documentation/helper/
-    - image: /images/docs_feature_3.png
-      title: Automated API Documentation
-      shortName: CI/CD Integration
-      description: >-
-        Never have out-of-date documentation. Reference your OpenAPI Specification
-        document to [automatically generate API reference
-        documentation](/documentation/generator/). Use the
-        Stoplight API to automate your documentation process by integrating it
-        into your existing CI/CD workflow.
-      titleURL: /documentation/automation/
-    - image: /images/flexible_deployment.png
-      title: Simple, Flexible Deployment
-      shortName: Integrations
-      description: >-
-        With flexible and secure deployment options, you can find a hosting
-        solution that works for you. Allow Stoplight to host your documentation
-        for you, so you never have to worry about managing servers for your
-        documentation ever again. Manage access control and measure analytics with
-        integrations. [Our enterprise ready documentation
-        tool](/documentation/enterprise/) allows you to
-        download the static assets or use our on-premise solutions behind your
-        firewall to host your documentation from anywhere.
-      titleURL: /documentation/hosted/
   actionBar:
     buttons:
       - color: accent
@@ -73,18 +20,68 @@ featureSection:
         title: Get Started Now
     enabled: true
     text: 'Ready to Publish? '
-meta:
-  favicon: /images/mark_light_bg.png
-  title: Hosted REST API documentation generator | Stoplight
   description: >-
     Create API documentation in minutes. Combine OpenAPI Specifications
     (formerly known as Swagger) with Markdown to create robust, searchable,
     internal and external API documentation for your organization. One-click
     cloud deployment with Stoplight or download the static assets to host
     anywhere.
+  features:
+    - description: >-
+        Stoplight offers multiple ways for your API consumers to try out your
+        API. Test Requests within your documentation allows consumers to
+        understand how your API works. Code Examples generated from dozens of
+        languages such as JavaScript, Python, Ruby, Java, cURL, and more allow
+        consumers to copy and paste right into their own code.
+      image: /images/docs_feature_1.png
+      shortName: API Playground
+      title: Interactive API Documentation
+      titleURL: /documentation/beautiful/
+    - description: >-
+        Customize your documentation with Themes, Custom CSS, Pages, Domains,
+        and Versioning. With fully customizable layouts, page design and our
+        Markdown-based Editor, you can document multiple APIs and add rich
+        content and resources alongside API reference documentation for a more
+        complete view of your platform.
+      image: /images/product/docs-theme.png
+      shortName: Theming
+      title: Fully Customizable
+      titleURL: /documentation/helper/
+    - description: >-
+        Never have out-of-date documentation. Reference your OpenAPI
+        Specification document to [automatically generate API reference
+        documentation](/documentation/generator/). Use the Stoplight API to
+        automate your documentation process by integrating it into your existing
+        CI/CD workflow.
+      image: /images/docs_feature_3.png
+      shortName: CI/CD Integration
+      title: Automated API Documentation
+      titleURL: /documentation/automation/
+    - description: >-
+        With flexible and secure deployment options, you can find a hosting
+        solution that works for you. Allow Stoplight to host your documentation
+        for you, so you never have to worry about managing servers for your
+        documentation ever again. Manage access control and measure analytics
+        with integrations. [Our enterprise ready documentation
+        tool](/documentation/enterprise/) allows you to download the static
+        assets or use our on-premise solutions behind your firewall to host your
+        documentation from anywhere.
+      image: /images/flexible_deployment.png
+      shortName: Integrations
+      title: 'Simple, Flexible Deployment'
+      titleURL: /documentation/hosted/
+  title: OpenAPI Documentation
+meta:
+  description: >-
+    Create API documentation in minutes. Combine OpenAPI Specifications
+    (formerly known as Swagger) with Markdown to create robust, searchable,
+    internal and external API documentation for your organization. One-click
+    cloud deployment with Stoplight or download the static assets to host
+    anywhere.
+  favicon: /images/mark_light_bg.png
   image: /images/docs_header.png
+  title: Hosted REST API documentation generator | Stoplight
   twitter:
-    title: Documentation | Stoplight
     description: >-
       Create API documentation in minutes. Combine OpenAPI Specifications
       (formerly known as Swagger) with Markdown to create robust, searchable,
@@ -92,6 +89,5 @@ meta:
       cloud deployment with Stoplight or download the static assets to host
       anywhere.
     image: /images/docs_header.png
+    title: Documentation | Stoplight
     username: '@stoplightio'
-cta:
-  name: Create Docs Now
