@@ -1,81 +1,79 @@
 path: /testing
 title: OpenAPI Testing
+color: orange
+relatedTags:
+  - blog-testing
 hero:
   image:
-    src: /images/testing_header.png
     alt: Testing
+    src: /images/testing_header.png
   subtitle: >-
     Build reliable web APIs with fully customizable tests and robust test
     coverage based on your API contracts. Test your endpoints, status codes, and
     more.
   title: OpenAPI Testing
-color: orange
 featureSection:
-  title: OpenAPI Testing
-  description: >-
-    Increase the test coverage of your web APIs so they break less for your
-    consumers online. Create a full collection of tests with Stoplight Testing.
-    Use Environment and Context Variables to reference other complex test
-    scenarios to accelerate test generations and reduce duplication. Whether you
-    are writing test for just one API call or a scenario of API calls working
-    together in a real-life use case, Stoplight Testing gives you the flexibility
-    to make your tests fit you workflow by supporting command line and CI/CD
-    pipeline integrations. Contract Testing your API against your OpenAPI
-    Specification (formerly known as Swagger) or JSON Schema is possible with our
-    simple visual Test Editor.
-  buttons:
-    - title: Start Testing
-      href: 'https://next.stoplight.io/'
-      shadow: md
-  features:
-    - image: /images/testing_automation.png
-      title: Simple Automated API Testing
-      shortName: CI/CD Integration
-      description: >-
-        With our Visual Test Editor, create multi-step test scenarios to automate
-        testing your REST web APIs. Build scenarios by capturing and passing data
-        between test API calls. Then integrate your test scenarios into your
-        existing CI/CD pipeline with our command line tool, powered by Prism.
-      titleURL: /testing/free
-    - image: /images/testing_validation.png
-      title: Contract Testing
-      shortName: Contract Testing
-      description: >-
-        Create test collections that ensure the API implementation meets the
-        standards and definitions described in your OpenAPI Specification or JSON
-        Schema, also known as Contract Testing. Stoplight uses realistic, dynamic
-        data based on your OpenAPI Specification to simulate real-life API
-        consumers across your local development, staging, and production
-        environments complementing your Unit tests.
-      titleURL: /testing/integration
-    - image: /images/testing_reporting.png
-      title: Coverage Reporting
-      shortName: Coverage Reporting
-      description: >-
-        With integrated Contract Testing reporting capabilities, you can track
-        your progress towards 100% coverage. Stoplight verifies that the API
-        responses for different status codes match the contract of a connected
-        OpenAPI Specification; enabling collaboration over API test coverage
-        within your organization.
-      titleURL: ''
   actionBar:
     buttons:
       - href: 'https://next.stoplight.io/'
         title: Get Started
     enabled: true
     text: Ready to Start Testing?
+  description: >-
+    Increase the test coverage of your web APIs so they break less for your
+    consumers online. Create a full collection of tests with Stoplight Testing.
+    Use Environment and Context Variables to reference other complex test
+    scenarios to accelerate test generations and reduce duplication. Whether you
+    are writing test for just one API call or a scenario of API calls working
+    together in a real-life use case, Stoplight Testing gives you the
+    flexibility to make your tests fit you workflow by supporting command line
+    and CI/CD pipeline integrations. Contract Testing your API against your
+    OpenAPI Specification (formerly known as Swagger) or JSON Schema is possible
+    with our simple visual Test Editor.
+  features:
+    - description: >-
+        With our Visual Test Editor, create multi-step test scenarios to
+        automate testing your REST web APIs. Build scenarios by capturing and
+        passing data between test API calls. Then integrate your test scenarios
+        into your existing CI/CD pipeline with our command line tool, powered by
+        Prism.
+      image: /images/testing_automation.png
+      shortName: CI/CD Integration
+      title: Simple Automated API Testing
+      titleURL: /testing/free
+    - description: >-
+        Create test collections that ensure the API implementation meets the
+        standards and definitions described in your OpenAPI Specification or
+        JSON Schema, also known as Contract Testing. Stoplight uses realistic,
+        dynamic data based on your OpenAPI Specification to simulate real-life
+        API consumers across your local development, staging, and production
+        environments complementing your Unit tests.
+      image: /images/testing_validation.png
+      shortName: Contract Testing
+      title: Contract Testing
+      titleURL: /testing/integration
+    - description: >-
+        With integrated Contract Testing reporting capabilities, you can track
+        your progress towards 100% coverage. Stoplight verifies that the API
+        responses for different status codes match the contract of a connected
+        OpenAPI Specification; enabling collaboration over API test coverage
+        within your organization.
+      image: /images/testing_reporting.png
+      shortName: Coverage Reporting
+      title: Coverage Reporting
+      titleURL: ''
+  title: OpenAPI Testing
 meta:
-  favicon: /images/mark_light_bg.png
-  title: Automated REST API Testing | Stoplight
   description: >-
     Increase the test coverage of your web APIs so they break less for your
     consumers. Create a full collection of tests with Stoplight Testing. Use
     Environment and Context Variables to reference other complex test scenarios
     to accelerate test generations and reduce duplication. Test just one API
     call or a scenario of API calls working together in a real-life use case.
+  favicon: /images/mark_light_bg.png
   image: /images/testing_header.png
+  title: Automated REST API Testing | Stoplight
   twitter:
-    title: Automated REST API Testing | Stoplight
     description: >-
       Increase the test coverage of your web APIs so they break less for your
       consumers. Create a full collection of tests with Stoplight Testing. Use
@@ -84,4 +82,5 @@ meta:
       one API call or a scenario of API calls working together in a real-life
       use case.
     image: /images/testing_header.png
+    title: Automated REST API Testing | Stoplight
     username: '@stoplightio'

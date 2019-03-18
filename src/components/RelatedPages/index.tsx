@@ -54,12 +54,12 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
   );
 };
 
-export const RelatedPages: React.FunctionComponent<{ pages: IRelatedPage[] }> = ({ pages }) => {
+export const RelatedPages: React.FunctionComponent<{ pages: IRelatedPage[]; title?: string }> = ({ pages, title }) => {
   if (!pages || !pages.length) return null;
 
   return (
-    <Section className="bg-grey-lightest">
-      <Container title="Related Articles" className="text-grey-darkest">
+    <Section id="related-pages" className="bg-grey-lightest">
+      <Container title={title || 'Related Articles'} className="text-grey-darkest">
         <div className="flex justify-center flex-wrap -mb-12">
           {pages.map((page, key) => {
             return (

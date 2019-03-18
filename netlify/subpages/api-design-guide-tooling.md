@@ -1,30 +1,31 @@
 ---
 path: /api-design-guide/tooling
-tags: ['guides', 'api-design']
-relatedTags: ['api-design']
+tags:
+  - guides
+  - api-design
+relatedTags:
+  - api-design
+  - blog-design
 publishedDate: 'Jan 23, 2019'
 title: API Design Brings Powerful Tooling
 subtitle: Learn all there is about API Design through our comprehensive guide
 color: green
-cta:
-  color: purple
-  href: 'https://next.stoplight.io'
+tabs:
+  - href: /api-design-guide/basics
+    title: API Design Basics
+  - href: /api-design-guide/tooling
+    title: API Design Tooling
+  - href: /api-design-guide/oas-spec
+    title: Understanding the OpenAPI Specification
 actionBar:
   enabled: false
-tabs:
-  - title: API Design Basics
-    href: /api-design-guide/basics
-  - title: API Design Tooling
-    href: /api-design-guide/tooling
-  - title: Understanding the OpenAPI Specification
-    href: /api-design-guide/oas-spec
 meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design Guide | Tooling
   twitter:
-    image: /images/mark_light_bg.png
     title: API Design Guide | Tooling
+    image: /images/mark_light_bg.png
     username: '@stoplightio'
 ---
 # API Design Brings Powerful Tooling

@@ -18,6 +18,7 @@ export interface IPage {
   path: string;
   title: string;
   subtitle: string;
+  className?: string;
   pageName?: string;
   breadCrumbs?: IHeroBreadCrumb[];
   body: string;

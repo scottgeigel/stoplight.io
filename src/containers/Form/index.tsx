@@ -4,8 +4,8 @@ import { withRouteData } from 'react-static';
 import { Container } from 'src/components/Container';
 import { Hero, IHero } from 'src/components/Hero';
 import { HubSpotForm, IHubspotForm } from 'src/components/HubSpotForm';
+import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
-
 import { Collage, ICollage } from 'src/sections/Collage';
 import { ITestimonials, Testimonials } from 'src/sections/Testimonials';
 
@@ -15,9 +15,10 @@ export interface IForm {
   hubspot: IHubspotForm;
   collage: ICollage;
   testimonials: ITestimonials;
+  relatedPages?: IRelatedPage[];
 }
 
-export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, collage, testimonials }) => {
+export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, collage, testimonials, relatedPages }) => {
   return (
     <React.Fragment>
       <Hero bgColor={color} {...hero} />
@@ -31,6 +32,8 @@ export const Form: React.FunctionComponent<IForm> = ({ color, hero, hubspot, col
       <Collage id="customers" {...collage} />
 
       <Testimonials {...testimonials} />
+
+      {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
     </React.Fragment>
   );
 };
