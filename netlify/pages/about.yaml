@@ -52,12 +52,18 @@ team:
   - image: /images/pytleski_headshot.png
     name: Thomas Pytleski
     role: Software Engineer
+  - image: /images/tonia-roberts-headshot.jpg
+    name: Tonia Roberts
+    role: Enterprise Account Representative
   - image: /images/rock_headshot.png
     name: Brian Rock
     role: Director of Engineering
   - image: /images/jakub-rozek-headshot.jpg
     name: Jakub Rozek
     role: Software Engineer
+  - image: /images/phil-sturgeon-headshot.png
+    name: Phil Sturgeon
+    role: Software Architect
   - image: /images/tharp_headshot.png
     name: Duane Tharp
     role: Sales & Partnerships
