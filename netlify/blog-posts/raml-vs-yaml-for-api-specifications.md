@@ -4,7 +4,7 @@ tags:
   - blog
   - blog-design
 relatedTags:
-  - design
+  - blog-design
 publishedDate: 2019-03-21T17:08:25.117Z
 author: Adam DuVander
 title: RAML vs YAML for API Specifications
@@ -13,14 +13,21 @@ image: /images/two-camels.png
 color: black
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
   enabled: false
 meta:
+  description: The similarities and differences of these two file formats
   robots: 'index, follow'
-  twitter: {}
+  title: RAML vs YAML for API Specifications | Stoplight API Corner
+  image: /images/two-camels.png
+  twitter:
+    description: The similarities and differences of these two file formats
+    title: RAML vs YAML for API Specifications | Stoplight API Corner
+    image: /images/two-camels.png
 ---
 Do a little research into API definition documents and you’ll run into enough terms to be confusing. Among them you’ll find two that seem very similar: RAML and YAML. These formats are both used in API design and documents. While they have similar origins (RAML is an implementation of YAML), they are very different in application.
 
