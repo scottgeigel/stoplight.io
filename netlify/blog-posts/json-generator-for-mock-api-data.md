@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2019-03-27T18:42:07.305Z
 author: Adam DuVander
 title: JSON Generator for Mock API Data
+image: /images/mock-car.jpg
 color: black
 tabs:
   - {}
