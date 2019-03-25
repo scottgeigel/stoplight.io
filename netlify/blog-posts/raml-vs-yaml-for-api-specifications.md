@@ -8,7 +8,7 @@ relatedTags:
 publishedDate: 2019-03-21T17:08:25.117Z
 author: Adam DuVander
 title: RAML vs YAML for API Specifications
-subtitle: The similarities and differences of these two file formats
+subtitle: The similarities and differences of these two modeling languages
 image: /images/two-camels.png
 color: black
 tabs:
@@ -20,12 +20,12 @@ actionBar:
     - color: purple
   enabled: false
 meta:
-  description: The similarities and differences of these two file formats
+  description: The similarities and differences of these two modeling languages
   robots: 'index, follow'
   title: RAML vs YAML for API Specifications | Stoplight API Corner
   image: /images/two-camels.png
   twitter:
-    description: The similarities and differences of these two file formats
+    description: The similarities and differences of these two modeling languages
     title: RAML vs YAML for API Specifications | Stoplight API Corner
     image: /images/two-camels.png
 ---
