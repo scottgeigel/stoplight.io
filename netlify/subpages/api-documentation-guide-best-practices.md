@@ -24,6 +24,7 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Documentation Guide | Best Practices
+  description: Learn all you need to know about API documentation best practices with Stoplight through our comprehensive guide written by our very own engineers.
   twitter:
     title: API Documentation Guide | Best Practices
     username: '@stoplightio'

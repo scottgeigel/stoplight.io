@@ -23,6 +23,7 @@ meta:
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
   title: API Design Guide | Tooling
+  description: Find out all you need to know about API Design Tooling with our technical, yet easy to understand guide, written by our very own engineers.
   twitter:
     title: API Design Guide | Tooling
     image: /images/mark_light_bg.png

@@ -22,6 +22,7 @@ actionBar:
 meta:
   favicon: /images/mark_light_bg.png
   title: Customizable API Documentation Tool | Stoplight
+  description: Read through Stoplight’s comprehensive library of helper documentation, including guides, overviews, code samples, and workflows, right here.
   twitter:
     title: Customizable API Documentation Tool | Stoplight
 ---
