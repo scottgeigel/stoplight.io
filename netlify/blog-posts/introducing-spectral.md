@@ -3,6 +3,7 @@ path: /blog/introducing-spectral/
 tags:
   - blog
   - blog-design
+  - blog-general
 relatedTags:
   - blog-design
 publishedDate: 2019-03-28T22:43:09.385Z
