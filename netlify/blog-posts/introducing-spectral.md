@@ -6,7 +6,7 @@ tags:
 relatedTags:
   - blog-design
 publishedDate: 2019-03-28T22:43:09.385Z
-author: Taylor
+author: Taylor Barnett
 title: Introducing Spectral
 subtitle: >-
   An open source, flexible JSON linter with out of the box support for the
@@ -22,8 +22,16 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: >-
+    An open source, flexible JSON linter with out of the box support for the
+    OpenAPI Specification
   robots: 'index, follow'
-  twitter: {}
+  title: Introducing Spectral | Stoplight API Corner
+  twitter:
+    description: >-
+      An open source, flexible JSON linter with out of the box support for the
+      OpenAPI Specification
+    title: Introducing Spectral | Stoplight API Corner
 ---
 Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created Spectral, a flexible JSON linter. 
 
@@ -41,7 +49,7 @@ For example, while an OpenAPI document might be entirely valid, it could be miss
 
 Spectral isn’t just a fun side project for our team. It is an integral part of our Stoplight platform. Spectral powers all of the OpenAPI validation and linting within the platform. It also helps users turn specific style rules on and off.
 
-![Style Validation Rules in Stoplight](https://github.com/stoplightio/docs/blob/develop/assets/imagesv2/style-validation-rules.png?raw=true)
+![Style Validation Rules in Stoplight](/images/linting-design-guide.png)
 
 Even though we often use it with OpenAPI, we also see a future for it being used for other API specifications, configuration files, and more. This is why we wanted a library to lint any JSON object and not just OpenAPI documents.
 
