@@ -120,7 +120,7 @@ We built Spectral to have out of the box support for validating and linting Open
 
 In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document: 
 
-```
+```javascript
 const { Spectral } = require('@stoplight/spectral');
 const { oas3Functions, oas3Rules } = require('@stoplight/spectral/rulesets/oas3');
 
