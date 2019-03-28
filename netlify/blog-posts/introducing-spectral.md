@@ -118,7 +118,31 @@ You can then use JSON paths to apply custom rules and functions to specific part
 
 We built Spectral to have out of the box support for validating and linting OpenAPI documents. You can choose to use our rulesets or modify it to create your own custom OpenAPI rulesets. 
 
-In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document: 
+In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document.
+
+You can use the [built-in CLI](https://github.com/stoplightio/spectral#cli):
+
+```bash
+spectral lint myOAS.json
+```
+
+For example, it would respond with:
+
+```bash
+linting myOAS.json
+OpenAPI 3.x detected
+
+/Users/taylorbarnett/Stoplight/spectral-example/myOAS.json
+  2:6   warning  info-contact           Info object should contain `contact` object
+  2:6   warning  info-description       OpenAPI object info `description` must be present and non-empty string
+  11:9  warning  operation-description  Operation `description` must be present and non-empty string
+ 42:10  warning  operation-description  Operation `description` must be present and non-empty string
+  57:9  warning  operation-description  Operation `description` must be present and non-empty string
+
+✖ 5 problems (0 errors, 5 warnings, 0 infos)
+```
+
+Or you can do the same thing programmatically: 
 
 ```javascript
 const { Spectral } = require('@stoplight/spectral');
