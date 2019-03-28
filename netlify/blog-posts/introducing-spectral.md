@@ -154,6 +154,10 @@ spectral.run(myOAS).then(results => {
 });
 ```
 
+You can also use the built-in CLI to do the same thing:
+
+```spectral lint myOAS.json```
+
 Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/).
 
 ## Future of Spectral
