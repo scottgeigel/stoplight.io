@@ -144,7 +144,7 @@ OpenAPI 3.x detected
 ✖ 5 problems (0 errors, 5 warnings, 0 infos)
 ```
 
-Or you can do the same thing programmatically: 
+Or you can do the same thing [programmatically](https://github.com/stoplightio/spectral#example-linting-an-openapi-document): 
 
 ```javascript
 const { Spectral } = require('@stoplight/spectral');
@@ -180,7 +180,7 @@ spectral.run(myOAS).then(results => {
 });
 ```
 
-Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/).
+Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/#advanced).
 
 ## Future of Spectral
 
@@ -208,4 +208,4 @@ Lastly, another idea we have for Spectral is to have the ability to automaticall
 
 ## Try it out
 
-You can install Spectral [here](https://github.com/stoplightio/spectral/). If you want to run an example OpenAPI document through it, here is an example you can follow to [try it out](https://github.com/stoplightio/spectral#example-linting-an-openapi-document).
+You can install Spectral [here](https://github.com/stoplightio/spectral#installation). If you want to run an example OpenAPI document through it, here is an example you can follow to [try it out](https://github.com/stoplightio/spectral#example-linting-an-openapi-document).
