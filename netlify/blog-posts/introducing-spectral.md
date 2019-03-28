@@ -180,7 +180,7 @@ spectral.run(myOAS).then(results => {
 });
 ```
 
-Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/#advanced).
+Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral#advanced).
 
 ## Future of Spectral
 
