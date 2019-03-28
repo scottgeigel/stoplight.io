@@ -208,4 +208,4 @@ Lastly, another idea we have for Spectral is to have the ability to automaticall
 
 ## Try it out
 
-You can install Spectral [here](https://github.com/stoplightio/spectral/). If you want to run an example OpenAPI document through it, here is an example you can follow to [try it out](https://github.com/stoplightio/spectral#linting-an-oas-3-document).
+You can install Spectral [here](https://github.com/stoplightio/spectral/). If you want to run an example OpenAPI document through it, here is an example you can follow to [try it out](https://github.com/stoplightio/spectral#example-linting-an-openapi-document).
