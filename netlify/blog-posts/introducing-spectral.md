@@ -103,14 +103,25 @@ spectral.run({ name: "helloWorld" }).then(results => {
 
 // => outputs a single result since helloWorld is not snake_case
 // [
-//   {
-//     “name”: “snake_case”,
-//     “message”: “must match the pattern ‘^[a-z]+[a-z0-9_]*[a-z0-9]+$’”,
-//     “severity”: 1,
-//     “path”: [
-//       “name”
-//     ]
-//   }
+//     {
+//         "code": "snake_case",
+//         "summary": "Checks for snake case pattern",
+//         "message": "must match the pattern '^[a-z]+[a-z0-9_]*[a-z0-9]+$'",
+//         "path": [
+//             "name"
+//         ],
+//         "severity": 1,
+//         "range": {
+//             "start": {
+//                 "line": 1,
+//                 "character": 10
+//             },
+//             "end": {
+//                 "line": 1,
+//                 "character": 22
+//             }
+//         }
+//     }
 // ]
 ```
 
