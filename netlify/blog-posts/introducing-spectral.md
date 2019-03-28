@@ -28,11 +28,13 @@ meta:
     OpenAPI Specification
   robots: 'index, follow'
   title: Introducing Spectral | Stoplight API Corner
+  image: /images/sharon-mccutcheon-663633-unsplash.jpg
   twitter:
     description: >-
       An open source, flexible JSON linter with out of the box support for the
       OpenAPI Specification
     title: Introducing Spectral | Stoplight API Corner
+    image: /images/sharon-mccutcheon-663633-unsplash.jpg
 ---
 _Photo by [Sharon McCutcheon](https://unsplash.com/photos/W7cPLHOa0eQ) on [Unsplash](https://unsplash.com)_
 
@@ -177,10 +179,6 @@ spectral.run(myOAS).then(results => {
   console.log(JSON.stringify(results, null, 4));
 });
 ```
-
-You can also use the built-in CLI to do the same thing:
-
-```spectral lint myOAS.json```
 
 Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/).
 
