@@ -34,9 +34,9 @@ meta:
       OpenAPI Specification
     title: Introducing Spectral | Stoplight API Corner
 ---
-Photo by [Sharon McCutcheon](https://unsplash.com/photos/W7cPLHOa0eQ) on [Unsplash](https://unsplash.com)
+_Photo by [Sharon McCutcheon](https://unsplash.com/photos/W7cPLHOa0eQ) on [Unsplash](https://unsplash.com)_
 
-Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created Spectral, a flexible JSON linter. 
+Linters for your code like ESLint, pycodestyle, CSSLint, and others have grown increasingly popular as tools for maintaining a consistent code base and to prevent future errors before execution. A linter acts as a style guide, enforcing predetermined rules during the code creation process. This helps reduce the cognitive load while writing the code and saves time later in the code review. Linters also do the hard work of enforcing things like the contentious tabs vs. spaces debate. This is why we created [Spectral](https://github.com/stoplightio/spectral/), a flexible JSON linter. 
 
 ![Bugs Bunny and Daffy Duck arguing over tabs versus spaces](/images/tabsvsspaces.gif)
 
@@ -118,31 +118,7 @@ You can then use JSON paths to apply custom rules and functions to specific part
 
 We built Spectral to have out of the box support for validating and linting OpenAPI documents. You can choose to use our rulesets or modify it to create your own custom OpenAPI rulesets. 
 
-In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document.
-
-You can use the [built-in CLI](https://github.com/stoplightio/spectral#cli):
-
-```bash
-spectral lint myOAS.json
-```
-
-For example, it would respond with:
-
-```bash
-linting myOAS.json
-OpenAPI 3.x detected
-
-/Users/taylorbarnett/Stoplight/spectral-example/myOAS.json
-  2:6   warning  info-contact           Info object should contain `contact` object
-  2:6   warning  info-description       OpenAPI object info `description` must be present and non-empty string
-  11:9  warning  operation-description  Operation `description` must be present and non-empty string
- 42:10  warning  operation-description  Operation `description` must be present and non-empty string
-  57:9  warning  operation-description  Operation `description` must be present and non-empty string
-
-✖ 5 problems (0 errors, 5 warnings, 0 infos)
-```
-
-Or you can do the same thing programmatically: 
+In this example, we are using an OpenAPI 3 ruleset that we have included in Spectral to validate and lint an OpenAPI 3 document: 
 
 ```javascript
 const { Spectral } = require('@stoplight/spectral');
@@ -177,6 +153,10 @@ spectral.run(myOAS).then(results => {
   console.log(JSON.stringify(results, null, 4));
 });
 ```
+
+You can also use the built-in CLI to do the same thing:
+
+```spectral lint myOAS.json```
 
 Don’t see a built-in function that fits your needs? You can create custom functions for advanced use cases too. You can see more in the Spectral docs [here](https://github.com/stoplightio/spectral/).
 
