@@ -58,7 +58,7 @@ Spectral isn’t just a fun side project for our team. It is an integral part of
 
 Even though we often use it with OpenAPI, we also see a future for it being used for other API specifications, configuration files, and more. This is why we wanted a library to lint any JSON object and not just OpenAPI documents.
 
-For JSON Schema validation, Spectral exposes a schema function that you can use in your rules to validate all or part of the target object with JSON Schema. Spectral uses ajv, also known as “another JSON validator.”
+For JSON Schema validation, Spectral exposes a schema function that you can use in your rules to validate all or part of the target object with JSON Schema. Spectral uses [ajv](https://github.com/epoberezkin/ajv), also known as “another JSON validator.”
 
 A common complaint regarding linters is that they are not flexible enough. We hear you! Spectral provides a number of built-in functions and utilities that you can use to build up a linting ruleset that simple JSON Schema validation is not well suited for.
 
