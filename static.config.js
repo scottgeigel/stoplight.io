@@ -7,7 +7,7 @@ import chokidar from 'chokidar';
 import frontmatter from 'front-matter';
 import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
-import { Renderer as MarkdownRenderer, convertMarkdownToHTML } from './src/utils/markdown';
+import { convertMarkdownToHTML } from './src/utils/markdown';
 import { formatDate } from './src/utils/dates/index.ts';
 
 import webpack from './webpack';
@@ -39,7 +39,7 @@ const dataLoaders = {
 
     return {
       ...attributes,
-      body: MarkdownRenderer(body, options),
+      body, // We will resolve this markdown on the client
     };
   },
   '.yaml': yaml.safeLoad,
@@ -170,6 +170,7 @@ const addSubpages = (routes, allPages, subpages, propFactory) => {
         component: 'src/containers/Subpage',
         getData: () => {
           return {
+            includeToc: true,
             ...subpage,
             ...(propFactory ? propFactory(subpage) : {}),
             publishedDate: formatDate(subpage.publishedDate),
@@ -201,6 +202,10 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
         ...list,
         ...(propFactory ? propFactory(list) : {}),
         items: items.slice(0, pageSize),
+        meta: {
+          ...list.meta,
+          canonical: (list.meta && list.meta.canonical) || `${list.path}/`,
+        },
         pagination: {
           ...list.pagination,
           path: list.path,
@@ -223,10 +228,17 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
             component: 'src/containers/Lists',
           },
           decorate: (item, currentPage, totalPages) => ({
+            noindex: currentPage === 1,
             getData: () => ({
               ...list,
               ...(propFactory ? propFactory(list) : {}),
               items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
+              meta: {
+                ...list.meta,
+                canonical:
+                  (list.meta && list.meta.canonical) ||
+                  `${list.path}/${currentPage === 1 ? '' : `page/${currentPage}/`}`,
+              },
               pagination: {
                 ...list.pagination,
                 path: list.path,
@@ -391,6 +403,7 @@ export default {
           skew: '3deg',
           aligned: 'left',
         },
+        includeToc: false,
       };
     });
 
@@ -421,6 +434,7 @@ export default {
 
         routes.push({
           path: landing.path,
+          noindex: true,
           component: 'src/containers/Landing',
           getData: () => ({
             ...landing,
@@ -492,7 +506,7 @@ export default {
           <meta name="twitter:site" content={meta.twitter.username} />
           <meta name="twitter:creator" content={meta.twitter.username} />
           <meta name="twitter:title" content={meta.twitter.title} />
-          <meta name="twitter:description" content={meta.twitter.description} />
+          <meta name="twitter:description" content={meta.twitter.description || meta.description} />
           <meta name="twitter:image" content={SITE_ROOT + meta.twitter.image} />
 
           <link rel="shortcut icon" href={meta.favicon} type="image/x-icon" />
@@ -537,7 +551,10 @@ export default {
           )}
 
           {pagination.currentPage && pagination.currentPage !== 1 && (
-            <link rel="prev" href={`${SITE_ROOT}${path}/page/${pagination.currentPage - 1}/`} />
+            <link
+              rel="prev"
+              href={`${SITE_ROOT}${path}/${pagination.currentPage === 2 ? '' : `page/${pagination.currentPage - 1}/`}`}
+            />
           )}
 
           {pagination.currentPage && pagination.currentPage !== pagination.totalPages && (

@@ -13,6 +13,7 @@ tabs:
 meta:
   favicon: /images/mark_light_bg.png
   title: We care about your data and privacy | Stoplight
+  description: Take a look through Stoplight’s privacy policy to get a full understanding of how the company is committed to protecting your privacy.
   twitter:
     title: We care about your data and privacy | Stoplight
 ---

@@ -122,6 +122,7 @@ docPlans:
 meta:
   favicon: /images/mark_light_bg.png
   title: Our Pricing Plans | Stoplight
+  description: Read up and learn about Stoplight’s flexible and simple pricing structures, from personal to enterprise use, right here.
   twitter:
     title: Our Pricing Plans | Stoplight
     username: '@stoplightio'

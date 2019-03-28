@@ -38,7 +38,7 @@ If you believe the press, 2019 is the year Open Banking will “revolutionize”
 
 Historically, many financial institutions considered Web APIs in general as a threat to their operation. This was due to the need for open interfaces - which many banks did not support and viewed as a significant security risk - and security models that allow consumers to share information with other third parties outside the bank’s direct control. These threats are largely being dispelled by both the success of the API Economy in general, and the increasing willingness of financial services protagonists to deliver public APIs to meet their commercial goals. Even though we are still in the early days, this willingness only serves to extend what could be achieved through Open Banking.
 
-The idea of Open Banking has been around in various guises for a number of years and has been widely championed by the [Open Bank Project](https://www.openbankproject.com/) and other first movers from the banking side like [BBVA](https://www.bbvaapimarket.com/). It leverages the concept of banks being a **banking services provider**, with functions of the bank - opening and maintaining an account, making payments, and so on - being decomposed and consumable in a more fine-grained way. The “Open” in Open Banking tends to focus on these services being available via an open API. 
+The idea of Open Banking has been around in various guises for a number of years and has been widely championed by the [Open Bank Project](https://www.openbankproject.com/) and other first movers from the banking side like [BBVA](https://www.bbvaapimarket.com/). It leverages the concept of banks being a **banking services provider**, with functions of the bank - opening and maintaining an account, making payments, and so on - being decomposed and consumable in a more fine-grained way. The “Open” in Open Banking tends to focus on these services being available via an open API.
 
 There are many reasons why this is considered a great idea but first-and-foremost is that breaking down the functions of a bank into its component parts will help offer **choice to the consumer**. Obviously an API doesn’t offer the consumer choice directly - they typically don’t build software - but it allows third parties their choice to act securely on their behalf. Consumers can therefore still hold an account with a bank, but consume a multitude of services from other organizations that their account holding bank may not offer. Open Banking therefore becomes a means to drive a **financial services ecosystem**, with the choice of the consumer at the heart of what is offered.
 
@@ -79,7 +79,7 @@ The need to regulate the activities of AISPs and PISPs according to the role the
 
 The Berlin Group standard, for example, offers endpoints for both the type of payment instruction (termed “service”) - payments, bulk-payments or periodic-payments - and the type (termed “product”) - for example SEPA, ISO 20022 Payment Initiation, and so on. This is directly reflected in the construct of the API:
 
-```
+```yaml
 paths:
   '/v1/{payment-service}/{payment-product}':
     post:
@@ -88,11 +88,11 @@ paths:
         This method is used to initiate a payment at the ASPSP.
 ```
 
-Whilst the request body for this operation is common to all services and products, this mechanism reflects the premise that the endpoints reflect what the PISP is allowed to “do” when calling the API. The approach almost smacks of SOA and SOAP, where payload and optionally URL reflected a given business operation rather than the creation or change in state of a resource. 
+Whilst the request body for this operation is common to all services and products, this mechanism reflects the premise that the endpoints reflect what the PISP is allowed to “do” when calling the API. The approach almost smacks of SOA and SOAP, where payload and optionally URL reflected a given business operation rather than the creation or change in state of a resource.
 
 The Design by Role is found in all the European standards. For example, in the STET standard there is a dedicated endpoint for payment requests tagged “PISP”:
 
-```
+```yaml
 /payment-requests:
     post:
       operationId: paymentRequestsPost
@@ -103,7 +103,7 @@ The Design by Role is found in all the European standards. For example, in the S
 
 The UK Open Banking standard on the other hand provides endpoints dedicated to domestic payment, international payments, variations for scheduled payments, and file-based payments. The standard also “namespaces” the APIs to a specific role by enforcing a basePath in the API specification:
 
-```
+```yaml
 basePath: /open-banking/v3.1/pisp
 ```
 
@@ -129,7 +129,7 @@ In terms of practical API design approaches, the Positive Acknowledgement patter
 
 In the context of the OpenAPI Specification, this approach often manifests itself in the use of the ```allOf``` keyword. The example JSON Schema object below is taken from the UK Open Banking Event Notification API standard, which uses the `OBCallbackUrlData1` in a PUT operation to update a registered Callback URL. By applying this pattern we’d remove the `required` property from the object:
 
-```
+```yaml
  OBCallbackUrlData1:
   type: object
   properties:
@@ -149,7 +149,7 @@ In the context of the OpenAPI Specification, this approach often manifests itsel
 
 For a PATCH operation, the object can be reused as-is with the `additionalProperties` keyword preventing properties not defined in the specification from being created in the payload. For a PUT operation we’d combine this with mandatory constraints using the ```allOf``` keyword:
 
-```
+```yaml
 CallbackUrlPatch:
   allOf:
     - $ref: '#/definitions/OBCallbackUrlData1
@@ -190,7 +190,7 @@ To follow this method, the API designer needs only to define the ```x-jws-signat
 
 In this approach, the schema only implies that request or response is a JSON Web Signature by defining the payload as a regular JSON definition and then using an appropriate content type to describe it. In an OpenAPI Specification document, this is accomplished by using the `content` keyword:
 
-```
+```yaml
 200:
   description: OK
   content:
@@ -220,7 +220,7 @@ In view of this pattern the API designer has to be cognizant of two factors:
 
 The UK Open Banking standard exemplifies this through their Consent endpoints. For example, the Account Access Consent endpoint is a POST that contains a record of what access a consumer provided to a third party (note this is shown without the JSON API wrapper):
 
-```
+```yaml
 OBReadData1:
   type: object
   properties:
@@ -240,7 +240,7 @@ OBReadData1:
         If this is not populated, the permissions will be open ended.
 
         All dates in the JSON payloads are represented in ISO 8601 date-time
-        format. 
+        format.
 
         All date-time fields in responses must include the timezone. An
         example is below:
@@ -256,7 +256,7 @@ OBReadData1:
         will be returned from the earliest available transaction.
 
         All dates in the JSON payloads are represented in ISO 8601 date-time
-        format. 
+        format.
 
         All date-time fields in responses must include the timezone. An
         example is below:
@@ -272,24 +272,24 @@ OBReadData1:
         will be returned to the latest available transaction.
 
         All dates in the JSON payloads are represented in ISO 8601 date-time
-        format. 
+        format.
 
         All date-time fields in responses must include the timezone. An
         example is below:
 ```
 
-```
+```yaml
         2017-04-05T10:43:07+00:00
       type: string
       format: date-time
   required:
-    - Permissions  
+    - Permissions
   additionalProperties: false
 ```
 
 This is transmitted to the bank without consumer authorization so an appropriately secure means to deliver it must be provided. This is accomplished using a mutually authenticated TLS connection and an OAuth 2.0 Client Credentials grant, which is defined in the specification:
 
-```
+```yaml
 TPPOAuth2Security:
   type: oauth2
   flow: application
@@ -318,7 +318,7 @@ We’ve already touched on the Account Access Consent example from the UK Open B
 
 Of particular relevance in the Schema Object shown is the definition of `OBExternalPermissions1Code`. This details the permissions that the customer is giving to the third party when accessing their data. In the UK example, this is an array based on an enumeration of permission codes:
 
-```
+```yaml
 OBExternalPermissions1Code:
   description: >-
     Specifies the Open Banking account access data types. This is a list of
@@ -351,7 +351,7 @@ OBExternalPermissions1Code:
 
 However, not all the European standards follow this means of delivering the Authorization as a Resource pattern. For example, the Berlin Group standard explicitly defines what accounts are available, with more-coarse grained permissions for each data cluster. The consent request, therefore, is a simple list of data clusters and accounts, as shown in the example in the Berlin Group specification:
 
-```
+```yaml
 consentsExample_DedicatedAccounts:
   description: Consent request on dedicated accounts
   value:
