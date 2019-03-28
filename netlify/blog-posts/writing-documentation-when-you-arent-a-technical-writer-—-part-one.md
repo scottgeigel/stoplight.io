@@ -122,7 +122,7 @@ It makes it very clear how you should install the library, include it in your co
 
 Since we have lots of code samples in docs, successful copying and pasting becomes pretty key. Here’s are two example of where that breaks down:
 
-```
+```bash
 # Copy and paste the following command
 
 $ gem install rails
@@ -130,7 +130,7 @@ $ gem install rails
 
 It seems pretty harmless, right? Think again, what happens when you go copy and paste that in your command line? You will most likely get:
 
-```
+```bash
 bash: command not found: $
 ```
 

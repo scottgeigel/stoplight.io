@@ -47,7 +47,7 @@ While this is a string, its value can be richer than simple text. For example, M
 
 For example, the description property in the Infoobject can be populated as follows (using a pipe for line continuation):
 
-```
+```yaml
 swagger: '2.0'
 info:
   title: Stoplight Blog - Example API

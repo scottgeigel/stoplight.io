@@ -14,6 +14,8 @@ import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
 
+import { convertMarkdownToHTML } from 'src/utils/markdown/index.js';
+
 export interface IPage {
   path: string;
   title: string;
@@ -36,6 +38,7 @@ export interface IPage {
   relatedPages?: IRelatedPage[];
   disqus?: { enabled: boolean };
   tabs?: ITab[];
+  includeToc?: boolean;
 }
 
 /**
@@ -61,6 +64,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   relatedPages,
   disqus,
   tabs,
+  includeToc,
 }) => {
   const heroProps: IHero = {
     ...hero,
@@ -83,6 +87,8 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     // @ts-ignore
     showDisqus = showDisqus && !window.CMS;
   }
+
+  const html = convertMarkdownToHTML(body, { includeToc });
 
   return (
     <React.Fragment>
@@ -114,7 +120,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className={cn('markdown-body pt-10', className)} dangerouslySetInnerHTML={{ __html: body }} />
+            <div className={cn('markdown-body pt-10', className)} dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </Container>
       </Section>

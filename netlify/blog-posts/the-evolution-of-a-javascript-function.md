@@ -35,7 +35,7 @@ Code evolves over time. JavaScript in particular has evolved a lot in the last c
 
 ## **Say Hello to My Little Function**
 
-```
+```javascript
 function greet (firstname, lastname) {
     return "Hello " + firstname + " " + lastname;
 }
@@ -50,7 +50,7 @@ _Imagination._
 
 (Before you ask, yes ‘[google-translate-api](https://www.npmjs.com/package/google-translate-api)’ is a real package on npm. I told you this would be realistic!)
 
-```
+```javascript
 const translate = require('google-translate-api');
 async function greet (firstname, lastname, lang) {
     let greeting = await translate('Hello', {to: lang});
@@ -70,7 +70,7 @@ Now the boss comes to us with another request. Sometimes the user’s native lan
 
 _You got it!_
 
-```
+```javascript
 async function greet (firstname, lastname, lang = 'en') {
 ...
 ```
@@ -79,13 +79,13 @@ That was easy! JavaScript has supported [default parameters](https://developer.m
 
 It used to be you needed code like this in your function to implement default values:
 
-```
+```javascript
 arg = arg || 'foo'
 ```
 
 But that had the unfortunate edge case of not working if arg was 0 or false. So to be safe, we were told to do fancier checks like:
 
-```
+```javascript
 arg = typeof arg!=="undefined" && arg!==null ? arg : 'foo'
 ```
 
@@ -99,21 +99,21 @@ Just as we’re feeling clever, the boss adds a new requirement. Some languages 
 
 _When one thing disappears, another appears…_
 
-```
+```javascript
 async function greet (given, family, lang = 'en', reverse = false) {
 ...
 ```
 
 Unfortunately, our naive solution has resulted in a problem. There are two ways to generate correct-looking names:
 
-```
+```javascript
 greet(given, family, 'en', false) // correct
 greet(family, given, 'en', true) // correct
 ```
 
 but also two ways to screw up:
 
-```
+```javascript
 greet(given, family, 'en', true) // wrong
 greet(family, given, 'en', false) // wrong
 ```
@@ -126,13 +126,13 @@ Our boss is displeased. For any given instance of the greet function, she can’
 
 Some languages like Python have named arguments. Named arguments are super-cool because you don’t have to remember what order the arguments are in, and it’s obvious to whoever has to read the code what the arguments are (what some might brazenly call “self-documenting code”). Using JavaScript’s [object destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/), we can achieve something very similar to named arguments.
 
-```
+```javascript
 async function greet ({given, family, lang='en', reverse=false}) {
 ```
 
 All we did is add a pair of curly braces but suddenly the nature of the function has changed. It now takes a single argument, and that argument is an object:
 
-```
+```javascript
 greet({given: 'John', family: 'Smith'}) // 'Hello John Smith'
 greet({family: 'Smith', given: 'John'}) // also 'Hello John Smith'
 ```
@@ -145,7 +145,7 @@ _Highfive!_
 
 At first, the other developers complain that this new syntax is verbose. But then they discover a neat trick: if they name their variables the same as their properties, they can use the [shorthand literal syntax](http://www.benmvp.com/learning-es6-enhanced-object-literals/):
 
-```
+```javascript
 let given = 'John'
 let family = 'Smith'
 let lang = 'en'
@@ -166,7 +166,7 @@ _Sometimes we make typos…_
 
 We can solve this problem using another ES2018 feature: [rest properties](http://2ality.com/2016/10/rest-spread-properties.html)!
 
-```
+```javascript
 async function greet ({
     given,
     family,
@@ -178,7 +178,7 @@ async function greet ({
 
 Here ...misspellings will catch any arguments NOT matched by the rest of the destructuring. We can then add a simple runtime check to make sure the function is called correctly:
 
-```
+```javascript
 misspellings = Object.keys(misspellings)
 if (misspellings.length > 0) {
   throw new Error('Unrecognized arguments: ' +
@@ -188,7 +188,7 @@ if (misspellings.length > 0) {
 
 Now if a developer misspells one of the arguments, the function will throw an error:
 
-```
+```javascript
 greet({ lang, given, family, reserved })
 // Error: Unrecognized arguments: reserved
 ```
@@ -201,7 +201,7 @@ _Another kind of evolution…_
 
 In this blog post, I’ve tried to show how a simple function
 
-```
+```javascript
 function greet (firstname, lastname) {
     return "Hello " + firstname + " " + lastname;
 }
@@ -211,7 +211,7 @@ can evolve in response to the demands to add new features and satisfy new requir
 
 Here is the final result:
 
-```
+```javascript
 const translate = require('google-translate-api');
 async function greet ({
     given,

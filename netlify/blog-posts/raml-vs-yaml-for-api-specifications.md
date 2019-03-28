@@ -43,7 +43,7 @@ YAML originally stood for _Yet Another Markup Language_, but officially goes by 
 
 Going back to YAML’s origins helps show the power of showing structure in a human-readable format through the use of whitespace:
 
-```
+```yaml
 html:
   head:
     title: Welcome to my YAML web page
@@ -62,7 +62,7 @@ RAML is the **RESTful API Modeling Language** and is built on top of YAML. That 
 
 As the acronym suggests, RAML is focused on modeling (or designing) APIs. At its simplest, RAML can be used to describe an API’s endpoints. For example:
 
-```
+```yaml
 #%RAML 1.0
 ---
 title: Todo API
@@ -94,7 +94,7 @@ The industry has rallied around the OpenAPI specification as a standard to descr
 
 For example, an OpenAPI description of a todo list endpoint might look like this in YAML:
 
-```
+```yaml
 openapi: "3.0.0"
 servers:
   - url: http://todos.stoplight.io

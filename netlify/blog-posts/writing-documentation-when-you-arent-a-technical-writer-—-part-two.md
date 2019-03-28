@@ -90,11 +90,11 @@ Example (401 Status Code Error from Twilio):
 
 ```json
 {
-    “code”: 20003,
-    “detail”: “Your AccountSid or AuthToken was incorrect.”,
-    “message”: “Authenticate”,
-    “more_info”: “https://www.twilio.com/docs/errors/20003",
-    “status”: 401
+    "code": 20003,
+    "detail": "Your AccountSid or AuthToken was incorrect.",
+    "message": "Authenticate",
+    "more_info": "https://www.twilio.com/docs/errors/20003",
+    "status": 401
 }
 ```
 
