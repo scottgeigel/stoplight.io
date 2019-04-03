@@ -5,13 +5,14 @@ tags:
   - blog-mocking
 relatedTags:
   - blog-mocking
-publishedDate: 2019-03-27T18:42:07.305Z
+publishedDate: 2019-04-03T18:42:07.305Z
 author: Adam DuVander
 title: JSON Generator for Mock API Data
 color: black
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
@@ -54,7 +55,7 @@ In our [API Mocking Guide](https://stoplight.io/mock-api-guide/basics/) we cover
 
 ![JSON Generator](/images/json-generator.png)
 
-You can quickly generate JSON [using a tool](https://next.json-generator.com) created by Stoplight engineer Vazha Omanashvil. When loaded, it includes an extensive JSON template as an example. You can edit as needed and include your own JavaScript to tune the format you need for your dummy data.
+You can quickly generate JSON [using a tool](https://www.json-generator.com) created by Stoplight engineer Vazha Omanashvil. When loaded, it includes an extensive JSON template as an example. You can edit as needed and include your own JavaScript to tune the format you need for your dummy data.
 
 For example, the simple example from the previous section can be repeated 100 times with the following template:
 
