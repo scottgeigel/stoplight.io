@@ -8,6 +8,8 @@ relatedTags:
 publishedDate: 2019-04-03T18:42:07.305Z
 author: Adam DuVander
 title: JSON Generator for Mock API Data
+subtitle: Create random JSON and host it on a mock server
+image: /images/mock-car.jpg
 color: black
 tabs:
   - {}
