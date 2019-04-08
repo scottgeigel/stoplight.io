@@ -15,7 +15,7 @@ featureSection:
     text: 'Want to mock your API? '
   description: >-
     Mocking your API with Stoplight is your API design’s perfect companion.
-    Powered by Prism, the instant mock server routes incoming requests to
+    Powered by Prism, the instant [mock server](/mock-api-guide/basics/) routes incoming requests to
     example responses or dynamically generates examples on the fly based on your
     OpenAPI Specification (formerly known as Swagger).
   features:
@@ -50,7 +50,7 @@ featureSection:
         Need a mocked response property to always be a random future date? No
         problem. Mocking can extend your OpenAPI Specification with scripts
         before or after traffic reaches your mock server. Write scripts for more
-        complex mocking behavior, custom validations, and much more.
+        [complex mocking behavior](/mock-api-guide/advanced/), custom validations, and much more.
       image: /images/mocking_customization.png
       shortName: Customizable
       title: Customizable
