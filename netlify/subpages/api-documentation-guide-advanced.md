@@ -50,9 +50,9 @@ The best place to start when generating an API reference is a machine-readable d
 
 The OpenAPI Specification comes in two flavors: version 2, which is based on the original Swagger spec, and the newer version 3. The latest version is the way forward, but you’ll still find tools built on version 2, and may need to convert between them.
 
-OpenAPI allows you to describe your API endpoints, request data, response fields, authentication, headers, and more. While the format is human-readable, the biggest reason to use an OpenAPI document is for automation. There’s a lot you can do, including mock and test your API, but one popular use of OpenAPI is to generate documentation.
+OpenAPI allows you to describe your API endpoints, request data, response fields, authentication, headers, and more. While the format is human-readable, the biggest reason to use an OpenAPI document is for automation. There’s a lot you can do, including [mock and test your API](/mock-api-guide/basics/), but one popular use of OpenAPI is to generate documentation.
 
-You may generate OpenAPI documents from code, but you’ll be missing out on using it earlier in your API design. There are major advantages to [design-first APIs](https://stoplight.io/api-design-guide/basics/), including early collaboration across departments, mock servers to try out your APIs, and automated API testing from design through production.
+You may generate OpenAPI documents from code, but you’ll be missing out on using it earlier in your API design. There are major advantages to [design-first APIs](/api-design-guide/basics/), including early collaboration across departments, mock servers to try out your APIs, and automated API testing from design through production.
 ### Show and Tell API Functionality
 Every API reference should _tell a developer_ what’s possible. That is, listing the endpoints and their input fields describe the functionality. A developer expects this kind of black-and-white, citation of facts. The best and most useful API references also _show what’s possible_.
 

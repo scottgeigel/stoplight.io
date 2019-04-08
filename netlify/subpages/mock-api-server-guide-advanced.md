@@ -6,6 +6,7 @@ tags:
   - ''
 relatedTags:
   - mocking
+  - blog-testing
 publishedDate: 2019-03-14T17:05:26.209Z
 title: Mock API Server Guide | Advanced
 subtitle: Generate data and stage a mock API server

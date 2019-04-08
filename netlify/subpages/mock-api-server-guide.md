@@ -6,6 +6,7 @@ tags:
   - ''
 relatedTags:
   - mocking
+  - blog-testing
 publishedDate: 2019-03-14T16:49:10.182Z
 title: Mock API Server Guide
 subtitle: 'Use mock data to design, build, and test APIs'
