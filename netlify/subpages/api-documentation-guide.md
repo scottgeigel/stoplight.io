@@ -5,6 +5,7 @@ tags:
   - api-documentation
 relatedTags:
   - api-documentation
+  - blog-documentation
 publishedDate: 2019-02-11T17:37:38.030Z
 author: ''
 title: API Documentation Guide
