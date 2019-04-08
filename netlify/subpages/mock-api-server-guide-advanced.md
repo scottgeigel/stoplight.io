@@ -9,7 +9,7 @@ relatedTags:
   - blog-testing
 publishedDate: 2019-03-14T17:05:26.209Z
 title: Mock API Server Guide | Advanced
-subtitle: Generate data and stage a mock API server
+subtitle: Learn how to generate dummy API data and stage a mock API server
 color: black
 tabs:
   - href: /mock-api-guide/basics/
@@ -21,6 +21,8 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  title: Dummy API data generation & REST API Mocking Guide
+  description: Want to learn how to generate dummy API data and Mocking your REST API? Check out our advance guide right here to find out everything you need to know.
   robots: 'index, follow'
   twitter: {}
 ---
@@ -48,7 +50,7 @@ However, even these partially-dynamic mock APIs require manual input. If you hav
 
 ### Mock Data Generator for Swagger / OpenAPI
 
-As [design-first APIs](https://stoplight.io/api-design-guide/basics/) gain popularity, API descriptions become an important way to share what’s possible. You’ll also find many tools built around these formats, most notably the OpenAPI Specification. An OpenAPI document provides a machine-readable description of exactly what is possible with your API. The OpenAPI definition becomes the source of truth throughout the API lifecycle, starting with the earliest design.
+As [design-first APIs](/api-design-guide/basics/) gain popularity, API descriptions become an important way to share what’s possible. You’ll also find many tools built around these formats, most notably the OpenAPI Specification. An OpenAPI document provides a machine-readable description of exactly what is possible with your API. The OpenAPI definition becomes the source of truth throughout the API lifecycle, starting with the earliest design.
 
 Many of the top API experts have gathered around this central format, based on the Swagger format. The OpenAPI Initiative is a consortium of industry supporters creating a standard (using YAML or JSON) to describe the endpoints, responses, and other parts of an API. From this one document, you can generate example responses or even build entire mock servers.
 
@@ -60,7 +62,7 @@ There are major advantages to using an API description instead of one of the man
 
 > Plus, you save yourself the manual effort and potential for outdated mock data.
 
-Once you have an OpenAPI document to describe your API (you can create one in [Stoplight’s OpenAPI builder](https://stoplight.io/design)), you can plug it into an open source data generator or a mock server service.
+Once you have an OpenAPI document to describe your API (you can create one in [Stoplight’s OpenAPI builder](/design/), you can plug it into an open source data generator or a mock server service.
 
 **[Prism API Server](https://github.com/stoplightio/prism)** is an open source command line utility that serves mock data and validates API descriptions. You can create mock data and a local server from your OpenAPI document using the following command:
 `prism mock --spec your-openapi-doc.yaml`
