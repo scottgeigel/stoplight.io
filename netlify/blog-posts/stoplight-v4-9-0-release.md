@@ -32,7 +32,7 @@ meta:
 
 ![Example of extensions](/images/extensions.png)
 
-Users can now interact with OpenAPI extensions through the Stoplight visual editor
+Users can now interact with OpenAPI Specification extensions through the Stoplight visual editor. Extensions are reusable components that describe additional functionality beyond what is covered in the OpenAPI Specification. They are generally vendor specific, such as Amazon API Gateways extension. All OpenAPI extensions begin with `x-`. Read more on how to use extensions in the docs [here](https://docs.stoplight.io/modeling/modeling-with-openapi/oas-extensions).
 
 ## Enhancements 💪
 
