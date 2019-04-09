@@ -7,6 +7,7 @@ import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
 import { Hero, IHero, IHeroAuthor, IHeroBreadCrumb } from 'src/components/Hero';
+import { HubSpotFormLight } from 'src/components/HubSpotFormLight';
 import { Image } from 'src/components/Image';
 import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
@@ -39,6 +40,7 @@ export interface IPage {
   disqus?: { enabled: boolean };
   tabs?: ITab[];
   includeToc?: boolean;
+  newsLetterSignup: boolean;
 }
 
 /**
@@ -65,6 +67,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   disqus,
   tabs,
   includeToc,
+  newsLetterSignup,
 }) => {
   const heroProps: IHero = {
     ...hero,
@@ -79,6 +82,11 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   if (author && author.name) {
     heroProps.author = { ...author, meta: publishedDate };
   }
+
+  const hubspot = {
+    portalId: '4892910',
+    formId: '1c56ad99-49f9-4933-aa83-a1bf9a09f7fb',
+  };
 
   let url = path;
   let showDisqus = disqus && disqus.enabled;
@@ -117,6 +125,12 @@ export const Subpage: React.FunctionComponent<IPage> = ({
                 }}
               >
                 <Image className="rounded-lg shadow bodyImage" src={bodyImage} alt={bodyImage} />
+              </div>
+            )}
+
+            {newsLetterSignup && (
+              <div className="newsletter">
+                <HubSpotFormLight {...hubspot} />
               </div>
             )}
 

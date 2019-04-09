@@ -167,6 +167,16 @@ ul {
   }
 }
 
+.newsletter {
+  position: sticky;
+  top: 40px;
+  right: 0;
+  float: right;
+  margin-right: -30px;
+  margin-top: 20px;
+  width: 200px;
+}
+
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -183,10 +193,11 @@ ul {
     }
 
     position: sticky;
-    top: 20px;
+    top: 360px;
     right: 0;
     float: right;
     margin-right: -250px;
+    margin-top: 340px !important;
     width: 200px;
     font-size: 11px;
     color: rgba(19, 15, 33, 0.4);
@@ -375,7 +386,7 @@ ul {
 }
 
 .markdown-body > *:first-child {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 
 .markdown-body > *:last-child {

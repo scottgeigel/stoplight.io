@@ -338,6 +338,7 @@ export default {
 
     addSubpages(routes, allPages, blogPosts, props => {
       return {
+        newsLetterSignup: true,
         breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
         hero: {
           aligned: 'left',
