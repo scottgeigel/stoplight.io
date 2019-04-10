@@ -13,14 +13,21 @@ image: /images/barn-construction.jpg
 color: black
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
   enabled: false
 meta:
+  description: What it Takes to Build and Maintain Great Docs
   robots: 'index, follow'
-  twitter: {}
+  title: 'API Documentation: Should You Build or Buy? | Stoplight API Corner'
+  image: /images/barn-construction.jpg
+  twitter:
+    description: What it Takes to Build and Maintain Great Docs
+    title: 'API Documentation: Should You Build or Buy? | Stoplight API Corner'
+    image: /images/barn-construction.jpg
 ---
 Every API needs documentation. Whether it’s made public for any developer, or meant to be consumed by a single engineering team; it can be tough to create documentation in the first place, and even tougher to keep it updated. On top of that, you need to decide where the docs live.
 
