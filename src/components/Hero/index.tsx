@@ -237,7 +237,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
   return (
     <React.Fragment>
-      <div key="main" className="relative overflow-hidden">
+      <div key="main" className="relative">
         <div className={cn(headerHeightClass, 'w-100')} />
 
         <div
@@ -246,12 +246,10 @@ export const Hero: React.FunctionComponent<IHero> = ({
             'background-repeat': !particles,
           })}
           style={{
-            width: 8000,
-            height: 8000,
-            left: '50%',
             bottom: image ? -150 : cards.length ? 50 : 0,
-            marginLeft: -4000,
-            borderRadius: skew === 'rounded' ? '50%' : '0',
+            top: -300,
+            left: 0,
+            right: 0,
             backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
             transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
           }}
@@ -360,7 +358,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
 
         {particles && (
-          <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>
+          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -100, right: 0, bottom: -100 }}>
             {Particles && (
               <Particles
                 style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
