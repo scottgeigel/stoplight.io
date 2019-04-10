@@ -87,10 +87,23 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
 
   return (
     <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
-      {image && <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />}
+      {image && (
+        <Image
+          className="mr-2 rounded-full h-16 w-16"
+          src={image}
+          alt="author"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            objectPosition: '-99999px 99999px', // Hide the actual src image so the background image is displayed
+          }}
+        />
+      )}
       <div>
         {name && <div>{name}</div>}
-        {meta && <div className="opacity-75 text-sm">{meta}</div>}
+        {meta && <div className="opacity-85 text-sm">{meta}</div>}
       </div>
     </Link>
   );
@@ -262,21 +275,16 @@ export const Hero: React.FunctionComponent<IHero> = ({
               backgroundPosition: '50% 50%',
             }}
           >
-            {contentBgOverlay && (<div
-              className={cn('absolute pin z-0')}
-              style={{background: contentBgOverlay}}
-            />)}
+            {contentBgOverlay && <div className={cn('absolute pin z-0')} style={{ background: contentBgOverlay }} />}
           </div>
         )}
 
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`,
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`
           )}
-          style={(
-            contentBgImage ? {textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px`} : {}
-          )}
+          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : {}}
         >
           <div
             className={cn('mb-24', {
@@ -286,7 +294,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
             })}
           >
             {breadCrumbs && breadCrumbs.length ? (
-              <div className="text-white opacity-75 font-semibold mb-4 flex items-center">
+              <div className="text-white opacity-85 font-semibold mb-4 flex items-center">
                 {breadCrumbs.map((breadCrumb, index) => (
                   <React.Fragment key={index}>
                     <Link className="text-white" to={breadCrumb.path}>
@@ -298,13 +306,13 @@ export const Hero: React.FunctionComponent<IHero> = ({
               </div>
             ) : null}
 
-            {pageName && <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>}
+            {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
             <h1>{title}</h1>
 
             {subtitle && (
               <div
-                className={cn('font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6', {
+                className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
                   'mx-auto': !aligned || aligned === 'center',
                   'ml-auto': aligned === 'right',
                   'mr-auto': aligned === 'left',
@@ -316,7 +324,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
             {author && (
               <div>
-                <HeroAuthor className="mt-6 text-white opacity-75" {...author} />
+                <HeroAuthor className="mt-6 text-white opacity-85" {...author} />
               </div>
             )}
           </div>
