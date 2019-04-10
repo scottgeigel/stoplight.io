@@ -8,6 +8,7 @@ relatedTags:
 publishedDate: 2019-04-09T16:59:41.917Z
 author: Marc MacLeod
 title: Stoplight v4.9.0 Release
+subtitle: OpenAPI Extensions
 image: /images/robin-pierre-323861-unsplash.jpg
 color: black
 tabs:
@@ -19,10 +20,12 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: OpenAPI Extensions
+  robots: 'index, follow'
   title: Stoplight v4.9.0 Release | Stoplight API Corner
   image: /images/robin-pierre-323861-unsplash.jpg
-  robots: 'index, follow'
   twitter:
+    description: OpenAPI Extensions
     title: Stoplight v4.9.0 Release | Stoplight API Corner
     image: /images/robin-pierre-323861-unsplash.jpg
 ---
