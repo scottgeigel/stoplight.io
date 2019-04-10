@@ -3,7 +3,6 @@ path: /mock-api-guide/basics
 tags:
   - guides
   - mocking
-  - ''
 relatedTags:
   - mocking
   - blog-testing
@@ -49,7 +48,7 @@ At its simplest, your mock API can use static example responses for each endpoin
 In contrast, a dynamic response can make your mock API more realistic. The data can be randomly generated based on the type of field and requirements you determine. You can even allow for different results based upon input, such as including search terms in results or calculating dates from parameters.
 
 ### External vs Internal API
-Another distinction of your mock API will be whether it is mocking an external dependent API or your own. You likely will expect more changes to your own API, especially if it’s still in development. Make sure you have a way to keep your mock servers updated, such as generating them from an OpenAPI Specification (formerly Swagger Specification). We’ll discuss methods of generating data in the next section.
+Another distinction of your mock API will be whether it is mocking an external dependent API or your own. You likely will expect more changes to your own API, especially if it’s still in development. Make sure you have a way to keep your mock servers updated, such as generating them from an OpenAPI Specification (formerly known as Swagger Specification). We’ll discuss methods of generating data in the next section.
 
 External APIs also change, of course. Unless you have access to their API definition, your ability to keep the mocked responses updated is limited. The best approach is likely to periodically gather live results and store them for use by your mock API.
 
