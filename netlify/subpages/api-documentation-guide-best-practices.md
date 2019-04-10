@@ -38,7 +38,7 @@ Be careful not to attempt to cover too much in this initial guide, but enough th
 
 At the end of your getting started guide, what will a developer do next? Your answer to that question will help you figure out the next guides you need to write. Choose additional and advanced use cases, based around parts of your API.
 
-Other potential guides might include how to use your API with popular frameworks, other APIs, or walking through entire applications. In fact, you can create a guide for every example app, which is the final type of documentation you’ll want to provide for developers.
+Other potential guides might include how to use your API with popular frameworks, other APIs, or walking through entire applications. In fact, you can write API documentation and guides for every example app., which is the final type of documentation you’ll want to provide for developers.
 ## Inspiring API Usage with Examples
 A close relative of the guide is the example app, which includes all the code you need to produce a full integration with your API. Great API documentation will have at least one and often many examples, frequently with the source hosted in a public repository like GitHub.
 
@@ -68,4 +68,4 @@ Whether you already have an OpenAPI description or need to create one, Stoplight
 
 Using Documentation Hubs, you can also includes guides and examples alongside your reference docs. Add pages and sub-pages to help developers better use your API. You’ll be able to easily include the three types of documentation covered in this guide.
 
-See how [Stoplight’s documentation](https://stoplight.io/documentation) can help you create comprehensive API documentation.
+See how [Stoplight’s documentation](/documentation/) can help you create comprehensive API documentation.
