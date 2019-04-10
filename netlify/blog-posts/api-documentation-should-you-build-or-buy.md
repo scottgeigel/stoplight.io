@@ -2,6 +2,7 @@
 path: /blog/api-documentation-build-buy
 tags:
   - blog-documentation
+  - blog
 relatedTags:
   - blog-documentation
 publishedDate: 2019-04-10T16:59:04.762Z
