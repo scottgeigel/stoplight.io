@@ -70,6 +70,8 @@ export interface IHero {
   author?: IHeroAuthor;
   image?: IHeroImage;
   bgColor?: string;
+  contentBgImage?: string;
+  contentBgOverlay?: string;
   aligned?: 'center' | 'right' | 'left';
   cta?: ICallToAction;
   cards?: IHeroCard[];
@@ -200,6 +202,8 @@ export const Hero: React.FunctionComponent<IHero> = ({
   author,
   cta,
   bgColor = 'black',
+  contentBgImage,
+  contentBgOverlay = '#8080803b',
   particles,
   image,
   skew,
@@ -222,10 +226,56 @@ export const Hero: React.FunctionComponent<IHero> = ({
     <React.Fragment>
       <div key="main" className="relative overflow-hidden">
         <div className={cn(headerHeightClass, 'w-100')} />
+
+        <div
+          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
+            [`bg-${bgColor}`]: bgColor,
+            'background-repeat': !particles,
+          })}
+          style={{
+            width: 8000,
+            height: 8000,
+            left: '50%',
+            bottom: image ? -150 : cards.length ? 50 : 0,
+            marginLeft: -4000,
+            borderRadius: skew === 'rounded' ? '50%' : '0',
+            backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
+            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
+          }}
+        />
+
+        <div
+          className={cn('absolute pin z-0')}
+          style={{
+            background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
+            bottom: image ? -200 : 0,
+          }}
+        />
+
+        {contentBgImage && (
+          <div
+            className={cn('absolute pin z-0')}
+            style={{
+              background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${contentBgImage}")`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+            }}
+          >
+            {contentBgOverlay && (<div
+              className={cn('absolute pin z-0')}
+              style={{background: contentBgOverlay}}
+            />)}
+          </div>
+        )}
+
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`,
+          )}
+          style={(
+            contentBgImage ? {textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px`} : {}
           )}
         >
           <div
@@ -339,31 +389,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
             )}
           </div>
         )}
-
-        <div
-          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
-            [`bg-${bgColor}`]: bgColor,
-            'background-repeat': !particles,
-          })}
-          style={{
-            width: 8000,
-            height: 8000,
-            left: '50%',
-            bottom: image ? -150 : cards.length ? 50 : 0,
-            marginLeft: -4000,
-            borderRadius: skew === 'rounded' ? '50%' : '0',
-            backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
-            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
-          }}
-        />
-
-        <div
-          className={cn('absolute pin z-0')}
-          style={{
-            background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
-            bottom: image ? -200 : 0,
-          }}
-        />
       </div>
 
       {image && <HeroImage {...image} />}
