@@ -40,7 +40,6 @@ Users can now interact with OpenAPI Specification extensions through the Stoplig
 ## Enhancements 💪
 
 * \[Modeling] Added ability to support 'no security' for an API operation
-* \[Platform] Added ability to search for users by display name and email, in addition to just usernames
 * \[Modeling] Added a banner letting users know they can't edit without write access
 * \[Hubs] Removed endpoints marked private from the specification document when download link is selected
 * \[Modeling] Added safeguard for scopes, specifically with OAuth
