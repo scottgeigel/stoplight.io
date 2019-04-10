@@ -51,12 +51,12 @@ export class HubSpotFormLight extends React.Component {
   };
 
   loadScript = () => {
-    const script = document.createElement(`script`);
+    const script = document.createElement('script');
     script.defer = true;
     script.onload = () => {
       this.createForm();
     };
-    script.src = `//js.hsforms.net/forms/v2.js`;
+    script.src = '//js.hsforms.net/forms/v2.js';
 
     document.head.appendChild(script);
   };

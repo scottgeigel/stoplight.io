@@ -7,13 +7,14 @@ import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
 import { Hero, IHero, IHeroAuthor, IHeroBreadCrumb } from 'src/components/Hero';
-import { HubSpotFormLight } from 'src/components/HubSpotFormLight';
+import { HubSpotForm } from 'src/components/HubSpotForm';
 import { Image } from 'src/components/Image';
 import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
+import { hubspotConfig } from 'src/containers/Subpage/config.js';
 
 import { convertMarkdownToHTML } from 'src/utils/markdown/index.js';
 
@@ -83,11 +84,6 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     heroProps.author = { ...author, meta: publishedDate };
   }
 
-  const hubspot = {
-    portalId: '4892910',
-    formId: '1c56ad99-49f9-4933-aa83-a1bf9a09f7fb',
-  };
-
   let url = path;
   let showDisqus = disqus && disqus.enabled;
   if (typeof window !== 'undefined') {
@@ -130,7 +126,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
             {newsLetterSignup && (
               <div className="newsletter">
-                <HubSpotFormLight {...hubspot} />
+                <HubSpotForm isLight {...hubspotConfig} />
               </div>
             )}
 

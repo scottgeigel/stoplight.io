@@ -143,3 +143,8 @@ export const BlogPostConfig = {
     },
   ]),
 };
+
+export const hubspotConfig = {
+  portalId: '4892910',
+  formId: '1c56ad99-49f9-4933-aa83-a1bf9a09f7fb',
+}
