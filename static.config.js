@@ -232,6 +232,7 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
             getData: () => ({
               ...list,
               ...(propFactory ? propFactory(list) : {}),
+              title: (currentPage > 1) ? `${list.title} - Page ${currentPage}` : list.title,
               items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
               meta: {
                 ...list.meta,
@@ -341,8 +342,8 @@ export default {
         breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
         hero: {
           aligned: 'left',
+          contentBgImage: props.image,
         },
-        bodyImage: props.image,
         meta: {
           ...props.meta,
           jld: {

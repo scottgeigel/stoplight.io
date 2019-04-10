@@ -70,6 +70,8 @@ export interface IHero {
   author?: IHeroAuthor;
   image?: IHeroImage;
   bgColor?: string;
+  contentBgImage?: string;
+  contentBgOverlay?: string;
   aligned?: 'center' | 'right' | 'left';
   cta?: ICallToAction;
   cards?: IHeroCard[];
@@ -85,10 +87,23 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
 
   return (
     <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
-      {image && <Image className="mr-2 rounded-full h-16 w-16" src={image} alt="author" />}
+      {image && (
+        <Image
+          className="mr-2 rounded-full h-16 w-16"
+          src={image}
+          alt="author"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            objectPosition: '-99999px 99999px', // Hide the actual src image so the background image is displayed
+          }}
+        />
+      )}
       <div>
         {name && <div>{name}</div>}
-        {meta && <div className="opacity-75 text-sm">{meta}</div>}
+        {meta && <div className="opacity-85 text-sm">{meta}</div>}
       </div>
     </Link>
   );
@@ -200,6 +215,8 @@ export const Hero: React.FunctionComponent<IHero> = ({
   author,
   cta,
   bgColor = 'black',
+  contentBgImage,
+  contentBgOverlay = '#8080803b',
   particles,
   image,
   skew,
@@ -220,13 +237,52 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
   return (
     <React.Fragment>
-      <div key="main" className="relative overflow-hidden">
+      <div key="main" className="relative">
         <div className={cn(headerHeightClass, 'w-100')} />
+
+        <div
+          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
+            [`bg-${bgColor}`]: bgColor,
+            'background-repeat': !particles,
+          })}
+          style={{
+            bottom: image ? -150 : cards.length ? 50 : 0,
+            top: -300,
+            left: 0,
+            right: 0,
+            backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
+            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
+          }}
+        />
+
+        <div
+          className={cn('absolute pin z-0')}
+          style={{
+            background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
+            bottom: image ? -200 : 0,
+          }}
+        />
+
+        {contentBgImage && (
+          <div
+            className={cn('absolute pin z-0')}
+            style={{
+              background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${contentBgImage}")`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: '50% 50%',
+            }}
+          >
+            {contentBgOverlay && <div className={cn('absolute pin z-0')} style={{ background: contentBgOverlay }} />}
+          </div>
+        )}
+
         <div
           className={cn(
             containerClassName,
             `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`
           )}
+          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : {}}
         >
           <div
             className={cn('mb-24', {
@@ -236,7 +292,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
             })}
           >
             {breadCrumbs && breadCrumbs.length ? (
-              <div className="text-white opacity-75 font-semibold mb-4 flex items-center">
+              <div className="text-white opacity-85 font-semibold mb-4 flex items-center">
                 {breadCrumbs.map((breadCrumb, index) => (
                   <React.Fragment key={index}>
                     <Link className="text-white" to={breadCrumb.path}>
@@ -248,13 +304,13 @@ export const Hero: React.FunctionComponent<IHero> = ({
               </div>
             ) : null}
 
-            {pageName && <div className="uppercase text-white opacity-75 font-semibold mb-4">{pageName}</div>}
+            {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
             <h1>{title}</h1>
 
             {subtitle && (
               <div
-                className={cn('font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6', {
+                className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
                   'mx-auto': !aligned || aligned === 'center',
                   'ml-auto': aligned === 'right',
                   'mr-auto': aligned === 'left',
@@ -266,7 +322,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
             {author && (
               <div>
-                <HeroAuthor className="mt-6 text-white opacity-75" {...author} />
+                <HeroAuthor className="mt-6 text-white opacity-85" {...author} />
               </div>
             )}
           </div>
@@ -302,7 +358,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
         {heroTabs.length > 0 ? <Tabs tabs={heroTabs} /> : null}
 
         {particles && (
-          <div className="absolute z-1 sm:hidden" style={{ left: -100, top: -100, right: -100, bottom: -100 }}>
+          <div className="absolute z-1 sm:hidden" style={{ left: 0, top: -100, right: 0, bottom: -100 }}>
             {Particles && (
               <Particles
                 style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
@@ -339,31 +395,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
             )}
           </div>
         )}
-
-        <div
-          className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
-            [`bg-${bgColor}`]: bgColor,
-            'background-repeat': !particles,
-          })}
-          style={{
-            width: 8000,
-            height: 8000,
-            left: '50%',
-            bottom: image ? -150 : cards.length ? 50 : 0,
-            marginLeft: -4000,
-            borderRadius: skew === 'rounded' ? '50%' : '0',
-            backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
-            transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
-          }}
-        />
-
-        <div
-          className={cn('absolute pin z-0')}
-          style={{
-            background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
-            bottom: image ? -200 : 0,
-          }}
-        />
       </div>
 
       {image && <HeroImage {...image} />}

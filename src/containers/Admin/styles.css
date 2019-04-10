@@ -21844,7 +21844,6 @@ ul {
     border-left: 1px solid rgba(0, 0, 0, 0.1); }
     .markdown-body .table-of-contents:before {
       content: 'CONTENTS';
-      font-family: 'FontAwesome';
       padding-left: 1.8em; }
     @media only screen and (max-width: 1007px) {
       .markdown-body .table-of-contents {
