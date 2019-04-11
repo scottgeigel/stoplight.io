@@ -253,10 +253,12 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
   }
 };
 
+const settingsData = getFile(`${NETLIFY_PATH}/settings.yaml`);
+
 export default {
   siteRoot: SITE_ROOT ? SITE_ROOT : undefined,
 
-  getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
+  getSiteData: () => settingsData,
 
   getRoutes: async () => {
     let [
@@ -337,7 +339,7 @@ export default {
     }));
 
     addSubpages(routes, allPages, blogPosts, props => {
-      const { integrations: { newsletterFormId } } = getFile(`${NETLIFY_PATH}/settings.yaml`);
+      const { integrations: { newsletterFormId } } = settingsData;
       return {
         newsletterFormId,
         breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
