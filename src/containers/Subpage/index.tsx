@@ -129,7 +129,12 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className={cn('markdown-body pt-10', className)} dangerouslySetInnerHTML={{ __html: html }} />
+            <div
+              className={cn('markdown-body pt-10', className, {
+                'show-newsletter': newsletterFormId,
+              })}
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
           </div>
         </Container>
       </Section>

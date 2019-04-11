@@ -36,7 +36,10 @@ class HubSpotForm extends React.Component {
   }
 
   createForm = () => {
-    const { formId, integrations: { hubspot: portalId } } = this.props;
+    const {
+      formId,
+      integrations: { hubspot: portalId },
+    } = this.props;
 
     if (!window.hbspt || !portalId || !formId) {
       return;
@@ -69,17 +72,19 @@ class HubSpotForm extends React.Component {
     return (
       <div className="w-full">
         {title && <h2 className="text-3xl text-center">{title}</h2>}
-        {description && <div className="flex justify-center flex-wrap items-center pb-12 md:pb-12">
-          <div
-            className="font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6 mx-auto text-center"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-        </div>}
+        {description && (
+          <div className="flex justify-center flex-wrap items-center pb-12 md:pb-12">
+            <div
+              className="font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6 mx-auto text-center"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
+          </div>
+        )}
 
         <div
           id="hubspot-form"
-          className={cn('mx-auto', className, {
-            'bg-white shadow rounded p-16 md:p-4 md:overflow-hidden': !isLight
+          className={cn(className, {
+            'bg-white shadow rounded p-16 md:p-4 md:overflow-hidden mx-auto': !isLight,
           })}
           style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600 }}
         />

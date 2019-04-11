@@ -168,14 +168,14 @@ ul {
 }
 
 .newsletter {
-  position: sticky;
-  top: 40px;
-  right: 0;
-  float: right;
-  margin-right: -30px;
-  margin-top: 20px;
-  margin-bottom: 400px;
-  width: 200px;
+  @media only screen and (min-width: 1007px) {
+    position: sticky;
+    top: 20px;
+    right: 0;
+    float: right;
+    margin-right: -30px;
+    width: 200px;
+  }
 }
 
 .markdown-body {
@@ -186,6 +186,13 @@ ul {
   max-width: 760px;
   position: relative;
 
+  &.show-newsletter {
+    .table-of-contents {
+      top: 230px;
+      margin-top: 175px !important;
+    }
+  }
+
   .table-of-contents {
     &:before {
       content: 'CONTENTS';
@@ -193,11 +200,10 @@ ul {
     }
 
     position: sticky;
-    top: 380px;
+    top: 20px;
     right: 0;
     float: right;
     margin-right: -250px;
-    margin-top: 340px !important;
     width: 200px;
     font-size: 11px;
     color: rgba(19, 15, 33, 0.4);
