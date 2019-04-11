@@ -19,14 +19,14 @@ featureSection:
     enabled: true
     text: Ready to Model and Design?
   description: >-
-    Start designing your API in minutes. Use the OpenAPI Specification (formerly
+    Start designing your API in minutes. Use the [OpenAPI Specification](/api-design-guide/oas-spec/) (formerly
     known as Swagger) with Stoplight’s visual editor to [design consistent and
-    standardized REST APIs](/design/web) for your organization. Without writing
+    standardized REST APIs](/design/web/) for your organization. Without writing
     any code, model complex APIs faster than ever while simultaneously getting
-    feedback on your prototypes with our [hosted mock servers](/mocking).
+    feedback on your prototypes with our [hosted mock servers](/mocking/).
   features:
     - description: >-
-        Get started quickly with API design-first principles. Import an existing
+        Get started quickly with [API design-first principles](/api-design-guide/basics/). Import an existing
         API or start from scratch with a new API, zero coding required. The
         Visual Editor reduces time to get started on your API design by
         providing an intuitive UI.
@@ -46,7 +46,7 @@ featureSection:
       titleURL: /design/web
     - description: >-
         Instantly [prototype and collaborate on your API
-        design](/design/prototype) with our integrated, hosted Mock Servers,
+        design](/design/prototype/) with our integrated, hosted Mock Servers,
         powered by Prism. Mock a single API, multiple APIs, or even just a few
         endpoints. Increase efficiency by allowing your frontend teams to start
         implementation while the backend team develops the API.

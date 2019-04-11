@@ -51,7 +51,7 @@ For an example of fully customizable, generated docs, see [Stoplight’s hosted 
 
 ## Create Mock Servers
 
-Just as interactive documentation adds another dimension beyond simple reference, you can benefit from making calls against your API while you design. Your OpenAPI spec can be used to create mock servers that use responses you’ve included in your design. You can collaborate with others around real data and seek early feedback from API consumers.
+Just as interactive documentation adds another dimension beyond simple reference, you can benefit from making calls against your API while you design. Your [OpenAPI spec can be used to create mock servers](/mocking/) that use responses you’ve included in your design. You can collaborate with others around real data and seek early feedback from API consumers.
 
 Much as documentation is built and rebuilt as you update your API description, mock servers can also automatically have your latest changes. Integrate with your own API as you build it by including mock server endpoints in your code, or coordinate with API consumers and collaborators to write tests or sample code. Code you write against a mock server isn’t wasted, because only the server root will change when you move to production.
 

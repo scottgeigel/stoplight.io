@@ -22,8 +22,8 @@ featureSection:
   description: >-
     Increase the test coverage of your web APIs so they break less for your
     consumers online. Create a full collection of tests with Stoplight Testing.
-    Use Environment and Context Variables to reference other complex test
-    scenarios to accelerate test generations and reduce duplication. Whether you
+    Use [Environment and Context Variables to reference other complex test
+    scenarios](/api-design-guide/tooling/#automatically-test-your-apis) to accelerate test generations and reduce duplication. Whether you
     are writing test for just one API call or a scenario of API calls working
     together in a real-life use case, Stoplight Testing gives you the
     flexibility to make your tests fit you workflow by supporting command line
@@ -62,7 +62,7 @@ featureSection:
       shortName: Coverage Reporting
       title: Coverage Reporting
       titleURL: ''
-  title: OpenAPI Testing
+  title: Comprehensive API Testing tool
 meta:
   description: >-
     Increase the test coverage of your web APIs so they break less for your

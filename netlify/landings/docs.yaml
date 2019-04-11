@@ -23,7 +23,7 @@ featureSection:
   description: >-
     Create API documentation in minutes. Combine OpenAPI Specifications
     (formerly known as Swagger) with Markdown to create robust, searchable,
-    internal and external API documentation for your organization. One-click
+    internal and external [API documentation](/api-documentation-guide/basics/) for your organization. One-click
     cloud deployment with Stoplight or download the static assets to host
     anywhere.
   features:
@@ -70,7 +70,7 @@ featureSection:
       shortName: Integrations
       title: 'Simple, Flexible Deployment'
       titleURL: /documentation/hosted/
-  title: OpenAPI Documentation
+  title: Our OpenAPI Documentation Tool
 meta:
   description: >-
     Create API documentation in minutes. Combine OpenAPI Specifications
