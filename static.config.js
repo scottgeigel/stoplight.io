@@ -337,8 +337,9 @@ export default {
     }));
 
     addSubpages(routes, allPages, blogPosts, props => {
+      const { integrations: { newsletterFormId } } = getFile(`${NETLIFY_PATH}/settings.yaml`);
       return {
-        newsLetterSignup: true,
+        newsletterFormId,
         breadCrumbs: [{ title: 'Home', path: '/' }, { title: 'Blog', path: '/blog' }, { title: props.title }],
         hero: {
           aligned: 'left',

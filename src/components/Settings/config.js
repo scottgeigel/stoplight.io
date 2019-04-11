@@ -95,6 +95,12 @@ export default {
               required: false,
             },
             {
+              name: 'newsletterFormId',
+              label: 'HubSpot newsletter form ID',
+              widget: 'string',
+              required: false,
+            },
+            {
               name: 'intercom',
               label: 'Intercom App ID',
               widget: 'string',

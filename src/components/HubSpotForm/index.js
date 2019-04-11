@@ -65,20 +65,6 @@ export class HubSpotForm extends React.Component {
     const { className, title, description, isLight } = this.props;
     const { isLoaded } = this.state;
 
-    const hubspotForm = isLight ? (
-      <div
-        id="hubspot-form"
-        className={cn('mx-auto', className)}
-        style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600 }}
-      />
-    ) : (
-      <div
-        id="hubspot-form"
-        className={cn('bg-white shadow rounded p-16 md:p-4 mx-auto md:overflow-hidden', className)}
-        style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600 }}
-      />
-    );
-
     return (
       <div className="w-full">
         {title && <h2 className="text-3xl text-center">{title}</h2>}
@@ -88,7 +74,14 @@ export class HubSpotForm extends React.Component {
             dangerouslySetInnerHTML={{ __html: description }}
           />
         </div>}
-        {hubspotForm}
+
+        <div
+          id="hubspot-form"
+          className={cn('mx-auto', className, {
+            'bg-white shadow rounded p-16 md:p-4 md:overflow-hidden': !isLight
+          })}
+          style={{ display: isLoaded ? 'block' : 'none', maxWidth: 600 }}
+        />
       </div>
     );
   }
