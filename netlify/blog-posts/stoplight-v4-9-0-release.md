@@ -47,7 +47,7 @@ Users can now interact with OpenAPI Specification extensions through the Stoplig
 ## Fixes 🔧
 
 * \[Hubs] Markdown code blocks were not getting highlighted
-* \[Hubs] When you changed pages, they were being replaced in the body frame without resetting scrolling to the top of new page ([Forum Link](https://community.stoplight.io/t/pages-open-in-weird-spots]))
+* \[Hubs] When you changed pages, they were being replaced in the body frame without resetting scrolling to the top of new page ([Forum Link](https://community.stoplight.io/t/pages-open-in-weird-spots))
 * \[Mocking] Unable to enter a forward-slash character in path for mock test request
 * \[Modeling] - Changing an object to any of the combination types (allOf, anyOf, oneOf) erases the data
 * \[Hubs] Variable templating was not working properly in Hubs
