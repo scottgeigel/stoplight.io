@@ -1,5 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
+import { withSiteData } from 'react-static';
 
 function handleHubspotFormCallback(e) {
   if (e.data.type === 'hsFormCallback' && e.data.eventName === 'onFormSubmit') {
@@ -11,7 +12,7 @@ function handleHubspotFormCallback(e) {
   }
 }
 
-export class HubSpotForm extends React.Component {
+class HubSpotForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -35,7 +36,7 @@ export class HubSpotForm extends React.Component {
   }
 
   createForm = () => {
-    const { portalId, formId } = this.props;
+    const { formId, integrations: { hubspot: portalId } } = this.props;
 
     if (!window.hbspt || !portalId || !formId) {
       return;
@@ -86,3 +87,6 @@ export class HubSpotForm extends React.Component {
     );
   }
 }
+
+const HubSpotComponent = withSiteData(HubSpotForm);
+export { HubSpotComponent as HubSpotForm };

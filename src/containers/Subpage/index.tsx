@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import { DiscussionEmbed } from 'disqus-react';
 import * as React from 'react';
-import { withRouteData, withSiteData } from 'react-static';
+import { withRouteData } from 'react-static';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
@@ -16,10 +16,6 @@ import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
 
 import { convertMarkdownToHTML } from 'src/utils/markdown/index.js';
-
-interface IIntegration {
-  hubspot?: number;
-}
 
 export interface IPage {
   path: string;
@@ -44,7 +40,6 @@ export interface IPage {
   disqus?: { enabled: boolean };
   tabs?: ITab[];
   includeToc?: boolean;
-  integrations: IIntegration;
   newsletterFormId: string;
 }
 
@@ -72,7 +67,6 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   disqus,
   tabs,
   includeToc,
-  integrations: { hubspot },
   newsletterFormId,
 }) => {
   const heroProps: IHero = {
@@ -131,7 +125,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
 
             {newsletterFormId && (
               <div className="newsletter">
-                <HubSpotForm isLight portalId={hubspot} formId={newsletterFormId} />
+                <HubSpotForm isLight formId={newsletterFormId} />
               </div>
             )}
 
@@ -160,4 +154,4 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   );
 };
 
-export default withRouteData(withSiteData(Subpage));
+export default withRouteData(Subpage);
