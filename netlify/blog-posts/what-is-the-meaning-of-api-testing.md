@@ -7,7 +7,7 @@ relatedTags:
   - blog-api-testing
 publishedDate: 2019-04-17T17:11:27.560Z
 author: Adam DuVander
-title: What is the Meaning of API Testing
+title: What is the Meaning of API Testing?
 subtitle: How and why to use OpenAPI contract testing for your API
 image: /images/formulas-and-equations.jpg
 color: black
