@@ -22,7 +22,7 @@ export const Quote = ({ image, quote, author, role }) => {
   return (
     <div className="py-8 px-4 shadow bg-white rounded-lg flex flex-col justify-between">
       <div className="px-2 py-2 pb-8 flex justify-center items-start m-auto">
-        <Image className="max-h-50" {...image} />
+        <Image className="max-h-50" {...image} size="sm" />
       </div>
       <p className="leading-loose pb-6">{quote}</p>
 

@@ -47,7 +47,7 @@ Version control is extremely helpful internally but it is an excessive amount of
 
 We realize that different teams might be using our product in different ways, so we have two possible methods of version control in Stoplight that will cover most use cases.
 
-![Versions and Releases in Stoplight](https://cdn-images-1.medium.com/max/3964/1*Ul-zwQZJ7iWcUD-KBxyy4w.png)*Versions and Releases in Stoplight*
+![Versions and Releases in Stoplight](https://cdn-images-1.medium.com/max/800/1*Ul-zwQZJ7iWcUD-KBxyy4w.png)*Versions and Releases in Stoplight*
 
 ### Mirror Release Method
 
@@ -57,6 +57,6 @@ The first method is to mirror your product or APIs release cycle. The basic rule
 
 The second method is designed for a documentation driven project. First, you describe the major versions of your API. Next, any time you want the changes reflected in your published documentation, you can [re-release those versions](https://docs.stoplight.io/platform/versioning/releases). This method allows you to continue making edits to your documentation, without needing to create a new version, or worry about your in-progress work being shown to readers.
 
-![Versions in your documentation Hub](https://cdn-images-1.medium.com/max/2668/1*jaB_AIs8k3pd9nQZsu253Q.png)*Versions in your documentation Hub*
+![Versions in your documentation Hub](https://cdn-images-1.medium.com/max/800/1*jaB_AIs8k3pd9nQZsu253Q.png)*Versions in your documentation Hub*
 
 Ultimately, we’ll be expanding the release system to more than just publishing. Our goal is to build and publish docs, run scenarios and provide coverage reports, and create mock servers with a single click. Automating these processes will cut down on valuable engineering time you can then use elsewhere.

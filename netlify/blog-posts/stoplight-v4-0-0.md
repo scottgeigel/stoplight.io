@@ -46,7 +46,7 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 - **Editor**: You can now see in real-time when someone else is editing files in your project. You no longer have to worry about mistakenly saving over their work or vice versa.
 
-![Editing Notifications](https://cdn-images-1.medium.com/max/2000/1*3bkTHpvx2GF6sXD-XOuH5w.png)
+![Editing Notifications](https://cdn-images-1.medium.com/max/800/1*3bkTHpvx2GF6sXD-XOuH5w.png)
 
 - **OpenAPI**: Your OpenAPI files now have a read-only mode that displays the contents of the OAS file in a nice readable format for guests and those without write access.
 
@@ -68,11 +68,11 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 ## Old UI:
 
-![Old UI](https://cdn-images-1.medium.com/max/2240/1*MDDCURcSEZ7ofFOnSXD3tA.png)
+![Old UI](https://cdn-images-1.medium.com/max/800/1*MDDCURcSEZ7ofFOnSXD3tA.png)
 
 ## New UI:
 
-![New UI](https://cdn-images-1.medium.com/max/2240/1*a7RXiuvqMlCo5VstMsmwog.png)
+![New UI](https://cdn-images-1.medium.com/max/800/1*a7RXiuvqMlCo5VstMsmwog.png)
 
 - **Editor**: When you save, you can now create a custom save message. This can be helpful for more detailed messages for your history of changes and the GitHub integration that we are working towards.
 
@@ -84,4 +84,4 @@ Please reach out via chat or [support@stoplight.io](mailto:support@stoplight.io)
 
 - **Hubs**: When documentation is printed or turned into a PDF, the print layout has now been improved. This is available in the Stoplight application and for published documentation.
 
-![Print Layout](https://cdn-images-1.medium.com/max/2240/1*Va04M_br3wIKIyficvS4CQ.png)*Print Layout*
+![Print Layout](https://cdn-images-1.medium.com/max/800/1*Va04M_br3wIKIyficvS4CQ.png)*Print Layout*

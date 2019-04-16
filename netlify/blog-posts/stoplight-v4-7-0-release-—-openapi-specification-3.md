@@ -41,9 +41,9 @@ meta:
 
 * Visual editing coming soon!
 
-![*OpenAPI 3 Editor — Code View with Validation and Linting*](https://cdn-images-1.medium.com/max/4508/1*8gUxm53NiXCs80Cn8NMIjg.png)
+![*OpenAPI 3 Editor — Code View with Validation and Linting*](https://cdn-images-1.medium.com/max/800/1*8gUxm53NiXCs80Cn8NMIjg.png)
 
-![*Auto-generated OpenAPI 3 Documentation*](https://cdn-images-1.medium.com/max/4504/1*4ICJOxCPSKYO6uRhN6LEzg.png)
+![*Auto-generated OpenAPI 3 Documentation*](https://cdn-images-1.medium.com/max/800/1*4ICJOxCPSKYO6uRhN6LEzg.png)
 
 ## Fixes 🔧
 

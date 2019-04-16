@@ -45,7 +45,7 @@ Honestly, customers are the best way to test your API, because they are using yo
 
 **Customers are equivalent to variables in Stoplight.** Variables, if used properly, can breathe life into your tests in ways you didn’t expected. They say a picture is worth a lot of words, so let’s look at some dead tests.
 
-![](https://cdn-images-1.medium.com/max/3200/0*D7OMQYjOHt3rn-6u.)
+![](https://cdn-images-1.medium.com/max/800/0*D7OMQYjOHt3rn-6u.)
 
 *To try out the above test, [Import](https://help.stoplight.io/docs/basics/creating-or-importing-a-new-api) [this swagger spec](https://api.stoplight.io/v1/versions/7s7aRW9kYkZsjcRgL/export/stoplight.json) into Stoplight*
 
@@ -57,7 +57,7 @@ Let’s step through these issues, and bring our test up to code. First we will 
 
 1. **Hard Coded Data.**
 
-![](https://cdn-images-1.medium.com/max/3200/0*H88tFMDSlaEsRdhF.)
+![](https://cdn-images-1.medium.com/max/800/0*H88tFMDSlaEsRdhF.)
 
 *To try out the above test, [Import](https://help.stoplight.io/docs/basics/creating-or-importing-a-new-api) [this swagger spec](https://api.stoplight.io/v1/versions/pB8p56oTFBRZQiDEh/export/stoplight.json) into Stoplight*
 
@@ -65,7 +65,7 @@ Hard coding data is awesome when you write your first test step. Then you write 
 
 2. **Invalid Input, and maintainability.**
 
-![](https://cdn-images-1.medium.com/max/3200/0*9yoMickrEJAkRnYY.)
+![](https://cdn-images-1.medium.com/max/800/0*9yoMickrEJAkRnYY.)
 
 *To try out the above test, [Import](https://help.stoplight.io/docs/basics/creating-or-importing-a-new-api) [this swagger spec](https://api.stoplight.io/v1/versions/jJjjqLoniNWsBAGeD/export/stoplight.json) into Stoplight*
 
@@ -79,7 +79,7 @@ Most of the time when testing APIs, you are creating a lot of resources and clea
 
 **Bonus points — path selectors in variables.**
 
-![](https://cdn-images-1.medium.com/max/3200/0*yr5vm-P-Jg3NzkJJ.)
+![](https://cdn-images-1.medium.com/max/800/0*yr5vm-P-Jg3NzkJJ.)
 
 *To try out the above test, [Import](https://help.stoplight.io/docs/basics/creating-or-importing-a-new-api) [this swagger spec](https://api.stoplight.io/v1/versions/SXzwWdrfEPJcJABZg/export/stoplight.json) into Stoplight*
 

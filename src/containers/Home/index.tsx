@@ -22,7 +22,7 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout
 
       <ImageCallout {...imageCallout} />
 
-      <Collage id="customers" size="sm" {...collage} />
+      <Collage id="customers" {...collage} />
 
       <Testimonials {...testimonials} />
     </React.Fragment>

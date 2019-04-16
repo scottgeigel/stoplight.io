@@ -26,6 +26,7 @@
     "@fortawesome/react-fontawesome": "0.1.x",
     "classnames": "2.2.x",
     "disqus-react": "^1.0.5",
+    "lodash.get": "^4.4.2",
     "netlify-cms": "2.3.x",
     "netlify-cms-widget-fontawesome": "3.1.0",
     "netlify-identity-widget": "1.4.14",
@@ -60,6 +61,7 @@
     "react-hot-loader": "^4.3.12",
     "sass-loader": "7.1.x",
     "serve": "10.1.x",
+    "sharp": "0.22.x",
     "style-loader": "0.23.x",
     "ts-loader": "5.3.x",
     "typescript": "3.1.x"

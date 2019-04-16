@@ -48,7 +48,7 @@ Like many professional industries, software engineering has a plethora, actually
 
 At this point you’re probably wondering what the hell is this guy talking about, get to the point, or you’re hungry for deconstructed *Stripe* payment. Whatever you’re thinking, let’s break the analogy down from front to back stage:
 
-![[https://www.flickr.com/photos/stevendepolo/15984623159](https://www.flickr.com/photos/stevendepolo/15984623159)](https://cdn-images-1.medium.com/max/2048/1*a7lcPicbg5ju8zn9sn1NJg.jpeg)*[https://www.flickr.com/photos/stevendepolo/15984623159](https://www.flickr.com/photos/stevendepolo/15984623159)*
+![[https://www.flickr.com/photos/stevendepolo/15984623159](https://www.flickr.com/photos/stevendepolo/15984623159)](https://cdn-images-1.medium.com/max/800/1*a7lcPicbg5ju8zn9sn1NJg.jpeg)*[https://www.flickr.com/photos/stevendepolo/15984623159](https://www.flickr.com/photos/stevendepolo/15984623159)*
 
 **Front Stage**
 
@@ -72,7 +72,7 @@ At this point you’re probably wondering what the hell is this guy talking abou
 
 To summarize our delicious analogy let’s imagine you, the client, is the proud owner of the restaurant *Yum Mee Chinese Food*. A feature you would like to incorporate into your restaurant’s website is a map that tracks your Deliveries. The easiest way to accomplish this is to simply add the *Google Maps* API into your site.
 
-![[https://hiveminer.com/Tags/food%2Cyummee/Interesting](https://hiveminer.com/Tags/food%2Cyummee/Interesting)](https://cdn-images-1.medium.com/max/2000/1*LPOb26EyoCjsNHOChkYPWA.jpeg)*[https://hiveminer.com/Tags/food%2Cyummee/Interesting](https://hiveminer.com/Tags/food%2Cyummee/Interesting)*
+![[https://hiveminer.com/Tags/food%2Cyummee/Interesting](https://hiveminer.com/Tags/food%2Cyummee/Interesting)](https://cdn-images-1.medium.com/max/800/1*LPOb26EyoCjsNHOChkYPWA.jpeg)*[https://hiveminer.com/Tags/food%2Cyummee/Interesting](https://hiveminer.com/Tags/food%2Cyummee/Interesting)*
 
 * The restaurant: *Yum Mee Chinese Food*
 
@@ -96,7 +96,7 @@ Before we leave the Land of Analogies let’s discuss how [*Stoplight*](http://s
 
 Here at [*Stoplight*](http://stoplight.io/) we equip you with the tools that help you tackle the most critical tasks in API Production: Modeling, Testing, Mocking, and Documentation.
 
-![Stoplight Modeling](https://cdn-images-1.medium.com/max/2880/1*Ruit1ulB8Tnzcd78iyhPHA.png)*Stoplight Modeling*
+![Stoplight Modeling](https://cdn-images-1.medium.com/max/800/1*Ruit1ulB8Tnzcd78iyhPHA.png)*Stoplight Modeling*
 
 ### Modeling
 
@@ -104,7 +104,7 @@ We thoroughly believe in a design first mentality in regards to API Production a
 
 * **Land of Analogy**: We provide the Chef with the tools to help him craft recipes instead of serving whatever the Restaurant Owner or Client wants at that very moment.
 
-![Stoplight Scenarios](https://cdn-images-1.medium.com/max/2880/1*LFnYcnPEMFDwve8H__a0vA.png)*Stoplight Scenarios*
+![Stoplight Scenarios](https://cdn-images-1.medium.com/max/800/1*LFnYcnPEMFDwve8H__a0vA.png)*Stoplight Scenarios*
 
 ### Testing
 
@@ -113,7 +113,7 @@ Before your API can be deployed to the masses it must be battle tested and harde
 * **Land of Analogy**: Maybe the Chef accidentally mixed in some
 Cayenne Pepper into the Vanilla Ice Cream. Maybe the client is allergic to an ingredient in the new recipe your Chef just created. Before the meal goes out, we provide the Restaurant with the tools to check the food for poisons and other undesirables.
 
-![Stoplight Prism](https://cdn-images-1.medium.com/max/2876/1*bpPbJ83wfobGTWaSdC7KTA.png)*Stoplight Prism*
+![Stoplight Prism](https://cdn-images-1.medium.com/max/800/1*bpPbJ83wfobGTWaSdC7KTA.png)*Stoplight Prism*
 
 ### Mocking
 

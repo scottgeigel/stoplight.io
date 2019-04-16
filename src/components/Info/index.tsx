@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Image } from 'src/components/Image';
 
 export interface IInfo {
   title: string;
@@ -11,7 +12,11 @@ export const Info: React.FunctionComponent<IInfo> = ({ title, image, description
 
   return (
     <div className="p-8 rounded bg-white shadow">
-      {image && <img src={image} alt={title} />}
+      {image && (
+        <div className="text-center">
+          <Image src={image} alt={title} size="sm" />
+        </div>
+      )}
 
       {title && <div className="text-muted uppercase">{title}</div>}
 

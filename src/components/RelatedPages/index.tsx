@@ -2,6 +2,7 @@ import * as cn from 'classnames';
 import * as React from 'react';
 
 import { Container } from 'src/components/Container';
+import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { Section } from 'src/components/Section';
 
@@ -29,14 +30,11 @@ export const ArticleCard: React.FunctionComponent<IRelatedPage> = ({
   return (
     <Link to={href}>
       <article className="flex flex-col shadow bg-white rounded-lg w-full h-full text-grey-darkest overflow-hidden">
-        <div
-          className={cn('h-40 w-100 relative', { [`bg-${color}`]: !image })}
-          style={{
-            backgroundImage: image ? `url(${image})` : 'none',
-            backgroundSize,
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
+        <Image
+          src={image || ''}
+          className={cn(`h-40 w-100 relative bg-center bg-no-repeat bg-${backgroundSize}`, { [`bg-${color}`]: !image })}
+          size="sm"
+          useDiv
         />
         <div className="flex flex-col flex-1 p-4 ">
           <h3 className="mb-2">{title}</h3>
