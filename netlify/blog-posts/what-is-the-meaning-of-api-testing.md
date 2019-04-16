@@ -1,8 +1,8 @@
 ---
 path: /blog/what-is-api-testing
 tags:
-  - blog
   - blog-api-testing
+  - blog
 relatedTags:
   - blog-api-testing
 publishedDate: 2019-04-17T17:11:27.560Z
