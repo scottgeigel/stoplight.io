@@ -34,7 +34,7 @@ interface IHeroCard {
   icon: {
     name: IconName;
   };
-  image: IImage;
+  image: string;
 }
 
 export interface IHeroButton {
@@ -89,16 +89,11 @@ export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, na
     <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
       {image && (
         <Image
-          className="mr-2 rounded-full h-16 w-16"
+          className="mr-2 rounded-full h-16 w-16 bg-center bg-contain bg-no-repeat"
           src={image}
           alt="author"
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            objectPosition: '-99999px 99999px', // Hide the actual src image so the background image is displayed
-          }}
+          background
+          size="sm"
         />
       )}
       <div>
@@ -137,14 +132,7 @@ const HeroCard: React.FunctionComponent<IHeroCard> = ({
       </div>
       {subtitle && <div className="mt-4 leading-loose">{subtitle}</div>}
 
-      {image && (
-        <div
-          className="rounded-full bg-cover h-48 w-32"
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        />
-      )}
+      {image && <Image src={image} className="rounded-full bg-cover h-48 w-32" size="sm" useDiv />}
       <div className={cn(`triangle-${indexMap[index]}`, 'platform-block-triangle')} />
     </Link>
   );
@@ -199,7 +187,7 @@ const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, section = t
     <section className="md:hidden">
       {
         <Container className="relative text-center" style={{ height: 500 }}>
-          <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} />
+          <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} size="lg" />
         </Container>
       }
     </section>
@@ -216,7 +204,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
   cta,
   bgColor = 'black',
   contentBgImage,
-  contentBgOverlay = '#8080803b',
   particles,
   image,
   skew,
@@ -237,44 +224,38 @@ export const Hero: React.FunctionComponent<IHero> = ({
 
   return (
     <React.Fragment>
-      <div key="main" className="relative">
+      <div
+        key="main"
+        className={cn('relative', {
+          'overflow-hidden': skew === 'rounded',
+        })}
+      >
         <div className={cn(headerHeightClass, 'w-100')} />
 
-        <div
+        <Image
+          src={particles ? '' : '/images/patterns/diagonal-stripes-sm.png'}
           className={cn('absolute z-0 border-4 border-lighten-300 overflow-hidden', {
             [`bg-${bgColor}`]: bgColor,
-            'background-repeat': !particles,
           })}
           style={{
             bottom: image ? -150 : cards.length ? 50 : 0,
-            top: -300,
-            left: 0,
-            right: 0,
-            backgroundImage: !particles ? `url(/images/patterns/diagonal-stripes.png)` : undefined,
+            width: skew === 'rounded' ? '200%' : 'auto',
+            top: skew === 'rounded' ? '-50%' : -300,
+            left: skew === 'rounded' ? '-50%' : 0,
+            right: skew === 'rounded' ? '-50%' : 0,
+            borderRadius: skew === 'rounded' ? '50%' : '0',
             transform: skew && skew !== 'rounded' ? `skew(0, ${skew})` : undefined,
           }}
-        />
-
-        <div
-          className={cn('absolute pin z-0')}
-          style={{
-            background: 'linear-gradient(to right top, transparent, rgba(134, 218, 254, 0.1))',
-            bottom: image ? -200 : 0,
-          }}
+          useDiv
         />
 
         {contentBgImage && (
           <div
-            className={cn('absolute pin z-0')}
+            className="absolute pin z-0 bg-cover bg-no-repeat bg-center"
             style={{
-              background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${contentBgImage}")`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '50% 50%',
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contentBgImage})`,
             }}
-          >
-            {contentBgOverlay && <div className={cn('absolute pin z-0')} style={{ background: contentBgOverlay }} />}
-          </div>
+          />
         )}
 
         <div
@@ -282,7 +263,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
             containerClassName,
             `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`
           )}
-          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : {}}
+          style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
           <div
             className={cn('mb-24', {

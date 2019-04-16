@@ -36,7 +36,7 @@ Stoplight Scenarios is a powerful (but accessible!) product that takes the pain 
 
 We generally recommend the desktop app when possible, because it can work with local servers, behind firewalls, and with local files.
 
-![API Specification Coverage Report](https://cdn-images-1.medium.com/max/4284/1*epCvIcr8745JoqRijKg82A.png)*API Specification Coverage Report*
+![API Specification Coverage Report](https://cdn-images-1.medium.com/max/800/1*epCvIcr8745JoqRijKg82A.png)*API Specification Coverage Report*
 
 **OAS / Swagger Integration**
 
@@ -50,7 +50,7 @@ Running Scenarios outside of Stoplight, as part of your CI process, is trivial. 
 
 Prism will run your scenarios locally, pretty-printing out the results as it goes.
 
-![read/write to files on disk](https://cdn-images-1.medium.com/max/2196/1*vvPlg4fKJxPesqva0_EtSA.gif)*read/write to files on disk*
+![read/write to files on disk](https://cdn-images-1.medium.com/max/800/1*vvPlg4fKJxPesqva0_EtSA.gif)*read/write to files on disk*
 
 **Local File Writing**
 

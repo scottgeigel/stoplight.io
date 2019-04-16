@@ -43,7 +43,7 @@ export const Landing: React.FunctionComponent<ILanding> = ({
     <React.Fragment>
       <Hero bgColor={color} buttons={buttons} {...hero} />
 
-      <Collage size="sm" className="md:px-0 py-6 md:py-6" noPadding {...collage} />
+      <Collage className="md:px-0 py-6 md:py-6" noPadding {...collage} />
 
       <ImageCallout {...imageCallout} />
 

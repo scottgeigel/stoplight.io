@@ -43,7 +43,7 @@ function greet (firstname, lastname) {
 
 This was good enough for Imaginary Company’s website in the early 2000s. But now Imaginary Company has gone global, and the boss has asked us to update the greet function. She wants greet to automatically be translated into the correct language for the user. We are resourceful, but also lazy, so we decide to use Google Translate.
 
-![Imagination.](https://cdn-images-1.medium.com/max/2000/1*upGKzFVUI3ojN031fBPjcw.gif)
+![Imagination.](https://cdn-images-1.medium.com/max/800/1*upGKzFVUI3ojN031fBPjcw.gif)
 _Imagination._
 
 ## **Promise Me You’ll Say Hello**
@@ -66,7 +66,7 @@ Now the boss comes to us with another request. Sometimes the user’s native lan
 
 ## **Undefined is not a problem**
 
-![You got it!](https://cdn-images-1.medium.com/max/2000/1*RrFFM_EwTp3RVKUFuViqFw.gif)__
+![You got it!](https://cdn-images-1.medium.com/max/800/1*RrFFM_EwTp3RVKUFuViqFw.gif)__
 
 _You got it!_
 
@@ -95,7 +95,7 @@ Just as we’re feeling clever, the boss adds a new requirement. Some languages 
 
 ## **Ordering and Chaos**
 
-![When one thing disappears, another appears…](https://cdn-images-1.medium.com/max/2000/1*wyv6Frz4ZOR4093-MkQCaA.gif)__
+![When one thing disappears, another appears…](https://cdn-images-1.medium.com/max/800/1*wyv6Frz4ZOR4093-MkQCaA.gif)__
 
 _When one thing disappears, another appears…_
 
@@ -139,7 +139,7 @@ greet({family: 'Smith', given: 'John'}) // also 'Hello John Smith'
 
 The boss loves this! It is easier to read, and no one is mixing up given name and family name anymore.
 
-![Highfive!](https://cdn-images-1.medium.com/max/2000/1*coWium9mkHprwHGupY_Zuw.gif)__
+![Highfive!](https://cdn-images-1.medium.com/max/800/1*coWium9mkHprwHGupY_Zuw.gif)__
 
 _Highfive!_
 
@@ -160,7 +160,7 @@ But now there’s the potential new kind of error. If either lang or reversed ar
 
 ## **No rest for the misspelled**
 
-![Sometimes we make typos…](https://cdn-images-1.medium.com/max/2000/1*X0eu8TZb_u3WfH4kckywjw.gif)__
+![Sometimes we make typos…](https://cdn-images-1.medium.com/max/800/1*X0eu8TZb_u3WfH4kckywjw.gif)__
 
 _Sometimes we make typos…_
 
@@ -195,7 +195,7 @@ greet({ lang, given, family, reserved })
 
 ## **The function, evolved**
 
-![Another kind of evolution…](https://cdn-images-1.medium.com/max/2000/1*HNlDPG4AlGhv9oMBhJbcpw.gif)
+![Another kind of evolution…](https://cdn-images-1.medium.com/max/800/1*HNlDPG4AlGhv9oMBhJbcpw.gif)
 
 _Another kind of evolution…_
 
@@ -246,6 +246,6 @@ Our final function takes advantage of many modern JavaScript “super powers”:
 
 I’ve started to write all my functions using these features because they provide a flexible foundation for the function to adapt to whatever new requirements come its way. What does _your_ ultimate function look like?
 
-![](https://cdn-images-1.medium.com/max/2000/1*sY8s44Z6K4Q9C1B_iN1agg.gif)
+![](https://cdn-images-1.medium.com/max/800/1*sY8s44Z6K4Q9C1B_iN1agg.gif)
 
 _P.S. If JavaScript is your thing, Stoplight is [hiring](https://angel.co/stoplight/jobs/364562-fullstack-engineer-with-initial-react-focus)!_

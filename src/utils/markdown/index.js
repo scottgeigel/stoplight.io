@@ -4,6 +4,7 @@ import Highlight from './highlight';
 
 const BaseMarkdown = new MarkdownIt({
   html: true,
+  breaks: true,
   linkify: true,
   typographer: true,
   highlight: (str, lang) => {
@@ -12,7 +13,7 @@ const BaseMarkdown = new MarkdownIt({
         lang !== undefined ? Highlight.languages[lang] || Highlight.languages.markup : Highlight.languages.markup;
       return Highlight.highlight(str, grammar, lang);
     } catch (e) {
-      console.log('error highlighting code', str, lang, e);
+      console.log('Error highlighting code:', str, lang, e);
       return str;
     }
   },

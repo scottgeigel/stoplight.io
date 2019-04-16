@@ -9,7 +9,7 @@ publishedDate: 2018-10-10T19:10:00.489Z
 author: Chris Wood
 title: Making the Most of Your API Specification
 subtitle: Design Web APIs for Humans & Machines
-image: 'https://cdn-images-1.medium.com/max/9792/0*EqisMREXV24UgZ8y'
+image: 'https://cdn-images-1.medium.com/max/800/0*EqisMREXV24UgZ8y'
 color: purple-darker
 disqus:
   enabled: true

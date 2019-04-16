@@ -9,7 +9,7 @@ import { reloadRoutes, makePageRoutes } from 'react-static/node';
 
 import { convertMarkdownToHTML } from './src/utils/markdown';
 import { formatDate } from './src/utils/dates/index.ts';
-
+import { processImages } from './src/utils/processImages';
 import webpack from './webpack';
 
 const NETLIFY_PATH = nodePath.resolve(__dirname, 'netlify');
@@ -232,7 +232,7 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
             getData: () => ({
               ...list,
               ...(propFactory ? propFactory(list) : {}),
-              title: (currentPage > 1) ? `${list.title} - Page ${currentPage}` : list.title,
+              title: currentPage > 1 ? `${list.title} - Page ${currentPage}` : list.title,
               items: items.slice((currentPage - 1) * pageSize, (currentPage - 1) * pageSize + pageSize),
               meta: {
                 ...list.meta,
@@ -487,6 +487,11 @@ export default {
       robots = meta.robots || 'index, follow';
     }
 
+    const __SL = {
+      NODE_ENV: process.env.NODE_ENV,
+      RELEASE_STAGE: process.env.RELEASE_STAGE,
+    };
+
     return (
       <Html lang="en-US">
         <Head>
@@ -561,6 +566,16 @@ export default {
           {pagination.currentPage && pagination.currentPage !== pagination.totalPages && (
             <link rel="next" href={`${SITE_ROOT}${path}/page/${pagination.currentPage + 1}/`} />
           )}
+
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+            console.log("Interested in working for Stoplight? Check out our jobs listing: https://angel.co/stoplight/jobs");
+            window.__SL = ${JSON.stringify(__SL)};
+            `,
+            }}
+          />
         </Head>
         <Body>
           {IS_PRODUCTION && googleTagManager && (
@@ -599,7 +614,7 @@ export default {
 
   webpack,
 
-  onBuild: () => {
+  onBuild: async () => {
     // Don't allow crawlling of any pages
     let robots = 'User-agent: *\nDisallow: /';
 
@@ -609,6 +624,8 @@ export default {
     }
 
     fs.writeFileSync(`${process.cwd()}/dist/robots.txt`, robots);
+
+    await processImages();
   },
 
   // bundleAnalyzer: true,

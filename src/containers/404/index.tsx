@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Head } from 'react-static';
 
 import { Button } from 'src/components/Button';
+import { Image } from 'src/components/Image';
 
 export const NotFound: React.FunctionComponent = () => {
   return (
@@ -15,7 +16,7 @@ export const NotFound: React.FunctionComponent = () => {
         <div className="text-2xl leading-normal font-default opacity-75">This page doesn't exist!</div>
 
         <div className="py-8">
-          <img className="h-64" src="//thecatapi.com/api/images/get?format=src&type=gif" />
+          <Image className="h-64" src="//thecatapi.com/api/images/get?format=src&type=gif" />
         </div>
 
         <Button href="/">Take me home</Button>

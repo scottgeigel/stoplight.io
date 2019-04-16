@@ -46,18 +46,16 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
   return (
     <Link
       to={href}
-      className="block shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden"
-      style={{
-        height: 280,
-      }}
+      className="block shadow bg-grey-lightest rounded-lg text-grey-darkest hover:bg-grey-lighter my-12 overflow-hidden h-80"
     >
       <article className="flex box h-full w-full items-center">
-        <div
-          className={cn('h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat', { [`bg-${color}`]: !image })}
-          style={{
-            backgroundImage: image ? `url(${image})` : 'none',
-            backgroundSize,
-          }}
+        <Image
+          src={image}
+          className={cn(`h-full w-2/5 sm:w-1/5 bg-center bg-no-repeat bg-${backgroundSize}`, {
+            [`bg-${color}`]: !image,
+          })}
+          size="md"
+          useDiv
         />
 
         <div className="flex-1 flex flex-col h-full p-10 md:p-6">
@@ -74,7 +72,9 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
 
             {author && (
               <div className="flex items-center md:hidden">
-                {author.image && <Image className="mr-2 rounded-full h-16 w-16" src={author.image} alt={author.name} />}
+                {author.image && (
+                  <Image className="mr-2 rounded-full h-16 w-16" src={author.image} alt={author.name} size="sm" />
+                )}
 
                 <div className="text-sm">
                   {author.name && <div>{author.name}</div>}

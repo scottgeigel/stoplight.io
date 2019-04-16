@@ -50,7 +50,7 @@ The issue of API Discovery is not a new one, and luckily we already have some so
 
 API Directories, also known as API Repositories, API Catalogs, and API Marketplaces, tackle API Discovery head on by scouring the web for APIs and compiling them in one convenient location. These solutions focus on creating a single source of truth for developers to discover APIs and are, for the most part, free.
 
-![](https://cdn-images-1.medium.com/max/3462/1*x5jhTd-WVDzrkt2D2G8k3A.png)
+![](https://cdn-images-1.medium.com/max/800/1*x5jhTd-WVDzrkt2D2G8k3A.png)
 
 ### **[ProgrammableWeb](https://www.programmableweb.com)**
 
@@ -100,7 +100,7 @@ The granddaddy of all API Directories. ProgrammableWeb has consistently been one
 
 * Comments
 
-![](https://cdn-images-1.medium.com/max/4768/1*cBlO5tgw9NVG3Tdqdq932w.png)
+![](https://cdn-images-1.medium.com/max/800/1*cBlO5tgw9NVG3Tdqdq932w.png)
 
 ### **[GitHub](https://github.com/)**
 
@@ -126,7 +126,7 @@ GitHub will always be a good option for finding anything in tech and that includ
 
 * Depends on the creator
 
-![](https://cdn-images-1.medium.com/max/5084/1*asthqsGt3G-0qQdx1JhWWg.png)
+![](https://cdn-images-1.medium.com/max/800/1*asthqsGt3G-0qQdx1JhWWg.png)
 
 ### **[RapidAPI](https://rapidapi.com/)**
 > “You can’t build everything from scratch, and using APIs makes work a lot more efficient. But each API has a different format and authentication strategy. You have to speak a lot of different languages to use them all.” — Iddo Gino
@@ -203,7 +203,7 @@ APIs.guru could be considered the bedrock of API Discovery. An open-source, mach
 
 API Integration Platforms are an emerging field within the API ecosystem. These SaaS platforms aren’t engineered to function solely as an API Discovery tool but do so as a by-product. They function as a middle man of sorts. Instead of having to manually integrate APIs into your product, all you have to do is integrate with their service, and you gain access to all the APIs they support. Currently, most of the platforms primary focus is on integrating commonly used analytics/big data/financial platforms to centralize and share valuable consumer data.
 
-![](https://cdn-images-1.medium.com/max/5100/1*jprQhpYV5-iwetiqfoPlxw.png)
+![](https://cdn-images-1.medium.com/max/800/1*jprQhpYV5-iwetiqfoPlxw.png)
 
 ### **[Segment](https://segment.com)**
 
@@ -239,7 +239,7 @@ Segment is not just an API Integration Platform but is still one of the most wid
 
 * Custom plan focus, with resource based pricing
 
-![](https://cdn-images-1.medium.com/max/5084/1*4YXLLWOjQ01PnzRpChFMFQ.png)
+![](https://cdn-images-1.medium.com/max/800/1*4YXLLWOjQ01PnzRpChFMFQ.png)
 
 ### **[Cloud Elements](https://cloud-elements.com/)**
 
@@ -275,7 +275,7 @@ The purest distillation of an API Integration Platform. They provide you with th
 
 * Custom plans, additional elements, and variable components add to price
 
-![](https://cdn-images-1.medium.com/max/5072/1*tyDAYX3c5WqEOuEyGZxWYg.png)
+![](https://cdn-images-1.medium.com/max/800/1*tyDAYX3c5WqEOuEyGZxWYg.png)
 
 ### **[Zapier](https://zapier.com/)**
 

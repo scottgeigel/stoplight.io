@@ -58,11 +58,11 @@ Community platforms (Stack Overflow, Reddit, API Community Management Platforms,
 
 My favorite large-scale example of this is the search bar on Google’s Developer Portal. The search bar indicates that you can specifically “Search Products and Documentation” instead of returning anything outside of that set — it’s a confidence indicator that Google will serve up targeted results which is what they are known for doing. In addition, you can see a menu of all products on the Product Index page to get a 30,000 foot view of the organization of the kind of content available.
 
-![Great example of searchability — Google Developers](https://cdn-images-1.medium.com/max/2000/0*YHxQsq8ijOJe4Kig)*Great example of searchability — Google Developers*
+![Great example of searchability — Google Developers](https://cdn-images-1.medium.com/max/800/0*YHxQsq8ijOJe4Kig)*Great example of searchability — Google Developers*
 
 An organized structure built around [a single source of truth](https://docs.stoplight.io/modeling/introduction#how-does-it-fit-into-stoplight), such as a help center, where developers can quickly find exactly what they need, is critical for effective documentation. Being empathetic to the ways developers work is essential for understanding why developer content will continue to evolve and the most utilitarian aspects will hold true over time. Now, many software providers offer comprehensive solutions that are quickly emerging to deliver the Developer Experience that matches the Developer Journey.
 
-![Another example of searchability— [Hub Search from Stoplight](https://docs.stoplight.io/documentation/introduction)](https://cdn-images-1.medium.com/max/3200/0*wUqjRW_h9beI_knx)*Another example of searchability— [Hub Search from Stoplight](https://docs.stoplight.io/documentation/introduction)*
+![Another example of searchability— [Hub Search from Stoplight](https://docs.stoplight.io/documentation/introduction)](https://cdn-images-1.medium.com/max/800/0*wUqjRW_h9beI_knx)*Another example of searchability— [Hub Search from Stoplight](https://docs.stoplight.io/documentation/introduction)*
 
 Developers are valuable not just because they are expensive to attract, hire, retain, and grow, but because there is a very limited group of engineering talent.
 

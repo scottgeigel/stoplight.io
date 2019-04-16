@@ -38,7 +38,7 @@ meta:
 
 * **[Magic Invite Links](https://docs.stoplight.io/platform/organizations/invite-people)**: Share it via email, Slack, and other channels to easily onboard members in your organization. Fair use billing means they won’t count until they actually start creating content. Abra Kadabra.
 
-![Custom CSS](https://cdn-images-1.medium.com/max/3134/1*1J5Ndy3hDPJxnzd0bWd62w.png)
+![Custom CSS](https://cdn-images-1.medium.com/max/800/1*1J5Ndy3hDPJxnzd0bWd62w.png)
 *Custom CSS*
 
 * **[Custom CSS](https://docs.stoplight.io/documentation/design/custom-css)**: Add some custom style and flair to your documentation with Custom CSS.

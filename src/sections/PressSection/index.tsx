@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Container, IContainer } from 'src/components/Container';
+import { Image } from 'src/components/Image';
 import { ISection, Section } from 'src/components/Section';
 
 export interface IPress {
@@ -26,7 +27,7 @@ export const Press = ({ image, date, description, publication, href }) => {
       className="pb-6 px-6 shadow bg-white rounded-lg text-grey-darker cursor-pointer hover:bg-grey-lightest"
     >
       <div className="flex items-center justify-center items-start h-32">
-        <img src={image} alt={publication} />
+        <Image src={image} alt={publication} size="sm" />
       </div>
 
       <div className="uppercase font-bold mb-3">{date}</div>

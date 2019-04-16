@@ -37,7 +37,7 @@ meta:
 
 * Support for [importing files](https://docs.stoplight.io/platform/editor-basics/import-files) into a project
 
-![No longer need to copy and paste your specification files to import!](https://cdn-images-1.medium.com/max/3368/1*xH5QIs4X8LarTsDiJaYpSg.png)
+![No longer need to copy and paste your specification files to import!](https://cdn-images-1.medium.com/max/800/1*xH5QIs4X8LarTsDiJaYpSg.png)
 *No longer need to copy and paste your specification files to import!*
 
 ## Enhancements 💪

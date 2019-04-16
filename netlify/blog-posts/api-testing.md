@@ -57,13 +57,13 @@ The next step is to set up an account for testing. If you don’t already have a
 
 Next, create an API specification. Make sure the **API Spec** tab is selected and fill out the form. All we need for this example is a name.
 
-![](https://cdn-images-1.medium.com/max/2000/0*cvftwMv_Scx1ag73.)
+![](https://cdn-images-1.medium.com/max/800/0*cvftwMv_Scx1ag73.)
 
 Now that you are in, you can use Stoplight’s visual CRUD builder to define your model. All changes made via the interface write to the Swagger spec, displayed in the built-in text editor to the bottom of your window.
 
 Stoplight’s Visual OpenAPI Specification (OAS) Editor is intuitive and easy to navigate. However, to save time, I copied the contents of this Swagger file: [http://www.jsoneditoronline.org/?id=ed42666d21301233f5d9a99a53d06f9c](http://www.jsoneditoronline.org/?id=ed42666d21301233f5d9a99a53d06f9c)
 
-![](https://cdn-images-1.medium.com/max/2400/0*N2pvMEAdZdVU9sor.)
+![](https://cdn-images-1.medium.com/max/800/0*N2pvMEAdZdVU9sor.)
 
 I want to take a minute to talk about the OpenAPI Specification. If you are unfamiliar with OAS, check it out over at [https://github.com/OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification).
 
@@ -79,7 +79,7 @@ The next thing we need is to be sure that our API works and that it reflects wha
 
 Click your organization’s name in the breadcrumbs navigation in the top left. Then create a new **Scenarios Collection.** Give your collection a name.
 
-![](https://cdn-images-1.medium.com/max/2000/0*FwgCF--OLbapskU_.)
+![](https://cdn-images-1.medium.com/max/800/0*FwgCF--OLbapskU_.)
 
 Once in, the first thing you need to do is connect your spec, the one we defined before, so go to the **Connections** tab and click **Select Specs.** Look for the spec you defined previously from the dropdown menu labelled **SRN.**
 
@@ -87,7 +87,7 @@ Go back to **Scenario Collection.**
 
 Under the **Collection Settings,** set your API’s host. I’m running locally on port 3000.
 
-![](https://cdn-images-1.medium.com/max/2000/0*53BODTHr7yrpaZnW.)
+![](https://cdn-images-1.medium.com/max/800/0*53BODTHr7yrpaZnW.)
 
 Next, on the **Coverage** tab, you’ll notice that Stoplight has read the contents of your spec and displayed all the operations and their endpoints.
 
@@ -107,11 +107,11 @@ Now, we’re almost ready to run our test. We just need to double-check to make 
 
 From the sidebar, select **CREATE item**. Then from the **Captures** tab, choose **Add Capture**. Give your capture a name. I went with itemsId. Select from the output body output.body, and type the name of the property. In our case, we want _id.
 
-![](https://cdn-images-1.medium.com/max/2152/0*BeqGBYd1smQ8uRMD.)
+![](https://cdn-images-1.medium.com/max/800/0*BeqGBYd1smQ8uRMD.)
 
 Perfect! We are all set to run our tests. Click **Run Scenario** and watch your tests pass.
 
-![](https://cdn-images-1.medium.com/max/2400/0*t8dBL7bgJ8aoabLW.)
+![](https://cdn-images-1.medium.com/max/800/0*t8dBL7bgJ8aoabLW.)
 
 ### In Conclusion
 

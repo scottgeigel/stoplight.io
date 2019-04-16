@@ -46,7 +46,7 @@ Here’s a 10,000 foot view of what you can accomplish using *Hubs*:
 
 **Build Structured API Documentation**
 
-![Page Settings & TOC View](https://cdn-images-1.medium.com/max/2686/1*r5SgpFR3hMxZcbFeDBluxg.png)*Page Settings & TOC View*
+![Page Settings & TOC View](https://cdn-images-1.medium.com/max/800/1*r5SgpFR3hMxZcbFeDBluxg.png)*Page Settings & TOC View*
 
 Generate a distinct *Hub* for any form of API documentation. Within that *Hub*, break down your documentation into pages and nested subpages. Choose from a laundry list of block types to create content, depending on how simple (or complex) your documentation is. Block types include text blocks, code snippets, images, callouts, and more.
 
@@ -68,7 +68,7 @@ Gone are the days of boring, bland API docs — those long blocks of text broken
 
 Pepper docs with images and videos to break them up and illustrate examples, and use callout blocks to draw attention to important points. Employ tab blocks when you have a lot of related text but want to keep the page length short. All these functions will help make documentation easier to read, and more likely to be consumed.
 
-![Text Block, Tab Block, & Callout Block](https://cdn-images-1.medium.com/max/2686/1*xoGcJ3suk655jP0iwjWhmQ.png)*Text Block, Tab Block, & Callout Block*
+![Text Block, Tab Block, & Callout Block](https://cdn-images-1.medium.com/max/800/1*xoGcJ3suk655jP0iwjWhmQ.png)*Text Block, Tab Block, & Callout Block*
 
 **Connect API Docs to your Spec in Stoplight**
 

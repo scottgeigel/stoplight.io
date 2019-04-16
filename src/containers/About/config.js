@@ -38,11 +38,6 @@ export default {
           name: 'role',
           widget: 'string',
         },
-        {
-          label: 'Twitter (@handle)',
-          name: 'twitter',
-          widget: 'string',
-        },
       ],
     },
     businesses,
