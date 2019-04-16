@@ -7,7 +7,7 @@ relatedTags:
   - blog-changelog
 publishedDate: 2019-04-16T15:37:14.298Z
 author: Taylor Barnett
-title: Stoplight Release v4.9.4
+title: Stoplight v4.9.4 Release
 image: /images/marc-olivier-jodoin-291607-unsplash.jpg
 color: black
 tabs:
@@ -19,11 +19,11 @@ actionBar:
     - color: purple
   enabled: false
 meta:
-  title: Stoplight Release v4.9.4 | Stoplight API Corner
+  title: Stoplight v4.9.4 Release | Stoplight API Corner
   image: /images/marc-olivier-jodoin-291607-unsplash.jpg
   robots: 'index, follow'
   twitter:
-    title: Stoplight Release v4.9.4 | Stoplight API Corner
+    title: Stoplight v4.9.4 Release | Stoplight API Corner
     image: /images/marc-olivier-jodoin-291607-unsplash.jpg
 ---
 
