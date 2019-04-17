@@ -10,17 +10,24 @@ author: Adam DuVander
 title: What is the Meaning of API Testing?
 subtitle: How and why to use OpenAPI contract testing for your API
 image: /images/formulas-and-equations.jpg
-color: black
+color: green-light
 tabs:
   - {}
-disqus: {}
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
   enabled: false
 meta:
+  description: How and why to use OpenAPI contract testing for your API
   robots: 'index, follow'
-  twitter: {}
+  title: What is the Meaning of API Testing? | Stoplight API Corner
+  image: /images/formulas-and-equations.jpg
+  twitter:
+    description: How and why to use OpenAPI contract testing for your API
+    title: What is the Meaning of API Testing? | Stoplight API Corner
+    image: /images/formulas-and-equations.jpg
 ---
 Modern software is built on top of web APIs—connected services that exchange data between systems. Most APIs are built and consumed by internal teams. It’s important to both provider and consumer that the API work as designed. Yet, many teams do not have a formal way to ensure that an API operates as expected.
 
@@ -49,9 +56,9 @@ This post primarily looks at contract testing, a foundational form of testing. R
 
 ## Your OpenAPI Description is a Contract
 
-Testing an API from scratch is hard, even with an accurate API reference. Use OpenAPI documents for your APIs to help you better test them. OpenAPI (formerly Swagger) is a machine-readable format that describes what’s possible with an API. Your testing process can use your OpenAPI documents to determine the endpoints to check, what HTTP methods to use, the type of data to send, and what data to expect in return.
+Testing an API from scratch is hard, even with an accurate API reference. Use OpenAPI documents for your APIs to help you better test them. OpenAPI Specification (formerly known as Swagger Specification) is a machine-readable format that describes what’s possible with an API. Your testing process can use your OpenAPI documents to determine the endpoints to check, what HTTP methods to use, the type of data to send, and what data to expect in return.
 
-API testing is sometimes referred to as contract testing, because the OpenAPI document acts as an agreement between API provider and consumer. Even when an API is only for internal use, you’ll want to have an OpenAPI document for each API to serve as this contract. Then build your tests off this source of truth based on example API calls and assertions against expected results.
+API testing with OpenAPI is sometimes referred to as contract testing, because the OpenAPI document acts as an agreement between API provider and consumer. Even when an API is only for internal use, you’ll want to have an OpenAPI document for each API to serve as this contract. Then build your tests off this source of truth based on example API calls and assertions against expected results.
 
 ![API testing coverage](/images/testing_reporting.png)
 
