@@ -75,7 +75,7 @@ The first steps:
 
 1. Click **Create Project**.
 
-![](https://cdn-images-1.medium.com/max/3200/0*kvNQP4JtnekIbH_p)
+![](https://cdn-images-1.medium.com/max/800/0*kvNQP4JtnekIbH_p)
 
 When the project loads, you’ll already see two files listed under *Modeling*. As we want to practice building an API from scratch, you can remove these files:
 
@@ -91,7 +91,7 @@ When the project loads, you’ll already see two files listed under *Modeling*. 
 
 1. Click **Create** to confirm.
 
-![](https://cdn-images-1.medium.com/max/3200/0*AZSQin3y6fegNEUE)
+![](https://cdn-images-1.medium.com/max/800/0*AZSQin3y6fegNEUE)
 
 Stoplight’s OpenAPI editor has [multiple tabs](https://docs.stoplight.io/platform/editor-basics/read-design-code-view):
 
@@ -119,7 +119,7 @@ Let’s get started with basic settings:
 
 1. *[Security](https://docs.stoplight.io/modeling/modeling-with-openapi/security-schemes)*, again, is of utmost importance for a real-world API but irrelevant for our example, so you don’t have to set anything here.
 
-![](https://cdn-images-1.medium.com/max/3200/0*PBoJilHdaLgz3m1I)
+![](https://cdn-images-1.medium.com/max/800/0*PBoJilHdaLgz3m1I)
 
 ## Create a Model
 
@@ -143,7 +143,7 @@ We’ll start work on the *Design* tab and create a model first:
 
 Congratulations, your first model is ready!
 
-![](https://cdn-images-1.medium.com/max/3200/0*UaxafTMqkB_fuNha)
+![](https://cdn-images-1.medium.com/max/800/0*UaxafTMqkB_fuNha)
 > By the way, did you know OpenAPI borrows from another open standard, [JSON Schema](http://json-schema.org/), for the definition of models?! (There are minor details between JSON Schema and OpenAPI models when it comes to advanced features.) Check out some JSON best practices in Stoplight [here](https://docs.stoplight.io/modeling/json-best-practices/introduction).
 
 ## Create Paths
@@ -186,17 +186,17 @@ Below Headers, which we won’t specify here, you’ll see something that looks 
 
 1. Click on the target search box, where you’ll be able to select your *appointment* model.
 
-![](https://cdn-images-1.medium.com/max/3200/0*DoWJHDkJ2zNJ-G0X)
+![](https://cdn-images-1.medium.com/max/800/0*DoWJHDkJ2zNJ-G0X)
 
 In the *Viewer* tab, Stoplight resolves the reference to the model, so you’ll see the fields you defined earlier.
 
 Yay, your first operation is complete!
 
-![](https://cdn-images-1.medium.com/max/3200/0*2lo9yL4D_qJpjOz7)
+![](https://cdn-images-1.medium.com/max/800/0*2lo9yL4D_qJpjOz7)
 
 Let’s move over to the *Code* tab again to see the generated OpenAPI file. As you can see, the path and method with all the attributes you’ve added appear in a subsection of the file called *paths*. Take a look at the schema for the response. The $ref key has a value that starts with # and a pointer to a location somewhere else in the file; in this case, your model. References are a powerful feature in OpenAPI because they make it easier to define certain aspects of your API once and reuse them wherever you need.
 
-![](https://cdn-images-1.medium.com/max/3200/0*eIucs-SmnwXPssU3)
+![](https://cdn-images-1.medium.com/max/800/0*eIucs-SmnwXPssU3)
 
 Now add your second operation:
 
@@ -214,11 +214,11 @@ Now add your second operation:
 
 1. You can define a type for the elements in the array. Click on *$ref* and choose your appointment model, since you’ll be returning a collection of appointments.
 
-![](https://cdn-images-1.medium.com/max/3200/0*u8gEzIFMCu6G6qTW)
+![](https://cdn-images-1.medium.com/max/800/0*u8gEzIFMCu6G6qTW)
 
 Now would be a good time to look at your work in the way that potential developers will see it. Switch over to the *Read* tab and browse around the documentation. Try to approach it from a newcomer’s perspective and evaluate whether it all makes sense. You can always go back to the *Design* and *Code* tabs to make more edits.
 
-![](https://cdn-images-1.medium.com/max/3200/0*rdCW7DfZ147l5k_Z)
+![](https://cdn-images-1.medium.com/max/800/0*rdCW7DfZ147l5k_Z)
 
 Once you’re happy with what you see, click the **Save** button next to the tabs to store your work. Your Stoplight projects work like code repositories (and not like, let’s say Google Docs), which means you have to state when you want to commit your changes explicitly, and you can even provide a comment for the changelog.
 

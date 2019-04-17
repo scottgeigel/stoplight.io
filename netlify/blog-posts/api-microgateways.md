@@ -47,7 +47,7 @@ Once API Gateways had established themselves as a viable security solution, they
 
 Many of the original startups that created API Gateways seven years ago have since been consolidated by larger organizations.
 
-![](https://cdn-images-1.medium.com/max/2000/1*rC-vjJJ_l0P5uZxf9RlLnQ.png)
+![](https://cdn-images-1.medium.com/max/800/1*rC-vjJJ_l0P5uZxf9RlLnQ.png)
 
 ### **Gateways Phase III — Microgateways**
 
@@ -97,7 +97,7 @@ API Microgateways facilitate interactions between microservices, but beyond that
 
 The drawbacks of instituting an API Gateway include the potential for development bottlenecks and they must be managed, developed, and deployed like any other service.
 
-![Castle Rushen, Copyright [Shazz](http://www.geograph.org.uk/profile/28338) and licensed for [reuse](http://www.geograph.org.uk/reuse.php?id=2109775) under this [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/).](https://cdn-images-1.medium.com/max/2000/1*Qwdc-qbPKV13DAUwwXkl8w.jpeg)*Castle Rushen, Copyright [Shazz](http://www.geograph.org.uk/profile/28338) and licensed for [reuse](http://www.geograph.org.uk/reuse.php?id=2109775) under this [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/).*
+![Castle Rushen, Copyright [Shazz](http://www.geograph.org.uk/profile/28338) and licensed for [reuse](http://www.geograph.org.uk/reuse.php?id=2109775) under this [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/).](https://cdn-images-1.medium.com/max/800/1*Qwdc-qbPKV13DAUwwXkl8w.jpeg)*Castle Rushen, Copyright [Shazz](http://www.geograph.org.uk/profile/28338) and licensed for [reuse](http://www.geograph.org.uk/reuse.php?id=2109775) under this [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/).*
 
 ### Lower the Drawbridge
 

@@ -37,7 +37,7 @@ meta:
 
 Discussions allow organizations to track and share conversations at the project and/or file level. They are particularly useful for tracking enhancements, bugs, issues, and tasks. Discussions are displayed in a Projects Home and within the Discussions toolbar. They are sorted by most recent activity.
 
-![Discussions Example](https://cdn-images-1.medium.com/max/2896/1*9SpIHXPJInfzCju_O55VxQ.png)
+![Discussions Example](https://cdn-images-1.medium.com/max/800/1*9SpIHXPJInfzCju_O55VxQ.png)
 *Discussions Example*
 
 ### [Hubs](https://docs.stoplight.io/api-reference/documentation)

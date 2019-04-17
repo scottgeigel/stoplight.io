@@ -7,6 +7,7 @@ import { Link } from 'src/components/Link';
 import { ISection, Section } from 'src/components/Section';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
+import { Image } from 'src/components/Image';
 import { slugify } from 'src/utils/text';
 
 export interface IFeature {
@@ -65,9 +66,12 @@ export const Feature: React.FunctionComponent<IFeature> = props => {
       </div>
 
       <div className="flex-1 w-1/2 md:hidden relative">
-        <div
+        <Image
+          src={image}
           className="bg-center bg-cover bg-no-repeat h-128 w-128 rounded-full"
-          style={{ backgroundImage: image ? `url(${image})` : 'none', boxShadow: '0 0 4px rgba(0, 0, 0, 0.5)' }}
+          style={{ boxShadow: '0 0 4px rgba(0, 0, 0, 0.5)' }}
+          size="md"
+          useDiv
         />
       </div>
     </div>

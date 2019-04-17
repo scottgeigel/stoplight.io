@@ -33,7 +33,7 @@ meta:
 
 **[Hubs] Published Hub Search:** Search is back! Users can now instantly search the content of all the pages in your Hub.
 
-![](https://cdn-images-1.medium.com/max/4000/0*aBLqg4zXoL67b5uQ.png)
+![](https://cdn-images-1.medium.com/max/800/0*aBLqg4zXoL67b5uQ.png)
 > *Note: If you rebuild your docs, you will have search added by default*
 
 ## Enhancements 💪

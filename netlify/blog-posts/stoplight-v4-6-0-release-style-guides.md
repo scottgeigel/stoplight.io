@@ -33,7 +33,7 @@ meta:
 
 You can now customize the style and validation settings of your API design. This provides a practical method for enforcing API design rules over multiple APIs. You can enable or disable rules that monitor and validate things like your API, operations, Markdown, parameters, paths, and references. Learn more in the [docs](https://docs.stoplight.io/modeling/modeling-with-openapi/style-validation-rules).
 
-![Example of OpenAPI Specification Style Guide](https://cdn-images-1.medium.com/max/4120/1*4LTwOQyn0nQDf8kxms6aBA.png)
+![Example of OpenAPI Specification Style Guide](https://cdn-images-1.medium.com/max/800/1*4LTwOQyn0nQDf8kxms6aBA.png)
 *Example of OpenAPI Specification Style Guide*
 
 ### Personal plans are now free!

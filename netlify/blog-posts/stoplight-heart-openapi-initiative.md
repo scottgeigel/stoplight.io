@@ -31,7 +31,7 @@ meta:
 ---
 We are proud to announce a partnership with the OpenAPI Initiative (OAI). In 2015, we took notice of the gathering community and the potential for the OpenAPI Specification (OAS), formerly known as Swagger, as the industry standard, and started building our platform around it as the single source of truth for describing APIs. We’ve come a long way since then, and OAS continues to impress under the stewardship of OAI. We look forward to the future of OAS as the standard for describing APIs, and the exciting opportunities it fosters.
 
-![Modeling with Stoplight](https://cdn-images-1.medium.com/max/3326/1*CUxuTgeJ-59ziIJIeUsSgQ.png)*Modeling with Stoplight*
+![Modeling with Stoplight](https://cdn-images-1.medium.com/max/800/1*CUxuTgeJ-59ziIJIeUsSgQ.png)*Modeling with Stoplight*
 
 Here at Stoplight, everything begins with your specification. Once you have [created an OpenAPI specification in Stoplight](https://stoplight.io), you can leverage the spec to drive your entire API development process. Rapidly create contract tests, set up mock servers, publish API documentation with a click, and much more.
 

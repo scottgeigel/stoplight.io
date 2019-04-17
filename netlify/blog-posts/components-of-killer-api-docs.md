@@ -45,7 +45,7 @@ At a high level, good documentation is organized, detailed, accurate, and unambi
 
 Organizing API documentation can be almost as tough as designing the hierarchy of the API. While the documentation can generally follow the design of the API itself, it is important to identify and highlight important topics that do not fit within that paradigm.
 
-![](https://cdn-images-1.medium.com/max/2618/0*WCSYf3o6p-OM6hWj.)
+![](https://cdn-images-1.medium.com/max/800/0*WCSYf3o6p-OM6hWj.)
 
 *Strava API Documentation*
 
@@ -59,7 +59,7 @@ Have you ever turned on an unfamiliar faucet, only to find out that the hot and 
 
 In writing, it is often said that less is more. Why use a paragraph when a sentence will do? Unfortunately, this is *not* the case with API documentation. Nobody has ever complained that an API’s documentation is *too* detailed. As long as it is clear and properly organized, the more information you can provide about an endpoint, parameter, or expected response, the better.
 
-![](https://cdn-images-1.medium.com/max/2632/0*mjg-qm39Ru7svpjw.)
+![](https://cdn-images-1.medium.com/max/800/0*mjg-qm39Ru7svpjw.)
 
 *Plaid API Documentation*
 
@@ -69,7 +69,7 @@ The[ Plaid API documentation](https://plaid.com/docs/api/) does an excellent job
 
 Every long story needs a tl;dr. No matter how detailed your documentation is, the best way to learn how to use a system is through examples. Clear and concise examples are important because they show an API in action. They take abstract documentation and ground it in reality. It is important to note that while detailed documentation is important, examples are best when generalized. They should be a good representation of a typical request and response, with the detailed parameter and endpoint descriptions providing more depth and context.
 
-![](https://cdn-images-1.medium.com/max/2000/0*b8hE97kFCRZ-rb3S.)
+![](https://cdn-images-1.medium.com/max/800/0*b8hE97kFCRZ-rb3S.)
 
 *Stripe API Documentation*
 

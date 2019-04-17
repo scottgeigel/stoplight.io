@@ -42,7 +42,7 @@ At the onset it felt off, as if it was applied without much thought, but after s
 
 * While a Structural Engineer works with physical objects, a Software Engineer works in the abstract and metaphysical. A Software Engineer may no longer have to deal with the physics of their product, but they still work in an environment governed by strict rules that need to be navigated.
 
-![Computer Engineers don’t wear yellow hats or point at things with rolled up blueprints](https://cdn-images-1.medium.com/max/2000/1*XJgMM76kHbhnndOscZrYDg.png)*Computer Engineers don’t wear yellow hats or point at things with rolled up blueprints*
+![Computer Engineers don’t wear yellow hats or point at things with rolled up blueprints](https://cdn-images-1.medium.com/max/800/1*XJgMM76kHbhnndOscZrYDg.png)*Computer Engineers don’t wear yellow hats or point at things with rolled up blueprints*
 
 * Land Developers, similarly, are involved in the modification of existing structures or the creation of new ones. Web Developers have moved on from vacant lots to domains. They take raw, undefined space, and create something new.
 
@@ -50,7 +50,7 @@ The key to these terms was adopting the perception of a domain, local host, or a
 
 ## The Escape Key
 
-![In the end, Shift and Delete brought him down](https://cdn-images-1.medium.com/max/2000/1*loRcJRQEzuOqPv7vwEughg.jpeg)*In the end, Shift and Delete brought him down*
+![In the end, Shift and Delete brought him down](https://cdn-images-1.medium.com/max/800/1*loRcJRQEzuOqPv7vwEughg.jpeg)*In the end, Shift and Delete brought him down*
 
 Described as a button that “[reminds the machine it has a human master](http://www.nytimes.com/2012/10/07/magazine/who-made-that-escape-key.html),” the escape key has been hiding out in the top left of your keyboard since 1960. Created by Bob Bemer, an IBM employee, the escape key was originally used to help him switch between different kinds of code.
 
@@ -58,23 +58,23 @@ Now it functions as an interrupter, a last resort for anyone wanting to get a co
 
 ## Hot Key
 
-![No longer lukewarm. The McDonalds coffee cup of keys](https://cdn-images-1.medium.com/max/2000/1*H0QFfthMVagbCN_P9rRhPw.jpeg)*No longer lukewarm. The McDonalds coffee cup of keys*
+![No longer lukewarm. The McDonalds coffee cup of keys](https://cdn-images-1.medium.com/max/800/1*H0QFfthMVagbCN_P9rRhPw.jpeg)*No longer lukewarm. The McDonalds coffee cup of keys*
 
 ## Java/JavaScript
 
-![Gears sold separately](https://cdn-images-1.medium.com/max/2000/1*nOyZAagww2aY_fVATpBF1Q.jpeg)*Gears sold separately*
+![Gears sold separately](https://cdn-images-1.medium.com/max/800/1*nOyZAagww2aY_fVATpBF1Q.jpeg)*Gears sold separately*
 
 Evidently the creators of one of the most widely used coding languages in the world decided to dedicate their creation to coffee. Apparently caffeine was to spot on. Also functions as an advisory: drink coffee while using.
 
 ## Bug
 
-![](https://cdn-images-1.medium.com/max/2000/1*2tG8Mb1KufdcpJl4L1EWIA.jpeg)
+![](https://cdn-images-1.medium.com/max/800/1*2tG8Mb1KufdcpJl4L1EWIA.jpeg)
 
 Commonly attributed to Grace Hopper’s finding of an actual moth while working on Harvard University’s Mark II calculator in 1945, this term is actually much older. Its use goes back to Edison’s time as a form of slang which most likely derives itself from Bugaboo, Bugbear, and Boogeyman. Maybe that will make you think twice before trying to squash a bug…it may be more appropriate to try to exorcise the bug or release it. Perhaps it is haunting your code for past transgressions.
 
 ## Glitch
 
-![Fail](https://cdn-images-1.medium.com/max/2000/1*z-w4ZFU1f772ZEAq7Siakw.gif)*Fail*
+![Fail](https://cdn-images-1.medium.com/max/800/1*z-w4ZFU1f772ZEAq7Siakw.gif)*Fail*
 
 Some attribute this little gem to the US Air Force for failed rocket experiments in 1965. Why glitch? Because they literally could not think of another word to explain an unexpected error that no one has figured out yet.
 
@@ -88,7 +88,7 @@ Like Atlas from Greek Myths and “The Weight” described by The Band. This ter
 
 ## Sandbox
 
-![More Yellow Hats and Blueprints Needed](https://cdn-images-1.medium.com/max/2000/1*7SrHYKxpvOx-acVs0fXPCQ.jpeg)*More Yellow Hats and Blueprints Needed*
+![More Yellow Hats and Blueprints Needed](https://cdn-images-1.medium.com/max/800/1*7SrHYKxpvOx-acVs0fXPCQ.jpeg)*More Yellow Hats and Blueprints Needed*
 
 Defined as a testing environment for unverified code that removes the risk of harming the operating system or machine. A place where you can play around with new or untested code, this term functions on two levels:
 
@@ -106,13 +106,13 @@ A term referring to the process of Simultaneous Peripheral Operations On-Line. S
 
 ## Daemon
 
-![](https://cdn-images-1.medium.com/max/2000/1*UKlJgvm-9E3w85l6U_zVRw.jpeg)
+![](https://cdn-images-1.medium.com/max/800/1*UKlJgvm-9E3w85l6U_zVRw.jpeg)
 
 Another term originating from the labs at MIT. Daemon refers to a program that runs in the background without any input from the user. Weirdly enough, this term originates from a thought experiment called Maxwell’s Demon where a “Demon” sorts molecules by pulling a lever that opens a trapdoor. I like to imagine it as a kind of spirit guide for your computer that haunts your computer by spinning up its hard drive when you thought it was asleep. Nightmares from what you forced it to do while it was awake.
 
 ## All Your Base Are Belong to Us
 
-![](https://cdn-images-1.medium.com/max/2004/1*brGTmLsPjYYaAhDOyVeprw.jpeg)
+![](https://cdn-images-1.medium.com/max/800/1*brGTmLsPjYYaAhDOyVeprw.jpeg)
 
 A video game original, this term came about by a poor translation of a Japanese games dialogue. What does it have to do with computer jargon? Not much other than hilarious.
 

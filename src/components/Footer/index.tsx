@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import { withSiteData } from 'react-static';
 
+import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 
 interface IFooterColumnLink {
@@ -39,7 +40,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
       <nav className="container mx-auto flex flex-col items-center">
         <div className="py-4">
           <Link to="/">
-            <img className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
+            <Image className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
           </Link>
         </div>
 

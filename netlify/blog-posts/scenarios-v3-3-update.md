@@ -45,9 +45,9 @@ Our OAS/Swagger 2 modeling tool received a big update. Not only did we squash al
 
 * We now support the global security property in the UI.
 
-![New context-aware actions in the sidebar to quickly add to your spec.](https://cdn-images-1.medium.com/max/2000/1*raBK-gZJrKBBie5wp8yV-g.gif)*New context-aware actions in the sidebar to quickly add to your spec.*
+![New context-aware actions in the sidebar to quickly add to your spec.](https://cdn-images-1.medium.com/max/800/1*raBK-gZJrKBBie5wp8yV-g.gif)*New context-aware actions in the sidebar to quickly add to your spec.*
 
-![Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.](https://cdn-images-1.medium.com/max/2220/1*xxGweKczpkW4wCGwc5VpiA.gif)*Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.*
+![Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.](https://cdn-images-1.medium.com/max/800/1*xxGweKczpkW4wCGwc5VpiA.gif)*Switch between UI and “raw” edit modes. Navigate the sidebar and the relevant parts of your spec will highlight.*
 
 ### Share Model Data With Connections
 

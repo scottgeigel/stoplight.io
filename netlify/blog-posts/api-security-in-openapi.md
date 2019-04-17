@@ -89,7 +89,7 @@ Here’s how to specify [Basic Authentication](https://docs.stoplight.io/modelin
 
 1. Add a short description if you like
 
-![](https://cdn-images-1.medium.com/max/3200/0*vHvDoQ8Y0HzvtpNQ)
+![](https://cdn-images-1.medium.com/max/800/0*vHvDoQ8Y0HzvtpNQ)
 
 Let’s move to the Code tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the *securityDefinitions* section.
 
@@ -105,7 +105,7 @@ To apply your scheme to an operation, follow these steps:
 
 1. Choose your scheme (e.g. *basic-auth*) in the drop-down or type its name in the field
 
-![](https://cdn-images-1.medium.com/max/3200/0*Mmal3c3Xi6J846A4)
+![](https://cdn-images-1.medium.com/max/800/0*Mmal3c3Xi6J846A4)
 
 When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. You might wonder why there’s an empty JSON array behind your scheme’s key. The reason for it is that other security types support additional configuration which is not applicable to Basic Authentication.
 
@@ -127,7 +127,7 @@ Here’s how to specify API Key authentication for your API in Stoplight:
 
 1. Add a short description if you like
 
-![](https://cdn-images-1.medium.com/max/3200/0*GPw4EFTggUF-Eu8d)
+![](https://cdn-images-1.medium.com/max/800/0*GPw4EFTggUF-Eu8d)
 
 Let’s move to the *Code* tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the securityDefinitions section.
 
@@ -143,7 +143,7 @@ To apply your scheme to an operation, follow these steps:
 
 1. Choose your scheme (e.g. *apikey-auth*) in the drop-down or type its name in the field. Repeat this if you want to add more than one scheme
 
-![](https://cdn-images-1.medium.com/max/3200/0*C450bDqkY7tApdSQ)
+![](https://cdn-images-1.medium.com/max/800/0*C450bDqkY7tApdSQ)
 
 When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. As there’s no additional configuration for API Keys, the scheme’s key points to an empty JSON array.
 
@@ -167,7 +167,7 @@ Here’s how to specify [OAuth](https://docs.stoplight.io/modeling/modeling-with
 
 1. Add a short description if you like
 
-![](https://cdn-images-1.medium.com/max/3200/0*eYY3LFcdAWtoAdE9)
+![](https://cdn-images-1.medium.com/max/800/0*eYY3LFcdAWtoAdE9)
 
 Let’s move to the *Code* tab to see how it looks in OpenAPI. You’ll find your scheme with its key and attributes in the *securityDefinitions* section.
 
@@ -185,7 +185,7 @@ To apply your scheme to an operation, follow these steps:
 
 1. As soon as you add an OAuth scheme, another input appears which allows you to define the scopes. Choose the scope in the drop-down or type its name. You can also add multiple scopes. Note that, [according to the OpenAPI specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#security-requirement-object), the intended semantics behind this is that the user must have approved all of these scopes
 
-![](https://cdn-images-1.medium.com/max/3200/0*OC01UuRj4rT4T3ee)
+![](https://cdn-images-1.medium.com/max/800/0*OC01UuRj4rT4T3ee)
 
 When you switch to the *Code* tab, you can see your path and operation in OpenAPI which now includes the *security* attribute that defines the security requirement and includes your scheme. Your scheme key is mapped to the required scopes for the operation.
 
