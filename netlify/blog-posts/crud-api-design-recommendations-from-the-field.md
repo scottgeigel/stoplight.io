@@ -9,6 +9,7 @@ publishedDate: 2019-04-24T17:01:00.707Z
 author: Lukas Rosenstock
 title: CRUD API Design Recommendations From the Field
 subtitle: 'When and how it makes sense to create, read, update, and delete in your API'
+image: /images/create-wall.jpg
 color: black
 tabs:
   - {}
