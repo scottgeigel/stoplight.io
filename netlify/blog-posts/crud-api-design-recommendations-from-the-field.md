@@ -10,18 +10,27 @@ author: Lukas Rosenstock
 title: CRUD API Design Recommendations From the Field
 subtitle: 'When and how it makes sense to create, read, update, and delete in your API'
 image: /images/create-wall.jpg
-color: black
-tabs:
-  - {}
-disqus: {}
+color: blue
+tabs: []
+disqus:
+  enabled: true
 actionBar:
   buttons:
     - color: purple
   enabled: false
 meta:
-  image: /images/create-wall.jpg
+  description: 'When and how it makes sense to create, read, update, and delete in your API'
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  twitter: {}
+  title: CRUD API Design Recommendations From the Field | Stoplight
+  image: /images/create-wall.jpg
+  twitter:
+    description: >-
+      When and how it makes sense to create, read, update, and delete in your
+      API
+    title: CRUD API Design Recommendations From the Field | Stoplight
+    image: /images/create-wall.jpg
+    username: '@stoplightio'
 ---
 Good API design is essential for excellent developer experience. One straightforward way to approach good API design is to follow a certain design paradigm and the best practices that come with it. CRUD is one of those common design paradigms that works well for a lot of APIs.
 
