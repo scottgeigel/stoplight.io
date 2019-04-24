@@ -22,13 +22,13 @@ meta:
   description: 'When and how it makes sense to create, read, update, and delete in your API'
   favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  title: CRUD API Design Recommendations From the Field | Stoplight
+  title: CRUD API Design Recommendations From the Field | Stoplight API Corner
   image: /images/create-wall.jpg
   twitter:
     description: >-
       When and how it makes sense to create, read, update, and delete in your
       API
-    title: CRUD API Design Recommendations From the Field | Stoplight
+    title: CRUD API Design Recommendations From the Field | Stoplight API Corner
     image: /images/create-wall.jpg
     username: '@stoplightio'
 ---
