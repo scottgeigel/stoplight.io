@@ -42,7 +42,7 @@ There are all sorts of places your generated data could end up:
 * API references and other documentation
 * Input for integration tests
 * Replies to support emails
-* Samples in your OpenAPI definitions
+* Samples in your OpenAPI/Swagger definitions
 
 Many times you’ll find the same mock data gets copied to multiple locations. It may seem simple enough to make up your own data, especially if the schema is trivial:
 
@@ -92,11 +92,11 @@ Within the repeat block there are four fields that use built-in data types and f
 
 You’ll find a handful of other tags and examples on the site. It takes a little effort to get going, but much less than making up the data yourself. For large one-off JSON data files, this is a relatively quick way to get some realistic sample data that won’t give away anyone’s personal information.
 
-For something more ongoing, attached to mock servers, you’ll be better off starting from an OpenAPI description, as described in the next section.
+For something more ongoing, attached to mock servers, you’ll be better off starting from an OpenAPI (previously Swagger) description, as described in the next section.
 
 ## Connect a Mock Server to Produce Random JSON Data
 
-A mock API server is useful during development and testing when live data is either unavailable or unreliable. Here, you’re looking to make a live API call and have it imitate a real API server by providing realistic responses to your requests. Standing up a mock server with static responses is trivial, but then the responses aren’t generated. Instead, use an OpenAPI description of your API and Stoplight to generate your mock servers.
+A mock API server is useful during development and testing when live data is either unavailable or unreliable. Here, you’re looking to make a live API call and have it imitate a real API server by providing realistic responses to your requests. Standing up a mock server with static responses is trivial, but then the responses aren’t generated. Instead, use an OpenAPI description of your API (or import you Swagger file) and Stoplight to generate your mock servers.
 
 [Login to Stoplight](https://next.stoplight.io) and create or import an API. If you don’t already have an OpenAPI description, you’ll be able to export one from here. The format is widely embraced as a way to define what’s possible with an API in a shareable, machine-readable way. For teams designing APIs and microservices, OpenAPI documents are often the source of truth.
 
@@ -122,4 +122,4 @@ Now you can click _Home_ and Send Test Requests for your mock server to `/users`
 
 ## How Will You Use Your Mock Server?
 
-Now that you have a mock server connected to your OpenAPI description, you can use it to make test calls. Share it with your co-workers or API consumers so you can get feedback before you build commit your API to code.
+Now that you have a mock server connected to your OpenAPI or Swagger description, you can use it to make test calls. Share it with your co-workers or API consumers so you can get feedback before you build commit your API to code.
