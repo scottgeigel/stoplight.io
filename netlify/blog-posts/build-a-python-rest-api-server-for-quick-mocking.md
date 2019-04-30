@@ -20,11 +20,16 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: Use Flask or Falcon to serve API requests
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
+  title: Build a Python REST API Server for Quick Mocking | Stoplight API Corner
+  image: /images/python-snake.jpg
   twitter:
     description: Use Flask or Falcon to serve API requests
-    title: Build a Python REST API Server for Quick Mocking
+    title: Build a Python REST API Server for Quick Mocking | Stoplight API Corner
     image: /images/python-snake.jpg
+    username: '@stoplightio'
 ---
 Throughout web and mobile software, you’ll find APIs to exchange data. They are now a foundational element of the development process. Many organizations have adopted an API-first approach, where this interface that programmers see is built before one that users see.
 
