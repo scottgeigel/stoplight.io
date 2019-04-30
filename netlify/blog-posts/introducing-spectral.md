@@ -50,7 +50,7 @@ At Stoplight, we want to promote consistent API design best practices. We believ
 
 Our goal for Spectral is to create a JSON linter that promotes standards with the flexibility for custom rule creation to validate and lint any JSON. A lot of tools out there provide validation (i.e. Is this valid JSON?) and there are several tools that provide JSON Schema validation (i.e. Is this JSON valid against this schema file?), but Spectral is the first to allow you to lint any JSON document.
 
-For example, while an OpenAPI document might be entirely valid, it could be missing important like descriptions for parameters or other problematic design issues. Spectral can warn about possible improvements to ensure API definitions can reach their full potential, without needing to have special “OpenAPI Gatekeepers” review every change to the documents.
+For example, while an OpenAPI document might be entirely valid, it could be missing important fields like descriptions for parameters or other problematic design issues. Spectral can warn about possible improvements to ensure API definitions can reach their full potential, without needing to have special “OpenAPI Gatekeepers” review every change to the documents.
 
 Spectral isn’t just a fun side project for our team. It is an integral part of our Stoplight platform. Spectral powers all of the OpenAPI validation and linting within the platform. It also helps users turn specific style rules on and off.
 
@@ -205,7 +205,7 @@ We are here to help. We’ve seen some progress on an AsyncAPI ruleset being cre
 
 ### More Integrations
 
-One of the first integrations I built with Spectral is a GitHub pull requests bot that runs when a pull request is opened with changes to your API specification. I’d love to help people build more integrations like this. Other ideas include adding Spectral to your specification review process or your Travis CI, Jenkins, or CircleCI pipelines. 
+One of the first integrations I built with Spectral is a GitHub pull requests bot that runs when a pull request is opened with changes to your API specification. I’d love to help people build [more integrations](https://github.com/stoplightio/spectral#example-implementations) like this. Other ideas include adding Spectral to your specification review process or your Travis CI, Jenkins, or CircleCI pipelines. 
 
 Also, thanks to Mike Ralphson, who contributed our first major community contribution, we now have a CLI for Spectral. 
 
