@@ -52,7 +52,7 @@ ul {
 
     &:nth-of-type(even) {
       background: #f5f7f9;
-      z-index: 50;
+      z-index: 30;
     }
 
     &:first-of-type {
@@ -1132,4 +1132,36 @@ pre.line-numbers > code {
 .line-numbers .line-highlight:before,
 .line-numbers .line-highlight:after {
   content: none;
+}
+
+// Sticky header
+.headroom {
+  // Only on desktop - tailwind sm + 1px
+  @media (min-width: 768px) {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    transition: background-color 0.3s ease;
+    &:not(.headroom--unfixed) {
+      background: inherit;
+      z-index: 100;
+    }
+  }
+}
+
+// Special sticky header signup button
+.headroom {
+  .sign-in-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // Sign In/Up are not same width
+    min-width: 112px;
+    transition: background-color 0.25s ease-in;
+  }
+  .alternate--signup {
+    background-color: #38c172;
+  }
 }

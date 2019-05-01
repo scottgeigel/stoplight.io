@@ -32,6 +32,12 @@ export default {
           required: false,
         },
         {
+          name: 'hideMobile',
+          label: 'Hide this link in the mobile menu?',
+          widget: 'boolean',
+          required: false,
+        },
+        {
           name: 'icon',
           label: 'Icon (button only)',
           widget: 'fontawesome-solid',

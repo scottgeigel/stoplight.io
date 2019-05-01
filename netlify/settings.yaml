@@ -114,6 +114,7 @@ header:
         - fas
         - arrow-right
       isButton: true
+      hideMobile: true
       title: Sign In
 actionBar:
   buttons:

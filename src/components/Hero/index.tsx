@@ -158,7 +158,7 @@ const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, c
 
   if (title) {
     elems.push(
-      <div key="2" className="font-semibold">
+      <div key="2" className="font-semibold whitespace-no-wrap">
         {title}
       </div>
     );
