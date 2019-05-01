@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import * as React from 'react';
 import { Head, withRouteData, withSiteData } from 'react-static';
+import Headroom from 'react-headroom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -58,12 +59,12 @@ const HeaderDropdown = ({ width, title, links }) => {
   );
 };
 
-const HeaderButton = ({ title, href, icon }) => {
+const HeaderButton = ({ title, href, icon, className }) => {
   return (
     <Link
       key="2"
       to={href}
-      className="text-lg font-semibold py-2 px-4 ml-6 flex items-center border rounded text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap"
+      className={cn("text-lg font-semibold py-2 px-4 ml-6 flex items-center border rounded text-white hover:text-white border-lighten-300 hover:border-lighten-500 bg-lighten-50 whitespace-no-wrap", className || '')}
     >
       {title} {icon && <FontAwesomeIcon icon={icon} className="ml-3" />}
     </Link>
@@ -88,7 +89,7 @@ const Desktop = ({ items }) => {
             <Link
               key={index}
               to={item.href}
-              className="text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold"
+              className={cn("text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold", item.className || '')}
             >
               {item.title}
             </Link>
@@ -108,6 +109,7 @@ export interface IHeaderLink {
 export interface IHeaderItem {
   title: string;
   href: string;
+  className?: string;
   links?: IHeaderLink[];
 }
 
@@ -212,29 +214,85 @@ export interface IHeader {
     items: IHeaderItem[];
   };
   meta: any;
+  color?: string;
 }
 
-export const Header: React.FunctionComponent<IHeader> = ({ header, meta }) => {
-  return (
-    <React.Fragment>
-      <Head key="meta">
-        <title>{meta && meta.title}</title>
-      </Head>
-      <header key="header" className="absolute z-10 pin-t pin-l pin-r">
-        <div className="container">
-          <nav className={cn(headerHeightClass, 'flex items-center')}>
-            <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
-              Stoplight
-            </Link>
+export interface IHeaderState {
+  unpinned: boolean;
+}
 
-            <Desktop items={header && header.items} />
+class Header extends React.Component<IHeader, IHeaderState> {
+  public state: IHeaderState = {
+    unpinned: false,
+  };
 
-            <Mobile items={header && header.items} />
-          </nav>
-        </div>
-      </header>
-    </React.Fragment>
-  );
-};
+  constructor(props) {
+    super(props);
+
+    this.onUnpin = this.onUnpin.bind(this);
+    this.onUnfix = this.onUnfix.bind(this);
+  }
+
+  onUnpin() {
+    this.setState({unpinned: true});
+  }
+
+  onUnfix() {
+    this.setState({unpinned: false});
+  }
+
+  public render() {
+    const { header, meta, color } = this.props;
+    const { unpinned } = this.state;
+    const bgClassName = unpinned ? `bg-${color || 'black'}` : '';
+    let headerItems = header.items || [];
+
+    if (headerItems.length) {
+      if (unpinned) {
+        headerItems = headerItems.slice();
+      }
+
+      // Sign In / Sign Up is impure as it breaks configuration -> rendering flow
+      // Keeping it small
+      for (let i = 0; i < headerItems.length; i++) {
+        const item = headerItems[i];
+        if (item.title === 'Sign In') {
+          item.className = 'sign-in-link';
+          if (unpinned) {
+            headerItems[i] = {
+              ...item,
+              title: 'Sign Up',
+              className: `${item.className || ''} alternate--signup`,
+            };
+          }
+          break;
+        }
+      }
+    }
+
+    return (
+      <React.Fragment>
+        <Head key="meta">
+          <title>{meta && meta.title}</title>
+        </Head>
+        <header key="header" className="absolute custom--z-100 pin-t pin-l pin-r">
+          <Headroom disableInlineStyles={true} downTolerance={65} onUnpin={this.onUnpin} onUnfix={this.onUnfix} className={cn(bgClassName)}>
+            <div className="container">
+              <nav className={cn(headerHeightClass, 'flex items-center')}>
+                <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
+                  Stoplight
+                </Link>
+
+                <Desktop items={headerItems} />
+
+                <Mobile items={headerItems} />
+              </nav>
+            </div>
+          </Headroom>
+        </header>
+      </React.Fragment>
+    );
+  }
+}
 
 export default withSiteData(withRouteData(Header));

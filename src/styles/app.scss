@@ -1133,3 +1133,41 @@ pre.line-numbers > code {
 .line-numbers .line-highlight:after {
   content: none;
 }
+
+
+// tailwind does not have z-100
+.custom--z-100 {
+  z-index: 100;
+}
+
+// Sticky header
+.headroom {
+  // Only on desktop - tailwind sm + 1px
+  @media (min-width: 768px) {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    transition: background-color 0.3s ease;
+    &:not(.headroom--unfixed) {
+      background: inherit;
+      z-index: 100;
+    }
+  }
+}
+
+// Special sticky header signup button
+.headroom {
+  .sign-in-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // Sign In/Up are not same width
+    min-width: 112px;
+    transition: background-color 0.25s ease-in;
+  }
+  .alternate--signup {
+    background-color: #38c172;
+  }
+}
