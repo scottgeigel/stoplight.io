@@ -10,7 +10,7 @@ subtitle: >-
   Stoplight promotes a design-first approach. Developing good design-first
   practices will minimize future cost, speed up your time to market, and lead to
   more consistent, higher quality APIs.
-color: green
+color: blue
 tabs:
   - {}
 actionBar:
@@ -18,8 +18,22 @@ actionBar:
     - color: purple
   enabled: false
 meta:
+  description: >-
+    Stoplight promotes a design-first approach. Developing good design-first
+    practices will minimize future cost, speed up your time to market, and lead
+    to more consistent, higher quality APIs.
+  favicon: /images/mark_light_bg.png
   robots: 'index, follow'
-  twitter: {}
+  title: API Design with Stoplight | Stoplight Webinar
+  image: /images/aaa_blog_example.png
+  twitter:
+    description: >-
+      Stoplight promotes a design-first approach. Developing good design-first
+      practices will minimize future cost, speed up your time to market, and
+      lead to more consistent, higher quality APIs.
+    title: API Design with Stoplight | Stoplight Webinar
+    image: /images/aaa_blog_example.png
+    username: '@stoplightio'
 ---
 <style>.markdown-body { max-width: 100% !important; } </style>
 
