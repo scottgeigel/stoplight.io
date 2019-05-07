@@ -1,0 +1,97 @@
+path: /cool-vendor
+title: Gartner Cool Vendor
+color: black
+tags: []
+relatedTags: []
+hero:
+  aligned: left
+  bgColor: black
+  buttons: []
+  cards: []
+  cta:
+    color: purple
+    href: 'https://next.stoplight.io'
+    name: Get Started Now
+  image: {}
+  skew: rounded
+  subtitle: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet
+    maximus nulla, sed consectetur neque lacinia ut. Nam consectetur rhoncus
+    elit, mattis scelerisque nisi tincidunt eu. In fringilla, nunc eu
+    ullamcorper posuere, ipsum leo rutrum enim, ut blandit purus velit sit amet
+    felis. Vivamus vehicula pulvinar nibh, vitae varius nisl cursus pulvinar.
+  title: Stoplight is named a Gartner 2019 Cool Vendor
+collage:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  description: ''
+  images: []
+imageCallout:
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet
+    maximus nulla, sed consectetur neque lacinia ut. Nam consectetur rhoncus
+    elit, mattis scelerisque nisi tincidunt eu. In fringilla, nunc eu
+    ullamcorper posuere, ipsum leo rutrum enim, ut blandit purus velit sit amet
+    felis. Vivamus vehicula pulvinar nibh, vitae varius nisl cursus pulvinar.
+    Suspendisse sit amet enim nunc. Sed in lacinia diam. Morbi mauris odio,
+    vulputate quis consectetur eget, auctor a felis. Maecenas facilisis, lorem
+    quis blandit lobortis, turpis tellus lobortis ex, nec imperdiet diam eros
+    quis turpis. Vestibulum placerat non risus eu ultrices. Aliquam rutrum
+    tincidunt pellentesque. Fusce placerat sem ligula, nec mollis justo egestas
+    sed.
+featureSection:
+  actionBar:
+    buttons:
+      - color: purple
+        href: /demo
+        outlined: true
+        title: Request a Demo
+      - color: purple
+        href: 'https://next.stoplight.io'
+        outlined: false
+        title: Create a Free Account
+    enabled: true
+    text: 'Getting started is easy. Be up and running in minutes. '
+  cta:
+    color: black
+    href: 'https://next.stoplight.io'
+  features:
+    - description: >-
+        Maecenas facilisis, lorem quis blandit lobortis, turpis tellus lobortis
+        ex, nec imperdiet diam eros quis turpis. Vestibulum placerat non risus
+        eu ultrices. Aliquam rutrum tincidunt pellentesque. Fusce placerat sem
+        ligula, nec mollis justo egestas sed.
+      shortName: Feature
+      title: Feature 1
+    - description: >-
+        Maecenas facilisis, lorem quis blandit lobortis, turpis tellus lobortis
+        ex, nec imperdiet diam eros quis turpis. Vestibulum placerat non risus
+        eu ultrices. Aliquam rutrum tincidunt pellentesque. Fusce placerat sem
+        ligula, nec mollis justo egestas sed.
+      shortName: Feature 2
+      title: Feature 2
+    - description: >-
+        Maecenas facilisis, lorem quis blandit lobortis, turpis tellus lobortis
+        ex, nec imperdiet diam eros quis turpis. Vestibulum placerat non risus
+        eu ultrices. Aliquam rutrum tincidunt pellentesque. Fusce placerat sem
+        ligula, nec mollis justo egestas sed.
+      shortName: Feature 3
+      title: Feature 3
+    - description: >-
+        Maecenas facilisis, lorem quis blandit lobortis, turpis tellus lobortis
+        ex, nec imperdiet diam eros quis turpis. Vestibulum placerat non risus
+        eu ultrices. Aliquam rutrum tincidunt pellentesque. Fusce placerat sem
+        ligula, nec mollis justo egestas sed.
+      shortName: Feature 4
+      title: Feature 4
+hubspot:
+  formId: 14W8z0BSfT-S-LGPsKdlgXg2wve6
+  portalId: '4892910'
+  title: Hubspot Form
+meta:
+  robots: 'index, follow'
+  twitter: {}
