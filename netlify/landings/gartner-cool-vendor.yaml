@@ -91,7 +91,7 @@ featureSection:
 hubspot:
   formId: e16f33d0-149f-4fe4-be2c-63ec29d9605e
   portalId: '4892910'
-  title: Hubspot Form
+  title: ''
 meta:
   robots: 'index, follow'
   twitter: {}
