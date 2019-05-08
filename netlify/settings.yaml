@@ -92,7 +92,7 @@ header:
         - href: /webinars/api-design-with-stoplight/
           icon:
             - fas
-            - desktop
+            - video
           subtitle: Learn how to design with Stoplight
           title: Webinars
           titleColor: red
