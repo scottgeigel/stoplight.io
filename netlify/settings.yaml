@@ -95,7 +95,7 @@ header:
             - video
           subtitle: Learn how to design with Stoplight
           title: Webinars
-          titleColor: red
+          titleColor: purple
       title: Resources
       width: 400
     - links:
