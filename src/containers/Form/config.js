@@ -49,11 +49,11 @@ export default {
       fields: [
         {
           name: 'title',
-          widget: 'image',
+          widget: 'markdown',
         },
         {
           name: 'description',
-          widget: 'string',
+          widget: 'markdown',
         },
       ],
     },
