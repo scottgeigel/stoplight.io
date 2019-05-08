@@ -40,6 +40,7 @@ export const init = () => {
   library.add(faTimes);
   library.add(faBookmark);
   library.add(faBolt);
+  library.add(faVideo);
 
   library.add(faTwitter);
   library.add(faLinkedin);
