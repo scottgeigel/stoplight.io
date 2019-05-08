@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
@@ -33,7 +34,7 @@ export const Form: React.FunctionComponent<IForm> = ({
   testimonials,
   relatedPages,
 }) => {
-  const hasLeftContent = leftContent && leftContent.title && leftContent.description ? true : false;
+  const hasLeftContent = leftContent && leftContent.description ? true : false;
 
   return (
     <React.Fragment>
@@ -53,23 +54,31 @@ export const Form: React.FunctionComponent<IForm> = ({
 
             {leftContent &&
               leftContent.description && (
-                <div className="mt-10 text-lg" dangerouslySetInnerHTML={{ __html: leftContent.description }} />
+                <div
+                  className={cn('markdown-body', leftContent.title ? 'mt-10' : '')}
+                  dangerouslySetInnerHTML={{ __html: leftContent.description }}
+                />
               )}
           </div>
         )}
 
         {hubspot && (
           <div className={hasLeftContent ? '-mt-64 md:-mt-24 -mr-64 md:mr-0 z-10 relative md:w-full' : 'flex-1 -mt-24'}>
-            <HubSpotForm className="p-8" portalId={hubspot.portalId} formId={hubspot.formId} style={{ width: 400 }} />
+            <HubSpotForm
+              className="p-8 sticky"
+              portalId={hubspot.portalId}
+              formId={hubspot.formId}
+              style={{ width: 400, top: 100 }}
+            />
           </div>
         )}
       </Container>
 
       <section />
 
-      <Collage id="customers" {...collage} />
-
       <Testimonials {...testimonials} />
+
+      <Collage id="customers" {...collage} />
 
       {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
     </React.Fragment>
