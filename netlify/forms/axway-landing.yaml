@@ -1,9 +1,20 @@
-path: /demo
-color: black
-subtitle: >-
-  Stoplight on average shows a 36% gain in engineering time and increases
-  quality 30%.
-title: Request a demo
+path: /axway-integration-summit
+color: blue
+title: "Axway & Stoplight..Better together"
+subtitle: "Discover, Design, Repeat"
+leftContent:
+  title: >-
+    Discover why <i class="text-blue">Design First</i> saves time, money and makes your APIs more secure.
+  description: >-
+    Stoplight’s mission is to make any stakeholder working with an API more productive. The platform provides a suite of products that cover the entire pre-production API lifecycle.
+
+    <br>
+
+    We work 500+ companies including EA, Spotify, Sendgrid, and many others. Stoplight promotes a design-first approach. Developing good design-first practices will minimize future cost, speed up your time to market, and lead to more consistent, higher quality APIs.
+
+    <br>
+
+    **Schedule a call with us today!**
 hubspot:
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
   portalId: '4892910'

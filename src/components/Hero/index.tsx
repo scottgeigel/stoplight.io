@@ -1,22 +1,22 @@
 import cn from 'classnames';
 import * as React from 'react';
 
-import { IconName } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { CallToAction, ICallToAction } from 'src/components/CallToAction';
-import { Container } from 'src/components/Container';
 import { headerHeightClass } from 'src/components/Header';
-import { IImage, Image } from 'src/components/Image';
+import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 import { ITab, Tabs } from 'src/components/Tabs';
+import { HeroAuthor, IHeroAuthor } from './HeroAuthor';
+import { HeroButton, IHeroButton } from './HeroButton';
+import { HeroCard, IHeroCard } from './HeroCard';
+import { HeroImage, IHeroImage } from './HeroImage';
 
 let Particles;
 if (typeof window !== 'undefined') {
   Particles = require('react-particles-js').default;
 }
 
-const indexMap = {
+export const indexMap = {
   1: 'one',
   2: 'two',
   3: 'three',
@@ -25,41 +25,9 @@ const indexMap = {
   6: 'six',
 };
 
-interface IHeroCard {
-  index: number;
-  title: string;
-  subtitle: string;
-  href: string;
-  bgColor: string;
-  icon: {
-    name: IconName;
-  };
-  image: string;
-}
-
-export interface IHeroButton {
-  title: string;
-  href: string;
-  icon?: IconName;
-  color?: string;
-}
-
-export interface IHeroAuthor {
-  className?: string;
-  name?: string;
-  path?: string;
-  image?: string;
-  meta?: string;
-}
-
 export interface IHeroBreadCrumb {
   title: string;
   path?: string;
-}
-
-interface IHeroImage extends IImage {
-  section?: boolean;
-  className?: string;
 }
 
 export interface IHero {
@@ -77,122 +45,10 @@ export interface IHero {
   cards?: IHeroCard[];
   buttons?: IHeroButton[];
   particles?: boolean;
-  skew?: 'rounded' | string;
+  skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
   containerClassName?: string;
   tabs?: ITab[];
 }
-
-export const HeroAuthor: React.FunctionComponent<IHeroAuthor> = ({ className, name, path = '', image, meta }) => {
-  if (!image && !name && !meta) return null;
-
-  return (
-    <Link to={path} disabled={!path} className={cn(className, 'flex items-center')}>
-      {image && (
-        <Image
-          className="mr-2 rounded-full h-16 w-16 bg-center bg-contain bg-no-repeat"
-          src={image}
-          alt="author"
-          background
-          size="sm"
-        />
-      )}
-      <div>
-        {name && <div>{name}</div>}
-        {meta && <div className="opacity-85 text-sm">{meta}</div>}
-      </div>
-    </Link>
-  );
-};
-
-const HeroCard: React.FunctionComponent<IHeroCard> = ({
-  index,
-  title,
-  subtitle,
-  href,
-  bgColor = 'black',
-  icon,
-  image,
-}) => {
-  return (
-    <Link
-      to={href}
-      className={cn(
-        'HeroBlock',
-        'md:mb-6',
-        'shadow relative flex flex-col flex-1 h-48 md:h-40 overflow-hidden rounded-md p-6 mx-3 text-left z-10 text-white',
-        `block-${indexMap[index]}`,
-        {
-          [`bg-${bgColor}`]: bgColor,
-          'cursor-pointer': href,
-        }
-      )}
-    >
-      <div className="flex items-center">
-        {icon && <FontAwesomeIcon icon={['fas', icon.name]} className="mr-3" />} <h3>{title}</h3>
-      </div>
-      {subtitle && <div className="mt-4 leading-loose">{subtitle}</div>}
-
-      {image && <Image src={image} className="rounded-full bg-cover h-48 w-32" size="sm" useDiv />}
-      <div className={cn(`triangle-${indexMap[index]}`, 'platform-block-triangle')} />
-    </Link>
-  );
-};
-
-const HeroButton: React.FunctionComponent<IHeroButton> = ({ title, icon, href, color }) => {
-  if (!href && !title && !icon) {
-    return null;
-  }
-
-  const className = cn('flex items-center py-3 text-grey-darkest pl-4 pr-6 sm:m-3 mx-3 shadow-md bg-white rounded-md', {
-    'hover:opacity-93 cursor-pointer': href,
-    'cursor-default': !href,
-  });
-
-  const elems: JSX.Element[] = [];
-
-  if (icon) {
-    elems.push(
-      <FontAwesomeIcon key="1" icon={['fas', icon]} className={cn('mr-2 text-lg', `text-${color || 'green'}`)} />
-    );
-  }
-
-  if (title) {
-    elems.push(
-      <div key="2" className="font-semibold whitespace-no-wrap">
-        {title}
-      </div>
-    );
-  }
-
-  let elem;
-  if (href) {
-    elem = (
-      <Link to={href} className={className}>
-        {elems}
-      </Link>
-    );
-  } else {
-    elem = <div className={className}>{elems}</div>;
-  }
-
-  return <div className="sm:w-1/2">{elem}</div>;
-};
-
-const HeroImage: React.FunctionComponent<IHeroImage> = ({ className, section = true, src, alt }) => {
-  if (!src) {
-    return null;
-  }
-
-  return (
-    <section className="md:hidden">
-      {
-        <Container className="relative text-center" style={{ height: 500 }}>
-          <Image className={cn(className, 'rounded-lg')} src={src} alt={alt} size="lg" />
-        </Container>
-      }
-    </section>
-  );
-};
 
 export const Hero: React.FunctionComponent<IHero> = ({
   pageName,
@@ -266,7 +122,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
           <div
-            className={cn('mb-24', {
+            className={cn(!cta && !cards.length && !heroButtons.length ? 'mb-40' : 'mb-24', {
               'mx-auto': !aligned || aligned === 'center',
               'ml-auto w-2/3 md:w-full': aligned === 'right',
               'mr-auto w-2/3 md:w-full': aligned === 'left',
