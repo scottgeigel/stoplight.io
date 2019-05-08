@@ -17,6 +17,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons/faBookmark';
 import { faBolt } from '@fortawesome/free-solid-svg-icons/faBolt';
+import { faVideo } from '@fortawesome/free-solid-svg-icons/faVideo';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
