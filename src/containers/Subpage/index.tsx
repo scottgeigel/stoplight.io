@@ -6,14 +6,14 @@ import { withRouteData } from 'react-static';
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { ICallToAction } from 'src/components/CallToAction';
 import { Container } from 'src/components/Container';
-import { Hero, IHero, IHeroAuthor, IHeroBreadCrumb } from 'src/components/Hero';
+import { Hero, IHero, IHeroBreadCrumb } from 'src/components/Hero';
+import { IHeroAuthor } from 'src/components/Hero/HeroAuthor';
 import { Image } from 'src/components/Image';
 import { IInfo, Info } from 'src/components/Info';
 import { IQuote, Quote } from 'src/components/Quote';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
-
 import { convertMarkdownToHTML } from 'src/utils/markdown/index.js';
 
 export interface IPage {

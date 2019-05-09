@@ -2,6 +2,7 @@ import cn from 'classnames';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
+import { ActionBar, IActionBar } from 'src/components/ActionBar';
 import { Container } from 'src/components/Container';
 import { Hero } from 'src/components/Hero';
 import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
@@ -17,7 +18,7 @@ export interface IForm {
   collage: ICollage;
   testimonials: ITestimonials;
   relatedPages?: IRelatedPage[];
-
+  actionBar: IActionBar;
   leftContent?: {
     title: string;
     description: string;
@@ -33,6 +34,7 @@ export const Form: React.FunctionComponent<IForm> = ({
   collage,
   testimonials,
   relatedPages,
+  actionBar,
 }) => {
   const hasLeftContent = leftContent && leftContent.description ? true : false;
 
@@ -79,6 +81,8 @@ export const Form: React.FunctionComponent<IForm> = ({
       <Testimonials {...testimonials} />
 
       <Collage id="customers" {...collage} />
+
+      {actionBar && <ActionBar className="my-24" {...actionBar} />}
 
       {relatedPages && relatedPages.length ? <RelatedPages pages={relatedPages} /> : null}
     </React.Fragment>

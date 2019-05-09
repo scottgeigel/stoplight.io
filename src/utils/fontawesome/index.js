@@ -18,6 +18,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons/faTimes';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons/faBookmark';
 import { faBolt } from '@fortawesome/free-solid-svg-icons/faBolt';
 import { faVideo } from '@fortawesome/free-solid-svg-icons/faVideo';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -42,6 +44,8 @@ export const init = () => {
   library.add(faBookmark);
   library.add(faBolt);
   library.add(faVideo);
+  library.add(faQuoteLeft);
+  library.add(faQuoteRight);
 
   library.add(faTwitter);
   library.add(faLinkedin);

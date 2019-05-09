@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 
 import { ActionBar, IActionBar } from 'src/components/ActionBar';
@@ -23,7 +24,22 @@ export interface ITestimonials {
 export const Testimonial: React.FunctionComponent<ITestimonial> = ({ image, quote, author, company, role }) => {
   return (
     <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
-      <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white">
+      <div className="testimonial-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
+        {!image && (
+          <FontAwesomeIcon
+            className="absolute text-grey"
+            style={{ top: -15, left: -15, fontSize: 30 }}
+            icon="quote-left"
+          />
+        )}
+        {!image && (
+          <FontAwesomeIcon
+            className="absolute text-grey"
+            style={{ bottom: -15, right: -15, fontSize: 30 }}
+            icon="quote-right"
+          />
+        )}
+
         {image && (
           <div className="flex flex-col justify-center sm:items-center sm:pt-8">
             <Image
