@@ -1,0 +1,108 @@
+path: /gartner-cool-vendor
+title: Stoplight named a Gartner 2019 Cool Vendor
+subtitle: >-
+  Stoplight named in Gartner’s prestigious  “Cool Vendor in Application
+  Development” 2019 report.
+color: blue
+hubspot:
+  formId: e16f33d0-149f-4fe4-be2c-63ec29d9605e
+  portalId: '4892910'
+leftContent:
+  description: >-
+    ![gartner](/images/gartner-cool-vendor.png)
+
+    Large enterprises embarking on a Digital API transformation to supercharge
+    their business increasingly need API Design Management in addition to
+    traditional API Management to make this happen.<br>
+
+    Poor API designs lead to poor service implementation and documentation which
+    significantly impacts any Digital API transformation.<br>
+
+    We believe this is why Gartner named Stoplight a Cool Vendor in Application
+    Development. This comprehensive report dives into the breadth of the
+    Stoplight API Design Management platform. It covers:<br><br>
+
+    ### API Design as a critical part of the lifecycle journey.
+
+    Model, collaborate, and automate - don’t manually manage thousands of lines
+    of API spec using a text editor. Stoplight’s extensible modeling technology
+    is core to the Stoplight platform which has purpose built automation for OAS
+    (fka Swagger) and JSON Schema models and was designed to grow to accommodate
+    future API standards, backed by a git foundation.<br><br>
+
+    ### The role of collaboration in speed to deploy and error reduction.
+
+    Enforce standards & reuse across your teams. Leverage best practices
+    quickly, share common API artifacts easily, and report on adoption of
+    enterprise standards.<br><br>
+
+    ### Automation in keeping design and implementation in sync for the
+    Enterprise.
+
+    Developers and enterprise IT are our partners. SSO, bring your own tooling,
+    integrate to CI/CD, with on premises and local desktop options allowing tech
+    heavy teams to have it their way.<br><br>
+
+    ### Creating up to date, beautiful documentation by having the designs be
+    the single source of truth.
+
+    Create engaging API Documentation Hubs, not auto generated lists of
+    endpoints with no style. Quickly create compelling developer experiences for
+    API consumers by pulling together multiple APIs into contextual Hubs. Each
+    “API Hub” can target different audiences and use cases by reusing and
+    reconfiguring existing content.
+collage:
+  cta:
+    color: green
+    href: /case-studies
+    name: Read the Case Studies
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/logo_arkea_transparent.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: Spotify
+      src: /images/spotify.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+testimonials:
+  title: 'Here are what some enterprise architects are saying:'
+  testimonials:
+    - author: '- Software Architect'
+      quote: >-
+        We decided to go for Stoplight because we are convinced that the API
+        must be held by the business people (product owners). Before, they were
+        used to designing processes or UI screens. Now, the screens are made by
+        UX experts or by fintechs using our APIs. So, the product owners have to
+        design the API, it's an important change, not all of them are ready.
+        This is why a graphical tools is a good opportunity, perhaps the only
+        one, to involve them in the design of API.
+    - author: '- Enterprise Architect'
+      quote: >-
+        Stoplight addresses the needs of API Development holistically with a
+        strong emphasis on visual modelling and collaboration. It covers API
+        Prototyping, Mocking, Specification, Shared Schemas, Documentation,
+        Testing and Developer Portal generation - all customisable.
+actionBar:
+  enabled: true
+meta:
+  description: >-
+    Want to see how we could help your company and organization with our API
+    Toolkit? Click here to request a demo and find out what we can do for you.
+  favicon: /images/mark_light_bg.png
+  robots: 'noindex, nofollow'
+  title: Get a demo of our API Toolkit | Stoplight
+  twitter:
+    title: Get a demo of our API Toolkit | Stoplight

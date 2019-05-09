@@ -89,6 +89,13 @@ header:
           subtitle: Create mock API servers
           title: API Mocking Guide
           titleColor: grey-darkest
+        - href: /webinars/api-design-with-stoplight/
+          icon:
+            - fas
+            - video
+          subtitle: Learn how to design with Stoplight
+          title: Webinars
+          titleColor: purple
       title: Resources
       width: 400
     - links:
@@ -109,12 +116,12 @@ header:
     - href: /demo/
       isButton: true
       title: Request Demo
-    - href: 'https://next.stoplight.io'
+    - hideMobile: true
+      href: 'https://next.stoplight.io'
       icon:
         - fas
         - arrow-right
       isButton: true
-      hideMobile: true
       title: Sign In
 actionBar:
   buttons:

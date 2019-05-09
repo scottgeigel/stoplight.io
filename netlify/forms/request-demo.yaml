@@ -1,10 +1,9 @@
 path: /demo
-hero:
-  bgColor: black
-  subtitle: >-
-    Stoplight on average shows a 36% gain in engineering time and increases
-    quality 30%.
-  title: Request a demo
+color: black
+subtitle: >-
+  Stoplight on average shows a 36% gain in engineering time and increases
+  quality 30%.
+title: Request a demo
 hubspot:
   formId: 7ae2bb42-67a6-4ee3-9ac5-ff21d87812ea
   portalId: '4892910'

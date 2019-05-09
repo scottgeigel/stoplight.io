@@ -1,11 +1,12 @@
 import metaTags from 'src/components/MetaTags/config';
 
-import hero from 'src/components/Hero/config';
 import actionBar from 'src/components/ActionBar/config';
 import hubspot from 'src/components/HubSpotForm/config';
 
 import collage from 'src/sections/Collage/config';
 import testimonials from 'src/sections/Testimonials/config';
+
+import { colors } from 'src/utils';
 
 export default {
   label: 'Forms',
@@ -23,6 +24,43 @@ export default {
       widget: 'string',
     },
     {
+      name: 'title',
+      label: 'title',
+      widget: 'string',
+    },
+    {
+      name: 'subtitle',
+      label: 'subtitle',
+      widget: 'string',
+    },
+    {
+      label: 'Color',
+      name: 'color',
+      widget: 'select',
+      options: colors,
+      default: 'black',
+    },
+    hubspot,
+    {
+      label: 'Left Content',
+      name: 'leftContent',
+      widget: 'object',
+      required: false,
+      fields: [
+        {
+          name: 'title',
+          widget: 'markdown',
+        },
+        {
+          name: 'description',
+          widget: 'markdown',
+        },
+      ],
+    },
+    collage,
+    testimonials,
+    actionBar,
+    {
       label: 'Tags',
       name: 'tags',
       widget: 'list',
@@ -36,11 +74,6 @@ export default {
       required: false,
       field: { label: 'tag', name: 'tag', widget: 'string', required: false },
     },
-    hero,
-    hubspot,
-    collage,
-    testimonials,
-    actionBar,
     metaTags,
   ],
 };

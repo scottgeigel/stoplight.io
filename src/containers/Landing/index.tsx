@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
-import { Hero, IHero, IHeroButton } from 'src/components/Hero';
-import { HubSpotForm, IHubspot } from 'src/components/HubSpotForm';
+import { Hero, IHero } from 'src/components/Hero';
+import { IHeroButton } from 'src/components/Hero/HeroButton';
+import { HubSpotForm, IHubSpotForm } from 'src/components/HubSpotForm';
 import { IRelatedPage, RelatedPages } from 'src/components/RelatedPages';
 import { Section } from 'src/components/Section';
 import { Collage, ICollage } from 'src/sections/Collage';
 import { FeatureSection, IFeatureSection } from 'src/sections/FeatureSection';
 import { IImageCallout, ImageCallout } from 'src/sections/ImageCallout';
-
 import { slugify } from 'src/utils/text';
 
 export interface ILanding {
@@ -17,7 +17,7 @@ export interface ILanding {
   imageCallout: IImageCallout;
   collage: ICollage;
   featureSection: IFeatureSection;
-  hubspot: IHubspot;
+  hubspot: IHubSpotForm & { title?: string; description?: string };
   relatedPages?: IRelatedPage[];
 }
 
@@ -52,7 +52,20 @@ export const Landing: React.FunctionComponent<ILanding> = ({
       {hubspot && (
         <Section key="hubspot" id="demo">
           <div className="container flex items-center justify-center">
-            <HubSpotForm {...hubspot} />
+            <div className="w-full">
+              {hubspot.title && <h2 className="text-3xl text-center">{hubspot.title}</h2>}
+
+              {hubspot.description && (
+                <div className="flex justify-center flex-wrap items-center pb-12 md:pb-12">
+                  <div
+                    className="font-default opacity-75 text-xl max-w-lg mt-4 md:mt-6 mx-auto text-center"
+                    dangerouslySetInnerHTML={{ __html: hubspot.description }}
+                  />
+                </div>
+              )}
+
+              <HubSpotForm className="p-16 md:p-4" portalId={hubspot.portalId} formId={hubspot.formId} />
+            </div>
           </div>
         </Section>
       )}

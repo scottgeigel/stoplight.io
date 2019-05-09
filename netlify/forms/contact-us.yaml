@@ -1,10 +1,9 @@
 path: /contact-us
-hero:
-  bgColor: black
-  subtitle: >-
-    Stoplight on average shows a 36% gain in engineering time and increases
-    quality 30%.
-  title: Contact us
+color: black
+subtitle: >-
+  Stoplight on average shows a 36% gain in engineering time and increases
+  quality 30%.
+title: Contact us
 hubspot:
   formId: 7c71a3d0-fcd0-452f-981e-883c6cc86dd3
   portalId: '4892910'

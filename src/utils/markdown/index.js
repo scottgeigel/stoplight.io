@@ -1,4 +1,6 @@
 import MarkdownIt from 'markdown-it';
+const MarkdownItAnchors = require('markdown-it-anchor');
+const MarkdownItToC = require('markdown-it-toc-done-right');
 
 import Highlight from './highlight';
 
@@ -17,16 +19,7 @@ const BaseMarkdown = new MarkdownIt({
       return str;
     }
   },
-})
-  .use(require('markdown-it-anchor'), {
-    level: [1, 2, 3],
-    permalink: true,
-    permalinkClass: 'anchor',
-    permalinkSymbol: '🔗',
-    permalinkBefore: true,
-  })
-  .use(require('markdown-it-toc-done-right'))
-  .use(require('markdown-it-video'));
+}).use(require('markdown-it-video'));
 
 function Renderer(src, { includeToc } = {}) {
   if (typeof src !== 'string') {
@@ -34,6 +27,18 @@ function Renderer(src, { includeToc } = {}) {
   }
 
   try {
+    let renderer = BaseMarkdown;
+
+    if (includeToc) {
+      renderer = renderer.use(MarkdownItToC).use(MarkdownItAnchors, {
+        level: [1, 2, 3],
+        permalink: true,
+        permalinkClass: 'anchor',
+        permalinkSymbol: '🔗',
+        permalinkBefore: true,
+      });
+    }
+
     return BaseMarkdown.render(includeToc ? '${toc}\n' + src : src);
   } catch (e) {
     console.log('Error rendering markdown:', e.message, src);
