@@ -1,4 +1,5 @@
 path: /gartner-cool-vendor
+titleImage: /images/gartner-cool-vendor.png
 title: Stoplight named a Gartner 2019 Cool Vendor
 subtitle: >-
   Stoplight named in Gartner’s prestigious  “Cool Vendor in Application
@@ -9,8 +10,6 @@ hubspot:
   portalId: '4892910'
 leftContent:
   description: >-
-    ![gartner](/images/gartner-cool-vendor.png)
-
     Large enterprises embarking on a Digital API transformation to supercharge
     their business increasingly need API Design Management in addition to
     traditional API Management to make this happen.<br>

@@ -29,10 +29,17 @@ export default {
       widget: 'string',
     },
     {
+      name: 'Title Image',
+      label: 'titleImage',
+      widget: 'image',
+      required: false,
+    },
+    {
       name: 'subtitle',
       label: 'subtitle',
       widget: 'string',
     },
+
     {
       label: 'Color',
       name: 'color',
