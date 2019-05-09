@@ -71,6 +71,7 @@ their API & Microservices workflow'
 actionBar:
   enabled: true
 meta:
+  robots: 'noindex, nofollow'
   favicon: /images/mark_light_bg.png
   title: Get a demo of our API Toolkit | Stoplight
   description: Want to see how we could help your company and organization with our API Toolkit? Click here to request a demo and find out what we can do for you.
