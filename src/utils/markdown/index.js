@@ -21,7 +21,7 @@ const BaseMarkdown = new MarkdownIt({
   },
 }).use(require('markdown-it-video'));
 
-function Renderer(src, { includeToc, includeAnchors } = {}) {
+function Renderer(src, { includeToc } = {}) {
   if (typeof src !== 'string') {
     return null;
   }
@@ -29,18 +29,14 @@ function Renderer(src, { includeToc, includeAnchors } = {}) {
   try {
     let renderer = BaseMarkdown;
 
-    if (includeAnchors) {
-      renderer = renderer.use(MarkdownItAnchors, {
+    if (includeToc) {
+      renderer = renderer.use(MarkdownItToC).use(MarkdownItAnchors, {
         level: [1, 2, 3],
         permalink: true,
         permalinkClass: 'anchor',
         permalinkSymbol: '🔗',
         permalinkBefore: true,
       });
-    }
-
-    if (includeToc) {
-      renderer = renderer.use(MarkdownItToC);
     }
 
     return BaseMarkdown.render(includeToc ? '${toc}\n' + src : src);
@@ -62,7 +58,7 @@ export const convertMarkdownToHTML = (data, options) => {
         data[key] = convertMarkdownToHTML(data[key], options);
       } else if (['description', 'markdown'].includes(key)) {
         // Don't include ToC for description or markdown properties
-        data[key] = Renderer(data[key], { includeToc: false, includeAnchors: false });
+        data[key] = Renderer(data[key], { includeToc: false });
       }
     }
   }
