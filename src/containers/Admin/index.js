@@ -65,11 +65,9 @@ class Admin extends Component {
       window.CMS.registerPreviewTemplate(collectionName, ({ entry }) => {
         const Template = templates[collectionName];
 
-        return (
-          <Template
-            {...convertMarkdownToHTML(entry.getIn(['data']).toJS(), { includeToc: collectionName !== 'caseStudy' })}
-          />
-        );
+        const props = entry.getIn(['data']).toJS();
+
+        return <Template {...convertMarkdownToHTML(props, { includeToc: props.includeToc })} />;
       });
     });
 

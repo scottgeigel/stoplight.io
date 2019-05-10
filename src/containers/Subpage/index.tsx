@@ -64,7 +64,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
   relatedPages,
   disqus,
   tabs,
-  includeToc,
+  includeToc = true,
 }) => {
   const heroProps: IHero = {
     ...hero,
@@ -88,7 +88,7 @@ export const Subpage: React.FunctionComponent<IPage> = ({
     showDisqus = showDisqus && !window.CMS;
   }
 
-  const html = convertMarkdownToHTML(body, { includeToc });
+  const html = convertMarkdownToHTML(body, { includeToc: !sidebar && includeToc });
 
   return (
     <React.Fragment>
@@ -120,7 +120,10 @@ export const Subpage: React.FunctionComponent<IPage> = ({
               </div>
             )}
 
-            <div className={cn('markdown-body pt-10', className)} dangerouslySetInnerHTML={{ __html: html }} />
+            <div
+              className={cn('markdown-body pt-10', className, { 'm-auto': !sidebar && !includeToc })}
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
           </div>
         </Container>
       </Section>

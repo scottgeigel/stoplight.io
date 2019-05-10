@@ -95,6 +95,13 @@ export const SubpageConfig = {
       ],
     },
     {
+      label: 'Include table of contents? (default: true)',
+      name: 'includeToc',
+      widget: 'boolean',
+      required: false,
+      default: true,
+    },
+    {
       label: 'Content',
       name: 'body',
       widget: 'markdown',
@@ -118,7 +125,20 @@ export const CaseStudyConfig = {
       widget: 'object',
       fields: [info, quote],
     },
-  ]),
+  ]).map(field => {
+    // Don't allow ToC for case studies page
+    if (field && field.name === 'includeToc') {
+      return {
+        label: 'Include table of contents? (default: false)',
+        name: 'includeToc',
+        widget: 'hidden',
+        required: false,
+        default: false,
+      };
+    }
+
+    return field;
+  }),
 };
 
 export const BlogPostConfig = {
