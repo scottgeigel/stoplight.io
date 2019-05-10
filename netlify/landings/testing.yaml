@@ -23,13 +23,14 @@ featureSection:
     Increase the test coverage of your web APIs so they break less for your
     consumers online. Create a full collection of tests with Stoplight Testing.
     Use [Environment and Context Variables to reference other complex test
-    scenarios](/api-design-guide/tooling/#automatically-test-your-apis) to accelerate test generations and reduce duplication. Whether you
-    are writing test for just one API call or a scenario of API calls working
-    together in a real-life use case, Stoplight Testing gives you the
-    flexibility to make your tests fit you workflow by supporting command line
-    and CI/CD pipeline integrations. Contract Testing your API against your
-    OpenAPI Specification (formerly known as Swagger) or JSON Schema is possible
-    with our simple visual Test Editor.
+    scenarios](/api-design-guide/tooling/#automatically-test-your-apis) to
+    accelerate test generations and reduce duplication. Whether you are writing
+    test for just one API call or a scenario of API calls working together in a
+    real-life use case, Stoplight Testing gives you the flexibility to make your
+    tests fit you workflow by supporting command line and CI/CD pipeline
+    integrations. Contract Testing your API against your OpenAPI Specification
+    (formerly known as Swagger) or JSON Schema is possible with our simple
+    visual Test Editor.
   features:
     - description: >-
         With our Visual Test Editor, create multi-step test scenarios to
@@ -40,7 +41,7 @@ featureSection:
       image: /images/testing_automation.png
       shortName: CI/CD Integration
       title: Simple Automated API Testing
-      titleURL: /testing/free
+      titleURL: ''
     - description: >-
         Create test collections that ensure the API implementation meets the
         standards and definitions described in your OpenAPI Specification or
