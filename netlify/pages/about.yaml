@@ -79,6 +79,9 @@ team:
   - image: /images/wallach_headshot.png
     name: Robert Wallach
     role: Content & Support
+  - image: /images/mateusz_wit_headshot.png
+    name: Mateusz Wit
+    role: Software Engineer
 businesses:
   quotes:
     - author: Evin Callahan
