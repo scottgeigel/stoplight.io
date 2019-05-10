@@ -1,5 +1,4 @@
 path: /gartner-cool-vendor
-titleImage: /images/gartner-cool-vendor.png
 title: Stoplight named a Gartner 2019 Cool Vendor
 subtitle: >-
   Stoplight named in Gartner’s prestigious  “Cool Vendor in Application
@@ -10,9 +9,9 @@ hubspot:
   portalId: '4892910'
 leftContent:
   description: >-
-    Large enterprises embarking on a Digital API transformation to supercharge
-    their business increasingly need API Design Management in addition to
-    traditional API Management to make this happen.<br>
+    Large enterprises embarking on Digital API transformation are increasingly
+    relying on API Design Management platforms in addition to traditional API
+    Management to supercharge their business workflow.<br>
 
     Poor API designs lead to poor service implementation and documentation which
     significantly impacts any Digital API transformation.<br>
@@ -21,7 +20,9 @@ leftContent:
     Development. This comprehensive report dives into the breadth of the
     Stoplight API Design Management platform. It covers:<br><br>
 
+
     ### API Design as a critical part of the lifecycle journey.
+
 
     Model, collaborate, and automate - don’t manually manage thousands of lines
     of API spec using a text editor. Stoplight’s extensible modeling technology
@@ -29,21 +30,26 @@ leftContent:
     (fka Swagger) and JSON Schema models and was designed to grow to accommodate
     future API standards, backed by a git foundation.<br><br>
 
+
     ### The role of collaboration in speed to deploy and error reduction.
 
+
     Enforce standards & reuse across your teams. Leverage best practices
-    quickly, share common API artifacts easily, and report on adoption of
+    immediately, easily share common API artifacts, and report on adoption of
     enterprise standards.<br><br>
+
 
     ### Automation in keeping design and implementation in sync for the
     Enterprise.
 
-    Developers and enterprise IT are our partners. SSO, bring your own tooling,
-    integrate to CI/CD, with on premises and local desktop options allowing tech
-    heavy teams to have it their way.<br><br>
+
+    Integrate with your CI/CD, optimize your documentation with SSO, and enable
+    tech heavy teams with on-prem and local desktop support.<br><br>
+
 
     ### Creating up to date, beautiful documentation by having the designs be
     the single source of truth.
+
 
     Create engaging API Documentation Hubs, not auto generated lists of
     endpoints with no style. Quickly create compelling developer experiences for
