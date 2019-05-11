@@ -13,6 +13,7 @@ subtitle: >-
 color: blue
 tabs:
   - {}
+includeToc: false
 actionBar:
   buttons:
     - color: purple
