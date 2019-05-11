@@ -170,7 +170,6 @@ const addSubpages = (routes, allPages, subpages, propFactory) => {
         component: 'src/containers/Subpage',
         getData: () => {
           return {
-            includeToc: true,
             ...subpage,
             ...(propFactory ? propFactory(subpage) : {}),
             publishedDate: formatDate(subpage.publishedDate),

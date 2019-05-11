@@ -48,6 +48,8 @@ export interface IHero {
   skew?: 'rounded' | '-3deg' | '-7deg' | '3deg' | '7deg' | 'rounded';
   containerClassName?: string;
   tabs?: ITab[];
+  titleImage?: string;
+  titleClassName?: string;
 }
 
 export const Hero: React.FunctionComponent<IHero> = ({
@@ -67,6 +69,8 @@ export const Hero: React.FunctionComponent<IHero> = ({
   cards = [],
   buttons = [],
   tabs = [],
+  titleImage,
+  titleClassName,
 }) => {
   // Filter out any empty button objects
   const heroButtons = buttons.filter(button => {
@@ -117,49 +121,57 @@ export const Hero: React.FunctionComponent<IHero> = ({
         <div
           className={cn(
             containerClassName,
-            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned}`
+            `container text-white flex flex-col pt-32 md:pt-24 relative z-5 text-${aligned} relative`
           )}
           style={contentBgImage ? { textShadow: `rgba(0, 0, 0, 0.5) 1px 1px 0px` } : undefined}
         >
-          <div
-            className={cn(!cta && !cards.length && !heroButtons.length ? 'mb-40' : 'mb-24', {
-              'mx-auto': !aligned || aligned === 'center',
-              'ml-auto w-2/3 md:w-full': aligned === 'right',
-              'mr-auto w-2/3 md:w-full': aligned === 'left',
-            })}
-          >
-            {breadCrumbs && breadCrumbs.length ? (
-              <div className="text-white opacity-85 font-semibold mb-4 flex items-center">
-                {breadCrumbs.map((breadCrumb, index) => (
-                  <React.Fragment key={index}>
-                    <Link className="text-white" to={breadCrumb.path}>
-                      {breadCrumb.title}
-                    </Link>
-                    {index < breadCrumbs.length - 1 ? <span className="mx-2">></span> : null}
-                  </React.Fragment>
-                ))}
-              </div>
-            ) : null}
+          <div className="flex">
+            <div
+              className={cn('flex-1 mb-24', titleClassName, {
+                'mx-auto': !aligned || aligned === 'center',
+                'ml-auto w-2/3 md:w-full': aligned === 'right',
+                'mr-auto w-2/3 md:w-full': aligned === 'left',
+              })}
+            >
+              {breadCrumbs && breadCrumbs.length ? (
+                <div className="text-white opacity-85 font-semibold mb-4 flex items-center">
+                  {breadCrumbs.map((breadCrumb, index) => (
+                    <React.Fragment key={index}>
+                      <Link className="text-white" to={breadCrumb.path}>
+                        {breadCrumb.title}
+                      </Link>
+                      {index < breadCrumbs.length - 1 ? <span className="mx-2">></span> : null}
+                    </React.Fragment>
+                  ))}
+                </div>
+              ) : null}
 
-            {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
+              {pageName && <div className="uppercase text-white opacity-85 font-semibold mb-4">{pageName}</div>}
 
-            <h1>{title}</h1>
+              <h1>{title}</h1>
 
-            {subtitle && (
-              <div
-                className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
-                  'mx-auto': !aligned || aligned === 'center',
-                  'ml-auto': aligned === 'right',
-                  'mr-auto': aligned === 'left',
-                })}
-              >
-                {subtitle}
-              </div>
-            )}
+              {subtitle && (
+                <div
+                  className={cn('font-default opacity-85 text-xl max-w-lg mt-4 md:mt-6', {
+                    'mx-auto': !aligned || aligned === 'center',
+                    'ml-auto': aligned === 'right',
+                    'mr-auto': aligned === 'left',
+                  })}
+                >
+                  {subtitle}
+                </div>
+              )}
 
-            {author && (
+              {author && (
+                <div>
+                  <HeroAuthor className="mt-6 text-white opacity-85" {...author} />
+                </div>
+              )}
+            </div>
+
+            {titleImage && (
               <div>
-                <HeroAuthor className="mt-6 text-white opacity-85" {...author} />
+                <Image style={{ height: 130 }} src={titleImage} />
               </div>
             )}
           </div>
