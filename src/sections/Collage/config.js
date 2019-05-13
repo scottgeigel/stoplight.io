@@ -7,6 +7,11 @@ export default {
   required: false,
   fields: [
     {
+      name: 'title',
+      widget: 'string',
+      required: false,
+    },
+    {
       name: 'description',
       widget: 'markdown',
       required: false,
