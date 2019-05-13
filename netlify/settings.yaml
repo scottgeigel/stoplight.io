@@ -187,15 +187,15 @@ footer:
         - fab
         - github
 meta:
-  description: ''
+  description: The Complete API Toolkit for Teams and Enterprise | Stoplight
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
   robots: 'index, follow'
-  title: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  title: Stoplight
   twitter:
-    description: ''
+    description: The Complete API Toolkit for Teams and Enterprise | Stoplight
     image: /images/home-hero.png
-    title: The Complete API Toolkit for Teams and Enterprise | Stoplight
+    title: Stoplight
     username: '@stoplightio'
   url: 'https://stoplight.io'
 integrations:
