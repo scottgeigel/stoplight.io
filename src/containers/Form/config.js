@@ -29,8 +29,8 @@ export default {
       widget: 'string',
     },
     {
-      name: 'Title Image',
-      label: 'titleImage',
+      label: 'Title Image',
+      name: 'titleImage',
       widget: 'image',
       required: false,
     },
