@@ -99,10 +99,13 @@ actionBar:
   enabled: true
 meta:
   description: >-
-    Want to see how we could help your company and organization with our API
-    Toolkit? Click here to request a demo and find out what we can do for you.
+    Stoplight named in Gartner’s prestigious “Cool Vendor in Application
+    Development” 2019 report.
   favicon: /images/mark_light_bg.png
   robots: 'noindex, nofollow'
-  title: Get a demo of our API Toolkit | Stoplight
+  title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
   twitter:
-    title: Get a demo of our API Toolkit | Stoplight
+    description: >-
+      Stoplight named in Gartner’s prestigious “Cool Vendor in Application
+      Development” 2019 report.
+    title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
