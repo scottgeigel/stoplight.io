@@ -8,54 +8,48 @@ hubspot:
   formId: e16f33d0-149f-4fe4-be2c-63ec29d9605e
   portalId: '4892910'
 leftContent:
-  description: >-
-    Large enterprises embarking on Digital API transformation are increasingly
-    relying on API Design Management platforms in addition to traditional API
-    Management to supercharge their business workflow.<br>
+  description: >
+    Large enterprises embarking on Digital API transformation initiatives are
+    increasingly relying on API Design Management platforms in addition to
+    traditional API Management solutions to supercharge their business.<br>
 
-    Poor API designs lead to poor service implementation and documentation which
-    significantly impacts any Digital API transformation.<br>
+    Poor API designs lead to poor service implementations and documentation
+    which can slow down service delivery and negatively impact the ROI of the
+    initiative.<br>
+
 
     We believe this is why Gartner named Stoplight a Cool Vendor in Application
-    Development. This comprehensive report dives into the breadth of the
-    Stoplight API Design Management platform. It covers:<br><br>
+    Development. This report highlights Stoplight’s API Design Management
+    platform.<br><br>
 
 
-    ### API Design as a critical part of the lifecycle journey.
-
+    ### API Design
 
     Model, collaborate, and automate - don’t manually manage thousands of lines
-    of API spec using a text editor. Stoplight’s extensible modeling technology
-    is core to the Stoplight platform which has purpose built automation for OAS
-    (fka Swagger) and JSON Schema models and was designed to grow to accommodate
-    future API standards, backed by a git foundation.<br><br>
+    of API spec using a text editor. Stoplight’s extensible visual modeling
+    technology is central to the Stoplight platform which has purpose-built
+    automation for OpenAPI (fka Swagger) and JSON Schema specifications backed
+    by git.<br><br>
 
 
-    ### The role of collaboration in speed to deploy and error reduction.
+    ### API Collaboration
+
+    Collaborate, share, and validate your API Designs. Leverage best practices
+    quickly, share common API artifacts easily, and report on API Style Guide
+    adoption across the organization.<br><br>
 
 
-    Enforce standards & reuse across your teams. Leverage best practices
-    immediately, easily share common API artifacts, and report on adoption of
-    enterprise standards.<br><br>
+    ### API Testing
+
+    Automate your contract testing.  Ensure that your API Design and your
+    implementation are in synch.<br><br>
 
 
-    ### Automation in keeping design and implementation in sync for the
-    Enterprise.
+    ### API Documentation
 
-
-    Integrate with your CI/CD, optimize your documentation with SSO, and enable
-    tech heavy teams with on-prem and local desktop support.<br><br>
-
-
-    ### Creating up to date, beautiful documentation by having the designs be
-    the single source of truth.
-
-
-    Create engaging API Documentation Hubs, not auto generated lists of
-    endpoints with no style. Quickly create compelling developer experiences for
-    API consumers by pulling together multiple APIs into contextual Hubs. Each
-    “API Hub” can target different audiences and use cases by reusing and
-    reconfiguring existing content.
+    Automatic indexing of your API Designs ensures all of your documentation is
+    up to date.  In addition, a cross organizational “API Design Catalog” is
+    auto-generated for quick and efficient searching of API Design artifacts.
 collage:
   cta:
     color: green
