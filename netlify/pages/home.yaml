@@ -39,7 +39,6 @@ hero:
     development process
   title: 'Best in class API Design, Docs, Mocking, and Testing'
 collage:
-  title: 'Thousands of companies use Stoplight to streamline'
   cta:
     color: green
     href: /case-studies
@@ -65,6 +64,7 @@ collage:
       src: /images/tivo.png
     - alt: Zendesk
       src: /images/logo_zendesk.png
+  title: Thousands of companies use Stoplight to streamline
 imageCallout:
   cta:
     href: 'https://next.stoplight.io/'
@@ -118,8 +118,16 @@ testimonials:
         APIs.
       role: 'Frontend Engineer, AMARO'
 meta:
+  description: >-
+    Using Stoplight you can create OpenAPI Specifications, documentation, mock
+    servers much faster than other API tools with no specialized knowledge
+    required in one centralized platform
   favicon: /images/mark_light_bg.png
   title: The Complete API Toolkit for Teams and Enterprise | Stoplight
   twitter:
+    description: >-
+      Using Stoplight you can create OpenAPI Specifications, documentation, mock
+      servers much faster than other API tools with no specialized knowledge
+      required in one centralized platform
     image: /images/mark_light_bg.png
     title: The Complete API Toolkit for Teams and Enterprise | Stoplight
