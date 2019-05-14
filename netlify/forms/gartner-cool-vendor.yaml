@@ -9,7 +9,7 @@ hubspot:
   formId: e16f33d0-149f-4fe4-be2c-63ec29d9605e
   portalId: '4892910'
 leftContent:
-  description: >
+  description: >-
     Large enterprises embarking on Digital API transformation initiatives are
     increasingly relying on API Design Management platforms in addition to
     traditional API Management solutions to supercharge their business.<br>
@@ -19,12 +19,13 @@ leftContent:
     initiative.<br>
 
 
-    We believe this is why Gartner named Stoplight a Cool Vendor in Application
-    Development. This report highlights Stoplight’s API Design Management
-    platform.<br><br>
+    We believe this is why _Gartner_ named _Stoplight_ a **Cool Vendor in
+    Application Development and Platforms.** This report highlights Stoplight’s
+    API Design Management platform.<br><br>
 
 
     ### API Design
+
 
     Model, collaborate, and automate - don’t manually manage thousands of lines
     of API spec using a text editor. Stoplight’s extensible visual modeling
@@ -35,6 +36,7 @@ leftContent:
 
     ### API Collaboration
 
+
     Collaborate, share, and validate your API Designs. Leverage best practices
     quickly, share common API artifacts easily, and report on API Style Guide
     adoption across the organization.<br><br>
@@ -42,15 +44,33 @@ leftContent:
 
     ### API Testing
 
+
     Automate your contract testing.  Ensure that your API Design and your
     implementation are in synch.<br><br>
 
 
     ### API Documentation
 
+
     Automatic indexing of your API Designs ensures all of your documentation is
     up to date.  In addition, a cross organizational “API Design Catalog” is
     auto-generated for quick and efficient searching of API Design artifacts.
+
+
+
+
+    Gartner \[Cool Vendors in Application Development and Platforms], \[Jim
+    Scheibmeir, Mark Driver, Thomas Murphy, Jason Wong, Mark O'Neill], \[2 May
+    2019]. 
+
+
+    _The GARTNER COOL VENDOR badge is a trademark and service mark of Gartner,
+    Inc., and/or its affiliates, and is used herein with permission. All rights
+    reserved. Gartner does not endorse any vendor, product or service depicted
+    in its research publications, and does not advise technology users to select
+    only those vendors with the highest ratings or other designation. Gartner
+    research publications consist of the opinions of Gartner's Research &
+    Advisory organization and should not be construed as statements of _
 collage:
   cta:
     color: green
