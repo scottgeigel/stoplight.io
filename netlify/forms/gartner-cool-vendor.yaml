@@ -54,23 +54,25 @@ leftContent:
 
     Automatic indexing of your API Designs ensures all of your documentation is
     up to date.  In addition, a cross organizational “API Design Catalog” is
-    auto-generated for quick and efficient searching of API Design artifacts.
+    auto-generated for quick and efficient searching of API Design
+    artifacts.<br><br>
 
 
+    <font size=1>Gartner \[Cool Vendors in Application Development and
+    Platforms], \[Jim Scheibmeir, Mark Driver, Thomas Murphy, Jason Wong, Mark
+    O'Neill], \[2 May 2019]. 
 
 
-    Gartner \[Cool Vendors in Application Development and Platforms], \[Jim
-    Scheibmeir, Mark Driver, Thomas Murphy, Jason Wong, Mark O'Neill], \[2 May
-    2019]. 
-
-
-    _The GARTNER COOL VENDOR badge is a trademark and service mark of Gartner,
+    The GARTNER COOL VENDOR badge is a trademark and service mark of Gartner,
     Inc., and/or its affiliates, and is used herein with permission. All rights
     reserved. Gartner does not endorse any vendor, product or service depicted
     in its research publications, and does not advise technology users to select
     only those vendors with the highest ratings or other designation. Gartner
     research publications consist of the opinions of Gartner's Research &
-    Advisory organization and should not be construed as statements of _
+    Advisory organization and should not be construed as statements of fact.
+    Gartner disclaims all warranties, express or implied, with respect to this
+    research, including any warranties of merchantability or fitness for a
+    particular purpose</font>
 collage:
   cta:
     color: green
