@@ -1,9 +1,9 @@
 path: /gartner-cool-vendor
 title: Stoplight named a Gartner 2019 Cool Vendor
-titleImage: /images/gartner-cool-vendor.png
+titleImage: /images/gartner_cv_2019_rgb.png
 subtitle: >-
   Stoplight named in Gartner’s prestigious  “Cool Vendor in Application
-  Development” 2019 report.
+  Development and Platforms” 2019 report.
 color: blue
 hubspot:
   formId: e16f33d0-149f-4fe4-be2c-63ec29d9605e
@@ -124,13 +124,13 @@ meta:
     Stoplight named in Gartner’s prestigious “Cool Vendor in Application
     Development” 2019 report.
   favicon: /images/mark_light_bg.png
-  image: /images/gartner-cool-vendor.png
+  image: /images/gartner_cv_2019_rgb.png
   robots: 'noindex, nofollow'
   title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
   twitter:
     description: >-
       Stoplight named in Gartner’s prestigious “Cool Vendor in Application
       Development” 2019 report.
-    image: /images/gartner-cool-vendor.png
+    image: /images/gartner_cv_2019_rgb.png
     title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
     username: '@stoplightio'
