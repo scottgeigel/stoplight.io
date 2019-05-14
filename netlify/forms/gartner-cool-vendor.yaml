@@ -20,16 +20,16 @@ leftContent:
 
 
     We believe this is why _Gartner_ named _Stoplight_ a **Cool Vendor in
-    Application Development and Platforms.** This report highlights Stoplight’s
-    API Design Management platform.<br><br>
+    Application Development and Platforms.** This report highlights
+    _Stoplight’s_ API Design Management platform.<br><br>
 
 
     ### API Design
 
 
     Model, collaborate, and automate - don’t manually manage thousands of lines
-    of API spec using a text editor. Stoplight’s extensible visual modeling
-    technology is central to the Stoplight platform which has purpose-built
+    of API spec using a text editor. _Stoplight’s_ extensible visual modeling
+    technology is central to the _Stoplight_ platform which has purpose-built
     automation for OpenAPI (fka Swagger) and JSON Schema specifications backed
     by git.<br><br>
 
@@ -58,21 +58,21 @@ leftContent:
     artifacts.<br><br>
 
 
-    <font size=1>Gartner \[Cool Vendors in Application Development and
+    <p class="text-xs">Gartner \[Cool Vendors in Application Development and
     Platforms], \[Jim Scheibmeir, Mark Driver, Thomas Murphy, Jason Wong, Mark
-    O'Neill], \[2 May 2019]. 
+    O'Neill], \[2 May 2019].</p> 
 
 
-    The GARTNER COOL VENDOR badge is a trademark and service mark of Gartner,
-    Inc., and/or its affiliates, and is used herein with permission. All rights
-    reserved. Gartner does not endorse any vendor, product or service depicted
-    in its research publications, and does not advise technology users to select
-    only those vendors with the highest ratings or other designation. Gartner
-    research publications consist of the opinions of Gartner's Research &
-    Advisory organization and should not be construed as statements of fact.
-    Gartner disclaims all warranties, express or implied, with respect to this
-    research, including any warranties of merchantability or fitness for a
-    particular purpose</font>
+    <p class="text-xs">The GARTNER COOL VENDOR badge is a trademark and service
+    mark of Gartner, Inc., and/or its affiliates, and is used herein with
+    permission. All rights reserved. Gartner does not endorse any vendor,
+    product or service depicted in its research publications, and does not
+    advise technology users to select only those vendors with the highest
+    ratings or other designation. Gartner research publications consist of the
+    opinions of Gartner's Research & Advisory organization and should not be
+    construed as statements of fact. Gartner disclaims all warranties, express
+    or implied, with respect to this research, including any warranties of
+    merchantability or fitness for a particular purpose</p>
 collage:
   cta:
     color: green
@@ -124,10 +124,13 @@ meta:
     Stoplight named in Gartner’s prestigious “Cool Vendor in Application
     Development” 2019 report.
   favicon: /images/mark_light_bg.png
+  image: /images/gartner-cool-vendor.png
   robots: 'noindex, nofollow'
   title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
   twitter:
     description: >-
       Stoplight named in Gartner’s prestigious “Cool Vendor in Application
       Development” 2019 report.
+    image: /images/gartner-cool-vendor.png
     title: Stoplight named a Gartner 2019 Cool Vendor | Stoplight
+    username: '@stoplightio'
